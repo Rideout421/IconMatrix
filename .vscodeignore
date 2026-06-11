@@ -1,0 +1,9 @@
+.git/**
+.vscode/**
+scripts/**
+source-icons/**
+processed-icons/**
+logs/**
+config/**
+*.vsix
+*.log

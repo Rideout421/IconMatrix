@@ -1,0 +1,83 @@
+# =========================
+# SYSTEM FILES
+# =========================
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# SECURITY / SECRETS
+# =========================
+.env
+*.env
+*.key
+*.pem
+*.pfx
+secrets.json
+paths.json
+
+# =========================
+# LOGS / TEMP FILES
+# =========================
+*.log
+*.tmp
+*.cache
+*.bak
+*.swp
+*.swo
+
+# =========================
+# ARCHIVES / LARGE ARTIFACTS (OPTIONAL)
+# Only ignore if repo is not meant for binary archival
+# =========================
+*.iso
+*.msi
+*.dmg
+
+# =========================
+# BUILD / GENERATED OUTPUT
+# =========================
+bin/
+obj/
+dist/
+build/
+out/
+
+# =========================
+# LANGUAGE RUNTIME ARTIFACTS
+# =========================
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# =========================
+# INFRA / IaC STATE (CRITICAL)
+# =========================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# =========================
+# EDITOR / LOCAL TOOLS
+# =========================
+*.code-workspace
+
+# =========================
+# CUSTOM LOCAL ASSETS
+# =========================
+vscode-icons/
+source-icons/
+
+# =========================
+# OPTIONAL: LOCAL BACKUP FOLDERS
+# (uncomment if you generate local exports)
+# =========================
+# backups/
+# export/
+# =========================
+# Secret scanner working output - never commit
+# =========================
+.secret-scan-output/
