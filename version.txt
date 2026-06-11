@@ -1,4 +1,8 @@
-Version: 19
-Timestamp: 06-11-2026 02-42-PM
+Version: 20
+Timestamp: 06-11-2026 03-19-PM
 Changed files:
-README.md
+"Tools/Publish-IconMatrix copy.ps1"
+Core/Invoke-IconIntelligence.ps1
+iconmatrix-1.0.0.vsix
+registry/icons.json
+Tools/Publish-IconMatrix.ps1

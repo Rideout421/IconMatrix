@@ -22,6 +22,14 @@ USAGE:
 & (Join-Path $env:GIT_ROOT "IconMatrix\Tools\Publish-IconMatrix.ps1") -Install
 
 ===============================================================================
+Pipeline:
+1. Sync icons
+2. Build registry
+3. Apply intelligence layer
+4. Build theme
+5. Package VSIX
+6. Optional install
+===============================================================================
 #>
 param(
     [switch]$DryRun,
@@ -31,15 +39,16 @@ param(
 $ErrorActionPreference = "Stop"
 
 # =========================
-# ROOT
+# ROOT RESOLUTION
 # =========================
 $RepoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $RepoRoot
 
 # =========================
-# CONFIG
+# CONFIG LOAD
 # =========================
 $configPath = Join-Path $RepoRoot "config\paths.json"
+
 if (-not (Test-Path $configPath)) {
     throw "Missing config: $configPath"
 }
@@ -61,14 +70,10 @@ Write-Host "Install: $Install`n"
 # STEP 1: SYNC
 # =========================
 Write-Host "[SYNC] Running icon sync..." -ForegroundColor Yellow
-
 & "$RepoRoot\core\Sync-Icons.ps1" -DryRun:$DryRun
 
-# =========================
-# DRY RUN STOP (CRITICAL)
-# =========================
 if ($DryRun) {
-    Write-Host "`n[DRYRUN] Pipeline stopped after sync`n" -ForegroundColor Yellow
+    Write-Host "`n[DRYRUN] Sync complete - stopping pipeline`n" -ForegroundColor Yellow
     return
 }
 
@@ -80,7 +85,7 @@ if (-not (Test-Path $Processed)) {
 }
 
 # =========================
-# STEP 2: REGISTRY
+# STEP 2: REGISTRY BUILD
 # =========================
 Write-Host "[REGISTRY] Building registry..." -ForegroundColor Yellow
 
@@ -90,7 +95,25 @@ Write-Host "[REGISTRY] Building registry..." -ForegroundColor Yellow
     -DryRun:$false
 
 # =========================
-# STEP 3: THEME
+# STEP 3: INTELLIGENCE LAYER
+# =========================
+Write-Host "[INTEL] Applying icon intelligence..." -ForegroundColor Yellow
+
+if (-not (Test-Path $RegistryPath)) {
+    throw "Registry missing before intelligence step"
+}
+
+$registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
+
+$registry = & "$RepoRoot\core\Invoke-IconIntelligence.ps1" `
+    -Registry $registry `
+    -IconsPath $Processed `
+    -DryRun:$false
+
+$registry | ConvertTo-Json -Depth 20 | Set-Content $RegistryPath -Encoding UTF8
+
+# =========================
+# STEP 4: THEME
 # =========================
 Write-Host "[THEME] Building theme..." -ForegroundColor Yellow
 
@@ -101,16 +124,21 @@ Write-Host "[THEME] Building theme..." -ForegroundColor Yellow
     -DryRun:$false
 
 # =========================
-# STEP 4: PACKAGE
+# STEP 5: PACKAGE
 # =========================
 Write-Host "[PACKAGE] Building VSIX..." -ForegroundColor Yellow
+
+if (-not (Get-Command npx -ErrorAction SilentlyContinue)) {
+    throw "npx is required for VSIX packaging"
+}
 
 npx @vscode/vsce package
 
 # =========================
-# STEP 5: INSTALL
+# STEP 6: INSTALL (OPTIONAL)
 # =========================
 if ($Install) {
+
     Write-Host "[INSTALL] Installing extension..." -ForegroundColor Yellow
 
     $vsix = Get-ChildItem $RepoRoot -Filter "*.vsix" |
@@ -123,17 +151,15 @@ if ($Install) {
 
     code --install-extension $vsix.FullName --force
 
-    Write-Host "[OK] Installed: $($vsix.Name)" -ForegroundColor Green
+    Write-Host "[OK] Installed -> $($vsix.Name)" -ForegroundColor Green
 }
 
 # =========================
-# FINAL OUTPUT (CLEAN)
+# FINAL OUTPUT
 # =========================
-Write-Host ""
-
 if ($Install) {
-    Write-Host "=== BUILD + INSTALL COMPLETE ===" -ForegroundColor Green
+    Write-Host "`n=== BUILD + INSTALL COMPLETE ===`n" -ForegroundColor Green
 }
 else {
-    Write-Host "=== BUILD COMPLETE ===" -ForegroundColor Cyan
+    Write-Host "`n=== BUILD COMPLETE ===`n" -ForegroundColor Cyan
 }
