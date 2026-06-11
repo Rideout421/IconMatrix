@@ -1,6 +1,6 @@
 # IconMatrix
 
-![Status](https://img.shields.io/badge/status-active-success) ![VSCode](https://img.shields.io/badge/vscode-extension-blue) ![Theme](https://img.shields.io/badge/theme-icon%20framework-purple) ![Automation](https://img.shields.io/badge/automation-enabled-brightgreen) ![Architecture](https://img.shields.io/badge/structure-modular-orange)![Pipeline](https://img.shields.io/badge/pipeline-registry--driven-informational)![PowerShell](https://img.shields.io/badge/powershell-automation-5391FE?logo=powershell&logoColor=white)![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-success) ![VSCode](https://img.shields.io/badge/vscode-extension-blue) ![Theme](https://img.shields.io/badge/theme-icon%20framework-purple) ![Automation](https://img.shields.io/badge/automation-enabled-brightgreen) ![Architecture](https://img.shields.io/badge/structure-modular-orange) ![Pipeline](https://img.shields.io/badge/pipeline-registry--driven-informational) ![PowerShell](https://img.shields.io/badge/powershell-automation-5391FE?logo=powershell&logoColor=white) ![License](https://img.shields.io/badge/license-MIT-green)
 
 Custom registry-driven VS Code icon theme built through a fully automated PowerShell pipeline.
 
