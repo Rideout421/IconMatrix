@@ -1,7 +1,4 @@
-﻿Version: 22
-Timestamp: 06-12-2026 01-45-PM
+﻿Version: 23
+Timestamp: 06-12-2026 02-16-PM
 Changed files:
-Core/Sync-Icons.ps1
 iconmatrix-1.0.0.vsix
-pipeline/Invoke-RegistryBuild.ps1
-Tools/Publish-IconMatrix.ps1
