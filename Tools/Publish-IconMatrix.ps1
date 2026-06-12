@@ -41,7 +41,16 @@ $ErrorActionPreference = "Stop"
 # =========================
 # ROOT RESOLUTION
 # =========================
-$RepoRoot = Split-Path -Parent $PSScriptRoot
+if (-not $env:GIT_ROOT) {
+    throw "GIT_ROOT environment variable is not set"
+}
+
+$RepoRoot = Join-Path $env:GIT_ROOT "IconMatrix"
+$RepoRoot = [System.IO.Path]::GetFullPath($RepoRoot)
+
+if (-not (Test-Path $RepoRoot)) {
+    throw "RepoRoot resolved but does not exist: $RepoRoot"
+}
 Set-Location $RepoRoot
 
 # =========================
@@ -57,7 +66,31 @@ $config = Get-Content $configPath -Raw | ConvertFrom-Json
 
 $Processed    = Join-Path $RepoRoot $config.processedIcons
 $RegistryPath = Join-Path $RepoRoot $config.registry
-$ThemePath    = Join-Path $RepoRoot $config.theme
+# =========================
+# THEME PATH (HARD SAFE BUILD)
+# =========================
+
+$themeDir = Join-Path $RepoRoot "theme"
+
+if (-not (Test-Path $themeDir)) {
+    New-Item -ItemType Directory -Path $themeDir -Force | Out-Null
+    Write-Host "[FIX] Created theme directory -> $themeDir" -ForegroundColor Yellow
+}
+
+$ThemePath = Join-Path $themeDir "icons-theme.json"
+
+if ([string]::IsNullOrWhiteSpace($ThemePath)) {
+    throw "ThemePath resolved as null/empty"
+}
+
+Write-Host "[DEBUG] ThemePath FINAL = $ThemePath" -ForegroundColor Cyan
+
+if (-not $config) {
+    throw "CONFIG FAILED TO LOAD (ConvertFrom-Json returned null)"
+}
+
+Write-Host "[DEBUG] config.registry = $($config.registry)" -ForegroundColor Cyan
+Write-Host "[DEBUG] RepoRoot = $RepoRoot" -ForegroundColor Cyan
 
 # =========================
 # HEADER
@@ -94,35 +127,87 @@ Write-Host "[REGISTRY] Building registry..." -ForegroundColor Yellow
     -OutputPath $RegistryPath `
     -DryRun:$false
 
-# =========================
-# STEP 3: INTELLIGENCE LAYER
-# =========================
-Write-Host "[INTEL] Applying icon intelligence..." -ForegroundColor Yellow
 
-if (-not (Test-Path $RegistryPath)) {
-    throw "Registry missing before intelligence step"
-}
+# =========================
+# STEP 3: INTELLIGENCE LAYER (SAFE PASS-THROUGH)
+# =========================
 
 $registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
 
-$registry = & "$RepoRoot\core\Invoke-IconIntelligence.ps1" `
-    -Registry $registry `
-    -IconsPath $Processed `
-    -DryRun:$false
+if (-not $registry) {
+    throw "Registry is null"
+}
 
-$registry | ConvertTo-Json -Depth 20 | Set-Content $RegistryPath -Encoding UTF8
+# Ensure structure exists (DO NOT overwrite real data)
+if (-not $registry.PSObject.Properties.Name.Contains("fileNames")) {
+    $registry | Add-Member -NotePropertyName fileNames -NotePropertyValue @{} -Force
+}
+
+if (-not $registry.PSObject.Properties.Name.Contains("fileExtensions")) {
+    $registry | Add-Member -NotePropertyName fileExtensions -NotePropertyValue @{} -Force
+}
+
+# SAFE merge (ONLY if needed)
+function Merge-Hashtable {
+    param($source)
+
+    $ht = @{}
+
+    if ($source) {
+        foreach ($prop in $source.PSObject.Properties) {
+            $ht[$prop.Name] = $prop.Value
+        }
+    }
+
+    return $ht
+}
+
+if ($registry.fileNames -isnot [hashtable]) {
+    $registry.fileNames = Merge-Hashtable $registry.fileNames
+}
+
+if ($registry.fileExtensions -isnot [hashtable]) {
+    $registry.fileExtensions = Merge-Hashtable $registry.fileExtensions
+}
+
+# WRITE BACK (THIS IS WHAT ENABLES THE THEME STEP)
+$registry | ConvertTo-Json -Depth 50 | Set-Content $RegistryPath -Encoding UTF8
+
+###########################
+Write-Host "[DEBUG] ThemePath RAW = $ThemePath"
+Write-Host "[DEBUG] Test Parent Exists = $(Test-Path (Split-Path $ThemePath -Parent))"
+###########################
 
 # =========================
 # STEP 4: THEME
 # =========================
 Write-Host "[THEME] Building theme..." -ForegroundColor Yellow
 
-& "$RepoRoot\core\Invoke-IconMatrixTheme.ps1" `
+# HARD GUARDS
+if ([string]::IsNullOrWhiteSpace($RegistryPath)) {
+    throw "[FATAL] RegistryPath is empty"
+}
+
+if ([string]::IsNullOrWhiteSpace($Processed)) {
+    throw "[FATAL] Processed path is empty"
+}
+
+if ([string]::IsNullOrWhiteSpace($ThemePath)) {
+    throw "[FATAL] ThemePath is empty"
+}
+
+# DEBUG (keep for now)
+Write-Host "[DEBUG] RegistryPath = $RegistryPath"
+Write-Host "[DEBUG] Processed = $Processed"
+Write-Host "[DEBUG] ThemePath = $ThemePath"
+
+# SINGLE CALL ONLY
+& "$RepoRoot\Core\Invoke-IconMatrixTheme.ps1" `
     -RegistryPath $RegistryPath `
     -IconsPath $Processed `
     -ThemeFilePath $ThemePath `
     -DryRun:$false
-
+    
 # =========================
 # STEP 5: PACKAGE
 # =========================

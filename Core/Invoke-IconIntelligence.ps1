@@ -1,6 +1,6 @@
 <#
 ===============================================================================
- ICON MATRIX INTELLIGENCE ENGINE
+ ICON MATRIX INTELLIGENCE ENGINE (STABLE + NORMALIZED - FIXED WRITE SAFETY)
 ===============================================================================
 #>
 
@@ -19,7 +19,7 @@ $ErrorActionPreference = "Stop"
 Write-Host "`n[INTEL] Applying icon intelligence..." -ForegroundColor Cyan
 
 # =========================
-# SAFETY CHECKS
+# VALIDATION
 # =========================
 if (-not $Registry) {
     throw "[INTEL] Registry is null"
@@ -28,6 +28,30 @@ if (-not $Registry) {
 if (-not (Test-Path $IconsPath)) {
     throw "[INTEL] Icons path not found: $IconsPath"
 }
+
+# =========================
+# NORMALIZE SAFE HASHTABLES (CRITICAL FIX)
+# =========================
+
+function Ensure-Hashtable($obj) {
+
+    if ($null -eq $obj) { return @{} }
+
+    if ($obj -is [hashtable]) { return $obj }
+
+    $ht = @{}
+
+    $obj.PSObject.Properties | ForEach-Object {
+        $ht[$_.Name] = $_.Value
+    }
+
+    return $ht
+}
+
+$Registry.fileNames       = Ensure-Hashtable $Registry.fileNames
+$Registry.fileExtensions  = Ensure-Hashtable $Registry.fileExtensions
+$Registry.folder          = Ensure-Hashtable $Registry.folder
+$Registry.file            = Ensure-Hashtable $Registry.file
 
 # =========================
 # RULE ENGINE
@@ -45,26 +69,15 @@ $rules = @(
 # =========================
 $files = Get-ChildItem -Path $IconsPath -File -Recurse
 
-# =========================
-# FORCE HASHTABLE NORMALIZATION (CRITICAL FIX)
-# =========================
-if (-not $Registry.fileNames -or $Registry.fileNames -isnot [hashtable]) {
-    $Registry.fileNames = @{}
-}
-
-if (-not $Registry.fileExtensions -or $Registry.fileExtensions -isnot [hashtable]) {
-    $Registry.fileExtensions = @{}
-}
-
 $hitCount = 0
 
 # =========================
-# INTELLIGENCE MAPPING
+# INTELLIGENCE MAPPING (FIXED WRITE SAFETY)
 # =========================
 foreach ($file in $files) {
 
     $fileName = $file.BaseName.ToLower()
-    $assignedIcon = $null
+    $assignedIcon = "default-icon"
 
     foreach ($rule in $rules) {
         if ($fileName -match $rule.Pattern) {
@@ -73,18 +86,23 @@ foreach ($file in $files) {
         }
     }
 
-    if (-not $assignedIcon) {
-        $assignedIcon = "default-icon"
-    }
-
+    # SAFE WRITE (NO PSOBJECT INDEXING ISSUES)
     $Registry.fileNames[$file.Name] = $assignedIcon
     $hitCount++
 }
 
 # =========================
-# DOCX SAFETY DEFAULT
+# EXTENSIONS SAFETY
 # =========================
-$Registry.fileExtensions["docx"] = "word-icon"
+if (-not $Registry.fileExtensions.ContainsKey("docx")) {
+    $Registry.fileExtensions["docx"] = "word-icon"
+}
+
+# =========================
+# META
+# =========================
+$Registry.file["totalFiles"] = $files.Count
+$Registry.file["lastRun"] = (Get-Date).ToString("s")
 
 # =========================
 # OUTPUT
@@ -92,7 +110,7 @@ $Registry.fileExtensions["docx"] = "word-icon"
 Write-Host "[INTEL] Completed mappings: $hitCount" -ForegroundColor Green
 
 if ($DryRun) {
-    Write-Host "[INTEL] DryRun enabled - no changes persisted" -ForegroundColor Yellow
+    Write-Host "[INTEL] DryRun enabled - no persistence expected" -ForegroundColor Yellow
 }
 
 return $Registry

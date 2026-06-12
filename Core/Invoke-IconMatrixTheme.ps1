@@ -1,21 +1,28 @@
 function Invoke-IconMatrixTheme {
     param(
+        [Parameter(Mandatory)]
         [string]$RegistryPath,
+
+        [Parameter(Mandatory)]
         [string]$IconsPath,
+
+        [Parameter(Mandatory)]
         [string]$ThemeFilePath,
+
         [switch]$DryRun
     )
 
-    Write-Host "=== IconMatrix Compiler Starting ==="
+    Write-Host "`n=== ICONMATRIX THEME DEBUG START ===" -ForegroundColor Cyan
+
+    Write-Host "[DEBUG] RegistryPath   = $RegistryPath"
+    Write-Host "[DEBUG] IconsPath      = $IconsPath"
+    Write-Host "[DEBUG] ThemeFilePath  = $ThemeFilePath"
 
     # -------------------------
-    # DRY RUN GUARD (CRITICAL)
+    # DRY RUN
     # -------------------------
     if ($DryRun) {
-        Write-Host "[DRYRUN] Theme compilation skipped" -ForegroundColor Yellow
-        Write-Host "[DRYRUN] Registry: $RegistryPath"
-        Write-Host "[DRYRUN] Icons: $IconsPath"
-        Write-Host "[DRYRUN] Output: $ThemeFilePath"
+        Write-Host "[DRYRUN] Exiting before execution" -ForegroundColor Yellow
         return
     }
 
@@ -23,18 +30,52 @@ function Invoke-IconMatrixTheme {
     # VALIDATION
     # -------------------------
     if (-not (Test-Path $RegistryPath)) {
-        throw "Registry file not found: $RegistryPath"
+        throw "Registry missing: $RegistryPath"
     }
 
     if (-not (Test-Path $IconsPath)) {
-        throw "Icons path not found: $IconsPath"
+        throw "Icons missing: $IconsPath"
     }
 
     # -------------------------
     # LOAD REGISTRY
     # -------------------------
-    $registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
+    $registryRaw = Get-Content $RegistryPath -Raw
+    $registry = $registryRaw | ConvertFrom-Json
 
+    if (-not $registry) {
+        throw "Registry JSON invalid"
+    }
+
+    Write-Host "[DEBUG] Registry loaded OK"
+
+    # -------------------------
+    # FORCE OUTPUT PATH
+    # -------------------------
+    $ThemeFilePath = [System.IO.Path]::GetFullPath($ThemeFilePath)
+    $outDir = Split-Path -Parent $ThemeFilePath
+
+    Write-Host "[DEBUG] Output directory = $outDir"
+
+    if (-not (Test-Path $outDir)) {
+        Write-Host "[DEBUG] Creating output directory..."
+        New-Item -ItemType Directory -Path $outDir -Force | Out-Null
+    }
+
+    # -------------------------
+    # LOAD ICONS (CRITICAL DEBUG POINT)
+    # -------------------------
+    $icons = Get-ChildItem -Path $IconsPath -Filter *.png -ErrorAction SilentlyContinue
+
+    Write-Host "[DEBUG] Icons found = $($icons.Count)"
+
+    if ($icons.Count -eq 0) {
+        Write-Host "[ERROR] NO ICONS FOUND - theme will be empty" -ForegroundColor Red
+    }
+
+    # -------------------------
+    # BUILD THEME OBJECT
+    # -------------------------
     $theme = @{
         iconDefinitions = @{}
         fileExtensions  = @{}
@@ -43,52 +84,72 @@ function Invoke-IconMatrixTheme {
         file            = @{}
     }
 
-    # -------------------------
-    # BUILD ICON DEFINITIONS
-    # -------------------------
-    Get-ChildItem $IconsPath -Filter *.png | ForEach-Object {
-        $name = $_.BaseName
-        $theme.iconDefinitions[$name] = @{
-            iconPath = "./processed-icons/$($_.Name)"
+    foreach ($icon in $icons) {
+        $id = "$($icon.BaseName)-icon"
+
+        $theme.iconDefinitions[$id] = @{
+            iconPath = "./processed-icons/$($icon.Name)"
         }
     }
+
+    Write-Host "[DEBUG] iconDefinitions = $($theme.iconDefinitions.Count)"
 
     # -------------------------
     # MAP REGISTRY
     # -------------------------
-    foreach ($entry in $registry.PSObject.Properties) {
-
-        $iconName = $entry.Name
-        $data = $entry.Value
-
-        if ($data.extensions) {
-            foreach ($ext in $data.extensions) {
-                $theme.fileExtensions[$ext] = $iconName
-            }
-        }
-
-        if ($data.files) {
-            foreach ($file in $data.files) {
-                $theme.fileNames[$file] = $iconName
-            }
+    if ($registry.fileNames) {
+        foreach ($p in $registry.fileNames.PSObject.Properties) {
+            $theme.fileNames[$p.Name] = $p.Value
         }
     }
 
-    # -------------------------
-    # ENSURE OUTPUT DIR
-    # -------------------------
-    $dir = Split-Path $ThemeFilePath -Parent
+    if ($registry.fileExtensions) {
+        foreach ($p in $registry.fileExtensions.PSObject.Properties) {
+            $theme.fileExtensions[$p.Name] = $p.Value
+        }
+    }
 
-    if (-not (Test-Path $dir)) {
-        New-Item -ItemType Directory -Path $dir -Force | Out-Null
+    Write-Host "[DEBUG] fileNames = $($theme.fileNames.Count)"
+    Write-Host "[DEBUG] fileExtensions = $($theme.fileExtensions.Count)"
+
+    # -------------------------
+    # SERIALIZE JSON
+    # -------------------------
+    $json = $theme | ConvertTo-Json -Depth 50
+
+    Write-Host "[DEBUG] JSON length = $($json.Length)"
+
+    if ([string]::IsNullOrWhiteSpace($json)) {
+        throw "JSON generation failed (empty output)"
     }
 
     # -------------------------
-    # WRITE OUTPUT
+    # WRITE FILE (CRITICAL SECTION)
     # -------------------------
-    $json = $theme | ConvertTo-Json -Depth 20
+    Write-Host "[DEBUG] Writing file -> $ThemeFilePath" -ForegroundColor Yellow
 
-    $json | Out-File $ThemeFilePath -Encoding UTF8
+    try {
+        Set-Content -Path $ThemeFilePath -Value $json -Encoding UTF8 -Force -ErrorAction Stop
+    }
+    catch {
+        throw "WRITE FAILED: $($_.Exception.Message)"
+    }
 
-    Write-Host "[OK] Theme compiled -> $ThemeFilePath"
+    # -------------------------
+    # VERIFY
+    # -------------------------
+    if (-not (Test-Path $ThemeFilePath)) {
+        throw "FILE NOT CREATED AFTER WRITE"
+    }
+
+    $size = (Get-Item $ThemeFilePath).Length
+
+    Write-Host "[SUCCESS] Theme created successfully ($size bytes)" -ForegroundColor Green
+    Write-Host "[SUCCESS] Output -> $ThemeFilePath`n" -ForegroundColor Green
+
+    Invoke-IconMatrixTheme `
+    -RegistryPath $args[0] `
+    -IconsPath $args[1] `
+    -ThemeFilePath $args[2] `
+    -DryRun:$false
 }

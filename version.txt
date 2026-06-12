@@ -1,8 +1,11 @@
-Version: 20
-Timestamp: 06-11-2026 03-19-PM
+Version: 21
+Timestamp: 06-12-2026 10-54-AM
 Changed files:
-"Tools/Publish-IconMatrix copy.ps1"
+config/base-registry.json
 Core/Invoke-IconIntelligence.ps1
+Core/Invoke-IconMatrixTheme.ps1
 iconmatrix-1.0.0.vsix
+pipeline/Invoke-RegistryBuild.ps1
 registry/icons.json
+theme/icons-theme.json
 Tools/Publish-IconMatrix.ps1
