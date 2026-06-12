@@ -1,11 +1,7 @@
-Version: 21
-Timestamp: 06-12-2026 10-54-AM
+﻿Version: 22
+Timestamp: 06-12-2026 01-45-PM
 Changed files:
-config/base-registry.json
-Core/Invoke-IconIntelligence.ps1
-Core/Invoke-IconMatrixTheme.ps1
+Core/Sync-Icons.ps1
 iconmatrix-1.0.0.vsix
 pipeline/Invoke-RegistryBuild.ps1
-registry/icons.json
-theme/icons-theme.json
 Tools/Publish-IconMatrix.ps1

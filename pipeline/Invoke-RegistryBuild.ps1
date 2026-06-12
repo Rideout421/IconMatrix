@@ -1,16 +1,7 @@
-param(
-    [Parameter(Mandatory)]
-    [string]$Path,
-
-    [Parameter(Mandatory)]
-    [string]$OutputPath,
-
-    [switch]$DryRun
-)
 function Invoke-RegistryBuild {
     param(
         [Parameter(Mandatory)]
-        [string]$Path,
+        [string]$InputPath,
 
         [Parameter(Mandatory)]
         [string]$OutputPath,
@@ -20,123 +11,99 @@ function Invoke-RegistryBuild {
 
     Write-Host "`n=== Registry Build (IconMatrix) ===" -ForegroundColor Cyan
 
-    # HARD DEBUG
-    Write-Host "[DEBUG] PARAM Path       = [$Path]" -ForegroundColor Yellow
-    Write-Host "[DEBUG] PARAM OutputPath = [$OutputPath]" -ForegroundColor Yellow
-
-    # FORCE processed-icons
-    $Path = Join-Path $PSScriptRoot "..\processed-icons"
-    $Path = (Resolve-Path $Path -ErrorAction Stop).Path
-
-    Write-Host "[DEBUG] FORCED ICON PATH = [$Path]" -ForegroundColor Green
-
-    if (-not (Test-Path $Path)) {
-        throw "processed-icons folder missing -> $Path"
+    # ========================= INPUT RESOLVE =========================
+    if ([string]::IsNullOrWhiteSpace($InputPath)) {
+        throw "InputPath is empty"
     }
 
-    $files = Get-ChildItem `
-        -Path $Path `
-        -File `
-        -Recurse `
-        -Filter "*.png" `
-        -ErrorAction Stop
-
-    Write-Host "[DEBUG] PNG COUNT = $($files.Count)" -ForegroundColor Cyan
-
-    if ($files.Count -eq 0) {
-        throw "ZERO PNG FILES FOUND IN: $Path"
+    if (-not [System.IO.Path]::IsPathRooted($InputPath)) {
+        $InputPath = Join-Path $PSScriptRoot $InputPath
     }
-    
-    # =========================
-    # RESOLVE PATH (CRITICAL FIX)
-    # =========================
-    $resolvedPath = Resolve-Path $Path -ErrorAction Stop
 
-    Write-Host "[DEBUG] Input Path     = $Path" -ForegroundColor DarkCyan
-    Write-Host "[DEBUG] Resolved Path  = $resolvedPath" -ForegroundColor DarkCyan
+    $resolvedInput = (Resolve-Path $InputPath -ErrorAction Stop | Select-Object -ExpandProperty Path)
 
-    # =========================
-    # RAW ICON COLLECTION
-    # =========================
+    if (-not (Test-Path $resolvedInput)) {
+        throw "Input folder not found: $resolvedInput"
+    }
+
+    # ========================= OUTPUT VALIDATION =========================
+    if ([string]::IsNullOrWhiteSpace($OutputPath)) {
+        throw "OutputPath is empty"
+    }
+
+    if (Test-Path $OutputPath -PathType Container) {
+        throw "OutputPath must be a FILE, not a DIRECTORY: $OutputPath"
+    }
+
+    $outputDir = Split-Path $OutputPath -Parent
+    if (-not (Test-Path $outputDir)) {
+        New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
+    }
+
+    # ========================= SCAN FILES =========================
+    $files = Get-ChildItem -Path $resolvedInput -Recurse -File -Filter "*.png"
+
+    if (-not $files -or $files.Count -eq 0) {
+        throw "No PNG files found in: $resolvedInput"
+    }
+
+    # ========================= BUILD ICON MAP =========================
     $icons = @{}
-
-    $files = Get-ChildItem -Path $resolvedPath -Recurse -File -ErrorAction Stop |
-             Where-Object { $_.Extension -eq ".png" }
-
-    Write-Host "[DEBUG] PNG files found = $($files.Count)" -ForegroundColor DarkCyan
+    $basePath = (Get-Item $resolvedInput).FullName
 
     foreach ($file in $files) {
         $base = $file.BaseName.ToLower()
 
-        $icons[$base] = @{
-            file = $file.Name
-            path = $file.FullName
-        }
-    }
+        $relativePart = $file.FullName.Substring($basePath.Length).TrimStart('\','/')
+        $relativePart = $relativePart -replace '\\','/'
 
-    Write-Host "[DEBUG] Icons discovered = $($icons.Count)" -ForegroundColor DarkCyan
-    Write-Host "[DEBUG KEYS] $($icons.Keys -join ', ')" -ForegroundColor DarkCyan
-
-    # =========================
-    # DERIVED STRUCTURES
-    # =========================
-    $fileExtensions  = @{}
-    $fileNames       = @{}
-    $iconDefinitions = @{}
-
-    foreach ($key in $icons.Keys) {
-
-        $iconId = "$key-icon"
-
-        # ICON DEFINITIONS
-        $iconDefinitions[$iconId] = @{
-            iconPath = "./processed-icons/$($icons[$key].file)"
-        }
-
-        # PRIMARY: extension = icon name
-        $ext = $key.ToLower()
-
-        if (-not $fileExtensions.ContainsKey($ext)) {
-            $fileExtensions[$ext] = $iconId
-        }
-
-        if (-not $fileNames.ContainsKey($ext)) {
-            $fileNames[$ext] = $iconId
-        }
-
-        # TOKEN SPLIT SUPPORT
-        $parts = $key -split "[-_\.]"
-
-        foreach ($p in $parts) {
-            if (-not [string]::IsNullOrWhiteSpace($p)) {
-
-                $p = $p.ToLower()
-
-                if (-not $fileExtensions.ContainsKey($p)) {
-                    $fileExtensions[$p] = $iconId
-                }
-
-                if (-not $fileNames.ContainsKey($p)) {
-                    $fileNames[$p] = $iconId
-                }
+        if (-not $icons.ContainsKey($base)) {
+            $icons[$base] = @{
+                file         = $file.Name
+                relativePath = $relativePart
+                fullPath     = $file.FullName
             }
         }
     }
 
-    # =========================
-    # DEFAULT FALLBACKS
-    # =========================
+    # ========================= REGISTRY BUILD =========================
+    $iconDefinitions = @{}
+    $fileExtensions  = @{}
+    $fileNames       = @{}
+
+    foreach ($key in ($icons.Keys | Sort-Object)) {
+
+        $iconId = "$key-icon"
+
+        $iconDefinitions[$iconId] = @{
+            iconPath = "./processed-icons/$($icons[$key].relativePath)"
+        }
+
+        if (-not $fileExtensions.ContainsKey($key)) { $fileExtensions[$key] = $iconId }
+        if (-not $fileNames.ContainsKey($key))       { $fileNames[$key] = $iconId }
+
+        $parts = $key -split '[-_\.]'
+        foreach ($part in $parts) {
+            $p = $part.ToLower()
+            if ([string]::IsNullOrWhiteSpace($p)) { continue }
+
+            if (-not $fileExtensions.ContainsKey($p)) { $fileExtensions[$p] = $iconId }
+            if (-not $fileNames.ContainsKey($p))       { $fileNames[$p] = $iconId }
+        }
+    }
+
+    # ========================= DEFAULTS =========================
     $defaults = @{
-        "ps1"  = "powershell-icon"
-        "json" = "json-icon"
-        "md"   = "markdown-icon"
-        "txt"  = "text-icon"
-        "yml"  = "yaml-icon"
-        "yaml" = "yaml-icon"
-        "xml"  = "xml-icon"
-        "js"   = "javascript-icon"
-        "ts"   = "typescript-icon"
-        "docx" = "word-icon"
+        ps1   = "powershell-icon"
+        json  = "json-icon"
+        md    = "markdown-icon"
+        txt   = "text-icon"
+        yml   = "yaml-icon"
+        yaml  = "yaml-icon"
+        xml   = "xml-icon"
+        js    = "javascript-icon"
+        ts    = "typescript-icon"
+        docx  = "word-icon"
     }
 
     foreach ($k in $defaults.Keys) {
@@ -145,50 +112,26 @@ function Invoke-RegistryBuild {
         }
     }
 
-    # =========================
-    # OUTPUT STRUCTURE
-    # =========================
-    $registryOutput = @{
+    # ========================= DRY RUN =========================
+    if ($DryRun) {
+        Write-Host "[DRYRUN] Registry build complete (no write)"
+        return
+    }
+
+    # ========================= WRITE OUTPUT =========================
+    $out = [ordered]@{
         iconDefinitions = $iconDefinitions
         fileExtensions  = $fileExtensions
         fileNames       = $fileNames
     }
 
-    # =========================
-    # DRY RUN
-    # =========================
-    if ($DryRun) {
-        Write-Host "[DRYRUN] Icons: $($icons.Count)" -ForegroundColor Yellow
-        Write-Host "[DRYRUN] Extensions: $($fileExtensions.Count)" -ForegroundColor Yellow
-        Write-Host "[DRYRUN] Names: $($fileNames.Count)" -ForegroundColor Yellow
-        return
-    }
-
-    # =========================
-    # WRITE OUTPUT
-    # =========================
-    $dir = Split-Path $OutputPath -Parent
-
-    if (-not (Test-Path $dir)) {
-        New-Item -ItemType Directory -Path $dir -Force | Out-Null
-    }
-
-    $json = $registryOutput | ConvertTo-Json -Depth 50
+    $json = $out | ConvertTo-Json -Depth 50
 
     if ([string]::IsNullOrWhiteSpace($json)) {
-        throw "Registry JSON generation failed"
+        throw "JSON serialization failed"
     }
 
     Set-Content -Path $OutputPath -Value $json -Encoding UTF8
 
-    if (-not (Test-Path $OutputPath)) {
-        throw "Registry file was not created: $OutputPath"
-    }
-
-    Write-Host "[OK] Registry generated" -ForegroundColor Green
-    Write-Host "[DEBUG] Icons: $($icons.Count)" -ForegroundColor DarkCyan
-    Write-Host "[DEBUG] Extensions: $($fileExtensions.Count)" -ForegroundColor DarkCyan
-    Write-Host "[DEBUG] Names: $($fileNames.Count)" -ForegroundColor DarkCyan
-
-    
+    Write-Host "[OK] Registry written -> $OutputPath"
 }

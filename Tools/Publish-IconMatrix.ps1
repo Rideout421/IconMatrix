@@ -31,6 +31,11 @@ Pipeline:
 6. Optional install
 ===============================================================================
 #>
+
+<#
+ICONMATRIX PUBLISH ORCHESTRATOR (STABLE + CONTRACT SAFE)
+#>
+
 param(
     [switch]$DryRun,
     [switch]$Install
@@ -39,22 +44,23 @@ param(
 $ErrorActionPreference = "Stop"
 
 # =========================
-# ROOT RESOLUTION
+# ROOT
 # =========================
 if (-not $env:GIT_ROOT) {
-    throw "GIT_ROOT environment variable is not set"
+    throw "GIT_ROOT not set"
 }
 
 $RepoRoot = Join-Path $env:GIT_ROOT "IconMatrix"
 $RepoRoot = [System.IO.Path]::GetFullPath($RepoRoot)
 
 if (-not (Test-Path $RepoRoot)) {
-    throw "RepoRoot resolved but does not exist: $RepoRoot"
+    throw "RepoRoot missing: $RepoRoot"
 }
+
 Set-Location $RepoRoot
 
 # =========================
-# CONFIG LOAD
+# CONFIG
 # =========================
 $configPath = Join-Path $RepoRoot "config\paths.json"
 
@@ -64,187 +70,131 @@ if (-not (Test-Path $configPath)) {
 
 $config = Get-Content $configPath -Raw | ConvertFrom-Json
 
-$Processed    = Join-Path $RepoRoot $config.processedIcons
-$RegistryPath = Join-Path $RepoRoot $config.registry
-# =========================
-# THEME PATH (HARD SAFE BUILD)
-# =========================
-
-$themeDir = Join-Path $RepoRoot "theme"
-
-if (-not (Test-Path $themeDir)) {
-    New-Item -ItemType Directory -Path $themeDir -Force | Out-Null
-    Write-Host "[FIX] Created theme directory -> $themeDir" -ForegroundColor Yellow
-}
-
-$ThemePath = Join-Path $themeDir "icons-theme.json"
-
-if ([string]::IsNullOrWhiteSpace($ThemePath)) {
-    throw "ThemePath resolved as null/empty"
-}
-
-Write-Host "[DEBUG] ThemePath FINAL = $ThemePath" -ForegroundColor Cyan
-
-if (-not $config) {
-    throw "CONFIG FAILED TO LOAD (ConvertFrom-Json returned null)"
-}
-
-Write-Host "[DEBUG] config.registry = $($config.registry)" -ForegroundColor Cyan
-Write-Host "[DEBUG] RepoRoot = $RepoRoot" -ForegroundColor Cyan
-
-# =========================
-# HEADER
-# =========================
-Write-Host "`n=== ICONMATRIX PUBLISH START ===`n" -ForegroundColor Cyan
-Write-Host "DryRun : $DryRun"
-Write-Host "Install: $Install`n"
-
-# =========================
-# STEP 1: SYNC
-# =========================
-Write-Host "[SYNC] Running icon sync..." -ForegroundColor Yellow
-& "$RepoRoot\core\Sync-Icons.ps1" -DryRun:$DryRun
-
-if ($DryRun) {
-    Write-Host "`n[DRYRUN] Sync complete - stopping pipeline`n" -ForegroundColor Yellow
-    return
-}
-
-# =========================
-# VALIDATION
-# =========================
-if (-not (Test-Path $Processed)) {
-    throw "Processed folder missing: $Processed"
-}
-
-# =========================
-# STEP 2: REGISTRY BUILD
-# =========================
-Write-Host "[REGISTRY] Building registry..." -ForegroundColor Yellow
-
-& "$RepoRoot\pipeline\Invoke-RegistryBuild.ps1" `
-    -Path $Processed `
-    -OutputPath $RegistryPath `
-    -DryRun:$false
-
-
-# =========================
-# STEP 3: INTELLIGENCE LAYER (SAFE PASS-THROUGH)
-# =========================
-
-$registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
-
-if (-not $registry) {
-    throw "Registry is null"
-}
-
-# Ensure structure exists (DO NOT overwrite real data)
-if (-not $registry.PSObject.Properties.Name.Contains("fileNames")) {
-    $registry | Add-Member -NotePropertyName fileNames -NotePropertyValue @{} -Force
-}
-
-if (-not $registry.PSObject.Properties.Name.Contains("fileExtensions")) {
-    $registry | Add-Member -NotePropertyName fileExtensions -NotePropertyValue @{} -Force
-}
-
-# SAFE merge (ONLY if needed)
-function Merge-Hashtable {
-    param($source)
-
-    $ht = @{}
-
-    if ($source) {
-        foreach ($prop in $source.PSObject.Properties) {
-            $ht[$prop.Name] = $prop.Value
-        }
+# HARD validation (prevents null propagation)
+foreach ($k in @("sourceIcons","processedIcons","registry","theme")) {
+    if ([string]::IsNullOrWhiteSpace($config.$k)) {
+        throw "CONFIG ERROR: '$k' is missing or empty"
     }
-
-    return $ht
 }
-
-if ($registry.fileNames -isnot [hashtable]) {
-    $registry.fileNames = Merge-Hashtable $registry.fileNames
-}
-
-if ($registry.fileExtensions -isnot [hashtable]) {
-    $registry.fileExtensions = Merge-Hashtable $registry.fileExtensions
-}
-
-# WRITE BACK (THIS IS WHAT ENABLES THE THEME STEP)
-$registry | ConvertTo-Json -Depth 50 | Set-Content $RegistryPath -Encoding UTF8
-
-###########################
-Write-Host "[DEBUG] ThemePath RAW = $ThemePath"
-Write-Host "[DEBUG] Test Parent Exists = $(Test-Path (Split-Path $ThemePath -Parent))"
-###########################
 
 # =========================
-# STEP 4: THEME
+# PATH RESOLUTION (CANONICAL)
 # =========================
-Write-Host "[THEME] Building theme..." -ForegroundColor Yellow
+$SourceIcons = Join-Path $RepoRoot $config.sourceIcons
+$Processed   = Join-Path $RepoRoot $config.processedIcons
 
-# HARD GUARDS
-if ([string]::IsNullOrWhiteSpace($RegistryPath)) {
-    throw "[FATAL] RegistryPath is empty"
+# registry MUST be file
+$RegistryPath = Join-Path $RepoRoot $config.registry
+
+# theme file
+$ThemePath = Join-Path $RepoRoot $config.theme
+
+# =========================
+# SAFETY CHECKS (CRITICAL)
+# =========================
+if (Test-Path $RegistryPath -PathType Container) {
+    throw "FATAL: RegistryPath is a DIRECTORY but must be a FILE -> $RegistryPath"
 }
 
-if ([string]::IsNullOrWhiteSpace($Processed)) {
-    throw "[FATAL] Processed path is empty"
+if (-not (Test-Path $SourceIcons)) {
+    throw "SourceIcons folder missing -> $SourceIcons"
 }
 
-if ([string]::IsNullOrWhiteSpace($ThemePath)) {
-    throw "[FATAL] ThemePath is empty"
+# ensure registry folder exists
+$RegistryFolder = Split-Path $RegistryPath -Parent
+New-Item -ItemType Directory -Path $RegistryFolder -Force | Out-Null
+
+# ensure theme folder exists
+$ThemeFolder = Split-Path $ThemePath -Parent
+New-Item -ItemType Directory -Path $ThemeFolder -Force | Out-Null
+
+# =========================
+# DEBUG (single block only)
+# =========================
+Write-Host "`n=== ICONMATRIX DEBUG ===`n" -ForegroundColor Cyan
+Write-Host "RepoRoot     : $RepoRoot"
+Write-Host "SourceIcons  : $SourceIcons"
+Write-Host "Processed    : $Processed"
+Write-Host "Registry     : $RegistryPath"
+Write-Host "Theme        : $ThemePath"
+Write-Host ""
+
+# =========================
+# STEP 1 - SYNC
+# =========================
+Write-Host "[STEP 1] Sync icons" -ForegroundColor Yellow
+
+$syncParams = @{
+    InputPath = $SourceIcons
 }
 
-# DEBUG (keep for now)
-Write-Host "[DEBUG] RegistryPath = $RegistryPath"
-Write-Host "[DEBUG] Processed = $Processed"
-Write-Host "[DEBUG] ThemePath = $ThemePath"
+$syncCmd = Get-Command "$RepoRoot\core\Sync-Icons.ps1"
 
-# SINGLE CALL ONLY
+if ($syncCmd.Parameters.ContainsKey("OutputPath")) {
+    $syncParams.OutputPath = $Processed
+}
+
+if ($DryRun) { $syncParams.DryRun = $true }
+
+& "$RepoRoot\core\Sync-Icons.ps1" @syncParams
+
+if (-not (Test-Path $Processed)) {
+    throw "SYNC FAILED: Processed folder not created -> $Processed"
+}
+
+# =========================
+# STEP 2 - REGISTRY
+# =========================
+Write-Host "`n[STEP 2] Registry build" -ForegroundColor Yellow
+
+$registryParams = @{
+    InputPath  = $Processed
+    OutputPath = $RegistryPath
+}
+
+if ($DryRun) { $registryParams.DryRun = $true }
+
+Write-Host "[DEBUG] Writing registry file -> $RegistryPath"
+
+& "$RepoRoot\pipeline\Invoke-RegistryBuild.ps1" @registryParams
+
+if (-not (Test-Path $RegistryPath)) {
+    throw "REGISTRY FAILED: file not created -> $RegistryPath"
+}
+
+# =========================
+# STEP 3 - THEME
+# =========================
+Write-Host "`n[STEP 3] Theme build" -ForegroundColor Yellow
+
 & "$RepoRoot\Core\Invoke-IconMatrixTheme.ps1" `
     -RegistryPath $RegistryPath `
     -IconsPath $Processed `
     -ThemeFilePath $ThemePath `
-    -DryRun:$false
-    
-# =========================
-# STEP 5: PACKAGE
-# =========================
-Write-Host "[PACKAGE] Building VSIX..." -ForegroundColor Yellow
+    -DryRun:$DryRun
 
-if (-not (Get-Command npx -ErrorAction SilentlyContinue)) {
-    throw "npx is required for VSIX packaging"
-}
+# =========================
+# STEP 4 - PACKAGE
+# =========================
+Write-Host "`n[STEP 4] VSIX package" -ForegroundColor Yellow
 
 npx @vscode/vsce package
 
 # =========================
-# STEP 6: INSTALL (OPTIONAL)
+# STEP 5 - INSTALL
 # =========================
 if ($Install) {
-
-    Write-Host "[INSTALL] Installing extension..." -ForegroundColor Yellow
+    Write-Host "`n[STEP 5] Install extension" -ForegroundColor Yellow
 
     $vsix = Get-ChildItem $RepoRoot -Filter "*.vsix" |
         Sort-Object LastWriteTime -Descending |
         Select-Object -First 1
 
     if (-not $vsix) {
-        throw "No VSIX found"
+        throw "No VSIX file found"
     }
 
     code --install-extension $vsix.FullName --force
-
-    Write-Host "[OK] Installed -> $($vsix.Name)" -ForegroundColor Green
 }
 
-# =========================
-# FINAL OUTPUT
-# =========================
-if ($Install) {
-    Write-Host "`n=== BUILD + INSTALL COMPLETE ===`n" -ForegroundColor Green
-}
-else {
-    Write-Host "`n=== BUILD COMPLETE ===`n" -ForegroundColor Cyan
-}
+Write-Host "`n=== COMPLETE ===`n" -ForegroundColor Green

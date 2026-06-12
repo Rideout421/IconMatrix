@@ -1,85 +1,65 @@
-<#
-================================================================================
- ICON SYNC PIPELINE
-================================================================================
-#>
-
 param(
+    [string]$InputPath,
+    [string]$OutputPath,
     [switch]$DryRun
 )
 
 $ErrorActionPreference = "Stop"
 
-if (-not $DryRun) {
-    Write-Host "LIVE MODE ENABLED - changes will be written" -ForegroundColor Red
-}
-
-# =========================
-# SELF-HEALING CONTEXT
-# =========================
 $ScriptPath = $PSCommandPath
 $RepoRoot   = Split-Path -Parent (Split-Path -Parent $ScriptPath)
 
 Set-Location $RepoRoot
 
 $configPath = Join-Path $RepoRoot "config\paths.json"
-
-if (-not (Test-Path $configPath)) {
-    throw "Config file not found: $configPath"
-}
-
 $config = Get-Content $configPath -Raw | ConvertFrom-Json
 
-Write-Host "DEBUG RepoRoot = [$RepoRoot]" -ForegroundColor Cyan
-Write-Host "DEBUG sourceIcons = [$($config.sourceIcons)]" -ForegroundColor Cyan
-Write-Host "DEBUG RepoSource BEFORE JOIN = [$RepoSource]" -ForegroundColor Cyan
-
-# =========================
-# SAFE PATH RESOLUTION
-# =========================
-
-if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
-    throw "RepoRoot is NULL - script execution context broken"
+if (-not $config) {
+    throw "CONFIG FAILED TO LOAD"
 }
 
-if ([string]::IsNullOrWhiteSpace($config.sourceIcons)) {
-    throw "config.sourceIcons is missing"
-}
-
-$RepoSource = Join-Path -Path $RepoRoot -ChildPath $config.sourceIcons
-$Processed  = Join-Path -Path $RepoRoot -ChildPath $config.processedIcons
-$RegistryPath = Join-Path -Path $RepoRoot -ChildPath $config.registry
-$ThemePath    = Join-Path -Path $RepoRoot -ChildPath $config.theme
-$LogPath      = Join-Path -Path $RepoRoot -ChildPath $config.logs
+Write-Host "DEBUG RepoRoot = [$RepoRoot]"
+Write-Host "DEBUG sourceIcons = [$($config.sourceIcons)]"
 
 # =========================
-# HARD VALIDATION (CRITICAL)
+# CORE PATHS (FIXED)
 # =========================
 
-if ([string]::IsNullOrWhiteSpace($Processed)) {
-    throw "processedIcons is missing or empty in config"
+$RepoSource = Join-Path $RepoRoot $config.sourceIcons
+
+if ([string]::IsNullOrWhiteSpace($RepoSource)) {
+    throw "RepoSource resolved to NULL"
 }
 
-if ([string]::IsNullOrWhiteSpace($RegistryPath)) {
-    throw "registry path is missing or empty in config"
+# IMPORTANT FIX: never trust caller InputPath blindly
+$ProcessedDir = Join-Path $RepoRoot $config.processedIcons
+
+# Only override if explicitly passed AND valid
+if (-not [string]::IsNullOrWhiteSpace($InputPath)) {
+    $ProcessedDir = $InputPath
 }
+
+$RegistryPath = Join-Path $RepoRoot $config.registry
+$ThemePath    = Join-Path $RepoRoot $config.theme
+$LogPath      = Join-Path $RepoRoot $config.logs
 
 # =========================
-# SAFETY CHECKS
+# VALIDATION (DO NOT REMOVE)
 # =========================
 if (-not (Test-Path $RepoSource)) {
     throw "Source folder missing -> $RepoSource"
 }
 
-if (-not $DryRun -and -not (Test-Path $Processed)) {
-    throw "Processed folder missing -> $Processed (run ingestion first or DryRun pipeline)"
+# THIS is the root cause you hit earlier
+if (-not $DryRun -and -not (Test-Path $ProcessedDir)) {
+    throw "Processed folder missing -> $ProcessedDir"
 }
 
 # =========================
 # STEP 1: INGESTION
 # =========================
 & "$RepoRoot\pipeline\Copy-SourceIcons.ps1" `
-    -Source $Source `
+    -Source $RepoSource `
     -Destination $RepoSource `
     -DryRun:$DryRun
 
@@ -95,30 +75,23 @@ if (-not $DryRun -and -not (Test-Path $Processed)) {
 # =========================
 & "$RepoRoot\core\Convert-Icons.ps1" `
     -Path $RepoSource `
-    -Output $Processed `
+    -Output $ProcessedDir `
     -DryRun:$DryRun
 
 # =========================
-# STAGE 4: REGISTRY BUILD
+# STEP 4: REGISTRY
 # =========================
-
-if ([string]::IsNullOrWhiteSpace($Processed)) {
-    throw "Processed path is NULL/EMPTY - check config or earlier pipeline stages"
-}
-
-Write-Host "[REGISTRY] Building registry..." -ForegroundColor Yellow
-
 & "$RepoRoot\pipeline\Invoke-RegistryBuild.ps1" `
-    -Path $Processed `
+    -InputPath $ProcessedDir `
     -OutputPath $RegistryPath `
     -DryRun:$DryRun
 
 # =========================
-# STEP 5: THEME BUILD
+# STEP 5: THEME
 # =========================
 & "$RepoRoot\core\Invoke-IconMatrixTheme.ps1" `
     -RegistryPath $RegistryPath `
-    -IconsPath $Processed `
+    -IconsPath $ProcessedDir `
     -ThemeFilePath $ThemePath `
     -DryRun:$DryRun
 
