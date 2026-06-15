@@ -7,5 +7,5 @@ logs/**
 config/**
 *.vsix
 *.log
-#Files no longer used archive, valualble.
+# Archived files - retained for reference, excluded from build and source control
 archive/

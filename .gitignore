@@ -34,7 +34,8 @@ paths.json
 *.iso
 *.msi
 *.dmg
-#Files no longer used archive, valualble.
+
+# Archived files - retained for reference, excluded from build and source control
 archive/
 
 # =========================
