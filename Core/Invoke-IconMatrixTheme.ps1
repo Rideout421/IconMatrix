@@ -146,10 +146,4 @@ function Invoke-IconMatrixTheme {
 
     Write-Host "[SUCCESS] Theme created successfully ($size bytes)" -ForegroundColor Green
     Write-Host "[SUCCESS] Output -> $ThemeFilePath`n" -ForegroundColor Green
-
-    Invoke-IconMatrixTheme `
-    -RegistryPath $args[0] `
-    -IconsPath $args[1] `
-    -ThemeFilePath $args[2] `
-    -DryRun:$false
 }

@@ -25,15 +25,10 @@ USAGE:
 Pipeline:
 1. Sync icons
 2. Build registry
-3. Apply intelligence layer
-4. Build theme
-5. Package VSIX
-6. Optional install
+3. Build theme
+4. Package VSIX
+5. Optional install
 ===============================================================================
-#>
-
-<#
-ICONMATRIX PUBLISH ORCHESTRATOR (STABLE + CONTRACT SAFE)
 #>
 
 param(
@@ -80,17 +75,13 @@ foreach ($k in @("sourceIcons","processedIcons","registry","theme")) {
 # =========================
 # PATH RESOLUTION (CANONICAL)
 # =========================
-$SourceIcons = Join-Path $RepoRoot $config.sourceIcons
-$Processed   = Join-Path $RepoRoot $config.processedIcons
-
-# registry MUST be file
+$SourceIcons  = Join-Path $RepoRoot $config.sourceIcons
+$Processed    = Join-Path $RepoRoot $config.processedIcons
 $RegistryPath = Join-Path $RepoRoot $config.registry
-
-# theme file
-$ThemePath = Join-Path $RepoRoot $config.theme
+$ThemePath    = Join-Path $RepoRoot $config.theme
 
 # =========================
-# SAFETY CHECKS (CRITICAL)
+# SAFETY CHECKS
 # =========================
 if (Test-Path $RegistryPath -PathType Container) {
     throw "FATAL: RegistryPath is a DIRECTORY but must be a FILE -> $RegistryPath"
@@ -100,16 +91,12 @@ if (-not (Test-Path $SourceIcons)) {
     throw "SourceIcons folder missing -> $SourceIcons"
 }
 
-# ensure registry folder exists
-$RegistryFolder = Split-Path $RegistryPath -Parent
-New-Item -ItemType Directory -Path $RegistryFolder -Force | Out-Null
-
-# ensure theme folder exists
-$ThemeFolder = Split-Path $ThemePath -Parent
-New-Item -ItemType Directory -Path $ThemeFolder -Force | Out-Null
+# ensure registry and theme folders exist
+New-Item -ItemType Directory -Path (Split-Path $RegistryPath -Parent) -Force | Out-Null
+New-Item -ItemType Directory -Path (Split-Path $ThemePath    -Parent) -Force | Out-Null
 
 # =========================
-# DEBUG (single block only)
+# DEBUG
 # =========================
 Write-Host "`n=== ICONMATRIX DEBUG ===`n" -ForegroundColor Cyan
 Write-Host "RepoRoot     : $RepoRoot"
@@ -124,16 +111,12 @@ Write-Host ""
 # =========================
 Write-Host "[STEP 1] Sync icons" -ForegroundColor Yellow
 
-$syncParams = @{
-    InputPath = $SourceIcons
-}
+$syncParams = @{ InputPath = $SourceIcons }
 
 $syncCmd = Get-Command "$RepoRoot\core\Sync-Icons.ps1"
-
 if ($syncCmd.Parameters.ContainsKey("OutputPath")) {
     $syncParams.OutputPath = $Processed
 }
-
 if ($DryRun) { $syncParams.DryRun = $true }
 
 & "$RepoRoot\core\Sync-Icons.ps1" @syncParams
@@ -144,19 +127,19 @@ if (-not (Test-Path $Processed)) {
 
 # =========================
 # STEP 2 - REGISTRY
+# FIX: dot-source to load the function, then call it
 # =========================
 Write-Host "`n[STEP 2] Registry build" -ForegroundColor Yellow
+
+. "$RepoRoot\pipeline\Invoke-RegistryBuild.ps1"
 
 $registryParams = @{
     InputPath  = $Processed
     OutputPath = $RegistryPath
 }
-
 if ($DryRun) { $registryParams.DryRun = $true }
 
-Write-Host "[DEBUG] Writing registry file -> $RegistryPath"
-
-& "$RepoRoot\pipeline\Invoke-RegistryBuild.ps1" @registryParams
+Invoke-RegistryBuild @registryParams
 
 if (-not (Test-Path $RegistryPath)) {
     throw "REGISTRY FAILED: file not created -> $RegistryPath"
@@ -164,12 +147,15 @@ if (-not (Test-Path $RegistryPath)) {
 
 # =========================
 # STEP 3 - THEME
+# FIX: dot-source to load the function, then call it
 # =========================
 Write-Host "`n[STEP 3] Theme build" -ForegroundColor Yellow
 
-& "$RepoRoot\Core\Invoke-IconMatrixTheme.ps1" `
+. "$RepoRoot\Core\Invoke-IconMatrixTheme.ps1"
+
+Invoke-IconMatrixTheme `
     -RegistryPath $RegistryPath `
-    -IconsPath $Processed `
+    -IconsPath    $Processed `
     -ThemeFilePath $ThemePath `
     -DryRun:$DryRun
 

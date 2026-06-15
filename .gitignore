@@ -34,6 +34,8 @@ paths.json
 *.iso
 *.msi
 *.dmg
+#Files no longer used archive, valualble.
+archive/
 
 # =========================
 # BUILD / GENERATED OUTPUT
@@ -77,7 +79,10 @@ source-icons/
 # =========================
 # backups/
 # export/
-# =========================
+
+# =========================
 # Secret scanner working output - never commit
 # =========================
 .secret-scan-output/
+
+

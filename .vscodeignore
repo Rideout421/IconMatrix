@@ -7,3 +7,5 @@ logs/**
 config/**
 *.vsix
 *.log
+#Files no longer used archive, valualble.
+archive/
