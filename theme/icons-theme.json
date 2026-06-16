@@ -51,6 +51,9 @@
                             "amie-icon":  {
                                               "iconPath":  "../processed-icons/amie.png"
                                           },
+                            "ansible-icon":  {
+                                                 "iconPath":  "../processed-icons/ansible.png"
+                                             },
                             "applebusinessmanager-icon":  {
                                                               "iconPath":  "../processed-icons/applebusinessmanager.png"
                                                           },
@@ -78,9 +81,18 @@
                             "awx-icon":  {
                                              "iconPath":  "../processed-icons/awx.png"
                                          },
+                            "azure-icon":  {
+                                               "iconPath":  "../processed-icons/azure.png"
+                                           },
                             "barclays-icon":  {
                                                   "iconPath":  "../processed-icons/barclays.png"
                                               },
+                            "bash-icon":  {
+                                              "iconPath":  "../processed-icons/bash.png"
+                                          },
+                            "batch-icon":  {
+                                               "iconPath":  "../processed-icons/batch.png"
+                                           },
                             "benefits-icon":  {
                                                   "iconPath":  "../processed-icons/benefits.png"
                                               },
@@ -126,6 +138,9 @@
                             "buffer-icon":  {
                                                 "iconPath":  "../processed-icons/buffer.png"
                                             },
+                            "c-icon":  {
+                                           "iconPath":  "../processed-icons/c.png"
+                                       },
                             "canva-icon":  {
                                                "iconPath":  "../processed-icons/canva.png"
                                            },
@@ -138,6 +153,9 @@
                             "centos-icon":  {
                                                 "iconPath":  "../processed-icons/centos.png"
                                             },
+                            "certificate-icon":  {
+                                                     "iconPath":  "../processed-icons/certificate.png"
+                                                 },
                             "cfsparkart-icon":  {
                                                     "iconPath":  "../processed-icons/cfsparkart.png"
                                                 },
@@ -192,6 +210,9 @@
                             "cornerstone-icon":  {
                                                      "iconPath":  "../processed-icons/cornerstone.png"
                                                  },
+                            "cpp-icon":  {
+                                             "iconPath":  "../processed-icons/cpp.png"
+                                         },
                             "craiyon-icon":  {
                                                  "iconPath":  "../processed-icons/craiyon.png"
                                              },
@@ -201,6 +222,12 @@
                             "cronacle-icon":  {
                                                   "iconPath":  "../processed-icons/cronacle.png"
                                               },
+                            "csharp-icon":  {
+                                                "iconPath":  "../processed-icons/csharp.png"
+                                            },
+                            "css-icon":  {
+                                             "iconPath":  "../processed-icons/css.png"
+                                         },
                             "cursor-icon":  {
                                                 "iconPath":  "../processed-icons/cursor.png"
                                             },
@@ -234,6 +261,9 @@
                             "dlvr.it-icon":  {
                                                  "iconPath":  "../processed-icons/dlvr.it.png"
                                              },
+                            "docker-icon":  {
+                                                "iconPath":  "../processed-icons/docker.png"
+                                            },
                             "dolyapp-icon":  {
                                                  "iconPath":  "../processed-icons/dolyapp.png"
                                              },
@@ -252,9 +282,15 @@
                             "enso-icon":  {
                                               "iconPath":  "../processed-icons/enso.png"
                                           },
+                            "env-icon":  {
+                                             "iconPath":  "../processed-icons/env.png"
+                                         },
                             "everlearns-icon":  {
                                                     "iconPath":  "../processed-icons/everlearns.png"
                                                 },
+                            "excel-icon":  {
+                                               "iconPath":  "../processed-icons/excel.png"
+                                           },
                             "expressscripts-icon":  {
                                                         "iconPath":  "../processed-icons/expressscripts.png"
                                                     },
@@ -288,6 +324,9 @@
                             "floridadcf-icon":  {
                                                     "iconPath":  "../processed-icons/floridadcf.png"
                                                 },
+                            "font-icon":  {
+                                              "iconPath":  "../processed-icons/font.png"
+                                          },
                             "foreman-icon":  {
                                                  "iconPath":  "../processed-icons/foreman.png"
                                              },
@@ -327,6 +366,9 @@
                             "gigavuefm-icon":  {
                                                    "iconPath":  "../processed-icons/gigavuefm.png"
                                                },
+                            "git-icon":  {
+                                             "iconPath":  "../processed-icons/git.png"
+                                         },
                             "github-icon":  {
                                                 "iconPath":  "../processed-icons/github.png"
                                             },
@@ -345,6 +387,9 @@
                             "gnu-icon":  {
                                              "iconPath":  "../processed-icons/gnu.png"
                                          },
+                            "go-icon":  {
+                                            "iconPath":  "../processed-icons/go.png"
+                                        },
                             "google-icon":  {
                                                 "iconPath":  "../processed-icons/google.png"
                                             },
@@ -360,6 +405,9 @@
                             "granola-icon":  {
                                                  "iconPath":  "../processed-icons/granola.png"
                                              },
+                            "graphql-icon":  {
+                                                 "iconPath":  "../processed-icons/graphql.png"
+                                             },
                             "grimo-icon":  {
                                                "iconPath":  "../processed-icons/grimo.png"
                                            },
@@ -372,6 +420,9 @@
                             "heathcarebluebook-icon":  {
                                                            "iconPath":  "../processed-icons/heathcarebluebook.png"
                                                        },
+                            "helm-icon":  {
+                                              "iconPath":  "../processed-icons/helm.png"
+                                          },
                             "heygen-icon":  {
                                                 "iconPath":  "../processed-icons/heygen.png"
                                             },
@@ -381,6 +432,9 @@
                             "hpe-icon":  {
                                              "iconPath":  "../processed-icons/hpe.png"
                                          },
+                            "html-icon":  {
+                                              "iconPath":  "../processed-icons/html.png"
+                                          },
                             "hubflo-icon":  {
                                                 "iconPath":  "../processed-icons/hubflo.png"
                                             },
@@ -411,6 +465,9 @@
                             "iffft-icon":  {
                                                "iconPath":  "../processed-icons/iffft.png"
                                            },
+                            "image-icon":  {
+                                               "iconPath":  "../processed-icons/image.png"
+                                           },
                             "imanager-icon":  {
                                                   "iconPath":  "../processed-icons/imanager.png"
                                               },
@@ -432,6 +489,12 @@
                             "jasperart-icon":  {
                                                    "iconPath":  "../processed-icons/jasperart.png"
                                                },
+                            "java-icon":  {
+                                              "iconPath":  "../processed-icons/java.png"
+                                          },
+                            "javascript-icon":  {
+                                                    "iconPath":  "../processed-icons/javascript.png"
+                                                },
                             "jea-icon":  {
                                              "iconPath":  "../processed-icons/jea.png"
                                          },
@@ -444,6 +507,9 @@
                             "jobschatai-icon":  {
                                                     "iconPath":  "../processed-icons/jobschatai.png"
                                                 },
+                            "json-icon":  {
+                                              "iconPath":  "../processed-icons/json.png"
+                                          },
                             "jumpserver-icon":  {
                                                     "iconPath":  "../processed-icons/jumpserver.png"
                                                 },
@@ -486,6 +552,9 @@
                             "linkedinlearning-icon":  {
                                                           "iconPath":  "../processed-icons/linkedinlearning.png"
                                                       },
+                            "linux-icon":  {
+                                               "iconPath":  "../processed-icons/linux.png"
+                                           },
                             "linuxmint-icon":  {
                                                    "iconPath":  "../processed-icons/linuxmint.png"
                                                },
@@ -513,6 +582,9 @@
                             "manus-icon":  {
                                                "iconPath":  "../processed-icons/manus.png"
                                            },
+                            "markdown-icon":  {
+                                                  "iconPath":  "../processed-icons/markdown.png"
+                                              },
                             "marketingblocksai-icon":  {
                                                            "iconPath":  "../processed-icons/marketingblocksai.png"
                                                        },
@@ -633,6 +705,9 @@
                             "paid-icon":  {
                                               "iconPath":  "../processed-icons/paid.png"
                                           },
+                            "pdf-icon":  {
+                                             "iconPath":  "../processed-icons/pdf.png"
+                                         },
                             "pearsonvue-icon":  {
                                                     "iconPath":  "../processed-icons/pearsonvue.png"
                                                 },
@@ -651,6 +726,9 @@
                             "personalvendorsupport-icon":  {
                                                                "iconPath":  "../processed-icons/personalvendorsupport.png"
                                                            },
+                            "php-icon":  {
+                                             "iconPath":  "../processed-icons/php.png"
+                                         },
                             "pic-icon":  {
                                              "iconPath":  "../processed-icons/pic.png"
                                          },
@@ -681,6 +759,9 @@
                             "powerbi-icon":  {
                                                  "iconPath":  "../processed-icons/powerbi.png"
                                              },
+                            "powerpoint-icon":  {
+                                                    "iconPath":  "../processed-icons/powerpoint.png"
+                                                },
                             "powershell-icon":  {
                                                     "iconPath":  "../processed-icons/powershell.png"
                                                 },
@@ -717,6 +798,9 @@
                             "purestorage-icon":  {
                                                      "iconPath":  "../processed-icons/purestorage.png"
                                                  },
+                            "python-icon":  {
+                                                "iconPath":  "../processed-icons/python.png"
+                                            },
                             "qualys-icon":  {
                                                 "iconPath":  "../processed-icons/qualys.png"
                                             },
@@ -744,6 +828,9 @@
                             "replicate-icon":  {
                                                    "iconPath":  "../processed-icons/replicate.png"
                                                },
+                            "repo-icon":  {
+                                              "iconPath":  "../processed-icons/repo.png"
+                                          },
                             "restream-icon":  {
                                                   "iconPath":  "../processed-icons/restream.png"
                                               },
@@ -780,9 +867,15 @@
                             "rubrik-icon":  {
                                                 "iconPath":  "../processed-icons/rubrik.png"
                                             },
+                            "ruby-icon":  {
+                                              "iconPath":  "../processed-icons/ruby.png"
+                                          },
                             "runway-icon":  {
                                                 "iconPath":  "../processed-icons/runway.png"
                                             },
+                            "rust-icon":  {
+                                              "iconPath":  "../processed-icons/rust.png"
+                                          },
                             "rxss-icon":  {
                                               "iconPath":  "../processed-icons/rxss.png"
                                           },
@@ -867,6 +960,9 @@
                             "spinachai-icon":  {
                                                    "iconPath":  "../processed-icons/spinachai.png"
                                                },
+                            "sql-icon":  {
+                                             "iconPath":  "../processed-icons/sql.png"
+                                         },
                             "stablecog-icon":  {
                                                    "iconPath":  "../processed-icons/stablecog.png"
                                                },
@@ -900,6 +996,9 @@
                             "susemanager-icon":  {
                                                      "iconPath":  "../processed-icons/susemanager.png"
                                                  },
+                            "svg-icon":  {
+                                             "iconPath":  "../processed-icons/svg.png"
+                                         },
                             "t2platformlinux-icon":  {
                                                          "iconPath":  "../processed-icons/t2platformlinux.png"
                                                      },
@@ -921,6 +1020,9 @@
                             "terraform-icon":  {
                                                    "iconPath":  "../processed-icons/terraform.png"
                                                },
+                            "text-icon":  {
+                                              "iconPath":  "../processed-icons/text.png"
+                                          },
                             "theleap-icon":  {
                                                  "iconPath":  "../processed-icons/theleap.png"
                                              },
@@ -933,6 +1035,9 @@
                             "timelessos-icon":  {
                                                     "iconPath":  "../processed-icons/timelessos.png"
                                                 },
+                            "toml-icon":  {
+                                              "iconPath":  "../processed-icons/toml.png"
+                                          },
                             "training-icon":  {
                                                   "iconPath":  "../processed-icons/training.png"
                                               },
@@ -945,6 +1050,9 @@
                             "typeform-icon":  {
                                                   "iconPath":  "../processed-icons/typeform.png"
                                               },
+                            "typescript-icon":  {
+                                                    "iconPath":  "../processed-icons/typescript.png"
+                                                },
                             "ubisoft-icon":  {
                                                  "iconPath":  "../processed-icons/ubisoft.png"
                                              },
@@ -1002,6 +1110,9 @@
                             "wombodream-icon":  {
                                                     "iconPath":  "../processed-icons/wombodream.png"
                                                 },
+                            "word-icon":  {
+                                              "iconPath":  "../processed-icons/word.png"
+                                          },
                             "wordpress-icon":  {
                                                    "iconPath":  "../processed-icons/wordpress.png"
                                                },
@@ -1011,12 +1122,21 @@
                             "x-icon":  {
                                            "iconPath":  "../processed-icons/x.png"
                                        },
+                            "xml-icon":  {
+                                             "iconPath":  "../processed-icons/xml.png"
+                                         },
+                            "yaml-icon":  {
+                                              "iconPath":  "../processed-icons/yaml.png"
+                                          },
                             "zapier-icon":  {
                                                 "iconPath":  "../processed-icons/zapier.png"
                                             },
                             "zelle-icon":  {
                                                "iconPath":  "../processed-icons/zelle.png"
                                            },
+                            "zip-icon":  {
+                                             "iconPath":  "../processed-icons/zip.png"
+                                         },
                             "zoom-icon":  {
                                               "iconPath":  "../processed-icons/zoom.png"
                                           }
@@ -1039,6 +1159,8 @@
                            "alight":  "alight-icon",
                            "amazon":  "amazon-icon",
                            "amie":  "amie-icon",
+                           "yml":  "ansible-icon",
+                           "yaml":  "ansible-icon",
                            "applebusinessmanager":  "applebusinessmanager-icon",
                            "arcdev":  "arcdev-icon",
                            "artbreeder":  "artbreeder-icon",
@@ -1049,6 +1171,12 @@
                            "aws":  "aws-icon",
                            "awx":  "awx-icon",
                            "barclays":  "barclays-icon",
+                           "sh":  "bash-icon",
+                           "bash":  "bash-icon",
+                           "zsh":  "bash-icon",
+                           "fish":  "bash-icon",
+                           "bat":  "batch-icon",
+                           "cmd":  "batch-icon",
                            "benefits":  "benefits-icon",
                            "betterment":  "betterment-icon",
                            "bicep":  "bicep-icon",
@@ -1064,9 +1192,16 @@
                            "brave":  "brave-icon",
                            "broadcom":  "broadcom-icon",
                            "buffer":  "buffer-icon",
+                           "c":  "c-icon",
+                           "h":  "c-icon",
                            "canva":  "canva-icon",
                            "canyonai":  "canyonai-icon",
                            "capacities":  "capacities-icon",
+                           "crt":  "certificate-icon",
+                           "cer":  "certificate-icon",
+                           "pem":  "certificate-icon",
+                           "key":  "certificate-icon",
+                           "pfx":  "certificate-icon",
                            "cfsparkart":  "cfsparkart-icon",
                            "chase":  "chase-icon",
                            "chatgpt":  "chatgpt-icon",
@@ -1085,9 +1220,15 @@
                            "computershare":  "computershare-icon",
                            "concur":  "concur-icon",
                            "cornerstone":  "cornerstone-icon",
+                           "cpp":  "cpp-icon",
+                           "cc":  "cpp-icon",
+                           "cxx":  "cpp-icon",
+                           "hpp":  "cpp-icon",
                            "craiyon":  "craiyon-icon",
                            "crewting":  "crewting-icon",
                            "cronacle":  "cronacle-icon",
+                           "cs":  "csharp-icon",
+                           "css":  "css-icon",
                            "cursor":  "cursor-icon",
                            "cyberarc":  "cyberarc-icon",
                            "deepai":  "deepai-icon",
@@ -1098,13 +1239,20 @@
                            "didero":  "didero-icon",
                            "disney+":  "disney+-icon",
                            "dlvr.it":  "dlvr.it-icon",
+                           "dockerfile":  "docker-icon",
+                           "dockerignore":  "docker-icon",
                            "dolyapp":  "dolyapp-icon",
                            "download":  "download-icon",
                            "dreamstudio":  "dreamstudio-icon",
                            "employers":  "employers-icon",
                            "employflorida":  "employflorida-icon",
                            "enso":  "enso-icon",
+                           "env":  "env-icon",
                            "everlearns":  "everlearns-icon",
+                           "xlsx":  "excel-icon",
+                           "xls":  "excel-icon",
+                           "xlsm":  "excel-icon",
+                           "csv":  "excel-icon",
                            "expressscripts":  "expressscripts-icon",
                            "facebook":  "facebook-icon",
                            "federalstudentaid":  "federalstudentaid-icon",
@@ -1116,6 +1264,10 @@
                            "flir":  "flir-icon",
                            "floridablue":  "floridablue-icon",
                            "floridadcf":  "floridadcf-icon",
+                           "ttf":  "font-icon",
+                           "otf":  "font-icon",
+                           "woff":  "font-icon",
+                           "woff2":  "font-icon",
                            "foreman":  "foreman-icon",
                            "fotor":  "fotor-icon",
                            "freetaxusa":  "freetaxusa-icon",
@@ -1133,10 +1285,13 @@
                            "gmail":  "gmail-icon",
                            "gnome":  "gnome-icon",
                            "gnu":  "gnu-icon",
+                           "go":  "go-icon",
                            "google":  "google-icon",
                            "goprofiles":  "goprofiles-icon",
                            "grainger":  "grainger-icon",
                            "granola":  "granola-icon",
+                           "graphql":  "graphql-icon",
+                           "gql":  "graphql-icon",
                            "grimo":  "grimo-icon",
                            "gumloop":  "gumloop-icon",
                            "healthequity":  "healthequity-icon",
@@ -1144,6 +1299,8 @@
                            "heygen":  "heygen-icon",
                            "hirebase":  "hirebase-icon",
                            "hpe":  "hpe-icon",
+                           "html":  "html-icon",
+                           "htm":  "html-icon",
                            "hubflo":  "hubflo-icon",
                            "huggingface":  "huggingface-icon",
                            "hulu":  "hulu-icon",
@@ -1154,6 +1311,14 @@
                            "idme":  "idme-icon",
                            "iessharepoint":  "iessharepoint-icon",
                            "iffft":  "iffft-icon",
+                           "png":  "image-icon",
+                           "jpg":  "image-icon",
+                           "jpeg":  "image-icon",
+                           "gif":  "image-icon",
+                           "bmp":  "image-icon",
+                           "webp":  "image-icon",
+                           "ico":  "image-icon",
+                           "tiff":  "image-icon",
                            "imanager":  "imanager-icon",
                            "inrō":  "inrō-icon",
                            "instagram":  "instagram-icon",
@@ -1161,17 +1326,24 @@
                            "ivanti":  "ivanti-icon",
                            "jamf":  "jamf-icon",
                            "jasperart":  "jasperart-icon",
+                           "java":  "java-icon",
+                           "class":  "java-icon",
+                           "jar":  "java-icon",
+                           "js":  "javascript-icon",
+                           "jsx":  "javascript-icon",
+                           "mjs":  "javascript-icon",
+                           "cjs":  "javascript-icon",
                            "jea":  "jea-icon",
                            "jetblue":  "jetblue-icon",
                            "jobrightai":  "jobrightai-icon",
                            "jobschatai":  "jobschatai-icon",
+                           "json":  "json-icon",
+                           "jsonc":  "json-icon",
                            "jumpserver":  "jumpserver-icon",
                            "kalilinuxsubsystem":  "kalilinuxsubsystem-icon",
                            "keypass":  "keypass-icon",
                            "kickresume":  "kickresume-icon",
                            "kompyte":  "kompyte-icon",
-                           "yaml":  "kubernetes-icon",
-                           "yml":  "kubernetes-icon",
                            "landry\u0027s":  "landry\u0027s-icon",
                            "lateron":  "lateron-icon",
                            "layerpath":  "layerpath-icon",
@@ -1189,6 +1361,9 @@
                            "lowe\u0027s":  "lowe\u0027s-icon",
                            "magicjack":  "magicjack-icon",
                            "manus":  "manus-icon",
+                           "md":  "markdown-icon",
+                           "mdx":  "markdown-icon",
+                           "markdown":  "markdown-icon",
                            "marketingblocksai":  "marketingblocksai-icon",
                            "mastodon":  "mastodon-icon",
                            "mbbradiology":  "mbbradiology-icon",
@@ -1229,12 +1404,14 @@
                            "outagecalendar":  "outagecalendar-icon",
                            "pabbly":  "pabbly-icon",
                            "paid":  "paid-icon",
+                           "pdf":  "pdf-icon",
                            "pearsonvue":  "pearsonvue-icon",
                            "peek":  "peek-icon",
                            "perkspot":  "perkspot-icon",
                            "persanaai":  "persanaai-icon",
                            "personallab":  "personallab-icon",
                            "personalvendorsupport":  "personalvendorsupport-icon",
+                           "php":  "php-icon",
                            "pic":  "pic-icon",
                            "picsart":  "picsart-icon",
                            "pika":  "pika-icon",
@@ -1245,6 +1422,8 @@
                            "poe":  "poe-icon",
                            "postgessql":  "postgessql-icon",
                            "powerbi":  "powerbi-icon",
+                           "pptx":  "powerpoint-icon",
+                           "ppt":  "powerpoint-icon",
                            "ps1":  "powershell-icon",
                            "psm1":  "powershell-icon",
                            "psd1":  "powershell-icon",
@@ -1259,6 +1438,9 @@
                            "prudentialfinancial":  "prudentialfinancial-icon",
                            "puppet":  "puppet-icon",
                            "purestorage":  "purestorage-icon",
+                           "py":  "python-icon",
+                           "pyw":  "python-icon",
+                           "pyi":  "python-icon",
                            "qualys":  "qualys-icon",
                            "quest":  "quest-icon",
                            "questionbase":  "questionbase-icon",
@@ -1268,6 +1450,7 @@
                            "reforge":  "reforge-icon",
                            "relayapp":  "relayapp-icon",
                            "replicate":  "replicate-icon",
+                           "repo":  "repo-icon",
                            "restream":  "restream-icon",
                            "resumerocket":  "resumerocket-icon",
                            "rideout":  "rideout-icon",
@@ -1280,7 +1463,11 @@
                            "rockylinux":  "rockylinux-icon",
                            "roush":  "roush-icon",
                            "rubrik":  "rubrik-icon",
+                           "rb":  "ruby-icon",
+                           "erb":  "ruby-icon",
                            "runway":  "runway-icon",
+                           "rs":  "rust-icon",
+                           "toml":  "rust-icon",
                            "rxss":  "rxss-icon",
                            "salliemae":  "salliemae-icon",
                            "samwellai":  "samwellai-icon",
@@ -1309,6 +1496,7 @@
                            "speechtonote":  "speechtonote-icon",
                            "spiceworks":  "spiceworks-icon",
                            "spinachai":  "spinachai-icon",
+                           "sql":  "sql-icon",
                            "stablecog":  "stablecog-icon",
                            "stablediffusion":  "stablediffusion-icon",
                            "starryai":  "starryai-icon",
@@ -1320,6 +1508,7 @@
                            "surveymonkey":  "surveymonkey-icon",
                            "suse":  "suse-icon",
                            "susemanager":  "susemanager-icon",
+                           "svg":  "svg-icon",
                            "t2platformlinux":  "t2platformlinux-icon",
                            "talentlyai":  "talentlyai-icon",
                            "talentquest":  "talentquest-icon",
@@ -1329,6 +1518,8 @@
                            "tf":  "terraform-icon",
                            "tfvars":  "terraform-icon",
                            "tfstate":  "terraform-icon",
+                           "txt":  "text-icon",
+                           "log":  "text-icon",
                            "theleap":  "theleap-icon",
                            "thelinuxfoundation":  "thelinuxfoundation-icon",
                            "thycotic":  "thycotic-icon",
@@ -1337,6 +1528,8 @@
                            "travel":  "travel-icon",
                            "turbotax®":  "turbotax®-icon",
                            "typeform":  "typeform-icon",
+                           "ts":  "typescript-icon",
+                           "tsx":  "typescript-icon",
                            "ubisoft":  "ubisoft-icon",
                            "ucsmanager":  "ucsmanager-icon",
                            "unitedhealthcare":  "unitedhealthcare-icon",
@@ -1353,22 +1546,56 @@
                            "wellsfargo":  "wellsfargo-icon",
                            "wisprflow":  "wisprflow-icon",
                            "wombodream":  "wombodream-icon",
+                           "docx":  "word-icon",
+                           "doc":  "word-icon",
                            "wordpress":  "wordpress-icon",
                            "workingadvantage":  "workingadvantage-icon",
                            "x":  "x-icon",
+                           "xml":  "xml-icon",
+                           "xsd":  "xml-icon",
+                           "xsl":  "xml-icon",
+                           "xslt":  "xml-icon",
+                           "csproj":  "xml-icon",
+                           "vbproj":  "xml-icon",
+                           "props":  "xml-icon",
+                           "targets":  "xml-icon",
                            "zapier":  "zapier-icon",
                            "zelle":  "zelle-icon",
+                           "zip":  "zip-icon",
+                           "tar":  "zip-icon",
+                           "gz":  "zip-icon",
+                           "7z":  "zip-icon",
+                           "rar":  "zip-icon",
                            "zoom":  "zoom-icon"
                        },
     "fileNames":  {
+                      "playbook.yml":  "ansible-icon",
+                      "site.yml":  "ansible-icon",
+                      "inventory.yml":  "ansible-icon",
+                      "Dockerfile":  "docker-icon",
+                      ".dockerignore":  "docker-icon",
+                      "docker-compose.yml":  "docker-icon",
+                      "docker-compose.yaml":  "docker-icon",
+                      ".env":  "env-icon",
+                      ".env.local":  "env-icon",
+                      ".env.production":  "env-icon",
+                      ".env.development":  "env-icon",
                       ".gitignore":  "github-icon",
                       ".gitattributes":  "github-icon",
                       ".gitmodules":  "github-icon",
                       ".gitlab-ci.yml":  "gitlab-icon",
                       "kustomization.yaml":  "kubernetes-icon",
                       "kustomization.yml":  "kubernetes-icon",
+                      "README.md":  "markdown-icon",
+                      "CHANGELOG.md":  "markdown-icon",
+                      "CONTRIBUTING.md":  "markdown-icon",
+                      "LICENSE.md":  "markdown-icon",
                       ".terraformrc":  "terraform-icon",
                       "terraform.tfvars":  "terraform-icon",
+                      "LICENSE":  "text-icon",
+                      "LICENCE":  "text-icon",
+                      "NOTICE":  "text-icon",
+                      "AUTHORS":  "text-icon",
                       ".vscodeignore":  "vscode-icon",
                       ".vscode":  "vscode-icon"
                   },
