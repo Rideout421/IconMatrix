@@ -1,4 +1,15 @@
 ﻿{
+    "fileNames":  {
+                      "kustomization.yaml":  "kubernetes-icon",
+                      ".gitattributes":  "github-icon",
+                      ".gitmodules":  "github-icon",
+                      ".gitlab-ci.yml":  "gitlab-icon",
+                      ".vscode":  "vscode-icon",
+                      "kustomization.yml":  "kubernetes-icon",
+                      ".vscodeignore":  "vscode-icon",
+                      ".gitignore":  "github-icon"
+                  },
+    "folder":  "general-icon",
     "iconDefinitions":  {
                             "oliv-icon":  {
                                               "iconPath":  "processed-icons/oliv.png"
@@ -1003,19 +1014,6 @@
                                                       "iconPath":  "processed-icons/adobefirefly.png"
                                                   }
                         },
-    "fileNames":  {
-                      "kustomization.yaml":  "kubernetes-icon",
-                      ".gitattributes":  "github-icon",
-                      ".gitmodules":  "github-icon",
-                      ".gitlab-ci.yml":  "gitlab-icon",
-                      ".vscode":  "vscode-icon",
-                      "kustomization.yml":  "kubernetes-icon",
-                      ".vscodeignore":  "vscode-icon",
-                      ".gitignore":  "github-icon"
-                  },
-    "folder":  {
-
-               },
     "fileExtensions":  {
                            "deepdreamgenerator":  "deepdreamgenerator-icon",
                            "prodia":  "prodia-icon",
@@ -1344,7 +1342,5 @@
                            "ganai":  "ganai-icon",
                            "teladoc":  "teladoc-icon"
                        },
-    "file":  {
-
-             }
+    "file":  "general-icon"
 }

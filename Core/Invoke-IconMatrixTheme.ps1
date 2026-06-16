@@ -63,7 +63,7 @@ function Invoke-IconMatrixTheme {
     }
 
     # -------------------------
-    # LOAD ICONS (CRITICAL DEBUG POINT)
+    # LOAD ICONS
     # -------------------------
     $icons = Get-ChildItem -Path $IconsPath -Recurse -File -Filter *.png -ErrorAction SilentlyContinue
 
@@ -86,7 +86,6 @@ function Invoke-IconMatrixTheme {
 
     foreach ($icon in $icons) {
         $id = "$($icon.BaseName)-icon"
-
         $theme.iconDefinitions[$id] = @{
             iconPath = "processed-icons/$($icon.Name)"
         }
@@ -95,22 +94,77 @@ function Invoke-IconMatrixTheme {
     Write-Host "[DEBUG] iconDefinitions = $($theme.iconDefinitions.Count)"
 
     # -------------------------
-    # MAP REGISTRY
+    # MAP REGISTRY (Supports BOTH formats)
     # -------------------------
-    if ($registry.fileNames) {
-        foreach ($p in $registry.fileNames.PSObject.Properties) {
-            $theme.fileNames[$p.Name] = $p.Value
+    $mappedExtensions = 0
+    $mappedNames = 0
+
+    # Case 1: Original mappings.json format (with "extensions" and "fileNames" containing arrays)
+    if ($registry.extensions) {
+        Write-Host "[DEBUG] Using original mappings.json format (extensions + fileNames arrays)" -ForegroundColor Cyan
+
+        if ($registry.extensions) {
+            foreach ($group in $registry.extensions.PSObject.Properties) {
+                $iconId = "$($group.Name)-icon"
+                if ($theme.iconDefinitions.ContainsKey($iconId)) {
+                    foreach ($ext in $group.Value) {
+                        $theme.fileExtensions[$ext] = $iconId
+                        $mappedExtensions++
+                    }
+                }
+            }
+        }
+
+        if ($registry.fileNames) {
+            foreach ($group in $registry.fileNames.PSObject.Properties) {
+                $iconId = "$($group.Name)-icon"
+                if ($theme.iconDefinitions.ContainsKey($iconId)) {
+                    foreach ($name in $group.Value) {
+                        $theme.fileNames[$name] = $iconId
+                        $mappedNames++
+                    }
+                }
+            }
+        }
+    }
+    # Case 2: Flat format (generated icons.json with fileExtensions/fileNames already processed)
+    elseif ($registry.fileExtensions -or $registry.fileNames) {
+        Write-Host "[DEBUG] Using flat registry format" -ForegroundColor Cyan
+
+        if ($registry.fileExtensions) {
+            foreach ($p in $registry.fileExtensions.PSObject.Properties) {
+                $theme.fileExtensions[$p.Name] = $p.Value
+                $mappedExtensions++
+            }
+        }
+        if ($registry.fileNames) {
+            foreach ($p in $registry.fileNames.PSObject.Properties) {
+                $theme.fileNames[$p.Name] = $p.Value
+                $mappedNames++
+            }
         }
     }
 
-    if ($registry.fileExtensions) {
-        foreach ($p in $registry.fileExtensions.PSObject.Properties) {
-            $theme.fileExtensions[$p.Name] = $p.Value
-        }
+    Write-Host "[DEBUG] fileExtensions mapped = $mappedExtensions"
+    Write-Host "[DEBUG] fileNames mapped = $mappedNames"
+
+    # -------------------------
+    # SET DEFAULTS (Critical for icons to show at all)
+    # -------------------------
+    $defaultIcon = "general-icon"
+
+    if (-not $theme.iconDefinitions.ContainsKey($defaultIcon)) {
+        $defaultIcon = $theme.iconDefinitions.Keys | Select-Object -First 1
+        Write-Host "[WARN] 'general-icon' not found, using fallback: $defaultIcon" -ForegroundColor Yellow
     }
 
-    Write-Host "[DEBUG] fileNames = $($theme.fileNames.Count)"
-    Write-Host "[DEBUG] fileExtensions = $($theme.fileExtensions.Count)"
+    if ($defaultIcon) {
+        $theme.file = $defaultIcon
+        $theme.folder = $defaultIcon
+        Write-Host "[DEBUG] Default file/folder icon set to: $defaultIcon" -ForegroundColor Green
+    } else {
+        Write-Host "[WARN] No default icon could be set" -ForegroundColor Yellow
+    }
 
     # -------------------------
     # SERIALIZE JSON
@@ -124,7 +178,7 @@ function Invoke-IconMatrixTheme {
     }
 
     # -------------------------
-    # WRITE FILE (CRITICAL SECTION)
+    # WRITE FILE
     # -------------------------
     Write-Host "[DEBUG] Writing file -> $ThemeFilePath" -ForegroundColor Yellow
 
