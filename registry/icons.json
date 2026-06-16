@@ -1,1692 +1,1342 @@
 ﻿{
     "iconDefinitions":  {
-                            "oliv-icon":  {
-                                              "iconPath":  "./processed-icons/oliv.png"
-                                          },
-                            "lateron-icon":  {
-                                                 "iconPath":  "./processed-icons/lateron.png"
-                                             },
-                            "rideout-icon":  {
-                                                 "iconPath":  "./processed-icons/rideout.png"
-                                             },
-                            "walling-icon":  {
-                                                 "iconPath":  "./processed-icons/walling.png"
-                                             },
-                            "artbreeder-icon":  {
-                                                    "iconPath":  "./processed-icons/artbreeder.png"
-                                                },
-                            "grafana-icon":  {
-                                                 "iconPath":  "./processed-icons/grafana.png"
-                                             },
-                            "hypervisor-icon":  {
-                                                    "iconPath":  "./processed-icons/hypervisor.png"
-                                                },
-                            "deepdreamgenerator-icon":  {
-                                                            "iconPath":  "./processed-icons/deepdreamgenerator.png"
-                                                        },
-                            "namify-icon":  {
-                                                "iconPath":  "./processed-icons/namify.png"
-                                            },
-                            "talentquest-icon":  {
-                                                     "iconPath":  "./processed-icons/talentquest.png"
-                                                 },
-                            "closebot-icon":  {
-                                                  "iconPath":  "./processed-icons/closebot.png"
-                                              },
-                            "asus-icon":  {
-                                              "iconPath":  "./processed-icons/asus.png"
-                                          },
-                            "susemanager-icon":  {
-                                                     "iconPath":  "./processed-icons/susemanager.png"
-                                                 },
-                            "segrewards-icon":  {
-                                                    "iconPath":  "./processed-icons/segrewards.png"
-                                                },
-                            "huggingface-icon":  {
-                                                     "iconPath":  "./processed-icons/huggingface.png"
-                                                 },
-                            "landry\u0027s-icon":  {
-                                                       "iconPath":  "./processed-icons/landry\u0027s.png"
-                                                   },
-                            "craiyon-icon":  {
-                                                 "iconPath":  "./processed-icons/craiyon.png"
-                                             },
-                            "vanguard-icon":  {
-                                                  "iconPath":  "./processed-icons/vanguard.png"
-                                              },
-                            "computershare-icon":  {
-                                                       "iconPath":  "./processed-icons/computershare.png"
-                                                   },
-                            "prodia-icon":  {
-                                                "iconPath":  "./processed-icons/prodia.png"
-                                            },
-                            "murphyusa-icon":  {
-                                                   "iconPath":  "./processed-icons/murphyusa.png"
-                                               },
-                            "mastodon-icon":  {
-                                                  "iconPath":  "./processed-icons/mastodon.png"
-                                              },
-                            "heygen-icon":  {
-                                                "iconPath":  "./processed-icons/heygen.png"
-                                            },
-                            "taskade-icon":  {
-                                                 "iconPath":  "./processed-icons/taskade.png"
-                                             },
-                            "stablediffusion-icon":  {
-                                                         "iconPath":  "./processed-icons/stablediffusion.png"
-                                                     },
-                            "pabbly-icon":  {
-                                                "iconPath":  "./processed-icons/pabbly.png"
-                                            },
-                            "firefox-icon":  {
-                                                 "iconPath":  "./processed-icons/firefox.png"
-                                             },
-                            "brandstudio-icon":  {
-                                                     "iconPath":  "./processed-icons/brandstudio.png"
-                                                 },
-                            "ucsmanager-icon":  {
-                                                    "iconPath":  "./processed-icons/ucsmanager.png"
-                                                },
-                            "powershelluniversal-icon":  {
-                                                             "iconPath":  "./processed-icons/powershelluniversal.png"
-                                                         },
-                            "talknotes-icon":  {
-                                                   "iconPath":  "./processed-icons/talknotes.png"
-                                               },
-                            "magicjack-icon":  {
-                                                   "iconPath":  "./processed-icons/magicjack.png"
-                                               },
-                            "akamai-icon":  {
-                                                "iconPath":  "./processed-icons/akamai.png"
-                                            },
-                            "vanceai-icon":  {
-                                                 "iconPath":  "./processed-icons/vanceai.png"
-                                             },
-                            "expressscripts-icon":  {
-                                                        "iconPath":  "./processed-icons/expressscripts.png"
-                                                    },
-                            "talentlyai-icon":  {
-                                                    "iconPath":  "./processed-icons/talentlyai.png"
-                                                },
-                            "paid-icon":  {
-                                              "iconPath":  "./processed-icons/paid.png"
-                                          },
-                            "prudentialfinancial-icon":  {
-                                                             "iconPath":  "./processed-icons/prudentialfinancial.png"
-                                                         },
-                            "nintendoswitch-icon":  {
-                                                        "iconPath":  "./processed-icons/nintendoswitch.png"
-                                                    },
-                            "absolute-icon":  {
-                                                  "iconPath":  "./processed-icons/absolute.png"
-                                              },
-                            "bizplanr-icon":  {
-                                                  "iconPath":  "./processed-icons/bizplanr.png"
-                                              },
-                            "hirebase-icon":  {
-                                                  "iconPath":  "./processed-icons/hirebase.png"
-                                              },
-                            "simplify-icon":  {
-                                                  "iconPath":  "./processed-icons/simplify.png"
-                                              },
-                            "microsoft-icon":  {
-                                                   "iconPath":  "./processed-icons/microsoft.png"
-                                               },
-                            "myjax-icon":  {
-                                               "iconPath":  "./processed-icons/myjax.png"
-                                           },
-                            "ubuntu-icon":  {
-                                                "iconPath":  "./processed-icons/ubuntu.png"
-                                            },
-                            "minio-icon":  {
-                                               "iconPath":  "./processed-icons/minio.png"
-                                           },
-                            "quest-icon":  {
-                                               "iconPath":  "./processed-icons/quest.png"
-                                           },
-                            "dreamstudio-icon":  {
-                                                     "iconPath":  "./processed-icons/dreamstudio.png"
-                                                 },
-                            "picsart-icon":  {
-                                                 "iconPath":  "./processed-icons/picsart.png"
-                                             },
-                            "zelle-icon":  {
-                                               "iconPath":  "./processed-icons/zelle.png"
-                                           },
-                            "brave-icon":  {
-                                               "iconPath":  "./processed-icons/brave.png"
-                                           },
-                            "kubernetes-icon":  {
-                                                    "iconPath":  "./processed-icons/kubernetes.png"
-                                                },
-                            "canyonai-icon":  {
-                                                  "iconPath":  "./processed-icons/canyonai.png"
-                                              },
-                            "smartliai-icon":  {
-                                                   "iconPath":  "./processed-icons/smartliai.png"
-                                               },
-                            "netscaler-icon":  {
-                                                   "iconPath":  "./processed-icons/netscaler.png"
-                                               },
-                            "skype-icon":  {
-                                               "iconPath":  "./processed-icons/skype.png"
-                                           },
-                            "orcidid-icon":  {
-                                                 "iconPath":  "./processed-icons/orcidid.png"
-                                             },
-                            "financial-icon":  {
-                                                   "iconPath":  "./processed-icons/financial.png"
-                                               },
-                            "thycotic-icon":  {
-                                                  "iconPath":  "./processed-icons/thycotic.png"
-                                              },
-                            "seg-icon":  {
-                                             "iconPath":  "./processed-icons/seg.png"
-                                         },
-                            "pika-icon":  {
-                                              "iconPath":  "./processed-icons/pika.png"
-                                          },
-                            "roush-icon":  {
-                                               "iconPath":  "./processed-icons/roush.png"
-                                           },
-                            "robinhood-icon":  {
-                                                   "iconPath":  "./processed-icons/robinhood.png"
-                                               },
-                            "iffft-icon":  {
-                                               "iconPath":  "./processed-icons/iffft.png"
-                                           },
-                            "amie-icon":  {
-                                              "iconPath":  "./processed-icons/amie.png"
-                                          },
-                            "salliemae-icon":  {
-                                                   "iconPath":  "./processed-icons/salliemae.png"
-                                               },
-                            "onenote-icon":  {
-                                                 "iconPath":  "./processed-icons/onenote.png"
-                                             },
-                            "purestorage-icon":  {
-                                                     "iconPath":  "./processed-icons/purestorage.png"
-                                                 },
-                            "didero-icon":  {
-                                                "iconPath":  "./processed-icons/didero.png"
-                                            },
-                            "gitlab-icon":  {
-                                                "iconPath":  "./processed-icons/gitlab.png"
-                                            },
-                            "roadwayai-icon":  {
-                                                   "iconPath":  "./processed-icons/roadwayai.png"
-                                               },
-                            "lmarena-icon":  {
-                                                 "iconPath":  "./processed-icons/lmarena.png"
-                                             },
-                            "bik-icon":  {
-                                             "iconPath":  "./processed-icons/bik.png"
-                                         },
-                            "granola-icon":  {
-                                                 "iconPath":  "./processed-icons/granola.png"
-                                             },
-                            "secondme-icon":  {
-                                                  "iconPath":  "./processed-icons/secondme.png"
-                                              },
-                            "scribe-icon":  {
-                                                "iconPath":  "./processed-icons/scribe.png"
-                                            },
-                            "surveymonkey-icon":  {
-                                                      "iconPath":  "./processed-icons/surveymonkey.png"
-                                                  },
-                            "floridablue-icon":  {
-                                                     "iconPath":  "./processed-icons/floridablue.png"
-                                                 },
-                            "stonebranch-icon":  {
-                                                     "iconPath":  "./processed-icons/stonebranch.png"
-                                                 },
-                            "hulu-icon":  {
-                                              "iconPath":  "./processed-icons/hulu.png"
-                                          },
-                            "closinglock-icon":  {
-                                                     "iconPath":  "./processed-icons/closinglock.png"
-                                                 },
-                            "sccmreports-icon":  {
-                                                     "iconPath":  "./processed-icons/sccmreports.png"
-                                                 },
-                            "jumpserver-icon":  {
-                                                    "iconPath":  "./processed-icons/jumpserver.png"
-                                                },
-                            "blizzard-icon":  {
-                                                  "iconPath":  "./processed-icons/blizzard.png"
-                                              },
-                            "enso-icon":  {
-                                              "iconPath":  "./processed-icons/enso.png"
-                                          },
-                            "storycheif-icon":  {
-                                                    "iconPath":  "./processed-icons/storycheif.png"
-                                                },
-                            "cloudteam-icon":  {
-                                                   "iconPath":  "./processed-icons/cloudteam.png"
-                                               },
-                            "dlvr.it-icon":  {
-                                                 "iconPath":  "./processed-icons/dlvr.it.png"
-                                             },
-                            "samwellai-icon":  {
-                                                   "iconPath":  "./processed-icons/samwellai.png"
-                                               },
-                            "ubisoft-icon":  {
-                                                 "iconPath":  "./processed-icons/ubisoft.png"
-                                             },
-                            "blaze-icon":  {
-                                               "iconPath":  "./processed-icons/blaze.png"
-                                           },
-                            "layerpath-icon":  {
-                                                   "iconPath":  "./processed-icons/layerpath.png"
-                                               },
-                            "lg-icon":  {
-                                            "iconPath":  "./processed-icons/lg.png"
-                                        },
-                            "gumloop-icon":  {
-                                                 "iconPath":  "./processed-icons/gumloop.png"
-                                             },
-                            "pearsonvue-icon":  {
-                                                    "iconPath":  "./processed-icons/pearsonvue.png"
-                                                },
-                            "msi-icon":  {
-                                             "iconPath":  "./processed-icons/msi.png"
-                                         },
-                            "automation-icon":  {
-                                                    "iconPath":  "./processed-icons/automation.png"
-                                                },
-                            "navient-icon":  {
-                                                 "iconPath":  "./processed-icons/navient.png"
-                                             },
-                            "airwatch-icon":  {
-                                                  "iconPath":  "./processed-icons/airwatch.png"
-                                              },
-                            "rubrik-icon":  {
-                                                "iconPath":  "./processed-icons/rubrik.png"
-                                            },
-                            "veritas-icon":  {
-                                                 "iconPath":  "./processed-icons/veritas.png"
-                                             },
-                            "linkedin-icon":  {
-                                                  "iconPath":  "./processed-icons/linkedin.png"
-                                              },
-                            "pic-icon":  {
-                                             "iconPath":  "./processed-icons/pic.png"
-                                         },
-                            "jea-icon":  {
-                                             "iconPath":  "./processed-icons/jea.png"
-                                         },
-                            "timelessos-icon":  {
-                                                    "iconPath":  "./processed-icons/timelessos.png"
-                                                },
-                            "quraai-icon":  {
-                                                "iconPath":  "./processed-icons/quraai.png"
-                                            },
-                            "bolto-icon":  {
-                                               "iconPath":  "./processed-icons/bolto.png"
-                                           },
-                            "mindosmindverse-icon":  {
-                                                         "iconPath":  "./processed-icons/mindosmindverse.png"
-                                                     },
-                            "ganai-icon":  {
-                                               "iconPath":  "./processed-icons/ganai.png"
-                                           },
-                            "disney+-icon":  {
-                                                 "iconPath":  "./processed-icons/disney+.png"
-                                             },
-                            "riverbed-icon":  {
-                                                  "iconPath":  "./processed-icons/riverbed.png"
-                                              },
-                            "atena-icon":  {
-                                               "iconPath":  "./processed-icons/atena.png"
-                                           },
-                            "codyapp-icon":  {
-                                                 "iconPath":  "./processed-icons/codyapp.png"
-                                             },
-                            "imanager-icon":  {
-                                                  "iconPath":  "./processed-icons/imanager.png"
-                                              },
-                            "reforge-icon":  {
-                                                 "iconPath":  "./processed-icons/reforge.png"
-                                             },
-                            "x-icon":  {
-                                           "iconPath":  "./processed-icons/x.png"
-                                       },
-                            "gnome-icon":  {
-                                               "iconPath":  "./processed-icons/gnome.png"
-                                           },
-                            "goprofiles-icon":  {
-                                                    "iconPath":  "./processed-icons/goprofiles.png"
-                                                },
-                            "nightcafe-icon":  {
-                                                   "iconPath":  "./processed-icons/nightcafe.png"
-                                               },
-                            "buffer-icon":  {
-                                                "iconPath":  "./processed-icons/buffer.png"
-                                            },
-                            "mbbradiology-icon":  {
-                                                      "iconPath":  "./processed-icons/mbbradiology.png"
-                                                  },
-                            "kompyte-icon":  {
-                                                 "iconPath":  "./processed-icons/kompyte.png"
-                                             },
-                            "venafi-icon":  {
-                                                "iconPath":  "./processed-icons/venafi.png"
-                                            },
-                            "general-icon":  {
-                                                 "iconPath":  "./processed-icons/general.png"
-                                             },
-                            "cronacle-icon":  {
-                                                  "iconPath":  "./processed-icons/cronacle.png"
-                                              },
-                            "peek-icon":  {
-                                              "iconPath":  "./processed-icons/peek.png"
-                                          },
-                            "federalstudentaid-icon":  {
-                                                           "iconPath":  "./processed-icons/federalstudentaid.png"
-                                                       },
-                            "arcdev-icon":  {
-                                                "iconPath":  "./processed-icons/arcdev.png"
-                                            },
-                            "aidvantage-icon":  {
-                                                    "iconPath":  "./processed-icons/aidvantage.png"
-                                                },
-                            "rockylinux-icon":  {
-                                                    "iconPath":  "./processed-icons/rockylinux.png"
-                                                },
-                            "workingadvantage-icon":  {
-                                                          "iconPath":  "./processed-icons/workingadvantage.png"
-                                                      },
-                            "postgessql-icon":  {
-                                                    "iconPath":  "./processed-icons/postgessql.png"
-                                                },
-                            "vscode-icon":  {
-                                                "iconPath":  "./processed-icons/vscode.png"
-                                            },
-                            "linkedinlearning-icon":  {
-                                                          "iconPath":  "./processed-icons/linkedinlearning.png"
-                                                      },
-                            "riffo-icon":  {
-                                               "iconPath":  "./processed-icons/riffo.png"
-                                           },
-                            "unitedhealthcare-icon":  {
-                                                          "iconPath":  "./processed-icons/unitedhealthcare.png"
-                                                      },
-                            "monitoring-icon":  {
-                                                    "iconPath":  "./processed-icons/monitoring.png"
-                                                },
-                            "instagram-icon":  {
-                                                   "iconPath":  "./processed-icons/instagram.png"
-                                               },
-                            "bjs-icon":  {
-                                             "iconPath":  "./processed-icons/bjs.png"
-                                         },
-                            "servicenow-icon":  {
-                                                    "iconPath":  "./processed-icons/servicenow.png"
-                                                },
-                            "akool-icon":  {
-                                               "iconPath":  "./processed-icons/akool.png"
-                                           },
-                            "gigavuefm-icon":  {
-                                                   "iconPath":  "./processed-icons/gigavuefm.png"
-                                               },
-                            "at\u0026t-icon":  {
-                                                   "iconPath":  "./processed-icons/at\u0026t.png"
-                                               },
-                            "runway-icon":  {
-                                                "iconPath":  "./processed-icons/runway.png"
-                                            },
-                            "shaped-icon":  {
-                                                "iconPath":  "./processed-icons/shaped.png"
-                                            },
-                            "ivanti-icon":  {
-                                                "iconPath":  "./processed-icons/ivanti.png"
-                                            },
-                            "ice-icon":  {
-                                             "iconPath":  "./processed-icons/ice.png"
-                                         },
-                            "powerbi-icon":  {
-                                                 "iconPath":  "./processed-icons/powerbi.png"
-                                             },
-                            "lowe\u0027s-icon":  {
-                                                     "iconPath":  "./processed-icons/lowe\u0027s.png"
-                                                 },
-                            "leapai-icon":  {
-                                                "iconPath":  "./processed-icons/leapai.png"
-                                            },
-                            "finditnowgps-icon":  {
-                                                      "iconPath":  "./processed-icons/finditnowgps.png"
-                                                  },
-                            "geico-icon":  {
-                                               "iconPath":  "./processed-icons/geico.png"
-                                           },
-                            "producthunt-icon":  {
-                                                     "iconPath":  "./processed-icons/producthunt.png"
-                                                 },
-                            "codemagazine-icon":  {
-                                                      "iconPath":  "./processed-icons/codemagazine.png"
-                                                  },
-                            "gnu-icon":  {
-                                             "iconPath":  "./processed-icons/gnu.png"
-                                         },
-                            "myaskai-icon":  {
-                                                 "iconPath":  "./processed-icons/myaskai.png"
-                                             },
-                            "training-icon":  {
-                                                  "iconPath":  "./processed-icons/training.png"
-                                              },
-                            "citrix-icon":  {
-                                                "iconPath":  "./processed-icons/citrix.png"
-                                            },
-                            "aws-icon":  {
-                                             "iconPath":  "./processed-icons/aws.png"
-                                         },
-                            "crewting-icon":  {
-                                                  "iconPath":  "./processed-icons/crewting.png"
-                                              },
-                            "github-icon":  {
-                                                "iconPath":  "./processed-icons/github.png"
-                                            },
-                            "jobrightai-icon":  {
-                                                    "iconPath":  "./processed-icons/jobrightai.png"
-                                                },
-                            "travel-icon":  {
-                                                "iconPath":  "./processed-icons/travel.png"
-                                            },
-                            "barclays-icon":  {
-                                                  "iconPath":  "./processed-icons/barclays.png"
-                                              },
-                            "pixray-icon":  {
-                                                "iconPath":  "./processed-icons/pixray.png"
-                                            },
-                            "aduro-icon":  {
-                                               "iconPath":  "./processed-icons/aduro.png"
-                                           },
-                            "sequensai-icon":  {
-                                                   "iconPath":  "./processed-icons/sequensai.png"
-                                               },
-                            "zapier-icon":  {
-                                                "iconPath":  "./processed-icons/zapier.png"
-                                            },
-                            "devolutions-icon":  {
-                                                     "iconPath":  "./processed-icons/devolutions.png"
-                                                 },
-                            "myhealthtoolkit-icon":  {
-                                                         "iconPath":  "./processed-icons/myhealthtoolkit.png"
-                                                     },
-                            "securityfirstinsurance-icon":  {
-                                                                "iconPath":  "./processed-icons/securityfirstinsurance.png"
-                                                            },
-                            "kalilinuxsubsystem-icon":  {
-                                                            "iconPath":  "./processed-icons/kalilinuxsubsystem.png"
-                                                        },
-                            "heathcarebluebook-icon":  {
-                                                           "iconPath":  "./processed-icons/heathcarebluebook.png"
-                                                       },
-                            "cornerstone-icon":  {
-                                                     "iconPath":  "./processed-icons/cornerstone.png"
-                                                 },
-                            "interviewschat-icon":  {
-                                                        "iconPath":  "./processed-icons/interviewschat.png"
-                                                    },
-                            "ai-icon":  {
-                                            "iconPath":  "./processed-icons/ai.png"
-                                        },
-                            "everlearns-icon":  {
-                                                    "iconPath":  "./processed-icons/everlearns.png"
-                                                },
-                            "restream-icon":  {
-                                                  "iconPath":  "./processed-icons/restream.png"
-                                              },
-                            "foreman-icon":  {
-                                                 "iconPath":  "./processed-icons/foreman.png"
-                                             },
-                            "shutterstock-icon":  {
-                                                      "iconPath":  "./processed-icons/shutterstock.png"
-                                                  },
                             "15five-icon":  {
                                                 "iconPath":  "./processed-icons/15five.png"
                                             },
-                            "presti-icon":  {
-                                                "iconPath":  "./processed-icons/presti.png"
-                                            },
-                            "localmed-icon":  {
-                                                  "iconPath":  "./processed-icons/localmed.png"
-                                              },
-                            "gettyimages-icon":  {
-                                                     "iconPath":  "./processed-icons/gettyimages.png"
-                                                 },
-                            "outagecalendar-icon":  {
-                                                        "iconPath":  "./processed-icons/outagecalendar.png"
-                                                    },
-                            "personalvendorsupport-icon":  {
-                                                               "iconPath":  "./processed-icons/personalvendorsupport.png"
-                                                           },
-                            "wisprflow-icon":  {
-                                                   "iconPath":  "./processed-icons/wisprflow.png"
-                                               },
-                            "realvnc-icon":  {
-                                                 "iconPath":  "./processed-icons/realvnc.png"
-                                             },
-                            "blogger-icon":  {
-                                                 "iconPath":  "./processed-icons/blogger.png"
-                                             },
-                            "prometheus-icon":  {
-                                                    "iconPath":  "./processed-icons/prometheus.png"
-                                                },
-                            "inrō-icon":  {
-                                              "iconPath":  "./processed-icons/inrō.png"
-                                          },
-                            "activision-icon":  {
-                                                    "iconPath":  "./processed-icons/activision.png"
-                                                },
-                            "openfaas-icon":  {
-                                                  "iconPath":  "./processed-icons/openfaas.png"
-                                              },
-                            "turbotax®-icon":  {
-                                                   "iconPath":  "./processed-icons/turbotax®.png"
-                                               },
-                            "manus-icon":  {
-                                               "iconPath":  "./processed-icons/manus.png"
-                                           },
-                            "veeam-icon":  {
-                                               "iconPath":  "./processed-icons/veeam.png"
-                                           },
-                            "signupgenius-icon":  {
-                                                      "iconPath":  "./processed-icons/signupgenius.png"
-                                                  },
-                            "perkspot-icon":  {
-                                                  "iconPath":  "./processed-icons/perkspot.png"
-                                              },
-                            "questionbase-icon":  {
-                                                      "iconPath":  "./processed-icons/questionbase.png"
-                                                  },
-                            "storage-icon":  {
-                                                 "iconPath":  "./processed-icons/storage.png"
-                                             },
-                            "employers-icon":  {
-                                                   "iconPath":  "./processed-icons/employers.png"
-                                               },
-                            "centos-icon":  {
-                                                "iconPath":  "./processed-icons/centos.png"
-                                            },
-                            "suse-icon":  {
-                                              "iconPath":  "./processed-icons/suse.png"
-                                          },
-                            "microfocus-icon":  {
-                                                    "iconPath":  "./processed-icons/microfocus.png"
-                                                },
-                            "roberthalf-icon":  {
-                                                    "iconPath":  "./processed-icons/roberthalf.png"
-                                                },
-                            "lorexcloud-icon":  {
-                                                    "iconPath":  "./processed-icons/lorexcloud.png"
-                                                },
-                            "stablecog-icon":  {
-                                                   "iconPath":  "./processed-icons/stablecog.png"
-                                               },
-                            "zoom-icon":  {
-                                              "iconPath":  "./processed-icons/zoom.png"
-                                          },
-                            "communityfirst-icon":  {
-                                                        "iconPath":  "./processed-icons/communityfirst.png"
-                                                    },
-                            "commandcenter-icon":  {
-                                                       "iconPath":  "./processed-icons/commandcenter.png"
-                                                   },
-                            "wombodream-icon":  {
-                                                    "iconPath":  "./processed-icons/wombodream.png"
-                                                },
-                            "looka-icon":  {
-                                               "iconPath":  "./processed-icons/looka.png"
-                                           },
-                            "kickresume-icon":  {
-                                                    "iconPath":  "./processed-icons/kickresume.png"
-                                                },
-                            "usbank-icon":  {
-                                                "iconPath":  "./processed-icons/usbank.png"
-                                            },
-                            "mentimeter-icon":  {
-                                                    "iconPath":  "./processed-icons/mentimeter.png"
-                                                },
-                            "marketingblocksai-icon":  {
-                                                           "iconPath":  "./processed-icons/marketingblocksai.png"
-                                                       },
-                            "stockimgai-icon":  {
-                                                    "iconPath":  "./processed-icons/stockimgai.png"
-                                                },
-                            "pncbank-icon":  {
-                                                 "iconPath":  "./processed-icons/pncbank.png"
-                                             },
-                            "cojflorida-icon":  {
-                                                    "iconPath":  "./processed-icons/cojflorida.png"
-                                                },
-                            "typeform-icon":  {
-                                                  "iconPath":  "./processed-icons/typeform.png"
-                                              },
-                            "rxss-icon":  {
-                                              "iconPath":  "./processed-icons/rxss.png"
-                                          },
-                            "steam-icon":  {
-                                               "iconPath":  "./processed-icons/steam.png"
-                                           },
-                            "metaview-icon":  {
-                                                  "iconPath":  "./processed-icons/metaview.png"
-                                              },
-                            "deepai-icon":  {
-                                                "iconPath":  "./processed-icons/deepai.png"
-                                            },
-                            "odoo-icon":  {
-                                              "iconPath":  "./processed-icons/odoo.png"
-                                          },
-                            "dolyapp-icon":  {
-                                                 "iconPath":  "./processed-icons/dolyapp.png"
-                                             },
-                            "prajwaldesai-icon":  {
-                                                      "iconPath":  "./processed-icons/prajwaldesai.png"
-                                                  },
-                            "wordpress-icon":  {
-                                                   "iconPath":  "./processed-icons/wordpress.png"
-                                               },
-                            "linuxmint-icon":  {
-                                                   "iconPath":  "./processed-icons/linuxmint.png"
-                                               },
-                            "codemagazineicon-icon":  {
-                                                          "iconPath":  "./processed-icons/codemagazineicon.png"
-                                                      },
-                            "icloud-icon":  {
-                                                "iconPath":  "./processed-icons/icloud.png"
-                                            },
-                            "chatgpt-icon":  {
-                                                 "iconPath":  "./processed-icons/chatgpt.png"
-                                             },
-                            "gmail-icon":  {
-                                               "iconPath":  "./processed-icons/gmail.png"
-                                           },
-                            "sap-icon":  {
-                                             "iconPath":  "./processed-icons/sap.png"
-                                         },
-                            "vendorsupport-icon":  {
-                                                       "iconPath":  "./processed-icons/vendorsupport.png"
-                                                   },
-                            "midjourney-icon":  {
-                                                    "iconPath":  "./processed-icons/midjourney.png"
-                                                },
-                            "speechtonote-icon":  {
-                                                      "iconPath":  "./processed-icons/speechtonote.png"
-                                                  },
-                            "dell-icon":  {
-                                              "iconPath":  "./processed-icons/dell.png"
-                                          },
-                            "jasperart-icon":  {
-                                                   "iconPath":  "./processed-icons/jasperart.png"
-                                               },
-                            "solarwinds-icon":  {
-                                                    "iconPath":  "./processed-icons/solarwinds.png"
-                                                },
-                            "comptia-icon":  {
-                                                 "iconPath":  "./processed-icons/comptia.png"
-                                             },
                             "24seven-icon":  {
                                                  "iconPath":  "./processed-icons/24seven.png"
                                              },
-                            "dellemc-icon":  {
-                                                 "iconPath":  "./processed-icons/dellemc.png"
-                                             },
-                            "flir-icon":  {
-                                              "iconPath":  "./processed-icons/flir.png"
-                                          },
-                            "grainger-icon":  {
-                                                  "iconPath":  "./processed-icons/grainger.png"
+                            "absolute-icon":  {
+                                                  "iconPath":  "./processed-icons/absolute.png"
                                               },
-                            "wellsfargo-icon":  {
-                                                    "iconPath":  "./processed-icons/wellsfargo.png"
+                            "acorns-icon":  {
+                                                "iconPath":  "./processed-icons/acorns.png"
+                                            },
+                            "activision-icon":  {
+                                                    "iconPath":  "./processed-icons/activision.png"
                                                 },
-                            "keypass-icon":  {
-                                                 "iconPath":  "./processed-icons/keypass.png"
-                                             },
-                            "sonnet-icon":  {
-                                                "iconPath":  "./processed-icons/sonnet.png"
-                                            },
-                            "benefits-icon":  {
-                                                  "iconPath":  "./processed-icons/benefits.png"
-                                              },
-                            "relayapp-icon":  {
-                                                  "iconPath":  "./processed-icons/relayapp.png"
-                                              },
-                            "healthequity-icon":  {
-                                                      "iconPath":  "./processed-icons/healthequity.png"
+                            "adobefirefly-icon":  {
+                                                      "iconPath":  "./processed-icons/adobefirefly.png"
                                                   },
-                            "cursor-icon":  {
-                                                "iconPath":  "./processed-icons/cursor.png"
-                                            },
-                            "scadepro-icon":  {
-                                                  "iconPath":  "./processed-icons/scadepro.png"
-                                              },
-                            "opinionstage-icon":  {
-                                                      "iconPath":  "./processed-icons/opinionstage.png"
-                                                  },
-                            "broadcom-icon":  {
-                                                  "iconPath":  "./processed-icons/broadcom.png"
-                                              },
-                            "debian-icon":  {
-                                                "iconPath":  "./processed-icons/debian.png"
-                                            },
-                            "iessharepoint-icon":  {
-                                                       "iconPath":  "./processed-icons/iessharepoint.png"
-                                                   },
-                            "let\u0027senhance-icon":  {
-                                                           "iconPath":  "./processed-icons/let\u0027senhance.png"
-                                                       },
-                            "chase-icon":  {
-                                               "iconPath":  "./processed-icons/chase.png"
-                                           },
-                            "hpe-icon":  {
-                                             "iconPath":  "./processed-icons/hpe.png"
-                                         },
-                            "fidelity-icon":  {
-                                                  "iconPath":  "./processed-icons/fidelity.png"
-                                              },
-                            "jetblue-icon":  {
-                                                 "iconPath":  "./processed-icons/jetblue.png"
-                                             },
-                            "vmware-icon":  {
-                                                "iconPath":  "./processed-icons/vmware.png"
-                                            },
-                            "socialmedia-icon":  {
-                                                     "iconPath":  "./processed-icons/socialmedia.png"
-                                                 },
                             "adp-icon":  {
                                              "iconPath":  "./processed-icons/adp.png"
                                          },
-                            "loveable-icon":  {
-                                                  "iconPath":  "./processed-icons/loveable.png"
+                            "aduro-icon":  {
+                                               "iconPath":  "./processed-icons/aduro.png"
+                                           },
+                            "aestudio-icon":  {
+                                                  "iconPath":  "./processed-icons/aestudio.png"
                                               },
-                            "namelix-icon":  {
-                                                 "iconPath":  "./processed-icons/namelix.png"
-                                             },
-                            "acorns-icon":  {
-                                                "iconPath":  "./processed-icons/acorns.png"
+                            "ai-icon":  {
+                                            "iconPath":  "./processed-icons/ai.png"
+                                        },
+                            "aidvantage-icon":  {
+                                                    "iconPath":  "./processed-icons/aidvantage.png"
+                                                },
+                            "airwatch-icon":  {
+                                                  "iconPath":  "./processed-icons/airwatch.png"
+                                              },
+                            "akamai-icon":  {
+                                                "iconPath":  "./processed-icons/akamai.png"
+                                            },
+                            "akool-icon":  {
+                                               "iconPath":  "./processed-icons/akool.png"
+                                           },
+                            "alight-icon":  {
+                                                "iconPath":  "./processed-icons/alight.png"
                                             },
                             "amazon-icon":  {
                                                 "iconPath":  "./processed-icons/amazon.png"
                                             },
-                            "employflorida-icon":  {
-                                                       "iconPath":  "./processed-icons/employflorida.png"
-                                                   },
-                            "concur-icon":  {
-                                                "iconPath":  "./processed-icons/concur.png"
+                            "amie-icon":  {
+                                              "iconPath":  "./processed-icons/amie.png"
+                                          },
+                            "applebusinessmanager-icon":  {
+                                                              "iconPath":  "./processed-icons/applebusinessmanager.png"
+                                                          },
+                            "arcdev-icon":  {
+                                                "iconPath":  "./processed-icons/arcdev.png"
                                             },
-                            "starryai-icon":  {
-                                                  "iconPath":  "./processed-icons/starryai.png"
-                                              },
-                            "puppet-icon":  {
-                                                "iconPath":  "./processed-icons/puppet.png"
-                                            },
-                            "qualys-icon":  {
-                                                "iconPath":  "./processed-icons/qualys.png"
-                                            },
-                            "teladoc-icon":  {
-                                                 "iconPath":  "./processed-icons/teladoc.png"
-                                             },
-                            "download-icon":  {
-                                                  "iconPath":  "./processed-icons/download.png"
-                                              },
-                            "aestudio-icon":  {
-                                                  "iconPath":  "./processed-icons/aestudio.png"
-                                              },
-                            "hubflo-icon":  {
-                                                "iconPath":  "./processed-icons/hubflo.png"
-                                            },
-                            "pluralsight-icon":  {
-                                                     "iconPath":  "./processed-icons/pluralsight.png"
-                                                 },
-                            "grimo-icon":  {
-                                               "iconPath":  "./processed-icons/grimo.png"
+                            "artbreeder-icon":  {
+                                                    "iconPath":  "./processed-icons/artbreeder.png"
+                                                },
+                            "asus-icon":  {
+                                              "iconPath":  "./processed-icons/asus.png"
+                                          },
+                            "at\u0026t-icon":  {
+                                                   "iconPath":  "./processed-icons/at\u0026t.png"
+                                               },
+                            "atena-icon":  {
+                                               "iconPath":  "./processed-icons/atena.png"
                                            },
-                            "gamma-icon":  {
-                                               "iconPath":  "./processed-icons/gamma.png"
+                            "automation-icon":  {
+                                                    "iconPath":  "./processed-icons/automation.png"
+                                                },
+                            "aws-icon":  {
+                                             "iconPath":  "./processed-icons/aws.png"
+                                         },
+                            "barclays-icon":  {
+                                                  "iconPath":  "./processed-icons/barclays.png"
+                                              },
+                            "benefits-icon":  {
+                                                  "iconPath":  "./processed-icons/benefits.png"
+                                              },
+                            "betterment-icon":  {
+                                                    "iconPath":  "./processed-icons/betterment.png"
+                                                },
+                            "bik-icon":  {
+                                             "iconPath":  "./processed-icons/bik.png"
+                                         },
+                            "bizplanr-icon":  {
+                                                  "iconPath":  "./processed-icons/bizplanr.png"
+                                              },
+                            "bjs-icon":  {
+                                             "iconPath":  "./processed-icons/bjs.png"
+                                         },
+                            "blaze-icon":  {
+                                               "iconPath":  "./processed-icons/blaze.png"
+                                           },
+                            "blizzard-icon":  {
+                                                  "iconPath":  "./processed-icons/blizzard.png"
+                                              },
+                            "blogger-icon":  {
+                                                 "iconPath":  "./processed-icons/blogger.png"
+                                             },
+                            "bolto-icon":  {
+                                               "iconPath":  "./processed-icons/bolto.png"
                                            },
                             "box-icon":  {
                                              "iconPath":  "./processed-icons/box.png"
                                          },
-                            "proton-icon":  {
-                                                "iconPath":  "./processed-icons/proton.png"
-                                            },
-                            "cyberarc-icon":  {
-                                                  "iconPath":  "./processed-icons/cyberarc.png"
-                                              },
-                            "redhatsatellite-icon":  {
-                                                         "iconPath":  "./processed-icons/redhatsatellite.png"
-                                                     },
-                            "spiceworks-icon":  {
-                                                    "iconPath":  "./processed-icons/spiceworks.png"
-                                                },
-                            "shellpointmortgage-icon":  {
-                                                            "iconPath":  "./processed-icons/shellpointmortgage.png"
-                                                        },
-                            "persanaai-icon":  {
-                                                   "iconPath":  "./processed-icons/persanaai.png"
-                                               },
-                            "fotor-icon":  {
-                                               "iconPath":  "./processed-icons/fotor.png"
-                                           },
-                            "personallab-icon":  {
-                                                     "iconPath":  "./processed-icons/personallab.png"
+                            "brandstudio-icon":  {
+                                                     "iconPath":  "./processed-icons/brandstudio.png"
                                                  },
-                            "floridadcf-icon":  {
-                                                    "iconPath":  "./processed-icons/floridadcf.png"
-                                                },
-                            "middayai-icon":  {
-                                                  "iconPath":  "./processed-icons/middayai.png"
+                            "brave-icon":  {
+                                               "iconPath":  "./processed-icons/brave.png"
+                                           },
+                            "broadcom-icon":  {
+                                                  "iconPath":  "./processed-icons/broadcom.png"
                                               },
-                            "globalcommandcenter-icon":  {
-                                                             "iconPath":  "./processed-icons/globalcommandcenter.png"
-                                                         },
-                            "gaming-icon":  {
-                                                "iconPath":  "./processed-icons/gaming.png"
+                            "buffer-icon":  {
+                                                "iconPath":  "./processed-icons/buffer.png"
                                             },
-                            "frontlyai-icon":  {
-                                                   "iconPath":  "./processed-icons/frontlyai.png"
-                                               },
-                            "semrush-icon":  {
-                                                 "iconPath":  "./processed-icons/semrush.png"
-                                             },
-                            "replicate-icon":  {
-                                                   "iconPath":  "./processed-icons/replicate.png"
-                                               },
-                            "riverside-icon":  {
-                                                   "iconPath":  "./processed-icons/riverside.png"
-                                               },
-                            "skybell-icon":  {
-                                                 "iconPath":  "./processed-icons/skybell.png"
-                                             },
-                            "ibmcloud-icon":  {
-                                                  "iconPath":  "./processed-icons/ibmcloud.png"
+                            "canva-icon":  {
+                                               "iconPath":  "./processed-icons/canva.png"
+                                           },
+                            "canyonai-icon":  {
+                                                  "iconPath":  "./processed-icons/canyonai.png"
                                               },
                             "capacities-icon":  {
                                                     "iconPath":  "./processed-icons/capacities.png"
                                                 },
-                            "canva-icon":  {
-                                               "iconPath":  "./processed-icons/canva.png"
-                                           },
-                            "resumerocket-icon":  {
-                                                      "iconPath":  "./processed-icons/resumerocket.png"
-                                                  },
-                            "google-icon":  {
-                                                "iconPath":  "./processed-icons/google.png"
+                            "centos-icon":  {
+                                                "iconPath":  "./processed-icons/centos.png"
                                             },
-                            "myspacemobsters-icon":  {
-                                                         "iconPath":  "./processed-icons/myspacemobsters.png"
-                                                     },
-                            "getimgai-icon":  {
-                                                  "iconPath":  "./processed-icons/getimgai.png"
-                                              },
-                            "alight-icon":  {
-                                                "iconPath":  "./processed-icons/alight.png"
-                                            },
-                            "jamf-icon":  {
-                                              "iconPath":  "./processed-icons/jamf.png"
-                                          },
-                            "vidyard-icon":  {
-                                                 "iconPath":  "./processed-icons/vidyard.png"
-                                             },
-                            "t2platformlinux-icon":  {
-                                                         "iconPath":  "./processed-icons/t2platformlinux.png"
-                                                     },
-                            "facebook-icon":  {
-                                                  "iconPath":  "./processed-icons/facebook.png"
-                                              },
-                            "jobschatai-icon":  {
-                                                    "iconPath":  "./processed-icons/jobschatai.png"
-                                                },
-                            "ocoya-icon":  {
-                                               "iconPath":  "./processed-icons/ocoya.png"
-                                           },
-                            "myhealthone-icon":  {
-                                                     "iconPath":  "./processed-icons/myhealthone.png"
-                                                 },
-                            "netflix-icon":  {
-                                                 "iconPath":  "./processed-icons/netflix.png"
-                                             },
-                            "freetaxusa-icon":  {
-                                                    "iconPath":  "./processed-icons/freetaxusa.png"
-                                                },
-                            "poe-icon":  {
-                                             "iconPath":  "./processed-icons/poe.png"
-                                         },
-                            "thelinuxfoundation-icon":  {
-                                                            "iconPath":  "./processed-icons/thelinuxfoundation.png"
-                                                        },
-                            "playstation-icon":  {
-                                                     "iconPath":  "./processed-icons/playstation.png"
-                                                 },
-                            "verizon-icon":  {
-                                                 "iconPath":  "./processed-icons/verizon.png"
-                                             },
-                            "oraclesolaris-icon":  {
-                                                       "iconPath":  "./processed-icons/oraclesolaris.png"
-                                                   },
-                            "betterment-icon":  {
-                                                    "iconPath":  "./processed-icons/betterment.png"
-                                                },
-                            "opentext-icon":  {
-                                                  "iconPath":  "./processed-icons/opentext.png"
-                                              },
-                            "fedoralinux-icon":  {
-                                                     "iconPath":  "./processed-icons/fedoralinux.png"
-                                                 },
                             "cfsparkart-icon":  {
                                                     "iconPath":  "./processed-icons/cfsparkart.png"
                                                 },
-                            "prepair-icon":  {
-                                                 "iconPath":  "./processed-icons/prepair.png"
-                                             },
-                            "applebusinessmanager-icon":  {
-                                                              "iconPath":  "./processed-icons/applebusinessmanager.png"
-                                                          },
-                            "theleap-icon":  {
-                                                 "iconPath":  "./processed-icons/theleap.png"
+                            "chase-icon":  {
+                                               "iconPath":  "./processed-icons/chase.png"
+                                           },
+                            "chatgpt-icon":  {
+                                                 "iconPath":  "./processed-icons/chatgpt.png"
                                              },
                             "checkpoint-icon":  {
                                                     "iconPath":  "./processed-icons/checkpoint.png"
                                                 },
-                            "nextrightmanagement-icon":  {
-                                                             "iconPath":  "./processed-icons/nextrightmanagement.png"
-                                                         },
-                            "spinachai-icon":  {
-                                                   "iconPath":  "./processed-icons/spinachai.png"
+                            "citrix-icon":  {
+                                                "iconPath":  "./processed-icons/citrix.png"
+                                            },
+                            "closebot-icon":  {
+                                                  "iconPath":  "./processed-icons/closebot.png"
+                                              },
+                            "closinglock-icon":  {
+                                                     "iconPath":  "./processed-icons/closinglock.png"
+                                                 },
+                            "cloudteam-icon":  {
+                                                   "iconPath":  "./processed-icons/cloudteam.png"
                                                },
+                            "codemagazine-icon":  {
+                                                      "iconPath":  "./processed-icons/codemagazine.png"
+                                                  },
+                            "codemagazineicon-icon":  {
+                                                          "iconPath":  "./processed-icons/codemagazineicon.png"
+                                                      },
+                            "codyapp-icon":  {
+                                                 "iconPath":  "./processed-icons/codyapp.png"
+                                             },
+                            "cojflorida-icon":  {
+                                                    "iconPath":  "./processed-icons/cojflorida.png"
+                                                },
+                            "commandcenter-icon":  {
+                                                       "iconPath":  "./processed-icons/commandcenter.png"
+                                                   },
+                            "communityfirst-icon":  {
+                                                        "iconPath":  "./processed-icons/communityfirst.png"
+                                                    },
+                            "comptia-icon":  {
+                                                 "iconPath":  "./processed-icons/comptia.png"
+                                             },
+                            "computershare-icon":  {
+                                                       "iconPath":  "./processed-icons/computershare.png"
+                                                   },
+                            "concur-icon":  {
+                                                "iconPath":  "./processed-icons/concur.png"
+                                            },
+                            "cornerstone-icon":  {
+                                                     "iconPath":  "./processed-icons/cornerstone.png"
+                                                 },
+                            "craiyon-icon":  {
+                                                 "iconPath":  "./processed-icons/craiyon.png"
+                                             },
+                            "crewting-icon":  {
+                                                  "iconPath":  "./processed-icons/crewting.png"
+                                              },
+                            "cronacle-icon":  {
+                                                  "iconPath":  "./processed-icons/cronacle.png"
+                                              },
+                            "cursor-icon":  {
+                                                "iconPath":  "./processed-icons/cursor.png"
+                                            },
+                            "cyberarc-icon":  {
+                                                  "iconPath":  "./processed-icons/cyberarc.png"
+                                              },
+                            "debian-icon":  {
+                                                "iconPath":  "./processed-icons/debian.png"
+                                            },
+                            "deepai-icon":  {
+                                                "iconPath":  "./processed-icons/deepai.png"
+                                            },
+                            "deepdreamgenerator-icon":  {
+                                                            "iconPath":  "./processed-icons/deepdreamgenerator.png"
+                                                        },
+                            "dell-icon":  {
+                                              "iconPath":  "./processed-icons/dell.png"
+                                          },
+                            "dellemc-icon":  {
+                                                 "iconPath":  "./processed-icons/dellemc.png"
+                                             },
+                            "devolutions-icon":  {
+                                                     "iconPath":  "./processed-icons/devolutions.png"
+                                                 },
+                            "didero-icon":  {
+                                                "iconPath":  "./processed-icons/didero.png"
+                                            },
+                            "disney+-icon":  {
+                                                 "iconPath":  "./processed-icons/disney+.png"
+                                             },
+                            "dlvr.it-icon":  {
+                                                 "iconPath":  "./processed-icons/dlvr.it.png"
+                                             },
+                            "dolyapp-icon":  {
+                                                 "iconPath":  "./processed-icons/dolyapp.png"
+                                             },
+                            "download-icon":  {
+                                                  "iconPath":  "./processed-icons/download.png"
+                                              },
+                            "dreamstudio-icon":  {
+                                                     "iconPath":  "./processed-icons/dreamstudio.png"
+                                                 },
+                            "employers-icon":  {
+                                                   "iconPath":  "./processed-icons/employers.png"
+                                               },
+                            "employflorida-icon":  {
+                                                       "iconPath":  "./processed-icons/employflorida.png"
+                                                   },
+                            "enso-icon":  {
+                                              "iconPath":  "./processed-icons/enso.png"
+                                          },
+                            "everlearns-icon":  {
+                                                    "iconPath":  "./processed-icons/everlearns.png"
+                                                },
+                            "expressscripts-icon":  {
+                                                        "iconPath":  "./processed-icons/expressscripts.png"
+                                                    },
+                            "facebook-icon":  {
+                                                  "iconPath":  "./processed-icons/facebook.png"
+                                              },
+                            "federalstudentaid-icon":  {
+                                                           "iconPath":  "./processed-icons/federalstudentaid.png"
+                                                       },
+                            "fedoralinux-icon":  {
+                                                     "iconPath":  "./processed-icons/fedoralinux.png"
+                                                 },
+                            "fidelity-icon":  {
+                                                  "iconPath":  "./processed-icons/fidelity.png"
+                                              },
+                            "financial-icon":  {
+                                                   "iconPath":  "./processed-icons/financial.png"
+                                               },
+                            "finditnowgps-icon":  {
+                                                      "iconPath":  "./processed-icons/finditnowgps.png"
+                                                  },
+                            "firefox-icon":  {
+                                                 "iconPath":  "./processed-icons/firefox.png"
+                                             },
+                            "flir-icon":  {
+                                              "iconPath":  "./processed-icons/flir.png"
+                                          },
+                            "floridablue-icon":  {
+                                                     "iconPath":  "./processed-icons/floridablue.png"
+                                                 },
+                            "floridadcf-icon":  {
+                                                    "iconPath":  "./processed-icons/floridadcf.png"
+                                                },
+                            "foreman-icon":  {
+                                                 "iconPath":  "./processed-icons/foreman.png"
+                                             },
+                            "fotor-icon":  {
+                                               "iconPath":  "./processed-icons/fotor.png"
+                                           },
+                            "freetaxusa-icon":  {
+                                                    "iconPath":  "./processed-icons/freetaxusa.png"
+                                                },
+                            "frontlyai-icon":  {
+                                                   "iconPath":  "./processed-icons/frontlyai.png"
+                                               },
+                            "gaming-icon":  {
+                                                "iconPath":  "./processed-icons/gaming.png"
+                                            },
+                            "gamma-icon":  {
+                                               "iconPath":  "./processed-icons/gamma.png"
+                                           },
+                            "ganai-icon":  {
+                                               "iconPath":  "./processed-icons/ganai.png"
+                                           },
+                            "geico-icon":  {
+                                               "iconPath":  "./processed-icons/geico.png"
+                                           },
+                            "general-icon":  {
+                                                 "iconPath":  "./processed-icons/general.png"
+                                             },
+                            "getimgai-icon":  {
+                                                  "iconPath":  "./processed-icons/getimgai.png"
+                                              },
+                            "gettyimages-icon":  {
+                                                     "iconPath":  "./processed-icons/gettyimages.png"
+                                                 },
+                            "gigavuefm-icon":  {
+                                                   "iconPath":  "./processed-icons/gigavuefm.png"
+                                               },
+                            "github-icon":  {
+                                                "iconPath":  "./processed-icons/github.png"
+                                            },
+                            "gitlab-icon":  {
+                                                "iconPath":  "./processed-icons/gitlab.png"
+                                            },
+                            "globalcommandcenter-icon":  {
+                                                             "iconPath":  "./processed-icons/globalcommandcenter.png"
+                                                         },
+                            "gmail-icon":  {
+                                               "iconPath":  "./processed-icons/gmail.png"
+                                           },
+                            "gnome-icon":  {
+                                               "iconPath":  "./processed-icons/gnome.png"
+                                           },
+                            "gnu-icon":  {
+                                             "iconPath":  "./processed-icons/gnu.png"
+                                         },
+                            "google-icon":  {
+                                                "iconPath":  "./processed-icons/google.png"
+                                            },
+                            "goprofiles-icon":  {
+                                                    "iconPath":  "./processed-icons/goprofiles.png"
+                                                },
+                            "grafana-icon":  {
+                                                 "iconPath":  "./processed-icons/grafana.png"
+                                             },
+                            "grainger-icon":  {
+                                                  "iconPath":  "./processed-icons/grainger.png"
+                                              },
+                            "granola-icon":  {
+                                                 "iconPath":  "./processed-icons/granola.png"
+                                             },
+                            "grimo-icon":  {
+                                               "iconPath":  "./processed-icons/grimo.png"
+                                           },
+                            "gumloop-icon":  {
+                                                 "iconPath":  "./processed-icons/gumloop.png"
+                                             },
+                            "healthequity-icon":  {
+                                                      "iconPath":  "./processed-icons/healthequity.png"
+                                                  },
+                            "heathcarebluebook-icon":  {
+                                                           "iconPath":  "./processed-icons/heathcarebluebook.png"
+                                                       },
+                            "heygen-icon":  {
+                                                "iconPath":  "./processed-icons/heygen.png"
+                                            },
+                            "hirebase-icon":  {
+                                                  "iconPath":  "./processed-icons/hirebase.png"
+                                              },
+                            "hpe-icon":  {
+                                             "iconPath":  "./processed-icons/hpe.png"
+                                         },
+                            "hubflo-icon":  {
+                                                "iconPath":  "./processed-icons/hubflo.png"
+                                            },
+                            "huggingface-icon":  {
+                                                     "iconPath":  "./processed-icons/huggingface.png"
+                                                 },
+                            "hulu-icon":  {
+                                              "iconPath":  "./processed-icons/hulu.png"
+                                          },
+                            "hypervisor-icon":  {
+                                                    "iconPath":  "./processed-icons/hypervisor.png"
+                                                },
+                            "ibmcloud-icon":  {
+                                                  "iconPath":  "./processed-icons/ibmcloud.png"
+                                              },
+                            "ice-icon":  {
+                                             "iconPath":  "./processed-icons/ice.png"
+                                         },
+                            "icloud-icon":  {
+                                                "iconPath":  "./processed-icons/icloud.png"
+                                            },
+                            "iessharepoint-icon":  {
+                                                       "iconPath":  "./processed-icons/iessharepoint.png"
+                                                   },
+                            "iffft-icon":  {
+                                               "iconPath":  "./processed-icons/iffft.png"
+                                           },
+                            "imanager-icon":  {
+                                                  "iconPath":  "./processed-icons/imanager.png"
+                                              },
+                            "inrō-icon":  {
+                                              "iconPath":  "./processed-icons/inrō.png"
+                                          },
+                            "instagram-icon":  {
+                                                   "iconPath":  "./processed-icons/instagram.png"
+                                               },
+                            "interviewschat-icon":  {
+                                                        "iconPath":  "./processed-icons/interviewschat.png"
+                                                    },
+                            "ivanti-icon":  {
+                                                "iconPath":  "./processed-icons/ivanti.png"
+                                            },
+                            "jamf-icon":  {
+                                              "iconPath":  "./processed-icons/jamf.png"
+                                          },
+                            "jasperart-icon":  {
+                                                   "iconPath":  "./processed-icons/jasperart.png"
+                                               },
+                            "jea-icon":  {
+                                             "iconPath":  "./processed-icons/jea.png"
+                                         },
+                            "jetblue-icon":  {
+                                                 "iconPath":  "./processed-icons/jetblue.png"
+                                             },
+                            "jobrightai-icon":  {
+                                                    "iconPath":  "./processed-icons/jobrightai.png"
+                                                },
+                            "jobschatai-icon":  {
+                                                    "iconPath":  "./processed-icons/jobschatai.png"
+                                                },
+                            "jumpserver-icon":  {
+                                                    "iconPath":  "./processed-icons/jumpserver.png"
+                                                },
+                            "kalilinuxsubsystem-icon":  {
+                                                            "iconPath":  "./processed-icons/kalilinuxsubsystem.png"
+                                                        },
+                            "keypass-icon":  {
+                                                 "iconPath":  "./processed-icons/keypass.png"
+                                             },
+                            "kickresume-icon":  {
+                                                    "iconPath":  "./processed-icons/kickresume.png"
+                                                },
+                            "kompyte-icon":  {
+                                                 "iconPath":  "./processed-icons/kompyte.png"
+                                             },
+                            "kubernetes-icon":  {
+                                                    "iconPath":  "./processed-icons/kubernetes.png"
+                                                },
+                            "landry\u0027s-icon":  {
+                                                       "iconPath":  "./processed-icons/landry\u0027s.png"
+                                                   },
+                            "lateron-icon":  {
+                                                 "iconPath":  "./processed-icons/lateron.png"
+                                             },
+                            "layerpath-icon":  {
+                                                   "iconPath":  "./processed-icons/layerpath.png"
+                                               },
+                            "leapai-icon":  {
+                                                "iconPath":  "./processed-icons/leapai.png"
+                                            },
+                            "let\u0027senhance-icon":  {
+                                                           "iconPath":  "./processed-icons/let\u0027senhance.png"
+                                                       },
+                            "lg-icon":  {
+                                            "iconPath":  "./processed-icons/lg.png"
+                                        },
+                            "linkedin-icon":  {
+                                                  "iconPath":  "./processed-icons/linkedin.png"
+                                              },
+                            "linkedinlearning-icon":  {
+                                                          "iconPath":  "./processed-icons/linkedinlearning.png"
+                                                      },
+                            "linuxmint-icon":  {
+                                                   "iconPath":  "./processed-icons/linuxmint.png"
+                                               },
+                            "lmarena-icon":  {
+                                                 "iconPath":  "./processed-icons/lmarena.png"
+                                             },
+                            "localmed-icon":  {
+                                                  "iconPath":  "./processed-icons/localmed.png"
+                                              },
+                            "looka-icon":  {
+                                               "iconPath":  "./processed-icons/looka.png"
+                                           },
+                            "lorexcloud-icon":  {
+                                                    "iconPath":  "./processed-icons/lorexcloud.png"
+                                                },
+                            "loveable-icon":  {
+                                                  "iconPath":  "./processed-icons/loveable.png"
+                                              },
+                            "lowe\u0027s-icon":  {
+                                                     "iconPath":  "./processed-icons/lowe\u0027s.png"
+                                                 },
+                            "magicjack-icon":  {
+                                                   "iconPath":  "./processed-icons/magicjack.png"
+                                               },
+                            "manus-icon":  {
+                                               "iconPath":  "./processed-icons/manus.png"
+                                           },
+                            "marketingblocksai-icon":  {
+                                                           "iconPath":  "./processed-icons/marketingblocksai.png"
+                                                       },
+                            "mastodon-icon":  {
+                                                  "iconPath":  "./processed-icons/mastodon.png"
+                                              },
+                            "mbbradiology-icon":  {
+                                                      "iconPath":  "./processed-icons/mbbradiology.png"
+                                                  },
+                            "mentimeter-icon":  {
+                                                    "iconPath":  "./processed-icons/mentimeter.png"
+                                                },
+                            "metaview-icon":  {
+                                                  "iconPath":  "./processed-icons/metaview.png"
+                                              },
+                            "microfocus-icon":  {
+                                                    "iconPath":  "./processed-icons/microfocus.png"
+                                                },
+                            "microsoft-icon":  {
+                                                   "iconPath":  "./processed-icons/microsoft.png"
+                                               },
+                            "middayai-icon":  {
+                                                  "iconPath":  "./processed-icons/middayai.png"
+                                              },
+                            "midjourney-icon":  {
+                                                    "iconPath":  "./processed-icons/midjourney.png"
+                                                },
+                            "mindosmindverse-icon":  {
+                                                         "iconPath":  "./processed-icons/mindosmindverse.png"
+                                                     },
+                            "minio-icon":  {
+                                               "iconPath":  "./processed-icons/minio.png"
+                                           },
                             "mistralai-icon":  {
                                                    "iconPath":  "./processed-icons/mistralai.png"
                                                },
-                            "adobefirefly-icon":  {
-                                                      "iconPath":  "./processed-icons/adobefirefly.png"
-                                                  }
+                            "monitoring-icon":  {
+                                                    "iconPath":  "./processed-icons/monitoring.png"
+                                                },
+                            "msi-icon":  {
+                                             "iconPath":  "./processed-icons/msi.png"
+                                         },
+                            "murphyusa-icon":  {
+                                                   "iconPath":  "./processed-icons/murphyusa.png"
+                                               },
+                            "myaskai-icon":  {
+                                                 "iconPath":  "./processed-icons/myaskai.png"
+                                             },
+                            "myhealthone-icon":  {
+                                                     "iconPath":  "./processed-icons/myhealthone.png"
+                                                 },
+                            "myhealthtoolkit-icon":  {
+                                                         "iconPath":  "./processed-icons/myhealthtoolkit.png"
+                                                     },
+                            "myjax-icon":  {
+                                               "iconPath":  "./processed-icons/myjax.png"
+                                           },
+                            "myspacemobsters-icon":  {
+                                                         "iconPath":  "./processed-icons/myspacemobsters.png"
+                                                     },
+                            "namelix-icon":  {
+                                                 "iconPath":  "./processed-icons/namelix.png"
+                                             },
+                            "namify-icon":  {
+                                                "iconPath":  "./processed-icons/namify.png"
+                                            },
+                            "navient-icon":  {
+                                                 "iconPath":  "./processed-icons/navient.png"
+                                             },
+                            "netflix-icon":  {
+                                                 "iconPath":  "./processed-icons/netflix.png"
+                                             },
+                            "netscaler-icon":  {
+                                                   "iconPath":  "./processed-icons/netscaler.png"
+                                               },
+                            "nextrightmanagement-icon":  {
+                                                             "iconPath":  "./processed-icons/nextrightmanagement.png"
+                                                         },
+                            "nightcafe-icon":  {
+                                                   "iconPath":  "./processed-icons/nightcafe.png"
+                                               },
+                            "nintendoswitch-icon":  {
+                                                        "iconPath":  "./processed-icons/nintendoswitch.png"
+                                                    },
+                            "ocoya-icon":  {
+                                               "iconPath":  "./processed-icons/ocoya.png"
+                                           },
+                            "odoo-icon":  {
+                                              "iconPath":  "./processed-icons/odoo.png"
+                                          },
+                            "oliv-icon":  {
+                                              "iconPath":  "./processed-icons/oliv.png"
+                                          },
+                            "onenote-icon":  {
+                                                 "iconPath":  "./processed-icons/onenote.png"
+                                             },
+                            "openfaas-icon":  {
+                                                  "iconPath":  "./processed-icons/openfaas.png"
+                                              },
+                            "opentext-icon":  {
+                                                  "iconPath":  "./processed-icons/opentext.png"
+                                              },
+                            "opinionstage-icon":  {
+                                                      "iconPath":  "./processed-icons/opinionstage.png"
+                                                  },
+                            "oraclesolaris-icon":  {
+                                                       "iconPath":  "./processed-icons/oraclesolaris.png"
+                                                   },
+                            "orcidid-icon":  {
+                                                 "iconPath":  "./processed-icons/orcidid.png"
+                                             },
+                            "outagecalendar-icon":  {
+                                                        "iconPath":  "./processed-icons/outagecalendar.png"
+                                                    },
+                            "pabbly-icon":  {
+                                                "iconPath":  "./processed-icons/pabbly.png"
+                                            },
+                            "paid-icon":  {
+                                              "iconPath":  "./processed-icons/paid.png"
+                                          },
+                            "pearsonvue-icon":  {
+                                                    "iconPath":  "./processed-icons/pearsonvue.png"
+                                                },
+                            "peek-icon":  {
+                                              "iconPath":  "./processed-icons/peek.png"
+                                          },
+                            "perkspot-icon":  {
+                                                  "iconPath":  "./processed-icons/perkspot.png"
+                                              },
+                            "persanaai-icon":  {
+                                                   "iconPath":  "./processed-icons/persanaai.png"
+                                               },
+                            "personallab-icon":  {
+                                                     "iconPath":  "./processed-icons/personallab.png"
+                                                 },
+                            "personalvendorsupport-icon":  {
+                                                               "iconPath":  "./processed-icons/personalvendorsupport.png"
+                                                           },
+                            "pic-icon":  {
+                                             "iconPath":  "./processed-icons/pic.png"
+                                         },
+                            "picsart-icon":  {
+                                                 "iconPath":  "./processed-icons/picsart.png"
+                                             },
+                            "pika-icon":  {
+                                              "iconPath":  "./processed-icons/pika.png"
+                                          },
+                            "pixray-icon":  {
+                                                "iconPath":  "./processed-icons/pixray.png"
+                                            },
+                            "playstation-icon":  {
+                                                     "iconPath":  "./processed-icons/playstation.png"
+                                                 },
+                            "pluralsight-icon":  {
+                                                     "iconPath":  "./processed-icons/pluralsight.png"
+                                                 },
+                            "pncbank-icon":  {
+                                                 "iconPath":  "./processed-icons/pncbank.png"
+                                             },
+                            "poe-icon":  {
+                                             "iconPath":  "./processed-icons/poe.png"
+                                         },
+                            "postgessql-icon":  {
+                                                    "iconPath":  "./processed-icons/postgessql.png"
+                                                },
+                            "powerbi-icon":  {
+                                                 "iconPath":  "./processed-icons/powerbi.png"
+                                             },
+                            "powershelluniversal-icon":  {
+                                                             "iconPath":  "./processed-icons/powershelluniversal.png"
+                                                         },
+                            "prajwaldesai-icon":  {
+                                                      "iconPath":  "./processed-icons/prajwaldesai.png"
+                                                  },
+                            "prepair-icon":  {
+                                                 "iconPath":  "./processed-icons/prepair.png"
+                                             },
+                            "presti-icon":  {
+                                                "iconPath":  "./processed-icons/presti.png"
+                                            },
+                            "prodia-icon":  {
+                                                "iconPath":  "./processed-icons/prodia.png"
+                                            },
+                            "producthunt-icon":  {
+                                                     "iconPath":  "./processed-icons/producthunt.png"
+                                                 },
+                            "prometheus-icon":  {
+                                                    "iconPath":  "./processed-icons/prometheus.png"
+                                                },
+                            "proton-icon":  {
+                                                "iconPath":  "./processed-icons/proton.png"
+                                            },
+                            "prudentialfinancial-icon":  {
+                                                             "iconPath":  "./processed-icons/prudentialfinancial.png"
+                                                         },
+                            "puppet-icon":  {
+                                                "iconPath":  "./processed-icons/puppet.png"
+                                            },
+                            "purestorage-icon":  {
+                                                     "iconPath":  "./processed-icons/purestorage.png"
+                                                 },
+                            "qualys-icon":  {
+                                                "iconPath":  "./processed-icons/qualys.png"
+                                            },
+                            "quest-icon":  {
+                                               "iconPath":  "./processed-icons/quest.png"
+                                           },
+                            "questionbase-icon":  {
+                                                      "iconPath":  "./processed-icons/questionbase.png"
+                                                  },
+                            "quraai-icon":  {
+                                                "iconPath":  "./processed-icons/quraai.png"
+                                            },
+                            "realvnc-icon":  {
+                                                 "iconPath":  "./processed-icons/realvnc.png"
+                                             },
+                            "redhatsatellite-icon":  {
+                                                         "iconPath":  "./processed-icons/redhatsatellite.png"
+                                                     },
+                            "reforge-icon":  {
+                                                 "iconPath":  "./processed-icons/reforge.png"
+                                             },
+                            "relayapp-icon":  {
+                                                  "iconPath":  "./processed-icons/relayapp.png"
+                                              },
+                            "replicate-icon":  {
+                                                   "iconPath":  "./processed-icons/replicate.png"
+                                               },
+                            "restream-icon":  {
+                                                  "iconPath":  "./processed-icons/restream.png"
+                                              },
+                            "resumerocket-icon":  {
+                                                      "iconPath":  "./processed-icons/resumerocket.png"
+                                                  },
+                            "rideout-icon":  {
+                                                 "iconPath":  "./processed-icons/rideout.png"
+                                             },
+                            "riffo-icon":  {
+                                               "iconPath":  "./processed-icons/riffo.png"
+                                           },
+                            "riverbed-icon":  {
+                                                  "iconPath":  "./processed-icons/riverbed.png"
+                                              },
+                            "riverside-icon":  {
+                                                   "iconPath":  "./processed-icons/riverside.png"
+                                               },
+                            "roadwayai-icon":  {
+                                                   "iconPath":  "./processed-icons/roadwayai.png"
+                                               },
+                            "roberthalf-icon":  {
+                                                    "iconPath":  "./processed-icons/roberthalf.png"
+                                                },
+                            "robinhood-icon":  {
+                                                   "iconPath":  "./processed-icons/robinhood.png"
+                                               },
+                            "rockylinux-icon":  {
+                                                    "iconPath":  "./processed-icons/rockylinux.png"
+                                                },
+                            "roush-icon":  {
+                                               "iconPath":  "./processed-icons/roush.png"
+                                           },
+                            "rubrik-icon":  {
+                                                "iconPath":  "./processed-icons/rubrik.png"
+                                            },
+                            "runway-icon":  {
+                                                "iconPath":  "./processed-icons/runway.png"
+                                            },
+                            "rxss-icon":  {
+                                              "iconPath":  "./processed-icons/rxss.png"
+                                          },
+                            "salliemae-icon":  {
+                                                   "iconPath":  "./processed-icons/salliemae.png"
+                                               },
+                            "samwellai-icon":  {
+                                                   "iconPath":  "./processed-icons/samwellai.png"
+                                               },
+                            "sap-icon":  {
+                                             "iconPath":  "./processed-icons/sap.png"
+                                         },
+                            "scadepro-icon":  {
+                                                  "iconPath":  "./processed-icons/scadepro.png"
+                                              },
+                            "sccmreports-icon":  {
+                                                     "iconPath":  "./processed-icons/sccmreports.png"
+                                                 },
+                            "scribe-icon":  {
+                                                "iconPath":  "./processed-icons/scribe.png"
+                                            },
+                            "secondme-icon":  {
+                                                  "iconPath":  "./processed-icons/secondme.png"
+                                              },
+                            "securityfirstinsurance-icon":  {
+                                                                "iconPath":  "./processed-icons/securityfirstinsurance.png"
+                                                            },
+                            "seg-icon":  {
+                                             "iconPath":  "./processed-icons/seg.png"
+                                         },
+                            "segrewards-icon":  {
+                                                    "iconPath":  "./processed-icons/segrewards.png"
+                                                },
+                            "semrush-icon":  {
+                                                 "iconPath":  "./processed-icons/semrush.png"
+                                             },
+                            "sequensai-icon":  {
+                                                   "iconPath":  "./processed-icons/sequensai.png"
+                                               },
+                            "servicenow-icon":  {
+                                                    "iconPath":  "./processed-icons/servicenow.png"
+                                                },
+                            "shaped-icon":  {
+                                                "iconPath":  "./processed-icons/shaped.png"
+                                            },
+                            "shellpointmortgage-icon":  {
+                                                            "iconPath":  "./processed-icons/shellpointmortgage.png"
+                                                        },
+                            "shutterstock-icon":  {
+                                                      "iconPath":  "./processed-icons/shutterstock.png"
+                                                  },
+                            "signupgenius-icon":  {
+                                                      "iconPath":  "./processed-icons/signupgenius.png"
+                                                  },
+                            "simplify-icon":  {
+                                                  "iconPath":  "./processed-icons/simplify.png"
+                                              },
+                            "skybell-icon":  {
+                                                 "iconPath":  "./processed-icons/skybell.png"
+                                             },
+                            "skype-icon":  {
+                                               "iconPath":  "./processed-icons/skype.png"
+                                           },
+                            "smartliai-icon":  {
+                                                   "iconPath":  "./processed-icons/smartliai.png"
+                                               },
+                            "socialmedia-icon":  {
+                                                     "iconPath":  "./processed-icons/socialmedia.png"
+                                                 },
+                            "solarwinds-icon":  {
+                                                    "iconPath":  "./processed-icons/solarwinds.png"
+                                                },
+                            "sonnet-icon":  {
+                                                "iconPath":  "./processed-icons/sonnet.png"
+                                            },
+                            "speechtonote-icon":  {
+                                                      "iconPath":  "./processed-icons/speechtonote.png"
+                                                  },
+                            "spiceworks-icon":  {
+                                                    "iconPath":  "./processed-icons/spiceworks.png"
+                                                },
+                            "spinachai-icon":  {
+                                                   "iconPath":  "./processed-icons/spinachai.png"
+                                               },
+                            "stablecog-icon":  {
+                                                   "iconPath":  "./processed-icons/stablecog.png"
+                                               },
+                            "stablediffusion-icon":  {
+                                                         "iconPath":  "./processed-icons/stablediffusion.png"
+                                                     },
+                            "starryai-icon":  {
+                                                  "iconPath":  "./processed-icons/starryai.png"
+                                              },
+                            "steam-icon":  {
+                                               "iconPath":  "./processed-icons/steam.png"
+                                           },
+                            "stockimgai-icon":  {
+                                                    "iconPath":  "./processed-icons/stockimgai.png"
+                                                },
+                            "stonebranch-icon":  {
+                                                     "iconPath":  "./processed-icons/stonebranch.png"
+                                                 },
+                            "storage-icon":  {
+                                                 "iconPath":  "./processed-icons/storage.png"
+                                             },
+                            "storycheif-icon":  {
+                                                    "iconPath":  "./processed-icons/storycheif.png"
+                                                },
+                            "surveymonkey-icon":  {
+                                                      "iconPath":  "./processed-icons/surveymonkey.png"
+                                                  },
+                            "suse-icon":  {
+                                              "iconPath":  "./processed-icons/suse.png"
+                                          },
+                            "susemanager-icon":  {
+                                                     "iconPath":  "./processed-icons/susemanager.png"
+                                                 },
+                            "t2platformlinux-icon":  {
+                                                         "iconPath":  "./processed-icons/t2platformlinux.png"
+                                                     },
+                            "talentlyai-icon":  {
+                                                    "iconPath":  "./processed-icons/talentlyai.png"
+                                                },
+                            "talentquest-icon":  {
+                                                     "iconPath":  "./processed-icons/talentquest.png"
+                                                 },
+                            "talknotes-icon":  {
+                                                   "iconPath":  "./processed-icons/talknotes.png"
+                                               },
+                            "taskade-icon":  {
+                                                 "iconPath":  "./processed-icons/taskade.png"
+                                             },
+                            "teladoc-icon":  {
+                                                 "iconPath":  "./processed-icons/teladoc.png"
+                                             },
+                            "theleap-icon":  {
+                                                 "iconPath":  "./processed-icons/theleap.png"
+                                             },
+                            "thelinuxfoundation-icon":  {
+                                                            "iconPath":  "./processed-icons/thelinuxfoundation.png"
+                                                        },
+                            "thycotic-icon":  {
+                                                  "iconPath":  "./processed-icons/thycotic.png"
+                                              },
+                            "timelessos-icon":  {
+                                                    "iconPath":  "./processed-icons/timelessos.png"
+                                                },
+                            "training-icon":  {
+                                                  "iconPath":  "./processed-icons/training.png"
+                                              },
+                            "travel-icon":  {
+                                                "iconPath":  "./processed-icons/travel.png"
+                                            },
+                            "turbotax®-icon":  {
+                                                   "iconPath":  "./processed-icons/turbotax®.png"
+                                               },
+                            "typeform-icon":  {
+                                                  "iconPath":  "./processed-icons/typeform.png"
+                                              },
+                            "ubisoft-icon":  {
+                                                 "iconPath":  "./processed-icons/ubisoft.png"
+                                             },
+                            "ubuntu-icon":  {
+                                                "iconPath":  "./processed-icons/ubuntu.png"
+                                            },
+                            "ucsmanager-icon":  {
+                                                    "iconPath":  "./processed-icons/ucsmanager.png"
+                                                },
+                            "unitedhealthcare-icon":  {
+                                                          "iconPath":  "./processed-icons/unitedhealthcare.png"
+                                                      },
+                            "usbank-icon":  {
+                                                "iconPath":  "./processed-icons/usbank.png"
+                                            },
+                            "vanceai-icon":  {
+                                                 "iconPath":  "./processed-icons/vanceai.png"
+                                             },
+                            "vanguard-icon":  {
+                                                  "iconPath":  "./processed-icons/vanguard.png"
+                                              },
+                            "veeam-icon":  {
+                                               "iconPath":  "./processed-icons/veeam.png"
+                                           },
+                            "venafi-icon":  {
+                                                "iconPath":  "./processed-icons/venafi.png"
+                                            },
+                            "vendorsupport-icon":  {
+                                                       "iconPath":  "./processed-icons/vendorsupport.png"
+                                                   },
+                            "veritas-icon":  {
+                                                 "iconPath":  "./processed-icons/veritas.png"
+                                             },
+                            "verizon-icon":  {
+                                                 "iconPath":  "./processed-icons/verizon.png"
+                                             },
+                            "vidyard-icon":  {
+                                                 "iconPath":  "./processed-icons/vidyard.png"
+                                             },
+                            "vmware-icon":  {
+                                                "iconPath":  "./processed-icons/vmware.png"
+                                            },
+                            "vscode-icon":  {
+                                                "iconPath":  "./processed-icons/vscode.png"
+                                            },
+                            "walling-icon":  {
+                                                 "iconPath":  "./processed-icons/walling.png"
+                                             },
+                            "wellsfargo-icon":  {
+                                                    "iconPath":  "./processed-icons/wellsfargo.png"
+                                                },
+                            "wisprflow-icon":  {
+                                                   "iconPath":  "./processed-icons/wisprflow.png"
+                                               },
+                            "wombodream-icon":  {
+                                                    "iconPath":  "./processed-icons/wombodream.png"
+                                                },
+                            "wordpress-icon":  {
+                                                   "iconPath":  "./processed-icons/wordpress.png"
+                                               },
+                            "workingadvantage-icon":  {
+                                                          "iconPath":  "./processed-icons/workingadvantage.png"
+                                                      },
+                            "x-icon":  {
+                                           "iconPath":  "./processed-icons/x.png"
+                                       },
+                            "zapier-icon":  {
+                                                "iconPath":  "./processed-icons/zapier.png"
+                                            },
+                            "zelle-icon":  {
+                                               "iconPath":  "./processed-icons/zelle.png"
+                                           },
+                            "zoom-icon":  {
+                                              "iconPath":  "./processed-icons/zoom.png"
+                                          }
                         },
     "fileExtensions":  {
-                           "deepdreamgenerator":  "deepdreamgenerator-icon",
-                           "prodia":  "prodia-icon",
-                           "jobrightai":  "jobrightai-icon",
-                           "aws":  "aws-icon",
-                           "hpe":  "hpe-icon",
-                           "heathcarebluebook":  "heathcarebluebook-icon",
-                           "everlearns":  "everlearns-icon",
-                           "ocoya":  "ocoya-icon",
-                           "middayai":  "middayai-icon",
-                           "dlvr":  "dlvr.it-icon",
-                           "prajwaldesai":  "prajwaldesai-icon",
-                           "namelix":  "namelix-icon",
-                           "24seven":  "24seven-icon",
-                           "granola":  "granola-icon",
-                           "namify":  "namify-icon",
-                           "wellsfargo":  "wellsfargo-icon",
-                           "pluralsight":  "pluralsight-icon",
-                           "cursor":  "cursor-icon",
-                           "segrewards":  "segrewards-icon",
-                           "servicenow":  "servicenow-icon",
-                           "shutterstock":  "shutterstock-icon",
-                           "bizplanr":  "bizplanr-icon",
-                           "openfaas":  "openfaas-icon",
-                           "instagram":  "instagram-icon",
-                           "scadepro":  "scadepro-icon",
-                           "jobschatai":  "jobschatai-icon",
-                           "replicate":  "replicate-icon",
-                           "closinglock":  "closinglock-icon",
-                           "getimgai":  "getimgai-icon",
-                           "download":  "download-icon",
-                           "broadcom":  "broadcom-icon",
-                           "midjourney":  "midjourney-icon",
-                           "x":  "x-icon",
-                           "expressscripts":  "expressscripts-icon",
-                           "sonnet":  "sonnet-icon",
-                           "cfsparkart":  "cfsparkart-icon",
-                           "playstation":  "playstation-icon",
-                           "roadwayai":  "roadwayai-icon",
-                           "venafi":  "venafi-icon",
-                           "roush":  "roush-icon",
-                           "myhealthtoolkit":  "myhealthtoolkit-icon",
-                           "inrō":  "inrō-icon",
-                           "at\u0026t":  "at\u0026t-icon",
-                           "questionbase":  "questionbase-icon",
-                           "freetaxusa":  "freetaxusa-icon",
-                           "akool":  "akool-icon",
-                           "ucsmanager":  "ucsmanager-icon",
-                           "paid":  "paid-icon",
-                           "myhealthone":  "myhealthone-icon",
-                           "codemagazineicon":  "codemagazineicon-icon",
-                           "training":  "training-icon",
-                           "prepair":  "prepair-icon",
-                           "rxss":  "rxss-icon",
-                           "netflix":  "netflix-icon",
-                           "bik":  "bik-icon",
-                           "checkpoint":  "checkpoint-icon",
-                           "bjs":  "bjs-icon",
-                           "chase":  "chase-icon",
-                           "lateron":  "lateron-icon",
-                           "capacities":  "capacities-icon",
-                           "amazon":  "amazon-icon",
-                           "lowe\u0027s":  "lowe\u0027s-icon",
-                           "kickresume":  "kickresume-icon",
-                           "microfocus":  "microfocus-icon",
-                           "skype":  "skype-icon",
-                           "closebot":  "closebot-icon",
-                           "quest":  "quest-icon",
-                           "proton":  "proton-icon",
-                           "nextrightmanagement":  "nextrightmanagement-icon",
-                           "crewting":  "crewting-icon",
-                           "comptia":  "comptia-icon",
-                           "canva":  "canva-icon",
-                           "hirebase":  "hirebase-icon",
-                           "persanaai":  "persanaai-icon",
-                           "hubflo":  "hubflo-icon",
-                           "peek":  "peek-icon",
-                           "citrix":  "citrix-icon",
-                           "talknotes":  "talknotes-icon",
-                           "pncbank":  "pncbank-icon",
-                           "lmarena":  "lmarena-icon",
-                           "landry\u0027s":  "landry\u0027s-icon",
-                           "spinachai":  "spinachai-icon",
-                           "personallab":  "personallab-icon",
-                           "oraclesolaris":  "oraclesolaris-icon",
-                           "communityfirst":  "communityfirst-icon",
-                           "bolto":  "bolto-icon",
-                           "netscaler":  "netscaler-icon",
-                           "odoo":  "odoo-icon",
-                           "craiyon":  "craiyon-icon",
-                           "canyonai":  "canyonai-icon",
-                           "quraai":  "quraai-icon",
-                           "salliemae":  "salliemae-icon",
-                           "t2platformlinux":  "t2platformlinux-icon",
-                           "wordpress":  "wordpress-icon",
-                           "json":  "json-icon",
-                           "purestorage":  "purestorage-icon",
-                           "storage":  "storage-icon",
-                           "hypervisor":  "hypervisor-icon",
-                           "susemanager":  "susemanager-icon",
-                           "scribe":  "scribe-icon",
-                           "flir":  "flir-icon",
-                           "dell":  "dell-icon",
-                           "spiceworks":  "spiceworks-icon",
-                           "vscode":  "vscode-icon",
-                           "chatgpt":  "chatgpt-icon",
-                           "centos":  "centos-icon",
-                           "talentquest":  "talentquest-icon",
-                           "box":  "box-icon",
-                           "betterment":  "betterment-icon",
-                           "md":  "markdown-icon",
-                           "applebusinessmanager":  "applebusinessmanager-icon",
-                           "outagecalendar":  "outagecalendar-icon",
-                           "rubrik":  "rubrik-icon",
-                           "semrush":  "semrush-icon",
-                           "vanguard":  "vanguard-icon",
-                           "turbotax®":  "turbotax®-icon",
-                           "manus":  "manus-icon",
-                           "postgessql":  "postgessql-icon",
-                           "activision":  "activision-icon",
-                           "wisprflow":  "wisprflow-icon",
-                           "mindosmindverse":  "mindosmindverse-icon",
-                           "typeform":  "typeform-icon",
-                           "grafana":  "grafana-icon",
-                           "iessharepoint":  "iessharepoint-icon",
-                           "linkedin":  "linkedin-icon",
-                           "alight":  "alight-icon",
-                           "kompyte":  "kompyte-icon",
-                           "unitedhealthcare":  "unitedhealthcare-icon",
-                           "workingadvantage":  "workingadvantage-icon",
-                           "general":  "general-icon",
-                           "heygen":  "heygen-icon",
-                           "nintendoswitch":  "nintendoswitch-icon",
-                           "devolutions":  "devolutions-icon",
-                           "redhatsatellite":  "redhatsatellite-icon",
-                           "dellemc":  "dellemc-icon",
-                           "opentext":  "opentext-icon",
-                           "aidvantage":  "aidvantage-icon",
-                           "mistralai":  "mistralai-icon",
-                           "pika":  "pika-icon",
-                           "kubernetes":  "kubernetes-icon",
-                           "jetblue":  "jetblue-icon",
-                           "travel":  "travel-icon",
-                           "microsoft":  "microsoft-icon",
-                           "globalcommandcenter":  "globalcommandcenter-icon",
-                           "let\u0027senhance":  "let\u0027senhance-icon",
-                           "imanager":  "imanager-icon",
-                           "simplify":  "simplify-icon",
-                           "zapier":  "zapier-icon",
-                           "yml":  "yaml-icon",
-                           "brave":  "brave-icon",
-                           "ps1":  "powershell-icon",
-                           "cornerstone":  "cornerstone-icon",
-                           "gettyimages":  "gettyimages-icon",
-                           "floridadcf":  "floridadcf-icon",
-                           "aduro":  "aduro-icon",
-                           "interviewschat":  "interviewschat-icon",
-                           "myjax":  "myjax-icon",
-                           "thelinuxfoundation":  "thelinuxfoundation-icon",
-                           "stonebranch":  "stonebranch-icon",
-                           "socialmedia":  "socialmedia-icon",
-                           "linuxmint":  "linuxmint-icon",
-                           "zoom":  "zoom-icon",
-                           "grimo":  "grimo-icon",
-                           "personalvendorsupport":  "personalvendorsupport-icon",
-                           "lorexcloud":  "lorexcloud-icon",
-                           "producthunt":  "producthunt-icon",
-                           "foreman":  "foreman-icon",
-                           "floridablue":  "floridablue-icon",
-                           "financial":  "financial-icon",
-                           "pixray":  "pixray-icon",
-                           "dreamstudio":  "dreamstudio-icon",
-                           "deepai":  "deepai-icon",
-                           "amie":  "amie-icon",
-                           "cronacle":  "cronacle-icon",
-                           "mastodon":  "mastodon-icon",
-                           "suse":  "suse-icon",
-                           "secondme":  "secondme-icon",
-                           "finditnowgps":  "finditnowgps-icon",
-                           "storycheif":  "storycheif-icon",
-                           "gmail":  "gmail-icon",
-                           "riffo":  "riffo-icon",
-                           "ivanti":  "ivanti-icon",
                            "15five":  "15five-icon",
-                           "shaped":  "shaped-icon",
-                           "sequensai":  "sequensai-icon",
-                           "prudentialfinancial":  "prudentialfinancial-icon",
-                           "kalilinuxsubsystem":  "kalilinuxsubsystem-icon",
-                           "sccmreports":  "sccmreports-icon",
-                           "pearsonvue":  "pearsonvue-icon",
-                           "employers":  "employers-icon",
-                           "cloudteam":  "cloudteam-icon",
-                           "airwatch":  "airwatch-icon",
-                           "veritas":  "veritas-icon",
-                           "goprofiles":  "goprofiles-icon",
-                           "fidelity":  "fidelity-icon",
-                           "frontlyai":  "frontlyai-icon",
-                           "surveymonkey":  "surveymonkey-icon",
-                           "vidyard":  "vidyard-icon",
-                           "talentlyai":  "talentlyai-icon",
-                           "keypass":  "keypass-icon",
-                           "blaze":  "blaze-icon",
-                           "leapai":  "leapai-icon",
-                           "securityfirstinsurance":  "securityfirstinsurance-icon",
-                           "minio":  "minio-icon",
-                           "powershelluniversal":  "powershelluniversal-icon",
-                           "murphyusa":  "murphyusa-icon",
-                           "ts":  "typescript-icon",
-                           "js":  "javascript-icon",
-                           "buffer":  "buffer-icon",
-                           "artbreeder":  "artbreeder-icon",
-                           "adp":  "adp-icon",
-                           "relayapp":  "relayapp-icon",
-                           "poe":  "poe-icon",
-                           "github":  "github-icon",
-                           "vanceai":  "vanceai-icon",
-                           "docx":  "word-icon",
-                           "runway":  "runway-icon",
-                           "lg":  "lg-icon",
-                           "marketingblocksai":  "marketingblocksai-icon",
-                           "yaml":  "yaml-icon",
-                           "thycotic":  "thycotic-icon",
-                           "barclays":  "barclays-icon",
-                           "mentimeter":  "mentimeter-icon",
-                           "steam":  "steam-icon",
-                           "ubisoft":  "ubisoft-icon",
-                           "powerbi":  "powerbi-icon",
-                           "navient":  "navient-icon",
-                           "linkedinlearning":  "linkedinlearning-icon",
+                           "24seven":  "24seven-icon",
                            "absolute":  "absolute-icon",
-                           "healthequity":  "healthequity-icon",
-                           "smartliai":  "smartliai-icon",
-                           "icloud":  "icloud-icon",
-                           "gumloop":  "gumloop-icon",
-                           "pabbly":  "pabbly-icon",
-                           "disney+":  "disney+-icon",
-                           "gnu":  "gnu-icon",
-                           "taskade":  "taskade-icon",
-                           "adobefirefly":  "adobefirefly-icon",
-                           "veeam":  "veeam-icon",
-                           "it":  "dlvr.it-icon",
-                           "nightcafe":  "nightcafe-icon",
-                           "robinhood":  "robinhood-icon",
-                           "vmware":  "vmware-icon",
-                           "roberthalf":  "roberthalf-icon",
-                           "starryai":  "starryai-icon",
-                           "signupgenius":  "signupgenius-icon",
-                           "jea":  "jea-icon",
-                           "opinionstage":  "opinionstage-icon",
-                           "speechtonote":  "speechtonote-icon",
-                           "gigavuefm":  "gigavuefm-icon",
-                           "aestudio":  "aestudio-icon",
                            "acorns":  "acorns-icon",
-                           "riverbed":  "riverbed-icon",
-                           "jasperart":  "jasperart-icon",
-                           "myaskai":  "myaskai-icon",
-                           "stablediffusion":  "stablediffusion-icon",
-                           "enso":  "enso-icon",
-                           "gaming":  "gaming-icon",
-                           "sap":  "sap-icon",
-                           "firefox":  "firefox-icon",
-                           "federalstudentaid":  "federalstudentaid-icon",
-                           "qualys":  "qualys-icon",
-                           "facebook":  "facebook-icon",
-                           "perkspot":  "perkspot-icon",
-                           "brandstudio":  "brandstudio-icon",
-                           "debian":  "debian-icon",
-                           "prometheus":  "prometheus-icon",
-                           "computershare":  "computershare-icon",
-                           "ice":  "ice-icon",
-                           "skybell":  "skybell-icon",
-                           "theleap":  "theleap-icon",
-                           "myspacemobsters":  "myspacemobsters-icon",
-                           "solarwinds":  "solarwinds-icon",
-                           "shellpointmortgage":  "shellpointmortgage-icon",
-                           "akamai":  "akamai-icon",
-                           "stockimgai":  "stockimgai-icon",
-                           "benefits":  "benefits-icon",
-                           "riverside":  "riverside-icon",
-                           "arcdev":  "arcdev-icon",
-                           "geico":  "geico-icon",
-                           "codyapp":  "codyapp-icon",
-                           "ubuntu":  "ubuntu-icon",
-                           "huggingface":  "huggingface-icon",
-                           "orcidid":  "orcidid-icon",
-                           "restream":  "restream-icon",
-                           "blogger":  "blogger-icon",
-                           "pic":  "pic-icon",
-                           "walling":  "walling-icon",
-                           "cyberarc":  "cyberarc-icon",
-                           "presti":  "presti-icon",
-                           "jumpserver":  "jumpserver-icon",
-                           "verizon":  "verizon-icon",
-                           "dlvr.it":  "dlvr.it-icon",
-                           "rockylinux":  "rockylinux-icon",
-                           "cojflorida":  "cojflorida-icon",
-                           "gnome":  "gnome-icon",
-                           "picsart":  "picsart-icon",
-                           "timelessos":  "timelessos-icon",
-                           "zelle":  "zelle-icon",
-                           "commandcenter":  "commandcenter-icon",
-                           "seg":  "seg-icon",
-                           "automation":  "automation-icon",
-                           "resumerocket":  "resumerocket-icon",
-                           "dolyapp":  "dolyapp-icon",
-                           "loveable":  "loveable-icon",
-                           "asus":  "asus-icon",
-                           "ibmcloud":  "ibmcloud-icon",
+                           "activision":  "activision-icon",
+                           "adobefirefly":  "adobefirefly-icon",
+                           "adp":  "adp-icon",
+                           "aduro":  "aduro-icon",
+                           "aestudio":  "aestudio-icon",
                            "ai":  "ai-icon",
-                           "gamma":  "gamma-icon",
-                           "looka":  "looka-icon",
-                           "employflorida":  "employflorida-icon",
-                           "reforge":  "reforge-icon",
-                           "wombodream":  "wombodream-icon",
-                           "iffft":  "iffft-icon",
-                           "concur":  "concur-icon",
-                           "rideout":  "rideout-icon",
-                           "usbank":  "usbank-icon",
-                           "metaview":  "metaview-icon",
-                           "vendorsupport":  "vendorsupport-icon",
-                           "monitoring":  "monitoring-icon",
-                           "mbbradiology":  "mbbradiology-icon",
-                           "puppet":  "puppet-icon",
-                           "hulu":  "hulu-icon",
-                           "google":  "google-icon",
-                           "onenote":  "onenote-icon",
-                           "xml":  "xml-icon",
-                           "samwellai":  "samwellai-icon",
-                           "grainger":  "grainger-icon",
-                           "stablecog":  "stablecog-icon",
-                           "fotor":  "fotor-icon",
-                           "msi":  "msi-icon",
-                           "magicjack":  "magicjack-icon",
-                           "didero":  "didero-icon",
-                           "txt":  "text-icon",
-                           "gitlab":  "gitlab-icon",
+                           "aidvantage":  "aidvantage-icon",
+                           "airwatch":  "airwatch-icon",
+                           "akamai":  "akamai-icon",
+                           "akool":  "akool-icon",
+                           "alight":  "alight-icon",
+                           "amazon":  "amazon-icon",
+                           "amie":  "amie-icon",
+                           "applebusinessmanager":  "applebusinessmanager-icon",
+                           "arcdev":  "arcdev-icon",
+                           "artbreeder":  "artbreeder-icon",
+                           "asus":  "asus-icon",
+                           "at\u0026t":  "at\u0026t-icon",
                            "atena":  "atena-icon",
-                           "codemagazine":  "codemagazine-icon",
-                           "realvnc":  "realvnc-icon",
-                           "fedoralinux":  "fedoralinux-icon",
-                           "layerpath":  "layerpath-icon",
-                           "oliv":  "oliv-icon",
-                           "jamf":  "jamf-icon",
+                           "automation":  "automation-icon",
+                           "aws":  "aws-icon",
+                           "barclays":  "barclays-icon",
+                           "benefits":  "benefits-icon",
+                           "betterment":  "betterment-icon",
+                           "bik":  "bik-icon",
+                           "bizplanr":  "bizplanr-icon",
+                           "bjs":  "bjs-icon",
+                           "blaze":  "blaze-icon",
                            "blizzard":  "blizzard-icon",
-                           "localmed":  "localmed-icon",
+                           "blogger":  "blogger-icon",
+                           "bolto":  "bolto-icon",
+                           "box":  "box-icon",
+                           "brandstudio":  "brandstudio-icon",
+                           "brave":  "brave-icon",
+                           "broadcom":  "broadcom-icon",
+                           "buffer":  "buffer-icon",
+                           "canva":  "canva-icon",
+                           "canyonai":  "canyonai-icon",
+                           "capacities":  "capacities-icon",
+                           "cfsparkart":  "cfsparkart-icon",
+                           "chase":  "chase-icon",
+                           "chatgpt":  "chatgpt-icon",
+                           "checkpoint":  "checkpoint-icon",
+                           "citrix":  "citrix-icon",
+                           "closebot":  "closebot-icon",
+                           "closinglock":  "closinglock-icon",
+                           "cloudteam":  "cloudteam-icon",
+                           "codemagazine":  "codemagazine-icon",
+                           "codemagazineicon":  "codemagazineicon-icon",
+                           "codyapp":  "codyapp-icon",
+                           "cojflorida":  "cojflorida-icon",
+                           "commandcenter":  "commandcenter-icon",
+                           "communityfirst":  "communityfirst-icon",
+                           "comptia":  "comptia-icon",
+                           "computershare":  "computershare-icon",
+                           "concur":  "concur-icon",
+                           "cornerstone":  "cornerstone-icon",
+                           "craiyon":  "craiyon-icon",
+                           "crewting":  "crewting-icon",
+                           "cronacle":  "cronacle-icon",
+                           "cursor":  "cursor-icon",
+                           "cyberarc":  "cyberarc-icon",
+                           "deepai":  "deepai-icon",
+                           "deepdreamgenerator":  "deepdreamgenerator-icon",
+                           "dell":  "dell-icon",
+                           "dellemc":  "dellemc-icon",
+                           "devolutions":  "devolutions-icon",
+                           "didero":  "didero-icon",
+                           "disney+":  "disney+-icon",
+                           "dlvr.it":  "dlvr.it-icon",
+                           "dolyapp":  "dolyapp-icon",
+                           "download":  "download-icon",
+                           "dreamstudio":  "dreamstudio-icon",
+                           "employers":  "employers-icon",
+                           "employflorida":  "employflorida-icon",
+                           "enso":  "enso-icon",
+                           "everlearns":  "everlearns-icon",
+                           "expressscripts":  "expressscripts-icon",
+                           "facebook":  "facebook-icon",
+                           "federalstudentaid":  "federalstudentaid-icon",
+                           "fedoralinux":  "fedoralinux-icon",
+                           "fidelity":  "fidelity-icon",
+                           "financial":  "financial-icon",
+                           "finditnowgps":  "finditnowgps-icon",
+                           "firefox":  "firefox-icon",
+                           "flir":  "flir-icon",
+                           "floridablue":  "floridablue-icon",
+                           "floridadcf":  "floridadcf-icon",
+                           "foreman":  "foreman-icon",
+                           "fotor":  "fotor-icon",
+                           "freetaxusa":  "freetaxusa-icon",
+                           "frontlyai":  "frontlyai-icon",
+                           "gaming":  "gaming-icon",
+                           "gamma":  "gamma-icon",
                            "ganai":  "ganai-icon",
-                           "teladoc":  "teladoc-icon"
+                           "geico":  "geico-icon",
+                           "general":  "general-icon",
+                           "getimgai":  "getimgai-icon",
+                           "gettyimages":  "gettyimages-icon",
+                           "gigavuefm":  "gigavuefm-icon",
+                           "globalcommandcenter":  "globalcommandcenter-icon",
+                           "gmail":  "gmail-icon",
+                           "gnome":  "gnome-icon",
+                           "gnu":  "gnu-icon",
+                           "google":  "google-icon",
+                           "goprofiles":  "goprofiles-icon",
+                           "grainger":  "grainger-icon",
+                           "granola":  "granola-icon",
+                           "grimo":  "grimo-icon",
+                           "gumloop":  "gumloop-icon",
+                           "healthequity":  "healthequity-icon",
+                           "heathcarebluebook":  "heathcarebluebook-icon",
+                           "heygen":  "heygen-icon",
+                           "hirebase":  "hirebase-icon",
+                           "hpe":  "hpe-icon",
+                           "hubflo":  "hubflo-icon",
+                           "huggingface":  "huggingface-icon",
+                           "hulu":  "hulu-icon",
+                           "hypervisor":  "hypervisor-icon",
+                           "ibmcloud":  "ibmcloud-icon",
+                           "ice":  "ice-icon",
+                           "icloud":  "icloud-icon",
+                           "iessharepoint":  "iessharepoint-icon",
+                           "iffft":  "iffft-icon",
+                           "imanager":  "imanager-icon",
+                           "inrō":  "inrō-icon",
+                           "instagram":  "instagram-icon",
+                           "interviewschat":  "interviewschat-icon",
+                           "ivanti":  "ivanti-icon",
+                           "jamf":  "jamf-icon",
+                           "jasperart":  "jasperart-icon",
+                           "jea":  "jea-icon",
+                           "jetblue":  "jetblue-icon",
+                           "jobrightai":  "jobrightai-icon",
+                           "jobschatai":  "jobschatai-icon",
+                           "jumpserver":  "jumpserver-icon",
+                           "kalilinuxsubsystem":  "kalilinuxsubsystem-icon",
+                           "keypass":  "keypass-icon",
+                           "kickresume":  "kickresume-icon",
+                           "kompyte":  "kompyte-icon",
+                           "landry\u0027s":  "landry\u0027s-icon",
+                           "lateron":  "lateron-icon",
+                           "layerpath":  "layerpath-icon",
+                           "leapai":  "leapai-icon",
+                           "let\u0027senhance":  "let\u0027senhance-icon",
+                           "lg":  "lg-icon",
+                           "linkedin":  "linkedin-icon",
+                           "linkedinlearning":  "linkedinlearning-icon",
+                           "linuxmint":  "linuxmint-icon",
+                           "lmarena":  "lmarena-icon",
+                           "localmed":  "localmed-icon",
+                           "looka":  "looka-icon",
+                           "lorexcloud":  "lorexcloud-icon",
+                           "loveable":  "loveable-icon",
+                           "lowe\u0027s":  "lowe\u0027s-icon",
+                           "magicjack":  "magicjack-icon",
+                           "manus":  "manus-icon",
+                           "marketingblocksai":  "marketingblocksai-icon",
+                           "mastodon":  "mastodon-icon",
+                           "mbbradiology":  "mbbradiology-icon",
+                           "mentimeter":  "mentimeter-icon",
+                           "metaview":  "metaview-icon",
+                           "microfocus":  "microfocus-icon",
+                           "microsoft":  "microsoft-icon",
+                           "middayai":  "middayai-icon",
+                           "midjourney":  "midjourney-icon",
+                           "mindosmindverse":  "mindosmindverse-icon",
+                           "minio":  "minio-icon",
+                           "mistralai":  "mistralai-icon",
+                           "monitoring":  "monitoring-icon",
+                           "msi":  "msi-icon",
+                           "murphyusa":  "murphyusa-icon",
+                           "myaskai":  "myaskai-icon",
+                           "myhealthone":  "myhealthone-icon",
+                           "myhealthtoolkit":  "myhealthtoolkit-icon",
+                           "myjax":  "myjax-icon",
+                           "myspacemobsters":  "myspacemobsters-icon",
+                           "namelix":  "namelix-icon",
+                           "namify":  "namify-icon",
+                           "navient":  "navient-icon",
+                           "netflix":  "netflix-icon",
+                           "netscaler":  "netscaler-icon",
+                           "nextrightmanagement":  "nextrightmanagement-icon",
+                           "nightcafe":  "nightcafe-icon",
+                           "nintendoswitch":  "nintendoswitch-icon",
+                           "ocoya":  "ocoya-icon",
+                           "odoo":  "odoo-icon",
+                           "oliv":  "oliv-icon",
+                           "onenote":  "onenote-icon",
+                           "openfaas":  "openfaas-icon",
+                           "opentext":  "opentext-icon",
+                           "opinionstage":  "opinionstage-icon",
+                           "oraclesolaris":  "oraclesolaris-icon",
+                           "orcidid":  "orcidid-icon",
+                           "outagecalendar":  "outagecalendar-icon",
+                           "pabbly":  "pabbly-icon",
+                           "paid":  "paid-icon",
+                           "pearsonvue":  "pearsonvue-icon",
+                           "peek":  "peek-icon",
+                           "perkspot":  "perkspot-icon",
+                           "persanaai":  "persanaai-icon",
+                           "personallab":  "personallab-icon",
+                           "personalvendorsupport":  "personalvendorsupport-icon",
+                           "pic":  "pic-icon",
+                           "picsart":  "picsart-icon",
+                           "pika":  "pika-icon",
+                           "pixray":  "pixray-icon",
+                           "playstation":  "playstation-icon",
+                           "pluralsight":  "pluralsight-icon",
+                           "pncbank":  "pncbank-icon",
+                           "poe":  "poe-icon",
+                           "postgessql":  "postgessql-icon",
+                           "powerbi":  "powerbi-icon",
+                           "powershelluniversal":  "powershelluniversal-icon",
+                           "prajwaldesai":  "prajwaldesai-icon",
+                           "prepair":  "prepair-icon",
+                           "presti":  "presti-icon",
+                           "prodia":  "prodia-icon",
+                           "producthunt":  "producthunt-icon",
+                           "proton":  "proton-icon",
+                           "prudentialfinancial":  "prudentialfinancial-icon",
+                           "puppet":  "puppet-icon",
+                           "purestorage":  "purestorage-icon",
+                           "qualys":  "qualys-icon",
+                           "quest":  "quest-icon",
+                           "questionbase":  "questionbase-icon",
+                           "quraai":  "quraai-icon",
+                           "realvnc":  "realvnc-icon",
+                           "redhatsatellite":  "redhatsatellite-icon",
+                           "reforge":  "reforge-icon",
+                           "relayapp":  "relayapp-icon",
+                           "replicate":  "replicate-icon",
+                           "restream":  "restream-icon",
+                           "resumerocket":  "resumerocket-icon",
+                           "rideout":  "rideout-icon",
+                           "riffo":  "riffo-icon",
+                           "riverbed":  "riverbed-icon",
+                           "riverside":  "riverside-icon",
+                           "roadwayai":  "roadwayai-icon",
+                           "roberthalf":  "roberthalf-icon",
+                           "robinhood":  "robinhood-icon",
+                           "rockylinux":  "rockylinux-icon",
+                           "roush":  "roush-icon",
+                           "rubrik":  "rubrik-icon",
+                           "runway":  "runway-icon",
+                           "rxss":  "rxss-icon",
+                           "salliemae":  "salliemae-icon",
+                           "samwellai":  "samwellai-icon",
+                           "sap":  "sap-icon",
+                           "scadepro":  "scadepro-icon",
+                           "sccmreports":  "sccmreports-icon",
+                           "scribe":  "scribe-icon",
+                           "secondme":  "secondme-icon",
+                           "securityfirstinsurance":  "securityfirstinsurance-icon",
+                           "seg":  "seg-icon",
+                           "segrewards":  "segrewards-icon",
+                           "semrush":  "semrush-icon",
+                           "sequensai":  "sequensai-icon",
+                           "servicenow":  "servicenow-icon",
+                           "shaped":  "shaped-icon",
+                           "shellpointmortgage":  "shellpointmortgage-icon",
+                           "shutterstock":  "shutterstock-icon",
+                           "signupgenius":  "signupgenius-icon",
+                           "simplify":  "simplify-icon",
+                           "skybell":  "skybell-icon",
+                           "skype":  "skype-icon",
+                           "smartliai":  "smartliai-icon",
+                           "socialmedia":  "socialmedia-icon",
+                           "solarwinds":  "solarwinds-icon",
+                           "sonnet":  "sonnet-icon",
+                           "speechtonote":  "speechtonote-icon",
+                           "spiceworks":  "spiceworks-icon",
+                           "spinachai":  "spinachai-icon",
+                           "stablecog":  "stablecog-icon",
+                           "stablediffusion":  "stablediffusion-icon",
+                           "starryai":  "starryai-icon",
+                           "steam":  "steam-icon",
+                           "stockimgai":  "stockimgai-icon",
+                           "stonebranch":  "stonebranch-icon",
+                           "storage":  "storage-icon",
+                           "storycheif":  "storycheif-icon",
+                           "surveymonkey":  "surveymonkey-icon",
+                           "suse":  "suse-icon",
+                           "susemanager":  "susemanager-icon",
+                           "t2platformlinux":  "t2platformlinux-icon",
+                           "talentlyai":  "talentlyai-icon",
+                           "talentquest":  "talentquest-icon",
+                           "talknotes":  "talknotes-icon",
+                           "taskade":  "taskade-icon",
+                           "teladoc":  "teladoc-icon",
+                           "theleap":  "theleap-icon",
+                           "thelinuxfoundation":  "thelinuxfoundation-icon",
+                           "thycotic":  "thycotic-icon",
+                           "timelessos":  "timelessos-icon",
+                           "training":  "training-icon",
+                           "travel":  "travel-icon",
+                           "turbotax®":  "turbotax®-icon",
+                           "typeform":  "typeform-icon",
+                           "ubisoft":  "ubisoft-icon",
+                           "ucsmanager":  "ucsmanager-icon",
+                           "unitedhealthcare":  "unitedhealthcare-icon",
+                           "usbank":  "usbank-icon",
+                           "vanceai":  "vanceai-icon",
+                           "vanguard":  "vanguard-icon",
+                           "veeam":  "veeam-icon",
+                           "venafi":  "venafi-icon",
+                           "vendorsupport":  "vendorsupport-icon",
+                           "veritas":  "veritas-icon",
+                           "verizon":  "verizon-icon",
+                           "vidyard":  "vidyard-icon",
+                           "walling":  "walling-icon",
+                           "wellsfargo":  "wellsfargo-icon",
+                           "wisprflow":  "wisprflow-icon",
+                           "wombodream":  "wombodream-icon",
+                           "wordpress":  "wordpress-icon",
+                           "workingadvantage":  "workingadvantage-icon",
+                           "x":  "x-icon",
+                           "zapier":  "zapier-icon",
+                           "zelle":  "zelle-icon",
+                           "zoom":  "zoom-icon"
                        },
     "fileNames":  {
-                      "deepdreamgenerator":  "deepdreamgenerator-icon",
-                      "prodia":  "prodia-icon",
-                      "jobrightai":  "jobrightai-icon",
-                      "aws":  "aws-icon",
-                      "hpe":  "hpe-icon",
-                      "heathcarebluebook":  "heathcarebluebook-icon",
-                      "everlearns":  "everlearns-icon",
-                      "ocoya":  "ocoya-icon",
-                      "middayai":  "middayai-icon",
-                      "dlvr":  "dlvr.it-icon",
-                      "prajwaldesai":  "prajwaldesai-icon",
-                      "namelix":  "namelix-icon",
-                      "24seven":  "24seven-icon",
-                      "granola":  "granola-icon",
-                      "namify":  "namify-icon",
-                      "wellsfargo":  "wellsfargo-icon",
-                      "pluralsight":  "pluralsight-icon",
-                      "cursor":  "cursor-icon",
-                      "segrewards":  "segrewards-icon",
-                      "servicenow":  "servicenow-icon",
-                      "shutterstock":  "shutterstock-icon",
-                      "bizplanr":  "bizplanr-icon",
-                      "openfaas":  "openfaas-icon",
-                      "instagram":  "instagram-icon",
-                      "scadepro":  "scadepro-icon",
-                      "jobschatai":  "jobschatai-icon",
-                      "replicate":  "replicate-icon",
-                      "closinglock":  "closinglock-icon",
-                      "getimgai":  "getimgai-icon",
-                      "download":  "download-icon",
-                      "broadcom":  "broadcom-icon",
-                      "midjourney":  "midjourney-icon",
-                      "x":  "x-icon",
-                      "expressscripts":  "expressscripts-icon",
-                      "sonnet":  "sonnet-icon",
-                      "cfsparkart":  "cfsparkart-icon",
-                      "playstation":  "playstation-icon",
-                      "roadwayai":  "roadwayai-icon",
-                      "venafi":  "venafi-icon",
-                      "roush":  "roush-icon",
-                      "myhealthtoolkit":  "myhealthtoolkit-icon",
-                      "inrō":  "inrō-icon",
-                      "at\u0026t":  "at\u0026t-icon",
-                      "questionbase":  "questionbase-icon",
-                      "freetaxusa":  "freetaxusa-icon",
-                      "akool":  "akool-icon",
-                      "ucsmanager":  "ucsmanager-icon",
-                      "paid":  "paid-icon",
-                      "myhealthone":  "myhealthone-icon",
-                      "codemagazineicon":  "codemagazineicon-icon",
-                      "training":  "training-icon",
-                      "prepair":  "prepair-icon",
-                      "rxss":  "rxss-icon",
-                      "netflix":  "netflix-icon",
-                      "bik":  "bik-icon",
-                      "checkpoint":  "checkpoint-icon",
-                      "bjs":  "bjs-icon",
-                      "chase":  "chase-icon",
-                      "lateron":  "lateron-icon",
-                      "capacities":  "capacities-icon",
-                      "amazon":  "amazon-icon",
-                      "lowe\u0027s":  "lowe\u0027s-icon",
-                      "kickresume":  "kickresume-icon",
-                      "microfocus":  "microfocus-icon",
-                      "skype":  "skype-icon",
-                      "closebot":  "closebot-icon",
-                      "quest":  "quest-icon",
-                      "proton":  "proton-icon",
-                      "nextrightmanagement":  "nextrightmanagement-icon",
-                      "crewting":  "crewting-icon",
-                      "comptia":  "comptia-icon",
-                      "canva":  "canva-icon",
-                      "hirebase":  "hirebase-icon",
-                      "persanaai":  "persanaai-icon",
-                      "hubflo":  "hubflo-icon",
-                      "peek":  "peek-icon",
-                      "citrix":  "citrix-icon",
-                      "talknotes":  "talknotes-icon",
-                      "pncbank":  "pncbank-icon",
-                      "lmarena":  "lmarena-icon",
-                      "landry\u0027s":  "landry\u0027s-icon",
-                      "spinachai":  "spinachai-icon",
-                      "personallab":  "personallab-icon",
-                      "oraclesolaris":  "oraclesolaris-icon",
-                      "communityfirst":  "communityfirst-icon",
-                      "bolto":  "bolto-icon",
-                      "netscaler":  "netscaler-icon",
-                      "odoo":  "odoo-icon",
-                      "craiyon":  "craiyon-icon",
-                      "canyonai":  "canyonai-icon",
-                      "quraai":  "quraai-icon",
-                      "salliemae":  "salliemae-icon",
-                      "t2platformlinux":  "t2platformlinux-icon",
-                      "wordpress":  "wordpress-icon",
-                      "purestorage":  "purestorage-icon",
-                      "storage":  "storage-icon",
-                      "hypervisor":  "hypervisor-icon",
-                      "susemanager":  "susemanager-icon",
-                      "scribe":  "scribe-icon",
-                      "flir":  "flir-icon",
-                      "dell":  "dell-icon",
-                      "spiceworks":  "spiceworks-icon",
-                      "vscode":  "vscode-icon",
-                      "chatgpt":  "chatgpt-icon",
-                      "centos":  "centos-icon",
-                      "talentquest":  "talentquest-icon",
-                      "box":  "box-icon",
-                      "betterment":  "betterment-icon",
-                      "applebusinessmanager":  "applebusinessmanager-icon",
-                      "outagecalendar":  "outagecalendar-icon",
-                      "rubrik":  "rubrik-icon",
-                      "semrush":  "semrush-icon",
-                      "vanguard":  "vanguard-icon",
-                      "turbotax®":  "turbotax®-icon",
-                      "manus":  "manus-icon",
-                      "postgessql":  "postgessql-icon",
-                      "activision":  "activision-icon",
-                      "wisprflow":  "wisprflow-icon",
-                      "mindosmindverse":  "mindosmindverse-icon",
-                      "typeform":  "typeform-icon",
-                      "grafana":  "grafana-icon",
-                      "iessharepoint":  "iessharepoint-icon",
-                      "linkedin":  "linkedin-icon",
-                      "alight":  "alight-icon",
-                      "kompyte":  "kompyte-icon",
-                      "unitedhealthcare":  "unitedhealthcare-icon",
-                      "workingadvantage":  "workingadvantage-icon",
-                      "general":  "general-icon",
-                      "heygen":  "heygen-icon",
-                      "nintendoswitch":  "nintendoswitch-icon",
-                      "devolutions":  "devolutions-icon",
-                      "redhatsatellite":  "redhatsatellite-icon",
-                      "dellemc":  "dellemc-icon",
-                      "opentext":  "opentext-icon",
-                      "aidvantage":  "aidvantage-icon",
-                      "mistralai":  "mistralai-icon",
-                      "pika":  "pika-icon",
-                      "kubernetes":  "kubernetes-icon",
-                      "jetblue":  "jetblue-icon",
-                      "travel":  "travel-icon",
-                      "microsoft":  "microsoft-icon",
-                      "globalcommandcenter":  "globalcommandcenter-icon",
-                      "let\u0027senhance":  "let\u0027senhance-icon",
-                      "imanager":  "imanager-icon",
-                      "simplify":  "simplify-icon",
-                      "zapier":  "zapier-icon",
-                      "brave":  "brave-icon",
-                      "cornerstone":  "cornerstone-icon",
-                      "gettyimages":  "gettyimages-icon",
-                      "floridadcf":  "floridadcf-icon",
-                      "aduro":  "aduro-icon",
-                      "interviewschat":  "interviewschat-icon",
-                      "myjax":  "myjax-icon",
-                      "thelinuxfoundation":  "thelinuxfoundation-icon",
-                      "stonebranch":  "stonebranch-icon",
-                      "socialmedia":  "socialmedia-icon",
-                      "linuxmint":  "linuxmint-icon",
-                      "zoom":  "zoom-icon",
-                      "grimo":  "grimo-icon",
-                      "personalvendorsupport":  "personalvendorsupport-icon",
-                      "lorexcloud":  "lorexcloud-icon",
-                      "producthunt":  "producthunt-icon",
-                      "foreman":  "foreman-icon",
-                      "floridablue":  "floridablue-icon",
-                      "financial":  "financial-icon",
-                      "pixray":  "pixray-icon",
-                      "dreamstudio":  "dreamstudio-icon",
-                      "deepai":  "deepai-icon",
-                      "amie":  "amie-icon",
-                      "cronacle":  "cronacle-icon",
-                      "mastodon":  "mastodon-icon",
-                      "suse":  "suse-icon",
-                      "secondme":  "secondme-icon",
-                      "finditnowgps":  "finditnowgps-icon",
-                      "storycheif":  "storycheif-icon",
-                      "gmail":  "gmail-icon",
-                      "riffo":  "riffo-icon",
-                      "ivanti":  "ivanti-icon",
-                      "15five":  "15five-icon",
-                      "shaped":  "shaped-icon",
-                      "sequensai":  "sequensai-icon",
-                      "prudentialfinancial":  "prudentialfinancial-icon",
-                      "kalilinuxsubsystem":  "kalilinuxsubsystem-icon",
-                      "sccmreports":  "sccmreports-icon",
-                      "pearsonvue":  "pearsonvue-icon",
-                      "employers":  "employers-icon",
-                      "cloudteam":  "cloudteam-icon",
-                      "airwatch":  "airwatch-icon",
-                      "veritas":  "veritas-icon",
-                      "goprofiles":  "goprofiles-icon",
-                      "fidelity":  "fidelity-icon",
-                      "frontlyai":  "frontlyai-icon",
-                      "surveymonkey":  "surveymonkey-icon",
-                      "vidyard":  "vidyard-icon",
-                      "talentlyai":  "talentlyai-icon",
-                      "keypass":  "keypass-icon",
-                      "blaze":  "blaze-icon",
-                      "leapai":  "leapai-icon",
-                      "securityfirstinsurance":  "securityfirstinsurance-icon",
-                      "minio":  "minio-icon",
-                      "powershelluniversal":  "powershelluniversal-icon",
-                      "murphyusa":  "murphyusa-icon",
-                      "buffer":  "buffer-icon",
-                      "artbreeder":  "artbreeder-icon",
-                      "adp":  "adp-icon",
-                      "relayapp":  "relayapp-icon",
-                      "poe":  "poe-icon",
-                      "github":  "github-icon",
-                      "vanceai":  "vanceai-icon",
-                      "runway":  "runway-icon",
-                      "lg":  "lg-icon",
-                      "marketingblocksai":  "marketingblocksai-icon",
-                      "thycotic":  "thycotic-icon",
-                      "barclays":  "barclays-icon",
-                      "mentimeter":  "mentimeter-icon",
-                      "steam":  "steam-icon",
-                      "ubisoft":  "ubisoft-icon",
-                      "powerbi":  "powerbi-icon",
-                      "navient":  "navient-icon",
-                      "linkedinlearning":  "linkedinlearning-icon",
-                      "absolute":  "absolute-icon",
-                      "healthequity":  "healthequity-icon",
-                      "smartliai":  "smartliai-icon",
-                      "icloud":  "icloud-icon",
-                      "gumloop":  "gumloop-icon",
-                      "pabbly":  "pabbly-icon",
-                      "disney+":  "disney+-icon",
-                      "gnu":  "gnu-icon",
-                      "taskade":  "taskade-icon",
-                      "adobefirefly":  "adobefirefly-icon",
-                      "veeam":  "veeam-icon",
-                      "it":  "dlvr.it-icon",
-                      "nightcafe":  "nightcafe-icon",
-                      "robinhood":  "robinhood-icon",
-                      "vmware":  "vmware-icon",
-                      "roberthalf":  "roberthalf-icon",
-                      "starryai":  "starryai-icon",
-                      "signupgenius":  "signupgenius-icon",
-                      "jea":  "jea-icon",
-                      "opinionstage":  "opinionstage-icon",
-                      "speechtonote":  "speechtonote-icon",
-                      "gigavuefm":  "gigavuefm-icon",
-                      "aestudio":  "aestudio-icon",
-                      "acorns":  "acorns-icon",
-                      "riverbed":  "riverbed-icon",
-                      "jasperart":  "jasperart-icon",
-                      "myaskai":  "myaskai-icon",
-                      "stablediffusion":  "stablediffusion-icon",
-                      "enso":  "enso-icon",
-                      "gaming":  "gaming-icon",
-                      "sap":  "sap-icon",
-                      "firefox":  "firefox-icon",
-                      "federalstudentaid":  "federalstudentaid-icon",
-                      "qualys":  "qualys-icon",
-                      "facebook":  "facebook-icon",
-                      "perkspot":  "perkspot-icon",
-                      "brandstudio":  "brandstudio-icon",
-                      "debian":  "debian-icon",
-                      "prometheus":  "prometheus-icon",
-                      "computershare":  "computershare-icon",
-                      "ice":  "ice-icon",
-                      "skybell":  "skybell-icon",
-                      "theleap":  "theleap-icon",
-                      "myspacemobsters":  "myspacemobsters-icon",
-                      "solarwinds":  "solarwinds-icon",
-                      "shellpointmortgage":  "shellpointmortgage-icon",
-                      "akamai":  "akamai-icon",
-                      "stockimgai":  "stockimgai-icon",
-                      "benefits":  "benefits-icon",
-                      "riverside":  "riverside-icon",
-                      "arcdev":  "arcdev-icon",
-                      "geico":  "geico-icon",
-                      "codyapp":  "codyapp-icon",
-                      "ubuntu":  "ubuntu-icon",
-                      "huggingface":  "huggingface-icon",
-                      "orcidid":  "orcidid-icon",
-                      "restream":  "restream-icon",
-                      "blogger":  "blogger-icon",
-                      "pic":  "pic-icon",
-                      "walling":  "walling-icon",
-                      "cyberarc":  "cyberarc-icon",
-                      "presti":  "presti-icon",
-                      "jumpserver":  "jumpserver-icon",
-                      "verizon":  "verizon-icon",
-                      "dlvr.it":  "dlvr.it-icon",
-                      "rockylinux":  "rockylinux-icon",
-                      "cojflorida":  "cojflorida-icon",
-                      "gnome":  "gnome-icon",
-                      "picsart":  "picsart-icon",
-                      "timelessos":  "timelessos-icon",
-                      "zelle":  "zelle-icon",
-                      "commandcenter":  "commandcenter-icon",
-                      "seg":  "seg-icon",
-                      "automation":  "automation-icon",
-                      "resumerocket":  "resumerocket-icon",
-                      "dolyapp":  "dolyapp-icon",
-                      "loveable":  "loveable-icon",
-                      "asus":  "asus-icon",
-                      "ibmcloud":  "ibmcloud-icon",
-                      "ai":  "ai-icon",
-                      "gamma":  "gamma-icon",
-                      "looka":  "looka-icon",
-                      "employflorida":  "employflorida-icon",
-                      "reforge":  "reforge-icon",
-                      "wombodream":  "wombodream-icon",
-                      "iffft":  "iffft-icon",
-                      "concur":  "concur-icon",
-                      "rideout":  "rideout-icon",
-                      "usbank":  "usbank-icon",
-                      "metaview":  "metaview-icon",
-                      "vendorsupport":  "vendorsupport-icon",
-                      "monitoring":  "monitoring-icon",
-                      "mbbradiology":  "mbbradiology-icon",
-                      "puppet":  "puppet-icon",
-                      "hulu":  "hulu-icon",
-                      "google":  "google-icon",
-                      "onenote":  "onenote-icon",
-                      "samwellai":  "samwellai-icon",
-                      "grainger":  "grainger-icon",
-                      "stablecog":  "stablecog-icon",
-                      "fotor":  "fotor-icon",
-                      "msi":  "msi-icon",
-                      "magicjack":  "magicjack-icon",
-                      "didero":  "didero-icon",
-                      "gitlab":  "gitlab-icon",
-                      "atena":  "atena-icon",
-                      "codemagazine":  "codemagazine-icon",
-                      "realvnc":  "realvnc-icon",
-                      "fedoralinux":  "fedoralinux-icon",
-                      "layerpath":  "layerpath-icon",
-                      "oliv":  "oliv-icon",
-                      "jamf":  "jamf-icon",
-                      "blizzard":  "blizzard-icon",
-                      "localmed":  "localmed-icon",
-                      "ganai":  "ganai-icon",
-                      "teladoc":  "teladoc-icon"
+                      ".gitignore":  "github-icon",
+                      ".gitattributes":  "github-icon",
+                      ".gitmodules":  "github-icon",
+                      ".gitlab-ci.yml":  "gitlab-icon",
+                      "kustomization.yaml":  "kubernetes-icon",
+                      "kustomization.yml":  "kubernetes-icon",
+                      ".vscodeignore":  "vscode-icon",
+                      ".vscode":  "vscode-icon"
                   }
 }

@@ -133,9 +133,12 @@ Write-Host "`n[STEP 2] Registry build" -ForegroundColor Yellow
 
 . "$RepoRoot\pipeline\Invoke-RegistryBuild.ps1"
 
+$MappingsPath = Join-Path $RepoRoot "config\mappings.json"
+
 $registryParams = @{
     InputPath  = $Processed
-    OutputPath = $RegistryPath
+    OutputPath    = $RegistryPath
+    MappingsPath  = $MappingsPath
 }
 if ($DryRun) { $registryParams.DryRun = $true }
 
