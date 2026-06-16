@@ -91,7 +91,7 @@ function Invoke-RegistryBuild {
 
         # --- iconDefinitions: always add every PNG ---
         $iconDefinitions[$iconId] = [ordered]@{
-            iconPath = "./processed-icons/$relPath"
+            iconPath = "../processed-icons/$relPath"
         }
 
         # --- fileExtensions: map via mappings file if available ---

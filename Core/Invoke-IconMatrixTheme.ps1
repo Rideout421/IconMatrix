@@ -65,7 +65,7 @@ function Invoke-IconMatrixTheme {
     # -------------------------
     # LOAD ICONS (CRITICAL DEBUG POINT)
     # -------------------------
-    $icons = Get-ChildItem -Path $IconsPath -Filter *.png -ErrorAction SilentlyContinue
+    $icons = Get-ChildItem -Path $IconsPath -Recurse -File -Filter *.png -ErrorAction SilentlyContinue
 
     Write-Host "[DEBUG] Icons found = $($icons.Count)"
 
@@ -88,7 +88,7 @@ function Invoke-IconMatrixTheme {
         $id = "$($icon.BaseName)-icon"
 
         $theme.iconDefinitions[$id] = @{
-            iconPath = "./processed-icons/$($icon.Name)"
+            iconPath = "../processed-icons/$($icon.Name)"
         }
     }
 
