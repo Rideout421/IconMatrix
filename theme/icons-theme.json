@@ -309,6 +309,9 @@
                             "ganai-icon":  {
                                                "iconPath":  "../processed-icons/ganai.png"
                                            },
+                            "gear-icon":  {
+                                              "iconPath":  "../processed-icons/gear.png"
+                                          },
                             "geico-icon":  {
                                                "iconPath":  "../processed-icons/geico.png"
                                            },
@@ -1120,6 +1123,7 @@
                            "gaming":  "gaming-icon",
                            "gamma":  "gamma-icon",
                            "ganai":  "ganai-icon",
+                           "gear":  "gear-icon",
                            "geico":  "geico-icon",
                            "general":  "general-icon",
                            "getimgai":  "getimgai-icon",
