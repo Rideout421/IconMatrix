@@ -88,7 +88,7 @@ function Invoke-IconMatrixTheme {
         $id = "$($icon.BaseName)-icon"
 
         $theme.iconDefinitions[$id] = @{
-            iconPath = "../processed-icons/$($icon.Name)"
+            iconPath = "processed-icons/$($icon.Name)"
         }
     }
 

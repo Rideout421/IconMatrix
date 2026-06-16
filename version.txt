@@ -1,8 +1,6 @@
-﻿Version: 29
-Timestamp: 06-16-2026 10-49-AM
+﻿Version: 30
+Timestamp: 06-16-2026 11-23-AM
 Changed files:
 Core/Invoke-IconMatrixTheme.ps1
 iconmatrix-1.0.0.vsix
-pipeline/Invoke-RegistryBuild.ps1
-registry/icons.json
 theme/icons-theme.json
