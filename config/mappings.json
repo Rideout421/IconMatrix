@@ -32,7 +32,6 @@
     "azure":            [],
     "grafana":          [],
     "prometheus":       [],
-    "kubernetes":       [],
     "ubuntu":           [],
     "debian":           [],
     "centos":           [],
