@@ -792,6 +792,9 @@
                             "prudentialfinancial-icon":  {
                                                              "iconPath":  "../processed-icons/prudentialfinancial.png"
                                                          },
+                            "ps-icon":  {
+                                            "iconPath":  "../processed-icons/ps.png"
+                                        },
                             "puppet-icon":  {
                                                 "iconPath":  "../processed-icons/puppet.png"
                                             },
@@ -1436,6 +1439,7 @@
                            "producthunt":  "producthunt-icon",
                            "proton":  "proton-icon",
                            "prudentialfinancial":  "prudentialfinancial-icon",
+                           "ps":  "ps-icon",
                            "puppet":  "puppet-icon",
                            "purestorage":  "purestorage-icon",
                            "py":  "python-icon",
