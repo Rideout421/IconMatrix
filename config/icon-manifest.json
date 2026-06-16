@@ -49,10 +49,10 @@
                       "source":  "quest.png",
                       "hash":  "0E89818E94200CB5F4DFA99D7456E78D2BA68E8EA25EDC2191F96E80A75A3AF1"
                   },
-    "loveable.png":  {
+    "linkedin.png":  {
                          "mode":  "passthrough",
-                         "source":  "loveable.png",
-                         "hash":  "F3F3B5106ED07CECA826D4DB2C7A3BA9678FBB5711A4CF4D79E477B31C01A0E5"
+                         "source":  "linkedin.png",
+                         "hash":  "B8A76633F2EC4D798145D8F60173F8F0E6063151A188B0B3B293E629B3D2C83A"
                      },
     "nextrightmanagement.png":  {
                                     "mode":  "passthrough",
@@ -279,11 +279,11 @@
                         "source":  "24seven.png",
                         "hash":  "226F72FCB1E3277BA42CFBF4D2B72F32E563C828516D96169EF1726B8B42F8AC"
                     },
-    "linkedin.png":  {
-                         "mode":  "passthrough",
-                         "source":  "linkedin.png",
-                         "hash":  "B8A76633F2EC4D798145D8F60173F8F0E6063151A188B0B3B293E629B3D2C83A"
-                     },
+    "arcdev.png":  {
+                       "mode":  "passthrough",
+                       "source":  "arcdev.png",
+                       "hash":  "2D03E1620D7E53262590B566B34EA26D4E3EBAE065FDA31AB975305C14143269"
+                   },
     "layerpath.png":  {
                           "mode":  "passthrough",
                           "source":  "layerpath.png",
@@ -459,11 +459,6 @@
                      "source":  "gear.png",
                      "hash":  "DF09E2547ACE29806D0FB0597C2BCAACEC27C11EE035CCF279ECB4E42C356823"
                  },
-    "postgessql.png":  {
-                           "mode":  "passthrough",
-                           "source":  "postgessql.png",
-                           "hash":  "D99B90D5BD629C8DB3454AC456A3E61E7225AC185FD0AFCE7461361133B31982"
-                       },
     "dlvr.it.png":  {
                         "mode":  "passthrough",
                         "source":  "dlvr.it.png",
@@ -644,11 +639,11 @@
                     "source":  "aws.png",
                     "hash":  "2E36827E12936A9EEA42CC5651B4690E6325FBD26D4853CF1ED45E81228D2A6E"
                 },
-    "crewting.png":  {
-                         "mode":  "passthrough",
-                         "source":  "crewting.png",
-                         "hash":  "91C05797388B211D2FE07ACFC30CC5E479F87BD0BD0DC6AC055477FB4D509C0C"
-                     },
+    "postgessql.png":  {
+                           "mode":  "passthrough",
+                           "source":  "postgessql.png",
+                           "hash":  "D99B90D5BD629C8DB3454AC456A3E61E7225AC185FD0AFCE7461361133B31982"
+                       },
     "prajwaldesai.png":  {
                              "mode":  "converted",
                              "source":  "prajwaldesai.png",
@@ -847,7 +842,7 @@
     "general.png":  {
                         "mode":  "converted",
                         "source":  "general.png",
-                        "hash":  "7B4E8FA57C09ACC3EA9B7085C9DB78C0A33DCB429980726702FBFD6EFAF7F50A"
+                        "hash":  "3F15B09F8C1D0F1F0FFE0C27DF94FBCBBB0BDFC581D46D016EFD6499BDD95A0C"
                     },
     "finditnowgps.png":  {
                              "mode":  "passthrough",
@@ -1074,6 +1069,11 @@
                            "source":  "pearsonvue.png",
                            "hash":  "C2C3C75748AE94E3833D0E8950B9408865CA0CFC007D2B45D3E7A67EE1AA2F2E"
                        },
+    "outagecalendar.png":  {
+                               "mode":  "converted",
+                               "source":  "outagecalendar.png",
+                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
+                           },
     "midjourney.png":  {
                            "mode":  "passthrough",
                            "source":  "midjourney.png",
@@ -1089,21 +1089,16 @@
                      "source":  "ruby.png",
                      "hash":  "9C7CE2A51D9D4F70DAEC750A7118A28FC0AA519D83EE678A9BAA0C83DFE7E426"
                  },
-    "speechtonote.png":  {
-                             "mode":  "passthrough",
-                             "source":  "speechtonote.png",
-                             "hash":  "A7D49AAA0904F5C3FDC87EF34D97CCB9256A77FC78E4DF1EA9622D946EB44354"
-                         },
+    "go.png":  {
+                   "mode":  "converted",
+                   "source":  "go.png",
+                   "hash":  "8F7269C26D590E3927F727E581472F6FAC62F062C9743D26E9E1FF80B1B95192"
+               },
     "perkspot.png":  {
                          "mode":  "passthrough",
                          "source":  "perkspot.png",
                          "hash":  "E1DBFC6615962CA4F7EE7EF8459FFBD2A842458B91CA071B78641A9933D7EAF0"
                      },
-    "codemagazine.png":  {
-                             "mode":  "converted",
-                             "source":  "codemagazine.png",
-                             "hash":  "4A5C250E4905A22A2E53CB0C9FF9314D99BF3D6E9C8B4CC7DCF4F1C199B4EA3A"
-                         },
     "mentimeter.png":  {
                            "mode":  "passthrough",
                            "source":  "mentimeter.png",
@@ -1219,11 +1214,11 @@
                          "source":  "simplify.png",
                          "hash":  "86E4DB33CE182B651A4007D3582BA851FCCF8E52136F0F2774D04DE61FAE88A5"
                      },
-    "arcdev.png":  {
-                       "mode":  "passthrough",
-                       "source":  "arcdev.png",
-                       "hash":  "2D03E1620D7E53262590B566B34EA26D4E3EBAE065FDA31AB975305C14143269"
-                   },
+    "gnome.png":  {
+                      "mode":  "passthrough",
+                      "source":  "gnome.png",
+                      "hash":  "4E03E985742D85A328D73A341DBA0B634E52C9837DFCAD7436C16C64433CAE3C"
+                  },
     "ibmcloud.png":  {
                          "mode":  "passthrough",
                          "source":  "ibmcloud.png",
@@ -1274,11 +1269,6 @@
                                    "source":  "shellpointmortgage.png",
                                    "hash":  "FE45E12FFCE9A36B54DD1CC9FDB99301B74FB73AB678FC6E989526B609BAF47D"
                                },
-    "go.png":  {
-                   "mode":  "converted",
-                   "source":  "go.png",
-                   "hash":  "8F7269C26D590E3927F727E581472F6FAC62F062C9743D26E9E1FF80B1B95192"
-               },
     "thycotic.png":  {
                          "mode":  "passthrough",
                          "source":  "thycotic.png",
@@ -1394,6 +1384,11 @@
                          "source":  "training.png",
                          "hash":  "E959A2DDAD688F7B5CFF570559A6342AC4BBD4EEFA14E2CB6A621944CAF52E5F"
                      },
+    "kalilinuxsubsystem.png":  {
+                                   "mode":  "passthrough",
+                                   "source":  "kalilinuxsubsystem.png",
+                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
+                               },
     "talentlyai.png":  {
                            "mode":  "passthrough",
                            "source":  "talentlyai.png",
@@ -1459,6 +1454,11 @@
                    "source":  "ai.png",
                    "hash":  "B1452287941EECE762C316B5934DF76615667394CBBCDF6FF71B467CF3AA640E"
                },
+    "loveable.png":  {
+                         "mode":  "passthrough",
+                         "source":  "loveable.png",
+                         "hash":  "F3F3B5106ED07CECA826D4DB2C7A3BA9678FBB5711A4CF4D79E477B31C01A0E5"
+                     },
     "text.png":  {
                      "mode":  "converted",
                      "source":  "text.png",
@@ -1494,11 +1494,11 @@
                              "source":  "adobefirefly.png",
                              "hash":  "E7CA03063AEE9FBFA0E26D19D7A3F5BF153A2B8C1A1C32B849E9BDD3520687AF"
                          },
-    "outagecalendar.png":  {
-                               "mode":  "converted",
-                               "source":  "outagecalendar.png",
-                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
-                           },
+    "codemagazine.png":  {
+                             "mode":  "converted",
+                             "source":  "codemagazine.png",
+                             "hash":  "4A5C250E4905A22A2E53CB0C9FF9314D99BF3D6E9C8B4CC7DCF4F1C199B4EA3A"
+                         },
     "bizplanr.png":  {
                          "mode":  "passthrough",
                          "source":  "bizplanr.png",
@@ -1589,6 +1589,11 @@
                        "source":  "15five.png",
                        "hash":  "43A747E3BEFC00BE4855D4D52DC21EDC36731941BC8B1BBB23B29090EF6983E2"
                    },
+    "crewting.png":  {
+                         "mode":  "passthrough",
+                         "source":  "crewting.png",
+                         "hash":  "91C05797388B211D2FE07ACFC30CC5E479F87BD0BD0DC6AC055477FB4D509C0C"
+                     },
     "cronacle.png":  {
                          "mode":  "converted",
                          "source":  "cronacle.png",
@@ -1724,6 +1729,11 @@
                     "source":  "awx.png",
                     "hash":  "772CECD130EB61C6FBAE40218BBA8EC6F0182B0565AAAE012D3B6F079A8F1DD5"
                 },
+    "speechtonote.png":  {
+                             "mode":  "passthrough",
+                             "source":  "speechtonote.png",
+                             "hash":  "A7D49AAA0904F5C3FDC87EF34D97CCB9256A77FC78E4DF1EA9622D946EB44354"
+                         },
     "certificate.png":  {
                             "mode":  "converted",
                             "source":  "certificate.png",
@@ -1764,11 +1774,6 @@
                          "source":  "metaview.png",
                          "hash":  "1F6C0D7673989E0B378B81D59AFEC105C968FDCABDD5CABF31CCE3EC24D3E427"
                      },
-    "resumerocket.png":  {
-                             "mode":  "passthrough",
-                             "source":  "resumerocket.png",
-                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
-                         },
     "betterment.png":  {
                            "mode":  "passthrough",
                            "source":  "betterment.png",
@@ -1834,11 +1839,11 @@
                        "source":  "gitlab.png",
                        "hash":  "CF99E896A7F306CB162C29ABAB6B1A96A02CA40DA024134B24715B89C2D81219"
                    },
-    "kalilinuxsubsystem.png":  {
-                                   "mode":  "passthrough",
-                                   "source":  "kalilinuxsubsystem.png",
-                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
-                               },
+    "resumerocket.png":  {
+                             "mode":  "passthrough",
+                             "source":  "resumerocket.png",
+                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
+                         },
     "pluralsight.png":  {
                             "mode":  "passthrough",
                             "source":  "pluralsight.png",
@@ -1874,11 +1879,6 @@
                            "source":  "capacities.png",
                            "hash":  "E5105F0380C2AC8BF6DF1BA9F76972FD5098E45CFA17C1B28DBC80B768D6ADD9"
                        },
-    "gnome.png":  {
-                      "mode":  "passthrough",
-                      "source":  "gnome.png",
-                      "hash":  "4E03E985742D85A328D73A341DBA0B634E52C9837DFCAD7436C16C64433CAE3C"
-                  },
     "onenote.png":  {
                         "mode":  "passthrough",
                         "source":  "onenote.png",
