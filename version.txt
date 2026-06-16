@@ -1,16 +1,4 @@
-﻿Version: 31
-Timestamp: 06-16-2026 04-00-PM
+﻿Version: 32
+Timestamp: 06-16-2026 04-12-PM
 Changed files:
-.vscodeignore
-config/icon-manifest.json
-Core/Invoke-IconMatrixTheme.ps1
-Core/Sync-Icons.ps1
-iconmatrix-1.0.0.vsix
-processed-icons/awx.png
-processed-icons/bicep.png
-processed-icons/idme.png
-processed-icons/powershell.png
-processed-icons/terraform.png
-registry/icons.json
-Test/
-theme/icons-theme.json
+scripts/Powershell/FindMissingIcons.ps1
