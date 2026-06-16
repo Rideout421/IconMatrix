@@ -12,15 +12,11 @@ function Invoke-IconMatrixTheme {
         [switch]$DryRun
     )
 
-    Write-Host "`n=== ICONMATRIX THEME DEBUG START ===" -ForegroundColor Cyan
+    Write-Host "`n=== ICONMATRIX THEME BUILD ===" -ForegroundColor Cyan
+    Write-Host "[DEBUG] RegistryPath  = $RegistryPath"
+    Write-Host "[DEBUG] IconsPath     = $IconsPath"
+    Write-Host "[DEBUG] ThemeFilePath = $ThemeFilePath"
 
-    Write-Host "[DEBUG] RegistryPath   = $RegistryPath"
-    Write-Host "[DEBUG] IconsPath      = $IconsPath"
-    Write-Host "[DEBUG] ThemeFilePath  = $ThemeFilePath"
-
-    # -------------------------
-    # DRY RUN
-    # -------------------------
     if ($DryRun) {
         Write-Host "[DRYRUN] Exiting before execution" -ForegroundColor Yellow
         return
@@ -29,175 +25,150 @@ function Invoke-IconMatrixTheme {
     # -------------------------
     # VALIDATION
     # -------------------------
-    if (-not (Test-Path $RegistryPath)) {
-        throw "Registry missing: $RegistryPath"
-    }
-
-    if (-not (Test-Path $IconsPath)) {
-        throw "Icons missing: $IconsPath"
-    }
+    if (-not (Test-Path $RegistryPath)) { throw "Registry missing: $RegistryPath" }
+    if (-not (Test-Path $IconsPath))    { throw "Icons folder missing: $IconsPath" }
 
     # -------------------------
     # LOAD REGISTRY
     # -------------------------
-    $registryRaw = Get-Content $RegistryPath -Raw
-    $registry = $registryRaw | ConvertFrom-Json
-
-    if (-not $registry) {
-        throw "Registry JSON invalid"
-    }
+    $registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
+    if (-not $registry) { throw "Registry JSON invalid or empty" }
 
     Write-Host "[DEBUG] Registry loaded OK"
 
     # -------------------------
-    # FORCE OUTPUT PATH
+    # RESOLVE PATHS
     # -------------------------
     $ThemeFilePath = [System.IO.Path]::GetFullPath($ThemeFilePath)
-    $outDir = Split-Path -Parent $ThemeFilePath
+    $outDir        = Split-Path -Parent $ThemeFilePath
 
-    Write-Host "[DEBUG] Output directory = $outDir"
+    # The iconPath in the theme JSON must be relative to the theme file location.
+    # Theme lives at:  theme/icons-theme.json
+    # Icons live at:   processed-icons/
+    # So relative path from theme/ to processed-icons/ is: ../processed-icons/
+    # Using Uri-based relative path for PS 5.1 compatibility (no GetRelativePath)
+    $IconsPath     = [System.IO.Path]::GetFullPath($IconsPath)
+    $fromUri       = [Uri]("$outDir\")
+    $toUri         = [Uri]($IconsPath)
+    $iconRelPrefix = $fromUri.MakeRelativeUri($toUri).ToString() -replace '%20',' '
+
+    Write-Host "[DEBUG] Icon relative prefix = $iconRelPrefix"
 
     if (-not (Test-Path $outDir)) {
-        Write-Host "[DEBUG] Creating output directory..."
         New-Item -ItemType Directory -Path $outDir -Force | Out-Null
     }
 
     # -------------------------
-    # LOAD ICONS
+    # SCAN ICON FILES
     # -------------------------
-    $icons = Get-ChildItem -Path $IconsPath -Recurse -File -Filter *.png -ErrorAction SilentlyContinue
+    $icons = Get-ChildItem -Path $IconsPath -Recurse -File -Filter "*.png" -ErrorAction SilentlyContinue
 
     Write-Host "[DEBUG] Icons found = $($icons.Count)"
 
     if ($icons.Count -eq 0) {
-        Write-Host "[ERROR] NO ICONS FOUND - theme will be empty" -ForegroundColor Red
+        Write-Host "[ERROR] No PNG files found - theme will be empty" -ForegroundColor Red
     }
 
     # -------------------------
-    # BUILD THEME OBJECT
+    # BUILD iconDefinitions
+    # Key:   "terraform-icon"
+    # Value: { iconPath: "../processed-icons/terraform.png" }
     # -------------------------
-    $theme = @{
-        iconDefinitions = @{}
-        fileExtensions  = @{}
-        fileNames       = @{}
-        folder          = @{}
-        file            = @{}
+    $iconDefinitions = [ordered]@{}
+
+    foreach ($icon in ($icons | Sort-Object BaseName)) {
+        $id  = "$($icon.BaseName.ToLower())-icon"
+        # path relative to theme file
+        $rel = "$iconRelPrefix/$($icon.Name)" -replace '//','/'
+        $iconDefinitions[$id] = [ordered]@{ iconPath = $rel }
     }
 
-    foreach ($icon in $icons) {
-        $id = "$($icon.BaseName)-icon"
-        $theme.iconDefinitions[$id] = @{
-            iconPath = "processed-icons/$($icon.Name)"
-        }
-    }
-
-    Write-Host "[DEBUG] iconDefinitions = $($theme.iconDefinitions.Count)"
+    Write-Host "[DEBUG] iconDefinitions built = $($iconDefinitions.Count)"
 
     # -------------------------
-    # MAP REGISTRY (Supports BOTH formats)
+    # BUILD fileExtensions + fileNames FROM REGISTRY
+    # Registry (icons.json) is the flat format:
+    #   fileExtensions: { "tf": "terraform-icon", "ps1": "ps1-icon" }
+    #   fileNames:      { "Dockerfile": "docker-icon" }
     # -------------------------
-    $mappedExtensions = 0
-    $mappedNames = 0
+    $fileExtensions  = [ordered]@{}
+    $fileNames       = [ordered]@{}
+    $mappedExt       = 0
+    $mappedNames     = 0
 
-    # Case 1: Original mappings.json format (with "extensions" and "fileNames" containing arrays)
-    if ($registry.extensions) {
-        Write-Host "[DEBUG] Using original mappings.json format (extensions + fileNames arrays)" -ForegroundColor Cyan
-
-        if ($registry.extensions) {
-            foreach ($group in $registry.extensions.PSObject.Properties) {
-                $iconId = "$($group.Name)-icon"
-                if ($theme.iconDefinitions.ContainsKey($iconId)) {
-                    foreach ($ext in $group.Value) {
-                        $theme.fileExtensions[$ext] = $iconId
-                        $mappedExtensions++
-                    }
-                }
-            }
-        }
-
-        if ($registry.fileNames) {
-            foreach ($group in $registry.fileNames.PSObject.Properties) {
-                $iconId = "$($group.Name)-icon"
-                if ($theme.iconDefinitions.ContainsKey($iconId)) {
-                    foreach ($name in $group.Value) {
-                        $theme.fileNames[$name] = $iconId
-                        $mappedNames++
-                    }
-                }
+    if ($registry.fileExtensions) {
+        foreach ($p in $registry.fileExtensions.PSObject.Properties) {
+            $iconId = $p.Value
+            # Only include if the icon actually exists in our definitions
+            if ($iconDefinitions.Contains($iconId)) {
+                $fileExtensions[$p.Name] = $iconId
+                $mappedExt++
+            } else {
+                Write-Host "[SKIP-EXT] '$($p.Name)' -> '$iconId' (icon not found)" -ForegroundColor DarkYellow
             }
         }
     }
-    # Case 2: Flat format (generated icons.json with fileExtensions/fileNames already processed)
-    elseif ($registry.fileExtensions -or $registry.fileNames) {
-        Write-Host "[DEBUG] Using flat registry format" -ForegroundColor Cyan
 
-        if ($registry.fileExtensions) {
-            foreach ($p in $registry.fileExtensions.PSObject.Properties) {
-                $theme.fileExtensions[$p.Name] = $p.Value
-                $mappedExtensions++
-            }
-        }
-        if ($registry.fileNames) {
-            foreach ($p in $registry.fileNames.PSObject.Properties) {
-                $theme.fileNames[$p.Name] = $p.Value
+    if ($registry.fileNames) {
+        foreach ($p in $registry.fileNames.PSObject.Properties) {
+            $iconId = $p.Value
+            if ($iconDefinitions.Contains($iconId)) {
+                $fileNames[$p.Name] = $iconId
                 $mappedNames++
+            } else {
+                Write-Host "[SKIP-NAME] '$($p.Name)' -> '$iconId' (icon not found)" -ForegroundColor DarkYellow
             }
         }
     }
 
-    Write-Host "[DEBUG] fileExtensions mapped = $mappedExtensions"
-    Write-Host "[DEBUG] fileNames mapped = $mappedNames"
+    Write-Host "[DEBUG] fileExtensions mapped = $mappedExt"
+    Write-Host "[DEBUG] fileNames mapped      = $mappedNames"
 
     # -------------------------
-    # SET DEFAULTS (Critical for icons to show at all)
+    # DEFAULT ICON
+    # Used for any file/folder with no specific mapping.
+    # Prefer "general-icon", fall back to first available.
     # -------------------------
-    $defaultIcon = "general-icon"
-
-    if (-not $theme.iconDefinitions.ContainsKey($defaultIcon)) {
-        $defaultIcon = $theme.iconDefinitions.Keys | Select-Object -First 1
-        Write-Host "[WARN] 'general-icon' not found, using fallback: $defaultIcon" -ForegroundColor Yellow
-    }
-
-    if ($defaultIcon) {
-        $theme.file = $defaultIcon
-        $theme.folder = $defaultIcon
-        Write-Host "[DEBUG] Default file/folder icon set to: $defaultIcon" -ForegroundColor Green
+    $defaultIconId = if ($iconDefinitions.Contains("general-icon")) {
+        "general-icon"
     } else {
-        Write-Host "[WARN] No default icon could be set" -ForegroundColor Yellow
+        $iconDefinitions.Keys | Select-Object -First 1
+    }
+
+    Write-Host "[DEBUG] Default icon = $defaultIconId" -ForegroundColor Cyan
+
+    # -------------------------
+    # ASSEMBLE THEME
+    # VS Code icon theme contract:
+    #   iconDefinitions  - all icon definitions with iconPath
+    #   fileExtensions   - extension -> iconId
+    #   fileNames        - exact filename -> iconId
+    #   file             - iconId string (default for any file)
+    #   folder           - iconId string (default for any folder)
+    #   folderExpanded   - iconId string (optional, open folder)
+    # -------------------------
+    $theme = [ordered]@{
+        iconDefinitions = $iconDefinitions
+        fileExtensions  = $fileExtensions
+        fileNames       = $fileNames
+        file            = $defaultIconId
+        folder          = $defaultIconId
+        folderExpanded  = $defaultIconId
     }
 
     # -------------------------
-    # SERIALIZE JSON
+    # SERIALIZE + WRITE
     # -------------------------
     $json = $theme | ConvertTo-Json -Depth 50
 
     Write-Host "[DEBUG] JSON length = $($json.Length)"
 
-    if ([string]::IsNullOrWhiteSpace($json)) {
-        throw "JSON generation failed (empty output)"
-    }
+    if ([string]::IsNullOrWhiteSpace($json)) { throw "JSON serialization produced empty output" }
 
-    # -------------------------
-    # WRITE FILE
-    # -------------------------
-    Write-Host "[DEBUG] Writing file -> $ThemeFilePath" -ForegroundColor Yellow
+    Set-Content -Path $ThemeFilePath -Value $json -Encoding UTF8 -Force -ErrorAction Stop
 
-    try {
-        Set-Content -Path $ThemeFilePath -Value $json -Encoding UTF8 -Force -ErrorAction Stop
-    }
-    catch {
-        throw "WRITE FAILED: $($_.Exception.Message)"
-    }
-
-    # -------------------------
-    # VERIFY
-    # -------------------------
-    if (-not (Test-Path $ThemeFilePath)) {
-        throw "FILE NOT CREATED AFTER WRITE"
-    }
+    if (-not (Test-Path $ThemeFilePath)) { throw "FILE NOT CREATED AFTER WRITE" }
 
     $size = (Get-Item $ThemeFilePath).Length
-
-    Write-Host "[SUCCESS] Theme created successfully ($size bytes)" -ForegroundColor Green
-    Write-Host "[SUCCESS] Output -> $ThemeFilePath`n" -ForegroundColor Green
+    Write-Host "[SUCCESS] Theme written ($size bytes) -> $ThemeFilePath" -ForegroundColor Green
 }

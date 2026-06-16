@@ -75,6 +75,9 @@
                             "aws-icon":  {
                                              "iconPath":  "../processed-icons/aws.png"
                                          },
+                            "awx-icon":  {
+                                             "iconPath":  "../processed-icons/awx.png"
+                                         },
                             "barclays-icon":  {
                                                   "iconPath":  "../processed-icons/barclays.png"
                                               },
@@ -84,6 +87,9 @@
                             "betterment-icon":  {
                                                     "iconPath":  "../processed-icons/betterment.png"
                                                 },
+                            "bicep-icon":  {
+                                               "iconPath":  "../processed-icons/bicep.png"
+                                           },
                             "bik-icon":  {
                                              "iconPath":  "../processed-icons/bik.png"
                                          },
@@ -393,6 +399,9 @@
                             "icloud-icon":  {
                                                 "iconPath":  "../processed-icons/icloud.png"
                                             },
+                            "idme-icon":  {
+                                              "iconPath":  "../processed-icons/idme.png"
+                                          },
                             "iessharepoint-icon":  {
                                                        "iconPath":  "../processed-icons/iessharepoint.png"
                                                    },
@@ -669,6 +678,9 @@
                             "powerbi-icon":  {
                                                  "iconPath":  "../processed-icons/powerbi.png"
                                              },
+                            "powershell-icon":  {
+                                                    "iconPath":  "../processed-icons/powershell.png"
+                                                },
                             "powershelluniversal-icon":  {
                                                              "iconPath":  "../processed-icons/powershelluniversal.png"
                                                          },
@@ -903,6 +915,9 @@
                             "teladoc-icon":  {
                                                  "iconPath":  "../processed-icons/teladoc.png"
                                              },
+                            "terraform-icon":  {
+                                                   "iconPath":  "../processed-icons/terraform.png"
+                                               },
                             "theleap-icon":  {
                                                  "iconPath":  "../processed-icons/theleap.png"
                                              },
@@ -1029,9 +1044,11 @@
                            "atena":  "atena-icon",
                            "automation":  "automation-icon",
                            "aws":  "aws-icon",
+                           "awx":  "awx-icon",
                            "barclays":  "barclays-icon",
                            "benefits":  "benefits-icon",
                            "betterment":  "betterment-icon",
+                           "bicep":  "bicep-icon",
                            "bik":  "bik-icon",
                            "bizplanr":  "bizplanr-icon",
                            "bjs":  "bjs-icon",
@@ -1130,6 +1147,7 @@
                            "ibmcloud":  "ibmcloud-icon",
                            "ice":  "ice-icon",
                            "icloud":  "icloud-icon",
+                           "idme":  "idme-icon",
                            "iessharepoint":  "iessharepoint-icon",
                            "iffft":  "iffft-icon",
                            "imanager":  "imanager-icon",
@@ -1223,6 +1241,10 @@
                            "poe":  "poe-icon",
                            "postgessql":  "postgessql-icon",
                            "powerbi":  "powerbi-icon",
+                           "ps1":  "powershell-icon",
+                           "psm1":  "powershell-icon",
+                           "psd1":  "powershell-icon",
+                           "ps1xml":  "powershell-icon",
                            "powershelluniversal":  "powershelluniversal-icon",
                            "prajwaldesai":  "prajwaldesai-icon",
                            "prepair":  "prepair-icon",
@@ -1300,6 +1322,9 @@
                            "talknotes":  "talknotes-icon",
                            "taskade":  "taskade-icon",
                            "teladoc":  "teladoc-icon",
+                           "tf":  "terraform-icon",
+                           "tfvars":  "terraform-icon",
+                           "tfstate":  "terraform-icon",
                            "theleap":  "theleap-icon",
                            "thelinuxfoundation":  "thelinuxfoundation-icon",
                            "thycotic":  "thycotic-icon",
@@ -1338,6 +1363,8 @@
                       ".gitlab-ci.yml":  "gitlab-icon",
                       "kustomization.yaml":  "kubernetes-icon",
                       "kustomization.yml":  "kubernetes-icon",
+                      ".terraformrc":  "terraform-icon",
+                      "terraform.tfvars":  "terraform-icon",
                       ".vscodeignore":  "vscode-icon",
                       ".vscode":  "vscode-icon"
                   }

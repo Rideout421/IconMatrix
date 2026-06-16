@@ -1,11 +1,30 @@
-.git/**
+# Exclude development/build tooling - NOT shipped in extension
 .vscode/**
-scripts/**
+.gitignore
+.gitattributes
+node_modules/**
+archive/**
+
+# Source icons (raw/unprocessed) - NOT shipped
 source-icons/**
-processed-icons/**
-logs/**
+
+# Build pipeline scripts - NOT shipped
+pipeline/**
+Tools/**
+Core/**
+utils/**
+automoation/**
 config/**
+logs/**
+registry/**
+
+# Misc
 *.vsix
-*.log
-# Archived files - retained for reference, excluded from build and source control
-archive/
+version.txt
+readme.md
+
+# -----------------------------------------------
+# IMPORTANT: processed-icons/ is NOT listed here
+# It MUST be included in the VSIX so VS Code can
+# find the PNG files referenced in icons-theme.json
+# -----------------------------------------------

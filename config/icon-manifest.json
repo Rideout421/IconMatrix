@@ -24,6 +24,11 @@
                                 "source":  "t2platformlinux.png",
                                 "hash":  "2D8A4FEB60C9A69475246970EDED60E27B9C8E2BC76D8ABE0B866C50D64E7C81"
                             },
+    "poe.png":  {
+                    "mode":  "passthrough",
+                    "source":  "poe.png",
+                    "hash":  "4646469C534A550941159CF8BBB710F8FDC6037591D1C954EA9483A3D57A849E"
+                },
     "seg.png":  {
                     "mode":  "converted",
                     "source":  "seg.png",
@@ -104,11 +109,11 @@
                        "source":  "runway.png",
                        "hash":  "1E59064F485CF4E6F8C006CC10B296C16053F36C783C6EA14F7F9E5599AF8B51"
                    },
-    "myhealthtoolkit.png":  {
-                                "mode":  "passthrough",
-                                "source":  "myhealthtoolkit.png",
-                                "hash":  "AF214186D0C85AEB4CE88EFED799BE3C7987E51B9D162F4F7169A9009982BCA4"
-                            },
+    "bicep.png":  {
+                      "mode":  "converted",
+                      "source":  "bicep.png",
+                      "hash":  "AE77F5A574E79B6C1A7FA10F32344664FBAC9E77CEF77DE61AC3D4D6DF122F15"
+                  },
     "sequensai.png":  {
                           "mode":  "passthrough",
                           "source":  "sequensai.png",
@@ -304,10 +309,10 @@
                             "source":  "talentquest.png",
                             "hash":  "EF8D44D52BE4DF79EAD0430DAAB04C90D9CD2E1D33219E97F6BE2500675CFD1F"
                         },
-    "wombodream.png":  {
-                           "mode":  "passthrough",
-                           "source":  "wombodream.png",
-                           "hash":  "56103A4645414D64D51F1786BBA3E63DEFF14C58DEDF086920DB97685DBCD13E"
+    "jumpserver.png":  {
+                           "mode":  "converted",
+                           "source":  "jumpserver.png",
+                           "hash":  "537002E9A2F18E4706392A7393158E6D0AAE63FD3092C49650807DC36DEB0091"
                        },
     "servicenow.png":  {
                            "mode":  "converted",
@@ -449,11 +454,6 @@
                                    "source":  "deepdreamgenerator.png",
                                    "hash":  "7161EA0CA59FBF34C15E79C2CD2FE32EBB9458877FFEE2083504757A5B6B1C15"
                                },
-    "vanguard.png":  {
-                         "mode":  "passthrough",
-                         "source":  "vanguard.png",
-                         "hash":  "F705CA584329DD6569F32D6D6ECEFD3AD3EC64AA26136CF2BDC32062B48063FE"
-                     },
     "jobrightai.png":  {
                            "mode":  "passthrough",
                            "source":  "jobrightai.png",
@@ -564,6 +564,11 @@
                          "source":  "cyberarc.png",
                          "hash":  "1D3B52821361370D564A3FB9863C73B53B856A15EAF4323ED0A0961A7E7BCB48"
                      },
+    "terraform.png":  {
+                          "mode":  "converted",
+                          "source":  "terraform.png",
+                          "hash":  "67CC8B8BCA79CA4ADBFF6DB1FBF6548945BE8E90B531D3FC76CD0835CA304106"
+                      },
     "debian.png":  {
                        "mode":  "passthrough",
                        "source":  "debian.png",
@@ -909,6 +914,11 @@
                        "source":  "ivanti.png",
                        "hash":  "060AF9583CF8CD1A700F99007F0FA269A4300B02B5CB3B1ABFA0AEDE61D57953"
                    },
+    "wombodream.png":  {
+                           "mode":  "passthrough",
+                           "source":  "wombodream.png",
+                           "hash":  "56103A4645414D64D51F1786BBA3E63DEFF14C58DEDF086920DB97685DBCD13E"
+                       },
     "acorns.png":  {
                        "mode":  "passthrough",
                        "source":  "acorns.png",
@@ -929,6 +939,11 @@
                                   "source":  "marketingblocksai.png",
                                   "hash":  "23A88D9AC7B8FC1BF3BCD099CC8BCE54E6CDB3F22761F969CAD66E427ACCC8DD"
                               },
+    "samwellai.png":  {
+                          "mode":  "passthrough",
+                          "source":  "samwellai.png",
+                          "hash":  "82C9261920BF51F7BA0A519C641033C9A32553112D35FACA97AEFD8B65B9868E"
+                      },
     "signupgenius.png":  {
                              "mode":  "passthrough",
                              "source":  "signupgenius.png",
@@ -1104,11 +1119,11 @@
                                   "source":  "let\u0027senhance.png",
                                   "hash":  "34070A578C7DFBBC0D045042C43FB836ABA2FF58F17194417231952D03E4DF87"
                               },
-    "samwellai.png":  {
-                          "mode":  "passthrough",
-                          "source":  "samwellai.png",
-                          "hash":  "82C9261920BF51F7BA0A519C641033C9A32553112D35FACA97AEFD8B65B9868E"
-                      },
+    "vanguard.png":  {
+                         "mode":  "passthrough",
+                         "source":  "vanguard.png",
+                         "hash":  "F705CA584329DD6569F32D6D6ECEFD3AD3EC64AA26136CF2BDC32062B48063FE"
+                     },
     "fidelity.png":  {
                          "mode":  "passthrough",
                          "source":  "fidelity.png",
@@ -1144,11 +1159,6 @@
                       "source":  "minio.png",
                       "hash":  "26C267377DF7450C26E1F112611237872F4A9902609ECAF3F7AC818BA26254F4"
                   },
-    "outagecalendar.png":  {
-                               "mode":  "converted",
-                               "source":  "outagecalendar.png",
-                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
-                           },
     "checkpoint.png":  {
                            "mode":  "passthrough",
                            "source":  "checkpoint.png",
@@ -1174,6 +1184,11 @@
                        "source":  "travel.png",
                        "hash":  "41A61C35E3B6E9607FDBEA4DF08FC41783C3555287E03EBC9F53BA1A2F583CBB"
                    },
+    "powershell.png":  {
+                           "mode":  "converted",
+                           "source":  "powershell.png",
+                           "hash":  "85950A1746990E3CEF4318549B71DD24CAC20BAE4F6E99501EB667E92FF23951"
+                       },
     "riverbed.png":  {
                          "mode":  "converted",
                          "source":  "riverbed.png",
@@ -1214,11 +1229,6 @@
                        "source":  "akamai.png",
                        "hash":  "42A39E16B5B0FE909C76B938EC5DA858B01557480E9D5F9F36E6AC0555911675"
                    },
-    "jumpserver.png":  {
-                           "mode":  "converted",
-                           "source":  "jumpserver.png",
-                           "hash":  "537002E9A2F18E4706392A7393158E6D0AAE63FD3092C49650807DC36DEB0091"
-                       },
     "jamf.png":  {
                      "mode":  "passthrough",
                      "source":  "jamf.png",
@@ -1244,11 +1254,6 @@
                          "source":  "training.png",
                          "hash":  "E959A2DDAD688F7B5CFF570559A6342AC4BBD4EEFA14E2CB6A621944CAF52E5F"
                      },
-    "kalilinuxsubsystem.png":  {
-                                   "mode":  "passthrough",
-                                   "source":  "kalilinuxsubsystem.png",
-                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
-                               },
     "betterment.png":  {
                            "mode":  "passthrough",
                            "source":  "betterment.png",
@@ -1339,11 +1344,11 @@
                              "source":  "adobefirefly.png",
                              "hash":  "E7CA03063AEE9FBFA0E26D19D7A3F5BF153A2B8C1A1C32B849E9BDD3520687AF"
                          },
-    "15five.png":  {
-                       "mode":  "passthrough",
-                       "source":  "15five.png",
-                       "hash":  "43A747E3BEFC00BE4855D4D52DC21EDC36731941BC8B1BBB23B29090EF6983E2"
-                   },
+    "outagecalendar.png":  {
+                               "mode":  "converted",
+                               "source":  "outagecalendar.png",
+                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
+                           },
     "bizplanr.png":  {
                          "mode":  "passthrough",
                          "source":  "bizplanr.png",
@@ -1409,6 +1414,11 @@
                         "source":  "verizon.png",
                         "hash":  "21EC8D2198DB637EC828671AE90E49CAAE623FB63827ED048F23B8199E3013AF"
                     },
+    "15five.png":  {
+                       "mode":  "passthrough",
+                       "source":  "15five.png",
+                       "hash":  "43A747E3BEFC00BE4855D4D52DC21EDC36731941BC8B1BBB23B29090EF6983E2"
+                   },
     "veeam.png":  {
                       "mode":  "converted",
                       "source":  "veeam.png",
@@ -1524,6 +1534,11 @@
                                 "source":  "redhatsatellite.png",
                                 "hash":  "0AB855CB52B9D48C06A429421287685EF245BC783E1BFBED3711ABF2B1C83683"
                             },
+    "awx.png":  {
+                    "mode":  "converted",
+                    "source":  "awx.png",
+                    "hash":  "772CECD130EB61C6FBAE40218BBA8EC6F0182B0565AAAE012D3B6F079A8F1DD5"
+                },
     "vmware.png":  {
                        "mode":  "converted",
                        "source":  "vmware.png",
@@ -1544,16 +1559,21 @@
                         "source":  "storage.png",
                         "hash":  "F60A6FC6936D42F63B155D701E25C1F7D74C060BC385319B844B830A36BDB6A8"
                     },
-    "poe.png":  {
-                    "mode":  "passthrough",
-                    "source":  "poe.png",
-                    "hash":  "4646469C534A550941159CF8BBB710F8FDC6037591D1C954EA9483A3D57A849E"
-                },
+    "myhealthtoolkit.png":  {
+                                "mode":  "passthrough",
+                                "source":  "myhealthtoolkit.png",
+                                "hash":  "AF214186D0C85AEB4CE88EFED799BE3C7987E51B9D162F4F7169A9009982BCA4"
+                            },
     "frontlyai.png":  {
                           "mode":  "passthrough",
                           "source":  "frontlyai.png",
                           "hash":  "6C599D949E247D8FEC25EAFC2FE4FA2F848A2DE3BEE28C1C0D211D91BA1AE6B7"
                       },
+    "resumerocket.png":  {
+                             "mode":  "passthrough",
+                             "source":  "resumerocket.png",
+                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
+                         },
     "iessharepoint.png":  {
                               "mode":  "converted",
                               "source":  "iessharepoint.png",
@@ -1563,6 +1583,11 @@
                      "mode":  "converted",
                      "source":  "paid.png",
                      "hash":  "A4343A11DEABBF3821B7CCD630E8255592AB10ACA1CF32EB719E344FD61C9938"
+                 },
+    "idme.png":  {
+                     "mode":  "passthrough",
+                     "source":  "idme.png",
+                     "hash":  "537A67CC32D5C9FDD828A5A61B1CD919155DC835C49B89A63EFC957B02D1A592"
                  },
     "oraclesolaris.png":  {
                               "mode":  "converted",
@@ -1609,11 +1634,11 @@
                        "source":  "gitlab.png",
                        "hash":  "CF99E896A7F306CB162C29ABAB6B1A96A02CA40DA024134B24715B89C2D81219"
                    },
-    "resumerocket.png":  {
-                             "mode":  "passthrough",
-                             "source":  "resumerocket.png",
-                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
-                         },
+    "kalilinuxsubsystem.png":  {
+                                   "mode":  "passthrough",
+                                   "source":  "kalilinuxsubsystem.png",
+                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
+                               },
     "pluralsight.png":  {
                             "mode":  "passthrough",
                             "source":  "pluralsight.png",
