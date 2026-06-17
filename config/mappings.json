@@ -1,6 +1,6 @@
 {
   "extensions": {
-    "Powershell":   ["ps1", "psm1", "psd1", "ps1xml"],
+    "powershell":   ["ps1", "psm1", "psd1", "ps1xml"],
     "json":         ["json", "jsonc"],
     "markdown":     ["md", "mdx", "markdown"],
     "txt":          ["txt"],
@@ -72,7 +72,7 @@
     "yarn":         ["yarn.lock", ".yarnrc", ".yarnrc.yml"],
     "editorconfig": [".editorconfig"],
     "env":          [".env", ".env.local", ".env.production", ".env.development", ".env.example"],
-    "ps1":          ["profile.ps1", "Microsoft.PowerShell_profile.ps1"],
+    "ps1":          [ "profile.ps1", "Microsoft.PowerShell_profile.ps1"],
     "python":       ["requirements.txt", "Pipfile", "pyproject.toml", "setup.py", "setup.cfg"],
     "rust":         ["Cargo.toml", "Cargo.lock"],
     "go":           ["go.mod", "go.sum"],
@@ -89,6 +89,8 @@
     "jest":         ["jest.config.js", "jest.config.ts", "jest.config.json"]
   },
   "folderNames": {
+    "archive":      ["archive"],
+    "automation":   ["automation"],
     "secret":       [".secret-scan-output"],
     "aws":          ["aws", ".aws"],
     "azure":        ["azure", ".azure", "azure-pipelines"],
@@ -98,7 +100,7 @@
     "git":          [".git"],
     "docker":       ["docker", "containers"],
     "kubernetes":   ["kubernetes", "k8s", "kube", ".kube", "minikube"],
-    "terraform":    ["terraform", ".terraform", "infra", "infrastructure"],
+    "terraform":    ["terraform", ".terraform", "infra"],
     "ansible":      ["ansible", "playbooks", "roles"],
     "helm":         ["helm", "charts"],
     "grafana":      ["grafana", "dashboards"],
@@ -139,7 +141,7 @@
     "debian":       ["debian"],
     "vmware":       ["vmware"],
     "public":       ["public", "private", "shared", "share", "common"],
-    "repo":          ["repo", "repository", "repositories"],
+    "repo":         ["repo", "repository", "repositories"],
     "export":       ["export", "exports", "import", "imports"],
     "integration":  ["integration", "integrations"],
     "notification": ["notifications", "notification", "events", "event"],
@@ -151,6 +153,7 @@
     "bot":          ["bot"],
     "cli":          ["cli", "cmd", "console"],
     "webpack":      ["webpack"],
+    "ps1folder":    ["Powershell", "PowerShell"],
     "php":          ["php"],
     "rust":         ["cargo"],
     "go":           ["go"],

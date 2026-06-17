@@ -60,6 +60,9 @@
                             "arcdev-icon":  {
                                                 "iconPath":  "../processed-icons/arcdev.png"
                                             },
+                            "archive-icon":  {
+                                                 "iconPath":  "../processed-icons/archive.png"
+                                             },
                             "artbreeder-icon":  {
                                                     "iconPath":  "../processed-icons/artbreeder.png"
                                                 },
@@ -209,6 +212,9 @@
                                                    },
                             "concur-icon":  {
                                                 "iconPath":  "../processed-icons/concur.png"
+                                            },
+                            "config-icon":  {
+                                                "iconPath":  "../processed-icons/config.png"
                                             },
                             "cornerstone-icon":  {
                                                      "iconPath":  "../processed-icons/cornerstone.png"
@@ -801,6 +807,12 @@
                             "prudentialfinancial-icon":  {
                                                              "iconPath":  "../processed-icons/prudentialfinancial.png"
                                                          },
+                            "ps-icon":  {
+                                            "iconPath":  "../processed-icons/ps.png"
+                                        },
+                            "ps1folder-icon":  {
+                                                   "iconPath":  "../processed-icons/ps1folder.png"
+                                               },
                             "puppet-icon":  {
                                                 "iconPath":  "../processed-icons/puppet.png"
                                             },
@@ -1179,6 +1191,7 @@
                            "amie":  "amie-icon",
                            "applebusinessmanager":  "applebusinessmanager-icon",
                            "arcdev":  "arcdev-icon",
+                           "archive":  "archive-icon",
                            "artbreeder":  "artbreeder-icon",
                            "asus":  "asus-icon",
                            "at\u0026t":  "at\u0026t-icon",
@@ -1236,6 +1249,7 @@
                            "comptia":  "comptia-icon",
                            "computershare":  "computershare-icon",
                            "concur":  "concur-icon",
+                           "config":  "config-icon",
                            "cornerstone":  "cornerstone-icon",
                            "cpp":  "cpp-icon",
                            "cc":  "cpp-icon",
@@ -1458,6 +1472,8 @@
                            "producthunt":  "producthunt-icon",
                            "proton":  "proton-icon",
                            "prudentialfinancial":  "prudentialfinancial-icon",
+                           "ps":  "ps-icon",
+                           "ps1folder":  "ps1folder-icon",
                            "puppet":  "puppet-icon",
                            "purestorage":  "purestorage-icon",
                            "py":  "python-icon",
@@ -1651,11 +1667,18 @@
                         "ansible":  "ansible-icon",
                         "playbooks":  "ansible-icon",
                         "roles":  "ansible-icon",
+                        "archive":  "archive-icon",
+                        "automation":  "automation-icon",
                         "aws":  "aws-icon",
                         ".aws":  "aws-icon",
                         "azure":  "azure-icon",
                         ".azure":  "azure-icon",
                         "azure-pipelines":  "azure-icon",
+                        "config":  "config-icon",
+                        "configs":  "config-icon",
+                        "configuration":  "config-icon",
+                        "settings":  "config-icon",
+                        "ini":  "config-icon",
                         "dotnet":  "csharp-icon",
                         "csharp":  "csharp-icon",
                         "css":  "css-icon",
@@ -1707,6 +1730,7 @@
                         "php":  "php-icon",
                         "prometheus":  "prometheus-icon",
                         "monitoring":  "prometheus-icon",
+                        "Powershell":  "ps1folder-icon",
                         "python":  "python-icon",
                         ".venv":  "python-icon",
                         "venv":  "python-icon",
@@ -1718,7 +1742,6 @@
                         "terraform":  "terraform-icon",
                         ".terraform":  "terraform-icon",
                         "infra":  "terraform-icon",
-                        "infrastructure":  "terraform-icon",
                         "ts":  "typescript-icon",
                         "typescript":  "typescript-icon",
                         "typings":  "typescript-icon",
@@ -1731,11 +1754,18 @@
                                 "ansible":  "ansible-icon",
                                 "playbooks":  "ansible-icon",
                                 "roles":  "ansible-icon",
+                                "archive":  "archive-icon",
+                                "automation":  "automation-icon",
                                 "aws":  "aws-icon",
                                 ".aws":  "aws-icon",
                                 "azure":  "azure-icon",
                                 ".azure":  "azure-icon",
                                 "azure-pipelines":  "azure-icon",
+                                "config":  "config-icon",
+                                "configs":  "config-icon",
+                                "configuration":  "config-icon",
+                                "settings":  "config-icon",
+                                "ini":  "config-icon",
                                 "dotnet":  "csharp-icon",
                                 "csharp":  "csharp-icon",
                                 "css":  "css-icon",
@@ -1787,6 +1817,7 @@
                                 "php":  "php-icon",
                                 "prometheus":  "prometheus-icon",
                                 "monitoring":  "prometheus-icon",
+                                "Powershell":  "ps1folder-icon",
                                 "python":  "python-icon",
                                 ".venv":  "python-icon",
                                 "venv":  "python-icon",
@@ -1798,7 +1829,6 @@
                                 "terraform":  "terraform-icon",
                                 ".terraform":  "terraform-icon",
                                 "infra":  "terraform-icon",
-                                "infrastructure":  "terraform-icon",
                                 "ts":  "typescript-icon",
                                 "typescript":  "typescript-icon",
                                 "typings":  "typescript-icon",
