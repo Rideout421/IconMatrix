@@ -22,12 +22,21 @@ function Get-CanonicalName {
         }
     }
 
-    # normalize separators
-    $clean = $n -replace '[-_\s]+', ''
+    # normalize separators -> single hyphen (preserve word boundaries)
+    # Previously this deleted separators entirely (file_type_docker ->
+    # filetypedocker), which broke downstream prefix-stripping in
+    # Resolve-IconName (it expects hyphen-delimited prefixes like "file-")
+    # and also made unrelated names collide once digits were stripped below.
+    $clean = $n -replace '[-_\s]+', '-'
+    $clean = $clean.Trim('-')
 
-    # remove ONLY duplicate suffixes
-    # brave-1 / brave1 / brave_2 -> brave
-    $clean = $clean -replace '[-_]?(\d+)$', ''
+    # NOTE: trailing digits are intentionally NOT stripped. Files like
+    # docker.svg / docker2.svg / dockertest.svg / dockertest2.svg were
+    # confirmed to be genuinely different icons, not numbered duplicates of
+    # the same artwork. Collapsing them here caused real, distinct icons to
+    # silently collide and vanish later in Invoke-IconNormalization.ps1's
+    # "keep first, drop the rest" handling. Every distinct name must produce
+    # a distinct canonical name.
 
     if ([string]::IsNullOrWhiteSpace($clean)) {
         return "unknown"

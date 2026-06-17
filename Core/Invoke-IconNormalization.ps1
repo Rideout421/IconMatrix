@@ -26,10 +26,21 @@ function Invoke-IconNormalization {
 
             # -------------------------------------------------
             # HANDLE SVG (PASS THROUGH)
+            # With the Get-CanonicalName fix, distinct files should no
+            # longer land in the same group unintentionally. If multiple
+            # SVGs DO still land in one group, that's now a genuine naming
+            # collision worth knowing about loudly, instead of silently
+            # keeping one and dropping the rest with no trace.
             # -------------------------------------------------
             if ($svgGroup) {
                 $svgKeep = $svgGroup | Select-Object -First 1
                 Write-Host "[PASS SVG] $($svgKeep.Name)" -ForegroundColor Cyan
+                if ($svgGroup.Count -gt 1) {
+                    $svgDropped = $svgGroup | Where-Object { $_.FullName -ne $svgKeep.FullName }
+                    foreach ($d in $svgDropped) {
+                        Write-Host "[WARN COLLISION - SVG DROPPED] '$($d.Name)' collides with '$($svgKeep.Name)' under canonical '$canonical' -- only the first is used. Rename one if these are meant to be different icons." -ForegroundColor Red
+                    }
+                }
             }
 
             # -------------------------------------------------
@@ -38,6 +49,12 @@ function Invoke-IconNormalization {
             if ($icoGroup) {
                 $icoKeep = $icoGroup | Select-Object -First 1
                 Write-Host "[PASS ICO] $($icoKeep.Name)" -ForegroundColor Cyan
+                if ($icoGroup.Count -gt 1) {
+                    $icoDropped = $icoGroup | Where-Object { $_.FullName -ne $icoKeep.FullName }
+                    foreach ($d in $icoDropped) {
+                        Write-Host "[WARN COLLISION - ICO DROPPED] '$($d.Name)' collides with '$($icoKeep.Name)' under canonical '$canonical' -- only the first is used. Rename one if these are meant to be different icons." -ForegroundColor Red
+                    }
+                }
             }
 
             # -------------------------------------------------

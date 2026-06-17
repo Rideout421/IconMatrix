@@ -138,7 +138,13 @@ function Invoke-RegistryBuild {
             }
         }
 
-        # ========================= EXTENSIONS (Auto + Mapped) =========================
+        # ========================= EXTENSIONS (Mapped only - no bogus fallback) =========================
+        # NOTE: previously this had a fallback that registered $base itself as a
+        # "file extension" whenever no mapping existed (e.g. "acorns", "at&t",
+        # "airwatch"). Those are icon/brand names, not real file extensions, and
+        # VS Code will never match a file against them -- they were dead weight
+        # in the theme. Only register real extensions explicitly defined in
+        # mappings.json -> extensions.
         $mapped = $false
         if ($extMappings.Contains($base)) {
             foreach ($ext in $extMappings[$base]) {
@@ -149,12 +155,18 @@ function Invoke-RegistryBuild {
                 }
             }
         }
-        if (-not $mapped -and -not $fileExtensions.Contains($base)) {
-            $fileExtensions[$base] = $iconId
-        }
 
-        # ========================= FILE NAMES =========================
-        if ($fileNameMappings.Contains($base)) {
+        # ========================= FILE / FOLDER NAMES (Mapped + Auto fallback) =========================
+        # Explicit mappings from mappings.json always take priority and are
+        # applied first. If an icon has no explicit fileName/folderName mapping
+        # at all, fall back to registering its own canonical name as an exact
+        # fileName or folderName match (e.g. "aws-icon" becomes selectable for
+        # a folder or file literally named "aws"), so every icon in the set is
+        # reachable in VS Code without needing fileExtensions abuse.
+        $hasFileNameMapping   = $fileNameMappings.Contains($base)
+        $hasFolderNameMapping = $folderNameMappings.Contains($base)
+
+        if ($hasFileNameMapping) {
             foreach ($fname in $fileNameMappings[$base]) {
                 if (-not [string]::IsNullOrWhiteSpace($fname) -and -not $fileNames.Contains($fname)) {
                     $fileNames[$fname] = $iconId
@@ -162,12 +174,24 @@ function Invoke-RegistryBuild {
             }
         }
 
-        # ========================= FOLDER NAMES =========================
-        if ($folderNameMappings.Contains($base)) {
+        if ($hasFolderNameMapping) {
             foreach ($fname in $folderNameMappings[$base]) {
                 if (-not [string]::IsNullOrWhiteSpace($fname) -and -not $folderNames.Contains($fname)) {
                     $folderNames[$fname]        = $iconId
                     $folderNamesExpanded[$fname]= $iconId
+                }
+            }
+        }
+
+        if (-not $hasFileNameMapping -and -not $hasFolderNameMapping -and -not $mapped) {
+            if ($kind -eq "folder") {
+                if (-not $folderNames.Contains($base)) {
+                    $folderNames[$base]         = $iconId
+                    $folderNamesExpanded[$base] = $iconId
+                }
+            } else {
+                if (-not $fileNames.Contains($base)) {
+                    $fileNames[$base] = $iconId
                 }
             }
         }
