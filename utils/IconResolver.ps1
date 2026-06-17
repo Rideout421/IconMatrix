@@ -1,21 +1,18 @@
 function Resolve-IconName {
     param(
+        [Parameter(Mandatory)]
         [string]$Key,
-        [string]$Kind = "file",
-        [string]$IconRoot
+        
+        [string]$Kind = "file"
+        # ... other params
     )
 
-    $candidates = @(
-        "$Key.svg",
-        "${Kind}_type_$Key.svg"
-    )
+    Write-Host "DEBUG Resolve-IconName: Key=[$Key] Kind=[$Kind]" -ForegroundColor Magenta
 
-    foreach ($name in $candidates) {
-        $path = Join-Path $IconRoot $name
-        if (Test-Path $path) {
-            return $path
-        }
+    if ([string]::IsNullOrWhiteSpace($Key)) {
+        Write-Host "ERROR: Empty Key passed to Resolve-IconName" -ForegroundColor Red
+        return @($Key)  # or throw, whatever is appropriate
     }
 
-    return $null
+    # ... rest of your function
 }

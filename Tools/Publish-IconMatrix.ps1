@@ -126,8 +126,7 @@ if (-not (Test-Path $Processed)) {
 }
 
 # =========================
-# STEP 2 - REGISTRY
-# FIX: dot-source to load the function, then call it
+# STEP 2 - REGISTRY (HARD FIXED)
 # =========================
 Write-Host "`n[STEP 2] Registry build" -ForegroundColor Yellow
 
@@ -135,48 +134,33 @@ Write-Host "`n[STEP 2] Registry build" -ForegroundColor Yellow
 
 $MappingsPath = Join-Path $RepoRoot "config\mappings.json"
 
-# =========================
-# HARD SAFETY GUARDS (CRITICAL FIX)
-# =========================
-if ([string]::IsNullOrWhiteSpace($Processed)) {
-    throw "Processed path is EMPTY - Sync step failed or returned invalid output"
+# FORCE RESOLVE (eliminates scope + whitespace + null issues)
+$inputPath  = [string]::Copy($Processed)
+$outputPath = [string]::Copy($RegistryPath)
+
+$inputPath  = $inputPath.Trim()
+$outputPath = $outputPath.Trim()
+
+Write-Host "Resolved InputPath  = [$inputPath]" -ForegroundColor Cyan
+Write-Host "Resolved OutputPath = [$outputPath]" -ForegroundColor Cyan
+
+# HARD STOP if invalid (prevents PowerShell binding crash)
+if ([string]::IsNullOrWhiteSpace($inputPath)) {
+    throw "InputPath resolved empty at STEP 2"
 }
 
-if ([string]::IsNullOrWhiteSpace($RegistryPath)) {
-    throw "Registry path is EMPTY - config.registry is invalid"
+if ([string]::IsNullOrWhiteSpace($outputPath)) {
+    throw "OutputPath resolved empty at STEP 2"
 }
 
-if (-not (Test-Path $Processed)) {
-    throw "Processed folder does not exist -> $Processed"
-}
-
-# Normalize (removes hidden whitespace / encoding issues)
-$Processed    = $Processed.Trim()
-$RegistryPath = $RegistryPath.Trim()
-
-# =========================
-# DEBUG (safe)
-# =========================
-Write-Host "DEBUG Processed = [$Processed]" -ForegroundColor Cyan
-Write-Host "DEBUG Registry  = [$RegistryPath]" -ForegroundColor Cyan
-
-# =========================
-# BUILD PARAMS (STRICT)
-# =========================
 $registryParams = @{
-    InputPath    = $Processed
-    OutputPath   = $RegistryPath
+    InputPath    = $inputPath
+    OutputPath   = $outputPath
     MappingsPath = $MappingsPath
 }
 
 if ($DryRun) {
     $registryParams.DryRun = $true
-}
-
-# FINAL GUARD BEFORE CALL (this is the real fix)
-if ([string]::IsNullOrWhiteSpace($registryParams.InputPath) -or
-    [string]::IsNullOrWhiteSpace($registryParams.OutputPath)) {
-    throw "Registry parameters invalid - aborting pipeline"
 }
 
 Invoke-RegistryBuild @registryParams
