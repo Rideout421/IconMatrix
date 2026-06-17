@@ -11,7 +11,7 @@ function Invoke-RegistryBuild {
         [switch]$DryRun
     )
 
-    Write-Host "`n=== Registry Build (IconMatrix v2 - SVG Aware) ===" -ForegroundColor Cyan
+    Write-Host "`n=== Registry Build (IconMatrix v2 - Multi-Format) ===" -ForegroundColor Cyan
 
     # ========================= VALIDATION =========================
     if ([string]::IsNullOrWhiteSpace($InputPath))  { throw "InputPath is empty" }
@@ -65,14 +65,14 @@ function Invoke-RegistryBuild {
         }
     }
 
-    # ========================= SCAN FILES =========================
-    $files = Get-ChildItem -Path $resolvedInput -Recurse -File -Filter "*.png"
+    # ========================= SCAN FILES (All formats) =========================
+    $files = Get-ChildItem -Path $resolvedInput -Recurse -File -Include "*.png", "*.svg", "*.jpg", "*.jpeg", "*.ico"
 
     if (-not $files -or $files.Count -eq 0) {
-        throw "No PNG files found: $resolvedInput"
+        throw "No icon files (PNG/SVG/JPG/JPEG/ICO) found: $resolvedInput"
     }
 
-    Write-Host "[INFO] PNG files found: $($files.Count)" -ForegroundColor Cyan
+    Write-Host "[INFO] Icon files found (PNG+SVG+others): $($files.Count)" -ForegroundColor Cyan
 
     # ========================= OUTPUT STRUCTURES =========================
     $iconDefinitions     = [ordered]@{}
@@ -85,10 +85,10 @@ function Invoke-RegistryBuild {
 
     foreach ($file in ($files | Sort-Object BaseName)) {
 
-        # ========================= KEY FIX (SVG COMPATIBILITY) =========================
+        # ========================= KEY FIX =========================
         $rawBase = $file.BaseName.ToLower()
 
-        # detect svg-style prefixes
+        # detect kind
         $kind = if ($rawBase -like "folder*") { "folder" }
                 elseif ($rawBase -like "file*") { "file" }
                 else { "file" }
@@ -96,13 +96,13 @@ function Invoke-RegistryBuild {
         $resolvedKeys = Resolve-IconName -Key $rawBase -Kind $kind
 
         $base = $resolvedKeys | Select-Object -First 1
-
         if ([string]::IsNullOrWhiteSpace($base)) {
             $base = $rawBase
         }
 
         $iconId = "$base-icon"
 
+        # Relative path (preserves original extension)
         $rel = $file.FullName.Substring($basePath.Length).TrimStart('\','/') -replace '\\','/'
 
         # ========================= ICON DEFINITIONS =========================
@@ -112,17 +112,13 @@ function Invoke-RegistryBuild {
 
         # ========================= EXTENSIONS =========================
         if ($extMappings.Contains($base)) {
-
             foreach ($ext in $extMappings[$base]) {
                 $ext = $ext.ToLower().TrimStart('.')
-
                 if (-not [string]::IsNullOrWhiteSpace($ext) -and -not $fileExtensions.Contains($ext)) {
                     $fileExtensions[$ext] = $iconId
                 }
             }
-
         } elseif (-not $extMappings.Contains($base)) {
-
             if (-not $fileExtensions.Contains($base)) {
                 $fileExtensions[$base] = $iconId
             }
@@ -148,7 +144,15 @@ function Invoke-RegistryBuild {
         }
     }
 
-    # ========================= OUTPUT =========================
+    # ========================= DEFAULTS & OUTPUT =========================
+    # Ensure critical defaults exist (optional warning)
+    $defaults = @("file-icon", "folder-icon", "folder-expanded-icon", "folder-open-icon")
+    foreach ($def in $defaults) {
+        if (-not $iconDefinitions.Contains($def)) {
+            Write-Host "[WARN] Missing default icon: $def" -ForegroundColor Yellow
+        }
+    }
+
     Write-Host "[INFO] iconDefinitions : $($iconDefinitions.Count)" -ForegroundColor Cyan
     Write-Host "[INFO] fileExtensions  : $($fileExtensions.Count)" -ForegroundColor Cyan
     Write-Host "[INFO] fileNames       : $($fileNames.Count)" -ForegroundColor Cyan
