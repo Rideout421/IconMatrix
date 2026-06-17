@@ -1596,6 +1596,7 @@
                       ".gitattributes":  "git-icon",
                       ".gitmodules":  "git-icon",
                       ".gitkeep":  "git-icon",
+                      ".gitconfig":  "git-icon",
                       "CODEOWNERS":  "github-icon",
                       "FUNDING.yml":  "github-icon",
                       "SECURITY.md":  "github-icon",

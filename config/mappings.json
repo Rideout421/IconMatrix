@@ -116,7 +116,7 @@
     "source":       ["src", "source", "sources"],
     "test":         ["test", "tests", "spec", "specs", "e2e", "coverage", "__tests__"],
     "docs":         ["docs", "doc", "documentation"],
-    "log":          ["log", "logs"],
+    "logs":          ["log", "logs"],
     "temp":         ["temp", "tmp", "cache", ".cache"],
     "tools":        ["tools", "tool", "tooling", "scripts", "script", "utils", "util", "utilities", "helpers", "helper"],
     "lib":          ["lib", "libs", "library", "libraries", "packages", "package", "modules", "module"],
