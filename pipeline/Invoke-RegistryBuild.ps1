@@ -126,6 +126,24 @@ function Invoke-RegistryBuild {
             $base = $rawBase
         }
 
+        # $base now carries a "folder-" prefix for folder-kind icons (e.g.
+        # "folder-docker") so file and folder variants of the same name get
+        # distinct icon IDs. mappings.json, however, was written using the
+        # bare name as the key (e.g. folderNames["docker"] = [...]) and is
+        # the curated, hand-maintained source of truth -- it should not have
+        # to know about this internal prefixing scheme. $lookupKey strips
+        # that prefix back off ONLY for the purpose of matching against
+        # mappings.json; $base/$iconId (used for identity/storage) keep the
+        # prefix so file vs folder icons still don't collide.
+        $lookupKey = if ($kind -eq "folder" -and $base -like "folder-*") {
+            $base.Substring("folder-".Length)
+        } else {
+            $base
+        }
+        if ([string]::IsNullOrWhiteSpace($lookupKey)) {
+            $lookupKey = $base
+        }
+
         $iconId = "$base-icon"
 
         $rel = $file.FullName.Substring($basePath.Length).TrimStart('\','/') -replace '\\','/'
@@ -146,8 +164,8 @@ function Invoke-RegistryBuild {
         # in the theme. Only register real extensions explicitly defined in
         # mappings.json -> extensions.
         $mapped = $false
-        if ($extMappings.Contains($base)) {
-            foreach ($ext in $extMappings[$base]) {
+        if ($extMappings.Contains($lookupKey)) {
+            foreach ($ext in $extMappings[$lookupKey]) {
                 $ext = $ext.ToLower().TrimStart('.')
                 if (-not [string]::IsNullOrWhiteSpace($ext)) {
                     $fileExtensions[$ext] = $iconId
@@ -158,16 +176,18 @@ function Invoke-RegistryBuild {
 
         # ========================= FILE / FOLDER NAMES (Mapped + Auto fallback) =========================
         # Explicit mappings from mappings.json always take priority and are
-        # applied first. If an icon has no explicit fileName/folderName mapping
-        # at all, fall back to registering its own canonical name as an exact
-        # fileName or folderName match (e.g. "aws-icon" becomes selectable for
-        # a folder or file literally named "aws"), so every icon in the set is
-        # reachable in VS Code without needing fileExtensions abuse.
-        $hasFileNameMapping   = $fileNameMappings.Contains($base)
-        $hasFolderNameMapping = $folderNameMappings.Contains($base)
+        # applied first (looked up via $lookupKey, the unprefixed name). If
+        # an icon has no explicit fileName/folderName mapping at all, fall
+        # back to registering its own canonical name ($lookupKey) as an
+        # exact fileName or folderName match (e.g. "aws-icon" becomes
+        # selectable for a folder or file literally named "aws"), so every
+        # icon in the set is reachable in VS Code without needing
+        # fileExtensions abuse.
+        $hasFileNameMapping   = $fileNameMappings.Contains($lookupKey)
+        $hasFolderNameMapping = $folderNameMappings.Contains($lookupKey)
 
         if ($hasFileNameMapping) {
-            foreach ($fname in $fileNameMappings[$base]) {
+            foreach ($fname in $fileNameMappings[$lookupKey]) {
                 if (-not [string]::IsNullOrWhiteSpace($fname) -and -not $fileNames.Contains($fname)) {
                     $fileNames[$fname] = $iconId
                 }
@@ -175,7 +195,7 @@ function Invoke-RegistryBuild {
         }
 
         if ($hasFolderNameMapping) {
-            foreach ($fname in $folderNameMappings[$base]) {
+            foreach ($fname in $folderNameMappings[$lookupKey]) {
                 if (-not [string]::IsNullOrWhiteSpace($fname) -and -not $folderNames.Contains($fname)) {
                     $folderNames[$fname]        = $iconId
                     $folderNamesExpanded[$fname]= $iconId
@@ -185,13 +205,13 @@ function Invoke-RegistryBuild {
 
         if (-not $hasFileNameMapping -and -not $hasFolderNameMapping -and -not $mapped) {
             if ($kind -eq "folder") {
-                if (-not $folderNames.Contains($base)) {
-                    $folderNames[$base]         = $iconId
-                    $folderNamesExpanded[$base] = $iconId
+                if (-not $folderNames.Contains($lookupKey)) {
+                    $folderNames[$lookupKey]         = $iconId
+                    $folderNamesExpanded[$lookupKey] = $iconId
                 }
             } else {
-                if (-not $fileNames.Contains($base)) {
-                    $fileNames[$base] = $iconId
+                if (-not $fileNames.Contains($lookupKey)) {
+                    $fileNames[$lookupKey] = $iconId
                 }
             }
         }
