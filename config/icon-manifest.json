@@ -44,6 +44,11 @@
                         "source":  "vanceai.png",
                         "hash":  "7667CEC20D68D6EDDD4093FA3E9398812A07928E760879AE3364A40484F24F17"
                     },
+    "folder.png":  {
+                       "mode":  "converted",
+                       "source":  "folder.png",
+                       "hash":  "B838E81334B66AAC43977C1D5B8E262C5EFABF62F55A5EC67E91A536F4D5B40E"
+                   },
     "quest.png":  {
                       "mode":  "passthrough",
                       "source":  "quest.png",
@@ -1074,11 +1079,6 @@
                            "source":  "pearsonvue.png",
                            "hash":  "C2C3C75748AE94E3833D0E8950B9408865CA0CFC007D2B45D3E7A67EE1AA2F2E"
                        },
-    "outagecalendar.png":  {
-                               "mode":  "converted",
-                               "source":  "outagecalendar.png",
-                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
-                           },
     "midjourney.png":  {
                            "mode":  "passthrough",
                            "source":  "midjourney.png",
@@ -1104,6 +1104,11 @@
                          "source":  "perkspot.png",
                          "hash":  "E1DBFC6615962CA4F7EE7EF8459FFBD2A842458B91CA071B78641A9933D7EAF0"
                      },
+    "codemagazine.png":  {
+                             "mode":  "converted",
+                             "source":  "codemagazine.png",
+                             "hash":  "4A5C250E4905A22A2E53CB0C9FF9314D99BF3D6E9C8B4CC7DCF4F1C199B4EA3A"
+                         },
     "mentimeter.png":  {
                            "mode":  "passthrough",
                            "source":  "mentimeter.png",
@@ -1389,11 +1394,6 @@
                          "source":  "training.png",
                          "hash":  "E959A2DDAD688F7B5CFF570559A6342AC4BBD4EEFA14E2CB6A621944CAF52E5F"
                      },
-    "kalilinuxsubsystem.png":  {
-                                   "mode":  "passthrough",
-                                   "source":  "kalilinuxsubsystem.png",
-                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
-                               },
     "talentlyai.png":  {
                            "mode":  "passthrough",
                            "source":  "talentlyai.png",
@@ -1494,11 +1494,11 @@
                              "source":  "adobefirefly.png",
                              "hash":  "E7CA03063AEE9FBFA0E26D19D7A3F5BF153A2B8C1A1C32B849E9BDD3520687AF"
                          },
-    "codemagazine.png":  {
-                             "mode":  "converted",
-                             "source":  "codemagazine.png",
-                             "hash":  "4A5C250E4905A22A2E53CB0C9FF9314D99BF3D6E9C8B4CC7DCF4F1C199B4EA3A"
-                         },
+    "outagecalendar.png":  {
+                               "mode":  "converted",
+                               "source":  "outagecalendar.png",
+                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
+                           },
     "bizplanr.png":  {
                          "mode":  "passthrough",
                          "source":  "bizplanr.png",
@@ -1774,6 +1774,11 @@
                          "source":  "metaview.png",
                          "hash":  "1F6C0D7673989E0B378B81D59AFEC105C968FDCABDD5CABF31CCE3EC24D3E427"
                      },
+    "resumerocket.png":  {
+                             "mode":  "passthrough",
+                             "source":  "resumerocket.png",
+                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
+                         },
     "betterment.png":  {
                            "mode":  "passthrough",
                            "source":  "betterment.png",
@@ -1839,11 +1844,11 @@
                        "source":  "gitlab.png",
                        "hash":  "CF99E896A7F306CB162C29ABAB6B1A96A02CA40DA024134B24715B89C2D81219"
                    },
-    "resumerocket.png":  {
-                             "mode":  "passthrough",
-                             "source":  "resumerocket.png",
-                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
-                         },
+    "kalilinuxsubsystem.png":  {
+                                   "mode":  "passthrough",
+                                   "source":  "kalilinuxsubsystem.png",
+                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
+                               },
     "pluralsight.png":  {
                             "mode":  "passthrough",
                             "source":  "pluralsight.png",

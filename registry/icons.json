@@ -324,6 +324,9 @@
                             "floridadcf-icon":  {
                                                     "iconPath":  "./processed-icons/floridadcf.png"
                                                 },
+                            "folder-icon":  {
+                                                "iconPath":  "./processed-icons/folder.png"
+                                            },
                             "font-icon":  {
                                               "iconPath":  "./processed-icons/font.png"
                                           },
@@ -1268,6 +1271,7 @@
                            "flir":  "flir-icon",
                            "floridablue":  "floridablue-icon",
                            "floridadcf":  "floridadcf-icon",
+                           "folder":  "folder-icon",
                            "ttf":  "font-icon",
                            "otf":  "font-icon",
                            "woff":  "font-icon",

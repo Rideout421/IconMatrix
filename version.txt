@@ -1,12 +1,10 @@
-﻿Version: 36
-Timestamp: 06-16-2026 08-29-PM
+﻿Version: 37
+Timestamp: 06-16-2026 08-43-PM
 Changed files:
 config/icon-manifest.json
 config/mappings.json
 Core/Invoke-IconMatrixTheme.ps1
-Core/Invoke-IconNormalization.ps1
 iconmatrix-1.0.0.vsix
-pipeline/Invoke-RegistryBuild.ps1
-processed-icons/general.png
+processed-icons/folder.png
 registry/icons.json
 theme/icons-theme.json

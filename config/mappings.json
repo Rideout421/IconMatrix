@@ -57,7 +57,7 @@
   },
   "fileNames": {
     "docker":       ["Dockerfile", ".dockerignore", "docker-compose.yml", "docker-compose.yaml"],
-    "git":          [".gitignore", ".gitattributes", ".gitmodules", ".gitkeep"],
+    "git":          [".gitignore", ".gitattributes", ".gitmodules", ".gitkeep", ".gitconfig"], 
     "github":       ["CODEOWNERS", "FUNDING.yml", "SECURITY.md"],
     "gitlab":       [".gitlab-ci.yml"],
     "kubernetes":   ["kustomization.yaml", "kustomization.yml"],

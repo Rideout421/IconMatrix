@@ -144,7 +144,6 @@ function Invoke-IconMatrixTheme {
     # -------------------------
     # DEFAULT ICON
     # Used for any file/folder with no specific mapping.
-    # Prefer "general-icon", fall back to first available.
     # -------------------------
     $defaultIconId = if ($iconDefinitions.Contains("general-icon")) {
         "general-icon"
