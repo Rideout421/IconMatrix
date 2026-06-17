@@ -807,9 +807,6 @@
                             "prudentialfinancial-icon":  {
                                                              "iconPath":  "../processed-icons/prudentialfinancial.png"
                                                          },
-                            "ps-icon":  {
-                                            "iconPath":  "../processed-icons/ps.png"
-                                        },
                             "ps1folder-icon":  {
                                                    "iconPath":  "../processed-icons/ps1folder.png"
                                                },
@@ -1119,9 +1116,18 @@
                             "verizon-icon":  {
                                                  "iconPath":  "../processed-icons/verizon.png"
                                              },
+                            "video-icon":  {
+                                               "iconPath":  "../processed-icons/video.png"
+                                           },
                             "vidyard-icon":  {
                                                  "iconPath":  "../processed-icons/vidyard.png"
                                              },
+                            "view-icon":  {
+                                              "iconPath":  "../processed-icons/view.png"
+                                          },
+                            "views-icon":  {
+                                               "iconPath":  "../processed-icons/views.png"
+                                           },
                             "vmware-icon":  {
                                                 "iconPath":  "../processed-icons/vmware.png"
                                             },
@@ -1131,9 +1137,15 @@
                             "walling-icon":  {
                                                  "iconPath":  "../processed-icons/walling.png"
                                              },
+                            "webpack-icon":  {
+                                                 "iconPath":  "../processed-icons/webpack.png"
+                                             },
                             "wellsfargo-icon":  {
                                                     "iconPath":  "../processed-icons/wellsfargo.png"
                                                 },
+                            "windows-icon":  {
+                                                 "iconPath":  "../processed-icons/windows.png"
+                                             },
                             "wisprflow-icon":  {
                                                    "iconPath":  "../processed-icons/wisprflow.png"
                                                },
@@ -1472,7 +1484,6 @@
                            "producthunt":  "producthunt-icon",
                            "proton":  "proton-icon",
                            "prudentialfinancial":  "prudentialfinancial-icon",
-                           "ps":  "ps-icon",
                            "ps1folder":  "ps1folder-icon",
                            "puppet":  "puppet-icon",
                            "purestorage":  "purestorage-icon",
@@ -1581,9 +1592,14 @@
                            "vendorsupport":  "vendorsupport-icon",
                            "veritas":  "veritas-icon",
                            "verizon":  "verizon-icon",
+                           "video":  "video-icon",
                            "vidyard":  "vidyard-icon",
+                           "view":  "view-icon",
+                           "views":  "views-icon",
                            "walling":  "walling-icon",
+                           "webpack":  "webpack-icon",
                            "wellsfargo":  "wellsfargo-icon",
+                           "windows":  "windows-icon",
                            "wisprflow":  "wisprflow-icon",
                            "wombodream":  "wombodream-icon",
                            "docx":  "word-icon",
@@ -1661,7 +1677,9 @@
                       ".terraformrc":  "terraform-icon",
                       "terraform.tfvars":  "terraform-icon",
                       ".vscodeignore":  "vscode-icon",
-                      ".vscode":  "vscode-icon"
+                      ".vscode":  "vscode-icon",
+                      "webpack.config.js":  "webpack-icon",
+                      "webpack.config.ts":  "webpack-icon"
                   },
     "folderNames":  {
                         "ansible":  "ansible-icon",
@@ -1711,8 +1729,6 @@
                         "favicon":  "image-icon",
                         "assets":  "image-icon",
                         "audio":  "image-icon",
-                        "video":  "image-icon",
-                        "videos":  "image-icon",
                         "java":  "java-icon",
                         "gradle":  "java-icon",
                         "maven":  "java-icon",
@@ -1747,8 +1763,22 @@
                         "typings":  "typescript-icon",
                         "types":  "typescript-icon",
                         "ubuntu":  "ubuntu-icon",
+                        "video":  "video-icon",
+                        "videos":  "video-icon",
+                        "views":  "view-icon",
+                        "view":  "view-icon",
+                        "pages":  "view-icon",
+                        "page":  "view-icon",
+                        "layouts":  "view-icon",
+                        "layout":  "view-icon",
+                        "templates":  "view-icon",
+                        "template":  "view-icon",
+                        "themes":  "view-icon",
+                        "theme":  "view-icon",
                         "vmware":  "vmware-icon",
-                        ".vscode":  "vscode-icon"
+                        ".vscode":  "vscode-icon",
+                        "webpack":  "webpack-icon",
+                        "windows":  "windows-icon"
                     },
     "folderNamesExpanded":  {
                                 "ansible":  "ansible-icon",
@@ -1798,8 +1828,6 @@
                                 "favicon":  "image-icon",
                                 "assets":  "image-icon",
                                 "audio":  "image-icon",
-                                "video":  "image-icon",
-                                "videos":  "image-icon",
                                 "java":  "java-icon",
                                 "gradle":  "java-icon",
                                 "maven":  "java-icon",
@@ -1834,8 +1862,22 @@
                                 "typings":  "typescript-icon",
                                 "types":  "typescript-icon",
                                 "ubuntu":  "ubuntu-icon",
+                                "video":  "video-icon",
+                                "videos":  "video-icon",
+                                "views":  "view-icon",
+                                "view":  "view-icon",
+                                "pages":  "view-icon",
+                                "page":  "view-icon",
+                                "layouts":  "view-icon",
+                                "layout":  "view-icon",
+                                "templates":  "view-icon",
+                                "template":  "view-icon",
+                                "themes":  "view-icon",
+                                "theme":  "view-icon",
                                 "vmware":  "vmware-icon",
-                                ".vscode":  "vscode-icon"
+                                ".vscode":  "vscode-icon",
+                                "webpack":  "webpack-icon",
+                                "windows":  "windows-icon"
                             },
     "file":  "general-icon",
     "folder":  "general-icon",

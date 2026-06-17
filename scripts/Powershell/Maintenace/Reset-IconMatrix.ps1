@@ -7,19 +7,20 @@ USAGE FLOW (IMPORTANT):
 
 1. ALWAYS RUN FIRST:
 
-   & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Tools\PipelineHealthCheck.ps1")
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\PipelineHealthCheck.ps1")
 
 2. DRY RUN (SAFE / NO CHANGES):
 
-   & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Tools\Reset-IconMatrix.ps1")
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1")
 
 3. IF EVERYTHING LOOKS GOOD:
 
-   & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Tools\Reset-IconMatrix.ps1") -Confirm
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1") -Confirm
 
 4. OPTIONAL FULL WIPE (SOURCE MACHINE ONLY):
 
-   & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Tools\Reset-IconMatrix.ps1") -Confirm -FullReset
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1") -Confirm -FullReset
+
 
 ================================================================================
  MODES:
@@ -42,8 +43,13 @@ param(
 
 Write-Host "`n=== ICONMATRIX CLEAN RESET ===`n" -ForegroundColor Cyan
 
-$RepoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
+$RepoRoot = Split-Path -Parent (
+                Split-Path -Parent (
+                    Split-Path -Parent $PSScriptRoot
+                )
+            )
 
+Write-Host "RepoRoot = $RepoRoot" -ForegroundColor Cyan
 Write-Host "STEP 1: Run PipelineHealthCheck first" -ForegroundColor Yellow
 Write-Host "STEP 2: Confirm system state before cleanup`n" -ForegroundColor Yellow
 

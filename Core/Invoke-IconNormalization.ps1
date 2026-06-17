@@ -6,7 +6,7 @@ function Invoke-IconNormalization {
 
     . "$PSScriptRoot\..\utils\Naming.ps1"
 
-    $validExt = @(".png")   # HARD ENFORCEMENT: PNG ONLY
+    $validExt = @(".png")
 
     Write-Host "`n=== ICON NORMALIZATION (BADASS MODE) ===" -ForegroundColor Cyan
 
@@ -18,14 +18,14 @@ function Invoke-IconNormalization {
             $group = $_.Group
             $canonical = $_.Name
 
-            # pick deterministic file
             $keep = $group | Sort-Object Name | Select-Object -First 1
             $target = "$canonical.png"
 
+            # Remove duplicates
             foreach ($file in $group) {
 
-                # skip duplicates safely
                 if ($file.FullName -ne $keep.FullName) {
+
                     if ($DryRun) {
                         Write-Host "[DRYRUN DELETE DUP] $($file.Name)"
                         continue
@@ -36,40 +36,53 @@ function Invoke-IconNormalization {
                 }
             }
 
-            # 🔥 ENFORCE FLOATING ICON TRANSFORMATION
-            if ($keep.Extension.ToLower() -ne ".png") {
-                if ($DryRun) {
-                    Write-Host "[DRYRUN CONVERT] $($keep.Name) -> $target"
-                }
-                else {
-                    Write-Host "[CONVERT + NORMALIZE] $($keep.Name) -> $target" -ForegroundColor Green
-
-                    magick $keep.FullName `
-                        -background none `
-                        -alpha set `
-                        -fuzz 10% -transparent white `
-                        -fuzz 10% -transparent "#ffffff" `
-                        -resize 256x256 `
-                        -gravity center `
-                        -extent 256x256 `
-                        $target
-
-                    Remove-Item $keep.FullName -Force
-                }
-
-                return
-            }
-
-            # ensure canonical naming
+            # Canonical rename first
             if ($keep.Name -ne $target) {
 
                 if ($DryRun) {
                     Write-Host "[DRYRUN RENAME] $($keep.Name) -> $target"
-                    return
                 }
+                else {
+                    Rename-Item -LiteralPath $keep.FullName -NewName $target -Force
+                    Write-Host "[CANONICAL] $($keep.Name) -> $target" -ForegroundColor Green
 
-                Rename-Item -LiteralPath $keep.FullName -NewName $target -Force
-                Write-Host "[CANONICAL] $($keep.Name) -> $target" -ForegroundColor Green
+                    $keep = Get-Item (Join-Path $keep.DirectoryName $target)
+                }
+            }
+
+            # Normalize image
+            if ($DryRun) {
+                Write-Host "[DRYRUN NORMALIZE] $($keep.Name)"
+                continue
+            }
+
+            Write-Host "[NORMALIZE] $($keep.Name)" -ForegroundColor Green
+
+            $tempFile = Join-Path $env:TEMP "$([guid]::NewGuid()).png"
+
+            try {
+
+                magick $keep.FullName `
+                    -alpha set `
+                    -fuzz 25% `
+                    -fill none `
+                    -draw "color 0,0 floodfill" `
+                    -trim `
+                    +repage `
+                    -resize 220x220 `
+                    -gravity center `
+                    -background none `
+                    -extent 256x256 `
+                    PNG32:$tempFile
+
+                Move-Item $tempFile $keep.FullName -Force
+            }
+            finally {
+                if (Test-Path $tempFile) {
+                    Remove-Item $tempFile -Force -ErrorAction SilentlyContinue
+                }
             }
         }
+
+    Write-Host "`n=== ICON NORMALIZATION COMPLETE ===" -ForegroundColor Cyan
 }
