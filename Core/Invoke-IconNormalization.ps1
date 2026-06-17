@@ -21,8 +21,7 @@ function Invoke-IconNormalization {
 
             $canonical = $_.Name
             $target = "$canonical.png"
-            $targetPath = Join-Path $Path $target
-
+            
             $seen[$canonical] = $true
 
             foreach ($file in $group) {

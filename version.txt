@@ -1,48 +1,12 @@
-﻿Version: 35
-Timestamp: 06-16-2026 05-04-PM
+﻿Version: 36
+Timestamp: 06-16-2026 08-29-PM
 Changed files:
 config/icon-manifest.json
+config/mappings.json
+Core/Invoke-IconMatrixTheme.ps1
+Core/Invoke-IconNormalization.ps1
 iconmatrix-1.0.0.vsix
-processed-icons/ansible.png
-processed-icons/azure.png
-processed-icons/bash.png
-processed-icons/batch.png
-processed-icons/c.png
-processed-icons/certificate.png
-processed-icons/cpp.png
-processed-icons/csharp.png
-processed-icons/css.png
-processed-icons/docker.png
-processed-icons/env.png
-processed-icons/excel.png
-processed-icons/font.png
+pipeline/Invoke-RegistryBuild.ps1
 processed-icons/general.png
-processed-icons/git.png
-processed-icons/go.png
-processed-icons/graphql.png
-processed-icons/helm.png
-processed-icons/html.png
-processed-icons/image.png
-processed-icons/java.png
-processed-icons/javascript.png
-processed-icons/json.png
-processed-icons/linux.png
-processed-icons/markdown.png
-processed-icons/pdf.png
-processed-icons/php.png
-processed-icons/powerpoint.png
-processed-icons/python.png
-processed-icons/repo.png
-processed-icons/ruby.png
-processed-icons/rust.png
-processed-icons/sql.png
-processed-icons/svg.png
-processed-icons/text.png
-processed-icons/toml.png
-processed-icons/typescript.png
-processed-icons/word.png
-processed-icons/xml.png
-processed-icons/yaml.png
-processed-icons/zip.png
 registry/icons.json
 theme/icons-theme.json

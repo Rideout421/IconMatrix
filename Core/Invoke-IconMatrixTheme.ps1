@@ -123,6 +123,23 @@ function Invoke-IconMatrixTheme {
 
     Write-Host "[DEBUG] fileExtensions mapped = $mappedExt"
     Write-Host "[DEBUG] fileNames mapped      = $mappedNames"
+    $folderNames         = [ordered]@{}
+    $folderNamesExpanded = [ordered]@{}
+    $mappedFolders       = 0
+
+    if ($registry.folderNames) {
+        foreach ($p in $registry.folderNames.PSObject.Properties) {
+            $iconId = $p.Value
+            if ($iconDefinitions.Contains($iconId)) {
+                $folderNames[$p.Name]         = $iconId
+                $folderNamesExpanded[$p.Name]  = $iconId
+                $mappedFolders++
+            }
+        }
+    }
+
+    Write-Host "[DEBUG] folderNames mapped    = $mappedFolders"
+
 
     # -------------------------
     # DEFAULT ICON
@@ -151,9 +168,11 @@ function Invoke-IconMatrixTheme {
         iconDefinitions = $iconDefinitions
         fileExtensions  = $fileExtensions
         fileNames       = $fileNames
-        file            = $defaultIconId
-        folder          = $defaultIconId
-        folderExpanded  = $defaultIconId
+        file                = $defaultIconId
+        folder              = $defaultIconId
+        folderExpanded      = $defaultIconId
+        folderNames         = $folderNames
+        folderNamesExpanded = $folderNamesExpanded
     }
 
     # -------------------------
