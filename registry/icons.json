@@ -570,6 +570,9 @@
                             "localmed-icon":  {
                                                   "iconPath":  "./processed-icons/localmed.png"
                                               },
+                            "logs-icon":  {
+                                              "iconPath":  "./processed-icons/logs.png"
+                                          },
                             "looka-icon":  {
                                                "iconPath":  "./processed-icons/looka.png"
                                            },
@@ -1373,6 +1376,7 @@
                            "linuxmint":  "linuxmint-icon",
                            "lmarena":  "lmarena-icon",
                            "localmed":  "localmed-icon",
+                           "logs":  "logs-icon",
                            "looka":  "looka-icon",
                            "lorexcloud":  "lorexcloud-icon",
                            "loveable":  "loveable-icon",
@@ -1698,6 +1702,8 @@
                         ".kube":  "kubernetes-icon",
                         "minikube":  "kubernetes-icon",
                         "linux":  "linux-icon",
+                        "log":  "logs-icon",
+                        "logs":  "logs-icon",
                         "php":  "php-icon",
                         "prometheus":  "prometheus-icon",
                         "monitoring":  "prometheus-icon",
@@ -1776,6 +1782,8 @@
                                 ".kube":  "kubernetes-icon",
                                 "minikube":  "kubernetes-icon",
                                 "linux":  "linux-icon",
+                                "log":  "logs-icon",
+                                "logs":  "logs-icon",
                                 "php":  "php-icon",
                                 "prometheus":  "prometheus-icon",
                                 "monitoring":  "prometheus-icon",

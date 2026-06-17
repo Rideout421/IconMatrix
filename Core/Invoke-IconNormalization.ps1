@@ -6,8 +6,9 @@ function Invoke-IconNormalization {
 
     . "$PSScriptRoot\..\utils\Naming.ps1"
 
-    $seen = @{}
-    $validExt = @(".ico", ".png", ".jpg", ".jpeg")
+    $validExt = @(".png")   # HARD ENFORCEMENT: PNG ONLY
+
+    Write-Host "`n=== ICON NORMALIZATION (BADASS MODE) ===" -ForegroundColor Cyan
 
     Get-ChildItem $Path -File |
         Where-Object { $validExt -contains $_.Extension.ToLower() } |
@@ -15,19 +16,16 @@ function Invoke-IconNormalization {
         ForEach-Object {
 
             $group = $_.Group
-
-            # pick deterministic file (no renaming, no suffixes)
-            $keep = $group | Sort-Object Name | Select-Object -First 1
-
             $canonical = $_.Name
+
+            # pick deterministic file
+            $keep = $group | Sort-Object Name | Select-Object -First 1
             $target = "$canonical.png"
-            
-            $seen[$canonical] = $true
 
             foreach ($file in $group) {
 
+                # skip duplicates safely
                 if ($file.FullName -ne $keep.FullName) {
-
                     if ($DryRun) {
                         Write-Host "[DRYRUN DELETE DUP] $($file.Name)"
                         continue
@@ -38,7 +36,31 @@ function Invoke-IconNormalization {
                 }
             }
 
-            # ensure canonical file exists under correct name
+            # 🔥 ENFORCE FLOATING ICON TRANSFORMATION
+            if ($keep.Extension.ToLower() -ne ".png") {
+                if ($DryRun) {
+                    Write-Host "[DRYRUN CONVERT] $($keep.Name) -> $target"
+                }
+                else {
+                    Write-Host "[CONVERT + NORMALIZE] $($keep.Name) -> $target" -ForegroundColor Green
+
+                    magick $keep.FullName `
+                        -background none `
+                        -alpha set `
+                        -fuzz 10% -transparent white `
+                        -fuzz 10% -transparent "#ffffff" `
+                        -resize 256x256 `
+                        -gravity center `
+                        -extent 256x256 `
+                        $target
+
+                    Remove-Item $keep.FullName -Force
+                }
+
+                return
+            }
+
+            # ensure canonical naming
             if ($keep.Name -ne $target) {
 
                 if ($DryRun) {
