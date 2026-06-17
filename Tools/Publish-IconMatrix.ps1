@@ -200,7 +200,15 @@ if ($Install) {
         throw "No VSIX file found"
     }
 
-    code --install-extension $vsix.FullName --force
-}
+    Write-Host "Installing: $($vsix.Name)" -ForegroundColor Cyan
 
-Write-Host "`n=== COMPLETE ===`n" -ForegroundColor Green
+    # Suppress Node.js deprecation warnings (DEP0169 etc.)
+    $env:NODE_NO_WARNINGS = "1"
+
+    code --install-extension $vsix.FullName --force
+
+    # Clean up environment variable
+    Remove-Item Env:NODE_NO_WARNINGS -ErrorAction SilentlyContinue
+
+    Write-Host "Extension installed successfully." -ForegroundColor Green
+}
