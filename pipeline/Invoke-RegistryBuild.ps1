@@ -68,11 +68,34 @@ function Invoke-RegistryBuild {
     # ========================= SCAN FILES - STRONG SVG PREFERENCE =========================
     $allFiles = Get-ChildItem -Path $resolvedInput -Recurse -File -Include "*.png", "*.svg", "*.jpg", "*.jpeg", "*.ico"
 
-    $files = $allFiles | Group-Object { $_.BaseName.ToLower() } | ForEach-Object {
-        $group = $_.Group
-        $svg = $group | Where-Object Extension -eq '.svg' | Select-Object -First 1
-        if ($svg) { $svg } 
-        else { $group | Sort-Object Extension -Descending | Select-Object -First 1 }
+    # Extension priority used to break ties when two files resolve to the same
+    # canonical icon id. Lower number = higher priority.
+    $extPriority = @{ '.svg' = 0; '.png' = 1; '.ico' = 2; '.jpg' = 3; '.jpeg' = 4 }
+
+    # IMPORTANT: we must dedupe using the *resolved* canonical name (the same
+    # name Resolve-IconName will produce), not the raw BaseName. Otherwise an
+    # SVG named "react.svg" and a PNG named "react-icon.png" are treated as
+    # two different icons here, both survive this stage, and then collide
+    # later when Resolve-IconName normalizes them both to "react-icon" --
+    # at which point whichever one comes later in sort order silently wins.
+    $files = $allFiles | ForEach-Object {
+        $rawBase   = $_.BaseName.ToLower()
+        $kind      = if ($rawBase -like "folder*") { "folder" } else { "file" }
+        $resolved  = Resolve-IconName -Key $rawBase -Kind $kind
+        $canonical = if ($resolved) { $resolved | Select-Object -First 1 } else { $rawBase }
+
+        [PSCustomObject]@{
+            File       = $_
+            Canonical  = $canonical
+            Priority   = if ($extPriority.Contains($_.Extension.ToLower())) { $extPriority[$_.Extension.ToLower()] } else { 99 }
+        }
+    } | Group-Object Canonical | ForEach-Object {
+        $best = $_.Group | Sort-Object Priority | Select-Object -First 1
+        if ($_.Group.Count -gt 1) {
+            $skipped = $_.Group | Where-Object { $_ -ne $best } | ForEach-Object { $_.File.Name }
+            Write-Host "[DEDUPE] '$($_.Name)' -> keeping $($best.File.Name), skipping: $($skipped -join ', ')" -ForegroundColor DarkYellow
+        }
+        $best.File
     } | Sort-Object BaseName
 
     if (-not $files -or $files.Count -eq 0) {
@@ -107,8 +130,12 @@ function Invoke-RegistryBuild {
 
         $rel = $file.FullName.Substring($basePath.Length).TrimStart('\','/') -replace '\\','/'
 
-        $iconDefinitions[$iconId] = [ordered]@{
-            iconPath = "./processed-icons/$rel"
+        if ($iconDefinitions.Contains($iconId)) {
+            Write-Host "[WARN] Duplicate iconId '$iconId' from '$($file.Name)' -- keeping first-seen definition ($($iconDefinitions[$iconId].iconPath))" -ForegroundColor Yellow
+        } else {
+            $iconDefinitions[$iconId] = [ordered]@{
+                iconPath = "./processed-icons/$rel"
+            }
         }
 
         # ========================= EXTENSIONS (Auto + Mapped) =========================
