@@ -89,6 +89,7 @@
     "jest":         ["jest.config.js", "jest.config.ts", "jest.config.json"]
   },
   "folderNames": {
+    "secret":       [".secret-scan-output"],
     "aws":          ["aws", ".aws"],
     "azure":        ["azure", ".azure", "azure-pipelines"],
     "github":       [".github", "github"],

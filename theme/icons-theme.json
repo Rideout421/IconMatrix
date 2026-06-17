@@ -327,9 +327,6 @@
                             "floridadcf-icon":  {
                                                     "iconPath":  "../processed-icons/floridadcf.png"
                                                 },
-                            "folder-icon":  {
-                                                "iconPath":  "../processed-icons/folder.png"
-                                            },
                             "font-icon":  {
                                               "iconPath":  "../processed-icons/font.png"
                                           },
@@ -801,9 +798,6 @@
                             "prudentialfinancial-icon":  {
                                                              "iconPath":  "../processed-icons/prudentialfinancial.png"
                                                          },
-                            "ps-icon":  {
-                                            "iconPath":  "../processed-icons/ps.png"
-                                        },
                             "puppet-icon":  {
                                                 "iconPath":  "../processed-icons/puppet.png"
                                             },
@@ -843,9 +837,6 @@
                             "replicate-icon":  {
                                                    "iconPath":  "../processed-icons/replicate.png"
                                                },
-                            "repo-icon":  {
-                                              "iconPath":  "../processed-icons/repo.png"
-                                          },
                             "restream-icon":  {
                                                   "iconPath":  "../processed-icons/restream.png"
                                               },
@@ -918,6 +909,9 @@
                             "secondme-icon":  {
                                                   "iconPath":  "../processed-icons/secondme.png"
                                               },
+                            "secret-icon":  {
+                                                "iconPath":  "../processed-icons/secret.png"
+                                            },
                             "securityfirstinsurance-icon":  {
                                                                 "iconPath":  "../processed-icons/securityfirstinsurance.png"
                                                             },
@@ -1041,9 +1035,6 @@
                             "terraform-icon":  {
                                                    "iconPath":  "../processed-icons/terraform.png"
                                                },
-                            "text-icon":  {
-                                              "iconPath":  "../processed-icons/text.png"
-                                          },
                             "theleap-icon":  {
                                                  "iconPath":  "../processed-icons/theleap.png"
                                              },
@@ -1290,7 +1281,6 @@
                            "flir":  "flir-icon",
                            "floridablue":  "floridablue-icon",
                            "floridadcf":  "floridadcf-icon",
-                           "folder":  "folder-icon",
                            "ttf":  "font-icon",
                            "otf":  "font-icon",
                            "woff":  "font-icon",
@@ -1464,7 +1454,6 @@
                            "producthunt":  "producthunt-icon",
                            "proton":  "proton-icon",
                            "prudentialfinancial":  "prudentialfinancial-icon",
-                           "ps":  "ps-icon",
                            "puppet":  "puppet-icon",
                            "purestorage":  "purestorage-icon",
                            "py":  "python-icon",
@@ -1480,7 +1469,6 @@
                            "reforge":  "reforge-icon",
                            "relayapp":  "relayapp-icon",
                            "replicate":  "replicate-icon",
-                           "repo":  "repo-icon",
                            "restream":  "restream-icon",
                            "resumerocket":  "resumerocket-icon",
                            "rideout":  "rideout-icon",
@@ -1506,6 +1494,7 @@
                            "sccmreports":  "sccmreports-icon",
                            "scribe":  "scribe-icon",
                            "secondme":  "secondme-icon",
+                           "secret":  "secret-icon",
                            "securityfirstinsurance":  "securityfirstinsurance-icon",
                            "seg":  "seg-icon",
                            "segrewards":  "segrewards-icon",
@@ -1549,7 +1538,6 @@
                            "tf":  "terraform-icon",
                            "tfvars":  "terraform-icon",
                            "tfstate":  "terraform-icon",
-                           "text":  "text-icon",
                            "theleap":  "theleap-icon",
                            "thelinuxfoundation":  "thelinuxfoundation-icon",
                            "thycotic":  "thycotic-icon",
@@ -1652,8 +1640,6 @@
                       "Cargo.lock":  "rust-icon",
                       ".terraformrc":  "terraform-icon",
                       "terraform.tfvars":  "terraform-icon",
-                      "NOTICE":  "text-icon",
-                      "AUTHORS":  "text-icon",
                       ".vscodeignore":  "vscode-icon",
                       ".vscode":  "vscode-icon"
                   },
@@ -1720,11 +1706,9 @@
                         "venv":  "python-icon",
                         "__pycache__":  "python-icon",
                         ".pytest_cache":  "python-icon",
-                        "repo":  "repo-icon",
-                        "repository":  "repo-icon",
-                        "repositories":  "repo-icon",
                         "ruby":  "ruby-icon",
                         "cargo":  "rust-icon",
+                        ".secret-scan-output":  "secret-icon",
                         "terraform":  "terraform-icon",
                         ".terraform":  "terraform-icon",
                         "infra":  "terraform-icon",
@@ -1800,11 +1784,9 @@
                                 "venv":  "python-icon",
                                 "__pycache__":  "python-icon",
                                 ".pytest_cache":  "python-icon",
-                                "repo":  "repo-icon",
-                                "repository":  "repo-icon",
-                                "repositories":  "repo-icon",
                                 "ruby":  "ruby-icon",
                                 "cargo":  "rust-icon",
+                                ".secret-scan-output":  "secret-icon",
                                 "terraform":  "terraform-icon",
                                 ".terraform":  "terraform-icon",
                                 "infra":  "terraform-icon",

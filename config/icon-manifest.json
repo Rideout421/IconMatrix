@@ -1,4 +1,9 @@
 ﻿{
+    "peek.png":  {
+                     "mode":  "passthrough",
+                     "source":  "peek.png",
+                     "hash":  "728BBAA653F1E2833AC16F362F9DADF7A4CC832A0CC4AE1D527933E1517D1880"
+                 },
     "iffft.png":  {
                       "mode":  "passthrough",
                       "source":  "iffft.png",
@@ -34,6 +39,11 @@
                               "source":  "employflorida.png",
                               "hash":  "49C92DC7A095C9F8B6CA5C5618FC5560584EBF59435C8AA7F1EF110D9065E03D"
                           },
+    "communityfirst.png":  {
+                               "mode":  "passthrough",
+                               "source":  "communityfirst.png",
+                               "hash":  "65A22FCA39A49398223EAFD9B71DA9B25A0852ABF9C86186A7E7229FFC195E2F"
+                           },
     "powerbi.png":  {
                         "mode":  "converted",
                         "source":  "powerbi.png",
@@ -44,16 +54,16 @@
                         "source":  "vanceai.png",
                         "hash":  "7667CEC20D68D6EDDD4093FA3E9398812A07928E760879AE3364A40484F24F17"
                     },
-    "folder.png":  {
-                       "mode":  "converted",
-                       "source":  "folder.png",
-                       "hash":  "B838E81334B66AAC43977C1D5B8E262C5EFABF62F55A5EC67E91A536F4D5B40E"
-                   },
     "quest.png":  {
                       "mode":  "passthrough",
                       "source":  "quest.png",
                       "hash":  "0E89818E94200CB5F4DFA99D7456E78D2BA68E8EA25EDC2191F96E80A75A3AF1"
                   },
+    "skybell.png":  {
+                        "mode":  "passthrough",
+                        "source":  "skybell.png",
+                        "hash":  "D2BD6180E18565A08BFEEEAECD5DD62DB1148F0134CE8DE5FD24283C88F3508A"
+                    },
     "loveable.png":  {
                          "mode":  "passthrough",
                          "source":  "loveable.png",
@@ -84,11 +94,11 @@
                     "source":  "sql.png",
                     "hash":  "CD6958509B1EAC4EBE34B36DD35B400A4D93CF7CF95E03CE8E888C221BA75D11"
                 },
-    "txt.png":  {
-                    "mode":  "converted",
-                    "source":  "txt.png",
-                    "hash":  "90B949B5E526F88DBB019E291FD5684F1047BAA5A8B6A4F91A151B72258B1FC3"
-                },
+    "powerpoint.png":  {
+                           "mode":  "converted",
+                           "source":  "powerpoint.png",
+                           "hash":  "229EF3FA5316C74FDC2809625F76D2ADAE4B2C800D70789EFCD6E8394792DDCE"
+                       },
     "yaml.png":  {
                      "mode":  "converted",
                      "source":  "yaml.png",
@@ -114,11 +124,6 @@
                           "source":  "at\u0026t.png",
                           "hash":  "0247E5FA2CB3F8A917FC39B16ED247668EBEB76F059F57CD5C591A3DAC0314E9"
                       },
-    "ps.png":  {
-                   "mode":  "converted",
-                   "source":  "ps.png",
-                   "hash":  "85950A1746990E3CEF4318549B71DD24CAC20BAE4F6E99501EB667E92FF23951"
-               },
     "runway.png":  {
                        "mode":  "passthrough",
                        "source":  "runway.png",
@@ -149,6 +154,11 @@
                           "source":  "robinhood.png",
                           "hash":  "848C061BC75C6DB3B6F10DFD46EE99BFE08CF4ECC5CBCE4D6E9F903235EADCA3"
                       },
+    "signupgenius.png":  {
+                             "mode":  "passthrough",
+                             "source":  "signupgenius.png",
+                             "hash":  "D8A6690400DC00878EEA4A451BD4115108465FC3AC80C939081725AEA4E68140"
+                         },
     "alight.png":  {
                        "mode":  "passthrough",
                        "source":  "alight.png",
@@ -159,26 +169,21 @@
                     "source":  "php.png",
                     "hash":  "1C178364F474C7B9F65F583A78B5858C9D3E76727D856772FEEEE625268B042E"
                 },
-    "cursor.png":  {
-                       "mode":  "passthrough",
-                       "source":  "cursor.png",
-                       "hash":  "2C7D6D1BB8BFC9F5453764FD1E3559F6452B6D8A9B184FF153ED6D30FD5BBAE5"
+    "qualys.png":  {
+                       "mode":  "converted",
+                       "source":  "qualys.png",
+                       "hash":  "CF26D29D702324F6A10DC506F942FAF8B5ABCA2C5C7EBF79D6813ED33973C037"
                    },
     "airwatch.png":  {
                          "mode":  "passthrough",
                          "source":  "airwatch.png",
                          "hash":  "2D99F65197C307A0D09BBCA02E71BEBB944B072534B80237116A983C56228F8C"
                      },
-    "jea.png":  {
-                    "mode":  "passthrough",
-                    "source":  "jea.png",
-                    "hash":  "A2BC3259ED98573E1D71E1721C44E95059D483F876B0F4E9C314E4191C984C7C"
-                },
-    "usbank.png":  {
-                       "mode":  "passthrough",
-                       "source":  "usbank.png",
-                       "hash":  "40A9234133E2CBBDC7E36E1CFFF957DDE95F522A5CEAFF63CC17C9FCB61DABA3"
-                   },
+    "crewting.png":  {
+                         "mode":  "passthrough",
+                         "source":  "crewting.png",
+                         "hash":  "91C05797388B211D2FE07ACFC30CC5E479F87BD0BD0DC6AC055477FB4D509C0C"
+                     },
     "nintendoswitch.png":  {
                                "mode":  "passthrough",
                                "source":  "nintendoswitch.png",
@@ -204,6 +209,11 @@
                            "source":  "wellsfargo.png",
                            "hash":  "1A59573F91D756AE9B3B8A88EA932DF8F87DDBA26BB66FBDC6A94801E7B6CBBB"
                        },
+    "perkspot.png":  {
+                         "mode":  "passthrough",
+                         "source":  "perkspot.png",
+                         "hash":  "E1DBFC6615962CA4F7EE7EF8459FFBD2A842458B91CA071B78641A9933D7EAF0"
+                     },
     "flir.png":  {
                      "mode":  "passthrough",
                      "source":  "flir.png",
@@ -299,6 +309,11 @@
                           "source":  "layerpath.png",
                           "hash":  "DE4AA68CB4AC5AA9554B9CA81B2C84B5083DBA49DABAA5ADFAC94C527B5D6B79"
                       },
+    "aidvantage.png":  {
+                           "mode":  "passthrough",
+                           "source":  "aidvantage.png",
+                           "hash":  "3FB2B726B46DA22A53D202630857E85E48D33BB59AB242B36D48E5F2589831BF"
+                       },
     "playstation.png":  {
                             "mode":  "passthrough",
                             "source":  "playstation.png",
@@ -329,21 +344,16 @@
                             "source":  "talentquest.png",
                             "hash":  "EF8D44D52BE4DF79EAD0430DAAB04C90D9CD2E1D33219E97F6BE2500675CFD1F"
                         },
-    "wombodream.png":  {
-                           "mode":  "passthrough",
-                           "source":  "wombodream.png",
-                           "hash":  "56103A4645414D64D51F1786BBA3E63DEFF14C58DEDF086920DB97685DBCD13E"
-                       },
+    "cyberarc.png":  {
+                         "mode":  "converted",
+                         "source":  "cyberarc.png",
+                         "hash":  "1D3B52821361370D564A3FB9863C73B53B856A15EAF4323ED0A0961A7E7BCB48"
+                     },
     "servicenow.png":  {
                            "mode":  "converted",
                            "source":  "servicenow.png",
                            "hash":  "FF92BE9923BB52752945AC45AA3FD84AF2B6ABA3D7D490EDB0A7F3B88A69627C"
                        },
-    "json.png":  {
-                     "mode":  "converted",
-                     "source":  "json.png",
-                     "hash":  "17FA6823349193EF8F4420566C938C5C33127A1B6AEC44D3A60A69402E05D3A6"
-                 },
     "starryai.png":  {
                          "mode":  "passthrough",
                          "source":  "starryai.png",
@@ -354,31 +364,16 @@
                       "source":  "bolto.png",
                       "hash":  "61CD3AF5E3AE0E53BED7169020ECE270641EF4633A1EBEEC296CAB00C2F7DA55"
                   },
-    "freetaxusa.png":  {
-                           "mode":  "passthrough",
-                           "source":  "freetaxusa.png",
-                           "hash":  "0E087CEFAD8378600C22ADF70DE5BCFCE28C875B77E1C87E88AB0A6A7FC80279"
-                       },
     "semrush.png":  {
                         "mode":  "passthrough",
                         "source":  "semrush.png",
                         "hash":  "2F66E093E0D5CC96D0159704208C78A5F7071233C20FACE494B8556E0CADBDDE"
-                    },
-    "lateron.png":  {
-                        "mode":  "passthrough",
-                        "source":  "lateron.png",
-                        "hash":  "459EA0D40363C764C72EE6B7F64AB0409D8A7ED6A66BA866DEB32F0DCED6FBCE"
                     },
     "microfocus.png":  {
                            "mode":  "converted",
                            "source":  "microfocus.png",
                            "hash":  "DFA172279689AEFF49543DE0BD25642FD1800D77B989F4F4664628780F8840C4"
                        },
-    "paid.png":  {
-                     "mode":  "converted",
-                     "source":  "paid.png",
-                     "hash":  "A4343A11DEABBF3821B7CCD630E8255592AB10ACA1CF32EB719E344FD61C9938"
-                 },
     "myhealthone.png":  {
                             "mode":  "passthrough",
                             "source":  "myhealthone.png",
@@ -389,11 +384,11 @@
                            "source":  "hypervisor.png",
                            "hash":  "BC8EEAB40B44DBE48F4074032ED995309683D6F3A36C1FF8EFD18B372CCDBCB6"
                        },
-    "spiceworks.png":  {
-                           "mode":  "passthrough",
-                           "source":  "spiceworks.png",
-                           "hash":  "A318CE33423879F9B00840B39918571629DBDA90819FBEF6A23E3FBF71AF28E8"
-                       },
+    "gnome.png":  {
+                      "mode":  "passthrough",
+                      "source":  "gnome.png",
+                      "hash":  "4E03E985742D85A328D73A341DBA0B634E52C9837DFCAD7436C16C64433CAE3C"
+                  },
     "github.png":  {
                        "mode":  "converted",
                        "source":  "github.png",
@@ -434,6 +429,11 @@
                         "source":  "dolyapp.png",
                         "hash":  "A64B32D45002F74688C5E500AB5726B746CD8ED088475F8DF463006258545C33"
                     },
+    "usbank.png":  {
+                       "mode":  "passthrough",
+                       "source":  "usbank.png",
+                       "hash":  "40A9234133E2CBBDC7E36E1CFFF957DDE95F522A5CEAFF63CC17C9FCB61DABA3"
+                   },
     "jasperart.png":  {
                           "mode":  "passthrough",
                           "source":  "jasperart.png",
@@ -479,11 +479,11 @@
                         "source":  "granola.png",
                         "hash":  "F3206B814C17699DCA8D899401495429E576799EBD5A7C017F7B925E48E6BCB5"
                     },
-    "powerpoint.png":  {
-                           "mode":  "converted",
-                           "source":  "powerpoint.png",
-                           "hash":  "229EF3FA5316C74FDC2809625F76D2ADAE4B2C800D70789EFCD6E8394792DDCE"
-                       },
+    "cursor.png":  {
+                       "mode":  "passthrough",
+                       "source":  "cursor.png",
+                       "hash":  "2C7D6D1BB8BFC9F5453764FD1E3559F6452B6D8A9B184FF153ED6D30FD5BBAE5"
+                   },
     "walling.png":  {
                         "mode":  "passthrough",
                         "source":  "walling.png",
@@ -504,6 +504,11 @@
                                    "source":  "deepdreamgenerator.png",
                                    "hash":  "7161EA0CA59FBF34C15E79C2CD2FE32EBB9458877FFEE2083504757A5B6B1C15"
                                },
+    "gigavuefm.png":  {
+                          "mode":  "passthrough",
+                          "source":  "gigavuefm.png",
+                          "hash":  "403455431A8431C6518CB9694B83DF35A17CD98ADDF7CDBDC36DB4DB95EED54D"
+                      },
     "html.png":  {
                      "mode":  "converted",
                      "source":  "html.png",
@@ -544,11 +549,11 @@
                            "source":  "cojflorida.png",
                            "hash":  "7D3B469E2F0767465CD8A48342859103DC4B4080CA0DB25C2C01209163ACCFC4"
                        },
-    "centos.png":  {
-                       "mode":  "passthrough",
-                       "source":  "centos.png",
-                       "hash":  "B1A2F8573C019826979EF4E46CB3EBF3E0E460BFF98ECD79E809720E8659EEC8"
-                   },
+    "prometheus.png":  {
+                           "mode":  "passthrough",
+                           "source":  "prometheus.png",
+                           "hash":  "AA2F69FEC60B809716A455F316BAF78BCE18CA9CDA0472A670202721784312B9"
+                       },
     "personallab.png":  {
                             "mode":  "converted",
                             "source":  "personallab.png",
@@ -564,16 +569,11 @@
                          "source":  "openfaas.png",
                          "hash":  "A2EE55C5F0C2511EDACD149F0A01F2784E0071F9BA4F8FB7E1F22A6190ADD67B"
                      },
-    "microsoft.png":  {
-                          "mode":  "converted",
-                          "source":  "microsoft.png",
-                          "hash":  "E41649759576ACE48FB9E8A6719FCB7E7454A49884E1B7E9E9D24B52D9CDD3E9"
-                      },
-    "communityfirst.png":  {
-                               "mode":  "passthrough",
-                               "source":  "communityfirst.png",
-                               "hash":  "65A22FCA39A49398223EAFD9B71DA9B25A0852ABF9C86186A7E7229FFC195E2F"
-                           },
+    "idme.png":  {
+                     "mode":  "passthrough",
+                     "source":  "idme.png",
+                     "hash":  "537A67CC32D5C9FDD828A5A61B1CD919155DC835C49B89A63EFC957B02D1A592"
+                 },
     "blogger.png":  {
                         "mode":  "passthrough",
                         "source":  "blogger.png",
@@ -594,11 +594,11 @@
                   "source":  "c.png",
                   "hash":  "7E78A9D846261066AA48CD969614C34DA0C234128499322FA83084E6D0303EA2"
               },
-    "ocoya.png":  {
-                      "mode":  "passthrough",
-                      "source":  "ocoya.png",
-                      "hash":  "994858FC88C9F5E7B625E99C448488B489B13C853ACEE87602CCE36A49F6F1C6"
-                  },
+    "ruby.png":  {
+                     "mode":  "converted",
+                     "source":  "ruby.png",
+                     "hash":  "9C7CE2A51D9D4F70DAEC750A7118A28FC0AA519D83EE678A9BAA0C83DFE7E426"
+                 },
     "closinglock.png":  {
                             "mode":  "passthrough",
                             "source":  "closinglock.png",
@@ -614,11 +614,11 @@
                            "source":  "lorexcloud.png",
                            "hash":  "3B637809767CA0CB6B5D777728D177F36FFF0C03A349A572252CD44FDF62BC3F"
                        },
-    "murphyusa.png":  {
-                          "mode":  "passthrough",
-                          "source":  "murphyusa.png",
-                          "hash":  "17A218DCA590778C6C897D11FA67ADA8291FB37B9974919B2AA214DDA6FF85AC"
-                      },
+    "freetaxusa.png":  {
+                           "mode":  "passthrough",
+                           "source":  "freetaxusa.png",
+                           "hash":  "0E087CEFAD8378600C22ADF70DE5BCFCE28C875B77E1C87E88AB0A6A7FC80279"
+                       },
     "firefox.png":  {
                         "mode":  "passthrough",
                         "source":  "firefox.png",
@@ -639,11 +639,16 @@
                                     "source":  "globalcommandcenter.png",
                                     "hash":  "4A00F4EE50328DDD20E8A0F902F26286C92F22681A2FC45D0CF727319DF894DE"
                                 },
-    "cyberarc.png":  {
-                         "mode":  "converted",
-                         "source":  "cyberarc.png",
-                         "hash":  "1D3B52821361370D564A3FB9863C73B53B856A15EAF4323ED0A0961A7E7BCB48"
-                     },
+    "bash.png":  {
+                     "mode":  "converted",
+                     "source":  "bash.png",
+                     "hash":  "BBF92F95962474430F9987EDAE9C5432E2BEE42A207E9416760D90CF09A1327D"
+                 },
+    "terraform.png":  {
+                          "mode":  "converted",
+                          "source":  "terraform.png",
+                          "hash":  "67CC8B8BCA79CA4ADBFF6DB1FBF6548945BE8E90B531D3FC76CD0835CA304106"
+                      },
     "debian.png":  {
                        "mode":  "passthrough",
                        "source":  "debian.png",
@@ -654,11 +659,11 @@
                         "source":  "license.png",
                         "hash":  "89EC0DD5139D39DE4D5A5A7A62170C1E08EAC41EE42061664CA2DFF85ADC7244"
                     },
-    "skybell.png":  {
-                        "mode":  "passthrough",
-                        "source":  "skybell.png",
-                        "hash":  "D2BD6180E18565A08BFEEEAECD5DD62DB1148F0134CE8DE5FD24283C88F3508A"
-                    },
+    "cpp.png":  {
+                    "mode":  "converted",
+                    "source":  "cpp.png",
+                    "hash":  "7468E6F9FC6C52B02BF1F1152680DF3062DF9D5436F4853F4B2E8F0DE5C0F895"
+                },
     "aws.png":  {
                     "mode":  "converted",
                     "source":  "aws.png",
@@ -669,16 +674,16 @@
                            "source":  "postgessql.png",
                            "hash":  "D99B90D5BD629C8DB3454AC456A3E61E7225AC185FD0AFCE7461361133B31982"
                        },
-    "prajwaldesai.png":  {
-                             "mode":  "converted",
-                             "source":  "prajwaldesai.png",
-                             "hash":  "2192E20F2C1DFD8AF399517937D8CA4E6EA00F1D4E234BA17DB685BC1083C726"
-                         },
-    "stablediffusion.png":  {
-                                "mode":  "passthrough",
-                                "source":  "stablediffusion.png",
-                                "hash":  "3493F7F615F1D70E3389609DFB9D52EB0E2F044348B8F6C03FA209B83746CAE3"
-                            },
+    "artbreeder.png":  {
+                           "mode":  "passthrough",
+                           "source":  "artbreeder.png",
+                           "hash":  "82A9CF9D208F0DF9513E5E69F60920A2024D253DA3731DE69E4880A9846CB5B5"
+                       },
+    "ice.png":  {
+                    "mode":  "passthrough",
+                    "source":  "ice.png",
+                    "hash":  "48FDAB3D651E9F4A41311895827E11CA7511371AF3FF3F8FF58D0EFF8877C7FC"
+                },
     "dellemc.png":  {
                         "mode":  "converted",
                         "source":  "dellemc.png",
@@ -689,6 +694,11 @@
                            "source":  "automation.png",
                            "hash":  "B3D12E1689159E6BDE2D7507FFFEB48CD238B14E30BDC98DFFA7B6F0629F3482"
                        },
+    "pdf.png":  {
+                    "mode":  "converted",
+                    "source":  "pdf.png",
+                    "hash":  "1D009B36511CF974EE5410F552E145A94EB1713CE1C0951ED4C3E1DD1BF3666D"
+                },
     "restream.png":  {
                          "mode":  "passthrough",
                          "source":  "restream.png",
@@ -724,11 +734,11 @@
                            "source":  "stockimgai.png",
                            "hash":  "3FFC7FF3B0E5232258835B1CF4D0ACE67A38BA170747FC8D2B26355137A654DD"
                        },
-    "venafi.png":  {
-                       "mode":  "converted",
-                       "source":  "venafi.png",
-                       "hash":  "6EB37D35D348AE224C093A44698BC9B7F08BB1C4034D71B7951E78B2FBC94788"
-                   },
+    "json.png":  {
+                     "mode":  "converted",
+                     "source":  "json.png",
+                     "hash":  "17FA6823349193EF8F4420566C938C5C33127A1B6AEC44D3A60A69402E05D3A6"
+                 },
     "manus.png":  {
                       "mode":  "passthrough",
                       "source":  "manus.png",
@@ -759,11 +769,11 @@
                        "source":  "didero.png",
                        "hash":  "D0DB57A17A143A91847CEBA6E1F681AEDD4DEC304C3020CDE1D67A9DEC3D364E"
                    },
-    "myaskai.png":  {
-                        "mode":  "passthrough",
-                        "source":  "myaskai.png",
-                        "hash":  "87516933E8F8E21CE3195A94D34518ED1BCEAF6188C93CC062604C52F3CB8316"
-                    },
+    "certificate.png":  {
+                            "mode":  "converted",
+                            "source":  "certificate.png",
+                            "hash":  "9CBA9FFE6B13363423E09D872FE2F51C3C40A875ACD2D1536605725A37E47D84"
+                        },
     "excel.png":  {
                       "mode":  "converted",
                       "source":  "excel.png",
@@ -789,11 +799,6 @@
                         "source":  "lmarena.png",
                         "hash":  "FE91F5C25AAF8F582C25407F8C63187DAF9649988ADCC52D950C38E441AEF25E"
                     },
-    "interviewschat.png":  {
-                               "mode":  "passthrough",
-                               "source":  "interviewschat.png",
-                               "hash":  "C8F958F701F63A04F7A089D436A3C0B2A07D85A0ED2CB8FE541B4C391C9353FC"
-                           },
     "persanaai.png":  {
                           "mode":  "passthrough",
                           "source":  "persanaai.png",
@@ -819,16 +824,16 @@
                        "source":  "icloud.png",
                        "hash":  "714C0D01FD37B55210D73C79C3A332CED74A137F1A31C99C7D3C7F3C368E4877"
                    },
-    "qualys.png":  {
-                       "mode":  "converted",
-                       "source":  "qualys.png",
-                       "hash":  "CF26D29D702324F6A10DC506F942FAF8B5ABCA2C5C7EBF79D6813ED33973C037"
-                   },
     "asus.png":  {
                      "mode":  "passthrough",
                      "source":  "asus.png",
                      "hash":  "B232BA13FA72058D664CA1722AB697B588C371C6A863E218F4A7AC7BB3E16833"
                  },
+    "capacities.png":  {
+                           "mode":  "passthrough",
+                           "source":  "capacities.png",
+                           "hash":  "E5105F0380C2AC8BF6DF1BA9F76972FD5098E45CFA17C1B28DBC80B768D6ADD9"
+                       },
     "kalilinuxsubsystem.png":  {
                                    "mode":  "passthrough",
                                    "source":  "kalilinuxsubsystem.png",
@@ -839,11 +844,6 @@
                           "source":  "riverside.png",
                           "hash":  "C9DE2D58EA5A9A2631CB1DA33329A85FB517F00292D1E7A59EFF692909B38A9E"
                       },
-    "repo.png":  {
-                     "mode":  "converted",
-                     "source":  "repo.png",
-                     "hash":  "B838E81334B66AAC43977C1D5B8E262C5EFABF62F55A5EC67E91A536F4D5B40E"
-                 },
     "producthunt.png":  {
                             "mode":  "passthrough",
                             "source":  "producthunt.png",
@@ -869,6 +869,11 @@
                         "source":  "general.png",
                         "hash":  "147B468D65EAF1E46548EF1887023B6650235F0F4A4ED257789652BEDEE90C95"
                     },
+    "surveymonkey.png":  {
+                             "mode":  "passthrough",
+                             "source":  "surveymonkey.png",
+                             "hash":  "993F866121EE391B2BCDCCDAA37064C2D8186F96D191E250AB522A566DC345AF"
+                         },
     "finditnowgps.png":  {
                              "mode":  "passthrough",
                              "source":  "finditnowgps.png",
@@ -879,11 +884,6 @@
                          "source":  "benefits.png",
                          "hash":  "D0D71CCC2D1B9FAECB633136EFBA2ADDC484DC8A8F87C570C4E0E64E7BFE917A"
                      },
-    "sentinelone.png":  {
-                            "mode":  "converted",
-                            "source":  "sentinelone.png",
-                            "hash":  "C4C8C509D7C96DE997AFE37BE76EA549D18285037561B9D5D37865BA4A622900"
-                        },
     "opentext.png":  {
                          "mode":  "converted",
                          "source":  "opentext.png",
@@ -929,11 +929,11 @@
                         "source":  "rideout.png",
                         "hash":  "7F0C608DA81C845AF40171F4FC504180CB68A985073E3A930424D198C6558861"
                     },
-    "gamma.png":  {
-                      "mode":  "passthrough",
-                      "source":  "gamma.png",
-                      "hash":  "A6973FFA2C2DCCDADDDC5C67821ABBC44B2F0294C23EF7FD148301907F64BC5C"
-                  },
+    "scribe.png":  {
+                       "mode":  "passthrough",
+                       "source":  "scribe.png",
+                       "hash":  "85BE47A21313389A7F0D8C924BBA3B8F5C94CB5E1F6AEEB20AB7940CCC60A94C"
+                   },
     "solarwinds.png":  {
                            "mode":  "passthrough",
                            "source":  "solarwinds.png",
@@ -959,10 +959,15 @@
                              "source":  "healthequity.png",
                              "hash":  "454422B0B8CCB140B63932F0B4A07183A4D542A64D3E691D9F323AEB4332FC91"
                          },
-    "gigavuefm.png":  {
+    "java.png":  {
+                     "mode":  "converted",
+                     "source":  "java.png",
+                     "hash":  "0BAC57EFE1DF9EFB5C5E3A1475E18498556961EC042CA0FC20CEA96F4B6C0930"
+                 },
+    "murphyusa.png":  {
                           "mode":  "passthrough",
-                          "source":  "gigavuefm.png",
-                          "hash":  "403455431A8431C6518CB9694B83DF35A17CD98ADDF7CDBDC36DB4DB95EED54D"
+                          "source":  "murphyusa.png",
+                          "hash":  "17A218DCA590778C6C897D11FA67ADA8291FB37B9974919B2AA214DDA6FF85AC"
                       },
     "pabbly.png":  {
                        "mode":  "passthrough",
@@ -1024,11 +1029,11 @@
                       "source":  "gmail.png",
                       "hash":  "A69ED4BD727C122DAEC8D6650499C49E6D6973B574AFD923B48D0C6AE522CCBC"
                   },
-    "bash.png":  {
-                     "mode":  "converted",
-                     "source":  "bash.png",
-                     "hash":  "BBF92F95962474430F9987EDAE9C5432E2BEE42A207E9416760D90CF09A1327D"
-                 },
+    "cisco.png":  {
+                      "mode":  "converted",
+                      "source":  "cisco.png",
+                      "hash":  "C166BDB648FEDD6F5A6B5BC7E8E6EF2A64B502B76C37B981F23F7F4C62804A06"
+                  },
     "grafana.png":  {
                         "mode":  "passthrough",
                         "source":  "grafana.png",
@@ -1039,6 +1044,11 @@
                        "source":  "ivanti.png",
                        "hash":  "060AF9583CF8CD1A700F99007F0FA269A4300B02B5CB3B1ABFA0AEDE61D57953"
                    },
+    "wombodream.png":  {
+                           "mode":  "passthrough",
+                           "source":  "wombodream.png",
+                           "hash":  "56103A4645414D64D51F1786BBA3E63DEFF14C58DEDF086920DB97685DBCD13E"
+                       },
     "acorns.png":  {
                        "mode":  "passthrough",
                        "source":  "acorns.png",
@@ -1059,31 +1069,36 @@
                                   "source":  "marketingblocksai.png",
                                   "hash":  "23A88D9AC7B8FC1BF3BCD099CC8BCE54E6CDB3F22761F969CAD66E427ACCC8DD"
                               },
-    "artbreeder.png":  {
-                           "mode":  "passthrough",
-                           "source":  "artbreeder.png",
-                           "hash":  "82A9CF9D208F0DF9513E5E69F60920A2024D253DA3731DE69E4880A9846CB5B5"
-                       },
-    "signupgenius.png":  {
-                             "mode":  "passthrough",
-                             "source":  "signupgenius.png",
-                             "hash":  "D8A6690400DC00878EEA4A451BD4115108465FC3AC80C939081725AEA4E68140"
-                         },
+    "txt.png":  {
+                    "mode":  "converted",
+                    "source":  "txt.png",
+                    "hash":  "90B949B5E526F88DBB019E291FD5684F1047BAA5A8B6A4F91A151B72258B1FC3"
+                },
+    "jea.png":  {
+                    "mode":  "passthrough",
+                    "source":  "jea.png",
+                    "hash":  "A2BC3259ED98573E1D71E1721C44E95059D483F876B0F4E9C314E4191C984C7C"
+                },
     "magicjack.png":  {
                           "mode":  "passthrough",
                           "source":  "magicjack.png",
                           "hash":  "5918061BD792458311A064A94D0757FAA064D69A1C78B901AD9A6B5710AE59A3"
                       },
+    "ucsmanager.png":  {
+                           "mode":  "converted",
+                           "source":  "ucsmanager.png",
+                           "hash":  "66AEF003625ACF48589F6F9DDB26CD70AC075C12716ECC11146BAF43B856DF99"
+                       },
     "floridadcf.png":  {
                            "mode":  "passthrough",
                            "source":  "floridadcf.png",
                            "hash":  "D5A8DE5E758A8B0CDCB5C0A288D42F9F509DBE63A8E1144C40814B8A97304466"
                        },
-    "ubuntu.png":  {
-                       "mode":  "passthrough",
-                       "source":  "ubuntu.png",
-                       "hash":  "1F093FA0039B8AA713DD36DDF58DCD05B6821046EDC4F74D181D9FD01C1B33C9"
-                   },
+    "microsoft.png":  {
+                          "mode":  "converted",
+                          "source":  "microsoft.png",
+                          "hash":  "E41649759576ACE48FB9E8A6719FCB7E7454A49884E1B7E9E9D24B52D9CDD3E9"
+                      },
     "font.png":  {
                      "mode":  "converted",
                      "source":  "font.png",
@@ -1099,11 +1114,6 @@
                            "source":  "pearsonvue.png",
                            "hash":  "C2C3C75748AE94E3833D0E8950B9408865CA0CFC007D2B45D3E7A67EE1AA2F2E"
                        },
-    "outagecalendar.png":  {
-                               "mode":  "converted",
-                               "source":  "outagecalendar.png",
-                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
-                           },
     "midjourney.png":  {
                            "mode":  "passthrough",
                            "source":  "midjourney.png",
@@ -1114,21 +1124,21 @@
                     "source":  "bik.png",
                     "hash":  "912AFD30C3B1678EAF61F554F49A726215FED6389F2855081D9CBD81F431E030"
                 },
-    "ruby.png":  {
-                     "mode":  "converted",
-                     "source":  "ruby.png",
-                     "hash":  "9C7CE2A51D9D4F70DAEC750A7118A28FC0AA519D83EE678A9BAA0C83DFE7E426"
-                 },
     "go.png":  {
                    "mode":  "converted",
                    "source":  "go.png",
                    "hash":  "8F7269C26D590E3927F727E581472F6FAC62F062C9743D26E9E1FF80B1B95192"
                },
-    "perkspot.png":  {
-                         "mode":  "passthrough",
-                         "source":  "perkspot.png",
-                         "hash":  "E1DBFC6615962CA4F7EE7EF8459FFBD2A842458B91CA071B78641A9933D7EAF0"
-                     },
+    "prajwaldesai.png":  {
+                             "mode":  "converted",
+                             "source":  "prajwaldesai.png",
+                             "hash":  "2192E20F2C1DFD8AF399517937D8CA4E6EA00F1D4E234BA17DB685BC1083C726"
+                         },
+    "codemagazine.png":  {
+                             "mode":  "converted",
+                             "source":  "codemagazine.png",
+                             "hash":  "4A5C250E4905A22A2E53CB0C9FF9314D99BF3D6E9C8B4CC7DCF4F1C199B4EA3A"
+                         },
     "mentimeter.png":  {
                            "mode":  "passthrough",
                            "source":  "mentimeter.png",
@@ -1139,11 +1149,6 @@
                        "source":  "sonnet.png",
                        "hash":  "1F255478A8533F2CBB37E110EE81F5EDD4D5832741AD864D1D86504CA532B64B"
                    },
-    "iessharepoint.png":  {
-                              "mode":  "converted",
-                              "source":  "iessharepoint.png",
-                              "hash":  "A9488A36632ED344B71FBBDF46464653FD3ADF22E385C79AB615631867D20326"
-                          },
     "sap.png":  {
                     "mode":  "converted",
                     "source":  "sap.png",
@@ -1169,6 +1174,11 @@
                                 "source":  "myspacemobsters.png",
                                 "hash":  "BFE8258CC5BBCFDC6E5CD740363373A4E6CAC4ED2850D59A7CC9CFA0B41A26E9"
                             },
+    "spiceworks.png":  {
+                           "mode":  "passthrough",
+                           "source":  "spiceworks.png",
+                           "hash":  "A318CE33423879F9B00840B39918571629DBDA90819FBEF6A23E3FBF71AF28E8"
+                       },
     "brandstudio.png":  {
                             "mode":  "passthrough",
                             "source":  "brandstudio.png",
@@ -1179,26 +1189,36 @@
                       "source":  "atena.png",
                       "hash":  "9248C606EE344B8BA8C70CF047F90600232A7B197E37C6854F4F180E65CE029A"
                   },
+    "myaskai.png":  {
+                        "mode":  "passthrough",
+                        "source":  "myaskai.png",
+                        "hash":  "87516933E8F8E21CE3195A94D34518ED1BCEAF6188C93CC062604C52F3CB8316"
+                    },
     "zip.png":  {
                     "mode":  "converted",
                     "source":  "zip.png",
                     "hash":  "3A49B46172860AC37FDFE10DFCB0C2A4F02D4C93B386359E3B85941DE371B927"
                 },
-    "ubisoft.png":  {
-                        "mode":  "passthrough",
-                        "source":  "ubisoft.png",
-                        "hash":  "A36A01BD07433CCF5BAD4F71D4B86F2BFBFB2FA2EACFCBC8E7B6138A1F4317B7"
-                    },
+    "secret.png":  {
+                       "mode":  "converted",
+                       "source":  "secret.png",
+                       "hash":  "228E62B20E264157BAA02E6CFE9131C6B88CA6C682558239B6C1E0695C8A97E7"
+                   },
     "landry\u0027s.png":  {
                               "mode":  "passthrough",
                               "source":  "landry\u0027s.png",
                               "hash":  "5E1862800A9CAD896E7DE94BD115D9EB4A93F66ED3E806440ACADD5D07F19C9B"
                           },
-    "aidvantage.png":  {
-                           "mode":  "passthrough",
-                           "source":  "aidvantage.png",
-                           "hash":  "3FB2B726B46DA22A53D202630857E85E48D33BB59AB242B36D48E5F2589831BF"
-                       },
+    "ibmcloud.png":  {
+                         "mode":  "passthrough",
+                         "source":  "ibmcloud.png",
+                         "hash":  "287CE81FB0285D64DF444A2A5C1FDF78EBD16BF2A1E23CBEDBFF5A125A2C0F21"
+                     },
+    "venafi.png":  {
+                       "mode":  "converted",
+                       "source":  "venafi.png",
+                       "hash":  "6EB37D35D348AE224C093A44698BC9B7F08BB1C4034D71B7951E78B2FBC94788"
+                   },
     "teladoc.png":  {
                         "mode":  "passthrough",
                         "source":  "teladoc.png",
@@ -1209,6 +1229,11 @@
                       "source":  "canva.png",
                       "hash":  "7535107102AAAD000D5673871D46646C872110011414D3EFD3799C392B807EF0"
                   },
+    "stablediffusion.png":  {
+                                "mode":  "passthrough",
+                                "source":  "stablediffusion.png",
+                                "hash":  "3493F7F615F1D70E3389609DFB9D52EB0E2F044348B8F6C03FA209B83746CAE3"
+                            },
     "rubrik.png":  {
                        "mode":  "converted",
                        "source":  "rubrik.png",
@@ -1249,11 +1274,6 @@
                        "source":  "arcdev.png",
                        "hash":  "2D03E1620D7E53262590B566B34EA26D4E3EBAE065FDA31AB975305C14143269"
                    },
-    "ibmcloud.png":  {
-                         "mode":  "passthrough",
-                         "source":  "ibmcloud.png",
-                         "hash":  "287CE81FB0285D64DF444A2A5C1FDF78EBD16BF2A1E23CBEDBFF5A125A2C0F21"
-                     },
     "grimo.png":  {
                       "mode":  "passthrough",
                       "source":  "grimo.png",
@@ -1264,6 +1284,11 @@
                        "source":  "deepai.png",
                        "hash":  "613D6ECAAEDC3E50C82E2200A42EBD037E3052036672BE86D5ECFAB511EDBF1F"
                    },
+    "gamma.png":  {
+                      "mode":  "passthrough",
+                      "source":  "gamma.png",
+                      "hash":  "A6973FFA2C2DCCDADDDC5C67821ABBC44B2F0294C23EF7FD148301907F64BC5C"
+                  },
     "let\u0027senhance.png":  {
                                   "mode":  "passthrough",
                                   "source":  "let\u0027senhance.png",
@@ -1304,6 +1329,11 @@
                          "source":  "thycotic.png",
                          "hash":  "8070D9280CD9CFEC9B6E7B16CDBD85AF9CD01F1377CA8B4490ED18DCA4E05A4B"
                      },
+    "vendorsupport.png":  {
+                              "mode":  "converted",
+                              "source":  "vendorsupport.png",
+                              "hash":  "6C694D9A6DFCBDAE8C2F2414B6F867050FAA3A1E062DA4115923C6473C560538"
+                          },
     "minio.png":  {
                       "mode":  "passthrough",
                       "source":  "minio.png",
@@ -1324,15 +1354,25 @@
                          "source":  "barclays.png",
                          "hash":  "718DB46B41F872AD23F3C63E84F524C7BFB46F2BC74CABCDFFA1E21D4AA5F56B"
                      },
-    "vendorsupport.png":  {
-                              "mode":  "converted",
-                              "source":  "vendorsupport.png",
-                              "hash":  "6C694D9A6DFCBDAE8C2F2414B6F867050FAA3A1E062DA4115923C6473C560538"
-                          },
+    "google.png":  {
+                       "mode":  "passthrough",
+                       "source":  "google.png",
+                       "hash":  "1F1DE5A606E37640565726A6D8FC8FE6B7BA6DA8F73454FD7B87CE09B1ECDAC9"
+                   },
+    "javascript.png":  {
+                           "mode":  "converted",
+                           "source":  "javascript.png",
+                           "hash":  "811C1C7DF6950D9EBB564735E65E4B3D625ED0F57347C868A4542BEE2AB87CD9"
+                       },
     "travel.png":  {
                        "mode":  "converted",
                        "source":  "travel.png",
                        "hash":  "41A61C35E3B6E9607FDBEA4DF08FC41783C3555287E03EBC9F53BA1A2F583CBB"
+                   },
+    "ubuntu.png":  {
+                       "mode":  "passthrough",
+                       "source":  "ubuntu.png",
+                       "hash":  "1F093FA0039B8AA713DD36DDF58DCD05B6821046EDC4F74D181D9FD01C1B33C9"
                    },
     "powershell.png":  {
                            "mode":  "converted",
@@ -1364,16 +1404,6 @@
                             "source":  "susemanager.png",
                             "hash":  "5B9BB5B7EA087766A4F21E34A83EDE0BB0080B1D8B5C0ED7A6A7F303D64EB977"
                         },
-    "scribe.png":  {
-                       "mode":  "passthrough",
-                       "source":  "scribe.png",
-                       "hash":  "85BE47A21313389A7F0D8C924BBA3B8F5C94CB5E1F6AEEB20AB7940CCC60A94C"
-                   },
-    "jetblue.png":  {
-                        "mode":  "passthrough",
-                        "source":  "jetblue.png",
-                        "hash":  "ECF2B4DC8531494C6D08407B81B73BE0596877C17F059EF8F763372B1E4A2D8E"
-                    },
     "odoo.png":  {
                      "mode":  "passthrough",
                      "source":  "odoo.png",
@@ -1409,21 +1439,26 @@
                        "source":  "quraai.png",
                        "hash":  "FE03D7FA7864FB09DBA746CDBA8C17F37B7DA252FE682A61028D35EBAD594CBE"
                    },
-    "ucsmanager.png":  {
-                           "mode":  "converted",
-                           "source":  "ucsmanager.png",
-                           "hash":  "66AEF003625ACF48589F6F9DDB26CD70AC075C12716ECC11146BAF43B856DF99"
-                       },
+    "taskade.png":  {
+                        "mode":  "passthrough",
+                        "source":  "taskade.png",
+                        "hash":  "8DF412750741657A088D4EB42DD992801D0E8025E689892A615F0718DF3998CF"
+                    },
     "training.png":  {
                          "mode":  "converted",
                          "source":  "training.png",
                          "hash":  "E959A2DDAD688F7B5CFF570559A6342AC4BBD4EEFA14E2CB6A621944CAF52E5F"
                      },
-    "talentlyai.png":  {
+    "betterment.png":  {
                            "mode":  "passthrough",
-                           "source":  "talentlyai.png",
-                           "hash":  "B1B329968DC153F9B9C31C532EA5E35AC49691BEAA896D0787F063ACF1CA97DE"
+                           "source":  "betterment.png",
+                           "hash":  "4E3BED61CC5D40D1964BE5877F10FC30A7DDB4C0725F2137991A79268FB830D1"
                        },
+    "ocoya.png":  {
+                      "mode":  "passthrough",
+                      "source":  "ocoya.png",
+                      "hash":  "994858FC88C9F5E7B625E99C448488B489B13C853ACEE87602CCE36A49F6F1C6"
+                  },
     "dreamstudio.png":  {
                             "mode":  "passthrough",
                             "source":  "dreamstudio.png",
@@ -1459,10 +1494,10 @@
                                   "source":  "heathcarebluebook.png",
                                   "hash":  "55C9D19F61FF5421E2124B1F6D58F92CD6AA71FF95D179016E6FB22C17507BFD"
                               },
-    "prometheus.png":  {
+    "talentlyai.png":  {
                            "mode":  "passthrough",
-                           "source":  "prometheus.png",
-                           "hash":  "AA2F69FEC60B809716A455F316BAF78BCE18CA9CDA0472A670202721784312B9"
+                           "source":  "talentlyai.png",
+                           "hash":  "B1B329968DC153F9B9C31C532EA5E35AC49691BEAA896D0787F063ACF1CA97DE"
                        },
     "skype.png":  {
                       "mode":  "passthrough",
@@ -1479,21 +1514,11 @@
                      "source":  "toml.png",
                      "hash":  "FD6BB6514AD853386CC4E0B89C90943B630CA13F7063448E4A39B1E26606CB5A"
                  },
-    "ai.png":  {
-                   "mode":  "converted",
-                   "source":  "ai.png",
-                   "hash":  "B1452287941EECE762C316B5934DF76615667394CBBCDF6FF71B467CF3AA640E"
-               },
-    "text.png":  {
-                     "mode":  "converted",
-                     "source":  "text.png",
-                     "hash":  "E306BF17B06FE51ADBE6AD5D28BD2BCC39B00BDD7B52421F147DD1E7D66AEF01"
-                 },
-    "taskade.png":  {
-                        "mode":  "passthrough",
-                        "source":  "taskade.png",
-                        "hash":  "8DF412750741657A088D4EB42DD992801D0E8025E689892A615F0718DF3998CF"
-                    },
+    "centos.png":  {
+                       "mode":  "passthrough",
+                       "source":  "centos.png",
+                       "hash":  "B1A2F8573C019826979EF4E46CB3EBF3E0E460BFF98ECD79E809720E8659EEC8"
+                   },
     "roush.png":  {
                       "mode":  "passthrough",
                       "source":  "roush.png",
@@ -1504,11 +1529,6 @@
                             "source":  "purestorage.png",
                             "hash":  "882E7470746F7F3CF68CA26B2A380A532A3B97E2F854AE7AB2F0A05ED05CB729"
                         },
-    "ice.png":  {
-                    "mode":  "passthrough",
-                    "source":  "ice.png",
-                    "hash":  "48FDAB3D651E9F4A41311895827E11CA7511371AF3FF3F8FF58D0EFF8877C7FC"
-                },
     "monitoring.png":  {
                            "mode":  "converted",
                            "source":  "monitoring.png",
@@ -1519,11 +1539,11 @@
                              "source":  "adobefirefly.png",
                              "hash":  "E7CA03063AEE9FBFA0E26D19D7A3F5BF153A2B8C1A1C32B849E9BDD3520687AF"
                          },
-    "codemagazine.png":  {
-                             "mode":  "converted",
-                             "source":  "codemagazine.png",
-                             "hash":  "4A5C250E4905A22A2E53CB0C9FF9314D99BF3D6E9C8B4CC7DCF4F1C199B4EA3A"
-                         },
+    "outagecalendar.png":  {
+                               "mode":  "converted",
+                               "source":  "outagecalendar.png",
+                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
+                           },
     "bizplanr.png":  {
                          "mode":  "passthrough",
                          "source":  "bizplanr.png",
@@ -1589,16 +1609,6 @@
                   "source":  "x.png",
                   "hash":  "76DCEB79AD4540CD7C3A282689E985DF664AEA6B4ECCAD8523979E200F50EE4A"
               },
-    "cpp.png":  {
-                    "mode":  "converted",
-                    "source":  "cpp.png",
-                    "hash":  "7468E6F9FC6C52B02BF1F1152680DF3062DF9D5436F4853F4B2E8F0DE5C0F895"
-                },
-    "javascript.png":  {
-                           "mode":  "converted",
-                           "source":  "javascript.png",
-                           "hash":  "811C1C7DF6950D9EBB564735E65E4B3D625ED0F57347C868A4542BEE2AB87CD9"
-                       },
     "shutterstock.png":  {
                              "mode":  "passthrough",
                              "source":  "shutterstock.png",
@@ -1614,11 +1624,6 @@
                        "source":  "15five.png",
                        "hash":  "43A747E3BEFC00BE4855D4D52DC21EDC36731941BC8B1BBB23B29090EF6983E2"
                    },
-    "crewting.png":  {
-                         "mode":  "passthrough",
-                         "source":  "crewting.png",
-                         "hash":  "91C05797388B211D2FE07ACFC30CC5E479F87BD0BD0DC6AC055477FB4D509C0C"
-                     },
     "cronacle.png":  {
                          "mode":  "converted",
                          "source":  "cronacle.png",
@@ -1639,11 +1644,11 @@
                            "source":  "rockylinux.png",
                            "hash":  "C5B179F8B832C1C6DE2C9AE6FA07F3B5F1F319D3CD0410DD40FDBCF2127ADD0E"
                        },
-    "terraform.png":  {
-                          "mode":  "converted",
-                          "source":  "terraform.png",
-                          "hash":  "67CC8B8BCA79CA4ADBFF6DB1FBF6548945BE8E90B531D3FC76CD0835CA304106"
-                      },
+    "interviewschat.png":  {
+                               "mode":  "passthrough",
+                               "source":  "interviewschat.png",
+                               "hash":  "C8F958F701F63A04F7A089D436A3C0B2A07D85A0ED2CB8FE541B4C391C9353FC"
+                           },
     "inrō.png":  {
                      "mode":  "passthrough",
                      "source":  "inrō.png",
@@ -1664,11 +1669,6 @@
                        "source":  "proton.png",
                        "hash":  "10CE6AEF218B256C31B9ADB694B43395B079EF48AA64E51C20DF05EC23640F9E"
                    },
-    "cisco.png":  {
-                      "mode":  "converted",
-                      "source":  "cisco.png",
-                      "hash":  "C166BDB648FEDD6F5A6B5BC7E8E6EF2A64B502B76C37B981F23F7F4C62804A06"
-                  },
     "securityfirstinsurance.png":  {
                                        "mode":  "passthrough",
                                        "source":  "securityfirstinsurance.png",
@@ -1679,11 +1679,11 @@
                           "source":  "smartliai.png",
                           "hash":  "1E43CA3C1CCA83AB29C5AC82BB16601AAC0B68FF959193FF6C0766641C77F0A0"
                       },
-    "google.png":  {
-                       "mode":  "passthrough",
-                       "source":  "google.png",
-                       "hash":  "1F1DE5A606E37640565726A6D8FC8FE6B7BA6DA8F73454FD7B87CE09B1ECDAC9"
-                   },
+    "jetblue.png":  {
+                        "mode":  "passthrough",
+                        "source":  "jetblue.png",
+                        "hash":  "ECF2B4DC8531494C6D08407B81B73BE0596877C17F059EF8F763372B1E4A2D8E"
+                    },
     "helm.png":  {
                      "mode":  "converted",
                      "source":  "helm.png",
@@ -1764,11 +1764,6 @@
                              "source":  "speechtonote.png",
                              "hash":  "A7D49AAA0904F5C3FDC87EF34D97CCB9256A77FC78E4DF1EA9622D946EB44354"
                          },
-    "certificate.png":  {
-                            "mode":  "converted",
-                            "source":  "certificate.png",
-                            "hash":  "9CBA9FFE6B13363423E09D872FE2F51C3C40A875ACD2D1536605725A37E47D84"
-                        },
     "vmware.png":  {
                        "mode":  "converted",
                        "source":  "vmware.png",
@@ -1809,41 +1804,36 @@
                          "source":  "metaview.png",
                          "hash":  "1F6C0D7673989E0B378B81D59AFEC105C968FDCABDD5CABF31CCE3EC24D3E427"
                      },
-    "betterment.png":  {
-                           "mode":  "passthrough",
-                           "source":  "betterment.png",
-                           "hash":  "4E3BED61CC5D40D1964BE5877F10FC30A7DDB4C0725F2137991A79268FB830D1"
-                       },
-    "surveymonkey.png":  {
-                             "mode":  "passthrough",
-                             "source":  "surveymonkey.png",
-                             "hash":  "993F866121EE391B2BCDCCDAA37064C2D8186F96D191E250AB522A566DC345AF"
-                         },
-    "idme.png":  {
-                     "mode":  "passthrough",
-                     "source":  "idme.png",
-                     "hash":  "537A67CC32D5C9FDD828A5A61B1CD919155DC835C49B89A63EFC957B02D1A592"
+    "iessharepoint.png":  {
+                              "mode":  "converted",
+                              "source":  "iessharepoint.png",
+                              "hash":  "A9488A36632ED344B71FBBDF46464653FD3ADF22E385C79AB615631867D20326"
+                          },
+    "paid.png":  {
+                     "mode":  "converted",
+                     "source":  "paid.png",
+                     "hash":  "A4343A11DEABBF3821B7CCD630E8255592AB10ACA1CF32EB719E344FD61C9938"
                  },
     "oraclesolaris.png":  {
                               "mode":  "converted",
                               "source":  "oraclesolaris.png",
                               "hash":  "08BC8296DF1524C57BDF84F6A5FC08C25CFEEE92975E8C21390EC7618260823E"
                           },
-    "pdf.png":  {
-                    "mode":  "converted",
-                    "source":  "pdf.png",
-                    "hash":  "1D009B36511CF974EE5410F552E145A94EB1713CE1C0951ED4C3E1DD1BF3666D"
-                },
+    "ai.png":  {
+                   "mode":  "converted",
+                   "source":  "ai.png",
+                   "hash":  "B1452287941EECE762C316B5934DF76615667394CBBCDF6FF71B467CF3AA640E"
+               },
+    "ubisoft.png":  {
+                        "mode":  "passthrough",
+                        "source":  "ubisoft.png",
+                        "hash":  "A36A01BD07433CCF5BAD4F71D4B86F2BFBFB2FA2EACFCBC8E7B6138A1F4317B7"
+                    },
     "storycheif.png":  {
                            "mode":  "passthrough",
                            "source":  "storycheif.png",
                            "hash":  "C8D51A74B05D278D0E7F01CD936AA6333BFE8E1A488450F21F6B43D87A613327"
                        },
-    "java.png":  {
-                     "mode":  "converted",
-                     "source":  "java.png",
-                     "hash":  "0BAC57EFE1DF9EFB5C5E3A1475E18498556961EC042CA0FC20CEA96F4B6C0930"
-                 },
     "rxss.png":  {
                      "mode":  "passthrough",
                      "source":  "rxss.png",
@@ -1909,16 +1899,11 @@
                       "source":  "veeam.png",
                       "hash":  "C9FA491414AB2D867DB09DD5764F2A2DB2D4346303A60BF234468BD92B97008C"
                   },
-    "capacities.png":  {
-                           "mode":  "passthrough",
-                           "source":  "capacities.png",
-                           "hash":  "E5105F0380C2AC8BF6DF1BA9F76972FD5098E45CFA17C1B28DBC80B768D6ADD9"
-                       },
-    "gnome.png":  {
-                      "mode":  "passthrough",
-                      "source":  "gnome.png",
-                      "hash":  "4E03E985742D85A328D73A341DBA0B634E52C9837DFCAD7436C16C64433CAE3C"
-                  },
+    "lateron.png":  {
+                        "mode":  "passthrough",
+                        "source":  "lateron.png",
+                        "hash":  "459EA0D40363C764C72EE6B7F64AB0409D8A7ED6A66BA866DEB32F0DCED6FBCE"
+                    },
     "onenote.png":  {
                         "mode":  "passthrough",
                         "source":  "onenote.png",
@@ -1934,9 +1919,9 @@
                           "source":  "turbotax®.png",
                           "hash":  "7236B282C47460A50681EF55D2C40C7067299A72DF4FA7D1EE3681AF578EEA04"
                       },
-    "peek.png":  {
-                     "mode":  "passthrough",
-                     "source":  "peek.png",
-                     "hash":  "728BBAA653F1E2833AC16F362F9DADF7A4CC832A0CC4AE1D527933E1517D1880"
-                 }
+    "sentinelone.png":  {
+                            "mode":  "converted",
+                            "source":  "sentinelone.png",
+                            "hash":  "C4C8C509D7C96DE997AFE37BE76EA549D18285037561B9D5D37865BA4A622900"
+                        }
 }
