@@ -168,6 +168,9 @@
                             "checkpoint-icon":  {
                                                     "iconPath":  "../processed-icons/checkpoint.png"
                                                 },
+                            "cisco-icon":  {
+                                               "iconPath":  "../processed-icons/cisco.png"
+                                           },
                             "citrix-icon":  {
                                                 "iconPath":  "../processed-icons/citrix.png"
                                             },
@@ -549,6 +552,9 @@
                             "lg-icon":  {
                                             "iconPath":  "../processed-icons/lg.png"
                                         },
+                            "license-icon":  {
+                                                 "iconPath":  "../processed-icons/license.png"
+                                             },
                             "linkedin-icon":  {
                                                   "iconPath":  "../processed-icons/linkedin.png"
                                               },
@@ -819,6 +825,9 @@
                             "quraai-icon":  {
                                                 "iconPath":  "../processed-icons/quraai.png"
                                             },
+                            "rancher-icon":  {
+                                                 "iconPath":  "../processed-icons/rancher.png"
+                                             },
                             "realvnc-icon":  {
                                                  "iconPath":  "../processed-icons/realvnc.png"
                                              },
@@ -866,6 +875,9 @@
                                                },
                             "rockylinux-icon":  {
                                                     "iconPath":  "../processed-icons/rockylinux.png"
+                                                },
+                            "rootfolder-icon":  {
+                                                    "iconPath":  "../processed-icons/rootfolder.png"
                                                 },
                             "roush-icon":  {
                                                "iconPath":  "../processed-icons/roush.png"
@@ -918,6 +930,9 @@
                             "semrush-icon":  {
                                                  "iconPath":  "../processed-icons/semrush.png"
                                              },
+                            "sentinelone-icon":  {
+                                                     "iconPath":  "../processed-icons/sentinelone.png"
+                                                 },
                             "sequensai-icon":  {
                                                    "iconPath":  "../processed-icons/sequensai.png"
                                                },
@@ -1053,6 +1068,9 @@
                             "turbotax®-icon":  {
                                                    "iconPath":  "../processed-icons/turbotax®.png"
                                                },
+                            "txt-icon":  {
+                                             "iconPath":  "../processed-icons/txt.png"
+                                         },
                             "typeform-icon":  {
                                                   "iconPath":  "../processed-icons/typeform.png"
                                               },
@@ -1210,6 +1228,7 @@
                            "chase":  "chase-icon",
                            "chatgpt":  "chatgpt-icon",
                            "checkpoint":  "checkpoint-icon",
+                           "cisco":  "cisco-icon",
                            "citrix":  "citrix-icon",
                            "closebot":  "closebot-icon",
                            "closinglock":  "closinglock-icon",
@@ -1358,6 +1377,7 @@
                            "leapai":  "leapai-icon",
                            "let\u0027senhance":  "let\u0027senhance-icon",
                            "lg":  "lg-icon",
+                           "license":  "license-icon",
                            "linkedin":  "linkedin-icon",
                            "linkedinlearning":  "linkedinlearning-icon",
                            "linuxmint":  "linuxmint-icon",
@@ -1454,6 +1474,7 @@
                            "quest":  "quest-icon",
                            "questionbase":  "questionbase-icon",
                            "quraai":  "quraai-icon",
+                           "rancher":  "rancher-icon",
                            "realvnc":  "realvnc-icon",
                            "redhatsatellite":  "redhatsatellite-icon",
                            "reforge":  "reforge-icon",
@@ -1470,6 +1491,7 @@
                            "roberthalf":  "roberthalf-icon",
                            "robinhood":  "robinhood-icon",
                            "rockylinux":  "rockylinux-icon",
+                           "rootfolder":  "rootfolder-icon",
                            "roush":  "roush-icon",
                            "rubrik":  "rubrik-icon",
                            "rb":  "ruby-icon",
@@ -1488,6 +1510,7 @@
                            "seg":  "seg-icon",
                            "segrewards":  "segrewards-icon",
                            "semrush":  "semrush-icon",
+                           "sentinelone":  "sentinelone-icon",
                            "sequensai":  "sequensai-icon",
                            "servicenow":  "servicenow-icon",
                            "shaped":  "shaped-icon",
@@ -1526,8 +1549,7 @@
                            "tf":  "terraform-icon",
                            "tfvars":  "terraform-icon",
                            "tfstate":  "terraform-icon",
-                           "txt":  "text-icon",
-                           "log":  "text-icon",
+                           "text":  "text-icon",
                            "theleap":  "theleap-icon",
                            "thelinuxfoundation":  "thelinuxfoundation-icon",
                            "thycotic":  "thycotic-icon",
@@ -1536,6 +1558,7 @@
                            "training":  "training-icon",
                            "travel":  "travel-icon",
                            "turbotax®":  "turbotax®-icon",
+                           "txt":  "txt-icon",
                            "typeform":  "typeform-icon",
                            "ts":  "typescript-icon",
                            "tsx":  "typescript-icon",
@@ -1612,6 +1635,8 @@
                       "values.yaml":  "helm-icon",
                       "kustomization.yaml":  "kubernetes-icon",
                       "kustomization.yml":  "kubernetes-icon",
+                      "LICENSE":  "license-icon",
+                      "LICENCE":  "license-icon",
                       "README.md":  "markdown-icon",
                       "CHANGELOG.md":  "markdown-icon",
                       "CONTRIBUTING.md":  "markdown-icon",
@@ -1627,16 +1652,11 @@
                       "Cargo.lock":  "rust-icon",
                       ".terraformrc":  "terraform-icon",
                       "terraform.tfvars":  "terraform-icon",
-                      "LICENSE":  "text-icon",
-                      "LICENCE":  "text-icon",
                       "NOTICE":  "text-icon",
                       "AUTHORS":  "text-icon",
                       ".vscodeignore":  "vscode-icon",
                       ".vscode":  "vscode-icon"
                   },
-    "file":  "general-icon",
-    "folder":  "general-icon",
-    "folderExpanded":  "general-icon",
     "folderNames":  {
                         "ansible":  "ansible-icon",
                         "playbooks":  "ansible-icon",
@@ -1796,5 +1816,10 @@
                                 "ubuntu":  "ubuntu-icon",
                                 "vmware":  "vmware-icon",
                                 ".vscode":  "vscode-icon"
-                            }
+                            },
+    "file":  "general-icon",
+    "folder":  "general-icon",
+    "folderExpanded":  "general-icon",
+    "rootFolder":  "rootfolder-icon",
+    "rootFolderExpanded":  "rootfolder-icon"
 }

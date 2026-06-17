@@ -163,15 +163,23 @@ function Invoke-IconMatrixTheme {
     #   folder           - iconId string (default for any folder)
     #   folderExpanded   - iconId string (optional, open folder)
     # -------------------------
+
+    Write-Host "`n=== ROOT FOLDER DEBUG ===" -ForegroundColor Cyan
+    Write-Host "rootfolder-icon exists: $($iconDefinitions.Keys -contains 'rootfolder-icon')"
+    Write-Host "Matching keys:"
+    $iconDefinitions.Keys | Where-Object { $_ -match 'root|folder' } | Sort-Object
+
     $theme = [ordered]@{
-        iconDefinitions = $iconDefinitions
-        fileExtensions  = $fileExtensions
-        fileNames       = $fileNames
+        iconDefinitions     = $iconDefinitions
+        fileExtensions      = $fileExtensions
+        fileNames           = $fileNames
+        folderNames         = $folderNames
+        folderNamesExpanded = $folderNamesExpanded
         file                = $defaultIconId
         folder              = $defaultIconId
         folderExpanded      = $defaultIconId
-        folderNames         = $folderNames
-        folderNamesExpanded = $folderNamesExpanded
+        rootFolder         = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
+        rootFolderExpanded = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
     }
 
     # -------------------------
