@@ -282,9 +282,6 @@
                             "dlvr.it-icon":  {
                                                  "iconPath":  "../processed-icons/dlvr.it.png"
                                              },
-                            "docker-icon":  {
-                                                "iconPath":  "../processed-icons/docker.png"
-                                            },
                             "dolyapp-icon":  {
                                                  "iconPath":  "../processed-icons/dolyapp.png"
                                              },
@@ -1803,9 +1800,9 @@
                             "filetypelightrazzle-icon":  {
                                                              "iconPath":  "../processed-icons/filetypelightrazzle.svg"
                                                          },
-                            "filetypelightreactrouter-icon":  {
-                                                                  "iconPath":  "../processed-icons/filetypelightreactrouter.svg"
-                                                              },
+                            "filetypelightreact-icon":  {
+                                                            "iconPath":  "../processed-icons/filetypelightreactrouter.svg"
+                                                        },
                             "filetypelightreadthedocs-icon":  {
                                                                   "iconPath":  "../processed-icons/filetypelightreadthedocs.svg"
                                                               },
@@ -2745,15 +2742,9 @@
                             "filetyperazzle-icon":  {
                                                         "iconPath":  "../processed-icons/filetyperazzle.svg"
                                                     },
-                            "filetypereactjs-icon":  {
-                                                         "iconPath":  "../processed-icons/filetypereactjs.svg"
-                                                     },
-                            "filetypereactrouter-icon":  {
-                                                             "iconPath":  "../processed-icons/filetypereactrouter.svg"
-                                                         },
-                            "filetypereacttemplate-icon":  {
-                                                               "iconPath":  "../processed-icons/filetypereacttemplate.svg"
-                                                           },
+                            "filetypereact-icon":  {
+                                                       "iconPath":  "../processed-icons/filetypereacttemplate.svg"
+                                                   },
                             "filetypereactts-icon":  {
                                                          "iconPath":  "../processed-icons/filetypereactts.svg"
                                                      },
@@ -5604,8 +5595,6 @@
                            "didero":  "didero-icon",
                            "disney+":  "disney+-icon",
                            "dlvr.it":  "dlvr.it-icon",
-                           "dockerfile":  "docker-icon",
-                           "dockerignore":  "docker-icon",
                            "dolyapp":  "dolyapp-icon",
                            "download":  "download-icon",
                            "dreamstudio":  "dreamstudio-icon",
@@ -6115,7 +6104,7 @@
                            "filetypelightrailway":  "filetypelightrailway-icon",
                            "filetypelightraku":  "filetypelightraku-icon",
                            "filetypelightrazzle":  "filetypelightrazzle-icon",
-                           "filetypelightreactrouter":  "filetypelightreactrouter-icon",
+                           "filetypelightreact":  "filetypelightreact-icon",
                            "filetypelightreadthedocs":  "filetypelightreadthedocs-icon",
                            "filetypelightrehype":  "filetypelightrehype-icon",
                            "filetypelightremark":  "filetypelightremark-icon",
@@ -6429,9 +6418,7 @@
                            "filetyperasyntaxtree":  "filetyperasyntaxtree-icon",
                            "filetyperazor":  "filetyperazor-icon",
                            "filetyperazzle":  "filetyperazzle-icon",
-                           "filetypereactjs":  "filetypereactjs-icon",
-                           "filetypereactrouter":  "filetypereactrouter-icon",
-                           "filetypereacttemplate":  "filetypereacttemplate-icon",
+                           "filetypereact":  "filetypereact-icon",
                            "filetypereactts":  "filetypereactts-icon",
                            "filetypereadthedocs":  "filetypereadthedocs-icon",
                            "filetypereason":  "filetypereason-icon",
@@ -7396,10 +7383,6 @@
                       "ansible.cfg":  "ansible-icon",
                       "azure-pipelines.yml":  "azure-icon",
                       ".azure-pipelines.yml":  "azure-icon",
-                      "Dockerfile":  "docker-icon",
-                      ".dockerignore":  "docker-icon",
-                      "docker-compose.yml":  "docker-icon",
-                      "docker-compose.yaml":  "docker-icon",
                       ".env":  "env-icon",
                       ".env.local":  "env-icon",
                       ".env.production":  "env-icon",
@@ -7469,8 +7452,6 @@
                         "scss":  "css-icon",
                         "less":  "css-icon",
                         "debian":  "debian-icon",
-                        "docker":  "docker-icon",
-                        "containers":  "docker-icon",
                         "fonts":  "font-icon",
                         ".git":  "git-icon",
                         ".github":  "github-icon",
@@ -7568,8 +7549,6 @@
                                 "scss":  "css-icon",
                                 "less":  "css-icon",
                                 "debian":  "debian-icon",
-                                "docker":  "docker-icon",
-                                "containers":  "docker-icon",
                                 "fonts":  "font-icon",
                                 ".git":  "git-icon",
                                 ".github":  "github-icon",

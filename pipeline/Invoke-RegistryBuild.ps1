@@ -11,7 +11,7 @@ function Invoke-RegistryBuild {
         [switch]$DryRun
     )
 
-    Write-Host "`n=== Registry Build (IconMatrix v2 - Multi-Format + SVG Prefer) ===" -ForegroundColor Cyan
+    Write-Host "`n=== Registry Build (IconMatrix v2 - Strong SVG Prefer) ===" -ForegroundColor Cyan
 
     # ========================= VALIDATION =========================
     if ([string]::IsNullOrWhiteSpace($InputPath))  { throw "InputPath is empty" }
@@ -65,14 +65,14 @@ function Invoke-RegistryBuild {
         }
     }
 
-    # ========================= SCAN FILES (Prefer SVG) =========================
+    # ========================= SCAN FILES - STRONG SVG PREFERENCE =========================
     $allFiles = Get-ChildItem -Path $resolvedInput -Recurse -File -Include "*.png", "*.svg", "*.jpg", "*.jpeg", "*.ico"
 
-    # Group by BaseName and prefer .svg
     $files = $allFiles | Group-Object { $_.BaseName.ToLower() } | ForEach-Object {
         $group = $_.Group
         $svg = $group | Where-Object Extension -eq '.svg' | Select-Object -First 1
-        if ($svg) { $svg } else { $group | Select-Object -First 1 }
+        if ($svg) { $svg } 
+        else { $group | Sort-Object Extension -Descending | Select-Object -First 1 }
     } | Sort-Object BaseName
 
     if (-not $files -or $files.Count -eq 0) {
@@ -94,9 +94,7 @@ function Invoke-RegistryBuild {
 
         $rawBase = $file.BaseName.ToLower()
 
-        $kind = if ($rawBase -like "folder*") { "folder" }
-                elseif ($rawBase -like "file*") { "file" }
-                else { "file" }
+        $kind = if ($rawBase -like "folder*") { "folder" } else { "file" }
 
         $resolvedKeys = Resolve-IconName -Key $rawBase -Kind $kind
         $base = if ($resolvedKeys) { $resolvedKeys | Select-Object -First 1 } else { $rawBase }
@@ -109,14 +107,12 @@ function Invoke-RegistryBuild {
 
         $rel = $file.FullName.Substring($basePath.Length).TrimStart('\','/') -replace '\\','/'
 
-        # ========================= ICON DEFINITIONS =========================
         $iconDefinitions[$iconId] = [ordered]@{
             iconPath = "./processed-icons/$rel"
         }
 
         # ========================= EXTENSIONS (Auto + Mapped) =========================
         $mapped = $false
-
         if ($extMappings.Contains($base)) {
             foreach ($ext in $extMappings[$base]) {
                 $ext = $ext.ToLower().TrimStart('.')
@@ -126,8 +122,6 @@ function Invoke-RegistryBuild {
                 }
             }
         }
-
-        # Auto-map base name if nothing else matched
         if (-not $mapped -and -not $fileExtensions.Contains($base)) {
             $fileExtensions[$base] = $iconId
         }
@@ -152,11 +146,20 @@ function Invoke-RegistryBuild {
         }
     }
 
-    # ========================= DEFAULTS =========================
-    $defaults = @("file-icon", "folder-icon", "folder-expanded-icon", "folder-open-icon")
+    # ========================= DEFAULTS & FALLBACK =========================
+    $defaults = @("file-icon", "folder-icon", "folder-expanded-icon", "folder-open-icon", "general-icon")
     foreach ($def in $defaults) {
         if (-not $iconDefinitions.Contains($def)) {
             Write-Host "[WARN] Missing default icon: $def" -ForegroundColor Yellow
+        }
+    }
+
+    # Auto-create general-icon fallback if missing
+    if (-not $iconDefinitions.Contains("general-icon") -and $iconDefinitions.Count -gt 0) {
+        $fallback = $iconDefinitions.Keys | Where-Object { $_ -like "*file*" } | Select-Object -First 1
+        if ($fallback) {
+            $iconDefinitions["general-icon"] = $iconDefinitions[$fallback]
+            Write-Host "[INFO] Created general-icon fallback from $fallback" -ForegroundColor Yellow
         }
     }
 

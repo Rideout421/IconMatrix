@@ -11,57 +11,58 @@ function Copy-SourceIcons {
         New-Item -ItemType Directory -Path $Destination -Force | Out-Null
     }
 
-    # ✅ SVG ADDED
     $validExt = @(".png", ".jpg", ".jpeg", ".svg", ".ico")
-
-    $seen = @{}
+    $seen = @{}   # canonical -> best file (prefer SVG)
 
     Get-ChildItem -Path $Source -Recurse -File | ForEach-Object {
 
         $ext = $_.Extension.ToLower()
+        if ($validExt -notcontains $ext) { return }
 
-        if ($validExt -notcontains $ext) {
-            return
-        }
-
-        # -----------------------------
-        # SVG BYPASS (CRITICAL FIX)
-        # -----------------------------
-        if ($ext -eq ".svg") {
-            # no System.Drawing validation for SVG
-        }
-        else {
+        # Skip corrupt non-SVG images
+        if ($ext -ne ".svg") {
             try {
                 Add-Type -AssemblyName System.Drawing -ErrorAction SilentlyContinue | Out-Null
                 $img = [System.Drawing.Image]::FromFile($_.FullName)
                 $img.Dispose()
             }
             catch {
-                Write-Host "[SKIP CORRUPT IMAGE] $($_.Name)" -ForegroundColor Red
+                Write-Host "[SKIP CORRUPT] $($_.Name)" -ForegroundColor Red
                 return
             }
         }
 
         $canonical = Get-CanonicalName $_.BaseName
-        $targetName = "$canonical$ext"
-        $targetPath = Join-Path $Destination $targetName
+        $targetPath = Join-Path $Destination "$canonical$ext"
 
-        # -----------------------------
-        # ONE ICON PER CANONICAL NAME
-        # -----------------------------
-        if ($seen.ContainsKey($canonical)) {
-            Write-Host "[SKIP DUP CANONICAL] $($_.Name) -> $canonical" -ForegroundColor DarkGray
-            return
+        # ========================= PREFER SVG LOGIC =========================
+        $existing = $seen[$canonical]
+
+        if ($existing) {
+            # If we already have a file for this canonical, keep the best one
+            if ($ext -eq '.svg' -and $existing.Extension -ne '.svg') {
+                # SVG beats PNG/JPG
+                Write-Host "[REPLACE] $($existing.Name) -> $($_.Name) (SVG preferred)" -ForegroundColor Cyan
+                $seen[$canonical] = $_
+            } else {
+                Write-Host "[SKIP DUP] $($_.Name) -> $canonical (keeping existing)" -ForegroundColor DarkGray
+                return
+            }
+        } else {
+            $seen[$canonical] = $_
         }
+    }
 
-        $seen[$canonical] = $true
-
-        if ($DryRun) {
-            Write-Host "[DRYRUN COPY] $($_.FullName) -> $targetPath"
-            return
+    # Now actually copy the best version for each canonical
+    if (-not $DryRun) {
+        foreach ($item in $seen.Values) {
+            $canonical = Get-CanonicalName $item.BaseName
+            $targetPath = Join-Path $Destination "$canonical$($item.Extension)"
+            
+            Copy-Item $item.FullName $targetPath -Force
+            Write-Host "[COPY] $($item.Name) -> $canonical$($item.Extension)" -ForegroundColor Green
         }
-
-        Copy-Item $_.FullName $targetPath -Force
-        Write-Host "[COPY] $targetName" -ForegroundColor Green
+    } else {
+        Write-Host "[DRYRUN] Would copy $($seen.Count) icons (SVG preferred)" -ForegroundColor Yellow
     }
 }
