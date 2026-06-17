@@ -1,18 +1,6 @@
-﻿Version: 40
-Timestamp: 06-16-2026 10-34-PM
+﻿Version: 41
+Timestamp: 06-16-2026 11-00-PM
 Changed files:
 config/icon-manifest.json
-config/mappings.json
-Core/Invoke-IconMatrixTheme.ps1
 iconmatrix-1.0.0.vsix
-processed-icons/batch.png
-processed-icons/cisco.png
-processed-icons/git.png
-processed-icons/license.png
-processed-icons/markdown.png
-processed-icons/rancher.png
-processed-icons/rootfolder.png
-processed-icons/sentinelone.png
-processed-icons/txt.png
-registry/icons.json
-theme/icons-theme.json
+processed-icons/secret.png
