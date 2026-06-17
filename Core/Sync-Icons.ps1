@@ -19,20 +19,22 @@ if (-not $config) { throw "CONFIG FAILED TO LOAD" }
 # =========================
 # RESOLVE PATHS
 # =========================
-$KeypassSource = $config.keypassIcons                        # E:\...\Keypass_Icons
-$RepoSource    = Join-Path $RepoRoot $config.sourceIcons     # source-icons\
-$ProcessedDir  = Join-Path $RepoRoot $config.processedIcons  # processed-icons\
+
+# ✅ UPDATED: single icon source now
+$IconSource  = $config.Icons
+$RepoSource  = Join-Path $RepoRoot $config.sourceIcons
+$ProcessedDir = Join-Path $RepoRoot $config.processedIcons
 
 Write-Host "DEBUG RepoRoot     = [$RepoRoot]"
-Write-Host "DEBUG KeypassSrc   = [$KeypassSource]"
+Write-Host "DEBUG IconSource   = [$IconSource]"
 Write-Host "DEBUG sourceIcons  = [$RepoSource]"
 Write-Host "DEBUG processedDir = [$ProcessedDir]"
 
 # =========================
 # VALIDATION
 # =========================
-if (-not (Test-Path $KeypassSource)) {
-    throw "Keypass folder missing -> $KeypassSource"
+if (-not (Test-Path $IconSource)) {
+    throw "Icons folder missing -> $IconSource"
 }
 
 if (-not (Test-Path $RepoSource)) {
@@ -46,21 +48,19 @@ if (-not $DryRun -and -not (Test-Path $ProcessedDir)) {
 }
 
 # =========================
-# STEP 1: SYNC KEYPASS -> SOURCE-ICONS
-# Copy-SourceIcons handles image validation, canonical
-# naming, and dedup - we just wire the correct Source/Destination
+# STEP 1: ICON SOURCE -> SOURCE-ICONS
 # =========================
-Write-Host "`n[STEP 1] Keypass -> source-icons" -ForegroundColor Yellow
+Write-Host "`n[STEP 1] Icons -> source-icons" -ForegroundColor Yellow
 
 . "$RepoRoot\pipeline\Copy-SourceIcons.ps1"
 
 Copy-SourceIcons `
-    -Source      $KeypassSource `
+    -Source      $IconSource `
     -Destination $RepoSource `
     -DryRun:$DryRun
 
 # =========================
-# STEP 2: NORMALIZATION (clean source-icons)
+# STEP 2: NORMALIZATION
 # =========================
 Write-Host "`n[STEP 2] Normalization" -ForegroundColor Yellow
 
@@ -68,7 +68,7 @@ Write-Host "`n[STEP 2] Normalization" -ForegroundColor Yellow
 Invoke-IconNormalization -Path $RepoSource -DryRun:$DryRun
 
 # =========================
-# STEP 3: TRANSFORMATION (source-icons -> processed-icons)
+# STEP 3: TRANSFORMATION
 # =========================
 Write-Host "`n[STEP 3] Transformation" -ForegroundColor Yellow
 
@@ -80,6 +80,6 @@ Convert-Icons `
     -DryRun:$DryRun
 
 # =========================
-# DONE - Publish-IconMatrix handles registry + theme + vsix
+# DONE
 # =========================
 Write-Host "`nDONE`n" -ForegroundColor Green

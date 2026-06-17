@@ -11,46 +11,53 @@ function Copy-SourceIcons {
         New-Item -ItemType Directory -Path $Destination -Force | Out-Null
     }
 
-    $validExt = @(".png", ".jpg", ".jpeg", ".ico")
+    # ✅ SVG ADDED
+    $validExt = @(".png", ".jpg", ".jpeg", ".svg", ".ico")
 
-    # Track canonical uniqueness (prevents -1 and duplicates)
     $seen = @{}
 
     Get-ChildItem -Path $Source -Recurse -File | ForEach-Object {
 
-        if ($validExt -notcontains $_.Extension.ToLower()) {
+        $ext = $_.Extension.ToLower()
+
+        if ($validExt -notcontains $ext) {
             return
         }
 
         # -----------------------------
-        # VALIDATE IMAGE INTEGRITY
+        # SVG BYPASS (CRITICAL FIX)
         # -----------------------------
-        try {
-            Add-Type -AssemblyName System.Drawing -ErrorAction SilentlyContinue | Out-Null
-            $img = [System.Drawing.Image]::FromFile($_.FullName)
-            $img.Dispose()
+        if ($ext -eq ".svg") {
+            # no System.Drawing validation for SVG
         }
-        catch {
-            Write-Host "[SKIP CORRUPT IMAGE] $($_.Name)" -ForegroundColor Red
-            return
+        else {
+            try {
+                Add-Type -AssemblyName System.Drawing -ErrorAction SilentlyContinue | Out-Null
+                $img = [System.Drawing.Image]::FromFile($_.FullName)
+                $img.Dispose()
+            }
+            catch {
+                Write-Host "[SKIP CORRUPT IMAGE] $($_.Name)" -ForegroundColor Red
+                return
+            }
         }
 
         $canonical = Get-CanonicalName $_.BaseName
-        $targetName = "$canonical$($_.Extension.ToLower())"
+        $targetName = "$canonical$ext"
         $targetPath = Join-Path $Destination $targetName
 
         # -----------------------------
         # ONE ICON PER CANONICAL NAME
         # -----------------------------
         if ($seen.ContainsKey($canonical)) {
-            Write-Host "[SKIP DUPLICATE CANONICAL] $($_.Name) -> $canonical" -ForegroundColor DarkGray
+            Write-Host "[SKIP DUP CANONICAL] $($_.Name) -> $canonical" -ForegroundColor DarkGray
             return
         }
 
         $seen[$canonical] = $true
 
         if ($DryRun) {
-            Write-Host "[DRYRUN] COPY $($_.FullName) -> $targetPath"
+            Write-Host "[DRYRUN COPY] $($_.FullName) -> $targetPath"
             return
         }
 

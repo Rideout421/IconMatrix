@@ -14,7 +14,10 @@ function Convert-Icons {
     . "$PSScriptRoot\..\utils\Naming.ps1"
     . "$PSScriptRoot\..\utils\Hashing.ps1"
 
-    $validExt = @(".png", ".jpg", ".jpeg", ".ico")
+    # Include SVG, but DO NOT convert it
+    $validExt = @(".png", ".jpg", ".jpeg", ".svg")
+
+    Write-Host "`n=== ICON CONVERT (SVG-AWARE MODE) ===" -ForegroundColor Cyan
 
     # -----------------------------
     # LOAD MANIFEST
@@ -41,41 +44,40 @@ function Convert-Icons {
 
     foreach ($group in $grouped) {
 
-        $file = $group.Group | Sort-Object Name | Select-Object -First 1
+        # PRIORITY: SVG > PNG > others
+        $file = $group.Group |
+            Sort-Object @{
+                Expression = {
+                    switch ($_.Extension.ToLower()) {
+                        ".svg" { 0 }
+                        ".png" { 1 }
+                        default { 2 }
+                    }
+                }
+            }, Name |
+            Select-Object -First 1
 
-        $outFile   = "$($group.Name).png"
+        $sourceHash = Get-FileHashSHA256 $file.FullName
+
+        $outFile   = "$($group.Name)$($file.Extension.ToLower())"
         $finalPath = Join-Path $Output $outFile
 
-        Write-Host "CONVERTING: $($file.FullName)" -ForegroundColor Cyan
+        Write-Host "PROCESSING: $($file.FullName)" -ForegroundColor Cyan
 
         # -----------------------------
         # HASH SKIP
         # -----------------------------
-        $sourceHash = Get-FileHashSHA256 $file.FullName
         if ($manifest[$outFile] -and $manifest[$outFile].hash -eq $sourceHash) {
             Write-Host "[SKIP UNCHANGED] $($file.Name)" -ForegroundColor DarkGray
             continue
         }
 
         # -----------------------------
-        # IMAGE VALIDATION (NO FALSE FAILS)
+        # SVG PASS-THROUGH (NO MAGICK)
         # -----------------------------
-        $identify = & $magick identify -format "%w %h" $file.FullName
-        $exitCode = $LASTEXITCODE
+        if ($file.Extension -eq ".svg") {
 
-        if ($exitCode -ne 0 -or -not $identify) {
-            Write-Host "[SKIP INVALID IMAGE] $($file.Name)" -ForegroundColor Red
-            continue
-        }
-
-        $w, $h = $identify -split " "
-
-        # -----------------------------
-        # PASS-THROUGH (NO RESIZE = NO BLUR)
-        # -----------------------------
-        if ([int]$w -le 128 -and [int]$h -le 128) {
-
-            Write-Host "[PASS THROUGH] $($file.Name)" -ForegroundColor Green
+            Write-Host "[PASS SVG] $($file.Name)" -ForegroundColor Green
 
             if (-not $DryRun) {
                 Copy-Item $file.FullName $finalPath -Force
@@ -84,14 +86,45 @@ function Convert-Icons {
             $manifest[$outFile] = @{
                 hash   = $sourceHash
                 source = $file.Name
-                mode   = "passthrough"
+                mode   = "svg-pass"
             }
 
             continue
         }
 
         # -----------------------------
-        # RESIZE ONLY WHEN NECESSARY
+        # IMAGE VALIDATION (RASTER ONLY)
+        # -----------------------------
+        $identify = & $magick identify -format "%w %h" $file.FullName
+        if ($LASTEXITCODE -ne 0 -or -not $identify) {
+            Write-Host "[SKIP INVALID IMAGE] $($file.Name)" -ForegroundColor Red
+            continue
+        }
+
+        $w, $h = $identify -split " "
+
+        # -----------------------------
+        # PASS-THROUGH SMALL PNG
+        # -----------------------------
+        if ([int]$w -le 128 -and [int]$h -le 128) {
+
+            Write-Host "[PASS PNG] $($file.Name)" -ForegroundColor Green
+
+            if (-not $DryRun) {
+                Copy-Item $file.FullName $finalPath -Force
+            }
+
+            $manifest[$outFile] = @{
+                hash   = $sourceHash
+                source = $file.Name
+                mode   = "png-pass"
+            }
+
+            continue
+        }
+
+        # -----------------------------
+        # RESIZE LARGE PNG ONLY
         # -----------------------------
         if ($DryRun) {
             Write-Host "[DRYRUN] $($file.Name) -> $finalPath"
@@ -127,4 +160,6 @@ function Convert-Icons {
     # SAVE MANIFEST
     # -----------------------------
     $manifest | ConvertTo-Json -Depth 10 | Out-File $manifestPath -Encoding UTF8
+
+    Write-Host "`n=== CONVERT COMPLETE (SVG SAFE MODE) ===" -ForegroundColor Cyan
 }
