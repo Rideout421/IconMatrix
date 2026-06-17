@@ -1,11 +1,9 @@
-﻿Version: 38
-Timestamp: 06-16-2026 08-57-PM
+﻿Version: 39
+Timestamp: 06-16-2026 09-09-PM
 Changed files:
 config/icon-manifest.json
 config/mappings.json
 iconmatrix-1.0.0.vsix
-processed-icons/batch.png
 processed-icons/git.png
-processed-icons/markdown.png
 registry/icons.json
 theme/icons-theme.json

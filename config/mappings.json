@@ -1,6 +1,6 @@
 {
   "extensions": {
-    "ps1":          ["ps1", "psm1", "psd1", "ps1xml"],
+    "Powershell":   ["ps1", "psm1", "psd1", "ps1xml"],
     "json":         ["json", "jsonc"],
     "markdown":     ["md", "mdx", "markdown"],
     "text":         ["txt", "log"],

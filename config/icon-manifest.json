@@ -624,11 +624,11 @@
                            "source":  "activision.png",
                            "hash":  "C0BD978D10FF95863CE555135C4CAA34F2ADF6149E7D95472685255EA1AEA63E"
                        },
-    "globalcommandcenter.png":  {
-                                    "mode":  "converted",
-                                    "source":  "globalcommandcenter.png",
-                                    "hash":  "4A00F4EE50328DDD20E8A0F902F26286C92F22681A2FC45D0CF727319DF894DE"
-                                },
+    "python.png":  {
+                       "mode":  "converted",
+                       "source":  "python.png",
+                       "hash":  "1B4E097780B95DC5F2575DB44F9174F371D9D086C57029432ACB628B17D280B3"
+                   },
     "cyberarc.png":  {
                          "mode":  "converted",
                          "source":  "cyberarc.png",
@@ -809,6 +809,11 @@
                        "source":  "icloud.png",
                        "hash":  "714C0D01FD37B55210D73C79C3A332CED74A137F1A31C99C7D3C7F3C368E4877"
                    },
+    "globalcommandcenter.png":  {
+                                    "mode":  "converted",
+                                    "source":  "globalcommandcenter.png",
+                                    "hash":  "4A00F4EE50328DDD20E8A0F902F26286C92F22681A2FC45D0CF727319DF894DE"
+                                },
     "asus.png":  {
                      "mode":  "passthrough",
                      "source":  "asus.png",
@@ -1089,11 +1094,6 @@
                            "source":  "pearsonvue.png",
                            "hash":  "C2C3C75748AE94E3833D0E8950B9408865CA0CFC007D2B45D3E7A67EE1AA2F2E"
                        },
-    "outagecalendar.png":  {
-                               "mode":  "converted",
-                               "source":  "outagecalendar.png",
-                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
-                           },
     "midjourney.png":  {
                            "mode":  "passthrough",
                            "source":  "midjourney.png",
@@ -1284,11 +1284,11 @@
                       "source":  "minio.png",
                       "hash":  "26C267377DF7450C26E1F112611237872F4A9902609ECAF3F7AC818BA26254F4"
                   },
-    "python.png":  {
-                       "mode":  "converted",
-                       "source":  "python.png",
-                       "hash":  "1B4E097780B95DC5F2575DB44F9174F371D9D086C57029432ACB628B17D280B3"
-                   },
+    "outagecalendar.png":  {
+                               "mode":  "converted",
+                               "source":  "outagecalendar.png",
+                               "hash":  "8A99027B0652189A4C160D9BE27C2181DD0F3079A1DB67A80850E38050A3E187"
+                           },
     "checkpoint.png":  {
                            "mode":  "passthrough",
                            "source":  "checkpoint.png",
@@ -1389,11 +1389,6 @@
                          "source":  "training.png",
                          "hash":  "E959A2DDAD688F7B5CFF570559A6342AC4BBD4EEFA14E2CB6A621944CAF52E5F"
                      },
-    "kalilinuxsubsystem.png":  {
-                                   "mode":  "passthrough",
-                                   "source":  "kalilinuxsubsystem.png",
-                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
-                               },
     "betterment.png":  {
                            "mode":  "passthrough",
                            "source":  "betterment.png",
@@ -1522,7 +1517,7 @@
     "git.png":  {
                     "mode":  "converted",
                     "source":  "git.png",
-                    "hash":  "EF22E5781DE26F601470F24B647F16F3016B60AB612C5B2EB28D1A68DFC7188D"
+                    "hash":  "1E5DAA39D3DE4456D60FB70C309E9810B47735416A1D1FD6BDF48AAA449E3DAD"
                 },
     "citrix.png":  {
                        "mode":  "converted",
@@ -1784,6 +1779,11 @@
                           "source":  "frontlyai.png",
                           "hash":  "6C599D949E247D8FEC25EAFC2FE4FA2F848A2DE3BEE28C1C0D211D91BA1AE6B7"
                       },
+    "resumerocket.png":  {
+                             "mode":  "passthrough",
+                             "source":  "resumerocket.png",
+                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
+                         },
     "iessharepoint.png":  {
                               "mode":  "converted",
                               "source":  "iessharepoint.png",
@@ -1849,11 +1849,11 @@
                        "source":  "gitlab.png",
                        "hash":  "CF99E896A7F306CB162C29ABAB6B1A96A02CA40DA024134B24715B89C2D81219"
                    },
-    "resumerocket.png":  {
-                             "mode":  "passthrough",
-                             "source":  "resumerocket.png",
-                             "hash":  "EE0BD2654E50D4A3ABFEA20DF3500F8491D18E4CB41BEFB84BB386647513B9CC"
-                         },
+    "kalilinuxsubsystem.png":  {
+                                   "mode":  "passthrough",
+                                   "source":  "kalilinuxsubsystem.png",
+                                   "hash":  "C0C237942905173A74AA6599F9991601DC62EDEB35F9A589DF698408C3203470"
+                               },
     "pluralsight.png":  {
                             "mode":  "passthrough",
                             "source":  "pluralsight.png",
