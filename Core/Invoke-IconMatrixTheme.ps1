@@ -32,22 +32,19 @@ function Invoke-IconMatrixTheme {
     # LOAD REGISTRY
     # -------------------------
     $registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
-    if (-not $registry) { throw "Registry JSON invalid or empty" }
+    if (-not $registry -or -not $registry.iconDefinitions) { 
+        throw "Registry JSON invalid or missing iconDefinitions" 
+    }
 
-    Write-Host "[DEBUG] Registry loaded OK"
+    Write-Host "[DEBUG] Registry loaded - $($registry.iconDefinitions.Count) icons"
 
     # -------------------------
     # RESOLVE PATHS
     # -------------------------
     $ThemeFilePath = [System.IO.Path]::GetFullPath($ThemeFilePath)
     $outDir        = Split-Path -Parent $ThemeFilePath
-
-    # The iconPath in the theme JSON must be relative to the theme file location.
-    # Theme lives at:  theme/icons-theme.json
-    # Icons live at:   processed-icons/
-    # So relative path from theme/ to processed-icons/ is: ../processed-icons/
-    # Using Uri-based relative path for PS 5.1 compatibility (no GetRelativePath)
     $IconsPath     = [System.IO.Path]::GetFullPath($IconsPath)
+
     $fromUri       = [Uri]("$outDir\")
     $toUri         = [Uri]($IconsPath)
     $iconRelPrefix = $fromUri.MakeRelativeUri($toUri).ToString() -replace '%20',' '
@@ -59,47 +56,38 @@ function Invoke-IconMatrixTheme {
     }
 
     # -------------------------
-    # SCAN ICON FILES
-    # -------------------------
-    $icons = Get-ChildItem -Path $IconsPath -Recurse -File -Filter "*.png" -ErrorAction SilentlyContinue
-
-    Write-Host "[DEBUG] Icons found = $($icons.Count)"
-
-    if ($icons.Count -eq 0) {
-        Write-Host "[ERROR] No PNG files found - theme will be empty" -ForegroundColor Red
-    }
-
-    # -------------------------
-    # BUILD iconDefinitions
-    # Key:   "terraform-icon"
-    # Value: { iconPath: "../processed-icons/terraform.png" }
+    # REUSE REGISTRY iconDefinitions
     # -------------------------
     $iconDefinitions = [ordered]@{}
+    foreach ($entry in $registry.iconDefinitions.PSObject.Properties) {
+        $iconId = $entry.Name
+        $oldPath = $entry.Value.iconPath
 
-    foreach ($icon in ($icons | Sort-Object BaseName)) {
-        $id  = "$($icon.BaseName.ToLower())-icon"
-        # path relative to theme file
-        $rel = "$iconRelPrefix/$($icon.Name)" -replace '//','/'
-        $iconDefinitions[$id] = [ordered]@{ iconPath = $rel }
+        if ($oldPath -like "./processed-icons/*") {
+            $relName = $oldPath.Substring("./processed-icons/".Length)
+            $newPath = "$iconRelPrefix/$relName" -replace '//','/'
+        } else {
+            $newPath = $oldPath
+        }
+        
+        $iconDefinitions[$iconId] = [ordered]@{ iconPath = $newPath }
     }
 
-    Write-Host "[DEBUG] iconDefinitions built = $($iconDefinitions.Count)"
+    Write-Host "[DEBUG] iconDefinitions reused = $($iconDefinitions.Count)"
 
     # -------------------------
-    # BUILD fileExtensions + fileNames FROM REGISTRY
-    # Registry (icons.json) is the flat format:
-    #   fileExtensions: { "tf": "terraform-icon", "ps1": "ps1-icon" }
-    #   fileNames:      { "Dockerfile": "docker-icon" }
+    # BUILD MAPPINGS (filtered)
     # -------------------------
-    $fileExtensions  = [ordered]@{}
-    $fileNames       = [ordered]@{}
-    $mappedExt       = 0
-    $mappedNames     = 0
+    $fileExtensions = [ordered]@{}
+    $fileNames      = [ordered]@{}
+    $folderNames    = [ordered]@{}
+    $folderNamesExpanded = [ordered]@{}
+
+    $mappedExt = 0; $mappedName = 0; $mappedFolder = 0
 
     if ($registry.fileExtensions) {
         foreach ($p in $registry.fileExtensions.PSObject.Properties) {
             $iconId = $p.Value
-            # Only include if the icon actually exists in our definitions
             if ($iconDefinitions.Contains($iconId)) {
                 $fileExtensions[$p.Name] = $iconId
                 $mappedExt++
@@ -114,61 +102,48 @@ function Invoke-IconMatrixTheme {
             $iconId = $p.Value
             if ($iconDefinitions.Contains($iconId)) {
                 $fileNames[$p.Name] = $iconId
-                $mappedNames++
+                $mappedName++
             } else {
                 Write-Host "[SKIP-NAME] '$($p.Name)' -> '$iconId' (icon not found)" -ForegroundColor DarkYellow
             }
         }
     }
 
-    Write-Host "[DEBUG] fileExtensions mapped = $mappedExt"
-    Write-Host "[DEBUG] fileNames mapped      = $mappedNames"
-    $folderNames         = [ordered]@{}
-    $folderNamesExpanded = [ordered]@{}
-    $mappedFolders       = 0
-
     if ($registry.folderNames) {
         foreach ($p in $registry.folderNames.PSObject.Properties) {
             $iconId = $p.Value
             if ($iconDefinitions.Contains($iconId)) {
-                $folderNames[$p.Name]         = $iconId
-                $folderNamesExpanded[$p.Name]  = $iconId
-                $mappedFolders++
+                $folderNames[$p.Name] = $iconId
+                $folderNamesExpanded[$p.Name] = $iconId
+                $mappedFolder++
             }
         }
     }
 
-    Write-Host "[DEBUG] folderNames mapped    = $mappedFolders"
-
+    Write-Host "[DEBUG] fileExtensions mapped = $mappedExt"
+    Write-Host "[DEBUG] fileNames mapped      = $mappedName"
+    Write-Host "[DEBUG] folderNames mapped    = $mappedFolder"
 
     # -------------------------
     # DEFAULT ICON
-    # Used for any file/folder with no specific mapping.
     # -------------------------
-    $defaultIconId = if ($iconDefinitions.Contains("general-icon")) {
-        "general-icon"
-    } else {
-        $iconDefinitions.Keys | Select-Object -First 1
+    $defaultIconId = "general-icon"
+    if (-not $iconDefinitions.Contains($defaultIconId)) {
+        $defaultIconId = if ($iconDefinitions.Contains("file-icon")) { 
+            "file-icon" 
+        } else {
+            $iconDefinitions.Keys | Where-Object { $_ -like "*file*" } | Select-Object -First 1
+        }
+        if (-not $defaultIconId) {
+            $defaultIconId = $iconDefinitions.Keys | Select-Object -First 1
+        }
     }
 
     Write-Host "[DEBUG] Default icon = $defaultIconId" -ForegroundColor Cyan
 
     # -------------------------
-    # ASSEMBLE THEME
-    # VS Code icon theme contract:
-    #   iconDefinitions  - all icon definitions with iconPath
-    #   fileExtensions   - extension -> iconId
-    #   fileNames        - exact filename -> iconId
-    #   file             - iconId string (default for any file)
-    #   folder           - iconId string (default for any folder)
-    #   folderExpanded   - iconId string (optional, open folder)
+    # FINAL THEME
     # -------------------------
-
-    Write-Host "`n=== ROOT FOLDER DEBUG ===" -ForegroundColor Cyan
-    Write-Host "rootfolder-icon exists: $($iconDefinitions.Keys -contains 'rootfolder-icon')"
-    Write-Host "Matching keys:"
-    $iconDefinitions.Keys | Where-Object { $_ -match 'root|folder' } | Sort-Object
-
     $theme = [ordered]@{
         iconDefinitions     = $iconDefinitions
         fileExtensions      = $fileExtensions
@@ -178,22 +153,12 @@ function Invoke-IconMatrixTheme {
         file                = $defaultIconId
         folder              = $defaultIconId
         folderExpanded      = $defaultIconId
-        rootFolder         = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
-        rootFolderExpanded = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
+        rootFolder          = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
+        rootFolderExpanded  = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
     }
 
-    # -------------------------
-    # SERIALIZE + WRITE
-    # -------------------------
     $json = $theme | ConvertTo-Json -Depth 50
-
-    Write-Host "[DEBUG] JSON length = $($json.Length)"
-
-    if ([string]::IsNullOrWhiteSpace($json)) { throw "JSON serialization produced empty output" }
-
-    Set-Content -Path $ThemeFilePath -Value $json -Encoding UTF8 -Force -ErrorAction Stop
-
-    if (-not (Test-Path $ThemeFilePath)) { throw "FILE NOT CREATED AFTER WRITE" }
+    Set-Content -Path $ThemeFilePath -Value $json -Encoding UTF8 -Force
 
     $size = (Get-Item $ThemeFilePath).Length
     Write-Host "[SUCCESS] Theme written ($size bytes) -> $ThemeFilePath" -ForegroundColor Green
