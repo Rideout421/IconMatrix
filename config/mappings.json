@@ -39,6 +39,7 @@
   "zip": ["zip", "tar", "gz", "7z", "rar"],
   "certificate": ["crt", "cer", "pem", "key", "pfx"],
   "font": ["ttf", "otf", "woff", "woff2"],
+  "Opentofu": ["tofu"],
   "git": [],
   "github": [],
   "gitlab": [],
@@ -91,6 +92,7 @@
 },
 
   "folderNames": {
+  "ai": ["AI"],
   "archive": ["archive"],
   "automation": ["automation"],
   "secret": [".secret-scan-output"],
@@ -100,6 +102,9 @@
   "github": [".github", "github"],
   "gitlab": [".gitlab"],
   "git": [".git", "git"],
+  "bicep": ["bicep"],
+  "awx": ["awx"],
+  "OpenTofu": ["OpenTofu"],
 
   "vscode": [".vscode"],
   "docker": ["docker", "containers"],
@@ -141,6 +146,7 @@
   "electron": ["electron"],
   "dapr": ["dapr"],
 
+  "core": ["Core"],
   "css": ["css", "styles", "style", "sass", "scss", "less"],
   "html": ["html", "www", "wwwroot"],
   "image": ["images", "img", "icons", "favicons", "favicon", "assets", "audio"],

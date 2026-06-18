@@ -36,73 +36,108 @@ function Invoke-RegistryBuild {
     # ========================= LOAD RESOLVER =========================
     . "$PSScriptRoot\..\utils\IconResolver.ps1"
 
-    # ========================= LOAD MAPPINGS =========================
+    # ========================= LOAD MAPPINGS (AUTO-FIRST PIPELINE) =========================
+
     $extMappings        = @{}
     $fileNameMappings   = @{}
     $folderNameMappings = @{}
 
-    if (-not [string]::IsNullOrWhiteSpace($MappingsPath) -and (Test-Path $MappingsPath)) {
-        Write-Host "[INFO] Loading mappings: $MappingsPath" -ForegroundColor Cyan
+    # Prefer auto-generated mappings (pipeline output)
+    $autoMappingsPath = Join-Path (Split-Path $MappingsPath -Parent) "mappings.auto.json"
 
-        $mappingsJson = Get-Content $MappingsPath -Raw | ConvertFrom-Json
+    $mappingsToLoad = $null
 
-        if ($mappingsJson.extensions) {
-            $mappingsJson.extensions.PSObject.Properties | ForEach-Object {
-                $extMappings[$_.Name] = @($_.Value)
-            }
-        }
+    if (-not [string]::IsNullOrWhiteSpace($autoMappingsPath) -and (Test-Path $autoMappingsPath)) {
+        Write-Host "[INFO] Using AUTO mappings: $autoMappingsPath" -ForegroundColor Cyan
+        $mappingsToLoad = $autoMappingsPath
+    }
+    elseif (-not [string]::IsNullOrWhiteSpace($MappingsPath) -and (Test-Path $MappingsPath)) {
+        Write-Host "[WARN] Auto mappings not found, falling back to manual: $MappingsPath" -ForegroundColor Yellow
+        $mappingsToLoad = $MappingsPath
+    }
+    else {
+        throw "No mappings found. Run MappingGenerator.ps1 first to generate mappings.auto.json"
+    }
 
-        if ($mappingsJson.fileNames) {
-            $mappingsJson.fileNames.PSObject.Properties | ForEach-Object {
-                $fileNameMappings[$_.Name] = @($_.Value)
-            }
-        }
+    $mappingsJson = Get-Content $mappingsToLoad -Raw | ConvertFrom-Json
 
-        if ($mappingsJson.folderNames) {
-            $mappingsJson.folderNames.PSObject.Properties | ForEach-Object {
-                $folderNameMappings[$_.Name] = @($_.Value)
-            }
+    if ($mappingsJson.extensions) {
+        $mappingsJson.extensions.PSObject.Properties | ForEach-Object {
+            $extMappings[$_.Name] = @($_.Value)
         }
     }
 
-    # ========================= SCAN FILES - STRONG SVG PREFERENCE =========================
-    $allFiles = Get-ChildItem -Path $resolvedInput -Recurse -File -Include "*.png", "*.svg", "*.jpg", "*.jpeg", "*.ico"
-
-    # Extension priority used to break ties when two files resolve to the same
-    # canonical icon id. Lower number = higher priority.
-    $extPriority = @{ '.svg' = 0; '.png' = 1; '.ico' = 2; '.jpg' = 3; '.jpeg' = 4 }
-
-    # IMPORTANT: we must dedupe using the *resolved* canonical name (the same
-    # name Resolve-IconName will produce), not the raw BaseName. Otherwise an
-    # SVG named "react.svg" and a PNG named "react-icon.png" are treated as
-    # two different icons here, both survive this stage, and then collide
-    # later when Resolve-IconName normalizes them both to "react-icon" --
-    # at which point whichever one comes later in sort order silently wins.
-    $files = $allFiles | ForEach-Object {
-        $rawBase   = $_.BaseName.ToLower()
-        $kind      = if ($rawBase -like "folder*") { "folder" } else { "file" }
-        $resolved  = Resolve-IconName -Key $rawBase -Kind $kind
-        $canonical = if ($resolved) { $resolved | Select-Object -First 1 } else { $rawBase }
-
-        [PSCustomObject]@{
-            File       = $_
-            Canonical  = $canonical
-            Priority   = if ($extPriority.Contains($_.Extension.ToLower())) { $extPriority[$_.Extension.ToLower()] } else { 99 }
+    if ($mappingsJson.fileNames) {
+        $mappingsJson.fileNames.PSObject.Properties | ForEach-Object {
+            $fileNameMappings[$_.Name] = @($_.Value)
         }
-    } | Group-Object Canonical | ForEach-Object {
+    }
+
+    if ($mappingsJson.folderNames) {
+        $mappingsJson.folderNames.PSObject.Properties | ForEach-Object {
+            $folderNameMappings[$_.Name] = @($_.Value)
+        }
+    }
+
+    # ========================= SCAN FILES - FIXED SVG-SAFE DEDUPE =========================
+    $allFiles = Get-ChildItem -Path $resolvedInput -Recurse -File -Include "*.png", "*.svg", "*.jpg", "*.jpeg", "*.ico"
+    
+    # Extension priority (lower = better)
+    $extPriority = @{
+        '.svg'  = 0
+        '.png'  = 1
+        '.ico'  = 2
+        '.jpg'  = 3
+        '.jpeg' = 4
+    }
+    
+    $files = $allFiles | ForEach-Object {
+
+    $file = $_
+
+    # Normalize ONLY for identity grouping (no semantic stripping)
+    $baseName = $file.BaseName.ToLower()
+    $ext      = $file.Extension.ToLower()
+
+    # Detect type (used only for logging / future extension)
+    $kind = if ($baseName -like "folder*") { "folder" } else { "file" }
+
+    # 🔥 CRITICAL FIX:
+    # Do NOT use Resolve-IconName for dedupe grouping.
+    # It collapses valid variants like light/opened/config/etc.
+    $canonical = "$kind|$baseName"
+
+    [PSCustomObject]@{
+        File      = $file
+        Canonical = $canonical
+        Priority  = if ($extPriority.ContainsKey($ext)) { $extPriority[$ext] } else { 99 }
+    }
+}
+
+$files = $files |
+    Group-Object Canonical |
+    ForEach-Object {
+
+        # Prefer SVG strictly, otherwise lowest priority number wins
         $best = $_.Group | Sort-Object Priority | Select-Object -First 1
+
         if ($_.Group.Count -gt 1) {
-            $skipped = $_.Group | Where-Object { $_ -ne $best } | ForEach-Object { $_.File.Name }
+            $skipped = $_.Group |
+                Where-Object { $_.File.FullName -ne $best.File.FullName } |
+                ForEach-Object { $_.File.Name }
+
             Write-Host "[DEDUPE] '$($_.Name)' -> keeping $($best.File.Name), skipping: $($skipped -join ', ')" -ForegroundColor DarkYellow
         }
+
         $best.File
-    } | Sort-Object BaseName
+    } |
+    Sort-Object @{Expression={$_.Extension}}, @{Expression={$_.BaseName}}
 
-    if (-not $files -or $files.Count -eq 0) {
-        throw "No icon files found: $resolvedInput"
-    }
+if (-not $files -or $files.Count -eq 0) {
+    throw "No icon files found: $resolvedInput"
+}
 
-    Write-Host "[INFO] Icon files found (SVG preferred): $($files.Count)" -ForegroundColor Cyan
+Write-Host "[INFO] Icon files found (SVG preferred): $($files.Count)" -ForegroundColor Cyan
 
     # ========================= OUTPUT STRUCTURES =========================
     $iconDefinitions     = [ordered]@{}
@@ -119,8 +154,8 @@ function Invoke-RegistryBuild {
 
         $kind = if ($rawBase -like "folder*") { "folder" } else { "file" }
 
-        $resolvedKeys = Resolve-IconName -Key $rawBase -Kind $kind
-        $base = if ($resolvedKeys) { $resolvedKeys | Select-Object -First 1 } else { $rawBase }
+        # DO NOT normalize identity here (scan stage already handled it)
+        $base = $rawBase
 
         if ([string]::IsNullOrWhiteSpace($base)) {
             $base = $rawBase
@@ -144,7 +179,7 @@ function Invoke-RegistryBuild {
             $lookupKey = $base
         }
 
-        $iconId = "$base-icon"
+        $iconId = "$kind-$base-icon"
 
         $rel = $file.FullName.Substring($basePath.Length).TrimStart('\','/') -replace '\\','/'
 
