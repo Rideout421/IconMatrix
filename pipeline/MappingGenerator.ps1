@@ -6,7 +6,8 @@ function Export-AutoMappings {
 
     . "$PSScriptRoot\IconResolver.ps1"
 
-    $files = Get-ChildItem -Path $InputPath -Recurse -File -Include *.svg, *.png, *.jpg, *.jpeg, *.ico
+    $files = Get-ChildItem -Path $InputPath -Recurse -File |
+    Where-Object { $_.Extension -in '.svg', '.png', '.jpg', '.jpeg', '.ico' }
 
     $extensions   = @{}
     $fileNames    = @{}
