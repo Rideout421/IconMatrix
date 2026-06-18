@@ -26,6 +26,8 @@ paths.json
 *.bak
 *.swp
 *.swo
+#Logs do not need to be in Git
+logs/
 
 # =========================
 # ARCHIVES / LARGE ARTIFACTS (OPTIONAL)
