@@ -2,7 +2,9 @@
 Perfect — you've got a fully working pipeline now. Just to summarize your workflow going forward:
 Adding new icons:
 
-Download PNG, name it correctly (e.g. excel.png, image.png)
+Download PNG, name it correctly (e.g. excel.Get-ChildItem "D:\Users\Rideout421\Documents\GitHub\Enterprise\vscode-icons" -Directory -Recurse |
+    Select-Object -ExpandProperty Name |
+    Sort-Object -Uniquepng, image.png)
 Drop it in E:\Users\Rideout421\Pictures\Keypass_Icons
 Run & (Join-Path $env:GIT_ROOT "IconMatrix\Tools\Publish-IconMatrix.ps1") -Install
 Close and reopen VS Code
@@ -21,4 +23,32 @@ $mappings.extensions.PSObject.Properties | ForEach-Object {
 }
 <#
 Run that anytime to see exactly which icons you still need to hunt down. Great work getting this all the way from broken JSON mappings to a fully functional custom icon theme!
+#>
+<#
+Get-ChildItem "D:\Users\Rideout421\Documents\GitHub\Enterprise\vscode-icons" -Directory |
+    Sort-Object Name |
+    Select-Object -ExpandProperty Name
+
+
+
+$MappedFolders = @(
+    'archive','automation','secret','aws','azure','github','gitlab',
+    'vscode','git','docker','kubernetes','terraform','ansible','helm',
+    'grafana','prometheus','python','javascript','typescript','nodejs',
+    'css','html','image','video','font','json','database','config',
+    'build','source','test','docs','logs','temp','tools','lib','api',
+    'component','model','controller','service','middleware','route',
+    'view','store','hook','interface','mock','linux','ubuntu','debian',
+    'vmware','public','repo','export','integration','notification',
+    'locale','workflow','client','server','app','bot','cli','webpack',
+    'ps1folder','php','rust','go','ruby','java','csharp','android',
+    'ios','windows','vagrant','graphql','wasm','electron','dapr',
+    'nginx','apache','netlify','cloudflare','datadog','chef','grunt',
+    'gulp','cmake','prisma','svelte','blueprint','notebook'
+)
+
+Get-ChildItem "D:\Users\Rideout421\Documents\GitHub\Enterprise\vscode-icons" -Directory |
+    Where-Object { $_.Name -notin $MappedFolders } |
+    Sort-Object Name |
+    Select-Object -ExpandProperty Name
 #>
