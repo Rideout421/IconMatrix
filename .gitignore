@@ -26,7 +26,9 @@ paths.json
 *.bak
 *.swp
 *.swo
-#Logs do not need to be in Git
+# =========================
+# CUSTOM LOCAL ASSETS
+# =========================
 logs/
 
 # =========================
