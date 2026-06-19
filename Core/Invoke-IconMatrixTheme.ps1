@@ -12,7 +12,7 @@ function Invoke-IconMatrixTheme {
         [switch]$DryRun
     )
 
-    Write-Host "`n=== ICONMATRIX THEME BUILD (FINAL SAFE MODE) ===" -ForegroundColor Cyan
+    Write-Host "`n=== ICONMATRIX THEME BUILD (ENTERPRISE STABLE) ===" -ForegroundColor Cyan
 
     if (-not (Test-Path $RegistryPath)) { throw "Registry missing: $RegistryPath" }
 
@@ -22,7 +22,7 @@ function Invoke-IconMatrixTheme {
         throw "Invalid registry: missing iconDefinitions"
     }
 
-    # ================= ICON DEFINITIONS (STRICT VS CODE FORMAT) =================
+    # ================= NORMALIZE ICON DEFINITIONS =================
     $iconDefinitions = [ordered]@{}
 
     foreach ($p in $registry.iconDefinitions.PSObject.Properties) {
@@ -30,7 +30,6 @@ function Invoke-IconMatrixTheme {
         $iconId = $p.Name
         $value  = $p.Value
 
-        # FIX: enforce correct structure ALWAYS
         if ($value -is [string]) {
             $iconDefinitions[$iconId] = @{ iconPath = $value }
         }
@@ -39,51 +38,64 @@ function Invoke-IconMatrixTheme {
         }
     }
 
-    # ================= ICON LOOKUP =================
+    # ================= LOOKUP =================
     function Find-Icon($pattern) {
         return ($iconDefinitions.Keys |
             Where-Object { $_ -like $pattern } |
             Select-Object -First 1)
     }
 
-    # ================= DEFAULT RULES (HARD GUARANTEED) =================
+    # ================= STRICT DEFAULT RULES =================
 
+    # FILE DEFAULT = GENERAL (fallback chain enforced)
     $fileDefault = Find-Icon "*general*"
+    if (-not $fileDefault) { $fileDefault = Find-Icon "*file-default*" }
     if (-not $fileDefault) { $fileDefault = Find-Icon "*file*" }
 
+    # ROOT FOLDER MUST BE ROOT ICON (NOT GENERIC FOLDER)
     $rootFolder = Find-Icon "*rootfolder*"
-    if (-not $rootFolder) { $rootFolder = Find-Icon "*folder*" }
+    if (-not $rootFolder) { $rootFolder = Find-Icon "*root-folder*" }
 
-    $folderDefault = $rootFolder
-    if (-not $folderDefault) { $folderDefault = $fileDefault }
+    # NORMAL FOLDER DEFAULT
+    $folderDefault = Find-Icon "*folder-default*"
+    if (-not $folderDefault) { $folderDefault = Find-Icon "*folder*" }
 
-    # ================= SAFE MAP MERGE =================
-    $fileExtensions      = @{}
-    $fileNames           = @{}
-    $folderNames         = @{}
-    $folderNamesExpanded = @{}
+    # HARD GUARANTEE FALLBACKS
+    if (-not $folderDefault) { $folderDefault = $rootFolder }
+    if (-not $rootFolder) { $rootFolder = $folderDefault }
+    if (-not $fileDefault) { $fileDefault = $folderDefault }
+
+    Write-Host "[DEBUG] file default   = $fileDefault"
+    Write-Host "[DEBUG] folder default = $folderDefault"
+    Write-Host "[DEBUG] root folder    = $rootFolder"
+
+    # ================= MAP BUILD (NO GUESSING) =================
+    $fileExtensions      = [ordered]@{}
+    $fileNames           = [ordered]@{}
+    $folderNames         = [ordered]@{}
+    $folderNamesExpanded = [ordered]@{}
 
     foreach ($p in $registry.fileExtensions.PSObject.Properties) {
-        if ($iconDefinitions[$p.Value]) {
+        if ($iconDefinitions.Contains($p.Value)) {
             $fileExtensions[$p.Name.ToLower()] = $p.Value
         }
     }
 
     foreach ($p in $registry.fileNames.PSObject.Properties) {
-        if ($iconDefinitions[$p.Value]) {
+        if ($iconDefinitions.Contains($p.Value)) {
             $fileNames[$p.Name.ToLower()] = $p.Value
         }
     }
 
     foreach ($p in $registry.folderNames.PSObject.Properties) {
-        if ($iconDefinitions[$p.Value]) {
+        if ($iconDefinitions.Contains($p.Value)) {
             $key = $p.Name.ToLower()
             $folderNames[$key] = $p.Value
             $folderNamesExpanded[$key] = $p.Value
         }
     }
 
-    # ================= THEME =================
+    # ================= FINAL THEME (VS CODE VALID) =================
     $theme = [ordered]@{
         iconDefinitions = $iconDefinitions
 
@@ -107,7 +119,7 @@ function Invoke-IconMatrixTheme {
     }
 
     if ($DryRun) {
-        Write-Host "[DRYRUN] Skipping write" -ForegroundColor Yellow
+        Write-Host "[DRYRUN] No output written" -ForegroundColor Yellow
         return
     }
 
