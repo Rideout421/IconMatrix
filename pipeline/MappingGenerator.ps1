@@ -72,7 +72,20 @@ function Export-AutoMappings {
         if ([string]::IsNullOrWhiteSpace($rawBase)) { continue }
 
         # detect folder vs file from RAW name ONLY
-        $kind = if ($rawBase -match '^folder[_-]') { "folder" } else { "file" }
+        #
+        # NOTE: the original pattern '^folder[_-]' assumed every folder icon
+        # is literally named like "folder-docker.svg". In this icon set none
+        # of them are - the real folder icons are named:
+        #   default-folder, default-root-folder, ps1folder, rootfolder
+        # which don't share one prefix/suffix convention. Matching only the
+        # old prefix classified 100% of files (including all folder icons)
+        # as "file", which is why folderNames came out empty downstream.
+        #
+        # Match "folder" anywhere in the name (as a whole word-ish token),
+        # which covers all four known conventions. This $kind value is now
+        # ONLY used for cosmetic bookkeeping (it doesn't gate which map the
+        # name goes into below) - see FOLDER / FILE MAPPING section.
+        $kind = if ($rawBase -match 'folder') { "folder" } else { "file" }
 
         # normalize semantic key
         $key = Normalize-Key $rawBase
@@ -105,12 +118,15 @@ function Export-AutoMappings {
         }
 
         # ========================= FOLDER / FILE MAPPING =========================
-        if ($kind -eq "folder") {
-            Add-ToMap $folderNames $key $key
-        }
-        else {
-            Add-ToMap $fileNames $key $key
-        }
+        # Every icon is eligible as BOTH a fileName match and a folderName
+        # match. Previously this was an if/else that routed each icon into
+        # only ONE map based on $kind, so e.g. "fedora" and "gemini" (kind
+        # = "file") never got a folderNames entry at all, even though a
+        # folder literally named "fedora" or "gemini" should reasonably
+        # show that same icon. Per design: all icons can map to a folder;
+        # files resolve via extensions (or this fileNames fallback).
+        Add-ToMap $fileNames $key $key
+        Add-ToMap $folderNames $key $key
     }
 
     # ========================= OUTPUT =========================

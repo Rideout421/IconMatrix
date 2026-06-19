@@ -30,22 +30,49 @@ function Invoke-RegistryBuild {
     . "$PSScriptRoot\..\utils\IconResolver.ps1"
 
     # -------------------------
-    # LOAD MAPPINGS
+    # LOAD MAPPINGS (THREE-WAY MERGE)
     # -------------------------
-    $autoMappingsPath = if ($MappingsPath) {
-        Join-Path (Split-Path $MappingsPath -Parent) "mappings.auto.json"
+    # Priority, highest first:
+    #   1. mappings.json        - manual hand edits/overrides
+    #   2. semantic.map.json    - curated semantic inference (e.g. 107 folderNames)
+    #   3. mappings.auto.json   - dumb filename-derived fallback, fills any gaps
+    #
+    # Previously this only ever loaded ONE of these (auto if present, else
+    # manual as a fallback) which meant semantic.map.json's curated folder
+    # mappings never reached the registry at all, even when present.
+    if (-not $MappingsPath) {
+        throw "Mappings not found: -MappingsPath was not supplied"
     }
 
-    if ($autoMappingsPath -and (Test-Path $autoMappingsPath)) {
-        Write-Host "[INFO] Using AUTO mappings: $autoMappingsPath" -ForegroundColor Cyan
-        $mappingsJson = Get-Content $autoMappingsPath -Raw | ConvertFrom-Json
+    $mappingsDir = Split-Path $MappingsPath -Parent
+
+    $manualMappingsPath   = Join-Path $mappingsDir "mappings.json"
+    $semanticMappingsPath = Join-Path $mappingsDir "semantic.map.json"
+    $autoMappingsPath     = Join-Path $mappingsDir "mappings.auto.json"
+
+    function Load-MappingFile($path, $label) {
+        if (Test-Path $path) {
+            Write-Host "[INFO] Loading $label mappings: $path" -ForegroundColor Cyan
+            return (Get-Content $path -Raw | ConvertFrom-Json)
+        }
+        Write-Host "[INFO] $label mappings not found, skipping: $path" -ForegroundColor DarkGray
+        return $null
     }
-    elseif ($MappingsPath -and (Test-Path $MappingsPath)) {
-        Write-Host "[WARN] Using manual mappings fallback" -ForegroundColor Yellow
-        $mappingsJson = Get-Content $MappingsPath -Raw | ConvertFrom-Json
-    }
-    else {
-        throw "Mappings not found"
+
+    $manualJson   = Load-MappingFile $manualMappingsPath   "MANUAL"
+    $semanticJson = Load-MappingFile $semanticMappingsPath "SEMANTIC"
+    $autoJson     = Load-MappingFile $autoMappingsPath     "AUTO"
+
+    if (-not $manualJson -and -not $semanticJson -and -not $autoJson) {
+        # Nothing by convention next to MappingsPath - fall back to treating
+        # MappingsPath itself as a single mapping file (legacy behavior).
+        if (Test-Path $MappingsPath) {
+            Write-Host "[WARN] No conventional mapping files found; using -MappingsPath directly: $MappingsPath" -ForegroundColor Yellow
+            $manualJson = Get-Content $MappingsPath -Raw | ConvertFrom-Json
+        }
+        else {
+            throw "Mappings not found"
+        }
     }
 
     # -------------------------
@@ -62,9 +89,38 @@ function Invoke-RegistryBuild {
         return $map
     }
 
-    $extMappings        = To-Map $mappingsJson.extensions
-    $fileNameMappings   = To-Map $mappingsJson.fileNames
-    $folderNameMappings = To-Map $mappingsJson.folderNames
+    # Merge three layers for one mapping section (extensions/fileNames/folderNames).
+    # Lowest priority is merged in first, then higher-priority layers overwrite
+    # keys they also define - but values are UNIONED per key (not replaced),
+    # so e.g. auto-derived extension matches aren't lost just because a
+    # manual override also touches that same icon key.
+    function Merge-MapLayer {
+        param($autoObj, $semanticObj, $manualObj)
+
+        $merged = @{}
+
+        foreach ($layer in @($autoObj, $semanticObj, $manualObj)) {
+            $layerMap = To-Map $layer
+            foreach ($key in $layerMap.Keys) {
+                if (-not $merged.ContainsKey($key)) {
+                    $merged[$key] = @()
+                }
+                foreach ($v in $layerMap[$key]) {
+                    if ($merged[$key] -notcontains $v) {
+                        $merged[$key] += $v
+                    }
+                }
+            }
+        }
+
+        return $merged
+    }
+
+    $extMappings        = Merge-MapLayer $autoJson.extensions  $semanticJson.extensions  $manualJson.extensions
+    $fileNameMappings   = Merge-MapLayer $autoJson.fileNames   $semanticJson.fileNames   $manualJson.fileNames
+    $folderNameMappings = Merge-MapLayer $autoJson.folderNames $semanticJson.folderNames $manualJson.folderNames
+
+    Write-Host "[INFO] Merged folderName keys: $($folderNameMappings.Keys.Count)" -ForegroundColor Cyan
 
     # -------------------------
     # FILE SCAN (SVG FIRST ALREADY ASSUMED STABLE)
@@ -98,7 +154,12 @@ function Invoke-RegistryBuild {
         $base = $file.BaseName.ToLower()
         $ext  = $file.Extension.ToLower()
 
-        $kind = if ($base -like "folder*") { "folder" } else { "file" }
+        # Same fix as MappingGenerator.ps1: real folder icon filenames in
+        # this set (default-folder, default-root-folder, ps1folder,
+        # rootfolder) don't start with "folder", so -like "folder*" never
+        # matched and every icon (including folders) got minted as
+        # "file-*-icon". Match "folder" anywhere in the name instead.
+        $kind = if ($base -match 'folder') { "folder" } else { "file" }
 
         $iconId = "$kind-$base-icon"
 

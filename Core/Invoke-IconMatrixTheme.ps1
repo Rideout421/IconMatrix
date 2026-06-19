@@ -12,9 +12,11 @@ function Invoke-IconMatrixTheme {
         [switch]$DryRun
     )
 
-    Write-Host "`n=== ICONMATRIX THEME BUILD (ENTERPRISE STABLE) ===" -ForegroundColor Cyan
+    Write-Host "`n=== ICONMATRIX THEME BUILD (SCHEMA FIXED) ===" -ForegroundColor Cyan
 
-    if (-not (Test-Path $RegistryPath)) { throw "Registry missing: $RegistryPath" }
+    if (-not (Test-Path $RegistryPath)) {
+        throw "Registry missing: $RegistryPath"
+    }
 
     $registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
 
@@ -22,88 +24,128 @@ function Invoke-IconMatrixTheme {
         throw "Invalid registry: missing iconDefinitions"
     }
 
-    # ================= NORMALIZE ICON DEFINITIONS =================
+    # ================= ICON DEFINITIONS =================
+    # NOTE: must be an ORDERED dict. A plain @{} hashtable's key iteration
+    # order is bucket order, not insertion order, which made Resolve-Icon's
+    # "first match" wildcard search non-deterministic (e.g. picking
+    # folder-default-root-folder-icon instead of folder-default-folder-icon
+    # for the *folder* pattern, even though the latter was added first).
     $iconDefinitions = [ordered]@{}
 
     foreach ($p in $registry.iconDefinitions.PSObject.Properties) {
 
-        $iconId = $p.Name
-        $value  = $p.Value
+        $id  = $p.Name
+        $val = $p.Value
 
-        if ($value -is [string]) {
-            $iconDefinitions[$iconId] = @{ iconPath = $value }
-        }
-        elseif ($value.iconPath) {
-            $iconDefinitions[$iconId] = @{ iconPath = $value.iconPath }
+        $path =
+            if ($val -is [string]) { $val }
+            elseif ($val.iconPath) { $val.iconPath }
+            else { continue }
+
+        # normalize paths only
+        $path = $path -replace '^\./', '../'
+
+        $iconDefinitions[$id] = @{
+            iconPath = $path
         }
     }
 
-    # ================= LOOKUP =================
-    function Find-Icon($pattern) {
+    # ================= NORMALIZE MAPPINGS =================
+    # VS Code's icon theme schema requires extensions / fileNames / folderNames
+    # to map name -> SINGLE icon definition id (a string), not an array.
+    # Source maps (mappings.auto.json / semantic.map.json) may store arrays
+    # of candidate icon ids per key, so we must collapse each to one string
+    # here, not pass the array straight through.
+    function NormalizeMap($map) {
+        $out = @{}
+
+        if (-not $map) { return $out }
+
+        foreach ($p in $map.PSObject.Properties) {
+
+            $key = $p.Name.ToLower()
+            $rawValues = @($p.Value)
+
+            if ($rawValues -isnot [System.Array]) {
+                $rawValues = @($rawValues)
+            }
+
+            # Collapse to the first value that is actually a known icon id.
+            # This is the line that was missing before: previously the
+            # whole array was assigned to $out[$key], which VS Code
+            # silently ignores for folderNames (and is invalid for
+            # extensions/fileNames too).
+            # NOTE: $iconDefinitions is an OrderedDictionary (see [ordered]@{}
+            # above), and that type's key-lookup method is .Contains(), not
+            # .ContainsKey() like a plain Hashtable - using the wrong method
+            # name throws "Method invocation failed... does not contain a
+            # method named 'ContainsKey'" at runtime.
+            $resolved = $rawValues | Where-Object { $iconDefinitions.Contains($_) } | Select-Object -First 1
+
+            if (-not $resolved -and $rawValues.Count -gt 0) {
+                # Fall back to first raw value even if not yet validated,
+                # so we can surface a warning instead of silently dropping it.
+                $resolved = $rawValues[0]
+                Write-Warning "Mapping '$key' -> '$resolved' has no matching iconDefinition; folder/file may show default icon."
+            }
+
+            if ($resolved) {
+                $out[$key] = $resolved
+            }
+        }
+
+        return $out
+    }
+
+    # ================= SCHEMA (CORRECT) =================
+    # NOTE: the registry's key is "fileExtensions", not "extensions".
+    # Reading $registry.extensions silently returned $null (no error),
+    # so NormalizeMap produced an empty map every time - this is why
+    # extensions were never applied even though icons.json had 104+ of
+    # them correctly built.
+    $fileExtensions = NormalizeMap $registry.fileExtensions
+    $fileNames      = NormalizeMap $registry.fileNames
+    $folderNames    = NormalizeMap $registry.folderNames
+
+    # ================= DEFAULT ICON RESOLUTION =================
+    function Resolve-Icon($pattern) {
         return ($iconDefinitions.Keys |
             Where-Object { $_ -like $pattern } |
             Select-Object -First 1)
     }
 
-    # ================= STRICT DEFAULT RULES =================
+    # Intent (per user spec):
+    #   general.png        -> universal fallback for anything that doesn't map to anything else
+    #   default-folder.svg / default-root-folder.svg -> generic "this is just a folder" fallback
+    #   rootfolder.png      -> the actual repository/workspace root folder ONLY, never a generic fallback
+    #
+    # Patterns below are written to be mutually exclusive so they can't
+    # cross-match each other (previously "*folder*" matched all 4 folder
+    # icons ambiguously, including rootfolder and ps1folder).
+    $fileDefault = Resolve-Icon "*general*"
+    if (-not $fileDefault) { $fileDefault = Resolve-Icon "*default-file*" }
+    if (-not $fileDefault) { $fileDefault = Resolve-Icon "*file*" }
 
-    # FILE DEFAULT = GENERAL (fallback chain enforced)
-    $fileDefault = Find-Icon "*general*"
-    if (-not $fileDefault) { $fileDefault = Find-Icon "*file-default*" }
-    if (-not $fileDefault) { $fileDefault = Find-Icon "*file*" }
+    $folderDefault = Resolve-Icon "*default-folder*"
+    if (-not $folderDefault) { $folderDefault = Resolve-Icon "*default-root-folder*" }
 
-    # ROOT FOLDER MUST BE ROOT ICON (NOT GENERIC FOLDER)
-    $rootFolder = Find-Icon "*rootfolder*"
-    if (-not $rootFolder) { $rootFolder = Find-Icon "*root-folder*" }
+    $rootFolder = Resolve-Icon "*rootfolder*"
 
-    # NORMAL FOLDER DEFAULT
-    $folderDefault = Find-Icon "*folder-default*"
-    if (-not $folderDefault) { $folderDefault = Find-Icon "*folder*" }
-
-    # HARD GUARANTEE FALLBACKS
-    if (-not $folderDefault) { $folderDefault = $rootFolder }
-    if (-not $rootFolder) { $rootFolder = $folderDefault }
-    if (-not $fileDefault) { $fileDefault = $folderDefault }
+    if (-not $fileDefault)   { throw "Missing file default icon" }
+    if (-not $folderDefault) { $folderDefault = $fileDefault }
+    if (-not $rootFolder)    { $rootFolder = $folderDefault }
 
     Write-Host "[DEBUG] file default   = $fileDefault"
     Write-Host "[DEBUG] folder default = $folderDefault"
     Write-Host "[DEBUG] root folder    = $rootFolder"
 
-    # ================= MAP BUILD (NO GUESSING) =================
-    $fileExtensions      = [ordered]@{}
-    $fileNames           = [ordered]@{}
-    $folderNames         = [ordered]@{}
-    $folderNamesExpanded = [ordered]@{}
-
-    foreach ($p in $registry.fileExtensions.PSObject.Properties) {
-        if ($iconDefinitions.Contains($p.Value)) {
-            $fileExtensions[$p.Name.ToLower()] = $p.Value
-        }
-    }
-
-    foreach ($p in $registry.fileNames.PSObject.Properties) {
-        if ($iconDefinitions.Contains($p.Value)) {
-            $fileNames[$p.Name.ToLower()] = $p.Value
-        }
-    }
-
-    foreach ($p in $registry.folderNames.PSObject.Properties) {
-        if ($iconDefinitions.Contains($p.Value)) {
-            $key = $p.Name.ToLower()
-            $folderNames[$key] = $p.Value
-            $folderNamesExpanded[$key] = $p.Value
-        }
-    }
-
-    # ================= FINAL THEME (VS CODE VALID) =================
+    # ================= BUILD THEME =================
     $theme = [ordered]@{
         iconDefinitions = $iconDefinitions
 
-        fileExtensions = $fileExtensions
-        fileNames      = $fileNames
-
-        folderNames         = $folderNames
-        folderNamesExpanded = $folderNamesExpanded
+        extensions = $fileExtensions
+        fileNames  = $fileNames
+        folderNames = $folderNames
 
         file           = $fileDefault
         folder         = $folderDefault
@@ -119,7 +161,7 @@ function Invoke-IconMatrixTheme {
     }
 
     if ($DryRun) {
-        Write-Host "[DRYRUN] No output written" -ForegroundColor Yellow
+        Write-Host "[DRYRUN] Theme build complete (not written)" -ForegroundColor Yellow
         return
     }
 
