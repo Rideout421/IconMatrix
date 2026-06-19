@@ -1,5 +1,8 @@
 ﻿{
     "iconDefinitions":  {
+                            "file-.net-icon":  {
+                                                   "iconPath":  "./processed-icons/.net.png"
+                                               },
                             "file-121fcu-icon":  {
                                                      "iconPath":  "./processed-icons/121fcu.png"
                                                  },
@@ -27,18 +30,27 @@
                             "file-actionscript2-icon":  {
                                                             "iconPath":  "./processed-icons/actionscript2.svg"
                                                         },
+                            "file-activedirectory-icon":  {
+                                                              "iconPath":  "./processed-icons/activedirectory.png"
+                                                          },
                             "file-activision-icon":  {
                                                          "iconPath":  "./processed-icons/activision.png"
                                                      },
                             "file-ada-icon":  {
                                                   "iconPath":  "./processed-icons/ada.svg"
                                               },
+                            "file-adfs-icon":  {
+                                                   "iconPath":  "./processed-icons/adfs.png"
+                                               },
                             "file-adobe-firefly-icon":  {
                                                             "iconPath":  "./processed-icons/adobe-firefly.png"
                                                         },
                             "file-adp-icon":  {
                                                   "iconPath":  "./processed-icons/adp.png"
                                               },
+                            "file-aduc-icon":  {
+                                                   "iconPath":  "./processed-icons/aduc.png"
+                                               },
                             "file-aduro-icon":  {
                                                     "iconPath":  "./processed-icons/aduro.png"
                                                 },
@@ -246,6 +258,9 @@
                             "file-automation-icon":  {
                                                          "iconPath":  "./processed-icons/automation.jpg"
                                                      },
+                            "file-autopatch-icon":  {
+                                                        "iconPath":  "./processed-icons/autopatch.jpg"
+                                                    },
                             "file-avif-icon":  {
                                                    "iconPath":  "./processed-icons/avif.svg"
                                                },
@@ -264,6 +279,15 @@
                             "file-azure-icon":  {
                                                     "iconPath":  "./processed-icons/azure.svg"
                                                 },
+                            "file-azureadsync-icon":  {
+                                                          "iconPath":  "./processed-icons/azureadsync.png"
+                                                      },
+                            "file-azurearc-icon":  {
+                                                       "iconPath":  "./processed-icons/azurearc.jpg"
+                                                   },
+                            "file-azureblob-icon":  {
+                                                        "iconPath":  "./processed-icons/azureblob.png"
+                                                    },
                             "file-azurepipelines-icon":  {
                                                              "iconPath":  "./processed-icons/azurepipelines.svg"
                                                          },
@@ -282,6 +306,9 @@
                             "file-barclays-icon":  {
                                                        "iconPath":  "./processed-icons/barclays.png"
                                                    },
+                            "file-baseconfig-icon":  {
+                                                         "iconPath":  "./processed-icons/baseconfig.png"
+                                                     },
                             "file-bash-icon":  {
                                                    "iconPath":  "./processed-icons/bash.png"
                                                },
@@ -336,6 +363,9 @@
                             "file-bithound-icon":  {
                                                        "iconPath":  "./processed-icons/bithound.svg"
                                                    },
+                            "file-bitlocker-icon":  {
+                                                        "iconPath":  "./processed-icons/bitlocker.jpg"
+                                                    },
                             "file-bizplanr-icon":  {
                                                        "iconPath":  "./processed-icons/bizplanr.png"
                                                    },
@@ -543,6 +573,9 @@
                             "file-circom-icon":  {
                                                      "iconPath":  "./processed-icons/circom.svg"
                                                  },
+                            "file-cisco-icon":  {
+                                                    "iconPath":  "./processed-icons/cisco.png"
+                                                },
                             "file-citrix-icon":  {
                                                      "iconPath":  "./processed-icons/citrix.png"
                                                  },
@@ -807,6 +840,9 @@
                             "file-dartlang-icon":  {
                                                        "iconPath":  "./processed-icons/dartlang.svg"
                                                    },
+                            "file-data-icon":  {
+                                                   "iconPath":  "./processed-icons/data.jpg"
+                                               },
                             "file-datadog-icon":  {
                                                       "iconPath":  "./processed-icons/datadog.svg"
                                                   },
@@ -822,6 +858,9 @@
                             "file-deepai-icon":  {
                                                      "iconPath":  "./processed-icons/deepai.png"
                                                  },
+                            "file-deepwatch-icon":  {
+                                                        "iconPath":  "./processed-icons/deepwatch.jpg"
+                                                    },
                             "file-default-file-icon":  {
                                                            "iconPath":  "./processed-icons/default-file.svg"
                                                        },
@@ -837,6 +876,9 @@
                             "file-dellemc-icon":  {
                                                       "iconPath":  "./processed-icons/dellemc.png"
                                                   },
+                            "file-dellservermanager-icon":  {
+                                                                "iconPath":  "./processed-icons/dellservermanager.jpg"
+                                                            },
                             "file-delphi-icon":  {
                                                      "iconPath":  "./processed-icons/delphi.svg"
                                                  },
@@ -864,6 +906,9 @@
                             "file-devvit-icon":  {
                                                      "iconPath":  "./processed-icons/devvit.svg"
                                                  },
+                            "file-dfs-icon":  {
+                                                  "iconPath":  "./processed-icons/dfs.png"
+                                              },
                             "file-dhall-icon":  {
                                                     "iconPath":  "./processed-icons/dhall.svg"
                                                 },
@@ -1074,6 +1119,9 @@
                             "file-excel2-icon":  {
                                                      "iconPath":  "./processed-icons/excel2.svg"
                                                  },
+                            "file-exchange-icon":  {
+                                                       "iconPath":  "./processed-icons/exchange.png"
+                                                   },
                             "file-expo-icon":  {
                                                    "iconPath":  "./processed-icons/expo.svg"
                                                },
@@ -1131,6 +1179,9 @@
                             "file-firestore-icon":  {
                                                         "iconPath":  "./processed-icons/firestore.svg"
                                                     },
+                            "file-firewall-icon":  {
+                                                       "iconPath":  "./processed-icons/firewall.jpg"
+                                                   },
                             "file-fitbit-icon":  {
                                                      "iconPath":  "./processed-icons/fitbit.svg"
                                                  },
@@ -1188,6 +1239,9 @@
                             "file-formkit-icon":  {
                                                       "iconPath":  "./processed-icons/formkit.svg"
                                                   },
+                            "file-fortinet-icon":  {
+                                                       "iconPath":  "./processed-icons/fortinet.png"
+                                                   },
                             "file-fortran-icon":  {
                                                       "iconPath":  "./processed-icons/fortran.svg"
                                                   },
@@ -1404,6 +1458,9 @@
                             "file-gpg-icon":  {
                                                   "iconPath":  "./processed-icons/gpg.svg"
                                               },
+                            "file-gpos-icon":  {
+                                                   "iconPath":  "./processed-icons/gpos.png"
+                                               },
                             "file-gradle-icon":  {
                                                      "iconPath":  "./processed-icons/gradle.svg"
                                                  },
@@ -1590,9 +1647,15 @@
                             "file-hypr-icon":  {
                                                    "iconPath":  "./processed-icons/hypr.svg"
                                                },
+                            "file-iac-icon":  {
+                                                  "iconPath":  "./processed-icons/iac.jpg"
+                                              },
                             "file-ibm-cloud-icon":  {
                                                         "iconPath":  "./processed-icons/ibm-cloud.png"
                                                     },
+                            "file-ibmdb2-icon":  {
+                                                     "iconPath":  "./processed-icons/ibmdb2.png"
+                                                 },
                             "file-ice-icon":  {
                                                   "iconPath":  "./processed-icons/ice.png"
                                               },
@@ -1623,6 +1686,9 @@
                             "file-iffft-icon":  {
                                                     "iconPath":  "./processed-icons/iffft.png"
                                                 },
+                            "file-iis-icon":  {
+                                                  "iconPath":  "./processed-icons/iis.png"
+                                              },
                             "file-image-icon":  {
                                                     "iconPath":  "./processed-icons/image.svg"
                                                 },
@@ -1668,6 +1734,9 @@
                             "file-interviews-chat-icon":  {
                                                               "iconPath":  "./processed-icons/interviews-chat.png"
                                                           },
+                            "file-intune-icon":  {
+                                                     "iconPath":  "./processed-icons/intune.jpg"
+                                                 },
                             "file-io-icon":  {
                                                  "iconPath":  "./processed-icons/io.svg"
                                              },
@@ -1866,6 +1935,9 @@
                             "file-language-configuration-icon":  {
                                                                      "iconPath":  "./processed-icons/language-configuration.svg"
                                                                  },
+                            "file-laps-icon":  {
+                                                   "iconPath":  "./processed-icons/laps.png"
+                                               },
                             "file-lark-icon":  {
                                                    "iconPath":  "./processed-icons/lark.svg"
                                                },
@@ -2424,6 +2496,9 @@
                             "file-luau-icon":  {
                                                    "iconPath":  "./processed-icons/luau.svg"
                                                },
+                            "file-lvm-icon":  {
+                                                  "iconPath":  "./processed-icons/lvm.jpg"
+                                              },
                             "file-lychee-icon":  {
                                                      "iconPath":  "./processed-icons/lychee.svg"
                                                  },
@@ -2499,6 +2574,9 @@
                             "file-mbb-radiology-icon":  {
                                                             "iconPath":  "./processed-icons/mbb-radiology.png"
                                                         },
+                            "file-mcafee-icon":  {
+                                                     "iconPath":  "./processed-icons/mcafee.jpg"
+                                                 },
                             "file-mcp-icon":  {
                                                   "iconPath":  "./processed-icons/mcp.svg"
                                               },
@@ -2679,6 +2757,9 @@
                             "file-namify-icon":  {
                                                      "iconPath":  "./processed-icons/namify.png"
                                                  },
+                            "file-nano-icon":  {
+                                                   "iconPath":  "./processed-icons/nano.jpg"
+                                               },
                             "file-nanostaged-icon":  {
                                                          "iconPath":  "./processed-icons/nanostaged.svg"
                                                      },
@@ -2772,6 +2853,9 @@
                             "file-netscaler-icon":  {
                                                         "iconPath":  "./processed-icons/netscaler.png"
                                                     },
+                            "file-network-icon":  {
+                                                      "iconPath":  "./processed-icons/network.jpg"
+                                                  },
                             "file-next-right-management-icon":  {
                                                                     "iconPath":  "./processed-icons/next-right-management.png"
                                                                 },
@@ -3027,6 +3111,12 @@
                             "file-odoo-icon":  {
                                                    "iconPath":  "./processed-icons/odoo.png"
                                                },
+                            "file-office-icon":  {
+                                                     "iconPath":  "./processed-icons/office.png"
+                                                 },
+                            "file-office365-icon":  {
+                                                        "iconPath":  "./processed-icons/office365.jpg"
+                                                    },
                             "file-ogone-icon":  {
                                                     "iconPath":  "./processed-icons/ogone.svg"
                                                 },
@@ -3141,6 +3231,9 @@
                             "file-peeky-icon":  {
                                                     "iconPath":  "./processed-icons/peeky.svg"
                                                 },
+                            "file-perfecto-icon":  {
+                                                       "iconPath":  "./processed-icons/perfecto.png"
+                                                   },
                             "file-perkspot-icon":  {
                                                        "iconPath":  "./processed-icons/perkspot.png"
                                                    },
@@ -3228,6 +3321,9 @@
                             "file-playwright-icon":  {
                                                          "iconPath":  "./processed-icons/playwright.svg"
                                                      },
+                            "file-plink-icon":  {
+                                                    "iconPath":  "./processed-icons/plink.jpg"
+                                                },
                             "file-plsql-package-body-icon":  {
                                                                  "iconPath":  "./processed-icons/plsql-package-body.svg"
                                                              },
@@ -3417,6 +3513,9 @@
                             "file-purgecss-icon":  {
                                                        "iconPath":  "./processed-icons/purgecss.svg"
                                                    },
+                            "file-pwa-icon":  {
+                                                  "iconPath":  "./processed-icons/pwa.png"
+                                              },
                             "file-pyenv-icon":  {
                                                     "iconPath":  "./processed-icons/pyenv.svg"
                                                 },
@@ -3492,6 +3591,9 @@
                             "file-racket-icon":  {
                                                      "iconPath":  "./processed-icons/racket.svg"
                                                  },
+                            "file-radiusserver-icon":  {
+                                                           "iconPath":  "./processed-icons/radiusserver.png"
+                                                       },
                             "file-rails-icon":  {
                                                     "iconPath":  "./processed-icons/rails.svg"
                                                 },
@@ -3507,6 +3609,9 @@
                             "file-raml-icon":  {
                                                    "iconPath":  "./processed-icons/raml.svg"
                                                },
+                            "file-rancher-icon":  {
+                                                      "iconPath":  "./processed-icons/rancher.png"
+                                                  },
                             "file-ravendb-icon":  {
                                                       "iconPath":  "./processed-icons/ravendb.svg"
                                                   },
@@ -3663,6 +3768,9 @@
                             "file-rproj-icon":  {
                                                     "iconPath":  "./processed-icons/rproj.svg"
                                                 },
+                            "file-rsat-icon":  {
+                                                   "iconPath":  "./processed-icons/rsat.png"
+                                               },
                             "file-rspec-icon":  {
                                                     "iconPath":  "./processed-icons/rspec.svg"
                                                 },
@@ -3738,6 +3846,9 @@
                             "file-sccm-reports-icon":  {
                                                            "iconPath":  "./processed-icons/sccm-reports.png"
                                                        },
+                            "file-sccm-icon":  {
+                                                   "iconPath":  "./processed-icons/sccm.jpg"
+                                               },
                             "file-scilab-icon":  {
                                                      "iconPath":  "./processed-icons/scilab.svg"
                                                  },
@@ -3768,6 +3879,9 @@
                             "file-security-first-insurance-icon":  {
                                                                        "iconPath":  "./processed-icons/security-first-insurance.png"
                                                                    },
+                            "file-security-icon":  {
+                                                       "iconPath":  "./processed-icons/security.jpg"
+                                                   },
                             "file-seedkit-icon":  {
                                                       "iconPath":  "./processed-icons/seedkit.svg"
                                                   },
@@ -3780,6 +3894,12 @@
                             "file-semrush-icon":  {
                                                       "iconPath":  "./processed-icons/semrush.png"
                                                   },
+                            "file-sentinalone-icon":  {
+                                                          "iconPath":  "./processed-icons/sentinalone.png"
+                                                      },
+                            "file-sentinelone-icon":  {
+                                                          "iconPath":  "./processed-icons/sentinelone.jpg"
+                                                      },
                             "file-sentry-icon":  {
                                                      "iconPath":  "./processed-icons/sentry.svg"
                                                  },
@@ -3885,6 +4005,9 @@
                             "file-smartli-ai-icon":  {
                                                          "iconPath":  "./processed-icons/smartli-ai.png"
                                                      },
+                            "file-smartscreen-icon":  {
+                                                          "iconPath":  "./processed-icons/smartscreen.png"
+                                                      },
                             "file-smarty-icon":  {
                                                      "iconPath":  "./processed-icons/smarty.svg"
                                                  },
@@ -3933,6 +4056,9 @@
                             "file-speech-to-note-icon":  {
                                                              "iconPath":  "./processed-icons/speech-to-note.png"
                                                          },
+                            "file-speedtest-icon":  {
+                                                        "iconPath":  "./processed-icons/speedtest.jpg"
+                                                    },
                             "file-spiceworks-icon":  {
                                                          "iconPath":  "./processed-icons/spiceworks.png"
                                                      },
@@ -3990,6 +4116,9 @@
                             "file-stencil-icon":  {
                                                       "iconPath":  "./processed-icons/stencil.svg"
                                                   },
+                            "file-stigs-icon":  {
+                                                    "iconPath":  "./processed-icons/stigs.png"
+                                                },
                             "file-stockimg-ai-icon":  {
                                                           "iconPath":  "./processed-icons/stockimg-ai.png"
                                                       },
@@ -4125,6 +4254,9 @@
                             "file-teal-icon":  {
                                                    "iconPath":  "./processed-icons/teal.svg"
                                                },
+                            "file-teams-icon":  {
+                                                    "iconPath":  "./processed-icons/teams.jpg"
+                                                },
                             "file-teladoc-icon":  {
                                                       "iconPath":  "./processed-icons/teladoc.png"
                                                   },
@@ -4338,6 +4470,9 @@
                             "file-uv-icon":  {
                                                  "iconPath":  "./processed-icons/uv.svg"
                                              },
+                            "file-uwf-icon":  {
+                                                  "iconPath":  "./processed-icons/uwf.jpg"
+                                              },
                             "file-vagrant-icon":  {
                                                       "iconPath":  "./processed-icons/vagrant.svg"
                                                   },
@@ -4374,6 +4509,9 @@
                             "file-vbproj-icon":  {
                                                      "iconPath":  "./processed-icons/vbproj.svg"
                                                  },
+                            "file-vbscript-icon":  {
+                                                       "iconPath":  "./processed-icons/vbscript.jpg"
+                                                   },
                             "file-vcxproj-icon":  {
                                                       "iconPath":  "./processed-icons/vcxproj.svg"
                                                   },
@@ -4467,6 +4605,9 @@
                             "file-vscode3-icon":  {
                                                       "iconPath":  "./processed-icons/vscode3.svg"
                                                   },
+                            "file-vscodeuser-icon":  {
+                                                         "iconPath":  "./processed-icons/vscodeuser.png"
+                                                     },
                             "file-vsix-icon":  {
                                                    "iconPath":  "./processed-icons/vsix.svg"
                                                },
@@ -4485,6 +4626,9 @@
                             "file-vyper-icon":  {
                                                     "iconPath":  "./processed-icons/vyper.svg"
                                                 },
+                            "file-wakeonlan-icon":  {
+                                                        "iconPath":  "./processed-icons/wakeonlan.jpg"
+                                                    },
                             "file-wallaby-icon":  {
                                                       "iconPath":  "./processed-icons/wallaby.svg"
                                                   },
@@ -4506,6 +4650,9 @@
                             "file-wdio-icon":  {
                                                    "iconPath":  "./processed-icons/wdio.svg"
                                                },
+                            "file-web-icon":  {
+                                                  "iconPath":  "./processed-icons/web.jpg"
+                                              },
                             "file-weblate-icon":  {
                                                       "iconPath":  "./processed-icons/weblate.svg"
                                                   },
@@ -4566,6 +4713,9 @@
                             "file-wpml-icon":  {
                                                    "iconPath":  "./processed-icons/wpml.svg"
                                                },
+                            "file-wsl-icon":  {
+                                                  "iconPath":  "./processed-icons/wsl.jpg"
+                                              },
                             "file-wurst-icon":  {
                                                     "iconPath":  "./processed-icons/wurst.svg"
                                                 },
@@ -4673,6 +4823,7 @@
                      "rootFolder":  "folder-rootfolder-icon"
                  },
     "folderNames":  {
+                        ".net":  "file-.net-icon",
                         "121fcu":  "file-121fcu-icon",
                         "121-Financial":  "file-121fcu-icon",
                         "15five":  "file-15five-icon",
@@ -4683,10 +4834,13 @@
                         "acorns":  "file-acorns-icon",
                         "actionscript":  "file-actionscript-icon",
                         "actionscript2":  "file-actionscript2-icon",
+                        "activedirectory":  "file-activedirectory-icon",
                         "activision":  "file-activision-icon",
                         "ada":  "file-ada-icon",
+                        "adfs":  "file-adfs-icon",
                         "adobe-firefly":  "file-adobe-firefly-icon",
                         "adp":  "file-adp-icon",
+                        "aduc":  "file-aduc-icon",
                         "aduro":  "file-aduro-icon",
                         "advpl":  "file-advpl-icon",
                         "ae-studio":  "file-ae-studio-icon",
@@ -4762,6 +4916,7 @@
                         "autohotkey":  "file-autohotkey-icon",
                         "autoit":  "file-autoit-icon",
                         "automation":  "file-automation-icon",
+                        "autopatch":  "file-autopatch-icon",
                         "avif":  "file-avif-icon",
                         "avro":  "file-avro-icon",
                         "awk":  "file-awk-icon",
@@ -4771,12 +4926,16 @@
                         "azure":  "file-azure-icon",
                         ".azure":  "file-azure-icon",
                         "azure-pipelines":  "file-azure-icon",
+                        "azureadsync":  "file-azureadsync-icon",
+                        "azurearc":  "file-azurearc-icon",
+                        "azureblob":  "file-azureblob-icon",
                         "azurepipelines":  "file-azurepipelines-icon",
                         "babel":  "file-babel-icon",
                         "babel2":  "file-babel2-icon",
                         "bak":  "file-bak-icon",
                         "ballerina":  "file-ballerina-icon",
                         "barclays":  "file-barclays-icon",
+                        "baseconfig":  "file-baseconfig-icon",
                         "bash":  "file-bash-icon",
                         "shell":  "file-shell-icon",
                         "scripts":  "file-tools-icon",
@@ -4798,6 +4957,7 @@
                         "biome":  "file-biome-icon",
                         "bitbucketpipeline":  "file-bitbucketpipeline-icon",
                         "bithound":  "file-bithound-icon",
+                        "bitlocker":  "file-bitlocker-icon",
                         "bizplanr":  "file-bizplanr-icon",
                         "bjs":  "file-bjs-icon",
                         "blade":  "file-blade-icon",
@@ -4869,6 +5029,7 @@
                         "chef":  "file-chef-icon",
                         "circleci":  "file-circleci-icon",
                         "circom":  "file-circom-icon",
+                        "cisco":  "file-cisco-icon",
                         "citrix":  "file-citrix-icon",
                         "clangd":  "file-clangd-icon",
                         "class":  "file-class-icon",
@@ -4971,16 +5132,19 @@
                         "dartlang-generated":  "file-dartlang-generated-icon",
                         "dartlang-ignore":  "file-dartlang-ignore-icon",
                         "dartlang":  "file-dartlang-icon",
+                        "data":  "file-data-icon",
                         "datadog":  "file-datadog-icon",
                         "db":  "file-db-icon",
                         "debian":  "file-debian-icon",
                         "deep-dream-generator":  "file-deep-dream-generator-icon",
                         "deepai":  "file-deepai-icon",
+                        "deepwatch":  "file-deepwatch-icon",
                         "default-file":  "file-default-file-icon",
                         "default-folder":  "folder-default-folder-icon",
                         "default-root-folder":  "folder-default-root-folder-icon",
                         "dell":  "file-dell-icon",
                         "dellemc":  "file-dellemc-icon",
+                        "dellservermanager":  "file-dellservermanager-icon",
                         "delphi":  "file-delphi-icon",
                         "deno":  "file-deno-icon",
                         "denoify":  "file-denoify-icon",
@@ -4990,6 +5154,7 @@
                         "devcontainer":  "file-devcontainer-icon",
                         "devolutions":  "file-devolutions-icon",
                         "devvit":  "file-devvit-icon",
+                        "dfs":  "file-dfs-icon",
                         "dhall":  "file-dhall-icon",
                         "didero":  "file-didero-icon",
                         "diff":  "file-diff-icon",
@@ -5064,6 +5229,7 @@
                         "excalidraw":  "file-excalidraw-icon",
                         "excel":  "file-excel-icon",
                         "excel2":  "file-excel2-icon",
+                        "exchange":  "file-exchange-icon",
                         "expo":  "file-expo-icon",
                         "express-scripts":  "file-express-scripts-icon",
                         "facebook":  "file-facebook-icon",
@@ -5083,6 +5249,7 @@
                         "firebasestorage":  "file-firebasestorage-icon",
                         "firefox":  "file-firefox-icon",
                         "firestore":  "file-firestore-icon",
+                        "firewall":  "file-firewall-icon",
                         "fitbit":  "file-fitbit-icon",
                         "fla":  "file-fla-icon",
                         "flareact":  "file-flareact-icon",
@@ -5102,6 +5269,7 @@
                         "fonts":  "file-fonts-icon",
                         "foreman":  "file-foreman-icon",
                         "formkit":  "file-formkit-icon",
+                        "fortinet":  "file-fortinet-icon",
                         "fortran":  "file-fortran-icon",
                         "fossa":  "file-fossa-icon",
                         "fossil":  "file-fossil-icon",
@@ -5177,6 +5345,7 @@
                         "google":  "file-google-icon",
                         "goprofiles":  "file-goprofiles-icon",
                         "gpg":  "file-gpg-icon",
+                        "gpos":  "file-gpos-icon",
                         "gradle":  "file-java-icon",
                         "gradle2":  "file-gradle2-icon",
                         "grafana":  "file-grafana-icon",
@@ -5244,7 +5413,9 @@
                         "hygen":  "file-hygen-icon",
                         "hypervisor":  "file-hypervisor-icon",
                         "hypr":  "file-hypr-icon",
+                        "iac":  "file-iac-icon",
                         "ibm-cloud":  "file-ibm-cloud-icon",
+                        "ibmdb2":  "file-ibmdb2-icon",
                         "ice":  "file-ice-icon",
                         "icl":  "file-icl-icon",
                         "icloud":  "file-icloud-icon",
@@ -5255,6 +5426,7 @@
                         "idrispkg":  "file-idrispkg-icon",
                         "ies-sharepoint":  "file-ies-sharepoint-icon",
                         "iffft":  "file-iffft-icon",
+                        "iis":  "file-iis-icon",
                         "image":  "file-image-icon",
                         "images":  "file-images-icon",
                         "img":  "file-image-icon",
@@ -5277,6 +5449,7 @@
                         "instagram":  "file-instagram-icon",
                         "interfaces":  "file-interfaces-icon",
                         "interviews-chat":  "file-interviews-chat-icon",
+                        "intune":  "file-intune-icon",
                         "io":  "file-io-icon",
                         "iodine":  "file-iodine-icon",
                         "ionic":  "file-ionic-icon",
@@ -5349,6 +5522,7 @@
                         "kusto":  "file-kusto-icon",
                         "landry\u0027s":  "file-landry\u0027s-icon",
                         "language-configuration":  "file-language-configuration-icon",
+                        "laps":  "file-laps-icon",
                         "lark":  "file-lark-icon",
                         "lateron":  "file-lateron-icon",
                         "latino":  "file-latino-icon",
@@ -5539,6 +5713,7 @@
                         "lsl":  "file-lsl-icon",
                         "lua":  "file-lua-icon",
                         "luau":  "file-luau-icon",
+                        "lvm":  "file-lvm-icon",
                         "lychee":  "file-lychee-icon",
                         "lync":  "file-lync-icon",
                         "magicjack":  "file-magicjack-icon",
@@ -5562,6 +5737,7 @@
                         "maxscript":  "file-maxscript-icon",
                         "maya":  "file-maya-icon",
                         "mbb-radiology":  "file-mbb-radiology-icon",
+                        "mcafee":  "file-mcafee-icon",
                         "mcp":  "file-mcp-icon",
                         "mdx-components":  "file-mdx-components-icon",
                         "mdx":  "file-mdx-icon",
@@ -5625,6 +5801,7 @@
                         "n64":  "file-n64-icon",
                         "namelix":  "file-namelix-icon",
                         "namify":  "file-namify-icon",
+                        "nano":  "file-nano-icon",
                         "nanostaged":  "file-nanostaged-icon",
                         "navient":  "file-navient-icon",
                         "ndst":  "file-ndst-icon",
@@ -5656,6 +5833,7 @@
                         "netflix":  "file-netflix-icon",
                         "netlify":  "file-netlify-icon",
                         "netscaler":  "file-netscaler-icon",
+                        "network":  "file-network-icon",
                         "next-right-management":  "file-next-right-management-icon",
                         "next":  "file-next-icon",
                         "nextflow":  "file-nextflow-icon",
@@ -5744,6 +5922,8 @@
                         "ocaml":  "file-ocaml-icon",
                         "ocoya":  "file-ocoya-icon",
                         "odoo":  "file-odoo-icon",
+                        "office":  "file-office-icon",
+                        "office365":  "file-office365-icon",
                         "ogone":  "file-ogone-icon",
                         "oliv":  "file-oliv-icon",
                         "onenote":  "file-onenote-icon",
@@ -5782,6 +5962,7 @@
                         "pearson-vue":  "file-pearson-vue-icon",
                         "peek":  "file-peek-icon",
                         "peeky":  "file-peeky-icon",
+                        "perfecto":  "file-perfecto-icon",
                         "perkspot":  "file-perkspot-icon",
                         "perl":  "file-perl-icon",
                         "perl2":  "file-perl2-icon",
@@ -5812,6 +5993,7 @@
                         "platformio":  "file-platformio-icon",
                         "playstation":  "file-playstation-icon",
                         "playwright":  "file-playwright-icon",
+                        "plink":  "file-plink-icon",
                         "plsql-package-body":  "file-plsql-package-body-icon",
                         "plsql-package-header":  "file-plsql-package-header-icon",
                         "plsql-package-spec":  "file-plsql-package-spec-icon",
@@ -5877,6 +6059,7 @@
                         "pure-storage":  "file-pure-storage-icon",
                         "purescript":  "file-purescript-icon",
                         "purgecss":  "file-purgecss-icon",
+                        "pwa":  "file-pwa-icon",
                         "pyenv":  "file-pyenv-icon",
                         "pypi":  "file-pypi-icon",
                         "pyret":  "file-pyret-icon",
@@ -5906,11 +6089,13 @@
                         "r":  "file-r-icon",
                         "ra-syntax-tree":  "file-ra-syntax-tree-icon",
                         "racket":  "file-racket-icon",
+                        "radiusserver":  "file-radiusserver-icon",
                         "rails":  "file-rails-icon",
                         "railway":  "file-railway-icon",
                         "rake":  "file-rake-icon",
                         "raku":  "file-raku-icon",
                         "raml":  "file-raml-icon",
+                        "rancher":  "file-rancher-icon",
                         "ravendb":  "file-ravendb-icon",
                         "razor":  "file-razor-icon",
                         "razzle":  "file-razzle-icon",
@@ -5965,6 +6150,7 @@
                         "routes":  "file-route-icon",
                         "router":  "file-route-icon",
                         "rproj":  "file-rproj-icon",
+                        "rsat":  "file-rsat-icon",
                         "rspec":  "file-rspec-icon",
                         "rss":  "file-rss-icon",
                         "rubocop":  "file-rubocop-icon",
@@ -5989,6 +6175,7 @@
                         "scadepro":  "file-scadepro-icon",
                         "scala":  "file-scala-icon",
                         "sccm-reports":  "file-sccm-reports-icon",
+                        "sccm":  "file-sccm-icon",
                         "scilab":  "file-scilab-icon",
                         "scribe":  "file-scribe-icon",
                         "script":  "file-tools-icon",
@@ -5999,11 +6186,14 @@
                         "secret":  "file-secret-icon",
                         ".secret-scan-output":  "file-secret-icon",
                         "security-first-insurance":  "file-security-first-insurance-icon",
+                        "security":  "file-security-icon",
                         "seedkit":  "file-seedkit-icon",
                         "seg":  "file-seg-icon",
                         "SoutheasternGrocers":  "file-seg-icon",
                         "segrewards":  "file-segrewards-icon",
                         "semrush":  "file-semrush-icon",
+                        "sentinalone":  "file-sentinalone-icon",
+                        "sentinelone":  "file-sentinelone-icon",
                         "sentry":  "file-sentry-icon",
                         "sequelize":  "file-sequelize-icon",
                         "sequens-ai":  "file-sequens-ai-icon",
@@ -6037,6 +6227,7 @@
                         "sln":  "file-sln-icon",
                         "sln2":  "file-sln2-icon",
                         "smartli-ai":  "file-smartli-ai-icon",
+                        "smartscreen":  "file-smartscreen-icon",
                         "smarty":  "file-smarty-icon",
                         "smithery":  "file-smithery-icon",
                         "snakemake":  "file-snakemake-icon",
@@ -6055,6 +6246,7 @@
                         "spacengine":  "file-spacengine-icon",
                         "sparql":  "file-sparql-icon",
                         "speech-to-note":  "file-speech-to-note-icon",
+                        "speedtest":  "file-speedtest-icon",
                         "spiceworks":  "file-spiceworks-icon",
                         "spin":  "file-spin-icon",
                         "spinachai":  "file-spinachai-icon",
@@ -6073,6 +6265,7 @@
                         "stata":  "file-stata-icon",
                         "steam":  "file-steam-icon",
                         "stencil":  "file-stencil-icon",
+                        "stigs":  "file-stigs-icon",
                         "stockimg-ai":  "file-stockimg-ai-icon",
                         "stonebranch":  "file-stonebranch-icon",
                         "storage":  "file-storage-icon",
@@ -6117,6 +6310,7 @@
                         "tauri":  "file-tauri-icon",
                         "tcl":  "file-tcl-icon",
                         "teal":  "file-teal-icon",
+                        "teams":  "file-teams-icon",
                         "teladoc":  "file-teladoc-icon",
                         "temp":  "file-temp-icon",
                         "tmp":  "file-temp-icon",
@@ -6205,6 +6399,7 @@
                         "unocss":  "file-unocss-icon",
                         "usbank":  "file-usbank-icon",
                         "uv":  "file-uv-icon",
+                        "uwf":  "file-uwf-icon",
                         "vagrant":  "file-vagrant-icon",
                         "vala":  "file-vala-icon",
                         "vance-ai":  "file-vance-ai-icon",
@@ -6217,6 +6412,7 @@
                         "vba":  "file-vba-icon",
                         "vbhtml":  "file-vbhtml-icon",
                         "vbproj":  "file-vbproj-icon",
+                        "vbscript":  "file-vbscript-icon",
                         "vcxproj":  "file-vcxproj-icon",
                         "veeam":  "file-veeam-icon",
                         "velocity":  "file-velocity-icon",
@@ -6256,12 +6452,14 @@
                         ".vscode":  "file-vscode-icon",
                         "vscode2":  "file-vscode2-icon",
                         "vscode3":  "file-vscode3-icon",
+                        "vscodeuser":  "file-vscodeuser-icon",
                         "vsix":  "file-vsix-icon",
                         "vsixmanifest":  "file-vsixmanifest-icon",
                         "vue":  "file-vue-icon",
                         "vueconfig":  "file-vueconfig-icon",
                         "vvvvvv":  "file-vvvvvv-icon",
                         "vyper":  "file-vyper-icon",
+                        "wakeonlan":  "file-wakeonlan-icon",
                         "wallaby":  "file-wallaby-icon",
                         "walling":  "file-walling-icon",
                         "wally":  "file-wally-icon",
@@ -6269,6 +6467,7 @@
                         "wasm":  "file-wasm-icon",
                         "watchmanconfig":  "file-watchmanconfig-icon",
                         "wdio":  "file-wdio-icon",
+                        "web":  "file-web-icon",
                         "weblate":  "file-weblate-icon",
                         "webpack":  "file-webpack-icon",
                         "wells-fargo":  "file-wells-fargo-icon",
@@ -6289,6 +6488,7 @@
                         "wordpress":  "file-wordpress-icon",
                         "workingadvantage":  "file-workingadvantage-icon",
                         "wpml":  "file-wpml-icon",
+                        "wsl":  "file-wsl-icon",
                         "wurst":  "file-wurst-icon",
                         "wxml":  "file-wxml-icon",
                         "wxss":  "file-wxss-icon",
@@ -6325,6 +6525,7 @@
                         "*":  "folder-default-folder-icon"
                     },
     "fileNames":  {
+                      ".net":  "file-.net-icon",
                       "121fcu":  "file-121fcu-icon",
                       "15five":  "file-15five-icon",
                       "24seven":  "file-24seven-icon",
@@ -6334,10 +6535,13 @@
                       "acorns":  "file-acorns-icon",
                       "actionscript":  "file-actionscript-icon",
                       "actionscript2":  "file-actionscript2-icon",
+                      "activedirectory":  "file-activedirectory-icon",
                       "activision":  "file-activision-icon",
                       "ada":  "file-ada-icon",
+                      "adfs":  "file-adfs-icon",
                       "adobe-firefly":  "file-adobe-firefly-icon",
                       "adp":  "file-adp-icon",
+                      "aduc":  "file-aduc-icon",
                       "aduro":  "file-aduro-icon",
                       "advpl":  "file-advpl-icon",
                       "ae-studio":  "file-ae-studio-icon",
@@ -6411,6 +6615,7 @@
                       "autohotkey":  "file-autohotkey-icon",
                       "autoit":  "file-autoit-icon",
                       "automation":  "file-automation-icon",
+                      "autopatch":  "file-autopatch-icon",
                       "avif":  "file-avif-icon",
                       "avro":  "file-avro-icon",
                       "awk":  "file-awk-icon",
@@ -6419,6 +6624,9 @@
                       "azure":  "file-azure-icon",
                       "azure-pipelines.yml":  "file-azure-icon",
                       ".azure-pipelines.yml":  "file-azure-icon",
+                      "azureadsync":  "file-azureadsync-icon",
+                      "azurearc":  "file-azurearc-icon",
+                      "azureblob":  "file-azureblob-icon",
                       "azurepipelines":  "file-azurepipelines-icon",
                       "babel":  "file-babel-icon",
                       ".babelrc":  "file-babel-icon",
@@ -6428,6 +6636,7 @@
                       "bak":  "file-bak-icon",
                       "ballerina":  "file-ballerina-icon",
                       "barclays":  "file-barclays-icon",
+                      "baseconfig":  "file-baseconfig-icon",
                       "bash":  "file-bash-icon",
                       "bat":  "file-bat-icon",
                       "batch":  "file-batch-icon",
@@ -6446,6 +6655,7 @@
                       "biome":  "file-biome-icon",
                       "bitbucketpipeline":  "file-bitbucketpipeline-icon",
                       "bithound":  "file-bithound-icon",
+                      "bitlocker":  "file-bitlocker-icon",
                       "bizplanr":  "file-bizplanr-icon",
                       "bjs":  "file-bjs-icon",
                       "blade":  "file-blade-icon",
@@ -6515,6 +6725,7 @@
                       "chef":  "file-chef-icon",
                       "circleci":  "file-circleci-icon",
                       "circom":  "file-circom-icon",
+                      "cisco":  "file-cisco-icon",
                       "citrix":  "file-citrix-icon",
                       "clangd":  "file-clangd-icon",
                       "class":  "file-class-icon",
@@ -6603,16 +6814,19 @@
                       "dartlang-generated":  "file-dartlang-generated-icon",
                       "dartlang-ignore":  "file-dartlang-ignore-icon",
                       "dartlang":  "file-dartlang-icon",
+                      "data":  "file-data-icon",
                       "datadog":  "file-datadog-icon",
                       "db":  "file-db-icon",
                       "debian":  "file-debian-icon",
                       "deep-dream-generator":  "file-deep-dream-generator-icon",
                       "deepai":  "file-deepai-icon",
+                      "deepwatch":  "file-deepwatch-icon",
                       "default-file":  "file-default-file-icon",
                       "default-folder":  "folder-default-folder-icon",
                       "default-root-folder":  "folder-default-root-folder-icon",
                       "dell":  "file-dell-icon",
                       "dellemc":  "file-dellemc-icon",
+                      "dellservermanager":  "file-dellservermanager-icon",
                       "delphi":  "file-delphi-icon",
                       "deno":  "file-deno-icon",
                       "denoify":  "file-denoify-icon",
@@ -6622,6 +6836,7 @@
                       "devcontainer":  "file-devcontainer-icon",
                       "devolutions":  "file-devolutions-icon",
                       "devvit":  "file-devvit-icon",
+                      "dfs":  "file-dfs-icon",
                       "dhall":  "file-dhall-icon",
                       "didero":  "file-didero-icon",
                       "diff":  "file-diff-icon",
@@ -6707,6 +6922,7 @@
                       "excalidraw":  "file-excalidraw-icon",
                       "excel":  "file-excel-icon",
                       "excel2":  "file-excel2-icon",
+                      "exchange":  "file-exchange-icon",
                       "expo":  "file-expo-icon",
                       "express-scripts":  "file-express-scripts-icon",
                       "facebook":  "file-facebook-icon",
@@ -6726,6 +6942,7 @@
                       "firebasestorage":  "file-firebasestorage-icon",
                       "firefox":  "file-firefox-icon",
                       "firestore":  "file-firestore-icon",
+                      "firewall":  "file-firewall-icon",
                       "fitbit":  "file-fitbit-icon",
                       "fla":  "file-fla-icon",
                       "flareact":  "file-flareact-icon",
@@ -6745,6 +6962,7 @@
                       "fonts":  "file-fonts-icon",
                       "foreman":  "file-foreman-icon",
                       "formkit":  "file-formkit-icon",
+                      "fortinet":  "file-fortinet-icon",
                       "fortran":  "file-fortran-icon",
                       "fossa":  "file-fossa-icon",
                       "fossil":  "file-fossil-icon",
@@ -6827,6 +7045,7 @@
                       "google":  "file-google-icon",
                       "goprofiles":  "file-goprofiles-icon",
                       "gpg":  "file-gpg-icon",
+                      "gpos":  "file-gpos-icon",
                       "gradle":  "file-gradle-icon",
                       "gradle2":  "file-gradle2-icon",
                       "grafana":  "file-grafana-icon",
@@ -6893,7 +7112,9 @@
                       "hygen":  "file-hygen-icon",
                       "hypervisor":  "file-hypervisor-icon",
                       "hypr":  "file-hypr-icon",
+                      "iac":  "file-iac-icon",
                       "ibm-cloud":  "file-ibm-cloud-icon",
+                      "ibmdb2":  "file-ibmdb2-icon",
                       "ice":  "file-ice-icon",
                       "icl":  "file-icl-icon",
                       "icloud":  "file-icloud-icon",
@@ -6904,6 +7125,7 @@
                       "idrispkg":  "file-idrispkg-icon",
                       "ies-sharepoint":  "file-ies-sharepoint-icon",
                       "iffft":  "file-iffft-icon",
+                      "iis":  "file-iis-icon",
                       "image":  "file-image-icon",
                       "images":  "file-images-icon",
                       "imanager":  "file-imanager-icon",
@@ -6919,6 +7141,7 @@
                       "instagram":  "file-instagram-icon",
                       "interfaces":  "file-interfaces-icon",
                       "interviews-chat":  "file-interviews-chat-icon",
+                      "intune":  "file-intune-icon",
                       "io":  "file-io-icon",
                       "iodine":  "file-iodine-icon",
                       "ionic":  "file-ionic-icon",
@@ -6990,6 +7213,7 @@
                       "kusto":  "file-kusto-icon",
                       "landry\u0027s":  "file-landry\u0027s-icon",
                       "language-configuration":  "file-language-configuration-icon",
+                      "laps":  "file-laps-icon",
                       "lark":  "file-lark-icon",
                       "lateron":  "file-lateron-icon",
                       "latino":  "file-latino-icon",
@@ -7177,6 +7401,7 @@
                       "lsl":  "file-lsl-icon",
                       "lua":  "file-lua-icon",
                       "luau":  "file-luau-icon",
+                      "lvm":  "file-lvm-icon",
                       "lychee":  "file-lychee-icon",
                       "lync":  "file-lync-icon",
                       "macos":  "file-macos-icon",
@@ -7206,6 +7431,7 @@
                       "maxscript":  "file-maxscript-icon",
                       "maya":  "file-maya-icon",
                       "mbb-radiology":  "file-mbb-radiology-icon",
+                      "mcafee":  "file-mcafee-icon",
                       "mcp":  "file-mcp-icon",
                       "mdx-components":  "file-mdx-components-icon",
                       "mdx":  "file-mdx-icon",
@@ -7266,6 +7492,7 @@
                       "n64":  "file-n64-icon",
                       "namelix":  "file-namelix-icon",
                       "namify":  "file-namify-icon",
+                      "nano":  "file-nano-icon",
                       "nanostaged":  "file-nanostaged-icon",
                       "navient":  "file-navient-icon",
                       "ndst":  "file-ndst-icon",
@@ -7297,6 +7524,7 @@
                       "netflix":  "file-netflix-icon",
                       "netlify":  "file-netlify-icon",
                       "netscaler":  "file-netscaler-icon",
+                      "network":  "file-network-icon",
                       "next-right-management":  "file-next-right-management-icon",
                       "next":  "file-next-icon",
                       "nextflow":  "file-nextflow-icon",
@@ -7386,6 +7614,8 @@
                       "ocaml":  "file-ocaml-icon",
                       "ocoya":  "file-ocoya-icon",
                       "odoo":  "file-odoo-icon",
+                      "office":  "file-office-icon",
+                      "office365":  "file-office365-icon",
                       "ogone":  "file-ogone-icon",
                       "oliv":  "file-oliv-icon",
                       "onenote":  "file-onenote-icon",
@@ -7424,6 +7654,7 @@
                       "pearson-vue":  "file-pearson-vue-icon",
                       "peek":  "file-peek-icon",
                       "peeky":  "file-peeky-icon",
+                      "perfecto":  "file-perfecto-icon",
                       "perkspot":  "file-perkspot-icon",
                       "perl":  "file-perl-icon",
                       "perl2":  "file-perl2-icon",
@@ -7453,6 +7684,7 @@
                       "platformio":  "file-platformio-icon",
                       "playstation":  "file-playstation-icon",
                       "playwright":  "file-playwright-icon",
+                      "plink":  "file-plink-icon",
                       "plsql-package-body":  "file-plsql-package-body-icon",
                       "plsql-package-header":  "file-plsql-package-header-icon",
                       "plsql-package-spec":  "file-plsql-package-spec-icon",
@@ -7522,6 +7754,7 @@
                       "pure-storage":  "file-pure-storage-icon",
                       "purescript":  "file-purescript-icon",
                       "purgecss":  "file-purgecss-icon",
+                      "pwa":  "file-pwa-icon",
                       "pyenv":  "file-pyenv-icon",
                       "pypi":  "file-pypi-icon",
                       "pyret":  "file-pyret-icon",
@@ -7552,11 +7785,13 @@
                       "r":  "file-r-icon",
                       "ra-syntax-tree":  "file-ra-syntax-tree-icon",
                       "racket":  "file-racket-icon",
+                      "radiusserver":  "file-radiusserver-icon",
                       "rails":  "file-rails-icon",
                       "railway":  "file-railway-icon",
                       "rake":  "file-rake-icon",
                       "raku":  "file-raku-icon",
                       "raml":  "file-raml-icon",
+                      "rancher":  "file-rancher-icon",
                       "ravendb":  "file-ravendb-icon",
                       "razor":  "file-razor-icon",
                       "razzle":  "file-razzle-icon",
@@ -7609,6 +7844,7 @@
                       "roush":  "file-roush-icon",
                       "route":  "file-route-icon",
                       "rproj":  "file-rproj-icon",
+                      "rsat":  "file-rsat-icon",
                       "rspec":  "file-rspec-icon",
                       "rss":  "file-rss-icon",
                       "rubocop":  "file-rubocop-icon",
@@ -7636,6 +7872,7 @@
                       "scadepro":  "file-scadepro-icon",
                       "scala":  "file-scala-icon",
                       "sccm-reports":  "file-sccm-reports-icon",
+                      "sccm":  "file-sccm-icon",
                       "scilab":  "file-scilab-icon",
                       "scribe":  "file-scribe-icon",
                       "script":  "file-script-icon",
@@ -7646,10 +7883,13 @@
                       "second-me":  "file-second-me-icon",
                       "secret":  "file-secret-icon",
                       "security-first-insurance":  "file-security-first-insurance-icon",
+                      "security":  "file-security-icon",
                       "seedkit":  "file-seedkit-icon",
                       "seg":  "file-seg-icon",
                       "segrewards":  "file-segrewards-icon",
                       "semrush":  "file-semrush-icon",
+                      "sentinalone":  "file-sentinalone-icon",
+                      "sentinelone":  "file-sentinelone-icon",
                       "sentry":  "file-sentry-icon",
                       "sequelize":  "file-sequelize-icon",
                       "sequens-ai":  "file-sequens-ai-icon",
@@ -7685,6 +7925,7 @@
                       "sln":  "file-sln-icon",
                       "sln2":  "file-sln2-icon",
                       "smartli-ai":  "file-smartli-ai-icon",
+                      "smartscreen":  "file-smartscreen-icon",
                       "smarty":  "file-smarty-icon",
                       "smithery":  "file-smithery-icon",
                       "snakemake":  "file-snakemake-icon",
@@ -7701,6 +7942,7 @@
                       "spacengine":  "file-spacengine-icon",
                       "sparql":  "file-sparql-icon",
                       "speech-to-note":  "file-speech-to-note-icon",
+                      "speedtest":  "file-speedtest-icon",
                       "spiceworks":  "file-spiceworks-icon",
                       "spin":  "file-spin-icon",
                       "spinachai":  "file-spinachai-icon",
@@ -7720,6 +7962,7 @@
                       "stata":  "file-stata-icon",
                       "steam":  "file-steam-icon",
                       "stencil":  "file-stencil-icon",
+                      "stigs":  "file-stigs-icon",
                       "stockimg-ai":  "file-stockimg-ai-icon",
                       "stonebranch":  "file-stonebranch-icon",
                       "storage":  "file-storage-icon",
@@ -7765,6 +8008,7 @@
                       "tauri":  "file-tauri-icon",
                       "tcl":  "file-tcl-icon",
                       "teal":  "file-teal-icon",
+                      "teams":  "file-teams-icon",
                       "teladoc":  "file-teladoc-icon",
                       "temp":  "file-temp-icon",
                       "templ":  "file-templ-icon",
@@ -7843,6 +8087,7 @@
                       "unocss":  "file-unocss-icon",
                       "usbank":  "file-usbank-icon",
                       "uv":  "file-uv-icon",
+                      "uwf":  "file-uwf-icon",
                       "vagrant":  "file-vagrant-icon",
                       "vala":  "file-vala-icon",
                       "vance-ai":  "file-vance-ai-icon",
@@ -7855,6 +8100,7 @@
                       "vba":  "file-vba-icon",
                       "vbhtml":  "file-vbhtml-icon",
                       "vbproj":  "file-vbproj-icon",
+                      "vbscript":  "file-vbscript-icon",
                       "vcxproj":  "file-vcxproj-icon",
                       "veeam":  "file-veeam-icon",
                       "velocity":  "file-velocity-icon",
@@ -7890,12 +8136,14 @@
                       ".vscode":  "file-vscode-icon",
                       "vscode2":  "file-vscode2-icon",
                       "vscode3":  "file-vscode3-icon",
+                      "vscodeuser":  "file-vscodeuser-icon",
                       "vsix":  "file-vsix-icon",
                       "vsixmanifest":  "file-vsixmanifest-icon",
                       "vue":  "file-vue-icon",
                       "vueconfig":  "file-vueconfig-icon",
                       "vvvvvv":  "file-vvvvvv-icon",
                       "vyper":  "file-vyper-icon",
+                      "wakeonlan":  "file-wakeonlan-icon",
                       "wallaby":  "file-wallaby-icon",
                       "walling":  "file-walling-icon",
                       "wally":  "file-wally-icon",
@@ -7903,6 +8151,7 @@
                       "wasm":  "file-wasm-icon",
                       "watchmanconfig":  "file-watchmanconfig-icon",
                       "wdio":  "file-wdio-icon",
+                      "web":  "file-web-icon",
                       "weblate":  "file-weblate-icon",
                       "webpack":  "file-webpack-icon",
                       "webpack.config.js":  "file-webpack-icon",
@@ -7925,6 +8174,7 @@
                       "wordpress":  "file-wordpress-icon",
                       "workingadvantage":  "file-workingadvantage-icon",
                       "wpml":  "file-wpml-icon",
+                      "wsl":  "file-wsl-icon",
                       "wurst":  "file-wurst-icon",
                       "www":  "file-www-icon",
                       "wxml":  "file-wxml-icon",
