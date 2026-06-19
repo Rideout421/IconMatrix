@@ -42,9 +42,9 @@
                       "sqlite":  [
                                      "sqlite"
                                  ],
-                      "rproj":  [
-                                    "rproj"
-                                ],
+                      "servernew":  [
+                                        "servernew"
+                                    ],
                       "dartlang-generated":  [
                                                  "dartlang-generated"
                                              ],
@@ -198,6 +198,9 @@
                       "pyup":  [
                                    "pyup"
                                ],
+                      "subversion":  [
+                                         "subversion"
+                                     ],
                       "rootfolder":  [
                                          "rootfolder"
                                      ],
@@ -240,6 +243,9 @@
                       "light-shaderlab":  [
                                               "light-shaderlab"
                                           ],
+                      "vim":  [
+                                  "vim"
+                              ],
                       "typeform":  [
                                        "typeform"
                                    ],
@@ -303,6 +309,9 @@
                       "chatgpt":  [
                                       "chatgpt"
                                   ],
+                      "json5":  [
+                                    "json5"
+                                ],
                       "julia2":  [
                                      "julia2"
                                  ],
@@ -315,6 +324,9 @@
                       "cert":  [
                                    "cert"
                                ],
+                      "rdcman":  [
+                                     "rdcman"
+                                 ],
                       "nest-decorator-ts":  [
                                                 "nest-decorator-ts"
                                             ],
@@ -435,9 +447,9 @@
                       "earthly":  [
                                       "earthly"
                                   ],
-                      "t2-platform-linux":  [
-                                                "t2-platform-linux"
-                                            ],
+                      "style":  [
+                                    "style"
+                                ],
                       "bak":  [
                                   "bak"
                               ],
@@ -579,6 +591,9 @@
                       "view":  [
                                    "view"
                                ],
+                      "troubleshooting":  [
+                                              "troubleshooting"
+                                          ],
                       "smartscreen":  [
                                           "smartscreen"
                                       ],
@@ -783,6 +798,9 @@
                       "nest-adapter-js":  [
                                               "nest-adapter-js"
                                           ],
+                      "adobeacrobat":  [
+                                           "adobeacrobat"
+                                       ],
                       "light-jsconfig":  [
                                              "light-jsconfig"
                                          ],
@@ -942,9 +960,6 @@
                       "esbuild":  [
                                       "esbuild"
                                   ],
-                      "htmlhint":  [
-                                       "htmlhint"
-                                   ],
                       "capacitor":  [
                                         "capacitor"
                                     ],
@@ -1059,6 +1074,9 @@
                       "jbuilder":  [
                                        "jbuilder"
                                    ],
+                      "victorclient":  [
+                                           "victorclient"
+                                       ],
                       "helix":  [
                                     "helix"
                                 ],
@@ -1110,6 +1128,9 @@
                       "fsharp":  [
                                      "fsharp"
                                  ],
+                      "rproj":  [
+                                    "rproj"
+                                ],
                       "light-jsmap":  [
                                           "light-jsmap"
                                       ],
@@ -1512,6 +1533,9 @@
                       "light-duckdb":  [
                                            "light-duckdb"
                                        ],
+                      "diskcleanup":  [
+                                          "diskcleanup"
+                                      ],
                       "light-mikro-orm":  [
                                               "light-mikro-orm"
                                           ],
@@ -1758,6 +1782,9 @@
                       "light-packship":  [
                                              "light-packship"
                                          ],
+                      "dellcommandupdate":  [
+                                                "dellcommandupdate"
+                                            ],
                       "fla":  [
                                   "fla"
                               ],
@@ -1890,9 +1917,6 @@
                       "pipeline":  [
                                        "pipeline"
                                    ],
-                      "rollup":  [
-                                     "rollup"
-                                 ],
                       "grainger":  [
                                        "grainger"
                                    ],
@@ -1929,9 +1953,9 @@
                       "lua":  [
                                   "lua"
                               ],
-                      "vim":  [
-                                  "vim"
-                              ],
+                      "t2-platform-linux":  [
+                                                "t2-platform-linux"
+                                            ],
                       "jinja":  [
                                     "jinja"
                                 ],
@@ -2012,6 +2036,9 @@
                                   ],
                       "biml":  [
                                    "biml"
+                               ],
+                      "less":  [
+                                   "less"
                                ],
                       "scss":  [
                                    "scss"
@@ -2163,9 +2190,9 @@
                       "absolute":  [
                                        "absolute"
                                    ],
-                      "style":  [
-                                    "style"
-                                ],
+                      "opam":  [
+                                   "opam"
+                               ],
                       "light-spin":  [
                                          "light-spin"
                                      ],
@@ -2517,6 +2544,9 @@
                       "light-systemverilog":  [
                                                   "light-systemverilog"
                                               ],
+                      "sysprep":  [
+                                      "sysprep"
+                                  ],
                       "nix":  [
                                   "nix"
                               ],
@@ -2598,6 +2628,9 @@
                       "light-agents":  [
                                            "light-agents"
                                        ],
+                      "devolutionsrdm":  [
+                                             "devolutionsrdm"
+                                         ],
                       "ocaml-intf":  [
                                          "ocaml-intf"
                                      ],
@@ -2807,9 +2840,6 @@
                                 ],
                       "mise":  [
                                    "mise"
-                               ],
-                      "opam":  [
-                                   "opam"
                                ],
                       "nuget":  [
                                     "nuget"
@@ -3051,6 +3081,9 @@
                       "smarty":  [
                                      "smarty"
                                  ],
+                      "vmwaretools":  [
+                                          "vmwaretools"
+                                      ],
                       "q":  [
                                 "q"
                             ],
@@ -3252,9 +3285,9 @@
                       "15five":  [
                                      "15five"
                                  ],
-                      "subversion":  [
-                                         "subversion"
-                                     ],
+                      "rollup":  [
+                                     "rollup"
+                                 ],
                       "infopath":  [
                                        "infopath"
                                    ],
@@ -3399,6 +3432,9 @@
                       "vento":  [
                                     "vento"
                                 ],
+                      "neo4j":  [
+                                    "neo4j"
+                                ],
                       "symfony":  [
                                       "symfony"
                                   ],
@@ -3423,9 +3459,9 @@
                       "befunge":  [
                                       "befunge"
                                   ],
-                      "neo4j":  [
-                                    "neo4j"
-                                ],
+                      "shares":  [
+                                     "shares"
+                                 ],
                       "light-shadcn":  [
                                            "light-shadcn"
                                        ],
@@ -3518,9 +3554,6 @@
                                 ],
                       "rust":  [
                                    "rust"
-                               ],
-                      "less":  [
-                                   "less"
                                ],
                       "hygen":  [
                                     "hygen"
@@ -4188,6 +4221,9 @@
                       "txt":  [
                                   "txt"
                               ],
+                      "ats":  [
+                                  "ats"
+                              ],
                       "galen":  [
                                     "galen"
                                 ],
@@ -4257,6 +4293,9 @@
                       "rubocop":  [
                                       "rubocop"
                                   ],
+                      "stylish-haskell":  [
+                                              "stylish-haskell"
+                                          ],
                       "jsconfig":  [
                                        "jsconfig"
                                    ],
@@ -4446,6 +4485,9 @@
                       "mediawiki":  [
                                         "mediawiki"
                                     ],
+                      "winrm":  [
+                                    "winrm"
+                                ],
                       "todo":  [
                                    "todo"
                                ],
@@ -4482,6 +4524,9 @@
                       "erlang":  [
                                      "erlang"
                                  ],
+                      "notepad++":  [
+                                        "notepad++"
+                                    ],
                       "riot":  [
                                    "riot"
                                ],
@@ -4617,9 +4662,9 @@
                       "conan":  [
                                     "conan"
                                 ],
-                      "stylish-haskell":  [
-                                              "stylish-haskell"
-                                          ],
+                      "htmlhint":  [
+                                       "htmlhint"
+                                   ],
                       "affectscript":  [
                                            "affectscript"
                                        ],
@@ -4665,9 +4710,9 @@
                       "ai":  [
                                  "ai"
                              ],
-                      "ats":  [
-                                  "ats"
-                              ],
+                      "printqueues":  [
+                                          "printqueues"
+                                      ],
                       "iffft":  [
                                     "iffft"
                                 ],
@@ -4830,9 +4875,9 @@
                       "bolt":  [
                                    "bolt"
                                ],
-                      "json5":  [
-                                    "json5"
-                                ],
+                      "powercli":  [
+                                       "powercli"
+                                   ],
                       "pnc-bank":  [
                                        "pnc-bank"
                                    ]
@@ -4859,9 +4904,9 @@
                         "sqlite":  [
                                        "sqlite"
                                    ],
-                        "rproj":  [
-                                      "rproj"
-                                  ],
+                        "servernew":  [
+                                          "servernew"
+                                      ],
                         "dartlang-generated":  [
                                                    "dartlang-generated"
                                                ],
@@ -5015,6 +5060,9 @@
                         "pyup":  [
                                      "pyup"
                                  ],
+                        "subversion":  [
+                                           "subversion"
+                                       ],
                         "rootfolder":  [
                                            "rootfolder"
                                        ],
@@ -5057,6 +5105,9 @@
                         "light-shaderlab":  [
                                                 "light-shaderlab"
                                             ],
+                        "vim":  [
+                                    "vim"
+                                ],
                         "typeform":  [
                                          "typeform"
                                      ],
@@ -5120,6 +5171,9 @@
                         "chatgpt":  [
                                         "chatgpt"
                                     ],
+                        "json5":  [
+                                      "json5"
+                                  ],
                         "julia2":  [
                                        "julia2"
                                    ],
@@ -5132,6 +5186,9 @@
                         "cert":  [
                                      "cert"
                                  ],
+                        "rdcman":  [
+                                       "rdcman"
+                                   ],
                         "nest-decorator-ts":  [
                                                   "nest-decorator-ts"
                                               ],
@@ -5252,9 +5309,9 @@
                         "earthly":  [
                                         "earthly"
                                     ],
-                        "t2-platform-linux":  [
-                                                  "t2-platform-linux"
-                                              ],
+                        "style":  [
+                                      "style"
+                                  ],
                         "bak":  [
                                     "bak"
                                 ],
@@ -5396,6 +5453,9 @@
                         "view":  [
                                      "view"
                                  ],
+                        "troubleshooting":  [
+                                                "troubleshooting"
+                                            ],
                         "smartscreen":  [
                                             "smartscreen"
                                         ],
@@ -5600,6 +5660,9 @@
                         "nest-adapter-js":  [
                                                 "nest-adapter-js"
                                             ],
+                        "adobeacrobat":  [
+                                             "adobeacrobat"
+                                         ],
                         "light-jsconfig":  [
                                                "light-jsconfig"
                                            ],
@@ -5759,9 +5822,6 @@
                         "esbuild":  [
                                         "esbuild"
                                     ],
-                        "htmlhint":  [
-                                         "htmlhint"
-                                     ],
                         "capacitor":  [
                                           "capacitor"
                                       ],
@@ -5876,6 +5936,9 @@
                         "jbuilder":  [
                                          "jbuilder"
                                      ],
+                        "victorclient":  [
+                                             "victorclient"
+                                         ],
                         "helix":  [
                                       "helix"
                                   ],
@@ -5927,6 +5990,9 @@
                         "fsharp":  [
                                        "fsharp"
                                    ],
+                        "rproj":  [
+                                      "rproj"
+                                  ],
                         "light-jsmap":  [
                                             "light-jsmap"
                                         ],
@@ -6329,6 +6395,9 @@
                         "light-duckdb":  [
                                              "light-duckdb"
                                          ],
+                        "diskcleanup":  [
+                                            "diskcleanup"
+                                        ],
                         "light-mikro-orm":  [
                                                 "light-mikro-orm"
                                             ],
@@ -6575,6 +6644,9 @@
                         "light-packship":  [
                                                "light-packship"
                                            ],
+                        "dellcommandupdate":  [
+                                                  "dellcommandupdate"
+                                              ],
                         "fla":  [
                                     "fla"
                                 ],
@@ -6707,9 +6779,6 @@
                         "pipeline":  [
                                          "pipeline"
                                      ],
-                        "rollup":  [
-                                       "rollup"
-                                   ],
                         "grainger":  [
                                          "grainger"
                                      ],
@@ -6746,9 +6815,9 @@
                         "lua":  [
                                     "lua"
                                 ],
-                        "vim":  [
-                                    "vim"
-                                ],
+                        "t2-platform-linux":  [
+                                                  "t2-platform-linux"
+                                              ],
                         "jinja":  [
                                       "jinja"
                                   ],
@@ -6829,6 +6898,9 @@
                                     ],
                         "biml":  [
                                      "biml"
+                                 ],
+                        "less":  [
+                                     "less"
                                  ],
                         "scss":  [
                                      "scss"
@@ -6980,9 +7052,9 @@
                         "absolute":  [
                                          "absolute"
                                      ],
-                        "style":  [
-                                      "style"
-                                  ],
+                        "opam":  [
+                                     "opam"
+                                 ],
                         "light-spin":  [
                                            "light-spin"
                                        ],
@@ -7334,6 +7406,9 @@
                         "light-systemverilog":  [
                                                     "light-systemverilog"
                                                 ],
+                        "sysprep":  [
+                                        "sysprep"
+                                    ],
                         "nix":  [
                                     "nix"
                                 ],
@@ -7415,6 +7490,9 @@
                         "light-agents":  [
                                              "light-agents"
                                          ],
+                        "devolutionsrdm":  [
+                                               "devolutionsrdm"
+                                           ],
                         "ocaml-intf":  [
                                            "ocaml-intf"
                                        ],
@@ -7624,9 +7702,6 @@
                                   ],
                         "mise":  [
                                      "mise"
-                                 ],
-                        "opam":  [
-                                     "opam"
                                  ],
                         "nuget":  [
                                       "nuget"
@@ -7868,6 +7943,9 @@
                         "smarty":  [
                                        "smarty"
                                    ],
+                        "vmwaretools":  [
+                                            "vmwaretools"
+                                        ],
                         "q":  [
                                   "q"
                               ],
@@ -8069,9 +8147,9 @@
                         "15five":  [
                                        "15five"
                                    ],
-                        "subversion":  [
-                                           "subversion"
-                                       ],
+                        "rollup":  [
+                                       "rollup"
+                                   ],
                         "infopath":  [
                                          "infopath"
                                      ],
@@ -8216,6 +8294,9 @@
                         "vento":  [
                                       "vento"
                                   ],
+                        "neo4j":  [
+                                      "neo4j"
+                                  ],
                         "symfony":  [
                                         "symfony"
                                     ],
@@ -8240,9 +8321,9 @@
                         "befunge":  [
                                         "befunge"
                                     ],
-                        "neo4j":  [
-                                      "neo4j"
-                                  ],
+                        "shares":  [
+                                       "shares"
+                                   ],
                         "light-shadcn":  [
                                              "light-shadcn"
                                          ],
@@ -8335,9 +8416,6 @@
                                   ],
                         "rust":  [
                                      "rust"
-                                 ],
-                        "less":  [
-                                     "less"
                                  ],
                         "hygen":  [
                                       "hygen"
@@ -9005,6 +9083,9 @@
                         "txt":  [
                                     "txt"
                                 ],
+                        "ats":  [
+                                    "ats"
+                                ],
                         "galen":  [
                                       "galen"
                                   ],
@@ -9074,6 +9155,9 @@
                         "rubocop":  [
                                         "rubocop"
                                     ],
+                        "stylish-haskell":  [
+                                                "stylish-haskell"
+                                            ],
                         "jsconfig":  [
                                          "jsconfig"
                                      ],
@@ -9263,6 +9347,9 @@
                         "mediawiki":  [
                                           "mediawiki"
                                       ],
+                        "winrm":  [
+                                      "winrm"
+                                  ],
                         "todo":  [
                                      "todo"
                                  ],
@@ -9299,6 +9386,9 @@
                         "erlang":  [
                                        "erlang"
                                    ],
+                        "notepad++":  [
+                                          "notepad++"
+                                      ],
                         "riot":  [
                                      "riot"
                                  ],
@@ -9434,9 +9524,9 @@
                         "conan":  [
                                       "conan"
                                   ],
-                        "stylish-haskell":  [
-                                                "stylish-haskell"
-                                            ],
+                        "htmlhint":  [
+                                         "htmlhint"
+                                     ],
                         "affectscript":  [
                                              "affectscript"
                                          ],
@@ -9482,9 +9572,9 @@
                         "ai":  [
                                    "ai"
                                ],
-                        "ats":  [
-                                    "ats"
-                                ],
+                        "printqueues":  [
+                                            "printqueues"
+                                        ],
                         "iffft":  [
                                       "iffft"
                                   ],
@@ -9647,9 +9737,9 @@
                         "bolt":  [
                                      "bolt"
                                  ],
-                        "json5":  [
-                                      "json5"
-                                  ],
+                        "powercli":  [
+                                         "powercli"
+                                     ],
                         "pnc-bank":  [
                                          "pnc-bank"
                                      ]

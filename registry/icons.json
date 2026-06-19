@@ -45,6 +45,9 @@
                             "file-adobe-firefly-icon":  {
                                                             "iconPath":  "./processed-icons/adobe-firefly.png"
                                                         },
+                            "file-adobeacrobat-icon":  {
+                                                           "iconPath":  "./processed-icons/adobeacrobat.jpg"
+                                                       },
                             "file-adp-icon":  {
                                                   "iconPath":  "./processed-icons/adp.png"
                                               },
@@ -873,6 +876,9 @@
                             "file-dell-icon":  {
                                                    "iconPath":  "./processed-icons/dell.png"
                                                },
+                            "file-dellcommandupdate-icon":  {
+                                                                "iconPath":  "./processed-icons/dellcommandupdate.png"
+                                                            },
                             "file-dellemc-icon":  {
                                                       "iconPath":  "./processed-icons/dellemc.png"
                                                   },
@@ -903,6 +909,9 @@
                             "file-devolutions-icon":  {
                                                           "iconPath":  "./processed-icons/devolutions.png"
                                                       },
+                            "file-devolutionsrdm-icon":  {
+                                                             "iconPath":  "./processed-icons/devolutionsrdm.png"
+                                                         },
                             "file-devvit-icon":  {
                                                      "iconPath":  "./processed-icons/devvit.svg"
                                                  },
@@ -918,6 +927,9 @@
                             "file-diff-icon":  {
                                                    "iconPath":  "./processed-icons/diff.svg"
                                                },
+                            "file-diskcleanup-icon":  {
+                                                          "iconPath":  "./processed-icons/diskcleanup.png"
+                                                      },
                             "file-disney+-icon":  {
                                                       "iconPath":  "./processed-icons/disney+.png"
                                                   },
@@ -3051,6 +3063,9 @@
                             "file-notebooks-icon":  {
                                                         "iconPath":  "./processed-icons/notebooks.svg"
                                                     },
+                            "file-notepad++-icon":  {
+                                                        "iconPath":  "./processed-icons/notepad++.jpg"
+                                                    },
                             "file-notification-icon":  {
                                                            "iconPath":  "./processed-icons/notification.svg"
                                                        },
@@ -3322,7 +3337,7 @@
                                                          "iconPath":  "./processed-icons/playwright.svg"
                                                      },
                             "file-plink-icon":  {
-                                                    "iconPath":  "./processed-icons/plink.jpg"
+                                                    "iconPath":  "./processed-icons/plink.png"
                                                 },
                             "file-plsql-package-body-icon":  {
                                                                  "iconPath":  "./processed-icons/plsql-package-body.svg"
@@ -3390,6 +3405,9 @@
                             "file-powerbi-icon":  {
                                                       "iconPath":  "./processed-icons/powerbi.png"
                                                   },
+                            "file-powercli-icon":  {
+                                                       "iconPath":  "./processed-icons/powercli.jpg"
+                                                   },
                             "file-powerpoint-icon":  {
                                                          "iconPath":  "./processed-icons/powerpoint.svg"
                                                      },
@@ -3441,6 +3459,9 @@
                             "file-prettier-icon":  {
                                                        "iconPath":  "./processed-icons/prettier.svg"
                                                    },
+                            "file-printqueues-icon":  {
+                                                          "iconPath":  "./processed-icons/printqueues.jpg"
+                                                      },
                             "file-prisma-icon":  {
                                                      "iconPath":  "./processed-icons/prisma.svg"
                                                  },
@@ -3620,6 +3641,9 @@
                                                 },
                             "file-razzle-icon":  {
                                                      "iconPath":  "./processed-icons/razzle.svg"
+                                                 },
+                            "file-rdcman-icon":  {
+                                                     "iconPath":  "./processed-icons/rdcman.jpg"
                                                  },
                             "file-reactjs-icon":  {
                                                       "iconPath":  "./processed-icons/reactjs.svg"
@@ -3915,6 +3939,9 @@
                             "file-serverless-icon":  {
                                                          "iconPath":  "./processed-icons/serverless.svg"
                                                      },
+                            "file-servernew-icon":  {
+                                                        "iconPath":  "./processed-icons/servernew.jpg"
+                                                    },
                             "file-servicenow-icon":  {
                                                          "iconPath":  "./processed-icons/servicenow.jpg"
                                                      },
@@ -3932,6 +3959,9 @@
                                                  },
                             "file-shared-icon":  {
                                                      "iconPath":  "./processed-icons/shared.svg"
+                                                 },
+                            "file-shares-icon":  {
+                                                     "iconPath":  "./processed-icons/shares.jpg"
                                                  },
                             "file-shell-point-mortgage-icon":  {
                                                                    "iconPath":  "./processed-icons/shell-point-mortgage.png"
@@ -4126,7 +4156,7 @@
                                                           "iconPath":  "./processed-icons/stonebranch.png"
                                                       },
                             "file-storage-icon":  {
-                                                      "iconPath":  "./processed-icons/storage.jpg"
+                                                      "iconPath":  "./processed-icons/storage.png"
                                                   },
                             "file-story-icon":  {
                                                     "iconPath":  "./processed-icons/story.svg"
@@ -4209,6 +4239,9 @@
                             "file-syncpack-icon":  {
                                                        "iconPath":  "./processed-icons/syncpack.svg"
                                                    },
+                            "file-sysprep-icon":  {
+                                                      "iconPath":  "./processed-icons/sysprep.jpg"
+                                                  },
                             "file-systemd-icon":  {
                                                       "iconPath":  "./processed-icons/systemd.svg"
                                                   },
@@ -4362,6 +4395,9 @@
                             "file-tres-icon":  {
                                                    "iconPath":  "./processed-icons/tres.svg"
                                                },
+                            "file-troubleshooting-icon":  {
+                                                              "iconPath":  "./processed-icons/troubleshooting.png"
+                                                          },
                             "file-truffle-icon":  {
                                                       "iconPath":  "./processed-icons/truffle.svg"
                                                   },
@@ -4545,6 +4581,9 @@
                             "file-vhdl-icon":  {
                                                    "iconPath":  "./processed-icons/vhdl.svg"
                                                },
+                            "file-victorclient-icon":  {
+                                                           "iconPath":  "./processed-icons/victorclient.jpg"
+                                                       },
                             "file-video-icon":  {
                                                     "iconPath":  "./processed-icons/video.svg"
                                                 },
@@ -4572,6 +4611,9 @@
                             "file-vmware-icon":  {
                                                      "iconPath":  "./processed-icons/vmware.jpg"
                                                  },
+                            "file-vmwaretools-icon":  {
+                                                          "iconPath":  "./processed-icons/vmwaretools.jpg"
+                                                      },
                             "file-volt-icon":  {
                                                    "iconPath":  "./processed-icons/volt.svg"
                                                },
@@ -4686,6 +4728,9 @@
                             "file-windsurf-icon":  {
                                                        "iconPath":  "./processed-icons/windsurf.svg"
                                                    },
+                            "file-winrm-icon":  {
+                                                    "iconPath":  "./processed-icons/winrm.jpg"
+                                                },
                             "file-wispr-flow-icon":  {
                                                          "iconPath":  "./processed-icons/wispr-flow.png"
                                                      },
@@ -4839,6 +4884,7 @@
                         "ada":  "file-ada-icon",
                         "adfs":  "file-adfs-icon",
                         "adobe-firefly":  "file-adobe-firefly-icon",
+                        "adobeacrobat":  "file-adobeacrobat-icon",
                         "adp":  "file-adp-icon",
                         "aduc":  "file-aduc-icon",
                         "aduro":  "file-aduro-icon",
@@ -5143,6 +5189,7 @@
                         "default-folder":  "folder-default-folder-icon",
                         "default-root-folder":  "folder-default-root-folder-icon",
                         "dell":  "file-dell-icon",
+                        "dellcommandupdate":  "file-dellcommandupdate-icon",
                         "dellemc":  "file-dellemc-icon",
                         "dellservermanager":  "file-dellservermanager-icon",
                         "delphi":  "file-delphi-icon",
@@ -5153,11 +5200,13 @@
                         "design-tokens":  "file-design-tokens-icon",
                         "devcontainer":  "file-devcontainer-icon",
                         "devolutions":  "file-devolutions-icon",
+                        "devolutionsrdm":  "file-devolutionsrdm-icon",
                         "devvit":  "file-devvit-icon",
                         "dfs":  "file-dfs-icon",
                         "dhall":  "file-dhall-icon",
                         "didero":  "file-didero-icon",
                         "diff":  "file-diff-icon",
+                        "diskcleanup":  "file-diskcleanup-icon",
                         "disney+":  "file-disney+-icon",
                         "dist":  "file-dist-icon",
                         "django":  "file-django-icon",
@@ -5899,6 +5948,7 @@
                         "node2":  "file-node2-icon",
                         "nodemon":  "file-nodemon-icon",
                         "notebooks":  "file-notebooks-icon",
+                        "notepad++":  "file-notepad++-icon",
                         "notification":  "file-notification-icon",
                         "notifications":  "file-notification-icon",
                         "events":  "file-notification-icon",
@@ -6016,6 +6066,7 @@
                         "postman":  "file-postman-icon",
                         "postscript":  "file-postscript-icon",
                         "powerbi":  "file-powerbi-icon",
+                        "powercli":  "file-powercli-icon",
                         "powerpoint":  "file-powerpoint-icon",
                         "powerpoint2":  "file-powerpoint2-icon",
                         "powershell-format":  "file-powershell-format-icon",
@@ -6033,6 +6084,7 @@
                         "prepare":  "file-prepare-icon",
                         "presti":  "file-presti-icon",
                         "prettier":  "file-prettier-icon",
+                        "printqueues":  "file-printqueues-icon",
                         "prisma":  "file-prisma-icon",
                         "prismaconfig":  "file-prismaconfig-icon",
                         "private":  "file-public-icon",
@@ -6099,6 +6151,7 @@
                         "ravendb":  "file-ravendb-icon",
                         "razor":  "file-razor-icon",
                         "razzle":  "file-razzle-icon",
+                        "rdcman":  "file-rdcman-icon",
                         "reactjs":  "file-reactjs-icon",
                         "reactrouter":  "file-reactrouter-icon",
                         "reacttemplate":  "file-reacttemplate-icon",
@@ -6199,11 +6252,13 @@
                         "sequens-ai":  "file-sequens-ai-icon",
                         "server":  "file-server-icon",
                         "serverless":  "file-serverless-icon",
+                        "servernew":  "file-servernew-icon",
                         "servicenow":  "file-servicenow-icon",
                         "services":  "file-services-icon",
                         "shadcn":  "file-shadcn-icon",
                         "shaderlab":  "file-shaderlab-icon",
                         "shaped":  "file-shaped-icon",
+                        "shares":  "file-shares-icon",
                         "shell-point-mortgage":  "file-shell-point-mortgage-icon",
                         "shellcheck":  "file-shellcheck-icon",
                         "shutterstock":  "file-shutterstock-icon",
@@ -6295,6 +6350,7 @@
                         "swig":  "file-swig-icon",
                         "symfony":  "file-symfony-icon",
                         "syncpack":  "file-syncpack-icon",
+                        "sysprep":  "file-sysprep-icon",
                         "systemd":  "file-systemd-icon",
                         "systemverilog":  "file-systemverilog-icon",
                         "t2-platform-linux":  "file-t2-platform-linux-icon",
@@ -6361,6 +6417,7 @@
                         "travis":  "file-travis-icon",
                         "tree":  "file-tree-icon",
                         "tres":  "file-tres-icon",
+                        "troubleshooting":  "file-troubleshooting-icon",
                         "truffle":  "file-truffle-icon",
                         "trunk":  "file-trunk-icon",
                         "tsbuildinfo":  "file-tsbuildinfo-icon",
@@ -6424,6 +6481,7 @@
                         "veritas":  "file-veritas-icon",
                         "verizon":  "file-verizon-icon",
                         "vhdl":  "file-vhdl-icon",
+                        "victorclient":  "file-victorclient-icon",
                         "video":  "file-video-icon",
                         "videos":  "file-video-icon",
                         "vidyard":  "file-vidyard-icon",
@@ -6440,6 +6498,7 @@
                         "vitest":  "file-vitest-icon",
                         "vlang":  "file-vlang-icon",
                         "vmware":  "file-vmware-icon",
+                        "vmwaretools":  "file-vmwaretools-icon",
                         "volt":  "file-volt-icon",
                         "vroom":  "file-vroom-icon",
                         "vs":  "file-vs-icon",
@@ -6479,6 +6538,7 @@
                         "windi":  "file-windi-icon",
                         "windows":  "file-windows-icon",
                         "windsurf":  "file-windsurf-icon",
+                        "winrm":  "file-winrm-icon",
                         "wispr-flow":  "file-wispr-flow-icon",
                         "wit":  "file-wit-icon",
                         "wolfram":  "file-wolfram-icon",
@@ -6540,6 +6600,7 @@
                       "ada":  "file-ada-icon",
                       "adfs":  "file-adfs-icon",
                       "adobe-firefly":  "file-adobe-firefly-icon",
+                      "adobeacrobat":  "file-adobeacrobat-icon",
                       "adp":  "file-adp-icon",
                       "aduc":  "file-aduc-icon",
                       "aduro":  "file-aduro-icon",
@@ -6825,6 +6886,7 @@
                       "default-folder":  "folder-default-folder-icon",
                       "default-root-folder":  "folder-default-root-folder-icon",
                       "dell":  "file-dell-icon",
+                      "dellcommandupdate":  "file-dellcommandupdate-icon",
                       "dellemc":  "file-dellemc-icon",
                       "dellservermanager":  "file-dellservermanager-icon",
                       "delphi":  "file-delphi-icon",
@@ -6835,11 +6897,13 @@
                       "design-tokens":  "file-design-tokens-icon",
                       "devcontainer":  "file-devcontainer-icon",
                       "devolutions":  "file-devolutions-icon",
+                      "devolutionsrdm":  "file-devolutionsrdm-icon",
                       "devvit":  "file-devvit-icon",
                       "dfs":  "file-dfs-icon",
                       "dhall":  "file-dhall-icon",
                       "didero":  "file-didero-icon",
                       "diff":  "file-diff-icon",
+                      "diskcleanup":  "file-diskcleanup-icon",
                       "disney+":  "file-disney+-icon",
                       "dist":  "file-dist-icon",
                       "django":  "file-django-icon",
@@ -7590,6 +7654,7 @@
                       "node2":  "file-node2-icon",
                       "nodemon":  "file-nodemon-icon",
                       "notebooks":  "file-notebooks-icon",
+                      "notepad++":  "file-notepad++-icon",
                       "notification":  "file-notification-icon",
                       "npm":  "file-npm-icon",
                       "package.json":  "file-npm-icon",
@@ -7707,6 +7772,7 @@
                       "postman":  "file-postman-icon",
                       "postscript":  "file-postscript-icon",
                       "powerbi":  "file-powerbi-icon",
+                      "powercli":  "file-powercli-icon",
                       "powerpoint":  "file-powerpoint-icon",
                       "powerpoint2":  "file-powerpoint2-icon",
                       "powershell-format":  "file-powershell-format-icon",
@@ -7728,6 +7794,7 @@
                       ".prettierrc.js":  "file-prettier-icon",
                       ".prettierrc.json":  "file-prettier-icon",
                       ".prettierignore":  "file-prettier-icon",
+                      "printqueues":  "file-printqueues-icon",
                       "prisma":  "file-prisma-icon",
                       "prismaconfig":  "file-prismaconfig-icon",
                       "private":  "file-private-icon",
@@ -7795,6 +7862,7 @@
                       "ravendb":  "file-ravendb-icon",
                       "razor":  "file-razor-icon",
                       "razzle":  "file-razzle-icon",
+                      "rdcman":  "file-rdcman-icon",
                       "reactjs":  "file-reactjs-icon",
                       "reactrouter":  "file-reactrouter-icon",
                       "reacttemplate":  "file-reacttemplate-icon",
@@ -7895,12 +7963,14 @@
                       "sequens-ai":  "file-sequens-ai-icon",
                       "server":  "file-server-icon",
                       "serverless":  "file-serverless-icon",
+                      "servernew":  "file-servernew-icon",
                       "servicenow":  "file-servicenow-icon",
                       "services":  "file-services-icon",
                       "shadcn":  "file-shadcn-icon",
                       "shaderlab":  "file-shaderlab-icon",
                       "shaped":  "file-shaped-icon",
                       "shared":  "file-shared-icon",
+                      "shares":  "file-shares-icon",
                       "shell-point-mortgage":  "file-shell-point-mortgage-icon",
                       "shell":  "file-shell-icon",
                       "shellcheck":  "file-shellcheck-icon",
@@ -7993,6 +8063,7 @@
                       "swig":  "file-swig-icon",
                       "symfony":  "file-symfony-icon",
                       "syncpack":  "file-syncpack-icon",
+                      "sysprep":  "file-sysprep-icon",
                       "systemd":  "file-systemd-icon",
                       "systemverilog":  "file-systemverilog-icon",
                       "t2-platform-linux":  "file-t2-platform-linux-icon",
@@ -8048,6 +8119,7 @@
                       "travis":  "file-travis-icon",
                       "tree":  "file-tree-icon",
                       "tres":  "file-tres-icon",
+                      "troubleshooting":  "file-troubleshooting-icon",
                       "truffle":  "file-truffle-icon",
                       "trunk":  "file-trunk-icon",
                       "tsbuildinfo":  "file-tsbuildinfo-icon",
@@ -8112,6 +8184,7 @@
                       "veritas":  "file-veritas-icon",
                       "verizon":  "file-verizon-icon",
                       "vhdl":  "file-vhdl-icon",
+                      "victorclient":  "file-victorclient-icon",
                       "video":  "file-video-icon",
                       "vidyard":  "file-vidyard-icon",
                       "view":  "file-view-icon",
@@ -8123,6 +8196,7 @@
                       "vitest":  "file-vitest-icon",
                       "vlang":  "file-vlang-icon",
                       "vmware":  "file-vmware-icon",
+                      "vmwaretools":  "file-vmwaretools-icon",
                       "volt":  "file-volt-icon",
                       "vroom":  "file-vroom-icon",
                       "vs":  "file-vs-icon",
@@ -8165,6 +8239,7 @@
                       "windi":  "file-windi-icon",
                       "windows":  "file-windows-icon",
                       "windsurf":  "file-windsurf-icon",
+                      "winrm":  "file-winrm-icon",
                       "wispr-flow":  "file-wispr-flow-icon",
                       "wit":  "file-wit-icon",
                       "wolfram":  "file-wolfram-icon",
@@ -8294,6 +8369,7 @@
                            "rb":  "file-ruby-icon",
                            "erb":  "file-ruby-icon",
                            "rs":  "file-rust-icon",
+                           "sln":  "file-sln-icon",
                            "sql":  "file-sql-icon",
                            "svg":  "file-svg-icon",
                            "tf":  "file-terraform-icon",

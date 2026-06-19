@@ -40,6 +40,7 @@
   "certificate": ["crt", "cer", "pem", "key", "pfx"],
   "font": ["ttf", "otf", "woff", "woff2"],
   "Opentofu": ["tofu"],
+  "sln": ["sln"],
   "git": [],
   "github": [],
   "gitlab": [],
