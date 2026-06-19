@@ -126,6 +126,42 @@ if (-not (Test-Path $Processed)) {
 }
 
 # =========================
+# STEP 1.5 - AUTO MAPPINGS
+# =========================
+Write-Host "[STEP 1.5] Auto mapping generation" -ForegroundColor Yellow
+
+$mappingInput  = $Processed
+$mappingOutput = Join-Path $RepoRoot "config\mappings.auto.json"
+
+. "$RepoRoot\pipeline\MappingGenerator.ps1"
+
+Export-AutoMappings `
+    -InputPath $mappingInput `
+    -OutputPath $mappingOutput
+
+if (-not (Test-Path $mappingOutput)) {
+    throw "Auto mapping generation failed"
+}
+
+# =========================
+# STEP 1.6 - SEMANTIC INFERENCE (FIXED PATHING)
+# =========================
+Write-Host "[STEP 1.6] Semantic inference" -ForegroundColor Yellow
+
+$mappingOutput   = Join-Path $RepoRoot "config\mappings.auto.json"
+$semanticOutput  = Join-Path $RepoRoot "config\semantic.map.json"
+$baseMappings    = Join-Path $RepoRoot "config\mappings.json"
+
+. "$RepoRoot\pipeline\Invoke-SemanticInference.ps1"
+
+Invoke-SemanticInference `
+    -MappingsPath $baseMappings `
+    -AutoMappingsPath $mappingOutput `
+    -OutputPath $semanticOutput
+
+Write-Host "[OK] Semantic inference complete -> $semanticOutput" -ForegroundColor Green
+
+# =========================
 # STEP 2 - REGISTRY (HARD FIXED)
 # =========================
 Write-Host "`n[STEP 2] Registry build" -ForegroundColor Yellow

@@ -23,12 +23,18 @@ function Get-CanonicalName {
     }
 
     # normalize separators -> single hyphen (preserve word boundaries)
-    # Previously this deleted separators entirely (file_type_docker ->
-    # filetypedocker), which broke downstream prefix-stripping in
-    # Resolve-IconName (it expects hyphen-delimited prefixes like "file-")
-    # and also made unrelated names collide once digits were stripped below.
     $clean = $n -replace '[-_\s]+', '-'
     $clean = $clean.Trim('-')
+    
+    # VSCode Icons naming cleanup
+    $clean = $clean -replace '^folder-type-', ''
+    $clean = $clean -replace '^file-type-', ''
+    $clean = $clean -replace '^folder-', ''
+    $clean = $clean -replace '^file-', ''
+    $clean = $clean -replace '^type-', ''
+    
+    # optional cleanup
+    $clean = $clean -replace '-icon$', ''
 
     # NOTE: trailing digits are intentionally NOT stripped. Files like
     # docker.svg / docker2.svg / dockertest.svg / dockertest2.svg were

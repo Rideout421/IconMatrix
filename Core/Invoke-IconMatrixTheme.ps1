@@ -12,154 +12,107 @@ function Invoke-IconMatrixTheme {
         [switch]$DryRun
     )
 
-    Write-Host "`n=== ICONMATRIX THEME BUILD ===" -ForegroundColor Cyan
-    Write-Host "[DEBUG] RegistryPath  = $RegistryPath"
-    Write-Host "[DEBUG] IconsPath     = $IconsPath"
-    Write-Host "[DEBUG] ThemeFilePath = $ThemeFilePath"
+    Write-Host "`n=== ICONMATRIX THEME BUILD (FINAL SAFE MODE) ===" -ForegroundColor Cyan
+
+    if (-not (Test-Path $RegistryPath)) { throw "Registry missing: $RegistryPath" }
+
+    $registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
+
+    if (-not $registry.iconDefinitions) {
+        throw "Invalid registry: missing iconDefinitions"
+    }
+
+    # ================= ICON DEFINITIONS (STRICT VS CODE FORMAT) =================
+    $iconDefinitions = [ordered]@{}
+
+    foreach ($p in $registry.iconDefinitions.PSObject.Properties) {
+
+        $iconId = $p.Name
+        $value  = $p.Value
+
+        # FIX: enforce correct structure ALWAYS
+        if ($value -is [string]) {
+            $iconDefinitions[$iconId] = @{ iconPath = $value }
+        }
+        elseif ($value.iconPath) {
+            $iconDefinitions[$iconId] = @{ iconPath = $value.iconPath }
+        }
+    }
+
+    # ================= ICON LOOKUP =================
+    function Find-Icon($pattern) {
+        return ($iconDefinitions.Keys |
+            Where-Object { $_ -like $pattern } |
+            Select-Object -First 1)
+    }
+
+    # ================= DEFAULT RULES (HARD GUARANTEED) =================
+
+    $fileDefault = Find-Icon "*general*"
+    if (-not $fileDefault) { $fileDefault = Find-Icon "*file*" }
+
+    $rootFolder = Find-Icon "*rootfolder*"
+    if (-not $rootFolder) { $rootFolder = Find-Icon "*folder*" }
+
+    $folderDefault = $rootFolder
+    if (-not $folderDefault) { $folderDefault = $fileDefault }
+
+    # ================= SAFE MAP MERGE =================
+    $fileExtensions      = @{}
+    $fileNames           = @{}
+    $folderNames         = @{}
+    $folderNamesExpanded = @{}
+
+    foreach ($p in $registry.fileExtensions.PSObject.Properties) {
+        if ($iconDefinitions[$p.Value]) {
+            $fileExtensions[$p.Name.ToLower()] = $p.Value
+        }
+    }
+
+    foreach ($p in $registry.fileNames.PSObject.Properties) {
+        if ($iconDefinitions[$p.Value]) {
+            $fileNames[$p.Name.ToLower()] = $p.Value
+        }
+    }
+
+    foreach ($p in $registry.folderNames.PSObject.Properties) {
+        if ($iconDefinitions[$p.Value]) {
+            $key = $p.Name.ToLower()
+            $folderNames[$key] = $p.Value
+            $folderNamesExpanded[$key] = $p.Value
+        }
+    }
+
+    # ================= THEME =================
+    $theme = [ordered]@{
+        iconDefinitions = $iconDefinitions
+
+        fileExtensions = $fileExtensions
+        fileNames      = $fileNames
+
+        folderNames         = $folderNames
+        folderNamesExpanded = $folderNamesExpanded
+
+        file           = $fileDefault
+        folder         = $folderDefault
+        folderExpanded = $folderDefault
+
+        rootFolder         = $rootFolder
+        rootFolderExpanded = $rootFolder
+
+        folderOpen         = $folderDefault
+        folderOpenExpanded = $folderDefault
+
+        fileExtensionsDefault = $fileDefault
+    }
 
     if ($DryRun) {
-        Write-Host "[DRYRUN] Exiting before execution" -ForegroundColor Yellow
+        Write-Host "[DRYRUN] Skipping write" -ForegroundColor Yellow
         return
     }
 
-    # -------------------------
-    # VALIDATION
-    # -------------------------
-    if (-not (Test-Path $RegistryPath)) { throw "Registry missing: $RegistryPath" }
-    if (-not (Test-Path $IconsPath))    { throw "Icons folder missing: $IconsPath" }
-
-    # -------------------------
-    # LOAD REGISTRY
-    # -------------------------
-    $registry = Get-Content $RegistryPath -Raw | ConvertFrom-Json
-    if (-not $registry -or -not $registry.iconDefinitions) { 
-        throw "Registry JSON invalid or missing iconDefinitions" 
-    }
-
-    Write-Host "[DEBUG] Registry loaded - $($registry.iconDefinitions.Count) icons"
-
-    # -------------------------
-    # RESOLVE PATHS
-    # -------------------------
-    $ThemeFilePath = [System.IO.Path]::GetFullPath($ThemeFilePath)
-    $outDir        = Split-Path -Parent $ThemeFilePath
-    $IconsPath     = [System.IO.Path]::GetFullPath($IconsPath)
-
-    $fromUri       = [Uri]("$outDir\")
-    $toUri         = [Uri]($IconsPath)
-    $iconRelPrefix = $fromUri.MakeRelativeUri($toUri).ToString() -replace '%20',' '
-
-    Write-Host "[DEBUG] Icon relative prefix = $iconRelPrefix"
-
-    if (-not (Test-Path $outDir)) {
-        New-Item -ItemType Directory -Path $outDir -Force | Out-Null
-    }
-
-    # -------------------------
-    # REUSE REGISTRY iconDefinitions
-    # -------------------------
-    $iconDefinitions = [ordered]@{}
-    foreach ($entry in $registry.iconDefinitions.PSObject.Properties) {
-        $iconId = $entry.Name
-        $oldPath = $entry.Value.iconPath
-
-        if ($oldPath -like "./processed-icons/*") {
-            $relName = $oldPath.Substring("./processed-icons/".Length)
-            $newPath = "$iconRelPrefix/$relName" -replace '//','/'
-        } else {
-            $newPath = $oldPath
-        }
-        
-        $iconDefinitions[$iconId] = [ordered]@{ iconPath = $newPath }
-    }
-
-    Write-Host "[DEBUG] iconDefinitions reused = $($iconDefinitions.Count)"
-
-    # -------------------------
-    # BUILD MAPPINGS (filtered)
-    # -------------------------
-    $fileExtensions = [ordered]@{}
-    $fileNames      = [ordered]@{}
-    $folderNames    = [ordered]@{}
-    $folderNamesExpanded = [ordered]@{}
-
-    $mappedExt = 0; $mappedName = 0; $mappedFolder = 0
-
-    if ($registry.fileExtensions) {
-        foreach ($p in $registry.fileExtensions.PSObject.Properties) {
-            $iconId = $p.Value
-            if ($iconDefinitions.Contains($iconId)) {
-                $fileExtensions[$p.Name] = $iconId
-                $mappedExt++
-            } else {
-                Write-Host "[SKIP-EXT] '$($p.Name)' -> '$iconId' (icon not found)" -ForegroundColor DarkYellow
-            }
-        }
-    }
-
-    if ($registry.fileNames) {
-        foreach ($p in $registry.fileNames.PSObject.Properties) {
-            $iconId = $p.Value
-            if ($iconDefinitions.Contains($iconId)) {
-                $fileNames[$p.Name] = $iconId
-                $mappedName++
-            } else {
-                Write-Host "[SKIP-NAME] '$($p.Name)' -> '$iconId' (icon not found)" -ForegroundColor DarkYellow
-            }
-        }
-    }
-
-    if ($registry.folderNames) {
-        foreach ($p in $registry.folderNames.PSObject.Properties) {
-            $iconId = $p.Value
-            if ($iconDefinitions.Contains($iconId)) {
-                $folderNames[$p.Name] = $iconId
-                $folderNamesExpanded[$p.Name] = $iconId
-                $mappedFolder++
-            }
-        }
-    }
-
-    Write-Host "[DEBUG] fileExtensions mapped = $mappedExt"
-    Write-Host "[DEBUG] fileNames mapped      = $mappedName"
-    Write-Host "[DEBUG] folderNames mapped    = $mappedFolder"
-
-    # -------------------------
-    # DEFAULT ICON
-    # -------------------------
-    $defaultIconId = "general-icon"
-    if (-not $iconDefinitions.Contains($defaultIconId)) {
-        $defaultIconId = if ($iconDefinitions.Contains("file-icon")) { 
-            "file-icon" 
-        } else {
-            $iconDefinitions.Keys | Where-Object { $_ -like "*file*" } | Select-Object -First 1
-        }
-        if (-not $defaultIconId) {
-            $defaultIconId = $iconDefinitions.Keys | Select-Object -First 1
-        }
-    }
-
-    Write-Host "[DEBUG] Default icon = $defaultIconId" -ForegroundColor Cyan
-
-    # -------------------------
-    # FINAL THEME
-    # -------------------------
-    $theme = [ordered]@{
-        iconDefinitions     = $iconDefinitions
-        fileExtensions      = $fileExtensions
-        fileNames           = $fileNames
-        folderNames         = $folderNames
-        folderNamesExpanded = $folderNamesExpanded
-        file                = $defaultIconId
-        folder              = $defaultIconId
-        folderExpanded      = $defaultIconId
-        rootFolder          = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
-        rootFolderExpanded  = if ($iconDefinitions.Contains("rootfolder-icon")) { "rootfolder-icon" } else { $defaultIconId }
-    }
-
-    $json = $theme | ConvertTo-Json -Depth 50
+    $json = $theme | ConvertTo-Json -Depth 100
     Set-Content -Path $ThemeFilePath -Value $json -Encoding UTF8 -Force
 
-    $size = (Get-Item $ThemeFilePath).Length
-    Write-Host "[SUCCESS] Theme written ($size bytes) -> $ThemeFilePath" -ForegroundColor Green
+    Write-Host "[SUCCESS] Theme written -> $ThemeFilePath" -ForegroundColor Green
 }

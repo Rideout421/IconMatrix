@@ -1,41 +1,33 @@
 <#
 ================================================================================
  ICONMATRIX CLEAN RESET TOOL
+ SAFE PIPELINE RESET UTILITY
 ================================================================================
 
-USAGE FLOW (IMPORTANT):
+USAGE
 
-1. ALWAYS RUN FIRST:
-
+Pipeline health check (recommended first):
 & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\PipelineHealthCheck.ps1")
 
-2. DRY RUN (SAFE / NO CHANGES):
-
+Dry run (no changes):
 & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1")
 
-3. IF EVERYTHING LOOKS GOOD:
-
+Execute reset:
 & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1") -Confirm
 
-4. OPTIONAL FULL WIPE (SOURCE MACHINE ONLY):
-
+Full reset (includes source icons):
 & (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1") -Confirm -FullReset
 
 
-================================================================================
- MODES:
+PARAMETERS
 
-- Default (no flags)
-  → Dry-run preview only (safe mode / no changes)
-
-- -Confirm
-  → Required to execute cleanup
-
-- -FullReset
-  → ALSO deletes source-icons (ONLY use on source machine)
+- Default  → Dry-run mode (safe)
+- -Confirm → Executes cleanup
+- -FullReset → Includes source-icons (destructive)
 
 ================================================================================
 #>
+
 param(
     [switch]$Confirm,
     [switch]$FullReset
@@ -43,19 +35,14 @@ param(
 
 Write-Host "`n=== ICONMATRIX CLEAN RESET ===`n" -ForegroundColor Cyan
 
-$RepoRoot = Split-Path -Parent (
-                Split-Path -Parent (
-                    Split-Path -Parent $PSScriptRoot
-                )
-            )
+# ========================= BASE PATH =========================
+$RepoRoot = Join-Path $env:GIT_ROOT "IconMatrix"
 
 Write-Host "RepoRoot = $RepoRoot" -ForegroundColor Cyan
 Write-Host "STEP 1: Run PipelineHealthCheck first" -ForegroundColor Yellow
 Write-Host "STEP 2: Confirm system state before cleanup`n" -ForegroundColor Yellow
 
-# =========================
-# DRY RUN MODE
-# =========================
+# ========================= DRY RUN =========================
 if (-not $Confirm) {
 
     Write-Host "DRY RUN MODE (NO CHANGES)`n" -ForegroundColor Yellow
@@ -63,6 +50,8 @@ if (-not $Confirm) {
     $previewTargets = @(
         "$RepoRoot\processed-icons\*",
         "$RepoRoot\config\icon-manifest.json",
+        "$RepoRoot\config\mappings.auto.json",
+        "$RepoRoot\config\semantic.map.json",
         "$RepoRoot\registry\icons.json",
         "$RepoRoot\theme\icons-theme.json"
     )
@@ -87,35 +76,38 @@ if (-not $Confirm) {
     return
 }
 
-# =========================
-# SAFE TARGETS (ALWAYS CLEANED)
-# =========================
+# ========================= TARGETS =========================
 $targets = @(
     "$RepoRoot\processed-icons\*",
     "$RepoRoot\config\icon-manifest.json",
+    "$RepoRoot\config\mappings.auto.json",
+    "$RepoRoot\config\semantic.map.json",
     "$RepoRoot\registry\icons.json",
     "$RepoRoot\theme\icons-theme.json"
 )
 
-# =========================
-# OPTIONAL SOURCE CLEAN (ONLY FULL RESET)
-# =========================
+# ========================= OPTIONAL FULL RESET =========================
 if ($FullReset) {
     Write-Host "FULL RESET ENABLED -> source-icons WILL BE DELETED" -ForegroundColor Red
     $targets += "$RepoRoot\source-icons\*"
-} else {
+}
+else {
     Write-Host "SAFE MODE -> source-icons preserved" -ForegroundColor Green
 }
 
-# =========================
-# EXECUTION
-# =========================
+# ========================= EXECUTION =========================
 foreach ($t in $targets) {
-    if (Test-Path $t) {
-        Remove-Item $t -Recurse -Force -ErrorAction SilentlyContinue
-        Write-Host "CLEANED -> $t" -ForegroundColor Green
-    } else {
-        Write-Host "SKIP -> $t (not found)" -ForegroundColor DarkGray
+    try {
+        if (Test-Path $t) {
+            Remove-Item $t -Recurse -Force -ErrorAction Stop
+            Write-Host "CLEANED -> $t" -ForegroundColor Green
+        }
+        else {
+            Write-Host "SKIP -> $t (not found)" -ForegroundColor DarkGray
+        }
+    }
+    catch {
+        Write-Host "FAILED -> $t | $($_.Exception.Message)" -ForegroundColor Red
     }
 }
 
