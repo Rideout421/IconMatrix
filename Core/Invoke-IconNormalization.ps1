@@ -114,11 +114,10 @@ function Invoke-IconNormalization {
 
             try {
 
-                & magick $keep.FullName `
+                 & magick $keep.FullName `
                     -alpha set `
-                    -fuzz 25% `
-                    -fill none `
-                    -draw "color 0,0 floodfill" `
+                    -fuzz 2% `
+                    -transparent white `
                     -trim `
                     +repage `
                     -resize 220x220 `
