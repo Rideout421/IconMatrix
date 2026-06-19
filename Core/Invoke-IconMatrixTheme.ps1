@@ -143,7 +143,7 @@ function Invoke-IconMatrixTheme {
     $theme = [ordered]@{
         iconDefinitions = $iconDefinitions
 
-        extensions = $fileExtensions
+        fileExtensions = $fileExtensions
         fileNames  = $fileNames
         folderNames = $folderNames
 
