@@ -2,8 +2,9 @@
   "name": "iconmatrix",
   "displayName": "IconMatrix",
   "description": "Custom registry-driven VS Code file icon theme.",
-  "version": "1.0.0",
-  "publisher": "Rideout",
+  "version": "4.2.1",
+  "publisher": "Rideout421",
+  "icon": "./Images/Icon.png",
   "engines": {
     "vscode": "^1.80.0"
   },

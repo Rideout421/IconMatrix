@@ -1,5 +1,5 @@
-$BasePath   = 'E:\Users\Rideout421\Pictures\Keypass_Icons'
-$OutputPath = Join-Path $env:GIT_ROOT 'VSCode-Icons\Powershell\FileCapture\Icons.txt'
+$BasePath   = 'E:\Users\Rideout421\Pictures\Icons'
+$OutputPath = Join-Path $env:GIT_ROOT 'IconMatrix\logs\Icons.txt'
 
 # Ensure output folder exists
 $OutputFolder = Split-Path $OutputPath -Parent

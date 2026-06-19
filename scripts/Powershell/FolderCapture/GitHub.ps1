@@ -1,4 +1,4 @@
-$Root = "D:\Users\Rideout421\Documents\GitHub"
+$Root = $env:GIT_ROOT
 
 Get-ChildItem $Root -Directory -Recurse -Force |
 Where-Object {
@@ -8,4 +8,4 @@ Where-Object {
 } |
 Select-Object -ExpandProperty Name |
 Sort-Object -Unique |
-Set-Content "D:\Users\Rideout421\Documents\GitHub\IconMatrix\logs\FolderNames.txt"
+Set-Content (Join-Path $env:GIT_ROOT 'IconMatrix\logs\GitHubFolders.txt')

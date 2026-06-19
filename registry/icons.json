@@ -1677,6 +1677,9 @@
                             "file-icloud-icon":  {
                                                      "iconPath":  "./processed-icons/icloud.jpg"
                                                  },
+                            "file-iconmatrix-4.2.1-icon":  {
+                                                               "iconPath":  "./processed-icons/iconmatrix-4.2.1.png"
+                                                           },
                             "file-id-me-icon":  {
                                                     "iconPath":  "./processed-icons/id-me.png"
                                                 },
@@ -5468,6 +5471,7 @@
                         "ice":  "file-ice-icon",
                         "icl":  "file-icl-icon",
                         "icloud":  "file-icloud-icon",
+                        "iconmatrix-4.2.1":  "file-iconmatrix-4.2.1-icon",
                         "id-me":  "file-id-me-icon",
                         "idea":  "file-idea-icon",
                         "idris":  "file-idris-icon",
@@ -7182,6 +7186,7 @@
                       "ice":  "file-ice-icon",
                       "icl":  "file-icl-icon",
                       "icloud":  "file-icloud-icon",
+                      "iconmatrix-4.2.1":  "file-iconmatrix-4.2.1-icon",
                       "id-me":  "file-id-me-icon",
                       "idea":  "file-idea-icon",
                       "idris":  "file-idris-icon",
