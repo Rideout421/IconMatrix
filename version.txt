@@ -1,11 +1,10 @@
-﻿Version: 44
-Timestamp: 06-19-2026 02-20-PM
+﻿Version: 45
+Timestamp: 06-19-2026 03-08-PM
 Changed files:
 "processed-icons/inr\305\215.png"
 "processed-icons/turbotax\302\256.png"
 config/icon-manifest.json
-config/mappings.auto.json
-config/semantic.map.json
+Core/Invoke-IconNormalization.ps1
 iconmatrix-1.0.0.vsix
 processed-icons/.net.png
 processed-icons/121fcu.png
@@ -35,10 +34,8 @@ processed-icons/artbreeder.png
 processed-icons/asus.png
 processed-icons/at&t.png
 processed-icons/atena.png
-processed-icons/autopatch.jpg
 processed-icons/awx.png
 processed-icons/azureadsync.png
-processed-icons/azurearc.jpg
 processed-icons/azureblob.png
 processed-icons/barclays.png
 processed-icons/baseconfig.png
@@ -47,7 +44,6 @@ processed-icons/batch.png
 processed-icons/benefits.png
 processed-icons/betterment.png
 processed-icons/bik.png
-processed-icons/bitlocker.jpg
 processed-icons/bizplanr.png
 processed-icons/bjs.png
 processed-icons/blaze.png
@@ -82,13 +78,10 @@ processed-icons/cornerstone.png
 processed-icons/craiyon.png
 processed-icons/crewting.png
 processed-icons/cyberark.png
-processed-icons/data.jpg
 processed-icons/deepai.png
 processed-icons/deep-dream-generator.png
-processed-icons/deepwatch.jpg
 processed-icons/dell.png
 processed-icons/dellemc.png
-processed-icons/dellservermanager.jpg
 processed-icons/devolutions.png
 processed-icons/dfs.png
 processed-icons/didero.png
@@ -110,7 +103,6 @@ processed-icons/fedora.png
 processed-icons/fidelity.png
 processed-icons/find-it-now-gps.png
 processed-icons/firefox.png
-processed-icons/firewall.jpg
 processed-icons/flir.png
 processed-icons/floridablue.png
 processed-icons/florida-dcf.png
@@ -144,7 +136,6 @@ processed-icons/hpe.png
 processed-icons/hubflo.png
 processed-icons/hugging-face.png
 processed-icons/hulu.png
-processed-icons/iac.jpg
 processed-icons/ibm-cloud.png
 processed-icons/ibmdb2.png
 processed-icons/ice.png
@@ -154,7 +145,6 @@ processed-icons/iffft.png
 processed-icons/iis.png
 processed-icons/instagram.png
 processed-icons/interviews-chat.png
-processed-icons/intune.jpg
 processed-icons/ivanti.png
 processed-icons/jamf.png
 processed-icons/jasper-art.png
@@ -183,12 +173,10 @@ processed-icons/looka.png
 processed-icons/lorexcloud.png
 processed-icons/loveable.png
 processed-icons/lowe's.png
-processed-icons/lvm.jpg
 processed-icons/magicjack.png
 processed-icons/manus.png
 processed-icons/marketingblocks-ai.png
 processed-icons/mbb-radiology.png
-processed-icons/mcafee.jpg
 processed-icons/mentimeter.png
 processed-icons/metaview.png
 processed-icons/microsoft.png
@@ -206,17 +194,14 @@ processed-icons/myjax.png
 processed-icons/myspace-mobsters.png
 processed-icons/namelix.png
 processed-icons/namify.png
-processed-icons/nano.jpg
 processed-icons/navient.png
 processed-icons/netflix.png
 processed-icons/netscaler.png
-processed-icons/network.jpg
 processed-icons/next-right-management.png
 processed-icons/nintendo-switch.png
 processed-icons/ocoya.png
 processed-icons/odoo.png
 processed-icons/office.png
-processed-icons/office365.jpg
 processed-icons/openfaas.png
 processed-icons/opentext.png
 processed-icons/opinion-stage.png
@@ -235,7 +220,6 @@ processed-icons/pic.png
 processed-icons/pika.png
 processed-icons/pixray.png
 processed-icons/playstation.png
-processed-icons/plink.jpg
 processed-icons/pluralsight.png
 processed-icons/pnc-bank.png
 processed-icons/poe.png
@@ -278,16 +262,13 @@ processed-icons/salliemae.png
 processed-icons/samwell-ai.png
 processed-icons/sap.png
 processed-icons/scadepro.png
-processed-icons/sccm.jpg
 processed-icons/sccm-reports.png
 processed-icons/scribe.png
 processed-icons/second-me.png
 processed-icons/secret.png
-processed-icons/security.jpg
 processed-icons/security-first-insurance.png
 processed-icons/semrush.png
 processed-icons/sentinalone.png
-processed-icons/sentinelone.jpg
 processed-icons/shaped.png
 processed-icons/shell-point-mortgage.png
 processed-icons/shutterstock.png
@@ -298,7 +279,6 @@ processed-icons/smartscreen.png
 processed-icons/solarwinds.png
 processed-icons/sonnet.png
 processed-icons/speech-to-note.png
-processed-icons/speedtest.jpg
 processed-icons/spiceworks.png
 processed-icons/spinachai.png
 processed-icons/stablecog.png
@@ -308,7 +288,6 @@ processed-icons/steam.png
 processed-icons/stigs.png
 processed-icons/stockimg-ai.png
 processed-icons/stonebranch.png
-processed-icons/storage.jpg
 processed-icons/storycheif.png
 processed-icons/surveymonkey.png
 processed-icons/suse.png
@@ -316,7 +295,6 @@ processed-icons/talently-ai.png
 processed-icons/talentquest.png
 processed-icons/talknotes.png
 processed-icons/taskade.png
-processed-icons/teams.jpg
 processed-icons/teladoc.png
 processed-icons/the-leap.png
 processed-icons/the-linux-foundation.png
@@ -331,27 +309,20 @@ processed-icons/ubuntu.png
 processed-icons/ucs-manager.png
 processed-icons/united-health-care.png
 processed-icons/usbank.png
-processed-icons/uwf.jpg
 processed-icons/vance-ai.png
-processed-icons/vbscript.jpg
 processed-icons/veeam.png
 processed-icons/venafi.png
 processed-icons/vendor-support.png
 processed-icons/verizon.png
 processed-icons/vidyard.png
 processed-icons/vscodeuser.png
-processed-icons/wakeonlan.jpg
 processed-icons/walling.png
-processed-icons/web.jpg
 processed-icons/wells-fargo.png
 processed-icons/wispr-flow.png
 processed-icons/wombo-dream.png
 processed-icons/wordpress.png
 processed-icons/workingadvantage.png
-processed-icons/wsl.jpg
 processed-icons/x.png
 processed-icons/zapier.png
 processed-icons/zelle.png
 processed-icons/zoom.png
-registry/icons.json
-theme/icons-theme.json
