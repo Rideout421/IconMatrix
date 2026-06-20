@@ -1,5 +1,8 @@
 ﻿{
     "extensions":  {
+                       "js":  [
+                                  "js"
+                              ],
                        "docker":  [
                                       "dockerfile",
                                       "dockerignore",
@@ -50,10 +53,16 @@
                                     "rb",
                                     "erb"
                                 ],
+                       "jar":  [
+                                   "jar"
+                               ],
                        "typescript":  [
                                           "ts",
                                           "tsx"
                                       ],
+                       "vbproj":  [
+                                      "vbproj"
+                                  ],
                        "cpp":  [
                                    "cpp",
                                    "cc",
@@ -87,6 +96,12 @@
                        "rust":  [
                                     "rs"
                                 ],
+                       "scss":  [
+                                    "scss"
+                                ],
+                       "key":  [
+                                   "key"
+                               ],
                        "svg":  [
                                    "svg"
                                ],
@@ -94,6 +109,9 @@
                                        "graphql",
                                        "gql"
                                    ],
+                       "csproj":  [
+                                      "csproj"
+                                  ],
                        "image":  [
                                      "png",
                                      "jpg",
@@ -121,6 +139,15 @@
                                      "bat",
                                      "cmd"
                                  ],
+                       "less":  [
+                                    "less"
+                                ],
+                       "bat":  [
+                                   "bat"
+                               ],
+                       "editorconfig":  [
+                                            "editorconfig"
+                                        ],
                        "html":  [
                                     "html",
                                     "htm"
@@ -131,6 +158,9 @@
                        "csharp":  [
                                       "cs"
                                   ],
+                       "mdx":  [
+                                   "mdx"
+                               ],
                        "certificate":  [
                                            "crt",
                                            "cer",
@@ -138,6 +168,9 @@
                                            "key",
                                            "pfx"
                                        ],
+                       "vsixmanifest":  [
+                                            "vsixmanifest"
+                                        ],
                        "toml":  [
                                     "toml"
                                 ],
@@ -148,12 +181,18 @@
                        "sql":  [
                                    "sql"
                                ],
+                       "sass":  [
+                                    "sass"
+                                ],
                        "go":  [
                                   "go"
                               ],
                        "bicep":  [
                                      "bicep"
                                  ],
+                       "vsix":  [
+                                    "vsix"
+                                ],
                        "word":  [
                                     "docx",
                                     "doc"
@@ -168,6 +207,12 @@
                                           "psd1",
                                           "ps1xml"
                                       ],
+                       "xsl":  [
+                                   "xsl"
+                               ],
+                       "erb":  [
+                                   "erb"
+                               ],
                        "Opentofu":  [
                                         "tofu"
                                     ],
@@ -188,7 +233,10 @@
                                       ],
                        "php":  [
                                    "php"
-                               ]
+                               ],
+                       "class":  [
+                                     "class"
+                                 ]
                    },
     "fileNames":  {
                       "concur":  [

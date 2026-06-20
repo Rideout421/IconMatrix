@@ -43,7 +43,7 @@ function Export-AutoMappings {
     }
 
     # ========================= NORMALIZATION =========================
-    function Normalize-Key {
+    function ConvertTo-NormalizedKey {
         param([string]$name)
 
         $n = $name.ToLower().Trim()
@@ -65,30 +65,46 @@ function Export-AutoMappings {
         return $n
     }
 
+    # ========================= KNOWN EXTENSIONS (ALLOWLIST) =========================
+    # Used so an icon literally named after a real extension (e.g. "vsix",
+    # "rs", "go", "tf") auto-registers itself for that extension, WITHOUT
+    # risking false positives from icon names that merely resemble an
+    # extension but aren't one (e.g. an icon named "app" should not claim
+    # a nonexistent ".app" extension just because the word sounds plausible).
+    # This list intentionally excludes ambiguous/shared extensions that are
+    # already hand-routed to a specific owner below (ps1, yml, yaml, json,
+    # jsonc, dockerfile) so one icon doesn't silently steal another
+    # vendor's extension - e.g. yml stays with whichever icon the explicit
+    # switch block below assigns it to, not whichever icon happens to be
+    # named "yml" if one ever gets added.
+    $knownExtensions = @(
+        'ps1','psm1','psd1','ps1xml','jsonc','md','mdx','markdown','txt',
+        'xml','xsd','xsl','xslt','csproj','vbproj','props','targets',
+        'js','jsx','mjs','cjs','ts','tsx','py','pyw','pyi','sh','bash',
+        'zsh','fish','bat','cmd','css','less','scss','sass','html','htm',
+        'svg','png','jpg','jpeg','gif','bmp','webp','ico','tiff','docx',
+        'doc','xlsx','xls','xlsm','csv','pptx','ppt','pdf','tf','tfvars',
+        'tfstate','bicep','rs','go','rb','erb','php','java','class','jar',
+        'cs','cpp','cc','cxx','hpp','c','h','sql','graphql','gql','toml',
+        'ini','cfg','conf','env','zip','tar','gz','7z','rar','crt','cer',
+        'pem','key','pfx','ttf','otf','woff','woff2','tofu','vsix','vsixmanifest',
+        'gitattributes','gitignore','dockerignore','editorconfig'
+    )
+
     # ========================= PIPELINE =========================
     foreach ($f in $files) {
 
         $rawBase = $f.BaseName.ToLower().Trim()
         if ([string]::IsNullOrWhiteSpace($rawBase)) { continue }
 
-        # detect folder vs file from RAW name ONLY
-        #
-        # NOTE: the original pattern '^folder[_-]' assumed every folder icon
-        # is literally named like "folder-docker.svg". In this icon set none
-        # of them are - the real folder icons are named:
-        #   default-folder, default-root-folder, ps1folder, rootfolder
-        # which don't share one prefix/suffix convention. Matching only the
-        # old prefix classified 100% of files (including all folder icons)
-        # as "file", which is why folderNames came out empty downstream.
-        #
-        # Match "folder" anywhere in the name (as a whole word-ish token),
-        # which covers all four known conventions. This $kind value is now
-        # ONLY used for cosmetic bookkeeping (it doesn't gate which map the
-        # name goes into below) - see FOLDER / FILE MAPPING section.
-        $kind = if ($rawBase -match 'folder') { "folder" } else { "file" }
+        # NOTE: folder-vs-file classification used to gate which map an
+        # icon was added to (fileNames vs folderNames). That logic was
+        # removed in favor of every icon being eligible for both maps
+        # unconditionally (see FOLDER / FILE MAPPING below), so there's
+        # no classification variable to compute here anymore.
 
         # normalize semantic key
-        $key = Normalize-Key $rawBase
+        $key = ConvertTo-NormalizedKey $rawBase
 
         # ========================= EXTENSIONS =========================
         switch -Regex ($rawBase) {
@@ -114,6 +130,21 @@ function Export-AutoMappings {
             'yaml' {
                 Add-ToMap $extensions 'yaml' 'yaml'
                 Add-ToMap $extensions 'yaml' 'yml'
+            }
+        }
+
+        # Generic auto-detection: if the icon's own normalized name IS a
+        # real, known extension (e.g. icon "vsix.png" -> extension "vsix"),
+        # register it automatically. Skipped for names already handled by
+        # the explicit switch block above, so a hardcoded multi-extension
+        # owner (e.g. "docker" owning yml/yaml/dockerfile) is never
+        # silently overridden by this generic pass - Add-ToMap is additive
+        # and de-duplicating, but we still avoid creating a NEW competing
+        # owner for an extension that already has one assigned above.
+        if ($knownExtensions -contains $key) {
+            $alreadyOwned = $extensions.Values | Where-Object { $_ -contains $key }
+            if (-not $alreadyOwned) {
+                Add-ToMap $extensions $key $key
             }
         }
 

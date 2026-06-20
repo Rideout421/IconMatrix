@@ -143,9 +143,27 @@ function Invoke-IconMatrixTheme {
     $theme = [ordered]@{
         iconDefinitions = $iconDefinitions
 
+        # NOTE: VS Code's icon-theme schema requires the top-level key to be
+        # "fileExtensions", NOT "extensions". "extensions" is not a
+        # recognized field at all, so VS Code silently ignores it (same
+        # silent-failure pattern as the earlier array-vs-string bug). This
+        # was the actual root cause of extensions never rendering even
+        # though the underlying data (104 clean entries) was correct the
+        # whole time.
         fileExtensions = $fileExtensions
         fileNames  = $fileNames
         folderNames = $folderNames
+
+        # NOTE: folderNames has no automatic "open" counterpart in VS
+        # Code's schema - without folderNamesExpanded, EVERY named folder
+        # (Docker, GitHub, any per-icon folder match) falls back to the
+        # single global folderExpanded default when opened, even though it
+        # had its own distinct icon while closed. That fallback icon is
+        # what looked like an unwanted "manila folder" switch on open.
+        # Mirroring folderNames into folderNamesExpanded with the SAME
+        # icon per name means every named folder keeps its exact look
+        # whether open or closed.
+        folderNamesExpanded = $folderNames
 
         file           = $fileDefault
         folder         = $folderDefault

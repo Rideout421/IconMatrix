@@ -1,24 +1,132 @@
 ﻿{
     "extensions":  {
+                       "js":  [
+                                  "js"
+                              ],
+                       "svg":  [
+                                   "svg"
+                               ],
+                       "docker":  [
+                                      "dockerfile",
+                                      "yml",
+                                      "yaml"
+                                  ],
+                       "class":  [
+                                     "class"
+                                 ],
+                       "zip":  [
+                                   "zip"
+                               ],
+                       "bash":  [
+                                    "bash"
+                                ],
+                       "pdf":  [
+                                   "pdf"
+                               ],
+                       "txt":  [
+                                   "txt"
+                               ],
+                       "java":  [
+                                    "java"
+                                ],
+                       "jar":  [
+                                   "jar"
+                               ],
+                       "vbproj":  [
+                                      "vbproj"
+                                  ],
+                       "cpp":  [
+                                   "cpp"
+                               ],
+                       "key":  [
+                                   "key"
+                               ],
+                       "bicep":  [
+                                     "bicep"
+                                 ],
+                       "graphql":  [
+                                       "graphql"
+                                   ],
+                       "csproj":  [
+                                      "csproj"
+                                  ],
+                       "css":  [
+                                   "css"
+                               ],
+                       "markdown":  [
+                                        "markdown"
+                                    ],
+                       "env":  [
+                                   "env"
+                               ],
+                       "php":  [
+                                   "php"
+                               ],
+                       "bat":  [
+                                   "bat"
+                               ],
+                       "editorconfig":  [
+                                            "editorconfig"
+                                        ],
+                       "html":  [
+                                    "html"
+                                ],
+                       "ini":  [
+                                   "ini"
+                               ],
+                       "xsl":  [
+                                   "xsl"
+                               ],
+                       "mdx":  [
+                                   "mdx"
+                               ],
+                       "vsixmanifest":  [
+                                            "vsixmanifest"
+                                        ],
+                       "c":  [
+                                 "c"
+                             ],
+                       "sql":  [
+                                   "sql"
+                               ],
+                       "sass":  [
+                                    "sass"
+                                ],
+                       "go":  [
+                                  "go"
+                              ],
+                       "vsix":  [
+                                    "vsix"
+                                ],
+                       "xml":  [
+                                   "xml"
+                               ],
+                       "json":  [
+                                    "json",
+                                    "jsonc"
+                                ],
                        "powershell":  [
                                           "ps1",
                                           "psm1",
                                           "psd1",
                                           "ps1xml"
                                       ],
-                       "json":  [
-                                    "json",
-                                    "jsonc"
+                       "scss":  [
+                                    "scss"
+                                ],
+                       "erb":  [
+                                   "erb"
+                               ],
+                       "toml":  [
+                                    "toml"
                                 ],
                        "yaml":  [
                                     "yaml",
                                     "yml"
                                 ],
-                       "docker":  [
-                                      "dockerfile",
-                                      "yml",
-                                      "yaml"
-                                  ]
+                       "less":  [
+                                    "less"
+                                ]
                    },
     "fileNames":  {
                       "concur":  [
