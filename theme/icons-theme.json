@@ -1677,9 +1677,6 @@
                             "file-icloud-icon":  {
                                                      "iconPath":  "../processed-icons/icloud.jpg"
                                                  },
-                            "file-iconmatrix-4.2.1-icon":  {
-                                                               "iconPath":  "../processed-icons/iconmatrix-4.2.1.png"
-                                                           },
                             "file-id-me-icon":  {
                                                     "iconPath":  "../processed-icons/id-me.png"
                                                 },
@@ -6491,7 +6488,6 @@
                       "go-lightblue":  "file-go-lightblue-icon",
                       "manus":  "file-manus-icon",
                       "markdownlint-ignore":  "file-markdownlint-ignore-icon",
-                      "iconmatrix-4.2.1":  "file-iconmatrix-4.2.1-icon",
                       "pypi":  "file-pypi-icon",
                       "light-astroconfig":  "file-light-astroconfig-icon",
                       "swc":  "file-swc-icon",
@@ -8211,7 +8207,6 @@
                         "go-lightblue":  "file-go-lightblue-icon",
                         "manus":  "file-manus-icon",
                         "markdownlint-ignore":  "file-markdownlint-ignore-icon",
-                        "iconmatrix-4.2.1":  "file-iconmatrix-4.2.1-icon",
                         "pypi":  "file-pypi-icon",
                         "light-astroconfig":  "file-light-astroconfig-icon",
                         "swc":  "file-swc-icon",
