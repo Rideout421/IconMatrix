@@ -11,6 +11,9 @@
     processed-icons, matched against real GitHub workspace folder names by NAME, not by a
     JSON config.
 
+    [Updated] Now handles Name|RelativePath format from GitHub.ps1 so duplicate folder
+    names in different locations are preserved as separate rows in the report.
+
     ALWAYS FRESH DATA: before anything else, this script runs GitHub.ps1 and Icons.ps1 itself.
     Those two scripts already write their output straight to
     IconMatrix\logs\GitHubFolders.txt and IconMatrix\logs\Icons.txt, so by the time this script
@@ -26,35 +29,26 @@
          in by hand as you fix things.
       2. Fix folders/icons (rename, delete, add new icons).
       3. Re-run this script. It re-captures fresh data, and anything already marked "Done" in
-         the previous run is carried forward automatically (matched by folder name) so you don't
-         lose your progress. The MissingIcon/CloseMatch/Junk lists should get smaller each time
-         as you clean things up.
+         the previous run is carried forward automatically (now matched by Name|RelativePath)
+         so you don't lose your progress. The MissingIcon/CloseMatch/Junk lists should get
+         smaller each time as you clean things up.
 
     Matching logic:
       - "Matched"     : folder name and an icon name are identical once both are normalized
                         (case, spaces, dashes, underscores, punctuation all stripped). This is
                         why "IP-Route" maps to a folder named "IPRoute" -- dashes are fine and
-                        DO map, as you found out. Nothing here treats a dash as a mismatch.
+                        DO map.
       - "CloseMatch"  : not an exact normalized match, but a small edit-distance away from an
                         existing icon (e.g. plural/singular: "certs" vs "cert", or a near-typo).
                         These are YOUR call: rename the folder to match the icon exactly, or go
-                        get/rename an icon to match the folder. The script never auto-changes
-                        anything.
+                        get/rename an icon to match the folder.
       - "Junk"        : folder names that should NEVER get an icon -- GUIDs, change/incident
-                        ticket numbers (CHG#######, INC#######, etc.), pure date stamps, the
-                        auto-generated "<Name>_MM-DD-YYYY_HH-MM-(AM|PM)" duplicate-folder copies,
-                        version-number-only folders, and folders that are just a person's first
-                        and last name (checked against a common first-name list -- NOT a guess
-                        based on capitalization shape, since things like "Cisco-Switches" or
-                        "Access-Points" have the exact same shape as "Aasif-Bagdadi" but are
-                        real categories). These are flagged for you to delete/archive/rename,
-                        not to icon.
-      - "MissingIcon" : everything left over. Looks like a legitimate category folder, no icon
-                        exists for it yet, and it didn't fuzzy-match anything close enough to
-                        suggest a rename. This is your "go get an icon" shopping list.
+                        ticket numbers, pure date stamps, auto-generated dated duplicates,
+                        version-number-only folders, and person names.
+      - "MissingIcon" : everything left over. Legitimate category folders that need a new icon.
 
     The script is intentionally conservative about auto-classifying "Junk". When it isn't sure,
-    it leaves the folder in MissingIcon/CloseMatch for YOU to decide, rather than guessing wrong.
+    it leaves the folder in MissingIcon/CloseMatch for YOU to decide.
 
 .PARAMETER GitHubCaptureScript
     Path to GitHub.ps1, which scans the workspace and refreshes GitHubFolders.txt.
@@ -66,8 +60,7 @@
 
 .PARAMETER SkipRefresh
     Switch. If set, GitHub.ps1 and Icons.ps1 are NOT run, and this script reads whatever
-    GitHubFolders.txt/Icons.txt already exist as-is. Useful only when you deliberately want to
-    audit a stale/frozen snapshot; normally you want the default (fresh data every run).
+    GitHubFolders.txt/Icons.txt already exist as-is.
 
 .PARAMETER FoldersPath
     Path to the folder-list file that GitHub.ps1 writes to.
@@ -84,12 +77,10 @@
 .PARAMETER PreviousResultsPath
     Optional: path to a previously-exported CSV from this same script. If given (or if one is
     auto-discovered in OutputPath), any folder marked "Done" / "Ignore" in that file keeps that
-    Status and your Notes in the new run, instead of resetting to blank every time.
+    Status and your Notes in the new run.
 
 .PARAMETER NoCarryForward
-    Switch. If set, Status/Notes are NOT carried forward from any previous report -- every
-    folder starts with a blank Status and Notes, even if a previous report exists. Use this for
-    a genuine fresh start (e.g. you want to re-review everything from scratch).
+    Switch. If set, Status/Notes are NOT carried forward from any previous report.
 
 .EXAMPLE
     .\FindMissingIcons.ps1
@@ -101,11 +92,7 @@
 
 .EXAMPLE
     .\FindMissingIcons.ps1 -NoCarryForward
-    Runs normally, but starts every folder with a blank Status/Notes instead of carrying
-    forward a previous report.
-
-.EXAMPLE
-    .\FindMissingIcons.ps1 -FoldersPath "D:\custom\GitHubFolders.txt" -IconsPath "D:\custom\Icons.txt" -SkipRefresh
+    Runs normally, but starts every folder with a blank Status/Notes.
 #>
 
 <#
@@ -136,10 +123,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 # ----------------------------------------------------------------------------
-# 0. Refresh folder/icon data so we never audit against stale data.
-#    GitHub.ps1 and Icons.ps1 already write straight to logs\GitHubFolders.txt and
-#    logs\Icons.txt, so running them here guarantees both files reflect the current
-#    state of the workspace before we read them below.
+# 0. Refresh folder/icon data
 # ----------------------------------------------------------------------------
 if (-not $SkipRefresh) {
     Write-Host 'Refreshing folder list (GitHub.ps1)...' -ForegroundColor Cyan
@@ -176,7 +160,7 @@ if (-not (Test-Path $OutputPath)) {
 # ----------------------------------------------------------------------------
 # 1. Load data
 # ----------------------------------------------------------------------------
-$folders = Get-Content -Path $FoldersPath -Encoding UTF8 |
+$folderLines = Get-Content -Path $FoldersPath -Encoding UTF8 |
     ForEach-Object { $_.Trim() } |
     Where-Object { $_ -ne '' }
 
@@ -184,40 +168,48 @@ $iconFilesRaw = Get-Content -Path $IconsPath -Encoding UTF8 |
     ForEach-Object { $_.Trim() } |
     Where-Object { $_ -ne '' }
 
-Write-Host "Loaded $($folders.Count) folders and $($iconFilesRaw.Count) icon files." -ForegroundColor Cyan
+Write-Host "Loaded $($folderLines.Count) folder entries and $($iconFilesRaw.Count) icon files." -ForegroundColor Cyan
+
+# Parse Name|RelativePath into objects
+$folderEntries = $folderLines | ForEach-Object {
+    if ($_ -match '^(.*)\|(.*)$') {
+        [PSCustomObject]@{
+            Name         = $Matches[1]
+            RelativePath = $Matches[2]
+        }
+    } else {
+        # Fallback for old format
+        [PSCustomObject]@{
+            Name         = $_
+            RelativePath = $_
+        }
+    }
+}
 
 # ----------------------------------------------------------------------------
-# 2. Helper functions
+# 2. Helper functions (unchanged)
 # ----------------------------------------------------------------------------
-
-# Strip known image extensions from an icon filename.
 function Get-IconBaseName {
     param([string]$FileName)
     return [regex]::Replace($FileName, '\.(png|jpe?g|svg)$', '', 'IgnoreCase')
 }
 
-# Strip the vscode-icons-style prefixes so "file_type_docker" and "folder_type_docker"
-# both reduce down to "docker" for comparison purposes.
 function Get-IconCoreName {
     param([string]$BaseName)
     return [regex]::Replace($BaseName, '^(file_type_|folder_type_)', '', 'IgnoreCase')
 }
 
-# Normalize: lowercase, strip every character that isn't a letter or digit.
-# This is deliberately dash/underscore/space/punctuation-agnostic, since dashes
-# in icon names (e.g. "IP-Route") DO map to folders without dashes ("IPRoute"),
-# and vice versa -- the only thing that matters is the letters/numbers lining up.
 function Get-NormalizedKey {
     param([string]$Name)
     return ([regex]::Replace($Name.ToLowerInvariant(), '[^a-z0-9]', ''))
 }
 
-# Simple iterative Levenshtein distance (edit distance) between two strings.
 function Get-LevenshteinDistance {
-    param([string]$A, [string]$B)
+    param([string]$A, [string]$B, [int]$MaxDistance = [int]::MaxValue)
 
     $lenA = $A.Length
     $lenB = $B.Length
+    if ([Math]::Abs($lenA - $lenB) -gt $MaxDistance) { return $MaxDistance + 1 }
     if ($lenA -eq 0) { return $lenB }
     if ($lenB -eq 0) { return $lenA }
 
@@ -227,42 +219,31 @@ function Get-LevenshteinDistance {
     for ($i = 1; $i -le $lenA; $i++) {
         $cur = New-Object int[] ($lenB + 1)
         $cur[0] = $i
-        $charA = $A[$i - 1]
+        $charA  = $A[$i - 1]
+        $rowMin = $cur[0]
         for ($j = 1; $j -le $lenB; $j++) {
             $cost = if ($charA -eq $B[$j - 1]) { 0 } else { 1 }
             $delete    = $prev[$j] + 1
             $insert    = $cur[$j - 1] + 1
             $substitute = $prev[$j - 1] + $cost
             $cur[$j] = [Math]::Min([Math]::Min($delete, $insert), $substitute)
+            if ($cur[$j] -lt $rowMin) { $rowMin = $cur[$j] }
         }
+        if ($rowMin -gt $MaxDistance) { return $MaxDistance + 1 }
         $prev = $cur
     }
     return $prev[$lenB]
 }
 
-# Length-aware fuzzy-match threshold. Short strings collide too easily (e.g. "AIX" vs "AI"
-# is only 1 edit apart but means nothing), so short names simply don't get fuzzy-matched at
-# all -- they either hit an exact normalized match or they don't. Longer names get a small,
-# scaled allowance.
 function Get-FuzzyThreshold {
     param([int]$Length)
-    if ($Length -lt 5)  { return 0 }   # no fuzzy matching below this length
+    if ($Length -lt 5)  { return 0 }
     if ($Length -le 7)  { return 1 }
     if ($Length -le 12) { return 2 }
     return 3
 }
 
-# ----------------------------------------------------------------------------
-# 3. Junk detection (high-confidence patterns ONLY -- ambiguous cases fall
-#    through to MissingIcon/CloseMatch for manual review rather than being
-#    guessed at).
-# ----------------------------------------------------------------------------
-
-# Common first names used ONLY to catch "FirstName-LastName" / "FirstName.LastName"
-# style folders. This is intentionally a dictionary check, not a capitalization-shape
-# regex -- shape alone can't tell "Aasif-Bagdadi" apart from "Cisco-Switches" or
-# "Access-Points", which look identical structurally but are real category folders.
-# Extend this list freely if you find real people slipping through as MissingIcon.
+# Junk detection helpers (unchanged)
 $CommonFirstNames = @(
     'james','robert','john','michael','david','william','richard','joseph','thomas','charles',
     'christopher','daniel','matthew','anthony','mark','donald','steven','paul','andrew','joshua',
@@ -294,26 +275,11 @@ foreach ($n in $CommonFirstNames) { $CommonFirstNameSet[$n] = $true }
 
 function Test-LooksLikePersonName {
     param([string]$Name)
-    # Deliberately STRICT: only matches a clean two-token "First-Last" or "First.Last" shape.
-    # Three-token names (e.g. "Doug-Van-Sach") are intentionally NOT auto-flagged here -- testing
-    # against this exact dataset showed 3-token matching pulls in false positives like
-    # "Melissa-Failure-FIX" (not a person) for every few real 3-token names it catches. Those
-    # genuine 3-token person folders simply fall through to MissingIcon/CloseMatch instead, where
-    # you'll see them and can mark them Ignore/Junk by hand -- safer than silently misclassifying
-    # a real folder as junk.
     if ($Name -notmatch '^([A-Za-z]+)[-.]([A-Za-z]+)$') { return $false }
     $first = ($Name -split '[-.]')[0].ToLowerInvariant()
     return $CommonFirstNameSet.ContainsKey($first)
 }
 
-# High-confidence junk patterns. Each entry: regex + reason label.
-# These are deliberately narrow. A folder only lands here if it is CLEARLY one of:
-#   - a GUID
-#   - a change/incident/task/ticket number
-#   - the auto-generated "_MM-DD-YYYY_HH-MM-AM/PM" duplicate-folder suffix
-#   - a bare date
-#   - a bare version number
-#   - a single letter
 $JunkPatterns = @(
     @{ Regex = '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'; Reason = 'GUID' }
     @{ Regex = '^(CHG|INC|CTASK|TASK|PRJ|REQ|RITM|WO|KB)\d{4,}'                ; Reason = 'Ticket/Change number' }
@@ -334,17 +300,10 @@ function Get-JunkReason {
 }
 
 # ----------------------------------------------------------------------------
-# 4. Build icon lookup tables
+# 4. Build icon lookup tables (unchanged)
 # ----------------------------------------------------------------------------
-
-# Map: normalized key -> list of original icon filenames that produced it.
-# We index BOTH the full base name and the "core" name (prefix stripped), so an icon like
-# "folder_type_docker.svg" is reachable whether a folder is literally named "docker" or
-# someone (unlikely, but safe) named a folder "FolderTypeDocker".
 $IconIndex = @{}
-
-# Keep a flat list of (NormalizedKey, OriginalFile) for fuzzy distance scanning.
-$IconNormEntries = New-Object System.Collections.Generic.List[object]
+$IconKeysByLength = @{}
 
 foreach ($iconFile in $iconFilesRaw) {
     $baseName = Get-IconBaseName -FileName $iconFile
@@ -362,15 +321,19 @@ foreach ($iconFile in $iconFilesRaw) {
     }
 }
 foreach ($key in $IconIndex.Keys) {
-    $IconNormEntries.Add([PSCustomObject]@{ Key = $key; Length = $key.Length })
+    $len = $key.Length
+    if (-not $IconKeysByLength.ContainsKey($len)) {
+        $IconKeysByLength[$len] = New-Object System.Collections.Generic.List[string]
+    }
+    $IconKeysByLength[$len].Add($key)
 }
 
 Write-Host "Indexed $($IconIndex.Keys.Count) unique normalized icon keys." -ForegroundColor Cyan
 
 # ----------------------------------------------------------------------------
-# 5. Load previous results (so progress isn't lost between runs)
+# 5. Load previous results (composite key: Name|RelativePath)
 # ----------------------------------------------------------------------------
-$PreviousByFolder = @{}
+$PreviousByKey = @{}
 
 if ($NoCarryForward) {
     Write-Host 'NoCarryForward set: starting with blank Status/Notes for every folder.' -ForegroundColor Yellow
@@ -389,8 +352,13 @@ else {
         try {
             $prevRows = Import-Csv -Path $PreviousResultsPath
             foreach ($row in $prevRows) {
-                if ($row.FolderName) {
-                    $PreviousByFolder[$row.FolderName] = $row
+                $key = if ($row.RelativePath) {
+                    "$($row.FolderName)|$($row.RelativePath)"
+                } else {
+                    $row.FolderName
+                }
+                if ($key) {
+                    $PreviousByKey[$key] = $row
                 }
             }
         } catch {
@@ -400,11 +368,37 @@ else {
 }
 
 # ----------------------------------------------------------------------------
-# 6. Classify every folder
+# 6. Classify every folder entry
 # ----------------------------------------------------------------------------
-$results = New-Object System.Collections.Generic.List[object]
+$results     = New-Object System.Collections.Generic.List[object]
+$totalCount  = $folderEntries.Count
+$processed   = 0
+$progressTimer = [System.Diagnostics.Stopwatch]::StartNew()
 
-foreach ($folder in $folders) {
+Write-Host "Classifying $totalCount folder entries against the icon index..." -ForegroundColor Cyan
+
+foreach ($entry in $folderEntries) {
+    $folder = $entry.Name
+    $relativePath = $entry.RelativePath
+
+    $processed++
+
+    # Reduced frequency + safer progress handling for VS Code
+    if ($processed % 200 -eq 0 -or $progressTimer.Elapsed.TotalSeconds -ge 3) {
+        $pct = [Math]::Round(($processed / $totalCount) * 100, 1)
+        
+        # Use Write-Host only (more reliable in VS Code)
+        Write-Host "  ...$processed / $totalCount folder entries classified ($pct%)" -ForegroundColor DarkGray
+        
+        # Try Write-Progress but make it less aggressive
+        try {
+            Write-Progress -Activity 'Classifying folders' `
+                          -Status "$processed of $totalCount ($pct%)" `
+                          -PercentComplete $pct
+        } catch { }
+        
+        $progressTimer.Restart()
+    }
 
     $normKey = Get-NormalizedKey -Name $folder
 
@@ -419,7 +413,7 @@ foreach ($folder in $folders) {
         $matchedIcon = ($IconIndex[$normKey] | Select-Object -First 1)
     }
     else {
-        # --- Junk check (only if not already matched) --------------------------
+        # --- Junk check ---------------------------------------------------------
         $junkReason = Get-JunkReason -Name $folder
         if ($junkReason) {
             $section = 'Junk'
@@ -432,12 +426,17 @@ foreach ($folder in $folders) {
             $bestKey   = $null
 
             if ($threshold -gt 0) {
-                foreach ($entry in $IconNormEntries) {
-                    if ([Math]::Abs($entry.Length - $normKey.Length) -gt $threshold) { continue }
-                    $dist = Get-LevenshteinDistance -A $normKey -B $entry.Key
-                    if ($dist -lt $bestDist) {
-                        $bestDist = $dist
-                        $bestKey  = $entry.Key
+                $minLen = $normKey.Length - $threshold
+                $maxLen = $normKey.Length + $threshold
+                for ($candLen = $minLen; $candLen -le $maxLen; $candLen++) {
+                    if (-not $IconKeysByLength.ContainsKey($candLen)) { continue }
+                    foreach ($candKey in $IconKeysByLength[$candLen]) {
+                        $dist = Get-LevenshteinDistance -A $normKey -B $candKey -MaxDistance $threshold
+                        if ($dist -lt $bestDist) {
+                            $bestDist = $dist
+                            $bestKey  = $candKey
+                        }
+                        if ($bestDist -eq 0) { break }
                     }
                     if ($bestDist -eq 0) { break }
                 }
@@ -456,30 +455,35 @@ foreach ($folder in $folders) {
         }
     }
 
-    # --- Carry forward previous Status/Notes if present ------------------------
+    # --- Carry forward previous Status/Notes -----------------------------------
     $status = ''
     $notes  = ''
-    if ($PreviousByFolder.ContainsKey($folder)) {
-        $prev = $PreviousByFolder[$folder]
+    $compositeKey = "$folder|$relativePath"
+    if ($PreviousByKey.ContainsKey($compositeKey)) {
+        $prev = $PreviousByKey[$compositeKey]
         if ($prev.PSObject.Properties.Match('Status').Count -gt 0) { $status = $prev.Status }
         if ($prev.PSObject.Properties.Match('Notes').Count  -gt 0) { $notes  = $prev.Notes }
     }
 
     $results.Add([PSCustomObject]@{
-        Section       = $section
         FolderName    = $folder
+        RelativePath  = $relativePath
         MatchedIcon   = $matchedIcon
         SuggestedIcon = $suggestion
+        Status        = $status
+        Notes         = $notes
+        Section       = $section
         Reason        = $reason
-        Status        = $status   # fill in by hand: Done / Ignore / blank = not started
-        Notes         = $notes    # free text for yourself
+        
     })
 }
 
+# Ensure progress is cleared
+Write-Progress -Activity 'Classifying folders' -Completed
+Write-Host "Classification complete: $totalCount folder entries processed." -ForegroundColor Green
+
 # ----------------------------------------------------------------------------
-# 7. Order sections so the file reads as a worklist:
-#    MissingIcon first (go get icons), then CloseMatch (rename decisions),
-#    then Junk (cleanup candidates), then Matched last (already correct, for reference).
+# 7. Order sections so the file reads as a worklist
 # ----------------------------------------------------------------------------
 $sectionOrder = @{ 'MissingIcon' = 0; 'CloseMatch' = 1; 'Junk' = 2; 'Matched' = 3 }
 $ordered = $results | Sort-Object `
@@ -487,16 +491,14 @@ $ordered = $results | Sort-Object `
     @{ Expression = { $_.FolderName } }
 
 # ----------------------------------------------------------------------------
-# 8. Write output
+# 8. Write output - ONLY Latest.csv (no timestamped files)
 # ----------------------------------------------------------------------------
-$timestamp = Get-Date -Format 'yyyy-MM-dd_HH-mm'
-$csvPath   = Join-Path $OutputPath "IconAlignmentReport_$timestamp.csv"
-$ordered | Export-Csv -Path $csvPath -NoTypeInformation -Encoding UTF8
-
-# Always also drop/refresh a stable, non-timestamped copy so you (or other scripts) can
-# point at one consistent filename, while the timestamped copy preserves history.
 $latestPath = Join-Path $OutputPath 'IconAlignmentReport_Latest.csv'
+
+Write-Host "Writing/updating IconAlignmentReport_Latest.csv ..." -ForegroundColor Cyan
 $ordered | Export-Csv -Path $latestPath -NoTypeInformation -Encoding UTF8
+
+Write-Host "Report updated successfully at: $latestPath" -ForegroundColor Green
 
 # ----------------------------------------------------------------------------
 # 9. Console summary
@@ -518,18 +520,15 @@ Write-Host "Outstanding CloseMatch items  : $closeNotDone"   -ForegroundColor Ye
 Write-Host "Outstanding Junk items        : $junkNotDone"    -ForegroundColor Yellow
 Write-Host ''
 Write-Host "Full report written to:" -ForegroundColor Cyan
-Write-Host "  $csvPath"
-Write-Host "  $latestPath  (stable filename for re-runs / other tooling)"
+Write-Host "  $latestPath  (your working file - updates on every run)" 
 Write-Host ''
 Write-Host "Workflow reminder:" -ForegroundColor Cyan
-Write-Host "  1. Open the CSV, work top-down: MissingIcon -> CloseMatch -> Junk."
-Write-Host "  2. As you fix each row (get/rename an icon, rename/remove a folder),"
-Write-Host "     set its Status column to 'Done' (or 'Ignore' to permanently skip it)."
-Write-Host "  3. Re-run this script any time. It auto-discovers the latest report in"
-Write-Host "     '$OutputPath' and carries your Status/Notes forward by folder name."
-Write-Host "  4. You're fully aligned when MissingIcon and CloseMatch are both empty."
+Write-Host "  1. Open IconAlignmentReport_Latest.csv and work top-down."
+Write-Host "  2. Use the RelativePath column to quickly locate folders."
+Write-Host "  3. Mark Status = 'Done' or 'Ignore' as you fix things."
+Write-Host "  4. Re-run this script anytime - your progress is carried forward."
 
 if ($missingNotDone -eq 0 -and $closeNotDone -eq 0) {
     Write-Host ''
-    Write-Host 'All folders are aligned with an icon. Nice work.' -ForegroundColor Green
+    Write-Host 'All folders are aligned with an icon. Nice work!' -ForegroundColor Green
 }
