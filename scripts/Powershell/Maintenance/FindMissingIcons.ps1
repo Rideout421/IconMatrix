@@ -7,13 +7,13 @@
 USAGE:
 
 # Standard run (refreshes folder/icon data, then audits)
-& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\FindMissingIcons.ps1")
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenance\FindMissingIcons.ps1")
 
 # Audit only -- skip re-running GitHub.ps1 / Icons.ps1, use existing logs as-is
-& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\FindMissingIcons.ps1") -SkipRefresh
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenance\FindMissingIcons.ps1") -SkipRefresh
 
 # Force a fresh start -- ignore any previous report, don't carry forward Status
-& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\FindMissingIcons.ps1") -NoCarryForward
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenance\FindMissingIcons.ps1") -NoCarryForward
 #>
 
 [CmdletBinding()]
