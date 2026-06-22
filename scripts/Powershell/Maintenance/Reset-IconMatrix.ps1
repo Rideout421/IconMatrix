@@ -7,16 +7,16 @@
 USAGE
 
 Pipeline health check (recommended first):
-& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\PipelineHealthCheck.ps1")
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenance\PipelineHealthCheck.ps1")
 
 Dry run (no changes):
-& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1")
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenance\Reset-IconMatrix.ps1")
 
 Execute reset:
-& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1") -Confirm
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenance\Reset-IconMatrix.ps1") -Confirm
 
 Full reset (includes source icons):
-& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenace\Reset-IconMatrix.ps1") -Confirm -FullReset
+& (Join-Path $env:GIT_ROOT "IconMatrix\scripts\Powershell\Maintenance\Reset-IconMatrix.ps1") -Confirm -FullReset
 
 
 PARAMETERS
