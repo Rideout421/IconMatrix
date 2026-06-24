@@ -106,25 +106,24 @@ function Invoke-IconNormalization {
             }
 
             # -------------------------------------------------
-            # PNG ONLY NORMALIZATION (SAFE GUARANTEE)
+            # PNG ONLY NORMALIZATION (SAFE + SHARP)
             # -------------------------------------------------
             Write-Host "[NORMALIZE PNG] $($keep.Name)" -ForegroundColor Green
-                    
+                                
             $tempFile = Join-Path $env:TEMP "$([guid]::NewGuid()).png"
-                    
+                                
             try {
             
                 & magick $keep.FullName `
-                    -alpha set `
-                    -fuzz 25% `
-                    -fill none `
-                    -draw "color 0,0 floodfill" `
+                    -alpha on `
                     -trim `
                     +repage `
+                    -filter Lanczos `
                     -resize 220x220 `
                     -gravity center `
                     -background none `
                     -extent 256x256 `
+                    -strip `
                     PNG32:$tempFile
 
                 # -------------------------------------------------
