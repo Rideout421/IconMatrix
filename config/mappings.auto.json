@@ -246,15 +246,15 @@
                       "prometheus":  [
                                          "prometheus"
                                      ],
-                      "light-toon":  [
-                                         "light-toon"
-                                     ],
+                      "metaview":  [
+                                       "metaview"
+                                   ],
                       "ng-pipe-js":  [
                                          "ng-pipe-js"
                                      ],
-                      "json-official":  [
-                                            "json-official"
-                                        ],
+                      "jsonld":  [
+                                     "jsonld"
+                                 ],
                       "ng-routing-ts2":  [
                                              "ng-routing-ts2"
                                          ],
@@ -588,6 +588,9 @@
                       "janet":  [
                                     "janet"
                                 ],
+                      "netwrix":  [
+                                      "netwrix"
+                                  ],
                       "runway":  [
                                      "runway"
                                  ],
@@ -681,6 +684,9 @@
                       "io":  [
                                  "io"
                              ],
+                      "kaspersky":  [
+                                        "kaspersky"
+                                    ],
                       "gmail":  [
                                     "gmail"
                                 ],
@@ -735,6 +741,9 @@
                       "openscad":  [
                                        "openscad"
                                    ],
+                      "safetensors":  [
+                                          "safetensors"
+                                      ],
                       "docz":  [
                                    "docz"
                                ],
@@ -837,6 +846,9 @@
                       "theme":  [
                                     "theme"
                                 ],
+                      "map":  [
+                                  "map"
+                              ],
                       "template":  [
                                        "template"
                                    ],
@@ -1344,6 +1356,9 @@
                       "siyuan":  [
                                      "siyuan"
                                  ],
+                      "hunspell":  [
+                                       "hunspell"
+                                   ],
                       "nutanix":  [
                                       "nutanix"
                                   ],
@@ -1371,9 +1386,9 @@
                       "laps":  [
                                    "laps"
                                ],
-                      "r":  [
-                                "r"
-                            ],
+                      "express-scripts":  [
+                                              "express-scripts"
+                                          ],
                       "rocky":  [
                                     "rocky"
                                 ],
@@ -1419,6 +1434,9 @@
                       "codeql":  [
                                      "codeql"
                                  ],
+                      "shares":  [
+                                     "shares"
+                                 ],
                       "affinitypublisher":  [
                                                 "affinitypublisher"
                                             ],
@@ -1461,9 +1479,9 @@
                       "bazaar":  [
                                      "bazaar"
                                  ],
-                      "prolog":  [
-                                     "prolog"
-                                 ],
+                      "aduc":  [
+                                   "aduc"
+                               ],
                       "access2":  [
                                       "access2"
                                   ],
@@ -1533,6 +1551,9 @@
                       "htmlvalidate":  [
                                            "htmlvalidate"
                                        ],
+                      "iam":  [
+                                  "iam"
+                              ],
                       "fitbit":  [
                                      "fitbit"
                                  ],
@@ -1776,9 +1797,6 @@
                       "c":  [
                                 "c"
                             ],
-                      "aduc":  [
-                                   "aduc"
-                               ],
                       "rexx":  [
                                    "rexx"
                                ],
@@ -1902,9 +1920,6 @@
                       "composer":  [
                                        "composer"
                                    ],
-                      "metaview":  [
-                                       "metaview"
-                                   ],
                       "autohotkey":  [
                                          "autohotkey"
                                      ],
@@ -1971,6 +1986,9 @@
                       "stylable":  [
                                        "stylable"
                                    ],
+                      "equal-logic":  [
+                                          "equal-logic"
+                                      ],
                       "claude":  [
                                      "claude"
                                  ],
@@ -2004,6 +2022,9 @@
                       "vscode-insiders":  [
                                               "vscode-insiders"
                                           ],
+                      "windowslaps":  [
+                                          "windowslaps"
+                                      ],
                       "light-hjson":  [
                                           "light-hjson"
                                       ],
@@ -2268,9 +2289,9 @@
                       "scss":  [
                                    "scss"
                                ],
-                      "express-scripts":  [
-                                              "express-scripts"
-                                          ],
+                      "oliv":  [
+                                   "oliv"
+                               ],
                       "tools":  [
                                     "tools"
                                 ],
@@ -2478,9 +2499,9 @@
                       "at\u0026t":  [
                                         "at\u0026t"
                                     ],
-                      "shaped":  [
-                                     "shaped"
-                                 ],
+                      "r":  [
+                                "r"
+                            ],
                       "julia":  [
                                     "julia"
                                 ],
@@ -2652,6 +2673,9 @@
                       "wallaby":  [
                                       "wallaby"
                                   ],
+                      "symform":  [
+                                      "symform"
+                                  ],
                       "patch":  [
                                     "patch"
                                 ],
@@ -2811,9 +2835,6 @@
                       "snapcraft":  [
                                         "snapcraft"
                                     ],
-                      "manus":  [
-                                    "manus"
-                                ],
                       "eleventy2":  [
                                         "eleventy2"
                                     ],
@@ -2922,6 +2943,9 @@
                       "haskell":  [
                                       "haskell"
                                   ],
+                      "bloxx":  [
+                                    "bloxx"
+                                ],
                       "parquet":  [
                                       "parquet"
                                   ],
@@ -2931,6 +2955,9 @@
                       "san":  [
                                   "san"
                               ],
+                      "shaped":  [
+                                     "shaped"
+                                 ],
                       "portfolio":  [
                                         "portfolio"
                                     ],
@@ -3204,6 +3231,9 @@
                       "compare-files":  [
                                             "compare-files"
                                         ],
+                      "ubuntu-black":  [
+                                           "ubuntu-black"
+                                       ],
                       "nightcafe":  [
                                         "nightcafe"
                                     ],
@@ -3342,9 +3372,9 @@
                       "dotenv":  [
                                      "dotenv"
                                  ],
-                      "hunspell":  [
-                                       "hunspell"
-                                   ],
+                      "esrs-recover-point":  [
+                                                 "esrs-recover-point"
+                                             ],
                       "plsql-package-spec":  [
                                                  "plsql-package-spec"
                                              ],
@@ -3615,6 +3645,9 @@
                       "phpcsfixer":  [
                                          "phpcsfixer"
                                      ],
+                      "light-toon":  [
+                                         "light-toon"
+                                     ],
                       "k":  [
                                 "k"
                             ],
@@ -3624,6 +3657,9 @@
                       "eslint2":  [
                                       "eslint2"
                                   ],
+                      "barracuda-spam-filter":  [
+                                                    "barracuda-spam-filter"
+                                                ],
                       "macos":  [
                                     "macos"
                                 ],
@@ -3671,9 +3707,6 @@
                                         ],
                       "ionic":  [
                                     "ionic"
-                                ],
-                      "neo4j":  [
-                                    "neo4j"
                                 ],
                       "copilot":  [
                                       "copilot"
@@ -3744,9 +3777,9 @@
                       "befunge":  [
                                       "befunge"
                                   ],
-                      "shares":  [
-                                     "shares"
-                                 ],
+                      "neo4j":  [
+                                    "neo4j"
+                                ],
                       "powershell-7":  [
                                            "powershell-7"
                                        ],
@@ -3879,6 +3912,9 @@
                       "powershelluniversal":  [
                                                   "powershelluniversal"
                                               ],
+                      "networking":  [
+                                         "networking"
+                                     ],
                       "fedora":  [
                                      "fedora"
                                  ],
@@ -3936,9 +3972,6 @@
                       "glimmer":  [
                                       "glimmer"
                                   ],
-                      "oliv":  [
-                                   "oliv"
-                               ],
                       "qura-ai":  [
                                       "qura-ai"
                                   ],
@@ -4116,6 +4149,9 @@
                       "download":  [
                                        "download"
                                    ],
+                      "prolog":  [
+                                     "prolog"
+                                 ],
                       "confluence":  [
                                          "confluence"
                                      ],
@@ -4512,9 +4548,9 @@
                       "tex":  [
                                   "tex"
                               ],
-                      "safetensors":  [
-                                          "safetensors"
-                                      ],
+                      "jsonnet":  [
+                                      "jsonnet"
+                                  ],
                       "images":  [
                                      "images"
                                  ],
@@ -4572,9 +4608,6 @@
                       "pulumi":  [
                                      "pulumi"
                                  ],
-                      "jsonld":  [
-                                     "jsonld"
-                                 ],
                       "system-updates":  [
                                              "system-updates"
                                          ],
@@ -4599,6 +4632,9 @@
                       "verizon":  [
                                       "verizon"
                                   ],
+                      "json-official":  [
+                                            "json-official"
+                                        ],
                       "puppet":  [
                                      "puppet"
                                  ],
@@ -4674,9 +4710,9 @@
                       "esbuild":  [
                                       "esbuild"
                                   ],
-                      "map":  [
-                                  "map"
-                              ],
+                      "manus":  [
+                                    "manus"
+                                ],
                       "markdownlint-ignore":  [
                                                   "markdownlint-ignore"
                                               ],
@@ -4719,9 +4755,6 @@
                       "personal-vendor-support":  [
                                                       "personal-vendor-support"
                                                   ],
-                      "jsonnet":  [
-                                      "jsonnet"
-                                  ],
                       "mocha":  [
                                     "mocha"
                                 ],
@@ -4851,6 +4884,9 @@
                       "erlang":  [
                                      "erlang"
                                  ],
+                      "delprof2":  [
+                                       "delprof2"
+                                   ],
                       "notepad++":  [
                                         "notepad++"
                                     ],
@@ -4863,9 +4899,15 @@
                       "truffle":  [
                                       "truffle"
                                   ],
+                      "opcon":  [
+                                    "opcon"
+                                ],
                       "121fcu":  [
                                      "121fcu"
                                  ],
+                      "hip-chat":  [
+                                       "hip-chat"
+                                   ],
                       "protractor":  [
                                          "protractor"
                                      ],
@@ -4895,6 +4937,9 @@
                                      ],
                       "kivy":  [
                                    "kivy"
+                               ],
+                      "tres":  [
+                                   "tres"
                                ],
                       "ron":  [
                                   "ron"
@@ -5049,6 +5094,9 @@
                       "iffft":  [
                                     "iffft"
                                 ],
+                      "fiserv":  [
+                                     "fiserv"
+                                 ],
                       "flir":  [
                                    "flir"
                                ],
@@ -5085,9 +5133,9 @@
                       "stigs":  [
                                     "stigs"
                                 ],
-                      "windowslaps":  [
-                                          "windowslaps"
-                                      ],
+                      "prtg":  [
+                                   "prtg"
+                               ],
                       "slashup":  [
                                       "slashup"
                                   ],
@@ -5205,9 +5253,9 @@
                       "sentinel-compass":  [
                                                "sentinel-compass"
                                            ],
-                      "tres":  [
-                                   "tres"
-                               ],
+                      "ftp":  [
+                                  "ftp"
+                              ],
                       "opencl":  [
                                      "opencl"
                                  ],
@@ -5351,15 +5399,15 @@
                         "prometheus":  [
                                            "prometheus"
                                        ],
-                        "light-toon":  [
-                                           "light-toon"
-                                       ],
+                        "metaview":  [
+                                         "metaview"
+                                     ],
                         "ng-pipe-js":  [
                                            "ng-pipe-js"
                                        ],
-                        "json-official":  [
-                                              "json-official"
-                                          ],
+                        "jsonld":  [
+                                       "jsonld"
+                                   ],
                         "ng-routing-ts2":  [
                                                "ng-routing-ts2"
                                            ],
@@ -5693,6 +5741,9 @@
                         "janet":  [
                                       "janet"
                                   ],
+                        "netwrix":  [
+                                        "netwrix"
+                                    ],
                         "runway":  [
                                        "runway"
                                    ],
@@ -5786,6 +5837,9 @@
                         "io":  [
                                    "io"
                                ],
+                        "kaspersky":  [
+                                          "kaspersky"
+                                      ],
                         "gmail":  [
                                       "gmail"
                                   ],
@@ -5840,6 +5894,9 @@
                         "openscad":  [
                                          "openscad"
                                      ],
+                        "safetensors":  [
+                                            "safetensors"
+                                        ],
                         "docz":  [
                                      "docz"
                                  ],
@@ -5942,6 +5999,9 @@
                         "theme":  [
                                       "theme"
                                   ],
+                        "map":  [
+                                    "map"
+                                ],
                         "template":  [
                                          "template"
                                      ],
@@ -6449,6 +6509,9 @@
                         "siyuan":  [
                                        "siyuan"
                                    ],
+                        "hunspell":  [
+                                         "hunspell"
+                                     ],
                         "nutanix":  [
                                         "nutanix"
                                     ],
@@ -6476,9 +6539,9 @@
                         "laps":  [
                                      "laps"
                                  ],
-                        "r":  [
-                                  "r"
-                              ],
+                        "express-scripts":  [
+                                                "express-scripts"
+                                            ],
                         "rocky":  [
                                       "rocky"
                                   ],
@@ -6524,6 +6587,9 @@
                         "codeql":  [
                                        "codeql"
                                    ],
+                        "shares":  [
+                                       "shares"
+                                   ],
                         "affinitypublisher":  [
                                                   "affinitypublisher"
                                               ],
@@ -6566,9 +6632,9 @@
                         "bazaar":  [
                                        "bazaar"
                                    ],
-                        "prolog":  [
-                                       "prolog"
-                                   ],
+                        "aduc":  [
+                                     "aduc"
+                                 ],
                         "access2":  [
                                         "access2"
                                     ],
@@ -6638,6 +6704,9 @@
                         "htmlvalidate":  [
                                              "htmlvalidate"
                                          ],
+                        "iam":  [
+                                    "iam"
+                                ],
                         "fitbit":  [
                                        "fitbit"
                                    ],
@@ -6881,9 +6950,6 @@
                         "c":  [
                                   "c"
                               ],
-                        "aduc":  [
-                                     "aduc"
-                                 ],
                         "rexx":  [
                                      "rexx"
                                  ],
@@ -7007,9 +7073,6 @@
                         "composer":  [
                                          "composer"
                                      ],
-                        "metaview":  [
-                                         "metaview"
-                                     ],
                         "autohotkey":  [
                                            "autohotkey"
                                        ],
@@ -7076,6 +7139,9 @@
                         "stylable":  [
                                          "stylable"
                                      ],
+                        "equal-logic":  [
+                                            "equal-logic"
+                                        ],
                         "claude":  [
                                        "claude"
                                    ],
@@ -7109,6 +7175,9 @@
                         "vscode-insiders":  [
                                                 "vscode-insiders"
                                             ],
+                        "windowslaps":  [
+                                            "windowslaps"
+                                        ],
                         "light-hjson":  [
                                             "light-hjson"
                                         ],
@@ -7373,9 +7442,9 @@
                         "scss":  [
                                      "scss"
                                  ],
-                        "express-scripts":  [
-                                                "express-scripts"
-                                            ],
+                        "oliv":  [
+                                     "oliv"
+                                 ],
                         "tools":  [
                                       "tools"
                                   ],
@@ -7583,9 +7652,9 @@
                         "at\u0026t":  [
                                           "at\u0026t"
                                       ],
-                        "shaped":  [
-                                       "shaped"
-                                   ],
+                        "r":  [
+                                  "r"
+                              ],
                         "julia":  [
                                       "julia"
                                   ],
@@ -7757,6 +7826,9 @@
                         "wallaby":  [
                                         "wallaby"
                                     ],
+                        "symform":  [
+                                        "symform"
+                                    ],
                         "patch":  [
                                       "patch"
                                   ],
@@ -7916,9 +7988,6 @@
                         "snapcraft":  [
                                           "snapcraft"
                                       ],
-                        "manus":  [
-                                      "manus"
-                                  ],
                         "eleventy2":  [
                                           "eleventy2"
                                       ],
@@ -8027,6 +8096,9 @@
                         "haskell":  [
                                         "haskell"
                                     ],
+                        "bloxx":  [
+                                      "bloxx"
+                                  ],
                         "parquet":  [
                                         "parquet"
                                     ],
@@ -8036,6 +8108,9 @@
                         "san":  [
                                     "san"
                                 ],
+                        "shaped":  [
+                                       "shaped"
+                                   ],
                         "portfolio":  [
                                           "portfolio"
                                       ],
@@ -8309,6 +8384,9 @@
                         "compare-files":  [
                                               "compare-files"
                                           ],
+                        "ubuntu-black":  [
+                                             "ubuntu-black"
+                                         ],
                         "nightcafe":  [
                                           "nightcafe"
                                       ],
@@ -8447,9 +8525,9 @@
                         "dotenv":  [
                                        "dotenv"
                                    ],
-                        "hunspell":  [
-                                         "hunspell"
-                                     ],
+                        "esrs-recover-point":  [
+                                                   "esrs-recover-point"
+                                               ],
                         "plsql-package-spec":  [
                                                    "plsql-package-spec"
                                                ],
@@ -8720,6 +8798,9 @@
                         "phpcsfixer":  [
                                            "phpcsfixer"
                                        ],
+                        "light-toon":  [
+                                           "light-toon"
+                                       ],
                         "k":  [
                                   "k"
                               ],
@@ -8729,6 +8810,9 @@
                         "eslint2":  [
                                         "eslint2"
                                     ],
+                        "barracuda-spam-filter":  [
+                                                      "barracuda-spam-filter"
+                                                  ],
                         "macos":  [
                                       "macos"
                                   ],
@@ -8776,9 +8860,6 @@
                                           ],
                         "ionic":  [
                                       "ionic"
-                                  ],
-                        "neo4j":  [
-                                      "neo4j"
                                   ],
                         "copilot":  [
                                         "copilot"
@@ -8849,9 +8930,9 @@
                         "befunge":  [
                                         "befunge"
                                     ],
-                        "shares":  [
-                                       "shares"
-                                   ],
+                        "neo4j":  [
+                                      "neo4j"
+                                  ],
                         "powershell-7":  [
                                              "powershell-7"
                                          ],
@@ -8984,6 +9065,9 @@
                         "powershelluniversal":  [
                                                     "powershelluniversal"
                                                 ],
+                        "networking":  [
+                                           "networking"
+                                       ],
                         "fedora":  [
                                        "fedora"
                                    ],
@@ -9041,9 +9125,6 @@
                         "glimmer":  [
                                         "glimmer"
                                     ],
-                        "oliv":  [
-                                     "oliv"
-                                 ],
                         "qura-ai":  [
                                         "qura-ai"
                                     ],
@@ -9221,6 +9302,9 @@
                         "download":  [
                                          "download"
                                      ],
+                        "prolog":  [
+                                       "prolog"
+                                   ],
                         "confluence":  [
                                            "confluence"
                                        ],
@@ -9617,9 +9701,9 @@
                         "tex":  [
                                     "tex"
                                 ],
-                        "safetensors":  [
-                                            "safetensors"
-                                        ],
+                        "jsonnet":  [
+                                        "jsonnet"
+                                    ],
                         "images":  [
                                        "images"
                                    ],
@@ -9677,9 +9761,6 @@
                         "pulumi":  [
                                        "pulumi"
                                    ],
-                        "jsonld":  [
-                                       "jsonld"
-                                   ],
                         "system-updates":  [
                                                "system-updates"
                                            ],
@@ -9704,6 +9785,9 @@
                         "verizon":  [
                                         "verizon"
                                     ],
+                        "json-official":  [
+                                              "json-official"
+                                          ],
                         "puppet":  [
                                        "puppet"
                                    ],
@@ -9779,9 +9863,9 @@
                         "esbuild":  [
                                         "esbuild"
                                     ],
-                        "map":  [
-                                    "map"
-                                ],
+                        "manus":  [
+                                      "manus"
+                                  ],
                         "markdownlint-ignore":  [
                                                     "markdownlint-ignore"
                                                 ],
@@ -9824,9 +9908,6 @@
                         "personal-vendor-support":  [
                                                         "personal-vendor-support"
                                                     ],
-                        "jsonnet":  [
-                                        "jsonnet"
-                                    ],
                         "mocha":  [
                                       "mocha"
                                   ],
@@ -9956,6 +10037,9 @@
                         "erlang":  [
                                        "erlang"
                                    ],
+                        "delprof2":  [
+                                         "delprof2"
+                                     ],
                         "notepad++":  [
                                           "notepad++"
                                       ],
@@ -9968,9 +10052,15 @@
                         "truffle":  [
                                         "truffle"
                                     ],
+                        "opcon":  [
+                                      "opcon"
+                                  ],
                         "121fcu":  [
                                        "121fcu"
                                    ],
+                        "hip-chat":  [
+                                         "hip-chat"
+                                     ],
                         "protractor":  [
                                            "protractor"
                                        ],
@@ -10000,6 +10090,9 @@
                                        ],
                         "kivy":  [
                                      "kivy"
+                                 ],
+                        "tres":  [
+                                     "tres"
                                  ],
                         "ron":  [
                                     "ron"
@@ -10154,6 +10247,9 @@
                         "iffft":  [
                                       "iffft"
                                   ],
+                        "fiserv":  [
+                                       "fiserv"
+                                   ],
                         "flir":  [
                                      "flir"
                                  ],
@@ -10190,9 +10286,9 @@
                         "stigs":  [
                                       "stigs"
                                   ],
-                        "windowslaps":  [
-                                            "windowslaps"
-                                        ],
+                        "prtg":  [
+                                     "prtg"
+                                 ],
                         "slashup":  [
                                         "slashup"
                                     ],
@@ -10310,9 +10406,9 @@
                         "sentinel-compass":  [
                                                  "sentinel-compass"
                                              ],
-                        "tres":  [
-                                     "tres"
-                                 ],
+                        "ftp":  [
+                                    "ftp"
+                                ],
                         "opencl":  [
                                        "opencl"
                                    ],
