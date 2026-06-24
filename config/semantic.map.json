@@ -681,9 +681,6 @@
                       "lorexcloud":  [
                                          "lorexcloud"
                                      ],
-                      "plink":  [
-                                    "plink"
-                                ],
                       "mdx":  [
                                   "mdx"
                               ],
@@ -1259,6 +1256,9 @@
                       "antlers-html":  [
                                            "antlers-html"
                                        ],
+                      "xmpie":  [
+                                    "xmpie"
+                                ],
                       "dustjs":  [
                                      "dustjs"
                                  ],
@@ -1520,9 +1520,6 @@
                       "vscodeuser":  [
                                          "vscodeuser"
                                      ],
-                      "default-folder":  [
-                                             "default-folder"
-                                         ],
                       "light-razzle":  [
                                            "light-razzle"
                                        ],
@@ -1825,9 +1822,9 @@
                       "light-lark":  [
                                          "light-lark"
                                      ],
-                      "default-root-folder":  [
-                                                  "default-root-folder"
-                                              ],
+                      "plantuml":  [
+                                       "plantuml"
+                                   ],
                       "package":  [
                                       "package"
                                   ],
@@ -2042,6 +2039,9 @@
                       "scala":  [
                                     "scala"
                                 ],
+                      "dellcommandupdate":  [
+                                                "dellcommandupdate"
+                                            ],
                       "fla":  [
                                   "fla"
                               ],
@@ -4000,9 +4000,9 @@
                       "swig":  [
                                    "swig"
                                ],
-                      "dellcommandupdate":  [
-                                                "dellcommandupdate"
-                                            ],
+                      "plink":  [
+                                    "plink"
+                                ],
                       "inrō":  [
                                    "inrō"
                                ],
@@ -4728,9 +4728,6 @@
                       "ruby":  [
                                    "ruby"
                                ],
-                      "plantuml":  [
-                                       "plantuml"
-                                   ],
                       "tfs":  [
                                   "tfs"
                               ],
@@ -5264,6 +5261,9 @@
                                   ],
                       "rust-toolchain":  [
                                              "rust-toolchain"
+                                         ],
+                      "elastic-search":  [
+                                             "elastic-search"
                                          ],
                       "light-circleci":  [
                                              "light-circleci"
@@ -5816,9 +5816,6 @@
                         "lorexcloud":  [
                                            "lorexcloud"
                                        ],
-                        "plink":  [
-                                      "plink"
-                                  ],
                         "mdx":  [
                                     "mdx"
                                 ],
@@ -5864,6 +5861,9 @@
                         "gamemaker2":  [
                                            "gamemaker2"
                                        ],
+                        "atom":  [
+                                     "atom"
+                                 ],
                         "karma":  [
                                       "karma"
                                   ],
@@ -5897,9 +5897,9 @@
                         "light-electron":  [
                                                "light-electron"
                                            ],
-                        "OpenTofu":  [
-                                         "OpenTofu"
-                                     ],
+                        "jobschat-ai":  [
+                                            "jobschat-ai"
+                                        ],
                         "prajwaldesai":  [
                                              "prajwaldesai"
                                          ],
@@ -6262,9 +6262,6 @@
                         "light-vsixmanifest":  [
                                                    "light-vsixmanifest"
                                                ],
-                        "jobschat-ai":  [
-                                            "jobschat-ai"
-                                        ],
                         "qml":  [
                                     "qml"
                                 ],
@@ -6403,6 +6400,9 @@
                         "antlers-html":  [
                                              "antlers-html"
                                          ],
+                        "xmpie":  [
+                                      "xmpie"
+                                  ],
                         "dustjs":  [
                                        "dustjs"
                                    ],
@@ -6662,9 +6662,6 @@
                         "vscodeuser":  [
                                            "vscodeuser"
                                        ],
-                        "default-folder":  [
-                                               "default-folder"
-                                           ],
                         "light-razzle":  [
                                              "light-razzle"
                                          ],
@@ -6962,9 +6959,9 @@
                         "light-lark":  [
                                            "light-lark"
                                        ],
-                        "default-root-folder":  [
-                                                    "default-root-folder"
-                                                ],
+                        "plantuml":  [
+                                         "plantuml"
+                                     ],
                         "package":  [
                                         "package"
                                     ],
@@ -7191,6 +7188,9 @@
                         "scala":  [
                                       "scala"
                                   ],
+                        "dellcommandupdate":  [
+                                                  "dellcommandupdate"
+                                              ],
                         "fla":  [
                                     "fla"
                                 ],
@@ -7963,9 +7963,9 @@
                         "bot":  [
                                     "bot"
                                 ],
-                        "postcss":  [
-                                        "postcss"
-                                    ],
+                        "OpenTofu":  [
+                                         "OpenTofu"
+                                     ],
                         "ng-guard-dart":  [
                                               "ng-guard-dart"
                                           ],
@@ -9167,9 +9167,9 @@
                         "swig":  [
                                      "swig"
                                  ],
-                        "dellcommandupdate":  [
-                                                  "dellcommandupdate"
-                                              ],
+                        "plink":  [
+                                      "plink"
+                                  ],
                         "inrō":  [
                                      "inrō"
                                  ],
@@ -9927,9 +9927,6 @@
                         "ruby":  [
                                      "ruby"
                                  ],
-                        "plantuml":  [
-                                         "plantuml"
-                                     ],
                         "tfs":  [
                                     "tfs"
                                 ],
@@ -10242,9 +10239,9 @@
                         "mcafee":  [
                                        "mcafee"
                                    ],
-                        "atom":  [
-                                     "atom"
-                                 ],
+                        "postcss":  [
+                                        "postcss"
+                                    ],
                         "light-lean":  [
                                            "light-lean"
                                        ],
@@ -10476,6 +10473,9 @@
                                     ],
                         "rust-toolchain":  [
                                                "rust-toolchain"
+                                           ],
+                        "elastic-search":  [
+                                               "elastic-search"
                                            ],
                         "light-circleci":  [
                                                "light-circleci"

@@ -570,6 +570,9 @@
                       "lorexcloud":  [
                                          "lorexcloud"
                                      ],
+                      "plink":  [
+                                    "plink"
+                                ],
                       "mdx":  [
                                   "mdx"
                               ],
@@ -1152,6 +1155,9 @@
                       "antlers-html":  [
                                            "antlers-html"
                                        ],
+                      "xmpie":  [
+                                    "xmpie"
+                                ],
                       "light-actionscript2":  [
                                                   "light-actionscript2"
                                               ],
@@ -1347,9 +1353,9 @@
                       "laps":  [
                                    "laps"
                                ],
-                      "express-scripts":  [
-                                              "express-scripts"
-                                          ],
+                      "r":  [
+                                "r"
+                            ],
                       "rocky":  [
                                     "rocky"
                                 ],
@@ -1416,9 +1422,6 @@
                       "vscodeuser":  [
                                          "vscodeuser"
                                      ],
-                      "default-folder":  [
-                                             "default-folder"
-                                         ],
                       "xcode":  [
                                     "xcode"
                                 ],
@@ -1725,9 +1728,9 @@
                       "light-lark":  [
                                          "light-lark"
                                      ],
-                      "default-root-folder":  [
-                                                  "default-root-folder"
-                                              ],
+                      "plantuml":  [
+                                       "plantuml"
+                                   ],
                       "toml":  [
                                    "toml"
                                ],
@@ -1950,9 +1953,6 @@
                       "light-packship":  [
                                              "light-packship"
                                          ],
-                      "dellcommandupdate":  [
-                                                "dellcommandupdate"
-                                            ],
                       "fla":  [
                                   "fla"
                               ],
@@ -2229,9 +2229,9 @@
                       "scss":  [
                                    "scss"
                                ],
-                      "oliv":  [
-                                   "oliv"
-                               ],
+                      "express-scripts":  [
+                                              "express-scripts"
+                                          ],
                       "tools":  [
                                     "tools"
                                 ],
@@ -2433,9 +2433,9 @@
                       "at\u0026t":  [
                                         "at\u0026t"
                                     ],
-                      "r":  [
-                                "r"
-                            ],
+                      "shaped":  [
+                                     "shaped"
+                                 ],
                       "julia":  [
                                     "julia"
                                 ],
@@ -2880,9 +2880,6 @@
                       "san":  [
                                   "san"
                               ],
-                      "shaped":  [
-                                     "shaped"
-                                 ],
                       "portfolio":  [
                                         "portfolio"
                                     ],
@@ -3864,15 +3861,18 @@
                       "swig":  [
                                    "swig"
                                ],
-                      "plink":  [
-                                    "plink"
-                                ],
+                      "dellcommandupdate":  [
+                                                "dellcommandupdate"
+                                            ],
                       "inrō":  [
                                    "inrō"
                                ],
                       "glimmer":  [
                                       "glimmer"
                                   ],
+                      "oliv":  [
+                                   "oliv"
+                               ],
                       "qura-ai":  [
                                       "qura-ai"
                                   ],
@@ -4566,9 +4566,6 @@
                       "liara":  [
                                     "liara"
                                 ],
-                      "plantuml":  [
-                                       "plantuml"
-                                   ],
                       "light-replit":  [
                                            "light-replit"
                                        ],
@@ -5072,6 +5069,9 @@
                                   ],
                       "rust-toolchain":  [
                                              "rust-toolchain"
+                                         ],
+                      "elastic-search":  [
+                                             "elastic-search"
                                          ],
                       "light-circleci":  [
                                              "light-circleci"
@@ -5591,6 +5591,9 @@
                         "lorexcloud":  [
                                            "lorexcloud"
                                        ],
+                        "plink":  [
+                                      "plink"
+                                  ],
                         "mdx":  [
                                     "mdx"
                                 ],
@@ -6173,6 +6176,9 @@
                         "antlers-html":  [
                                              "antlers-html"
                                          ],
+                        "xmpie":  [
+                                      "xmpie"
+                                  ],
                         "light-actionscript2":  [
                                                     "light-actionscript2"
                                                 ],
@@ -6368,9 +6374,9 @@
                         "laps":  [
                                      "laps"
                                  ],
-                        "express-scripts":  [
-                                                "express-scripts"
-                                            ],
+                        "r":  [
+                                  "r"
+                              ],
                         "rocky":  [
                                       "rocky"
                                   ],
@@ -6437,9 +6443,6 @@
                         "vscodeuser":  [
                                            "vscodeuser"
                                        ],
-                        "default-folder":  [
-                                               "default-folder"
-                                           ],
                         "xcode":  [
                                       "xcode"
                                   ],
@@ -6746,9 +6749,9 @@
                         "light-lark":  [
                                            "light-lark"
                                        ],
-                        "default-root-folder":  [
-                                                    "default-root-folder"
-                                                ],
+                        "plantuml":  [
+                                         "plantuml"
+                                     ],
                         "toml":  [
                                      "toml"
                                  ],
@@ -6971,9 +6974,6 @@
                         "light-packship":  [
                                                "light-packship"
                                            ],
-                        "dellcommandupdate":  [
-                                                  "dellcommandupdate"
-                                              ],
                         "fla":  [
                                     "fla"
                                 ],
@@ -7250,9 +7250,9 @@
                         "scss":  [
                                      "scss"
                                  ],
-                        "oliv":  [
-                                     "oliv"
-                                 ],
+                        "express-scripts":  [
+                                                "express-scripts"
+                                            ],
                         "tools":  [
                                       "tools"
                                   ],
@@ -7454,9 +7454,9 @@
                         "at\u0026t":  [
                                           "at\u0026t"
                                       ],
-                        "r":  [
-                                  "r"
-                              ],
+                        "shaped":  [
+                                       "shaped"
+                                   ],
                         "julia":  [
                                       "julia"
                                   ],
@@ -7901,9 +7901,6 @@
                         "san":  [
                                     "san"
                                 ],
-                        "shaped":  [
-                                       "shaped"
-                                   ],
                         "portfolio":  [
                                           "portfolio"
                                       ],
@@ -8885,15 +8882,18 @@
                         "swig":  [
                                      "swig"
                                  ],
-                        "plink":  [
-                                      "plink"
-                                  ],
+                        "dellcommandupdate":  [
+                                                  "dellcommandupdate"
+                                              ],
                         "inrō":  [
                                      "inrō"
                                  ],
                         "glimmer":  [
                                         "glimmer"
                                     ],
+                        "oliv":  [
+                                     "oliv"
+                                 ],
                         "qura-ai":  [
                                         "qura-ai"
                                     ],
@@ -9587,9 +9587,6 @@
                         "liara":  [
                                       "liara"
                                   ],
-                        "plantuml":  [
-                                         "plantuml"
-                                     ],
                         "light-replit":  [
                                              "light-replit"
                                          ],
@@ -10093,6 +10090,9 @@
                                     ],
                         "rust-toolchain":  [
                                                "rust-toolchain"
+                                           ],
+                        "elastic-search":  [
+                                               "elastic-search"
                                            ],
                         "light-circleci":  [
                                                "light-circleci"

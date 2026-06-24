@@ -209,23 +209,22 @@ function Invoke-RegistryBuild {
     function Find($pattern) {
         return ($iconDefinitions.Keys | Where-Object { $_ -like $pattern } | Select-Object -First 1)
     }
-
-    $fileDefault   = Find "*default-file*" 
-    $folderDefault = Find "*default-folder*"
+    
+    $fileDefault   = Find "*default-file*"
+    $folderDefault = Find "*general*"
     $rootFolder    = Find "*rootfolder*"
-    $general       = Find "*general*"
-
-    # HARD GUARANTEES (your requirement)
+    
+    # HARD GUARANTEES
     if (-not $fileDefault)   { $fileDefault = Find "*file*" }
+    if (-not $folderDefault) { $folderDefault = Find "*default-folder*" }
     if (-not $folderDefault) { $folderDefault = $fileDefault }
     if (-not $rootFolder)    { $rootFolder = Find "*rootfolder*" }
-    if (-not $general)       { $general = $fileDefault }
-
+    
     # VS CODE REQUIRED FALLBACKS
     if (-not $fileNames.Contains("*")) {
         $fileNames["*"] = $fileDefault
     }
-
+    
     if (-not $folderNames.Contains("*")) {
         $folderNames["*"] = $folderDefault
     }

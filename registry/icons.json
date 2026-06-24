@@ -897,12 +897,6 @@
                             "file-default-file-icon":  {
                                                            "iconPath":  "./processed-icons/default-file.svg"
                                                        },
-                            "folder-default-folder-icon":  {
-                                                               "iconPath":  "./processed-icons/default-folder.svg"
-                                                           },
-                            "folder-default-root-folder-icon":  {
-                                                                    "iconPath":  "./processed-icons/default-root-folder.svg"
-                                                                },
                             "file-dell-icon":  {
                                                    "iconPath":  "./processed-icons/dell.png"
                                                },
@@ -1083,6 +1077,9 @@
                             "file-ejs-icon":  {
                                                   "iconPath":  "./processed-icons/ejs.svg"
                                               },
+                            "file-elastic-search-icon":  {
+                                                             "iconPath":  "./processed-icons/elastic-search.png"
+                                                         },
                             "file-elastic-icon":  {
                                                       "iconPath":  "./processed-icons/elastic.svg"
                                                   },
@@ -4953,6 +4950,9 @@
                             "file-xml-icon":  {
                                                   "iconPath":  "./processed-icons/xml.svg"
                                               },
+                            "file-xmpie-icon":  {
+                                                    "iconPath":  "./processed-icons/xmpie.png"
+                                                },
                             "file-xo-icon":  {
                                                  "iconPath":  "./processed-icons/xo.svg"
                                              },
@@ -5021,8 +5021,8 @@
                                                }
                         },
     "defaults":  {
-                     "general":  "file-general-icon",
-                     "folder":  "folder-default-folder-icon",
+                     "general":  null,
+                     "folder":  "file-general-icon",
                      "file":  "file-default-file-icon",
                      "rootFolder":  "folder-rootfolder-icon"
                  },
@@ -5355,8 +5355,6 @@
                         "deepai":  "file-deepai-icon",
                         "deepwatch":  "file-deepwatch-icon",
                         "default-file":  "file-default-file-icon",
-                        "default-folder":  "folder-default-folder-icon",
-                        "default-root-folder":  "folder-default-root-folder-icon",
                         "dell":  "file-dell-icon",
                         "dellcommandupdate":  "file-dellcommandupdate-icon",
                         "dellemc":  "file-dellemc-icon",
@@ -5420,6 +5418,7 @@
                         "editorconfig":  "file-editorconfig-icon",
                         "eex":  "file-eex-icon",
                         "ejs":  "file-ejs-icon",
+                        "elastic-search":  "file-elastic-search-icon",
                         "elastic":  "file-elastic-icon",
                         "elasticbeanstalk":  "file-elasticbeanstalk-icon",
                         "electron":  "file-electron-icon",
@@ -6770,6 +6769,7 @@
                         "xliff":  "file-xliff-icon",
                         "xmake":  "file-xmake-icon",
                         "xml":  "file-xml-icon",
+                        "xmpie":  "file-xmpie-icon",
                         "xo":  "file-xo-icon",
                         "xorg":  "file-xorg-icon",
                         "xquery":  "file-xquery-icon",
@@ -6793,7 +6793,7 @@
                         "zizmor":  "file-zizmor-icon",
                         "zoning":  "file-zoning-icon",
                         "zoom":  "file-zoom-icon",
-                        "*":  "folder-default-folder-icon"
+                        "*":  "file-general-icon"
                     },
     "fileNames":  {
                       ".net":  "file-.net-icon",
@@ -7104,8 +7104,6 @@
                       "deepai":  "file-deepai-icon",
                       "deepwatch":  "file-deepwatch-icon",
                       "default-file":  "file-default-file-icon",
-                      "default-folder":  "folder-default-folder-icon",
-                      "default-root-folder":  "folder-default-root-folder-icon",
                       "dell":  "file-dell-icon",
                       "dellcommandupdate":  "file-dellcommandupdate-icon",
                       "dellemc":  "file-dellemc-icon",
@@ -7171,6 +7169,7 @@
                       ".editorconfig":  "file-editorconfig-icon",
                       "eex":  "file-eex-icon",
                       "ejs":  "file-ejs-icon",
+                      "elastic-search":  "file-elastic-search-icon",
                       "elastic":  "file-elastic-icon",
                       "elasticbeanstalk":  "file-elasticbeanstalk-icon",
                       "electron":  "file-electron-icon",
@@ -8527,6 +8526,7 @@
                       "xliff":  "file-xliff-icon",
                       "xmake":  "file-xmake-icon",
                       "xml":  "file-xml-icon",
+                      "xmpie":  "file-xmpie-icon",
                       "xo":  "file-xo-icon",
                       "xorg":  "file-xorg-icon",
                       "xquery":  "file-xquery-icon",
