@@ -5,12 +5,9 @@ function Convert-Icons {
         [switch]$DryRun
     )
 
-    # -------------------------------------------------
-    # Processing Settings
-    # -------------------------------------------------
     $TargetSize = 128
-    $MinScaleThreshold = 64   # ← Only very small icons get scaled now
-    
+    $MinScaleThreshold = 80   # Change this: higher = fewer icons resized
+
     if (-not (Test-Path $Output)) {
         New-Item -ItemType Directory -Path $Output -Force | Out-Null
     }
@@ -30,11 +27,7 @@ function Convert-Icons {
 
     if (Test-Path $manifestPath) {
         $raw = Get-Content $manifestPath -Raw | ConvertFrom-Json
-        if ($raw) {
-            $raw.PSObject.Properties | ForEach-Object {
-                $manifest[$_.Name] = $_.Value
-            }
-        }
+        if ($raw) { $raw.PSObject.Properties | ForEach-Object { $manifest[$_.Name] = $_.Value } }
     }
 
     $grouped = Get-ChildItem $Path -File |
@@ -43,11 +36,7 @@ function Convert-Icons {
 
     foreach ($group in $grouped) {
 
-        $file = $group.Group |
-            Sort-Object @{
-                Expression = { switch ($_.Extension.ToLower()) { ".svg" { 0 } ".png" { 1 } default { 2 } } }
-            }, Name |
-            Select-Object -First 1
+        $file = $group.Group | Sort-Object @{ Expression = { switch ($_.Extension.ToLower()) { ".svg" { 0 } ".png" { 1 } default { 2 } } } }, Name | Select-Object -First 1
 
         $sourceHash = Get-FileHashSHA256 $file.FullName
         $outFile = "$($group.Name)$($file.Extension.ToLower())"
@@ -68,7 +57,7 @@ function Convert-Icons {
         }
 
         $original = & $magick $file.FullName -format "%w %h" info:
-        $trimmed  = & $magick $file.FullName -trim +repage -format "%w %h" info:
+        $trimmed = & $magick $file.FullName -trim +repage -format "%w %h" info:
 
         $origW,$origH = $original -split " "
         $trimW,$trimH = $trimmed -split " "
@@ -78,7 +67,6 @@ function Convert-Icons {
 
         $longestTrimmed = [Math]::Max($trimW, $trimH)
 
-        # PASS THROUGH most icons
         if ($longestTrimmed -ge $MinScaleThreshold) {
             Write-Host "[PASS] Already good size" -ForegroundColor Green
             if (-not $DryRun) { Copy-Item $file.FullName $finalPath -Force }
@@ -86,7 +74,7 @@ function Convert-Icons {
             continue
         }
 
-        # Only very tiny icons get scaled
+        # Resize only very small icons
         $MaxUpscale = 2.0
         $neededScale = $TargetSize / $longestTrimmed
         $scale = [Math]::Min($neededScale, $MaxUpscale)
@@ -94,30 +82,29 @@ function Convert-Icons {
         $resizeW = [Math]::Round($trimW * $scale)
         $resizeH = [Math]::Round($trimH * $scale)
 
-        Write-Host "[PROCESS] $($file.Name) -> ${resizeW}x${resizeH} (tiny icon)" -ForegroundColor Yellow
+        Write-Host "[PROCESS] $($file.Name) -> ${resizeW}x${resizeH}" -ForegroundColor Yellow
 
-        if ($DryRun) { 
-            Write-Host "[DRYRUN]" 
-            continue 
+        if ($DryRun) {
+            Write-Host "[DRYRUN]"
+            continue
         }
 
         try {
-            & $magick `
-                $file.FullName `
+            & $magick $file.FullName `
                 -trim +repage `
                 -resize "${resizeW}x${resizeH}" `
                 -background none `
                 -gravity center `
                 -extent "${TargetSize}x${TargetSize}" `
                 -filter Mitchell `
-                -unsharp 0x2.0+0.8+0.08 `   # Strong sharpening for tiny icons
+                -unsharp 0x2.0+0.8+0.08 `
                 $finalPath
 
-            Write-Host "[OK] $($file.Name)" -ForegroundColor Green
+            Write-Host "[OK]" -ForegroundColor Green
             $manifest[$outFile] = @{ hash = $sourceHash; source = $file.Name; mode = "scaled" }
         }
         catch {
-            Write-Host "[ERROR] $($file.Name)" -ForegroundColor Red
+            Write-Host "[ERROR]" -ForegroundColor Red
         }
     }
 
