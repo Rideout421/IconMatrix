@@ -1413,9 +1413,6 @@
                             "file-floobits-icon":  {
                                                        "iconPath":  "./processed-icons/floobits.svg"
                                                    },
-                            "file-florida-blue-icon":  {
-                                                           "iconPath":  "./processed-icons/florida-blue.png"
-                                                       },
                             "file-florida-dcf-icon":  {
                                                           "iconPath":  "./processed-icons/florida-dcf.png"
                                                       },
@@ -6007,7 +6004,6 @@
                         "fleet":  "file-fleet-icon",
                         "flir":  "file-flir-icon",
                         "floobits":  "file-floobits-icon",
-                        "florida-blue":  "file-florida-blue-icon",
                         "florida-dcf":  "file-florida-dcf-icon",
                         "floridablue":  "file-floridablue-icon",
                         "flow":  "file-flow-icon",
@@ -7926,7 +7922,6 @@
                       "fleet":  "file-fleet-icon",
                       "flir":  "file-flir-icon",
                       "floobits":  "file-floobits-icon",
-                      "florida-blue":  "file-florida-blue-icon",
                       "florida-dcf":  "file-florida-dcf-icon",
                       "floridablue":  "file-floridablue-icon",
                       "flow":  "file-flow-icon",

@@ -597,6 +597,9 @@
                       "styled":  [
                                      "styled"
                                  ],
+                      "light-replit":  [
+                                           "light-replit"
+                                       ],
                       "templ":  [
                                     "templ"
                                 ],
@@ -1411,9 +1414,6 @@
                       "architecture":  [
                                            "architecture"
                                        ],
-                      "florida-blue":  [
-                                           "florida-blue"
-                                       ],
                       "scala":  [
                                     "scala"
                                 ],
@@ -1782,9 +1782,6 @@
                       "ng-module-ts2":  [
                                             "ng-module-ts2"
                                         ],
-                      "jenkins":  [
-                                      "jenkins"
-                                  ],
                       "sql":  [
                                   "sql"
                               ],
@@ -2013,9 +2010,9 @@
                       "publisher":  [
                                         "publisher"
                                     ],
-                      "tfs":  [
-                                  "tfs"
-                              ],
+                      "jenkins":  [
+                                      "jenkins"
+                                  ],
                       "dockertest":  [
                                          "dockertest"
                                      ],
@@ -5151,9 +5148,9 @@
                       "ruby":  [
                                    "ruby"
                                ],
-                      "light-replit":  [
-                                           "light-replit"
-                                       ],
+                      "tfs":  [
+                                  "tfs"
+                              ],
                       "typescript-official":  [
                                                   "typescript-official"
                                               ],
@@ -6197,6 +6194,9 @@
                         "styled":  [
                                        "styled"
                                    ],
+                        "light-replit":  [
+                                             "light-replit"
+                                         ],
                         "templ":  [
                                       "templ"
                                   ],
@@ -7021,9 +7021,6 @@
                         "architecture":  [
                                              "architecture"
                                          ],
-                        "florida-blue":  [
-                                             "florida-blue"
-                                         ],
                         "scala":  [
                                       "scala"
                                   ],
@@ -7398,9 +7395,6 @@
                         "ng-module-ts2":  [
                                               "ng-module-ts2"
                                           ],
-                        "jenkins":  [
-                                        "jenkins"
-                                    ],
                         "sql":  [
                                     "sql"
                                 ],
@@ -7622,9 +7616,9 @@
                         "publisher":  [
                                           "publisher"
                                       ],
-                        "tfs":  [
-                                    "tfs"
-                                ],
+                        "jenkins":  [
+                                        "jenkins"
+                                    ],
                         "dockertest":  [
                                            "dockertest"
                                        ],
@@ -10822,9 +10816,9 @@
                         "ruby":  [
                                      "ruby"
                                  ],
-                        "light-replit":  [
-                                             "light-replit"
-                                         ],
+                        "tfs":  [
+                                    "tfs"
+                                ],
                         "typescript-official":  [
                                                     "typescript-official"
                                                 ],
