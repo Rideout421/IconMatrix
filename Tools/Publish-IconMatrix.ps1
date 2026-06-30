@@ -21,8 +21,12 @@ USAGE:
 # Build + install
 & (Join-Path $env:GIT_ROOT "IconMatrix\Tools\Publish-IconMatrix.ps1") -Install
 
+# Full reset (wipes + re-fetches source icons) + build + install
+& (Join-Path $env:GIT_ROOT "IconMatrix\Tools\Publish-IconMatrix.ps1") -FullReset -Install
+
 ===============================================================================
 Pipeline:
+0. Optional reset (-Reset / -FullReset)
 1. Sync icons
 2. Build registry
 3. Build theme
@@ -33,7 +37,9 @@ Pipeline:
 
 param(
     [switch]$DryRun,
-    [switch]$Install
+    [switch]$Install,
+    [switch]$Reset,
+    [switch]$FullReset
 )
 
 $ErrorActionPreference = "Stop"
@@ -53,6 +59,26 @@ if (-not (Test-Path $RepoRoot)) {
 }
 
 Set-Location $RepoRoot
+
+# =========================
+# STEP 0 - RESET (OPTIONAL)
+# =========================
+if ($Reset -or $FullReset) {
+    Write-Host "`n[STEP 0] Reset IconMatrix" -ForegroundColor Yellow
+
+    $resetScript = Join-Path $RepoRoot "scripts\Powershell\Maintenance\Reset-IconMatrix.ps1"
+
+    if (-not (Test-Path $resetScript)) {
+        throw "Reset script missing -> $resetScript"
+    }
+
+    $resetParams = @{ Confirm = $true }
+    if ($FullReset) { $resetParams.FullReset = $true }
+
+    & $resetScript @resetParams
+
+    Write-Host "[OK] Reset complete" -ForegroundColor Green
+}
 
 # =========================
 # CONFIG
