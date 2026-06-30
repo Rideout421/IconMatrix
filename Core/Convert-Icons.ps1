@@ -5,6 +5,12 @@ function Convert-Icons {
         [switch]$DryRun
     )
 
+    # -------------------------------------------------
+    # Processing Settings
+    # -------------------------------------------------
+    $TargetSize = 128
+    $MinScaleThreshold = 64   # ← Only very small icons get scaled now
+    
     if (-not (Test-Path $Output)) {
         New-Item -ItemType Directory -Path $Output -Force | Out-Null
     }
@@ -14,14 +20,10 @@ function Convert-Icons {
     . "$PSScriptRoot\..\utils\Naming.ps1"
     . "$PSScriptRoot\..\utils\Hashing.ps1"
 
-    # Include SVG, but DO NOT convert it
     $validExt = @(".png", ".jpg", ".jpeg", ".svg")
 
-    Write-Host "`n=== ICON CONVERT (SVG-AWARE MODE) ===" -ForegroundColor Cyan
+    Write-Host "`n=== ICON CONVERT (SMART MODE) ===" -ForegroundColor Cyan
 
-    # -----------------------------
-    # LOAD MANIFEST
-    # -----------------------------
     $RepoRoot = Split-Path -Parent $PSScriptRoot
     $manifestPath = Join-Path $RepoRoot "config\icon-manifest.json"
     $manifest = @{}
@@ -35,131 +37,90 @@ function Convert-Icons {
         }
     }
 
-    # -----------------------------
-    # GROUP BY CANONICAL NAME
-    # -----------------------------
     $grouped = Get-ChildItem $Path -File |
         Where-Object { $validExt -contains $_.Extension.ToLower() } |
         Group-Object { Get-CanonicalName $_.BaseName }
 
     foreach ($group in $grouped) {
 
-        # PRIORITY: SVG > PNG > others
         $file = $group.Group |
             Sort-Object @{
-                Expression = {
-                    switch ($_.Extension.ToLower()) {
-                        ".svg" { 0 }
-                        ".png" { 1 }
-                        default { 2 }
-                    }
-                }
+                Expression = { switch ($_.Extension.ToLower()) { ".svg" { 0 } ".png" { 1 } default { 2 } } }
             }, Name |
             Select-Object -First 1
 
         $sourceHash = Get-FileHashSHA256 $file.FullName
-
-        $outFile   = "$($group.Name)$($file.Extension.ToLower())"
+        $outFile = "$($group.Name)$($file.Extension.ToLower())"
         $finalPath = Join-Path $Output $outFile
 
-        Write-Host "PROCESSING: $($file.FullName)" -ForegroundColor Cyan
+        Write-Host "PROCESSING: $($file.Name)" -ForegroundColor Cyan
 
-        # -----------------------------
-        # HASH SKIP
-        # -----------------------------
         if ($manifest[$outFile] -and $manifest[$outFile].hash -eq $sourceHash) {
-            Write-Host "[SKIP UNCHANGED] $($file.Name)" -ForegroundColor DarkGray
+            Write-Host "[SKIP UNCHANGED]" -ForegroundColor DarkGray
             continue
         }
 
-        # -----------------------------
-        # SVG PASS-THROUGH (NO MAGICK)
-        # -----------------------------
-        if ($file.Extension -eq ".svg") {
-
+        if ($file.Extension.ToLower() -eq ".svg") {
             Write-Host "[PASS SVG] $($file.Name)" -ForegroundColor Green
-
-            if (-not $DryRun) {
-                Copy-Item $file.FullName $finalPath -Force
-            }
-
-            $manifest[$outFile] = @{
-                hash   = $sourceHash
-                source = $file.Name
-                mode   = "svg-pass"
-            }
-
+            if (-not $DryRun) { Copy-Item $file.FullName $finalPath -Force }
+            $manifest[$outFile] = @{ hash = $sourceHash; source = $file.Name; mode = "svg-pass" }
             continue
         }
 
-        # -----------------------------
-        # IMAGE VALIDATION (RASTER ONLY)
-        # -----------------------------
-        $identify = & $magick identify -format "%w %h" $file.FullName
-        if ($LASTEXITCODE -ne 0 -or -not $identify) {
-            Write-Host "[SKIP INVALID IMAGE] $($file.Name)" -ForegroundColor Red
+        $original = & $magick $file.FullName -format "%w %h" info:
+        $trimmed  = & $magick $file.FullName -trim +repage -format "%w %h" info:
+
+        $origW,$origH = $original -split " "
+        $trimW,$trimH = $trimmed -split " "
+
+        $origW = [int]$origW; $origH = [int]$origH
+        $trimW = [int]$trimW; $trimH = [int]$trimH
+
+        $longestTrimmed = [Math]::Max($trimW, $trimH)
+
+        # PASS THROUGH most icons
+        if ($longestTrimmed -ge $MinScaleThreshold) {
+            Write-Host "[PASS] Already good size" -ForegroundColor Green
+            if (-not $DryRun) { Copy-Item $file.FullName $finalPath -Force }
+            $manifest[$outFile] = @{ hash = $sourceHash; source = $file.Name; mode = "pass-through" }
             continue
         }
 
-        $w, $h = $identify -split " "
+        # Only very tiny icons get scaled
+        $MaxUpscale = 2.0
+        $neededScale = $TargetSize / $longestTrimmed
+        $scale = [Math]::Min($neededScale, $MaxUpscale)
 
-        # -----------------------------
-        # PASS-THROUGH SMALL PNG
-        # -----------------------------
-        if ([int]$w -le 128 -and [int]$h -le 128) {
+        $resizeW = [Math]::Round($trimW * $scale)
+        $resizeH = [Math]::Round($trimH * $scale)
 
-            Write-Host "[PASS PNG] $($file.Name)" -ForegroundColor Green
+        Write-Host "[PROCESS] $($file.Name) -> ${resizeW}x${resizeH} (tiny icon)" -ForegroundColor Yellow
 
-            if (-not $DryRun) {
-                Copy-Item $file.FullName $finalPath -Force
-            }
-
-            $manifest[$outFile] = @{
-                hash   = $sourceHash
-                source = $file.Name
-                mode   = "png-pass"
-            }
-
-            continue
-        }
-
-        # -----------------------------
-        # RESIZE LARGE PNG ONLY
-        # -----------------------------
-        if ($DryRun) {
-            Write-Host "[DRYRUN] $($file.Name) -> $finalPath"
-            continue
+        if ($DryRun) { 
+            Write-Host "[DRYRUN]" 
+            continue 
         }
 
         try {
-            & $magick $file.FullName `
-                -resize 128x128^> `
+            & $magick `
+                $file.FullName `
+                -trim +repage `
+                -resize "${resizeW}x${resizeH}" `
                 -background none `
                 -gravity center `
-                -extent 128x128 `
-                -filter Lanczos `
-                -unsharp 0x1.0 `
+                -extent "${TargetSize}x${TargetSize}" `
+                -filter Mitchell `
+                -unsharp 0x2.0+0.8+0.08 `   # Strong sharpening for tiny icons
                 $finalPath
 
-            if (Test-Path $finalPath) {
-                Write-Host "[OK] $($file.Name)" -ForegroundColor Green
-
-                $manifest[$outFile] = @{
-                    hash   = $sourceHash
-                    source = $file.Name
-                    mode   = "converted"
-                }
-            }
+            Write-Host "[OK] $($file.Name)" -ForegroundColor Green
+            $manifest[$outFile] = @{ hash = $sourceHash; source = $file.Name; mode = "scaled" }
         }
         catch {
-            Write-Host "[ERROR] $($file.Name) -> $($_.Exception.Message)" -ForegroundColor Red
+            Write-Host "[ERROR] $($file.Name)" -ForegroundColor Red
         }
     }
 
-    # -----------------------------
-    # SAVE MANIFEST
-    # -----------------------------
     $manifest | ConvertTo-Json -Depth 10 | Out-File $manifestPath -Encoding UTF8
-
-    Write-Host "`n=== CONVERT COMPLETE (SVG SAFE MODE) ===" -ForegroundColor Cyan
+    Write-Host "`n=== CONVERT COMPLETE (SMART MODE) ===" -ForegroundColor Cyan
 }

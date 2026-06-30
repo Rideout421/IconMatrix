@@ -1356,6 +1356,9 @@
                             "file-fileserver-icon":  {
                                                          "iconPath":  "./processed-icons/fileserver.png"
                                                      },
+                            "file-filewatcher-icon":  {
+                                                          "iconPath":  "./processed-icons/filewatcher.png"
+                                                      },
                             "file-financial-icon":  {
                                                         "iconPath":  "./processed-icons/financial.png"
                                                     },
@@ -1645,7 +1648,7 @@
                                                          "iconPath":  "./processed-icons/go-package.svg"
                                                      },
                             "file-go-to-meeting-icon":  {
-                                                            "iconPath":  "./processed-icons/go-to-meeting.jpg"
+                                                            "iconPath":  "./processed-icons/go-to-meeting.png"
                                                         },
                             "file-go-white-icon":  {
                                                        "iconPath":  "./processed-icons/go-white.svg"
@@ -1666,7 +1669,7 @@
                                                     "iconPath":  "./processed-icons/godot.svg"
                                                 },
                             "file-google-chrome-frame-icon":  {
-                                                                  "iconPath":  "./processed-icons/google-chrome-frame.jpg"
+                                                                  "iconPath":  "./processed-icons/google-chrome-frame.png"
                                                               },
                             "file-google-icon":  {
                                                      "iconPath":  "./processed-icons/google.svg"
@@ -1795,7 +1798,7 @@
                                                    "iconPath":  "./processed-icons/helm.svg"
                                                },
                             "file-help-desk-icon":  {
-                                                        "iconPath":  "./processed-icons/help-desk.jpg"
+                                                        "iconPath":  "./processed-icons/help-desk.png"
                                                     },
                             "file-helper-icon":  {
                                                      "iconPath":  "./processed-icons/helper.svg"
@@ -1930,7 +1933,7 @@
                                                    "iconPath":  "./processed-icons/idea.svg"
                                                },
                             "file-idealstor-icon":  {
-                                                        "iconPath":  "./processed-icons/idealstor.jpg"
+                                                        "iconPath":  "./processed-icons/idealstor.png"
                                                     },
                             "file-idris-icon":  {
                                                     "iconPath":  "./processed-icons/idris.svg"
@@ -2205,9 +2208,6 @@
                             "file-key-icon":  {
                                                   "iconPath":  "./processed-icons/key.svg"
                                               },
-                            "file-keypass-icon":  {
-                                                      "iconPath":  "./processed-icons/keypass.png"
-                                                  },
                             "file-kickresume-icon":  {
                                                          "iconPath":  "./processed-icons/kickresume.png"
                                                      },
@@ -2221,7 +2221,7 @@
                                                    "iconPath":  "./processed-icons/kivy.svg"
                                                },
                             "file-kmnet-viewer-icon":  {
-                                                           "iconPath":  "./processed-icons/kmnet-viewer.jpg"
+                                                           "iconPath":  "./processed-icons/kmnet-viewer.png"
                                                        },
                             "file-knip-icon":  {
                                                    "iconPath":  "./processed-icons/knip.svg"
@@ -2830,7 +2830,7 @@
                                                    "iconPath":  "./processed-icons/lync.svg"
                                                },
                             "file-mac-admin-icon":  {
-                                                        "iconPath":  "./processed-icons/mac-admin.jpg"
+                                                        "iconPath":  "./processed-icons/mac-admin.png"
                                                     },
                             "file-mac-mini-icon":  {
                                                        "iconPath":  "./processed-icons/mac-mini.png"
@@ -2920,7 +2920,7 @@
                                                   "iconPath":  "./processed-icons/mcp.svg"
                                               },
                             "file-md3000-icon":  {
-                                                     "iconPath":  "./processed-icons/md3000.jpg"
+                                                     "iconPath":  "./processed-icons/md3000.png"
                                                  },
                             "file-mdmdiagreport-icon":  {
                                                             "iconPath":  "./processed-icons/mdmdiagreport.png"
@@ -3765,9 +3765,6 @@
                             "file-pluralsight-icon":  {
                                                           "iconPath":  "./processed-icons/pluralsight.png"
                                                       },
-                            "file-plurasight-icon":  {
-                                                         "iconPath":  "./processed-icons/plurasight.png"
-                                                     },
                             "file-pm2-icon":  {
                                                   "iconPath":  "./processed-icons/pm2.svg"
                                               },
@@ -4192,7 +4189,7 @@
                                                              "iconPath":  "./processed-icons/reset-password.png"
                                                          },
                             "file-resharper!-icon":  {
-                                                         "iconPath":  "./processed-icons/resharper!.jpg"
+                                                         "iconPath":  "./processed-icons/resharper!.png"
                                                      },
                             "file-rest-icon":  {
                                                    "iconPath":  "./processed-icons/rest.svg"
@@ -4213,7 +4210,7 @@
                                                    "iconPath":  "./processed-icons/rexx.svg"
                                                },
                             "file-rhinosoft-icon":  {
-                                                        "iconPath":  "./processed-icons/rhinosoft.jpg"
+                                                        "iconPath":  "./processed-icons/rhinosoft.png"
                                                     },
                             "file-rideout-icon":  {
                                                       "iconPath":  "./processed-icons/rideout.png"
@@ -5301,9 +5298,6 @@
                             "file-wasm-icon":  {
                                                    "iconPath":  "./processed-icons/wasm.svg"
                                                },
-                            "file-watcher-icon":  {
-                                                      "iconPath":  "./processed-icons/watcher.png"
-                                                  },
                             "file-watchmanconfig-icon":  {
                                                              "iconPath":  "./processed-icons/watchmanconfig.svg"
                                                          },
@@ -5994,6 +5988,7 @@
                         "filecapture":  "file-filecapture-icon",
                         "files":  "file-files-icon",
                         "fileserver":  "file-fileserver-icon",
+                        "filewatcher":  "file-filewatcher-icon",
                         "financial":  "file-financial-icon",
                         "find-it-now-gps":  "file-find-it-now-gps-icon",
                         "firebase":  "file-firebase-icon",
@@ -6295,7 +6290,6 @@
                         "kb":  "file-kb-icon",
                         "keepass":  "file-keepass-icon",
                         "key":  "file-key-icon",
-                        "keypass":  "file-keypass-icon",
                         "kickresume":  "file-kickresume-icon",
                         "kitchenci":  "file-kitchenci-icon",
                         "kite":  "file-kite-icon",
@@ -6828,7 +6822,6 @@
                         "plsql":  "file-plsql-icon",
                         "plugin":  "file-plugin-icon",
                         "pluralsight":  "file-pluralsight-icon",
-                        "plurasight":  "file-plurasight-icon",
                         "pm2":  "file-pm2-icon",
                         "pnc-bank":  "file-pnc-bank-icon",
                         "pnpm":  "file-pnpm-icon",
@@ -7369,7 +7362,6 @@
                         "wally":  "file-wally-icon",
                         "warp":  "file-warp-icon",
                         "wasm":  "file-wasm-icon",
-                        "watcher":  "file-watcher-icon",
                         "watchmanconfig":  "file-watchmanconfig-icon",
                         "wdio":  "file-wdio-icon",
                         "web":  "file-web-icon",
@@ -7915,6 +7907,7 @@
                       "filecapture":  "file-filecapture-icon",
                       "files":  "file-files-icon",
                       "fileserver":  "file-fileserver-icon",
+                      "filewatcher":  "file-filewatcher-icon",
                       "financial":  "file-financial-icon",
                       "find-it-now-gps":  "file-find-it-now-gps-icon",
                       "firebase":  "file-firebase-icon",
@@ -8215,7 +8208,6 @@
                       "kb":  "file-kb-icon",
                       "keepass":  "file-keepass-icon",
                       "key":  "file-key-icon",
-                      "keypass":  "file-keypass-icon",
                       "kickresume":  "file-kickresume-icon",
                       "kitchenci":  "file-kitchenci-icon",
                       "kite":  "file-kite-icon",
@@ -8746,7 +8738,6 @@
                       "plsql":  "file-plsql-icon",
                       "plugin":  "file-plugin-icon",
                       "pluralsight":  "file-pluralsight-icon",
-                      "plurasight":  "file-plurasight-icon",
                       "pm2":  "file-pm2-icon",
                       "pnc-bank":  "file-pnc-bank-icon",
                       "pnpm":  "file-pnpm-icon",
@@ -9284,7 +9275,6 @@
                       "wally":  "file-wally-icon",
                       "warp":  "file-warp-icon",
                       "wasm":  "file-wasm-icon",
-                      "watcher":  "file-watcher-icon",
                       "watchmanconfig":  "file-watchmanconfig-icon",
                       "wdio":  "file-wdio-icon",
                       "web":  "file-web-icon",
