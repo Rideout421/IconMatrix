@@ -1311,6 +1311,12 @@
                             "file-esxihosts-icon":  {
                                                         "iconPath":  "./processed-icons/esxihosts.png"
                                                     },
+                            "file-etc-hosts-icon":  {
+                                                        "iconPath":  "./processed-icons/etc-hosts.png"
+                                                    },
+                            "file-ethernet-cable-icon":  {
+                                                             "iconPath":  "./processed-icons/ethernet-cable.png"
+                                                         },
                             "file-eventing-icon":  {
                                                        "iconPath":  "./processed-icons/eventing.png"
                                                    },
@@ -2085,6 +2091,9 @@
                             "file-isilon-icon":  {
                                                      "iconPath":  "./processed-icons/isilon.png"
                                                  },
+                            "file-iso-icon":  {
+                                                  "iconPath":  "./processed-icons/iso.png"
+                                              },
                             "file-ivanti-icon":  {
                                                      "iconPath":  "./processed-icons/ivanti.png"
                                                  },
@@ -2869,7 +2878,7 @@
                                                    "iconPath":  "./processed-icons/luau.svg"
                                                },
                             "file-luns-icon":  {
-                                                   "iconPath":  "./processed-icons/luns.svg"
+                                                   "iconPath":  "./processed-icons/luns.png"
                                                },
                             "file-lv-icon":  {
                                                  "iconPath":  "./processed-icons/lv.png"
@@ -3264,6 +3273,9 @@
                             "file-net-icon":  {
                                                   "iconPath":  "./processed-icons/net.svg"
                                               },
+                            "file-netapp-icon":  {
+                                                     "iconPath":  "./processed-icons/netapp.png"
+                                                 },
                             "file-netflix-icon":  {
                                                       "iconPath":  "./processed-icons/netflix.png"
                                                   },
@@ -4317,6 +4329,9 @@
                             "file-robinhood-icon":  {
                                                         "iconPath":  "./processed-icons/robinhood.png"
                                                     },
+                            "file-robo-copy-icon":  {
+                                                        "iconPath":  "./processed-icons/robo-copy.png"
+                                                    },
                             "file-robotframework-icon":  {
                                                              "iconPath":  "./processed-icons/robotframework.svg"
                                                          },
@@ -4521,6 +4536,9 @@
                             "file-sequens-ai-icon":  {
                                                          "iconPath":  "./processed-icons/sequens-ai.png"
                                                      },
+                            "file-server-core-icon":  {
+                                                          "iconPath":  "./processed-icons/server-core.png"
+                                                      },
                             "file-server-icon":  {
                                                      "iconPath":  "./processed-icons/server.svg"
                                                  },
@@ -4533,6 +4551,9 @@
                             "file-serveruptime-icon":  {
                                                            "iconPath":  "./processed-icons/serveruptime.png"
                                                        },
+                            "file-service-accounts-icon":  {
+                                                               "iconPath":  "./processed-icons/service-accounts.png"
+                                                           },
                             "file-service-rocket-icon":  {
                                                              "iconPath":  "./processed-icons/service-rocket.png"
                                                          },
@@ -6084,6 +6105,8 @@
                         "esrs-recover-point":  "file-esrs-recover-point-icon",
                         "esxi":  "file-esxi-icon",
                         "esxihosts":  "file-esxihosts-icon",
+                        "etc-hosts":  "file-etc-hosts-icon",
+                        "ethernet-cable":  "file-ethernet-cable-icon",
                         "eventing":  "file-eventing-icon",
                         "everlearns":  "file-everlearns-icon",
                         "excalidraw":  "file-excalidraw-icon",
@@ -6359,6 +6382,7 @@
                         "ipad":  "file-ipad-icon",
                         "ipam":  "file-ipam-icon",
                         "isilon":  "file-isilon-icon",
+                        "iso":  "file-iso-icon",
                         "ivanti":  "file-ivanti-icon",
                         "jake":  "file-jake-icon",
                         "jamf":  "file-jamf-icon",
@@ -6762,6 +6786,7 @@
                         "nest-service-ts":  "file-nest-service-ts-icon",
                         "nestjs":  "file-nestjs-icon",
                         "net":  "file-net-icon",
+                        "netapp":  "file-netapp-icon",
                         "netflix":  "file-netflix-icon",
                         "netlify":  "file-netlify-icon",
                         "netscaler":  "file-netscaler-icon",
@@ -7123,6 +7148,7 @@
                         "roadway-ai":  "file-roadway-ai-icon",
                         "robert-half":  "file-robert-half-icon",
                         "robinhood":  "file-robinhood-icon",
+                        "robo-copy":  "file-robo-copy-icon",
                         "robotframework":  "file-robotframework-icon",
                         "robots":  "file-robots-icon",
                         "rocky":  "file-rocky-icon",
@@ -7191,10 +7217,12 @@
                         "sentry":  "file-sentry-icon",
                         "sequelize":  "file-sequelize-icon",
                         "sequens-ai":  "file-sequens-ai-icon",
+                        "server-core":  "file-server-core-icon",
                         "server":  "file-server-icon",
                         "serverless":  "file-serverless-icon",
                         "servernew":  "file-servernew-icon",
                         "serveruptime":  "file-serveruptime-icon",
+                        "service-accounts":  "file-service-accounts-icon",
                         "service-rocket":  "file-service-rocket-icon",
                         "service":  "file-service-icon",
                         "services":  "file-services-icon",
@@ -8040,6 +8068,8 @@
                       "esrs-recover-point":  "file-esrs-recover-point-icon",
                       "esxi":  "file-esxi-icon",
                       "esxihosts":  "file-esxihosts-icon",
+                      "etc-hosts":  "file-etc-hosts-icon",
+                      "ethernet-cable":  "file-ethernet-cable-icon",
                       "eventing":  "file-eventing-icon",
                       "everlearns":  "file-everlearns-icon",
                       "excalidraw":  "file-excalidraw-icon",
@@ -8312,6 +8342,7 @@
                       "ipad":  "file-ipad-icon",
                       "ipam":  "file-ipam-icon",
                       "isilon":  "file-isilon-icon",
+                      "iso":  "file-iso-icon",
                       "ivanti":  "file-ivanti-icon",
                       "jake":  "file-jake-icon",
                       "jamf":  "file-jamf-icon",
@@ -8715,6 +8746,7 @@
                       "nest-service-ts":  "file-nest-service-ts-icon",
                       "nestjs":  "file-nestjs-icon",
                       "net":  "file-net-icon",
+                      "netapp":  "file-netapp-icon",
                       "netflix":  "file-netflix-icon",
                       "netlify":  "file-netlify-icon",
                       "netscaler":  "file-netscaler-icon",
@@ -9083,6 +9115,7 @@
                       "roadway-ai":  "file-roadway-ai-icon",
                       "robert-half":  "file-robert-half-icon",
                       "robinhood":  "file-robinhood-icon",
+                      "robo-copy":  "file-robo-copy-icon",
                       "robotframework":  "file-robotframework-icon",
                       "robots":  "file-robots-icon",
                       "rocky":  "file-rocky-icon",
@@ -9153,10 +9186,12 @@
                       "sentry":  "file-sentry-icon",
                       "sequelize":  "file-sequelize-icon",
                       "sequens-ai":  "file-sequens-ai-icon",
+                      "server-core":  "file-server-core-icon",
                       "server":  "file-server-icon",
                       "serverless":  "file-serverless-icon",
                       "servernew":  "file-servernew-icon",
                       "serveruptime":  "file-serveruptime-icon",
+                      "service-accounts":  "file-service-accounts-icon",
                       "service-rocket":  "file-service-rocket-icon",
                       "service":  "file-service-icon",
                       "servicenow":  "file-servicenow-icon",

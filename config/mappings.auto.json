@@ -201,6 +201,9 @@
                       "netflix":  [
                                       "netflix"
                                   ],
+                      "ethernet-cable":  [
+                                             "ethernet-cable"
+                                         ],
                       "commitizen":  [
                                          "commitizen"
                                      ],
@@ -279,6 +282,9 @@
                       "c3":  [
                                  "c3"
                              ],
+                      "robo-copy":  [
+                                        "robo-copy"
+                                    ],
                       "wells-fargo":  [
                                           "wells-fargo"
                                       ],
@@ -1284,6 +1290,9 @@
                       "datavant":  [
                                        "datavant"
                                    ],
+                      "netapp":  [
+                                     "netapp"
+                                 ],
                       "baseconfig":  [
                                          "baseconfig"
                                      ],
@@ -1392,9 +1401,9 @@
                       "red":  [
                                   "red"
                               ],
-                      "gamma":  [
-                                    "gamma"
-                                ],
+                      "etc-hosts":  [
+                                        "etc-hosts"
+                                    ],
                       "zip2":  [
                                    "zip2"
                                ],
@@ -1803,9 +1812,9 @@
                       "buildkite":  [
                                         "buildkite"
                                     ],
-                      "stan":  [
-                                   "stan"
-                               ],
+                      "service-accounts":  [
+                                               "service-accounts"
+                                           ],
                       "atena":  [
                                     "atena"
                                 ],
@@ -2279,6 +2288,9 @@
                               ],
                       "pddl":  [
                                    "pddl"
+                               ],
+                      "stan":  [
+                                   "stan"
                                ],
                       "apache":  [
                                      "apache"
@@ -3417,6 +3429,9 @@
                       "mivascript":  [
                                          "mivascript"
                                      ],
+                      "server-core":  [
+                                          "server-core"
+                                      ],
                       "next-right-management":  [
                                                     "next-right-management"
                                                 ],
@@ -3492,6 +3507,9 @@
                       "semrush":  [
                                       "semrush"
                                   ],
+                      "gamma":  [
+                                    "gamma"
+                                ],
                       "ng-routing-js2":  [
                                              "ng-routing-js2"
                                          ],
@@ -4968,6 +4986,9 @@
                       "blizzard":  [
                                        "blizzard"
                                    ],
+                      "iso":  [
+                                  "iso"
+                              ],
                       "licensebat":  [
                                          "licensebat"
                                      ],
@@ -5810,6 +5831,9 @@
                         "netflix":  [
                                         "netflix"
                                     ],
+                        "ethernet-cable":  [
+                                               "ethernet-cable"
+                                           ],
                         "commitizen":  [
                                            "commitizen"
                                        ],
@@ -5888,6 +5912,9 @@
                         "c3":  [
                                    "c3"
                                ],
+                        "robo-copy":  [
+                                          "robo-copy"
+                                      ],
                         "wells-fargo":  [
                                             "wells-fargo"
                                         ],
@@ -6893,6 +6920,9 @@
                         "datavant":  [
                                          "datavant"
                                      ],
+                        "netapp":  [
+                                       "netapp"
+                                   ],
                         "baseconfig":  [
                                            "baseconfig"
                                        ],
@@ -7001,9 +7031,9 @@
                         "red":  [
                                     "red"
                                 ],
-                        "gamma":  [
-                                      "gamma"
-                                  ],
+                        "etc-hosts":  [
+                                          "etc-hosts"
+                                      ],
                         "zip2":  [
                                      "zip2"
                                  ],
@@ -7412,9 +7442,9 @@
                         "buildkite":  [
                                           "buildkite"
                                       ],
-                        "stan":  [
-                                     "stan"
-                                 ],
+                        "service-accounts":  [
+                                                 "service-accounts"
+                                             ],
                         "atena":  [
                                       "atena"
                                   ],
@@ -7888,6 +7918,9 @@
                                 ],
                         "pddl":  [
                                      "pddl"
+                                 ],
+                        "stan":  [
+                                     "stan"
                                  ],
                         "apache":  [
                                        "apache"
@@ -9026,6 +9059,9 @@
                         "mivascript":  [
                                            "mivascript"
                                        ],
+                        "server-core":  [
+                                            "server-core"
+                                        ],
                         "next-right-management":  [
                                                       "next-right-management"
                                                   ],
@@ -9101,6 +9137,9 @@
                         "semrush":  [
                                         "semrush"
                                     ],
+                        "gamma":  [
+                                      "gamma"
+                                  ],
                         "ng-routing-js2":  [
                                                "ng-routing-js2"
                                            ],
@@ -10577,6 +10616,9 @@
                         "blizzard":  [
                                          "blizzard"
                                      ],
+                        "iso":  [
+                                    "iso"
+                                ],
                         "licensebat":  [
                                            "licensebat"
                                        ],
