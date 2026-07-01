@@ -708,6 +708,9 @@
                             "file-codacy-icon":  {
                                                      "iconPath":  "./processed-icons/codacy.svg"
                                                  },
+                            "file-code-compare-icon":  {
+                                                           "iconPath":  "./processed-icons/code-compare.png"
+                                                       },
                             "file-codeclimate-icon":  {
                                                           "iconPath":  "./processed-icons/codeclimate.svg"
                                                       },
@@ -792,6 +795,9 @@
                             "file-conda-icon":  {
                                                     "iconPath":  "./processed-icons/conda.svg"
                                                 },
+                            "file-confernece-rooms-icon":  {
+                                                               "iconPath":  "./processed-icons/confernece-rooms.png"
+                                                           },
                             "file-config-icon":  {
                                                      "iconPath":  "./processed-icons/config.svg"
                                                  },
@@ -948,6 +954,9 @@
                             "file-data-icon":  {
                                                    "iconPath":  "./processed-icons/data.png"
                                                },
+                            "file-datacenter-icon":  {
+                                                         "iconPath":  "./processed-icons/datacenter.jpg"
+                                                     },
                             "file-datadog-icon":  {
                                                       "iconPath":  "./processed-icons/datadog.svg"
                                                   },
@@ -1065,6 +1074,9 @@
                             "file-diskcleanup-icon":  {
                                                           "iconPath":  "./processed-icons/diskcleanup.png"
                                                       },
+                            "file-diskpart-icon":  {
+                                                       "iconPath":  "./processed-icons/diskpart.jpg"
+                                                   },
                             "file-disney-icon":  {
                                                      "iconPath":  "./processed-icons/disney.png"
                                                  },
@@ -1719,6 +1731,9 @@
                             "file-goto-meeting-icon":  {
                                                            "iconPath":  "./processed-icons/goto-meeting.svg"
                                                        },
+                            "file-gotomeeting-icon":  {
+                                                          "iconPath":  "./processed-icons/gotomeeting.png"
+                                                      },
                             "file-gpg-icon":  {
                                                   "iconPath":  "./processed-icons/gpg.svg"
                                               },
@@ -1974,6 +1989,9 @@
                             "file-idealstor-icon":  {
                                                         "iconPath":  "./processed-icons/idealstor.png"
                                                     },
+                            "file-idrac-icon":  {
+                                                    "iconPath":  "./processed-icons/idrac.png"
+                                                },
                             "file-idris-icon":  {
                                                     "iconPath":  "./processed-icons/idris.svg"
                                                 },
@@ -2045,6 +2063,9 @@
                                                },
                             "file-instagram-icon":  {
                                                         "iconPath":  "./processed-icons/instagram.png"
+                                                    },
+                            "file-installer-icon":  {
+                                                        "iconPath":  "./processed-icons/installer.png"
                                                     },
                             "file-integration-icon":  {
                                                           "iconPath":  "./processed-icons/integration.svg"
@@ -3681,6 +3702,9 @@
                             "file-passwd-icon":  {
                                                      "iconPath":  "./processed-icons/passwd.png"
                                                  },
+                            "file-password-icon":  {
+                                                       "iconPath":  "./processed-icons/password.png"
+                                                   },
                             "file-patch-icon":  {
                                                     "iconPath":  "./processed-icons/patch.svg"
                                                 },
@@ -3870,6 +3894,9 @@
                             "file-portfolio-icon":  {
                                                         "iconPath":  "./processed-icons/portfolio.png"
                                                     },
+                            "file-pos-extractor-icon":  {
+                                                            "iconPath":  "./processed-icons/pos-extractor.jpg"
+                                                        },
                             "file-postcss-icon":  {
                                                       "iconPath":  "./processed-icons/postcss.svg"
                                                   },
@@ -4188,6 +4215,9 @@
                             "file-rdcman-icon":  {
                                                      "iconPath":  "./processed-icons/rdcman.png"
                                                  },
+                            "file-rdp-wrapper-icon":  {
+                                                          "iconPath":  "./processed-icons/rdp-wrapper.png"
+                                                      },
                             "file-reactjs-icon":  {
                                                       "iconPath":  "./processed-icons/reactjs.svg"
                                                   },
@@ -4700,6 +4730,9 @@
                                                    },
                             "file-sonnet-icon":  {
                                                      "iconPath":  "./processed-icons/sonnet.png"
+                                                 },
+                            "file-sophos-icon":  {
+                                                     "iconPath":  "./processed-icons/sophos.jpg"
                                                  },
                             "file-source-icons-icon":  {
                                                            "iconPath":  "./processed-icons/source-icons.png"
@@ -5259,6 +5292,12 @@
                             "file-vcxproj-icon":  {
                                                       "iconPath":  "./processed-icons/vcxproj.svg"
                                                   },
+                            "file-vdi-icon":  {
+                                                  "iconPath":  "./processed-icons/vdi.png"
+                                              },
+                            "file-vdir-icon":  {
+                                                   "iconPath":  "./processed-icons/vdir.jpg"
+                                               },
                             "file-veeam-icon":  {
                                                     "iconPath":  "./processed-icons/veeam.svg"
                                                 },
@@ -5889,6 +5928,7 @@
                         "cmake":  "file-cmake-icon",
                         "cobol":  "file-cobol-icon",
                         "codacy":  "file-codacy-icon",
+                        "code-compare":  "file-code-compare-icon",
                         "codeclimate":  "file-codeclimate-icon",
                         "codecov":  "file-codecov-icon",
                         "codekit":  "file-codekit-icon",
@@ -5918,6 +5958,7 @@
                         "conan":  "file-conan-icon",
                         "concur":  "file-concur-icon",
                         "conda":  "file-conda-icon",
+                        "confernece-rooms":  "file-confernece-rooms-icon",
                         "config":  "file-ini-icon",
                         "confluence":  "file-confluence-icon",
                         "context7":  "file-context7-icon",
@@ -5981,6 +6022,7 @@
                         "dartlang":  "file-dartlang-icon",
                         "data-runs":  "file-data-runs-icon",
                         "data":  "file-data-icon",
+                        "datacenter":  "file-datacenter-icon",
                         "datadog":  "file-datadog-icon",
                         "datavant":  "file-datavant-icon",
                         "db":  "file-db-icon",
@@ -6020,6 +6062,7 @@
                         "disk-management":  "file-disk-management-icon",
                         "disk-volume-management":  "file-disk-volume-management-icon",
                         "diskcleanup":  "file-diskcleanup-icon",
+                        "diskpart":  "file-diskpart-icon",
                         "disney":  "file-disney-icon",
                         "dist":  "file-dist-icon",
                         "django":  "file-django-icon",
@@ -6244,6 +6287,7 @@
                         "gopro":  "file-gopro-icon",
                         "goprofiles":  "file-goprofiles-icon",
                         "goto-meeting":  "file-goto-meeting-icon",
+                        "gotomeeting":  "file-gotomeeting-icon",
                         "gpg":  "file-gpg-icon",
                         "gpos":  "file-gpos-icon",
                         "grab":  "file-grab-icon",
@@ -6334,6 +6378,7 @@
                         "id-me":  "file-id-me-icon",
                         "idea":  "file-idea-icon",
                         "idealstor":  "file-idealstor-icon",
+                        "idrac":  "file-idrac-icon",
                         "idris":  "file-idris-icon",
                         "idrisbin":  "file-idrisbin-icon",
                         "idrispkg":  "file-idrispkg-icon",
@@ -6365,6 +6410,7 @@
                         "innosetup":  "file-innosetup-icon",
                         "inrō":  "file-inrō-icon",
                         "instagram":  "file-instagram-icon",
+                        "installer":  "file-installer-icon",
                         "integration":  "file-integration-icon",
                         "integrations":  "file-integration-icon",
                         "intelebrowser":  "file-intelebrowser-icon",
@@ -6925,6 +6971,7 @@
                         "pandacss":  "file-pandacss-icon",
                         "parquet":  "file-parquet-icon",
                         "passwd":  "file-passwd-icon",
+                        "password":  "file-password-icon",
                         "patch":  "file-patch-icon",
                         "pawn":  "file-pawn-icon",
                         "pcl":  "file-pcl-icon",
@@ -6989,6 +7036,7 @@
                         "pony":  "file-pony-icon",
                         "pop3":  "file-pop3-icon",
                         "portfolio":  "file-portfolio-icon",
+                        "pos-extractor":  "file-pos-extractor-icon",
                         "postcss":  "file-postcss-icon",
                         "postcssconfig":  "file-postcssconfig-icon",
                         "postgresql":  "file-postgresql-icon",
@@ -7101,6 +7149,7 @@
                         "razor":  "file-razor-icon",
                         "razzle":  "file-razzle-icon",
                         "rdcman":  "file-rdcman-icon",
+                        "rdp-wrapper":  "file-rdp-wrapper-icon",
                         "reactjs":  "file-reactjs-icon",
                         "reactrouter":  "file-reactrouter-icon",
                         "reacttemplate":  "file-reacttemplate-icon",
@@ -7270,6 +7319,7 @@
                         "solidarity":  "file-solidarity-icon",
                         "solidity":  "file-solidity-icon",
                         "sonnet":  "file-sonnet-icon",
+                        "sophos":  "file-sophos-icon",
                         "source-icons":  "file-source-icons-icon",
                         "source":  "file-source-icon",
                         "src":  "file-src-icon",
@@ -7474,6 +7524,8 @@
                         "vbscript":  "file-vbscript-icon",
                         "vcenter":  "file-vcenter-icon",
                         "vcxproj":  "file-vcxproj-icon",
+                        "vdi":  "file-vdi-icon",
+                        "vdir":  "file-vdir-icon",
                         "veeam":  "file-veeam-icon",
                         "velocity":  "file-velocity-icon",
                         "venafi":  "file-venafi-icon",
@@ -7852,6 +7904,7 @@
                       "cmake":  "file-cmake-icon",
                       "cobol":  "file-cobol-icon",
                       "codacy":  "file-codacy-icon",
+                      "code-compare":  "file-code-compare-icon",
                       "codeclimate":  "file-codeclimate-icon",
                       "codecov":  "file-codecov-icon",
                       "codekit":  "file-codekit-icon",
@@ -7880,6 +7933,7 @@
                       "conan":  "file-conan-icon",
                       "concur":  "file-concur-icon",
                       "conda":  "file-conda-icon",
+                      "confernece-rooms":  "file-confernece-rooms-icon",
                       "config":  "file-config-icon",
                       "confluence":  "file-confluence-icon",
                       "context7":  "file-context7-icon",
@@ -7932,6 +7986,7 @@
                       "dartlang":  "file-dartlang-icon",
                       "data-runs":  "file-data-runs-icon",
                       "data":  "file-data-icon",
+                      "datacenter":  "file-datacenter-icon",
                       "datadog":  "file-datadog-icon",
                       "datavant":  "file-datavant-icon",
                       "db":  "file-db-icon",
@@ -7971,6 +8026,7 @@
                       "disk-management":  "file-disk-management-icon",
                       "disk-volume-management":  "file-disk-volume-management-icon",
                       "diskcleanup":  "file-diskcleanup-icon",
+                      "diskpart":  "file-diskpart-icon",
                       "disney":  "file-disney-icon",
                       "dist":  "file-dist-icon",
                       "django":  "file-django-icon",
@@ -8214,6 +8270,7 @@
                       "gopro":  "file-gopro-icon",
                       "goprofiles":  "file-goprofiles-icon",
                       "goto-meeting":  "file-goto-meeting-icon",
+                      "gotomeeting":  "file-gotomeeting-icon",
                       "gpg":  "file-gpg-icon",
                       "gpos":  "file-gpos-icon",
                       "grab":  "file-grab-icon",
@@ -8303,6 +8360,7 @@
                       "id-me":  "file-id-me-icon",
                       "idea":  "file-idea-icon",
                       "idealstor":  "file-idealstor-icon",
+                      "idrac":  "file-idrac-icon",
                       "idris":  "file-idris-icon",
                       "idrisbin":  "file-idrisbin-icon",
                       "idrispkg":  "file-idrispkg-icon",
@@ -8327,6 +8385,7 @@
                       "innosetup":  "file-innosetup-icon",
                       "inrō":  "file-inrō-icon",
                       "instagram":  "file-instagram-icon",
+                      "installer":  "file-installer-icon",
                       "integration":  "file-integration-icon",
                       "intelebrowser":  "file-intelebrowser-icon",
                       "intelerad":  "file-intelerad-icon",
@@ -8886,6 +8945,7 @@
                       "pandacss":  "file-pandacss-icon",
                       "parquet":  "file-parquet-icon",
                       "passwd":  "file-passwd-icon",
+                      "password":  "file-password-icon",
                       "patch":  "file-patch-icon",
                       "pawn":  "file-pawn-icon",
                       "pcl":  "file-pcl-icon",
@@ -8949,6 +9009,7 @@
                       "pony":  "file-pony-icon",
                       "pop3":  "file-pop3-icon",
                       "portfolio":  "file-portfolio-icon",
+                      "pos-extractor":  "file-pos-extractor-icon",
                       "postcss":  "file-postcss-icon",
                       "postcssconfig":  "file-postcssconfig-icon",
                       "postgresql":  "file-postgresql-icon",
@@ -9068,6 +9129,7 @@
                       "razor":  "file-razor-icon",
                       "razzle":  "file-razzle-icon",
                       "rdcman":  "file-rdcman-icon",
+                      "rdp-wrapper":  "file-rdp-wrapper-icon",
                       "reactjs":  "file-reactjs-icon",
                       "reactrouter":  "file-reactrouter-icon",
                       "reacttemplate":  "file-reacttemplate-icon",
@@ -9241,6 +9303,7 @@
                       "solidarity":  "file-solidarity-icon",
                       "solidity":  "file-solidity-icon",
                       "sonnet":  "file-sonnet-icon",
+                      "sophos":  "file-sophos-icon",
                       "source-icons":  "file-source-icons-icon",
                       "source":  "file-source-icon",
                       "spacengine":  "file-spacengine-icon",
@@ -9434,6 +9497,8 @@
                       "vbscript":  "file-vbscript-icon",
                       "vcenter":  "file-vcenter-icon",
                       "vcxproj":  "file-vcxproj-icon",
+                      "vdi":  "file-vdi-icon",
+                      "vdir":  "file-vdir-icon",
                       "veeam":  "file-veeam-icon",
                       "velocity":  "file-velocity-icon",
                       "venafi":  "file-venafi-icon",

@@ -222,6 +222,9 @@
                       "deepai":  [
                                      "deepai"
                                  ],
+                      "rake":  [
+                                   "rake"
+                               ],
                       "affinitydesigner":  [
                                                "affinitydesigner"
                                            ],
@@ -339,6 +342,9 @@
                       "openmanage":  [
                                          "openmanage"
                                      ],
+                      "password":  [
+                                       "password"
+                                   ],
                       "comptia":  [
                                       "comptia"
                                   ],
@@ -471,6 +477,9 @@
                       "cert":  [
                                    "cert"
                                ],
+                      "rdp-wrapper":  [
+                                          "rdp-wrapper"
+                                      ],
                       "hvac":  [
                                    "hvac"
                                ],
@@ -846,9 +855,9 @@
                       "hlsl":  [
                                    "hlsl"
                                ],
-                      "startup-services":  [
-                                               "startup-services"
-                                           ],
+                      "diskpart":  [
+                                       "diskpart"
+                                   ],
                       "slack":  [
                                     "slack"
                                 ],
@@ -879,9 +888,9 @@
                       "kotlin":  [
                                      "kotlin"
                                  ],
-                      "rails":  [
-                                    "rails"
-                                ],
+                      "emcopy":  [
+                                     "emcopy"
+                                 ],
                       "nest-adapter-ts":  [
                                               "nest-adapter-ts"
                                           ],
@@ -891,9 +900,9 @@
                       "unibeautify":  [
                                           "unibeautify"
                                       ],
-                      "vs2":  [
-                                  "vs2"
-                              ],
+                      "gotomeeting":  [
+                                          "gotomeeting"
+                                      ],
                       "micro-focus":  [
                                           "micro-focus"
                                       ],
@@ -1002,6 +1011,9 @@
                       "biome":  [
                                     "biome"
                                 ],
+                      "sophos":  [
+                                     "sophos"
+                                 ],
                       "handlebars":  [
                                          "handlebars"
                                      ],
@@ -1098,6 +1110,9 @@
                       "drawio":  [
                                      "drawio"
                                  ],
+                      "idrac":  [
+                                    "idrac"
+                                ],
                       "context7":  [
                                        "context7"
                                    ],
@@ -1779,6 +1794,9 @@
                       "light-mysql":  [
                                           "light-mysql"
                                       ],
+                      "vs2":  [
+                                  "vs2"
+                              ],
                       "tm":  [
                                  "tm"
                              ],
@@ -2085,9 +2103,9 @@
                       "vendor-support":  [
                                              "vendor-support"
                                          ],
-                      "astroconfig":  [
-                                          "astroconfig"
-                                      ],
+                      "confernece-rooms":  [
+                                               "confernece-rooms"
+                                           ],
                       "vbscript":  [
                                        "vbscript"
                                    ],
@@ -2181,6 +2199,9 @@
                       "tfs":  [
                                   "tfs"
                               ],
+                      "code-compare":  [
+                                           "code-compare"
+                                       ],
                       "failover-cluster-manager":  [
                                                        "failover-cluster-manager"
                                                    ],
@@ -2331,9 +2352,6 @@
                       "nest-interceptor-js":  [
                                                   "nest-interceptor-js"
                                               ],
-                      "emcopy":  [
-                                     "emcopy"
-                                 ],
                       "controller":  [
                                          "controller"
                                      ],
@@ -2607,6 +2625,9 @@
                       "pop3":  [
                                    "pop3"
                                ],
+                      "pos-extractor":  [
+                                            "pos-extractor"
+                                        ],
                       "vala":  [
                                    "vala"
                                ],
@@ -2790,9 +2811,6 @@
                       "hy":  [
                                  "hy"
                              ],
-                      "prismaconfig":  [
-                                           "prismaconfig"
-                                       ],
                       "slint":  [
                                     "slint"
                                 ],
@@ -2937,9 +2955,9 @@
                       "qlikview":  [
                                        "qlikview"
                                    ],
-                      "rake":  [
-                                   "rake"
-                               ],
+                      "prismaconfig":  [
+                                           "prismaconfig"
+                                       ],
                       "audio":  [
                                     "audio"
                                 ],
@@ -3054,6 +3072,9 @@
                       "gulp":  [
                                    "gulp"
                                ],
+                      "startup-services":  [
+                                               "startup-services"
+                                           ],
                       "barclays":  [
                                        "barclays"
                                    ],
@@ -3303,6 +3324,9 @@
                       "speech-to-note":  [
                                              "speech-to-note"
                                          ],
+                      "astroconfig":  [
+                                          "astroconfig"
+                                      ],
                       "vscode":  [
                                      "vscode"
                                  ],
@@ -3321,9 +3345,9 @@
                       "demos":  [
                                     "demos"
                                 ],
-                      "quest":  [
-                                    "quest"
-                                ],
+                      "iso":  [
+                                  "iso"
+                              ],
                       "spin":  [
                                    "spin"
                                ],
@@ -3429,6 +3453,9 @@
                       "mivascript":  [
                                          "mivascript"
                                      ],
+                      "vdir":  [
+                                   "vdir"
+                               ],
                       "server-core":  [
                                           "server-core"
                                       ],
@@ -3900,6 +3927,9 @@
                       "qura-ai":  [
                                       "qura-ai"
                                   ],
+                      "quest":  [
+                                    "quest"
+                                ],
                       "testjs":  [
                                      "testjs"
                                  ],
@@ -4413,6 +4443,9 @@
                       "brave":  [
                                     "brave"
                                 ],
+                      "changie":  [
+                                      "changie"
+                                  ],
                       "ruff":  [
                                    "ruff"
                                ],
@@ -4422,9 +4455,9 @@
                       "light-docpad":  [
                                            "light-docpad"
                                        ],
-                      "changie":  [
-                                      "changie"
-                                  ],
+                      "idrispkg":  [
+                                       "idrispkg"
+                                   ],
                       "csscomb":  [
                                       "csscomb"
                                   ],
@@ -4439,6 +4472,9 @@
                                           ],
                       "sss":  [
                                   "sss"
+                              ],
+                      "vdi":  [
+                                  "vdi"
                               ],
                       "xquery":  [
                                      "xquery"
@@ -4986,9 +5022,6 @@
                       "blizzard":  [
                                        "blizzard"
                                    ],
-                      "iso":  [
-                                  "iso"
-                              ],
                       "licensebat":  [
                                          "licensebat"
                                      ],
@@ -5373,9 +5406,6 @@
                       "protractor":  [
                                          "protractor"
                                      ],
-                      "idrispkg":  [
-                                       "idrispkg"
-                                   ],
                       "ng-service-ts2":  [
                                              "ng-service-ts2"
                                          ],
@@ -5481,6 +5511,9 @@
                       "purgecss":  [
                                        "purgecss"
                                    ],
+                      "rails":  [
+                                    "rails"
+                                ],
                       "platform":  [
                                        "platform"
                                    ],
@@ -5571,6 +5604,9 @@
                       "fiserv":  [
                                      "fiserv"
                                  ],
+                      "datacenter":  [
+                                         "datacenter"
+                                     ],
                       "flir":  [
                                    "flir"
                                ],
@@ -5589,6 +5625,9 @@
                       "ivanti":  [
                                      "ivanti"
                                  ],
+                      "installer":  [
+                                        "installer"
+                                    ],
                       "asp":  [
                                   "asp"
                               ],
@@ -5852,6 +5891,9 @@
                         "deepai":  [
                                        "deepai"
                                    ],
+                        "rake":  [
+                                     "rake"
+                                 ],
                         "affinitydesigner":  [
                                                  "affinitydesigner"
                                              ],
@@ -5969,6 +6011,9 @@
                         "openmanage":  [
                                            "openmanage"
                                        ],
+                        "password":  [
+                                         "password"
+                                     ],
                         "comptia":  [
                                         "comptia"
                                     ],
@@ -6101,6 +6146,9 @@
                         "cert":  [
                                      "cert"
                                  ],
+                        "rdp-wrapper":  [
+                                            "rdp-wrapper"
+                                        ],
                         "hvac":  [
                                      "hvac"
                                  ],
@@ -6476,9 +6524,9 @@
                         "hlsl":  [
                                      "hlsl"
                                  ],
-                        "startup-services":  [
-                                                 "startup-services"
-                                             ],
+                        "diskpart":  [
+                                         "diskpart"
+                                     ],
                         "slack":  [
                                       "slack"
                                   ],
@@ -6509,9 +6557,9 @@
                         "kotlin":  [
                                        "kotlin"
                                    ],
-                        "rails":  [
-                                      "rails"
-                                  ],
+                        "emcopy":  [
+                                       "emcopy"
+                                   ],
                         "nest-adapter-ts":  [
                                                 "nest-adapter-ts"
                                             ],
@@ -6521,9 +6569,9 @@
                         "unibeautify":  [
                                             "unibeautify"
                                         ],
-                        "vs2":  [
-                                    "vs2"
-                                ],
+                        "gotomeeting":  [
+                                            "gotomeeting"
+                                        ],
                         "micro-focus":  [
                                             "micro-focus"
                                         ],
@@ -6632,6 +6680,9 @@
                         "biome":  [
                                       "biome"
                                   ],
+                        "sophos":  [
+                                       "sophos"
+                                   ],
                         "handlebars":  [
                                            "handlebars"
                                        ],
@@ -6728,6 +6779,9 @@
                         "drawio":  [
                                        "drawio"
                                    ],
+                        "idrac":  [
+                                      "idrac"
+                                  ],
                         "context7":  [
                                          "context7"
                                      ],
@@ -7409,6 +7463,9 @@
                         "light-mysql":  [
                                             "light-mysql"
                                         ],
+                        "vs2":  [
+                                    "vs2"
+                                ],
                         "tm":  [
                                    "tm"
                                ],
@@ -7715,9 +7772,9 @@
                         "vendor-support":  [
                                                "vendor-support"
                                            ],
-                        "astroconfig":  [
-                                            "astroconfig"
-                                        ],
+                        "confernece-rooms":  [
+                                                 "confernece-rooms"
+                                             ],
                         "vbscript":  [
                                          "vbscript"
                                      ],
@@ -7811,6 +7868,9 @@
                         "tfs":  [
                                     "tfs"
                                 ],
+                        "code-compare":  [
+                                             "code-compare"
+                                         ],
                         "failover-cluster-manager":  [
                                                          "failover-cluster-manager"
                                                      ],
@@ -7961,9 +8021,6 @@
                         "nest-interceptor-js":  [
                                                     "nest-interceptor-js"
                                                 ],
-                        "emcopy":  [
-                                       "emcopy"
-                                   ],
                         "controller":  [
                                            "controller"
                                        ],
@@ -8237,6 +8294,9 @@
                         "pop3":  [
                                      "pop3"
                                  ],
+                        "pos-extractor":  [
+                                              "pos-extractor"
+                                          ],
                         "vala":  [
                                      "vala"
                                  ],
@@ -8420,9 +8480,6 @@
                         "hy":  [
                                    "hy"
                                ],
-                        "prismaconfig":  [
-                                             "prismaconfig"
-                                         ],
                         "slint":  [
                                       "slint"
                                   ],
@@ -8567,9 +8624,9 @@
                         "qlikview":  [
                                          "qlikview"
                                      ],
-                        "rake":  [
-                                     "rake"
-                                 ],
+                        "prismaconfig":  [
+                                             "prismaconfig"
+                                         ],
                         "audio":  [
                                       "audio"
                                   ],
@@ -8684,6 +8741,9 @@
                         "gulp":  [
                                      "gulp"
                                  ],
+                        "startup-services":  [
+                                                 "startup-services"
+                                             ],
                         "barclays":  [
                                          "barclays"
                                      ],
@@ -8933,6 +8993,9 @@
                         "speech-to-note":  [
                                                "speech-to-note"
                                            ],
+                        "astroconfig":  [
+                                            "astroconfig"
+                                        ],
                         "vscode":  [
                                        "vscode"
                                    ],
@@ -8951,9 +9014,9 @@
                         "demos":  [
                                       "demos"
                                   ],
-                        "quest":  [
-                                      "quest"
-                                  ],
+                        "iso":  [
+                                    "iso"
+                                ],
                         "spin":  [
                                      "spin"
                                  ],
@@ -9059,6 +9122,9 @@
                         "mivascript":  [
                                            "mivascript"
                                        ],
+                        "vdir":  [
+                                     "vdir"
+                                 ],
                         "server-core":  [
                                             "server-core"
                                         ],
@@ -9530,6 +9596,9 @@
                         "qura-ai":  [
                                         "qura-ai"
                                     ],
+                        "quest":  [
+                                      "quest"
+                                  ],
                         "testjs":  [
                                        "testjs"
                                    ],
@@ -10043,6 +10112,9 @@
                         "brave":  [
                                       "brave"
                                   ],
+                        "changie":  [
+                                        "changie"
+                                    ],
                         "ruff":  [
                                      "ruff"
                                  ],
@@ -10052,9 +10124,9 @@
                         "light-docpad":  [
                                              "light-docpad"
                                          ],
-                        "changie":  [
-                                        "changie"
-                                    ],
+                        "idrispkg":  [
+                                         "idrispkg"
+                                     ],
                         "csscomb":  [
                                         "csscomb"
                                     ],
@@ -10069,6 +10141,9 @@
                                             ],
                         "sss":  [
                                     "sss"
+                                ],
+                        "vdi":  [
+                                    "vdi"
                                 ],
                         "xquery":  [
                                        "xquery"
@@ -10616,9 +10691,6 @@
                         "blizzard":  [
                                          "blizzard"
                                      ],
-                        "iso":  [
-                                    "iso"
-                                ],
                         "licensebat":  [
                                            "licensebat"
                                        ],
@@ -11003,9 +11075,6 @@
                         "protractor":  [
                                            "protractor"
                                        ],
-                        "idrispkg":  [
-                                         "idrispkg"
-                                     ],
                         "ng-service-ts2":  [
                                                "ng-service-ts2"
                                            ],
@@ -11111,6 +11180,9 @@
                         "purgecss":  [
                                          "purgecss"
                                      ],
+                        "rails":  [
+                                      "rails"
+                                  ],
                         "platform":  [
                                          "platform"
                                      ],
@@ -11201,6 +11273,9 @@
                         "fiserv":  [
                                        "fiserv"
                                    ],
+                        "datacenter":  [
+                                           "datacenter"
+                                       ],
                         "flir":  [
                                      "flir"
                                  ],
@@ -11219,6 +11294,9 @@
                         "ivanti":  [
                                        "ivanti"
                                    ],
+                        "installer":  [
+                                          "installer"
+                                      ],
                         "asp":  [
                                     "asp"
                                 ],
