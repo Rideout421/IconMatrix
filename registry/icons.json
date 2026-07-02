@@ -42,6 +42,12 @@
                             "file-activision-icon":  {
                                                          "iconPath":  "./processed-icons/activision.png"
                                                      },
+                            "file-ad-computers-cleanup-icon":  {
+                                                                   "iconPath":  "./processed-icons/ad-computers-cleanup.png"
+                                                               },
+                            "file-ad-user-attributes-icon":  {
+                                                                 "iconPath":  "./processed-icons/ad-user-attributes.png"
+                                                             },
                             "file-ada-icon":  {
                                                   "iconPath":  "./processed-icons/ada.svg"
                                               },
@@ -66,6 +72,9 @@
                             "file-aduro-icon":  {
                                                     "iconPath":  "./processed-icons/aduro.png"
                                                 },
+                            "file-aduser-attributes-icon":  {
+                                                                "iconPath":  "./processed-icons/aduser-attributes.svg"
+                                                            },
                             "file-advanced-intellect-icon":  {
                                                                  "iconPath":  "./processed-icons/advanced-intellect.png"
                                                              },
@@ -444,6 +453,9 @@
                             "file-bloc-icon":  {
                                                    "iconPath":  "./processed-icons/bloc.svg"
                                                },
+                            "file-blocked-icon":  {
+                                                      "iconPath":  "./processed-icons/blocked.png"
+                                                  },
                             "file-blogger-icon":  {
                                                       "iconPath":  "./processed-icons/blogger.png"
                                                   },
@@ -801,6 +813,9 @@
                             "file-config-icon":  {
                                                      "iconPath":  "./processed-icons/config.svg"
                                                  },
+                            "file-confluance-icon":  {
+                                                         "iconPath":  "./processed-icons/confluance.png"
+                                                     },
                             "file-confluence-icon":  {
                                                          "iconPath":  "./processed-icons/confluence.svg"
                                                      },
@@ -906,6 +921,9 @@
                             "file-cue-icon":  {
                                                   "iconPath":  "./processed-icons/cue.svg"
                                               },
+                            "file-cups-icon":  {
+                                                   "iconPath":  "./processed-icons/cups.png"
+                                               },
                             "file-cursor-icon":  {
                                                      "iconPath":  "./processed-icons/cursor.svg"
                                                  },
@@ -955,7 +973,7 @@
                                                    "iconPath":  "./processed-icons/data.png"
                                                },
                             "file-datacenter-icon":  {
-                                                         "iconPath":  "./processed-icons/datacenter.jpg"
+                                                         "iconPath":  "./processed-icons/datacenter.png"
                                                      },
                             "file-datadog-icon":  {
                                                       "iconPath":  "./processed-icons/datadog.svg"
@@ -1075,7 +1093,7 @@
                                                           "iconPath":  "./processed-icons/diskcleanup.png"
                                                       },
                             "file-diskpart-icon":  {
-                                                       "iconPath":  "./processed-icons/diskpart.jpg"
+                                                       "iconPath":  "./processed-icons/diskpart.png"
                                                    },
                             "file-disney-icon":  {
                                                      "iconPath":  "./processed-icons/disney.png"
@@ -1155,6 +1173,9 @@
                             "file-dreamstudio-icon":  {
                                                           "iconPath":  "./processed-icons/dreamstudio.png"
                                                       },
+                            "file-driver-connect-icon":  {
+                                                             "iconPath":  "./processed-icons/driver-connect.png"
+                                                         },
                             "file-drone-icon":  {
                                                     "iconPath":  "./processed-icons/drone.svg"
                                                 },
@@ -1182,6 +1203,9 @@
                             "file-dynatrace-icon":  {
                                                         "iconPath":  "./processed-icons/dynatrace.svg"
                                                     },
+                            "file-e-fax-icon":  {
+                                                    "iconPath":  "./processed-icons/e-fax.png"
+                                                },
                             "file-e2e-icon":  {
                                                   "iconPath":  "./processed-icons/e2e.svg"
                                               },
@@ -1191,6 +1215,9 @@
                             "file-eas-metadata-icon":  {
                                                            "iconPath":  "./processed-icons/eas-metadata.svg"
                                                        },
+                            "file-ecl-icon":  {
+                                                  "iconPath":  "./processed-icons/ecl.png"
+                                              },
                             "file-edge-icon":  {
                                                    "iconPath":  "./processed-icons/edge.svg"
                                                },
@@ -1269,6 +1296,9 @@
                             "file-enterprise-schedule-icon":  {
                                                                   "iconPath":  "./processed-icons/enterprise-schedule.png"
                                                               },
+                            "file-entrust-icon":  {
+                                                      "iconPath":  "./processed-icons/entrust.png"
+                                                  },
                             "file-env-icon":  {
                                                   "iconPath":  "./processed-icons/env.png"
                                               },
@@ -1410,6 +1440,9 @@
                             "file-find-it-now-gps-icon":  {
                                                               "iconPath":  "./processed-icons/find-it-now-gps.png"
                                                           },
+                            "file-find-locked-users-icon":  {
+                                                                "iconPath":  "./processed-icons/find-locked-users.png"
+                                                            },
                             "file-find-icon":  {
                                                    "iconPath":  "./processed-icons/find.png"
                                                },
@@ -1614,6 +1647,18 @@
                             "file-geojson-icon":  {
                                                       "iconPath":  "./processed-icons/geojson.svg"
                                                   },
+                            "file-get-ad-object-path-icon":  {
+                                                                 "iconPath":  "./processed-icons/get-ad-object-path.png"
+                                                             },
+                            "file-get-aduser-icon":  {
+                                                         "iconPath":  "./processed-icons/get-aduser.png"
+                                                     },
+                            "file-get-groupmembers-icon":  {
+                                                               "iconPath":  "./processed-icons/get-groupmembers.png"
+                                                           },
+                            "file-get-servers-ips-icon":  {
+                                                              "iconPath":  "./processed-icons/get-servers-ips.png"
+                                                          },
                             "file-getimg-ai-icon":  {
                                                         "iconPath":  "./processed-icons/getimg-ai.png"
                                                     },
@@ -1740,6 +1785,12 @@
                             "file-gpos-icon":  {
                                                    "iconPath":  "./processed-icons/gpos.png"
                                                },
+                            "file-gpresult-icon":  {
+                                                       "iconPath":  "./processed-icons/gpresult.png"
+                                                   },
+                            "file-gpupdate-icon":  {
+                                                       "iconPath":  "./processed-icons/gpupdate.png"
+                                                   },
                             "file-grab-icon":  {
                                                    "iconPath":  "./processed-icons/grab.svg"
                                                },
@@ -1890,12 +1941,18 @@
                             "file-host-icon":  {
                                                    "iconPath":  "./processed-icons/host.svg"
                                                },
+                            "file-hp-open-view-icon":  {
+                                                           "iconPath":  "./processed-icons/hp-open-view.png"
+                                                       },
                             "file-hp-support-icon":  {
                                                          "iconPath":  "./processed-icons/hp-support.png"
                                                      },
                             "file-hpe-icon":  {
                                                   "iconPath":  "./processed-icons/hpe.png"
                                               },
+                            "file-hr-icon":  {
+                                                 "iconPath":  "./processed-icons/hr.png"
+                                             },
                             "file-html-icon":  {
                                                    "iconPath":  "./processed-icons/html.svg"
                                                },
@@ -3606,6 +3663,9 @@
                             "file-oliv-icon":  {
                                                    "iconPath":  "./processed-icons/oliv.png"
                                                },
+                            "file-oncallschedule-icon":  {
+                                                             "iconPath":  "./processed-icons/oncallschedule.png"
+                                                         },
                             "file-onenote-icon":  {
                                                       "iconPath":  "./processed-icons/onenote.svg"
                                                   },
@@ -3633,6 +3693,9 @@
                             "file-openscad-icon":  {
                                                        "iconPath":  "./processed-icons/openscad.svg"
                                                    },
+                            "file-openssl-icon":  {
+                                                      "iconPath":  "./processed-icons/openssl.png"
+                                                  },
                             "file-opentext-icon":  {
                                                        "iconPath":  "./processed-icons/opentext.png"
                                                    },
@@ -3895,7 +3958,7 @@
                                                         "iconPath":  "./processed-icons/portfolio.png"
                                                     },
                             "file-pos-extractor-icon":  {
-                                                            "iconPath":  "./processed-icons/pos-extractor.jpg"
+                                                            "iconPath":  "./processed-icons/pos-extractor.png"
                                                         },
                             "file-postcss-icon":  {
                                                       "iconPath":  "./processed-icons/postcss.svg"
@@ -4530,6 +4593,9 @@
                             "file-secret-icon":  {
                                                      "iconPath":  "./processed-icons/secret.svg"
                                                  },
+                            "file-securecrt-icon":  {
+                                                        "iconPath":  "./processed-icons/securecrt.png"
+                                                    },
                             "file-security-first-insurance-icon":  {
                                                                        "iconPath":  "./processed-icons/security-first-insurance.png"
                                                                    },
@@ -4719,6 +4785,9 @@
                             "file-software-icon":  {
                                                        "iconPath":  "./processed-icons/software.svg"
                                                    },
+                            "file-solaris-icon":  {
+                                                      "iconPath":  "./processed-icons/solaris.png"
+                                                  },
                             "file-solarwinds-icon":  {
                                                          "iconPath":  "./processed-icons/solarwinds.png"
                                                      },
@@ -4732,7 +4801,7 @@
                                                      "iconPath":  "./processed-icons/sonnet.png"
                                                  },
                             "file-sophos-icon":  {
-                                                     "iconPath":  "./processed-icons/sophos.jpg"
+                                                     "iconPath":  "./processed-icons/sophos.png"
                                                  },
                             "file-source-icons-icon":  {
                                                            "iconPath":  "./processed-icons/source-icons.png"
@@ -4740,6 +4809,9 @@
                             "file-source-icon":  {
                                                      "iconPath":  "./processed-icons/source.svg"
                                                  },
+                            "file-sox-audit-icon":  {
+                                                        "iconPath":  "./processed-icons/sox-audit.png"
+                                                    },
                             "file-spacengine-icon":  {
                                                          "iconPath":  "./processed-icons/spacengine.svg"
                                                      },
@@ -4762,7 +4834,7 @@
                                                         "iconPath":  "./processed-icons/spinachai.png"
                                                     },
                             "file-splunk-icon":  {
-                                                     "iconPath":  "./processed-icons/splunk.svg"
+                                                     "iconPath":  "./processed-icons/splunk.png"
                                                  },
                             "file-sqf-icon":  {
                                                   "iconPath":  "./processed-icons/sqf.svg"
@@ -4778,6 +4850,9 @@
                                                    },
                             "file-src-icon":  {
                                                   "iconPath":  "./processed-icons/src.svg"
+                                              },
+                            "file-srm-icon":  {
+                                                  "iconPath":  "./processed-icons/srm.png"
                                               },
                             "file-ssis-icon":  {
                                                    "iconPath":  "./processed-icons/ssis.png"
@@ -4971,6 +5046,9 @@
                             "file-tamagui-icon":  {
                                                       "iconPath":  "./processed-icons/tamagui.svg"
                                                   },
+                            "file-tanium-icon":  {
+                                                     "iconPath":  "./processed-icons/tanium.png"
+                                                 },
                             "file-taplo-icon":  {
                                                     "iconPath":  "./processed-icons/taplo.svg"
                                                 },
@@ -5235,6 +5313,9 @@
                             "file-ups-icon":  {
                                                   "iconPath":  "./processed-icons/ups.png"
                                               },
+                            "file-uptime-icon":  {
+                                                     "iconPath":  "./processed-icons/uptime.png"
+                                                 },
                             "file-usbank-icon":  {
                                                      "iconPath":  "./processed-icons/usbank.png"
                                                  },
@@ -5253,6 +5334,9 @@
                             "file-vala-icon":  {
                                                    "iconPath":  "./processed-icons/vala.svg"
                                                },
+                            "file-validate-multipathing-icon":  {
+                                                                    "iconPath":  "./processed-icons/validate-multipathing.png"
+                                                                },
                             "file-vance-ai-icon":  {
                                                        "iconPath":  "./processed-icons/vance-ai.png"
                                                    },
@@ -5268,6 +5352,9 @@
                             "file-vapor-icon":  {
                                                     "iconPath":  "./processed-icons/vapor.svg"
                                                 },
+                            "file-var-icon":  {
+                                                  "iconPath":  "./processed-icons/var.png"
+                                              },
                             "file-vash-icon":  {
                                                    "iconPath":  "./processed-icons/vash.svg"
                                                },
@@ -5296,7 +5383,7 @@
                                                   "iconPath":  "./processed-icons/vdi.png"
                                               },
                             "file-vdir-icon":  {
-                                                   "iconPath":  "./processed-icons/vdir.jpg"
+                                                   "iconPath":  "./processed-icons/vdir.png"
                                                },
                             "file-veeam-icon":  {
                                                     "iconPath":  "./processed-icons/veeam.svg"
@@ -5319,6 +5406,9 @@
                             "file-verilog-icon":  {
                                                       "iconPath":  "./processed-icons/verilog.svg"
                                                   },
+                            "file-veritas-cluster-server-icon":  {
+                                                                     "iconPath":  "./processed-icons/veritas-cluster-server.png"
+                                                                 },
                             "file-veritas-icon":  {
                                                       "iconPath":  "./processed-icons/veritas.png"
                                                   },
@@ -5690,6 +5780,8 @@
                         "actionscript2":  "file-actionscript2-icon",
                         "activedirectory":  "file-activedirectory-icon",
                         "activision":  "file-activision-icon",
+                        "ad-computers-cleanup":  "file-ad-computers-cleanup-icon",
+                        "ad-user-attributes":  "file-ad-user-attributes-icon",
                         "ada":  "file-ada-icon",
                         "adfs":  "file-adfs-icon",
                         "adobe-firefly":  "file-adobe-firefly-icon",
@@ -5698,6 +5790,7 @@
                         "adp":  "file-adp-icon",
                         "aduc":  "file-aduc-icon",
                         "aduro":  "file-aduro-icon",
+                        "aduser-attributes":  "file-aduser-attributes-icon",
                         "advanced-intellect":  "file-advanced-intellect-icon",
                         "advpl":  "file-advpl-icon",
                         "ae-studio":  "file-ae-studio-icon",
@@ -5836,6 +5929,7 @@
                         "blitzbasic":  "file-blitzbasic-icon",
                         "blizzard":  "file-blizzard-icon",
                         "bloc":  "file-bloc-icon",
+                        "blocked":  "file-blocked-icon",
                         "blogger":  "file-blogger-icon",
                         "bloxx":  "file-bloxx-icon",
                         "blueprint":  "file-blueprint-icon",
@@ -5960,6 +6054,7 @@
                         "conda":  "file-conda-icon",
                         "confernece-rooms":  "file-confernece-rooms-icon",
                         "config":  "file-ini-icon",
+                        "confluance":  "file-confluance-icon",
                         "confluence":  "file-confluence-icon",
                         "context7":  "file-context7-icon",
                         "controller":  "file-controller-icon",
@@ -6006,6 +6101,7 @@
                         "cucumber":  "file-cucumber-icon",
                         "cuda":  "file-cuda-icon",
                         "cue":  "file-cue-icon",
+                        "cups":  "file-cups-icon",
                         "cursor":  "file-cursor-icon",
                         "cursorrules":  "file-cursorrules-icon",
                         "cvs":  "file-cvs-icon",
@@ -6091,6 +6187,7 @@
                         "doxygen":  "file-doxygen-icon",
                         "drawio":  "file-drawio-icon",
                         "dreamstudio":  "file-dreamstudio-icon",
+                        "driver-connect":  "file-driver-connect-icon",
                         "drone":  "file-drone-icon",
                         "drools":  "file-drools-icon",
                         "dtd":  "file-dtd-icon",
@@ -6100,9 +6197,11 @@
                         "dvc":  "file-dvc-icon",
                         "dylan":  "file-dylan-icon",
                         "dynatrace":  "file-dynatrace-icon",
+                        "e-fax":  "file-e-fax-icon",
                         "e2e":  "file-test-icon",
                         "earthly":  "file-earthly-icon",
                         "eas-metadata":  "file-eas-metadata-icon",
+                        "ecl":  "file-ecl-icon",
                         "edge":  "file-edge-icon",
                         "edge2":  "file-edge2-icon",
                         "editorconfig":  "file-editorconfig-icon",
@@ -6129,6 +6228,7 @@
                         "ensime":  "file-ensime-icon",
                         "enso":  "file-enso-icon",
                         "enterprise-schedule":  "file-enterprise-schedule-icon",
+                        "entrust":  "file-entrust-icon",
                         "env":  "file-env-icon",
                         ".env":  "file-env-icon",
                         "eps":  "file-eps-icon",
@@ -6177,6 +6277,7 @@
                         "filewatcher":  "file-filewatcher-icon",
                         "financial":  "file-financial-icon",
                         "find-it-now-gps":  "file-find-it-now-gps-icon",
+                        "find-locked-users":  "file-find-locked-users-icon",
                         "find":  "file-find-icon",
                         "firebase":  "file-firebase-icon",
                         "firebasehosting":  "file-firebasehosting-icon",
@@ -6245,6 +6346,10 @@
                         "general":  "file-general-icon",
                         "genstat":  "file-genstat-icon",
                         "geojson":  "file-geojson-icon",
+                        "get-ad-object-path":  "file-get-ad-object-path-icon",
+                        "get-aduser":  "file-get-aduser-icon",
+                        "get-groupmembers":  "file-get-groupmembers-icon",
+                        "get-servers-ips":  "file-get-servers-ips-icon",
                         "getimg-ai":  "file-getimg-ai-icon",
                         "getty-images":  "file-getty-images-icon",
                         "gigavue-fm":  "file-gigavue-fm-icon",
@@ -6290,6 +6395,8 @@
                         "gotomeeting":  "file-gotomeeting-icon",
                         "gpg":  "file-gpg-icon",
                         "gpos":  "file-gpos-icon",
+                        "gpresult":  "file-gpresult-icon",
+                        "gpupdate":  "file-gpupdate-icon",
                         "grab":  "file-grab-icon",
                         "gradle":  "file-java-icon",
                         "gradle2":  "file-gradle2-icon",
@@ -6343,8 +6450,10 @@
                         "hooks":  "file-hook-icon",
                         "horusec":  "file-horusec-icon",
                         "host":  "file-host-icon",
+                        "hp-open-view":  "file-hp-open-view-icon",
                         "hp-support":  "file-hp-support-icon",
                         "hpe":  "file-hpe-icon",
+                        "hr":  "file-hr-icon",
                         "html":  "file-html-icon",
                         "www":  "file-www-icon",
                         "wwwroot":  "file-html-icon",
@@ -6939,6 +7048,7 @@
                         "offices":  "file-offices-icon",
                         "ogone":  "file-ogone-icon",
                         "oliv":  "file-oliv-icon",
+                        "oncallschedule":  "file-oncallschedule-icon",
                         "onenote":  "file-onenote-icon",
                         "opam":  "file-opam-icon",
                         "opcon":  "file-opcon-icon",
@@ -6948,6 +7058,7 @@
                         "openhab":  "file-openhab-icon",
                         "openmanage":  "file-openmanage-icon",
                         "openscad":  "file-openscad-icon",
+                        "openssl":  "file-openssl-icon",
                         "opentext":  "file-opentext-icon",
                         "opentofu":  "file-opentofu-icon",
                         "operations":  "file-operations-icon",
@@ -7253,6 +7364,7 @@
                         "second-me":  "file-second-me-icon",
                         "secret":  "file-secret-icon",
                         ".secret-scan-output":  "file-secret-icon",
+                        "securecrt":  "file-securecrt-icon",
                         "security-first-insurance":  "file-security-first-insurance-icon",
                         "security":  "file-security-icon",
                         "seedkit":  "file-seedkit-icon",
@@ -7315,6 +7427,7 @@
                         "snyk":  "file-snyk-icon",
                         "social-media":  "file-social-media-icon",
                         "software":  "file-software-icon",
+                        "solaris":  "file-solaris-icon",
                         "solarwinds":  "file-solarwinds-icon",
                         "solidarity":  "file-solidarity-icon",
                         "solidity":  "file-solidity-icon",
@@ -7324,6 +7437,7 @@
                         "source":  "file-source-icon",
                         "src":  "file-src-icon",
                         "sources":  "file-source-icon",
+                        "sox-audit":  "file-sox-audit-icon",
                         "spacengine":  "file-spacengine-icon",
                         "sparql":  "file-sparql-icon",
                         "speech-to-note":  "file-speech-to-note-icon",
@@ -7336,6 +7450,7 @@
                         "sql":  "file-sql-icon",
                         "sqlite":  "file-sqlite-icon",
                         "squirrel":  "file-squirrel-icon",
+                        "srm":  "file-srm-icon",
                         "ssis":  "file-ssis-icon",
                         "sso":  "file-sso-icon",
                         "sss":  "file-sss-icon",
@@ -7400,6 +7515,7 @@
                         "talentquest":  "file-talentquest-icon",
                         "talknotes":  "file-talknotes-icon",
                         "tamagui":  "file-tamagui-icon",
+                        "tanium":  "file-tanium-icon",
                         "taplo":  "file-taplo-icon",
                         "target-architecture":  "file-target-architecture-icon",
                         "task":  "file-task-icon",
@@ -7505,17 +7621,20 @@
                         "unlicense":  "file-unlicense-icon",
                         "unocss":  "file-unocss-icon",
                         "ups":  "file-ups-icon",
+                        "uptime":  "file-uptime-icon",
                         "usbank":  "file-usbank-icon",
                         "user-profile-picture":  "file-user-profile-picture-icon",
                         "uv":  "file-uv-icon",
                         "uwf":  "file-uwf-icon",
                         "vagrant":  "file-vagrant-icon",
                         "vala":  "file-vala-icon",
+                        "validate-multipathing":  "file-validate-multipathing-icon",
                         "vance-ai":  "file-vance-ai-icon",
                         "vanguard":  "file-vanguard-icon",
                         "vanilla-extract":  "file-vanilla-extract-icon",
                         "vapi":  "file-vapi-icon",
                         "vapor":  "file-vapor-icon",
+                        "var":  "file-var-icon",
                         "vash":  "file-vash-icon",
                         "vb":  "file-vb-icon",
                         "vba":  "file-vba-icon",
@@ -7533,6 +7652,7 @@
                         "vento":  "file-vento-icon",
                         "vercel":  "file-vercel-icon",
                         "verilog":  "file-verilog-icon",
+                        "veritas-cluster-server":  "file-veritas-cluster-server-icon",
                         "veritas":  "file-veritas-icon",
                         "verizon":  "file-verizon-icon",
                         "vg":  "file-vg-icon",
@@ -7673,6 +7793,8 @@
                       "actionscript2":  "file-actionscript2-icon",
                       "activedirectory":  "file-activedirectory-icon",
                       "activision":  "file-activision-icon",
+                      "ad-computers-cleanup":  "file-ad-computers-cleanup-icon",
+                      "ad-user-attributes":  "file-ad-user-attributes-icon",
                       "ada":  "file-ada-icon",
                       "adfs":  "file-adfs-icon",
                       "adobe-firefly":  "file-adobe-firefly-icon",
@@ -7681,6 +7803,7 @@
                       "adp":  "file-adp-icon",
                       "aduc":  "file-aduc-icon",
                       "aduro":  "file-aduro-icon",
+                      "aduser-attributes":  "file-aduser-attributes-icon",
                       "advanced-intellect":  "file-advanced-intellect-icon",
                       "advpl":  "file-advpl-icon",
                       "ae-studio":  "file-ae-studio-icon",
@@ -7816,6 +7939,7 @@
                       "blitzbasic":  "file-blitzbasic-icon",
                       "blizzard":  "file-blizzard-icon",
                       "bloc":  "file-bloc-icon",
+                      "blocked":  "file-blocked-icon",
                       "blogger":  "file-blogger-icon",
                       "bloxx":  "file-bloxx-icon",
                       "blueprint":  "file-blueprint-icon",
@@ -7935,6 +8059,7 @@
                       "conda":  "file-conda-icon",
                       "confernece-rooms":  "file-confernece-rooms-icon",
                       "config":  "file-config-icon",
+                      "confluance":  "file-confluance-icon",
                       "confluence":  "file-confluence-icon",
                       "context7":  "file-context7-icon",
                       "controller":  "file-controller-icon",
@@ -7970,6 +8095,7 @@
                       "cucumber":  "file-cucumber-icon",
                       "cuda":  "file-cuda-icon",
                       "cue":  "file-cue-icon",
+                      "cups":  "file-cups-icon",
                       "cursor":  "file-cursor-icon",
                       "cursorrules":  "file-cursorrules-icon",
                       "cvs":  "file-cvs-icon",
@@ -8057,6 +8183,7 @@
                       "doxygen":  "file-doxygen-icon",
                       "drawio":  "file-drawio-icon",
                       "dreamstudio":  "file-dreamstudio-icon",
+                      "driver-connect":  "file-driver-connect-icon",
                       "drone":  "file-drone-icon",
                       "drools":  "file-drools-icon",
                       "dtd":  "file-dtd-icon",
@@ -8066,9 +8193,11 @@
                       "dvc":  "file-dvc-icon",
                       "dylan":  "file-dylan-icon",
                       "dynatrace":  "file-dynatrace-icon",
+                      "e-fax":  "file-e-fax-icon",
                       "e2e":  "file-e2e-icon",
                       "earthly":  "file-earthly-icon",
                       "eas-metadata":  "file-eas-metadata-icon",
+                      "ecl":  "file-ecl-icon",
                       "edge":  "file-edge-icon",
                       "edge2":  "file-edge2-icon",
                       "editorconfig":  "file-editorconfig-icon",
@@ -8096,6 +8225,7 @@
                       "ensime":  "file-ensime-icon",
                       "enso":  "file-enso-icon",
                       "enterprise-schedule":  "file-enterprise-schedule-icon",
+                      "entrust":  "file-entrust-icon",
                       "env":  "file-env-icon",
                       ".env":  "file-env-icon",
                       ".env.local":  "file-env-icon",
@@ -8153,6 +8283,7 @@
                       "filewatcher":  "file-filewatcher-icon",
                       "financial":  "file-financial-icon",
                       "find-it-now-gps":  "file-find-it-now-gps-icon",
+                      "find-locked-users":  "file-find-locked-users-icon",
                       "find":  "file-find-icon",
                       "firebase":  "file-firebase-icon",
                       "firebasehosting":  "file-firebasehosting-icon",
@@ -8221,6 +8352,10 @@
                       "general":  "file-general-icon",
                       "genstat":  "file-genstat-icon",
                       "geojson":  "file-geojson-icon",
+                      "get-ad-object-path":  "file-get-ad-object-path-icon",
+                      "get-aduser":  "file-get-aduser-icon",
+                      "get-groupmembers":  "file-get-groupmembers-icon",
+                      "get-servers-ips":  "file-get-servers-ips-icon",
                       "getimg-ai":  "file-getimg-ai-icon",
                       "getty-images":  "file-getty-images-icon",
                       "gigavue-fm":  "file-gigavue-fm-icon",
@@ -8273,6 +8408,8 @@
                       "gotomeeting":  "file-gotomeeting-icon",
                       "gpg":  "file-gpg-icon",
                       "gpos":  "file-gpos-icon",
+                      "gpresult":  "file-gpresult-icon",
+                      "gpupdate":  "file-gpupdate-icon",
                       "grab":  "file-grab-icon",
                       "gradle":  "file-gradle-icon",
                       "gradle2":  "file-gradle2-icon",
@@ -8327,8 +8464,10 @@
                       "hook":  "file-hook-icon",
                       "horusec":  "file-horusec-icon",
                       "host":  "file-host-icon",
+                      "hp-open-view":  "file-hp-open-view-icon",
                       "hp-support":  "file-hp-support-icon",
                       "hpe":  "file-hpe-icon",
+                      "hr":  "file-hr-icon",
                       "html":  "file-html-icon",
                       "htmlhint":  "file-htmlhint-icon",
                       "htmlvalidate":  "file-htmlvalidate-icon",
@@ -8913,6 +9052,7 @@
                       "offices":  "file-offices-icon",
                       "ogone":  "file-ogone-icon",
                       "oliv":  "file-oliv-icon",
+                      "oncallschedule":  "file-oncallschedule-icon",
                       "onenote":  "file-onenote-icon",
                       "opam":  "file-opam-icon",
                       "opcon":  "file-opcon-icon",
@@ -8922,6 +9062,7 @@
                       "openhab":  "file-openhab-icon",
                       "openmanage":  "file-openmanage-icon",
                       "openscad":  "file-openscad-icon",
+                      "openssl":  "file-openssl-icon",
                       "opentext":  "file-opentext-icon",
                       "opentofu":  "file-opentofu-icon",
                       "operations":  "file-operations-icon",
@@ -9236,6 +9377,7 @@
                       "search-result":  "file-search-result-icon",
                       "second-me":  "file-second-me-icon",
                       "secret":  "file-secret-icon",
+                      "securecrt":  "file-securecrt-icon",
                       "security-first-insurance":  "file-security-first-insurance-icon",
                       "security":  "file-security-icon",
                       "seedkit":  "file-seedkit-icon",
@@ -9299,6 +9441,7 @@
                       "snyk":  "file-snyk-icon",
                       "social-media":  "file-social-media-icon",
                       "software":  "file-software-icon",
+                      "solaris":  "file-solaris-icon",
                       "solarwinds":  "file-solarwinds-icon",
                       "solidarity":  "file-solidarity-icon",
                       "solidity":  "file-solidity-icon",
@@ -9306,6 +9449,7 @@
                       "sophos":  "file-sophos-icon",
                       "source-icons":  "file-source-icons-icon",
                       "source":  "file-source-icon",
+                      "sox-audit":  "file-sox-audit-icon",
                       "spacengine":  "file-spacengine-icon",
                       "sparql":  "file-sparql-icon",
                       "speech-to-note":  "file-speech-to-note-icon",
@@ -9319,6 +9463,7 @@
                       "sqlite":  "file-sqlite-icon",
                       "squirrel":  "file-squirrel-icon",
                       "src":  "file-src-icon",
+                      "srm":  "file-srm-icon",
                       "ssis":  "file-ssis-icon",
                       "sso":  "file-sso-icon",
                       "sss":  "file-sss-icon",
@@ -9383,6 +9528,7 @@
                       "talentquest":  "file-talentquest-icon",
                       "talknotes":  "file-talknotes-icon",
                       "tamagui":  "file-tamagui-icon",
+                      "tanium":  "file-tanium-icon",
                       "taplo":  "file-taplo-icon",
                       "target-architecture":  "file-target-architecture-icon",
                       "task":  "file-task-icon",
@@ -9478,17 +9624,20 @@
                       "unlicense":  "file-unlicense-icon",
                       "unocss":  "file-unocss-icon",
                       "ups":  "file-ups-icon",
+                      "uptime":  "file-uptime-icon",
                       "usbank":  "file-usbank-icon",
                       "user-profile-picture":  "file-user-profile-picture-icon",
                       "uv":  "file-uv-icon",
                       "uwf":  "file-uwf-icon",
                       "vagrant":  "file-vagrant-icon",
                       "vala":  "file-vala-icon",
+                      "validate-multipathing":  "file-validate-multipathing-icon",
                       "vance-ai":  "file-vance-ai-icon",
                       "vanguard":  "file-vanguard-icon",
                       "vanilla-extract":  "file-vanilla-extract-icon",
                       "vapi":  "file-vapi-icon",
                       "vapor":  "file-vapor-icon",
+                      "var":  "file-var-icon",
                       "vash":  "file-vash-icon",
                       "vb":  "file-vb-icon",
                       "vba":  "file-vba-icon",
@@ -9506,6 +9655,7 @@
                       "vento":  "file-vento-icon",
                       "vercel":  "file-vercel-icon",
                       "verilog":  "file-verilog-icon",
+                      "veritas-cluster-server":  "file-veritas-cluster-server-icon",
                       "veritas":  "file-veritas-icon",
                       "verizon":  "file-verizon-icon",
                       "vg":  "file-vg-icon",
