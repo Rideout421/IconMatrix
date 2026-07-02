@@ -225,6 +225,9 @@
                             "file-artbreeder-icon":  {
                                                          "iconPath":  "./processed-icons/artbreeder.png"
                                                      },
+                            "file-asam-sync-icon":  {
+                                                        "iconPath":  "./processed-icons/asam-sync.png"
+                                                    },
                             "file-asciidoc-icon":  {
                                                        "iconPath":  "./processed-icons/asciidoc.svg"
                                                    },
@@ -471,6 +474,9 @@
                             "file-bolto-icon":  {
                                                     "iconPath":  "./processed-icons/bolto.png"
                                                 },
+                            "file-bookmarks-icon":  {
+                                                        "iconPath":  "./processed-icons/bookmarks.png"
+                                                    },
                             "file-bootstrap-icon":  {
                                                         "iconPath":  "./processed-icons/bootstrap.png"
                                                     },
@@ -654,6 +660,9 @@
                             "file-cisco-icon":  {
                                                     "iconPath":  "./processed-icons/cisco.png"
                                                 },
+                            "file-ciscoprime-icon":  {
+                                                         "iconPath":  "./processed-icons/ciscoprime.png"
+                                                     },
                             "file-ciscowebex-icon":  {
                                                          "iconPath":  "./processed-icons/ciscowebex.png"
                                                      },
@@ -1311,6 +1320,9 @@
                             "file-equal-logic-icon":  {
                                                           "iconPath":  "./processed-icons/equal-logic.png"
                                                       },
+                            "file-equipment-icon":  {
+                                                        "iconPath":  "./processed-icons/equipment.png"
+                                                    },
                             "file-erad-pacs-icon":  {
                                                         "iconPath":  "./processed-icons/erad-pacs.png"
                                                     },
@@ -2025,6 +2037,9 @@
                             "file-ibmdb2-icon":  {
                                                      "iconPath":  "./processed-icons/ibmdb2.png"
                                                  },
+                            "file-icab-icon":  {
+                                                   "iconPath":  "./processed-icons/icab.png"
+                                               },
                             "file-ice-icon":  {
                                                   "iconPath":  "./processed-icons/ice.png"
                                               },
@@ -2097,6 +2112,9 @@
                             "file-include-icon":  {
                                                       "iconPath":  "./processed-icons/include.svg"
                                                   },
+                            "file-infoblox-icon":  {
+                                                       "iconPath":  "./processed-icons/infoblox.png"
+                                                   },
                             "file-infopath-icon":  {
                                                        "iconPath":  "./processed-icons/infopath.svg"
                                                    },
@@ -4278,6 +4296,9 @@
                             "file-rdcman-icon":  {
                                                      "iconPath":  "./processed-icons/rdcman.png"
                                                  },
+                            "file-rdk-icon":  {
+                                                  "iconPath":  "./processed-icons/rdk.jpg"
+                                              },
                             "file-rdp-wrapper-icon":  {
                                                           "iconPath":  "./processed-icons/rdp-wrapper.png"
                                                       },
@@ -4725,6 +4746,9 @@
                             "file-skype-icon":  {
                                                     "iconPath":  "./processed-icons/skype.png"
                                                 },
+                            "file-sla-icon":  {
+                                                  "iconPath":  "./processed-icons/sla.png"
+                                              },
                             "file-slack-icon":  {
                                                     "iconPath":  "./processed-icons/slack.svg"
                                                 },
@@ -4734,6 +4758,9 @@
                             "file-slashup-icon":  {
                                                       "iconPath":  "./processed-icons/slashup.svg"
                                                   },
+                            "file-sles-icon":  {
+                                                   "iconPath":  "./processed-icons/sles.jpg"
+                                               },
                             "file-slice-icon":  {
                                                     "iconPath":  "./processed-icons/slice.svg"
                                                 },
@@ -4972,7 +4999,7 @@
                                                            "iconPath":  "./processed-icons/suse-manager.png"
                                                        },
                             "file-suse-icon":  {
-                                                   "iconPath":  "./processed-icons/suse.png"
+                                                   "iconPath":  "./processed-icons/suse.svg"
                                                },
                             "file-svelte-icon":  {
                                                      "iconPath":  "./processed-icons/svelte.svg"
@@ -5847,6 +5874,7 @@
                         "archive":  "file-archive-icon",
                         "arduino":  "file-arduino-icon",
                         "artbreeder":  "file-artbreeder-icon",
+                        "asam-sync":  "file-asam-sync-icon",
                         "asciidoc":  "file-asciidoc-icon",
                         "aseprite":  "file-aseprite-icon",
                         "asp":  "file-asp-icon",
@@ -5936,6 +5964,7 @@
                         "blueprints":  "file-blueprint-icon",
                         "bolt":  "file-bolt-icon",
                         "bolto":  "file-bolto-icon",
+                        "bookmarks":  "file-bookmarks-icon",
                         "bootstrap":  "file-bootstrap-icon",
                         "bosque":  "file-bosque-icon",
                         "bot":  "file-bot-icon",
@@ -5998,6 +6027,7 @@
                         "circleci":  "file-circleci-icon",
                         "circom":  "file-circom-icon",
                         "cisco":  "file-cisco-icon",
+                        "ciscoprime":  "file-ciscoprime-icon",
                         "ciscowebex":  "file-ciscowebex-icon",
                         "citrix":  "file-citrix-icon",
                         "clangd":  "file-clangd-icon",
@@ -6234,6 +6264,7 @@
                         "eps":  "file-eps-icon",
                         "epub":  "file-epub-icon",
                         "equal-logic":  "file-equal-logic-icon",
+                        "equipment":  "file-equipment-icon",
                         "erad-pacs":  "file-erad-pacs-icon",
                         "erad":  "file-erad-icon",
                         "erb":  "file-erb-icon",
@@ -6480,6 +6511,7 @@
                         "iam":  "file-iam-icon",
                         "ibm-cloud":  "file-ibm-cloud-icon",
                         "ibmdb2":  "file-ibmdb2-icon",
+                        "icab":  "file-icab-icon",
                         "ice":  "file-ice-icon",
                         "icl":  "file-icl-icon",
                         "icloud":  "file-icloud-icon",
@@ -6508,6 +6540,7 @@
                         "imobile3":  "file-imobile3-icon",
                         "inc":  "file-inc-icon",
                         "include":  "file-include-icon",
+                        "infoblox":  "file-infoblox-icon",
                         "infopath":  "file-infopath-icon",
                         "informix":  "file-informix-icon",
                         "infrastructure":  "file-infrastructure-icon",
@@ -7260,6 +7293,7 @@
                         "razor":  "file-razor-icon",
                         "razzle":  "file-razzle-icon",
                         "rdcman":  "file-rdcman-icon",
+                        "rdk":  "file-rdk-icon",
                         "rdp-wrapper":  "file-rdp-wrapper-icon",
                         "reactjs":  "file-reactjs-icon",
                         "reactrouter":  "file-reactrouter-icon",
@@ -7407,9 +7441,11 @@
                         "skipper":  "file-skipper-icon",
                         "skybell":  "file-skybell-icon",
                         "skype":  "file-skype-icon",
+                        "sla":  "file-sla-icon",
                         "slack":  "file-slack-icon",
                         "slang":  "file-slang-icon",
                         "slashup":  "file-slashup-icon",
+                        "sles":  "file-sles-icon",
                         "slice":  "file-slice-icon",
                         "slim":  "file-slim-icon",
                         "slint":  "file-slint-icon",
@@ -7858,6 +7894,7 @@
                       "archive":  "file-archive-icon",
                       "arduino":  "file-arduino-icon",
                       "artbreeder":  "file-artbreeder-icon",
+                      "asam-sync":  "file-asam-sync-icon",
                       "asciidoc":  "file-asciidoc-icon",
                       "aseprite":  "file-aseprite-icon",
                       "asp":  "file-asp-icon",
@@ -7945,6 +7982,7 @@
                       "blueprint":  "file-blueprint-icon",
                       "bolt":  "file-bolt-icon",
                       "bolto":  "file-bolto-icon",
+                      "bookmarks":  "file-bookmarks-icon",
                       "bootstrap":  "file-bootstrap-icon",
                       "bosque":  "file-bosque-icon",
                       "bot":  "file-bot-icon",
@@ -8006,6 +8044,7 @@
                       "circleci":  "file-circleci-icon",
                       "circom":  "file-circom-icon",
                       "cisco":  "file-cisco-icon",
+                      "ciscoprime":  "file-ciscoprime-icon",
                       "ciscowebex":  "file-ciscowebex-icon",
                       "citrix":  "file-citrix-icon",
                       "clangd":  "file-clangd-icon",
@@ -8235,6 +8274,7 @@
                       "eps":  "file-eps-icon",
                       "epub":  "file-epub-icon",
                       "equal-logic":  "file-equal-logic-icon",
+                      "equipment":  "file-equipment-icon",
                       "erad-pacs":  "file-erad-pacs-icon",
                       "erad":  "file-erad-icon",
                       "erb":  "file-erb-icon",
@@ -8492,6 +8532,7 @@
                       "iam":  "file-iam-icon",
                       "ibm-cloud":  "file-ibm-cloud-icon",
                       "ibmdb2":  "file-ibmdb2-icon",
+                      "icab":  "file-icab-icon",
                       "ice":  "file-ice-icon",
                       "icl":  "file-icl-icon",
                       "icloud":  "file-icloud-icon",
@@ -8516,6 +8557,7 @@
                       "imobile3":  "file-imobile3-icon",
                       "inc":  "file-inc-icon",
                       "include":  "file-include-icon",
+                      "infoblox":  "file-infoblox-icon",
                       "infopath":  "file-infopath-icon",
                       "informix":  "file-informix-icon",
                       "infrastructure":  "file-infrastructure-icon",
@@ -9270,6 +9312,7 @@
                       "razor":  "file-razor-icon",
                       "razzle":  "file-razzle-icon",
                       "rdcman":  "file-rdcman-icon",
+                      "rdk":  "file-rdk-icon",
                       "rdp-wrapper":  "file-rdp-wrapper-icon",
                       "reactjs":  "file-reactjs-icon",
                       "reactrouter":  "file-reactrouter-icon",
@@ -9421,9 +9464,11 @@
                       "skipper":  "file-skipper-icon",
                       "skybell":  "file-skybell-icon",
                       "skype":  "file-skype-icon",
+                      "sla":  "file-sla-icon",
                       "slack":  "file-slack-icon",
                       "slang":  "file-slang-icon",
                       "slashup":  "file-slashup-icon",
+                      "sles":  "file-sles-icon",
                       "slice":  "file-slice-icon",
                       "slim":  "file-slim-icon",
                       "slint":  "file-slint-icon",

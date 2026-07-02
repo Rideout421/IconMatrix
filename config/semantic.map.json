@@ -423,9 +423,6 @@
                       "mlang":  [
                                     "mlang"
                                 ],
-                      "shares":  [
-                                     "shares"
-                                 ],
                       "thesvg":  [
                                      "thesvg"
                                  ],
@@ -441,9 +438,6 @@
                       "light-db":  [
                                        "light-db"
                                    ],
-                      "client":  [
-                                     "client"
-                                 ],
                       "openmanage":  [
                                          "openmanage"
                                      ],
@@ -1014,9 +1008,9 @@
                       "template":  [
                                        "template"
                                    ],
-                      "flow":  [
-                                   "flow"
-                               ],
+                      "sla":  [
+                                  "sla"
+                              ],
                       "nas":  [
                                   "nas"
                               ],
@@ -1085,6 +1079,9 @@
                       "dlang":  [
                                     "dlang"
                                 ],
+                      "ng-smart-component-js":  [
+                                                    "ng-smart-component-js"
+                                                ],
                       "copy-item":  [
                                         "copy-item"
                                     ],
@@ -1377,6 +1374,9 @@
                       "plsql-package-body":  [
                                                  "plsql-package-body"
                                              ],
+                      "lifecycle":  [
+                                        "lifecycle"
+                                    ],
                       "raml":  [
                                    "raml"
                                ],
@@ -1395,6 +1395,9 @@
                       "light-stylelint":  [
                                               "light-stylelint"
                                           ],
+                      "nuget":  [
+                                    "nuget"
+                                ],
                       "antlers-html":  [
                                            "antlers-html"
                                        ],
@@ -1440,15 +1443,18 @@
                       "light-readthedocs":  [
                                                 "light-readthedocs"
                                             ],
+                      "typescript-official":  [
+                                                  "typescript-official"
+                                              ],
                       "zapier":  [
                                      "zapier"
                                  ],
                       "smithery":  [
                                        "smithery"
                                    ],
-                      "ng-smart-component-js":  [
-                                                    "ng-smart-component-js"
-                                                ],
+                      "equipment":  [
+                                        "equipment"
+                                    ],
                       "namify":  [
                                      "namify"
                                  ],
@@ -1563,6 +1569,9 @@
                       "ftp":  [
                                   "ftp"
                               ],
+                      "bookmarks":  [
+                                        "bookmarks"
+                                    ],
                       "the-linux-foundation":  [
                                                    "the-linux-foundation"
                                                ],
@@ -1623,9 +1632,6 @@
                       "light-config":  [
                                            "light-config"
                                        ],
-                      "light-astro":  [
-                                          "light-astro"
-                                      ],
                       "light-testjs":  [
                                            "light-testjs"
                                        ],
@@ -1701,6 +1707,9 @@
                       "ipad":  [
                                    "ipad"
                                ],
+                      "infopath":  [
+                                       "infopath"
+                                   ],
                       "passwd":  [
                                      "passwd"
                                  ],
@@ -1847,9 +1856,15 @@
                       "gigavue-fm":  [
                                          "gigavue-fm"
                                      ],
+                      "protractor":  [
+                                         "protractor"
+                                     ],
                       "clientsystemupdate":  [
                                                  "clientsystemupdate"
                                              ],
+                      "infoblox":  [
+                                       "infoblox"
+                                   ],
                       "reason":  [
                                      "reason"
                                  ],
@@ -1880,6 +1895,9 @@
                       "glyphs":  [
                                      "glyphs"
                                  ],
+                      "flow":  [
+                                   "flow"
+                               ],
                       "clojurescript":  [
                                             "clojurescript"
                                         ],
@@ -2352,9 +2370,9 @@
                       "development":  [
                                           "development"
                                       ],
-                      "light-shadcn":  [
-                                           "light-shadcn"
-                                       ],
+                      "exchange":  [
+                                       "exchange"
+                                   ],
                       "imobile3":  [
                                        "imobile3"
                                    ],
@@ -2429,6 +2447,9 @@
                                   "Microsoft.PowerShell_profile.ps1",
                                   "ps1"
                               ],
+                      "icab":  [
+                                   "icab"
+                               ],
                       "ng-smart-component-ts2":  [
                                                      "ng-smart-component-ts2"
                                                  ],
@@ -2549,9 +2570,9 @@
                       "zig":  [
                                   "zig"
                               ],
-                      "oraclesolaris":  [
-                                            "oraclesolaris"
-                                        ],
+                      "realvnc":  [
+                                      "realvnc"
+                                  ],
                       "devvit":  [
                                      "devvit"
                                  ],
@@ -2847,6 +2868,9 @@
                       "fbx":  [
                                   "fbx"
                               ],
+                      "sles":  [
+                                   "sles"
+                               ],
                       "turbo":  [
                                     "turbo"
                                 ],
@@ -2962,9 +2986,9 @@
                       "kos":  [
                                   "kos"
                               ],
-                      "vplex":  [
-                                    "vplex"
-                                ],
+                      "rhinosoft":  [
+                                        "rhinosoft"
+                                    ],
                       "filewatcher":  [
                                           "filewatcher"
                                       ],
@@ -3010,9 +3034,9 @@
                       "activedirectory":  [
                                               "activedirectory"
                                           ],
-                      "lifecycle":  [
-                                        "lifecycle"
-                                    ],
+                      "client":  [
+                                     "client"
+                                 ],
                       "api-extractor":  [
                                             "api-extractor"
                                         ],
@@ -3168,9 +3192,9 @@
                       "postcss":  [
                                       "postcss"
                                   ],
-                      "taskfile":  [
-                                       "taskfile"
-                                   ],
+                      "ng-guard-dart":  [
+                                            "ng-guard-dart"
+                                        ],
                       "kivy":  [
                                    "kivy"
                                ],
@@ -3225,6 +3249,9 @@
                       "vscode-test":  [
                                           "vscode-test"
                                       ],
+                      "cloudfoundry":  [
+                                           "cloudfoundry"
+                                       ],
                       "polymer":  [
                                       "polymer"
                                   ],
@@ -3540,9 +3567,6 @@
                       "rubocop":  [
                                       "rubocop"
                                   ],
-                      "ng-guard-dart":  [
-                                            "ng-guard-dart"
-                                        ],
                       "powermt-display":  [
                                               "powermt-display"
                                           ],
@@ -3876,9 +3900,9 @@
                       "dotenv":  [
                                      "dotenv"
                                  ],
-                      "data-runs":  [
-                                        "data-runs"
-                                    ],
+                      "esrs-recover-point":  [
+                                                 "esrs-recover-point"
+                                             ],
                       "plsql-package-spec":  [
                                                  "plsql-package-spec"
                                              ],
@@ -3906,9 +3930,6 @@
                       "sass":  [
                                    "sass"
                                ],
-                      "google":  [
-                                     "google"
-                                 ],
                       "veeam":  [
                                     "veeam"
                                 ],
@@ -3998,6 +4019,9 @@
                       "aurelia":  [
                                       "aurelia"
                                   ],
+                      "data-runs":  [
+                                        "data-runs"
+                                    ],
                       "typedoc":  [
                                       "typedoc"
                                   ],
@@ -4115,9 +4139,9 @@
                       "subversion":  [
                                          "subversion"
                                      ],
-                      "infopath":  [
-                                       "infopath"
-                                   ],
+                      "asam-sync":  [
+                                        "asam-sync"
+                                    ],
                       "jea":  [
                                   "jea"
                               ],
@@ -4236,6 +4260,9 @@
                       "ionic":  [
                                     "ionic"
                                 ],
+                      "neo4j":  [
+                                    "neo4j"
+                                ],
                       "nest-adapter-js":  [
                                               "nest-adapter-js"
                                           ],
@@ -4254,6 +4281,9 @@
                       "conda":  [
                                     "conda"
                                 ],
+                      "light-shadcn":  [
+                                           "light-shadcn"
+                                       ],
                       "zelle":  [
                                     "zelle"
                                 ],
@@ -4325,9 +4355,9 @@
                       "befunge":  [
                                       "befunge"
                                   ],
-                      "neo4j":  [
-                                    "neo4j"
-                                ],
+                      "shares":  [
+                                     "shares"
+                                 ],
                       "typescript":  [
                                          "typescript"
                                      ],
@@ -4643,6 +4673,9 @@
                       "gemini":  [
                                      "gemini"
                                  ],
+                      "oraclesolaris":  [
+                                            "oraclesolaris"
+                                        ],
                       "mindos-mindverse":  [
                                                "mindos-mindverse"
                                            ],
@@ -4936,9 +4969,6 @@
                       "sequelize":  [
                                         "sequelize"
                                     ],
-                      "realvnc":  [
-                                      "realvnc"
-                                  ],
                       "library":  [
                                       "library"
                                   ],
@@ -5101,6 +5131,9 @@
                       "myhealthtoolkit":  [
                                               "myhealthtoolkit"
                                           ],
+                      "ciscoprime":  [
+                                         "ciscoprime"
+                                     ],
                       "purgecss":  [
                                        "purgecss"
                                    ],
@@ -5326,9 +5359,6 @@
                       "pyret":  [
                                     "pyret"
                                 ],
-                      "exchange":  [
-                                       "exchange"
-                                   ],
                       "rapid7":  [
                                      "rapid7"
                                  ],
@@ -5374,9 +5404,9 @@
                       "tfs":  [
                                   "tfs"
                               ],
-                      "typescript-official":  [
-                                                  "typescript-official"
-                                              ],
+                      "vplex":  [
+                                    "vplex"
+                                ],
                       "tscn":  [
                                    "tscn"
                                ],
@@ -5389,9 +5419,9 @@
                       "web":  [
                                   "web"
                               ],
-                      "nuget":  [
-                                    "nuget"
-                                ],
+                      "taskfile":  [
+                                       "taskfile"
+                                   ],
                       "nim":  [
                                   "nim"
                               ],
@@ -5564,9 +5594,9 @@
                       "haxecheckstyle":  [
                                              "haxecheckstyle"
                                          ],
-                      "esrs-recover-point":  [
-                                                 "esrs-recover-point"
-                                             ],
+                      "radiusserver":  [
+                                           "radiusserver"
+                                       ],
                       "mediawiki":  [
                                         "mediawiki"
                                     ],
@@ -5585,9 +5615,9 @@
                       "light-unibeautify":  [
                                                 "light-unibeautify"
                                             ],
-                      "rhinosoft":  [
-                                        "rhinosoft"
-                                    ],
+                      "google":  [
+                                     "google"
+                                 ],
                       "vbproj":  [
                                      "vbproj"
                                  ],
@@ -5639,9 +5669,9 @@
                       "hip-chat":  [
                                        "hip-chat"
                                    ],
-                      "protractor":  [
-                                         "protractor"
-                                     ],
+                      "rdk":  [
+                                  "rdk"
+                              ],
                       "idrispkg":  [
                                        "idrispkg"
                                    ],
@@ -5705,9 +5735,6 @@
                       "objectivec":  [
                                          "objectivec"
                                      ],
-                      "radiusserver":  [
-                                           "radiusserver"
-                                       ],
                       "jobright-ai":  [
                                           "jobright-ai"
                                       ],
@@ -5868,9 +5895,9 @@
                       "binary":  [
                                      "binary"
                                  ],
-                      "cloudfoundry":  [
-                                           "cloudfoundry"
-                                       ],
+                      "light-astro":  [
+                                          "light-astro"
+                                      ],
                       "murphyusa":  [
                                         "murphyusa"
                                     ],
@@ -6431,9 +6458,6 @@
                         "light-prettier":  [
                                                "light-prettier"
                                            ],
-                        "mindos-mindverse":  [
-                                                 "mindos-mindverse"
-                                             ],
                         "cloudflare":  [
                                            "cloudflare"
                                        ],
@@ -6713,6 +6737,9 @@
                         "markdownlint":  [
                                              "markdownlint"
                                          ],
+                        "asam-sync":  [
+                                          "asam-sync"
+                                      ],
                         "fthtml":  [
                                        "fthtml"
                                    ],
@@ -6876,9 +6903,9 @@
                         "template":  [
                                          "template"
                                      ],
-                        "flow":  [
-                                     "flow"
-                                 ],
+                        "sla":  [
+                                    "sla"
+                                ],
                         "nas":  [
                                     "nas"
                                 ],
@@ -6945,6 +6972,9 @@
                         "dlang":  [
                                       "dlang"
                                   ],
+                        "ng-smart-component-js":  [
+                                                      "ng-smart-component-js"
+                                                  ],
                         "copy-item":  [
                                           "copy-item"
                                       ],
@@ -7245,6 +7275,9 @@
                         "plsql-package-body":  [
                                                    "plsql-package-body"
                                                ],
+                        "lifecycle":  [
+                                          "lifecycle"
+                                      ],
                         "jekyll":  [
                                        "jekyll"
                                    ],
@@ -7317,9 +7350,9 @@
                         "smithery":  [
                                          "smithery"
                                      ],
-                        "ng-smart-component-js":  [
-                                                      "ng-smart-component-js"
-                                                  ],
+                        "equipment":  [
+                                          "equipment"
+                                      ],
                         "namify":  [
                                        "namify"
                                    ],
@@ -7426,6 +7459,9 @@
                         "ftp":  [
                                     "ftp"
                                 ],
+                        "bookmarks":  [
+                                          "bookmarks"
+                                      ],
                         "the-linux-foundation":  [
                                                      "the-linux-foundation"
                                                  ],
@@ -7489,9 +7525,6 @@
                         "light-config":  [
                                              "light-config"
                                          ],
-                        "light-astro":  [
-                                            "light-astro"
-                                        ],
                         "light-testjs":  [
                                              "light-testjs"
                                          ],
@@ -7712,9 +7745,15 @@
                         "gigavue-fm":  [
                                            "gigavue-fm"
                                        ],
+                        "protractor":  [
+                                           "protractor"
+                                       ],
                         "clientsystemupdate":  [
                                                    "clientsystemupdate"
                                                ],
+                        "infoblox":  [
+                                         "infoblox"
+                                     ],
                         "reason":  [
                                        "reason"
                                    ],
@@ -7746,6 +7785,9 @@
                         "glyphs":  [
                                        "glyphs"
                                    ],
+                        "flow":  [
+                                     "flow"
+                                 ],
                         "clojurescript":  [
                                               "clojurescript"
                                           ],
@@ -8298,6 +8340,9 @@
                         "ps1":  [
                                     "ps1"
                                 ],
+                        "icab":  [
+                                     "icab"
+                                 ],
                         "ng-smart-component-ts2":  [
                                                        "ng-smart-component-ts2"
                                                    ],
@@ -8418,9 +8463,9 @@
                         "zig":  [
                                     "zig"
                                 ],
-                        "oraclesolaris":  [
-                                              "oraclesolaris"
-                                          ],
+                        "realvnc":  [
+                                        "realvnc"
+                                    ],
                         "devvit":  [
                                        "devvit"
                                    ],
@@ -8721,6 +8766,9 @@
                         "fbx":  [
                                     "fbx"
                                 ],
+                        "sles":  [
+                                     "sles"
+                                 ],
                         "turbo":  [
                                       "turbo"
                                   ],
@@ -8888,9 +8936,10 @@
                         "activedirectory":  [
                                                 "activedirectory"
                                             ],
-                        "lifecycle":  [
-                                          "lifecycle"
-                                      ],
+                        "client":  [
+                                       "client",
+                                       "clients"
+                                   ],
                         "api-extractor":  [
                                               "api-extractor"
                                           ],
@@ -9109,6 +9158,9 @@
                         "vscode-test":  [
                                             "vscode-test"
                                         ],
+                        "cloudfoundry":  [
+                                             "cloudfoundry"
+                                         ],
                         "polymer":  [
                                         "polymer"
                                     ],
@@ -10543,10 +10595,12 @@
                         "gemini":  [
                                        "gemini"
                                    ],
-                        "client":  [
-                                       "client",
-                                       "clients"
-                                   ],
+                        "oraclesolaris":  [
+                                              "oraclesolaris"
+                                          ],
+                        "mindos-mindverse":  [
+                                                 "mindos-mindverse"
+                                             ],
                         "light-prisma":  [
                                              "light-prisma"
                                          ],
@@ -10847,9 +10901,6 @@
                         "sequelize":  [
                                           "sequelize"
                                       ],
-                        "realvnc":  [
-                                        "realvnc"
-                                    ],
                         "library":  [
                                         "library"
                                     ],
@@ -11019,6 +11070,9 @@
                                     "scss",
                                     "less"
                                 ],
+                        "ciscoprime":  [
+                                           "ciscoprime"
+                                       ],
                         "purgecss":  [
                                          "purgecss"
                                      ],
@@ -11579,9 +11633,9 @@
                         "hip-chat":  [
                                          "hip-chat"
                                      ],
-                        "protractor":  [
-                                           "protractor"
-                                       ],
+                        "rdk":  [
+                                    "rdk"
+                                ],
                         "idrispkg":  [
                                          "idrispkg"
                                      ],
@@ -11810,9 +11864,9 @@
                         "binary":  [
                                        "binary"
                                    ],
-                        "cloudfoundry":  [
-                                             "cloudfoundry"
-                                         ],
+                        "light-astro":  [
+                                            "light-astro"
+                                        ],
                         "murphyusa":  [
                                           "murphyusa"
                                       ],
