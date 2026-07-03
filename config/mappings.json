@@ -41,6 +41,7 @@
   "font": ["ttf", "otf", "woff", "woff2"],
   "Opentofu": ["tofu"],
   "sln": ["sln"],
+  "executable": ["exe"],
   "git": [],
   "github": [],
   "gitlab": [],
