@@ -145,6 +145,9 @@
                        "bat":  [
                                    "bat"
                                ],
+                       "executable":  [
+                                          "exe"
+                                      ],
                        "editorconfig":  [
                                             "editorconfig"
                                         ],
@@ -194,6 +197,9 @@
                                     "docx",
                                     "doc"
                                 ],
+                       "targets":  [
+                                       "targets"
+                                   ],
                        "json":  [
                                     "json",
                                     "jsonc"
@@ -284,9 +290,9 @@
                       "config":  [
                                      "config"
                                  ],
-                      "xorg":  [
-                                   "xorg"
-                               ],
+                      "service-rocket":  [
+                                             "service-rocket"
+                                         ],
                       "dellemc":  [
                                       "dellemc"
                                   ],
@@ -329,6 +335,9 @@
                       "bundlemon":  [
                                         "bundlemon"
                                     ],
+                      "targets":  [
+                                      "targets"
+                                  ],
                       "deepai":  [
                                      "deepai"
                                  ],
@@ -828,6 +837,9 @@
                       "tailwind":  [
                                        "tailwind"
                                    ],
+                      "repository":  [
+                                         "repository"
+                                     ],
                       "perl":  [
                                    "perl"
                                ],
@@ -867,8 +879,8 @@
                       "jsp":  [
                                   "jsp"
                               ],
-                      "ps1folder":  [
-                                        "ps1folder"
+                      "light-ini":  [
+                                        "light-ini"
                                     ],
                       "pdm":  [
                                   "pdm"
@@ -1144,9 +1156,9 @@
                       "log":  [
                                   "log"
                               ],
-                      "root":  [
-                                   "root"
-                               ],
+                      "packages":  [
+                                       "packages"
+                                   ],
                       "craiyon":  [
                                       "craiyon"
                                   ],
@@ -1398,6 +1410,9 @@
                       "nuget":  [
                                     "nuget"
                                 ],
+                      "executable":  [
+                                         "executable"
+                                     ],
                       "antlers-html":  [
                                            "antlers-html"
                                        ],
@@ -1443,9 +1458,6 @@
                       "light-readthedocs":  [
                                                 "light-readthedocs"
                                             ],
-                      "typescript-official":  [
-                                                  "typescript-official"
-                                              ],
                       "zapier":  [
                                      "zapier"
                                  ],
@@ -1569,6 +1581,9 @@
                       "ftp":  [
                                   "ftp"
                               ],
+                      "metal":  [
+                                    "metal"
+                                ],
                       "bookmarks":  [
                                         "bookmarks"
                                     ],
@@ -1728,6 +1743,9 @@
                       "vscodeuser":  [
                                          "vscodeuser"
                                      ],
+                      "windi":  [
+                                    "windi"
+                                ],
                       "light-razzle":  [
                                            "light-razzle"
                                        ],
@@ -1922,6 +1940,9 @@
                       "aduser-attributes":  [
                                                 "aduser-attributes"
                                             ],
+                      "vs2":  [
+                                  "vs2"
+                              ],
                       "tm":  [
                                  "tm"
                              ],
@@ -2268,9 +2289,9 @@
                                   ".npmignore",
                                   "npm"
                               ],
-                      "get-groupmembers":  [
-                                               "get-groupmembers"
-                                           ],
+                      "vsix":  [
+                                   "vsix"
+                               ],
                       "health-equity":  [
                                             "health-equity"
                                         ],
@@ -2430,6 +2451,9 @@
                       "blocked":  [
                                       "blocked"
                                   ],
+                      "libs":  [
+                                   "libs"
+                               ],
                       "registry":  [
                                        "registry"
                                    ],
@@ -2486,9 +2510,6 @@
                       "vanguard":  [
                                        "vanguard"
                                    ],
-                      "pulumi":  [
-                                     "pulumi"
-                                 ],
                       "powerpath":  [
                                         "powerpath"
                                     ],
@@ -2588,6 +2609,9 @@
                       "light-testcafe":  [
                                              "light-testcafe"
                                          ],
+                      "node-modules":  [
+                                           "node-modules"
+                                       ],
                       "cspell":  [
                                      "cspell"
                                  ],
@@ -2986,9 +3010,9 @@
                       "kos":  [
                                   "kos"
                               ],
-                      "rhinosoft":  [
-                                        "rhinosoft"
-                                    ],
+                      "vplex":  [
+                                    "vplex"
+                                ],
                       "filewatcher":  [
                                           "filewatcher"
                                       ],
@@ -3327,12 +3351,18 @@
                       "photoshop":  [
                                         "photoshop"
                                     ],
+                      "releases":  [
+                                       "releases"
+                                   ],
                       "esxihosts":  [
                                         "esxihosts"
                                     ],
                       "deployment":  [
                                          "deployment"
                                      ],
+                      "get-groupmembers":  [
+                                               "get-groupmembers"
+                                           ],
                       "getimg-ai":  [
                                         "getimg-ai"
                                     ],
@@ -3498,9 +3528,6 @@
                       "allcontributors":  [
                                               "allcontributors"
                                           ],
-                      "dvc":  [
-                                  "dvc"
-                              ],
                       "oracle-solaris":  [
                                              "oracle-solaris"
                                          ],
@@ -3729,9 +3756,6 @@
                       "dhall":  [
                                     "dhall"
                                 ],
-                      "light-ini":  [
-                                        "light-ini"
-                                    ],
                       "audit":  [
                                     "audit"
                                 ],
@@ -3807,9 +3831,6 @@
                       "tsdoc":  [
                                     "tsdoc"
                                 ],
-                      "appscript":  [
-                                        "appscript"
-                                    ],
                       "sccm-reports":  [
                                            "sccm-reports"
                                        ],
@@ -3828,9 +3849,9 @@
                       "http":  [
                                    "http"
                                ],
-                      "windi":  [
-                                    "windi"
-                                ],
+                      "outs":  [
+                                   "outs"
+                               ],
                       "light-agda":  [
                                          "light-agda"
                                      ],
@@ -3930,6 +3951,9 @@
                       "sass":  [
                                    "sass"
                                ],
+                      "google":  [
+                                     "google"
+                                 ],
                       "veeam":  [
                                     "veeam"
                                 ],
@@ -3951,9 +3975,9 @@
                       "chase":  [
                                     "chase"
                                 ],
-                      "textlint":  [
-                                       "textlint"
-                                   ],
+                      "closinglock":  [
+                                          "closinglock"
+                                      ],
                       "marketingblocks-ai":  [
                                                  "marketingblocks-ai"
                                              ],
@@ -4019,6 +4043,9 @@
                       "aurelia":  [
                                       "aurelia"
                                   ],
+                      "textlint":  [
+                                       "textlint"
+                                   ],
                       "data-runs":  [
                                         "data-runs"
                                     ],
@@ -4043,9 +4070,9 @@
                       "stablecog":  [
                                         "stablecog"
                                     ],
-                      "vbhtml":  [
-                                     "vbhtml"
-                                 ],
+                      "plugins":  [
+                                      "plugins"
+                                  ],
                       "emacs":  [
                                     "emacs"
                                 ],
@@ -4130,9 +4157,6 @@
                       "elixir":  [
                                      "elixir"
                                  ],
-                      "closinglock":  [
-                                          "closinglock"
-                                      ],
                       "15five":  [
                                      "15five"
                                  ],
@@ -4272,8 +4296,8 @@
                       "liquid":  [
                                      "liquid"
                                  ],
-                      "vs2":  [
-                                  "vs2"
+                      "dvc":  [
+                                  "dvc"
                               ],
                       "qa":  [
                                  "qa"
@@ -4343,6 +4367,9 @@
                       "aix":  [
                                   "aix"
                               ],
+                      "xorg":  [
+                                   "xorg"
+                               ],
                       "sage":  [
                                    "sage"
                                ],
@@ -4367,6 +4394,9 @@
                       "supabase":  [
                                        "supabase"
                                    ],
+                      "modules":  [
+                                      "modules"
+                                  ],
                       "babel":  [
                                     ".babelrc",
                                     "babel.config.js",
@@ -4439,6 +4469,9 @@
                       "racket":  [
                                      "racket"
                                  ],
+                      "stories":  [
+                                      "stories"
+                                  ],
                       "vue":  [
                                   "vue"
                               ],
@@ -4522,6 +4555,9 @@
                       "networking":  [
                                          "networking"
                                      ],
+                      "out":  [
+                                  "out"
+                              ],
                       "fedora":  [
                                      "fedora"
                                  ],
@@ -4754,6 +4790,9 @@
                       "security":  [
                                        "security"
                                    ],
+                      "powercli":  [
+                                       "powercli"
+                                   ],
                       "light-objidconfig":  [
                                                 "light-objidconfig"
                                             ],
@@ -4853,6 +4892,9 @@
                       "uv":  [
                                  "uv"
                              ],
+                      "export":  [
+                                     "export"
+                                 ],
                       "light-docpad":  [
                                            "light-docpad"
                                        ],
@@ -5017,6 +5059,9 @@
                       "hirebase":  [
                                        "hirebase"
                                    ],
+                      "release":  [
+                                      "release"
+                                  ],
                       "validate-multipathing":  [
                                                     "validate-multipathing"
                                                 ],
@@ -5053,6 +5098,9 @@
                       "forticlient":  [
                                           "forticlient"
                                       ],
+                      "repositories":  [
+                                           "repositories"
+                                       ],
                       "hubflo":  [
                                      "hubflo"
                                  ],
@@ -5080,6 +5128,9 @@
                       "myhealthone":  [
                                           "myhealthone"
                                       ],
+                      "ps1folder":  [
+                                        "ps1folder"
+                                    ],
                       "ng-controller-js":  [
                                                "ng-controller-js"
                                            ],
@@ -5134,9 +5185,6 @@
                       "ciscoprime":  [
                                          "ciscoprime"
                                      ],
-                      "purgecss":  [
-                                       "purgecss"
-                                   ],
                       "taplo":  [
                                     "taplo"
                                 ],
@@ -5189,6 +5237,9 @@
                       "pony":  [
                                    "pony"
                                ],
+                      "lib":  [
+                                  "lib"
+                              ],
                       "sapphire-framework-cli":  [
                                                      "sapphire-framework-cli"
                                                  ],
@@ -5311,12 +5362,15 @@
                       "ssis":  [
                                    "ssis"
                                ],
-                      "metal":  [
-                                    "metal"
-                                ],
+                      "pulumi":  [
+                                     "pulumi"
+                                 ],
                       "system-updates":  [
                                              "system-updates"
                                          ],
+                      "vbhtml":  [
+                                     "vbhtml"
+                                 ],
                       "imba":  [
                                    "imba"
                                ],
@@ -5335,6 +5389,9 @@
                       "riverbed":  [
                                        "riverbed"
                                    ],
+                      "deployments":  [
+                                          "deployments"
+                                      ],
                       "local":  [
                                     "local"
                                 ],
@@ -5347,6 +5404,9 @@
                       "json-official":  [
                                             "json-official"
                                         ],
+                      "libraries":  [
+                                        "libraries"
+                                    ],
                       "puppet":  [
                                      "puppet"
                                  ],
@@ -5404,9 +5464,9 @@
                       "tfs":  [
                                   "tfs"
                               ],
-                      "vplex":  [
-                                    "vplex"
-                                ],
+                      "typescript-official":  [
+                                                  "typescript-official"
+                                              ],
                       "tscn":  [
                                    "tscn"
                                ],
@@ -5549,6 +5609,9 @@
                       "broadcom":  [
                                        "broadcom"
                                    ],
+                      "repo":  [
+                                   "repo"
+                               ],
                       "sccm":  [
                                    "sccm"
                                ],
@@ -5615,9 +5678,9 @@
                       "light-unibeautify":  [
                                                 "light-unibeautify"
                                             ],
-                      "google":  [
-                                     "google"
-                                 ],
+                      "rhinosoft":  [
+                                        "rhinosoft"
+                                    ],
                       "vbproj":  [
                                      "vbproj"
                                  ],
@@ -5780,9 +5843,9 @@
                       "gleamconfig":  [
                                           "gleamconfig"
                                       ],
-                      "json5":  [
-                                    "json5"
-                                ],
+                      "purgecss":  [
+                                       "purgecss"
+                                   ],
                       "rails":  [
                                     "rails"
                                 ],
@@ -5871,6 +5934,9 @@
                       "hr":  [
                                  "hr"
                              ],
+                      "root":  [
+                                   "root"
+                               ],
                       "getty-images":  [
                                            "getty-images"
                                        ],
@@ -5928,9 +5994,9 @@
                       "stylelint":  [
                                         "stylelint"
                                     ],
-                      "vsix":  [
-                                   "vsix"
-                               ],
+                      "appscript":  [
+                                        "appscript"
+                                    ],
                       "stigs":  [
                                     "stigs"
                                 ],
@@ -5994,9 +6060,6 @@
                       "isilon":  [
                                      "isilon"
                                  ],
-                      "service-rocket":  [
-                                             "service-rocket"
-                                         ],
                       "aspnetmime-v3":  [
                                             "aspnetmime-v3"
                                         ],
@@ -6099,9 +6162,9 @@
                       "centos":  [
                                      "centos"
                                  ],
-                      "powercli":  [
-                                       "powercli"
-                                   ],
+                      "json5":  [
+                                    "json5"
+                                ],
                       "sdlang":  [
                                      "sdlang"
                                  ],
@@ -6204,6 +6267,9 @@
                         "bundlemon":  [
                                           "bundlemon"
                                       ],
+                        "targets":  [
+                                        "targets"
+                                    ],
                         "deepai":  [
                                        "deepai"
                                    ],
@@ -6722,6 +6788,9 @@
                         "tailwind":  [
                                          "tailwind"
                                      ],
+                        "repository":  [
+                                           "repository"
+                                       ],
                         "perl":  [
                                      "perl"
                                  ],
@@ -7041,9 +7110,9 @@
                         "log":  [
                                     "log"
                                 ],
-                        "root":  [
-                                     "root"
-                                 ],
+                        "packages":  [
+                                         "packages"
+                                     ],
                         "craiyon":  [
                                         "craiyon"
                                     ],
@@ -7296,6 +7365,9 @@
                         "nuget":  [
                                       "nuget"
                                   ],
+                        "executable":  [
+                                           "executable"
+                                       ],
                         "antlers-html":  [
                                              "antlers-html"
                                          ],
@@ -7459,6 +7531,9 @@
                         "ftp":  [
                                     "ftp"
                                 ],
+                        "metal":  [
+                                      "metal"
+                                  ],
                         "bookmarks":  [
                                           "bookmarks"
                                       ],
@@ -7489,9 +7564,9 @@
                         "light-vite":  [
                                            "light-vite"
                                        ],
-                        "ng-service-js2":  [
-                                               "ng-service-js2"
-                                           ],
+                        "pytyped":  [
+                                        "pytyped"
+                                    ],
                         "edge":  [
                                      "edge"
                                  ],
@@ -7618,6 +7693,9 @@
                         "resharper":  [
                                           "resharper"
                                       ],
+                        "windi":  [
+                                      "windi"
+                                  ],
                         "light-razzle":  [
                                              "light-razzle"
                                          ],
@@ -7810,6 +7888,9 @@
                         "aduser-attributes":  [
                                                   "aduser-attributes"
                                               ],
+                        "vs2":  [
+                                    "vs2"
+                                ],
                         "tm":  [
                                    "tm"
                                ],
@@ -8156,9 +8237,9 @@
                         "npm":  [
                                     "npm"
                                 ],
-                        "get-groupmembers":  [
-                                                 "get-groupmembers"
-                                             ],
+                        "vsix":  [
+                                     "vsix"
+                                 ],
                         "health-equity":  [
                                               "health-equity"
                                           ],
@@ -8272,6 +8353,9 @@
                         "apple-business-manager":  [
                                                        "apple-business-manager"
                                                    ],
+                        "mongodb":  [
+                                        "mongodb"
+                                    ],
                         "powershell-psm":  [
                                                "powershell-psm"
                                            ],
@@ -8325,6 +8409,9 @@
                         "blocked":  [
                                         "blocked"
                                     ],
+                        "libs":  [
+                                     "libs"
+                                 ],
                         "registry":  [
                                          "registry"
                                      ],
@@ -8481,6 +8568,9 @@
                         "light-testcafe":  [
                                                "light-testcafe"
                                            ],
+                        "node-modules":  [
+                                             "node-modules"
+                                         ],
                         "cspell":  [
                                        "cspell"
                                    ],
@@ -9242,12 +9332,18 @@
                         "photoshop":  [
                                           "photoshop"
                                       ],
+                        "releases":  [
+                                         "releases"
+                                     ],
                         "esxihosts":  [
                                           "esxihosts"
                                       ],
                         "deployment":  [
                                            "deployment"
                                        ],
+                        "get-groupmembers":  [
+                                                 "get-groupmembers"
+                                             ],
                         "getimg-ai":  [
                                           "getimg-ai"
                                       ],
@@ -9405,9 +9501,6 @@
                         "allcontributors":  [
                                                 "allcontributors"
                                             ],
-                        "dvc":  [
-                                    "dvc"
-                                ],
                         "oracle-solaris":  [
                                                "oracle-solaris"
                                            ],
@@ -9714,18 +9807,15 @@
                         "pyscript":  [
                                          "pyscript"
                                      ],
-                        "mongodb":  [
-                                        "mongodb"
-                                    ],
+                        "ng-service-js2":  [
+                                               "ng-service-js2"
+                                           ],
                         "proton":  [
                                        "proton"
                                    ],
                         "tsdoc":  [
                                       "tsdoc"
                                   ],
-                        "appscript":  [
-                                          "appscript"
-                                      ],
                         "sccm-reports":  [
                                              "sccm-reports"
                                          ],
@@ -9744,9 +9834,9 @@
                         "http":  [
                                      "http"
                                  ],
-                        "windi":  [
-                                      "windi"
-                                  ],
+                        "outs":  [
+                                     "outs"
+                                 ],
                         "light-agda":  [
                                            "light-agda"
                                        ],
@@ -9961,9 +10051,9 @@
                         "stablecog":  [
                                           "stablecog"
                                       ],
-                        "vbhtml":  [
-                                       "vbhtml"
-                                   ],
+                        "plugins":  [
+                                        "plugins"
+                                    ],
                         "emacs":  [
                                       "emacs"
                                   ],
@@ -10086,9 +10176,6 @@
                         "lark":  [
                                      "lark"
                                  ],
-                        "pytyped":  [
-                                        "pytyped"
-                                    ],
                         "hook":  [
                                      "hooks",
                                      "hook"
@@ -10197,8 +10284,8 @@
                         "liquid":  [
                                        "liquid"
                                    ],
-                        "vs2":  [
-                                    "vs2"
+                        "dvc":  [
+                                    "dvc"
                                 ],
                         "phraseapp":  [
                                           "phraseapp"
@@ -10295,6 +10382,9 @@
                         "supabase":  [
                                          "supabase"
                                      ],
+                        "modules":  [
+                                        "modules"
+                                    ],
                         "babel":  [
                                       "babel"
                                   ],
@@ -10365,6 +10455,9 @@
                         "racket":  [
                                        "racket"
                                    ],
+                        "stories":  [
+                                        "stories"
+                                    ],
                         "vue":  [
                                     "vue"
                                 ],
@@ -10447,6 +10540,9 @@
                         "networking":  [
                                            "networking"
                                        ],
+                        "out":  [
+                                    "out"
+                                ],
                         "fedora":  [
                                        "fedora"
                                    ],
@@ -10676,6 +10772,9 @@
                         "vscodeuser":  [
                                            "vscodeuser"
                                        ],
+                        "powercli":  [
+                                         "powercli"
+                                     ],
                         "light-objidconfig":  [
                                                   "light-objidconfig"
                                               ],
@@ -10951,6 +11050,9 @@
                         "hirebase":  [
                                          "hirebase"
                                      ],
+                        "release":  [
+                                        "release"
+                                    ],
                         "validate-multipathing":  [
                                                       "validate-multipathing"
                                                   ],
@@ -10987,6 +11089,9 @@
                         "forticlient":  [
                                             "forticlient"
                                         ],
+                        "repositories":  [
+                                             "repositories"
+                                         ],
                         "hubflo":  [
                                        "hubflo"
                                    ],
@@ -11073,9 +11178,6 @@
                         "ciscoprime":  [
                                            "ciscoprime"
                                        ],
-                        "purgecss":  [
-                                         "purgecss"
-                                     ],
                         "taplo":  [
                                       "taplo"
                                   ],
@@ -11247,9 +11349,6 @@
                         "al":  [
                                    "al"
                                ],
-                        "linux-mint":  [
-                                           "linux-mint"
-                                       ],
                         "helper":  [
                                        "helper"
                                    ],
@@ -11262,12 +11361,15 @@
                         "ssis":  [
                                      "ssis"
                                  ],
-                        "metal":  [
-                                      "metal"
-                                  ],
+                        "pulumi":  [
+                                       "pulumi"
+                                   ],
                         "system-updates":  [
                                                "system-updates"
                                            ],
+                        "vbhtml":  [
+                                       "vbhtml"
+                                   ],
                         "imba":  [
                                      "imba"
                                  ],
@@ -11286,6 +11388,9 @@
                         "riverbed":  [
                                          "riverbed"
                                      ],
+                        "deployments":  [
+                                            "deployments"
+                                        ],
                         "local":  [
                                       "local"
                                   ],
@@ -11298,6 +11403,9 @@
                         "json-official":  [
                                               "json-official"
                                           ],
+                        "libraries":  [
+                                          "libraries"
+                                      ],
                         "puppet":  [
                                        "puppet"
                                    ],
@@ -11483,9 +11591,9 @@
                         "bolt":  [
                                      "bolt"
                                  ],
-                        "pulumi":  [
-                                       "pulumi"
-                                   ],
+                        "linux-mint":  [
+                                           "linux-mint"
+                                       ],
                         "precommit":  [
                                           "precommit"
                                       ],
@@ -11751,9 +11859,9 @@
                         "gleamconfig":  [
                                             "gleamconfig"
                                         ],
-                        "json5":  [
-                                      "json5"
-                                  ],
+                        "purgecss":  [
+                                         "purgecss"
+                                     ],
                         "rails":  [
                                       "rails"
                                   ],
@@ -11840,6 +11948,9 @@
                         "hr":  [
                                    "hr"
                                ],
+                        "root":  [
+                                     "root"
+                                 ],
                         "getty-images":  [
                                              "getty-images"
                                          ],
@@ -11897,9 +12008,9 @@
                         "stylelint":  [
                                           "stylelint"
                                       ],
-                        "vsix":  [
-                                     "vsix"
-                                 ],
+                        "appscript":  [
+                                          "appscript"
+                                      ],
                         "stigs":  [
                                       "stigs"
                                   ],
@@ -12067,9 +12178,9 @@
                         "centos":  [
                                        "centos"
                                    ],
-                        "powercli":  [
-                                         "powercli"
-                                     ],
+                        "json5":  [
+                                      "json5"
+                                  ],
                         "sdlang":  [
                                        "sdlang"
                                    ],

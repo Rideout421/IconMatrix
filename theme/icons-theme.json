@@ -1050,6 +1050,9 @@
                             "file-deployment-icon":  {
                                                          "iconPath":  "../processed-icons/deployment.svg"
                                                      },
+                            "file-deployments-icon":  {
+                                                          "iconPath":  "../processed-icons/deployments.svg"
+                                                      },
                             "file-design-tokens-icon":  {
                                                             "iconPath":  "../processed-icons/design-tokens.svg"
                                                         },
@@ -1389,9 +1392,15 @@
                             "file-exchange-icon":  {
                                                        "iconPath":  "../processed-icons/exchange.png"
                                                    },
+                            "file-executable-icon":  {
+                                                         "iconPath":  "../processed-icons/executable.png"
+                                                     },
                             "file-expo-icon":  {
                                                    "iconPath":  "../processed-icons/expo.svg"
                                                },
+                            "file-export-icon":  {
+                                                     "iconPath":  "../processed-icons/export.png"
+                                                 },
                             "file-express-scripts-icon":  {
                                                               "iconPath":  "../processed-icons/express-scripts.png"
                                                           },
@@ -2457,6 +2466,12 @@
                             "file-liara-icon":  {
                                                     "iconPath":  "../processed-icons/liara.svg"
                                                 },
+                            "file-lib-icon":  {
+                                                  "iconPath":  "../processed-icons/lib.png"
+                                              },
+                            "file-libraries-icon":  {
+                                                        "iconPath":  "../processed-icons/libraries.png"
+                                                    },
                             "file-library-icon":  {
                                                       "iconPath":  "../processed-icons/library.svg"
                                                   },
@@ -2478,6 +2493,9 @@
                             "file-libreoffice-writer-icon":  {
                                                                  "iconPath":  "../processed-icons/libreoffice-writer.svg"
                                                              },
+                            "file-libs-icon":  {
+                                                   "iconPath":  "../processed-icons/libs.png"
+                                               },
                             "file-license-icon":  {
                                                       "iconPath":  "../processed-icons/license.png"
                                                   },
@@ -3192,6 +3210,9 @@
                             "file-module-icon":  {
                                                      "iconPath":  "../processed-icons/module.svg"
                                                  },
+                            "file-modules-icon":  {
+                                                      "iconPath":  "../processed-icons/modules.png"
+                                                  },
                             "file-mojo-icon":  {
                                                    "iconPath":  "../processed-icons/mojo.svg"
                                                },
@@ -3576,6 +3597,9 @@
                             "file-noc-icon":  {
                                                   "iconPath":  "../processed-icons/noc.svg"
                                               },
+                            "file-node-modules-icon":  {
+                                                           "iconPath":  "../processed-icons/node-modules.svg"
+                                                       },
                             "file-node-icon":  {
                                                    "iconPath":  "../processed-icons/node.svg"
                                                },
@@ -3741,12 +3765,18 @@
                             "file-orval-icon":  {
                                                     "iconPath":  "../processed-icons/orval.svg"
                                                 },
+                            "file-out-icon":  {
+                                                  "iconPath":  "../processed-icons/out.png"
+                                              },
                             "file-outage-calendar-icon":  {
                                                               "iconPath":  "../processed-icons/outage-calendar.png"
                                                           },
                             "file-outlook-icon":  {
                                                       "iconPath":  "../processed-icons/outlook.svg"
                                                   },
+                            "file-outs-icon":  {
+                                                   "iconPath":  "../processed-icons/outs.png"
+                                               },
                             "file-ovpn-icon":  {
                                                    "iconPath":  "../processed-icons/ovpn.svg"
                                                },
@@ -3759,6 +3789,9 @@
                             "file-package-icon":  {
                                                       "iconPath":  "../processed-icons/package.svg"
                                                   },
+                            "file-packages-icon":  {
+                                                       "iconPath":  "../processed-icons/packages.png"
+                                                   },
                             "file-packship-icon":  {
                                                        "iconPath":  "../processed-icons/packship.svg"
                                                    },
@@ -3939,6 +3972,9 @@
                             "file-plugin-icon":  {
                                                      "iconPath":  "../processed-icons/plugin.svg"
                                                  },
+                            "file-plugins-icon":  {
+                                                      "iconPath":  "../processed-icons/plugins.png"
+                                                  },
                             "file-pluralsight-icon":  {
                                                           "iconPath":  "../processed-icons/pluralsight.png"
                                                       },
@@ -4297,7 +4333,7 @@
                                                      "iconPath":  "../processed-icons/rdcman.png"
                                                  },
                             "file-rdk-icon":  {
-                                                  "iconPath":  "../processed-icons/rdk.jpg"
+                                                  "iconPath":  "../processed-icons/rdk.png"
                                               },
                             "file-rdp-wrapper-icon":  {
                                                           "iconPath":  "../processed-icons/rdp-wrapper.png"
@@ -4362,6 +4398,12 @@
                             "file-relayapp-icon":  {
                                                        "iconPath":  "../processed-icons/relayapp.png"
                                                    },
+                            "file-release-icon":  {
+                                                      "iconPath":  "../processed-icons/release.png"
+                                                  },
+                            "file-releases-icon":  {
+                                                       "iconPath":  "../processed-icons/releases.png"
+                                                   },
                             "file-remark-icon":  {
                                                      "iconPath":  "../processed-icons/remark.svg"
                                                  },
@@ -4377,6 +4419,15 @@
                             "file-replit-icon":  {
                                                      "iconPath":  "../processed-icons/replit.svg"
                                                  },
+                            "file-repo-icon":  {
+                                                   "iconPath":  "../processed-icons/repo.svg"
+                                               },
+                            "file-repositories-icon":  {
+                                                           "iconPath":  "../processed-icons/repositories.png"
+                                                       },
+                            "file-repository-icon":  {
+                                                         "iconPath":  "../processed-icons/repository.png"
+                                                     },
                             "file-rescript-icon":  {
                                                        "iconPath":  "../processed-icons/rescript.svg"
                                                    },
@@ -4759,7 +4810,7 @@
                                                       "iconPath":  "../processed-icons/slashup.svg"
                                                   },
                             "file-sles-icon":  {
-                                                   "iconPath":  "../processed-icons/sles.jpg"
+                                                   "iconPath":  "../processed-icons/sles.png"
                                                },
                             "file-slice-icon":  {
                                                     "iconPath":  "../processed-icons/slice.svg"
@@ -4950,6 +5001,9 @@
                             "file-store-icon":  {
                                                     "iconPath":  "../processed-icons/store.svg"
                                                 },
+                            "file-stories-icon":  {
+                                                      "iconPath":  "../processed-icons/stories.png"
+                                                  },
                             "file-story-icon":  {
                                                     "iconPath":  "../processed-icons/story.svg"
                                                 },
@@ -5082,6 +5136,9 @@
                             "file-target-architecture-icon":  {
                                                                   "iconPath":  "../processed-icons/target-architecture.png"
                                                               },
+                            "file-targets-icon":  {
+                                                      "iconPath":  "../processed-icons/targets.png"
+                                                  },
                             "file-task-icon":  {
                                                    "iconPath":  "../processed-icons/task.svg"
                                                },
@@ -5861,6 +5918,7 @@
                            "targets":  "file-xml-icon",
                            "zsh":  "file-bash-icon",
                            "aws":  "file-aws-icon",
+                           "exe":  "file-executable-icon",
                            "yaml":  "file-yaml-icon",
                            "mdx":  "file-mdx-icon",
                            "psm1":  "file-powershell-icon",
@@ -5927,7 +5985,7 @@
                       "attw":  "file-attw-icon",
                       "resume-rocket":  "file-resume-rocket-icon",
                       "bundlemon":  "file-bundlemon-icon",
-                      ".vscode":  "file-vscode-icon",
+                      "targets":  "file-targets-icon",
                       "deepai":  "file-deepai-icon",
                       "rake":  "file-rake-icon",
                       "affinitydesigner":  "file-affinitydesigner-icon",
@@ -5976,11 +6034,11 @@
                       "halodx":  "file-halodx-icon",
                       "poedit":  "file-poedit-icon",
                       "blueprint":  "file-blueprint-icon",
+                      "repositories":  "file-repositories-icon",
                       "logs":  "file-logs-icon",
                       "riot":  "file-riot-icon",
                       "light-railway":  "file-light-railway-icon",
                       "haskell2":  "file-haskell2-icon",
-                      "navient":  "file-navient-icon",
                       "reacttemplate":  "file-reacttemplate-icon",
                       "awk":  "file-awk-icon",
                       "light-shaderlab":  "file-light-shaderlab-icon",
@@ -6102,14 +6160,16 @@
                       "docpad":  "file-docpad-icon",
                       "uwf":  "file-uwf-icon",
                       "browserslist":  "file-browserslist-icon",
+                      "vmware":  "file-vmware-icon",
                       "story":  "file-story-icon",
-                      "ng-component-sass":  "file-ng-component-sass-icon",
+                      "fortinet":  "file-fortinet-icon",
                       "light-electron":  "file-light-electron-icon",
                       "playbook.yml":  "file-ansible-icon",
                       "jobschat-ai":  "file-jobschat-ai-icon",
                       "files":  "file-files-icon",
                       "prajwaldesai":  "file-prajwaldesai-icon",
                       "tailwind":  "file-tailwind-icon",
+                      "repository":  "file-repository-icon",
                       "video":  "file-video-icon",
                       "perl":  "file-perl-icon",
                       "io":  "file-io-icon",
@@ -6221,7 +6281,7 @@
                       "adobeacrobat":  "file-adobeacrobat-icon",
                       "powershell-universal":  "file-powershell-universal-icon",
                       "light-jsconfig":  "file-light-jsconfig-icon",
-                      "root":  "file-root-icon",
+                      "packages":  "file-packages-icon",
                       "wordpress":  "file-wordpress-icon",
                       "craiyon":  "file-craiyon-icon",
                       "sails":  "file-sails-icon",
@@ -6305,6 +6365,7 @@
                       "stylus":  "file-stylus-icon",
                       "roadway-ai":  "file-roadway-ai-icon",
                       "yarn.lock":  "file-yarn-icon",
+                      "executable":  "file-executable-icon",
                       "antlers-html":  "file-antlers-html-icon",
                       "xmpie":  "file-xmpie-icon",
                       "datavant":  "file-datavant-icon",
@@ -6408,6 +6469,7 @@
                       "victorclient":  "file-victorclient-icon",
                       "fossa":  "file-fossa-icon",
                       "ipad":  "file-ipad-icon",
+                      "powerpath":  "file-powerpath-icon",
                       "ruby":  "file-ruby-icon",
                       "bazel-version":  "file-bazel-version-icon",
                       "js-official":  "file-js-official-icon",
@@ -6431,7 +6493,7 @@
                       "light-mcp":  "file-light-mcp-icon",
                       "src":  "file-src-icon",
                       "mock":  "file-mock-icon",
-                      "vmware":  "file-vmware-icon",
+                      "ng-component-sass":  "file-ng-component-sass-icon",
                       "elasticbeanstalk":  "file-elasticbeanstalk-icon",
                       "suse-manager":  "file-suse-manager-icon",
                       "runbooks":  "file-runbooks-icon",
@@ -6488,7 +6550,6 @@
                       "bazaar":  "file-bazaar-icon",
                       "vite.config.ts":  "file-vite-icon",
                       "minio":  "file-minio-icon",
-                      "fortinet":  "file-fortinet-icon",
                       "alight":  "file-alight-icon",
                       "go-white":  "file-go-white-icon",
                       "riverside":  "file-riverside-icon",
@@ -6635,7 +6696,6 @@
                       "idea":  "file-idea-icon",
                       "remark":  "file-remark-icon",
                       "requirements.txt":  "file-python-icon",
-                      "new-relic":  "file-new-relic-icon",
                       "windowslaps":  "file-windowslaps-icon",
                       "light-hjson":  "file-light-hjson-icon",
                       "cypress-spec":  "file-cypress-spec-icon",
@@ -6671,6 +6731,7 @@
                       "apache":  "file-apache-icon",
                       "host":  "file-host-icon",
                       "blocked":  "file-blocked-icon",
+                      "libs":  "file-libs-icon",
                       "registry":  "file-registry-icon",
                       "jupyter":  "file-jupyter-icon",
                       "refresh":  "file-refresh-icon",
@@ -6690,7 +6751,7 @@
                       "glide":  "file-glide-icon",
                       "asam-sync":  "file-asam-sync-icon",
                       "myhealthtoolkit":  "file-myhealthtoolkit-icon",
-                      "powerpath":  "file-powerpath-icon",
+                      "esxihosts":  "file-esxihosts-icon",
                       "speedtest":  "file-speedtest-icon",
                       "nest-gateway-ts":  "file-nest-gateway-ts-icon",
                       "uptime":  "file-uptime-icon",
@@ -6723,6 +6784,7 @@
                       "sublime":  "file-sublime-icon",
                       "humanstxt":  "file-humanstxt-icon",
                       "light-testcafe":  "file-light-testcafe-icon",
+                      "node-modules":  "file-node-modules-icon",
                       "cspell":  "file-cspell-icon",
                       "dockertest2":  "file-dockertest2-icon",
                       "codekit":  "file-codekit-icon",
@@ -6849,6 +6911,7 @@
                       "ogone":  "file-ogone-icon",
                       "svelte":  "file-svelte-icon",
                       "zoom":  "file-zoom-icon",
+                      "vvvvvv":  "file-vvvvvv-icon",
                       "pyup":  "file-pyup-icon",
                       "light-codeowners":  "file-light-codeowners-icon",
                       "adobe-firefly":  "file-adobe-firefly-icon",
@@ -6866,6 +6929,7 @@
                       "light-nim":  "file-light-nim-icon",
                       "vanguard":  "file-vanguard-icon",
                       "pythowo":  "file-pythowo-icon",
+                      "vsix":  "file-vsix-icon",
                       "loveable":  "file-loveable-icon",
                       "asciidoc":  "file-asciidoc-icon",
                       "citrix":  "file-citrix-icon",
@@ -6986,7 +7050,7 @@
                       "vhdl":  "file-vhdl-icon",
                       "wercker":  "file-wercker-icon",
                       "photoshop":  "file-photoshop-icon",
-                      "esxihosts":  "file-esxihosts-icon",
+                      "releases":  "file-releases-icon",
                       "task":  "file-task-icon",
                       "getimg-ai":  "file-getimg-ai-icon",
                       "jasmine":  "file-jasmine-icon",
@@ -7048,7 +7112,8 @@
                       "hardhat":  "file-hardhat-icon",
                       "zenoss":  "file-zenoss-icon",
                       "idris":  "file-idris-icon",
-                      "power-profile-restore":  "file-power-profile-restore-icon",
+                      "mikro-orm":  "file-mikro-orm-icon",
+                      "windi":  "file-windi-icon",
                       "filecapture":  "file-filecapture-icon",
                       "hyper-v":  "file-hyper-v-icon",
                       "genstat":  "file-genstat-icon",
@@ -7112,7 +7177,6 @@
                       "azurepipelines":  "file-azurepipelines-icon",
                       "azureadsync":  "file-azureadsync-icon",
                       "kali-linux-subsystem":  "file-kali-linux-subsystem-icon",
-                      "mikro-orm":  "file-mikro-orm-icon",
                       "velocity":  "file-velocity-icon",
                       "c-al":  "file-c-al-icon",
                       "render":  "file-render-icon",
@@ -7153,7 +7217,7 @@
                       "icloud":  "file-icloud-icon",
                       "prodia":  "file-prodia-icon",
                       "http":  "file-http-icon",
-                      "windi":  "file-windi-icon",
+                      "outs":  "file-outs-icon",
                       "light-agda":  "file-light-agda-icon",
                       "light-stylus":  "file-light-stylus-icon",
                       "get-aduser":  "file-get-aduser-icon",
@@ -7187,6 +7251,7 @@
                       "q":  "file-q-icon",
                       "sass":  "file-sass-icon",
                       "google":  "file-google-icon",
+                      "power-profile-restore":  "file-power-profile-restore-icon",
                       "squirrel":  "file-squirrel-icon",
                       "wikitext":  "file-wikitext-icon",
                       "php":  "file-php-icon",
@@ -7226,7 +7291,7 @@
                       "autopoint":  "file-autopoint-icon",
                       "gamemaker":  "file-gamemaker-icon",
                       "stablecog":  "file-stablecog-icon",
-                      "vbhtml":  "file-vbhtml-icon",
+                      "plugins":  "file-plugins-icon",
                       "emacs":  "file-emacs-icon",
                       "perfecto":  "file-perfecto-icon",
                       ".gitconfig":  "file-git-icon",
@@ -7339,6 +7404,7 @@
                       "neo4j":  "file-neo4j-icon",
                       "light-shadcn":  "file-light-shadcn-icon",
                       "supabase":  "file-supabase-icon",
+                      "modules":  "file-modules-icon",
                       "glitter":  "file-glitter-icon",
                       "talentquest":  "file-talentquest-icon",
                       "light-pnpm":  "file-light-pnpm-icon",
@@ -7357,11 +7423,13 @@
                       "light-warp":  "file-light-warp-icon",
                       "gnu":  "file-gnu-icon",
                       "terraform":  "file-terraform-icon",
+                      "powerplan":  "file-powerplan-icon",
                       "homeassistant":  "file-homeassistant-icon",
                       "dependabot":  "file-dependabot-icon",
                       "mvt":  "file-mvt-icon",
                       "granola":  "file-granola-icon",
                       "racket":  "file-racket-icon",
+                      "stories":  "file-stories-icon",
                       "vue":  "file-vue-icon",
                       "lolcode":  "file-lolcode-icon",
                       "enso":  "file-enso-icon",
@@ -7391,15 +7459,17 @@
                       "rdk":  "file-rdk-icon",
                       "expo":  "file-expo-icon",
                       "diskcleanup":  "file-diskcleanup-icon",
-                      "postgresql":  "file-postgresql-icon",
+                      "nearly":  "file-nearly-icon",
                       "networking":  "file-networking-icon",
+                      "out":  "file-out-icon",
                       "fedora":  "file-fedora-icon",
-                      "powerplan":  "file-powerplan-icon",
+                      "navient":  "file-navient-icon",
                       "find-it-now-gps":  "file-find-it-now-gps-icon",
                       "firewall":  "file-firewall-icon",
                       "cargo":  "file-cargo-icon",
                       "rego":  "file-rego-icon",
                       "swift":  "file-swift-icon",
+                      "postgresql":  "file-postgresql-icon",
                       "ng-service-dart":  "file-ng-service-dart-icon",
                       "lerna":  "file-lerna-icon",
                       "go-package":  "file-go-package-icon",
@@ -7495,6 +7565,7 @@
                       "bazel":  "file-bazel-icon",
                       "wgsl":  "file-wgsl-icon",
                       "uv":  "file-uv-icon",
+                      "export":  "file-export-icon",
                       "printqueues":  "file-printqueues-icon",
                       "veritas":  "file-veritas-icon",
                       "xo":  "file-xo-icon",
@@ -7505,6 +7576,7 @@
                       "cluster-state":  "file-cluster-state-icon",
                       "rsat":  "file-rsat-icon",
                       "rehype":  "file-rehype-icon",
+                      ".vscode":  "file-vscode-icon",
                       "elm2":  "file-elm2-icon",
                       "filewatcher":  "file-filewatcher-icon",
                       "junie":  "file-junie-icon",
@@ -7552,12 +7624,12 @@
                       "gumloop":  "file-gumloop-icon",
                       "cornerstone":  "file-cornerstone-icon",
                       "hirebase":  "file-hirebase-icon",
-                      "vvvvvv":  "file-vvvvvv-icon",
+                      "release":  "file-release-icon",
                       "validate-multipathing":  "file-validate-multipathing-icon",
                       "systemd":  "file-systemd-icon",
                       "devcontainer":  "file-devcontainer-icon",
                       "ibmdb2":  "file-ibmdb2-icon",
-                      "nearly":  "file-nearly-icon",
+                      "new-relic":  "file-new-relic-icon",
                       "intune":  "file-intune-icon",
                       "fsharp2":  "file-fsharp2-icon",
                       "light-mypy":  "file-light-mypy-icon",
@@ -7611,7 +7683,7 @@
                       "24seven":  "file-24seven-icon",
                       "plsql-package":  "file-plsql-package-icon",
                       "pony":  "file-pony-icon",
-                      "vsix":  "file-vsix-icon",
+                      "lib":  "file-lib-icon",
                       "sapphire-framework-cli":  "file-sapphire-framework-cli-icon",
                       "light-safetensors":  "file-light-safetensors-icon",
                       "firebasestorage":  "file-firebasestorage-icon",
@@ -7653,15 +7725,18 @@
                       "ssis":  "file-ssis-icon",
                       "metal":  "file-metal-icon",
                       "system-updates":  "file-system-updates-icon",
+                      "vbhtml":  "file-vbhtml-icon",
                       "imba":  "file-imba-icon",
                       "dellemc":  "file-dellemc-icon",
                       "riffo":  "file-riffo-icon",
                       "ntlite":  "file-ntlite-icon",
                       "pcl":  "file-pcl-icon",
                       "riverbed":  "file-riverbed-icon",
+                      "deployments":  "file-deployments-icon",
                       "fantasticon":  "file-fantasticon-icon",
                       "verizon":  "file-verizon-icon",
                       "json-official":  "file-json-official-icon",
+                      "libraries":  "file-libraries-icon",
                       "puppet":  "file-puppet-icon",
                       "compass":  "file-compass-icon",
                       "runway":  "file-runway-icon",
@@ -7729,6 +7804,7 @@
                       "mac-mini":  "file-mac-mini-icon",
                       "scadepro":  "file-scadepro-icon",
                       "broadcom":  "file-broadcom-icon",
+                      "repo":  "file-repo-icon",
                       "org":  "file-org-icon",
                       "ng-pipe-dart":  "file-ng-pipe-dart-icon",
                       "docusaurus":  "file-docusaurus-icon",
@@ -7833,6 +7909,7 @@
                       "stencil":  "file-stencil-icon",
                       "cf-spark-art":  "file-cf-spark-art-icon",
                       "light-rust-toolchain":  "file-light-rust-toolchain-icon",
+                      "root":  "file-root-icon",
                       "getty-images":  "file-getty-images-icon",
                       "babel.config.json":  "file-babel-icon",
                       "ai":  "file-ai-icon",
@@ -7942,7 +8019,7 @@
                         "attw":  "file-attw-icon",
                         "resume-rocket":  "file-resume-rocket-icon",
                         "bundlemon":  "file-bundlemon-icon",
-                        ".vscode":  "file-vscode-icon",
+                        "targets":  "file-targets-icon",
                         "deepai":  "file-deepai-icon",
                         "rake":  "file-rake-icon",
                         "affinitydesigner":  "file-affinitydesigner-icon",
@@ -7992,6 +8069,7 @@
                         "halodx":  "file-halodx-icon",
                         "poedit":  "file-poedit-icon",
                         "blueprint":  "file-blueprint-icon",
+                        "repositories":  "file-repositories-icon",
                         "logs":  "file-logs-icon",
                         "riot":  "file-riot-icon",
                         "controllers":  "file-controller-icon",
@@ -8116,6 +8194,7 @@
                         "light-eleventy":  "file-light-eleventy-icon",
                         "uwf":  "file-uwf-icon",
                         "browserslist":  "file-browserslist-icon",
+                        "vsix":  "file-vsix-icon",
                         "story":  "file-story-icon",
                         "ng-component-sass":  "file-ng-component-sass-icon",
                         "icons":  "file-image-icon",
@@ -8124,6 +8203,7 @@
                         "prajwaldesai":  "file-prajwaldesai-icon",
                         "xliff":  "file-xliff-icon",
                         "tailwind":  "file-tailwind-icon",
+                        "repository":  "file-repository-icon",
                         "video":  "file-video-icon",
                         "perl":  "file-perl-icon",
                         "io":  "file-io-icon",
@@ -8240,7 +8320,7 @@
                         "adobeacrobat":  "file-adobeacrobat-icon",
                         "powershell-universal":  "file-powershell-universal-icon",
                         "light-jsconfig":  "file-light-jsconfig-icon",
-                        "root":  "file-root-icon",
+                        "packages":  "file-packages-icon",
                         "wordpress":  "file-wordpress-icon",
                         "craiyon":  "file-craiyon-icon",
                         "sails":  "file-sails-icon",
@@ -8318,10 +8398,12 @@
                         "retext":  "file-retext-icon",
                         "plsql-package-body":  "file-plsql-package-body-icon",
                         "entities":  "file-model-icon",
+                        "raml":  "file-raml-icon",
                         "jekyll":  "file-jekyll-icon",
                         "travis":  "file-travis-icon",
                         "stylus":  "file-stylus-icon",
                         "roadway-ai":  "file-roadway-ai-icon",
+                        "executable":  "file-executable-icon",
                         "antlers-html":  "file-antlers-html-icon",
                         "tmux":  "file-tmux-icon",
                         "datavant":  "file-datavant-icon",
@@ -8432,6 +8514,7 @@
                         "js-official":  "file-js-official-icon",
                         "hugo":  "file-hugo-icon",
                         "resharper":  "file-resharper-icon",
+                        "windi":  "file-windi-icon",
                         "slang":  "file-slang-icon",
                         "xcode":  "file-xcode-icon",
                         "light-razzle":  "file-light-razzle-icon",
@@ -8689,6 +8772,7 @@
                         "apache":  "file-apache-icon",
                         "host":  "file-host-icon",
                         "blocked":  "file-blocked-icon",
+                        "libs":  "file-libs-icon",
                         "registry":  "file-registry-icon",
                         "jupyter":  "file-jupyter-icon",
                         "refresh":  "file-refresh-icon",
@@ -8715,12 +8799,13 @@
                         "uptime":  "file-uptime-icon",
                         "pipeline":  "file-pipeline-icon",
                         "emc-reports":  "file-emc-reports-icon",
+                        "rollup":  "file-rollup-icon",
                         "grainger":  "file-grainger-icon",
                         "helper":  "file-tools-icon",
                         "ng-interceptor-js":  "file-ng-interceptor-js-icon",
                         "watchmanconfig":  "file-watchmanconfig-icon",
                         "nest-gateway-js":  "file-nest-gateway-js-icon",
-                        "raml":  "file-raml-icon",
+                        ".pytest_cache":  "file-python-icon",
                         "aspx":  "file-aspx-icon",
                         "protobuf":  "file-protobuf-icon",
                         "mondoo":  "file-mondoo-icon",
@@ -8741,7 +8826,7 @@
                         "sublime":  "file-sublime-icon",
                         "humanstxt":  "file-humanstxt-icon",
                         "light-testcafe":  "file-light-testcafe-icon",
-                        "postgresql":  "file-postgresql-icon",
+                        "node-modules":  "file-node-modules-icon",
                         "cspell":  "file-cspell-icon",
                         "dockertest2":  "file-dockertest2-icon",
                         "codekit":  "file-codekit-icon",
@@ -8949,7 +9034,7 @@
                         "jsbeautify":  "file-jsbeautify-icon",
                         "silverstripe":  "file-silverstripe-icon",
                         "prepare":  "file-prepare-icon",
-                        ".pytest_cache":  "file-python-icon",
+                        "imports":  "file-export-icon",
                         "bot":  "file-bot-icon",
                         "opentofu":  "file-opentofu-icon",
                         "django":  "file-django-icon",
@@ -8997,10 +9082,12 @@
                         "wxt":  "file-wxt-icon",
                         "stackblitz":  "file-stackblitz-icon",
                         "general":  "file-general-icon",
+                        "import":  "file-export-icon",
                         "sources":  "file-source-icon",
                         "vhdl":  "file-vhdl-icon",
                         "util":  "file-tools-icon",
                         "photoshop":  "file-photoshop-icon",
+                        "releases":  "file-releases-icon",
                         "tooling":  "file-tools-icon",
                         "task":  "file-task-icon",
                         "getimg-ai":  "file-getimg-ai-icon",
@@ -9127,7 +9214,7 @@
                         "readme":  "file-readme-icon",
                         "mariadb":  "file-mariadb-icon",
                         "rubrik":  "file-rubrik-icon",
-                        "azurepipelines":  "file-azurepipelines-icon",
+                        "exports":  "file-export-icon",
                         "azureadsync":  "file-azureadsync-icon",
                         "kali-linux-subsystem":  "file-kali-linux-subsystem-icon",
                         "velocity":  "file-velocity-icon",
@@ -9169,7 +9256,7 @@
                         "icloud":  "file-icloud-icon",
                         "prodia":  "file-prodia-icon",
                         "http":  "file-http-icon",
-                        "windi":  "file-windi-icon",
+                        "outs":  "file-outs-icon",
                         "light-agda":  "file-light-agda-icon",
                         "light-stylus":  "file-light-stylus-icon",
                         "get-aduser":  "file-get-aduser-icon",
@@ -9241,7 +9328,7 @@
                         "autopoint":  "file-autopoint-icon",
                         "gamemaker":  "file-gamemaker-icon",
                         "stablecog":  "file-stablecog-icon",
-                        "vbhtml":  "file-vbhtml-icon",
+                        "plugins":  "file-plugins-icon",
                         "emacs":  "file-emacs-icon",
                         "perfecto":  "file-perfecto-icon",
                         "languages":  "file-locale-icon",
@@ -9274,7 +9361,7 @@
                         "styled":  "file-styled-icon",
                         "vance-ai":  "file-vance-ai-icon",
                         "15five":  "file-15five-icon",
-                        "rollup":  "file-rollup-icon",
+                        "azurepipelines":  "file-azurepipelines-icon",
                         "infopath":  "file-infopath-icon",
                         "jea":  "file-jea-icon",
                         "hpe":  "file-hpe-icon",
@@ -9353,6 +9440,7 @@
                         "typescript":  "file-typescript-icon",
                         "light-shadcn":  "file-light-shadcn-icon",
                         "supabase":  "file-supabase-icon",
+                        "modules":  "file-modules-icon",
                         "glitter":  "file-glitter-icon",
                         "talentquest":  "file-talentquest-icon",
                         "light-pnpm":  "file-light-pnpm-icon",
@@ -9379,6 +9467,7 @@
                         "mvt":  "file-mvt-icon",
                         "granola":  "file-granola-icon",
                         "racket":  "file-racket-icon",
+                        "stories":  "file-stories-icon",
                         "vue":  "file-vue-icon",
                         "lolcode":  "file-lolcode-icon",
                         "enso":  "file-enso-icon",
@@ -9410,6 +9499,7 @@
                         "diskcleanup":  "file-diskcleanup-icon",
                         "nearly":  "file-nearly-icon",
                         "networking":  "file-networking-icon",
+                        "out":  "file-out-icon",
                         "fedora":  "file-fedora-icon",
                         "navient":  "file-navient-icon",
                         "find-it-now-gps":  "file-find-it-now-gps-icon",
@@ -9417,6 +9507,7 @@
                         "cargo":  "file-rust-icon",
                         "rego":  "file-rego-icon",
                         "swift":  "file-swift-icon",
+                        "postgresql":  "file-postgresql-icon",
                         "ng-service-dart":  "file-ng-service-dart-icon",
                         "lerna":  "file-lerna-icon",
                         "go-package":  "file-go-package-icon",
@@ -9516,6 +9607,7 @@
                         "bazel":  "file-bazel-icon",
                         "wgsl":  "file-wgsl-icon",
                         "tfs":  "file-tfs-icon",
+                        "export":  "file-export-icon",
                         "printqueues":  "file-printqueues-icon",
                         "veritas":  "file-veritas-icon",
                         "xo":  "file-xo-icon",
@@ -9527,6 +9619,7 @@
                         "121-financial":  "file-121fcu-icon",
                         "rsat":  "file-rsat-icon",
                         "rehype":  "file-rehype-icon",
+                        ".vscode":  "file-vscode-icon",
                         "elm2":  "file-elm2-icon",
                         "filewatcher":  "file-filewatcher-icon",
                         "junie":  "file-junie-icon",
@@ -9575,6 +9668,7 @@
                         "gumloop":  "file-gumloop-icon",
                         "cornerstone":  "file-cornerstone-icon",
                         "hirebase":  "file-hirebase-icon",
+                        "release":  "file-release-icon",
                         "kube":  "file-kubernetes-icon",
                         "validate-multipathing":  "file-validate-multipathing-icon",
                         "systemd":  "file-systemd-icon",
@@ -9634,7 +9728,7 @@
                         "24seven":  "file-24seven-icon",
                         "plsql-package":  "file-plsql-package-icon",
                         "pony":  "file-pony-icon",
-                        "vsix":  "file-vsix-icon",
+                        "lib":  "file-lib-icon",
                         "sapphire-framework-cli":  "file-sapphire-framework-cli-icon",
                         "light-safetensors":  "file-light-safetensors-icon",
                         "firebasestorage":  "file-firebasestorage-icon",
@@ -9678,15 +9772,18 @@
                         "ssis":  "file-ssis-icon",
                         "metal":  "file-metal-icon",
                         "system-updates":  "file-system-updates-icon",
+                        "vbhtml":  "file-vbhtml-icon",
                         "imba":  "file-imba-icon",
                         "dellemc":  "file-dellemc-icon",
                         "riffo":  "file-riffo-icon",
                         "ntlite":  "file-ntlite-icon",
                         "pcl":  "file-pcl-icon",
                         "riverbed":  "file-riverbed-icon",
+                        "deployments":  "file-deployments-icon",
                         "fantasticon":  "file-fantasticon-icon",
                         "verizon":  "file-verizon-icon",
                         "json-official":  "file-json-official-icon",
+                        "libraries":  "file-libraries-icon",
                         "puppet":  "file-puppet-icon",
                         "compass":  "file-compass-icon",
                         "runway":  "file-runway-icon",
@@ -9753,6 +9850,7 @@
                         "mac-mini":  "file-mac-mini-icon",
                         "scadepro":  "file-scadepro-icon",
                         "broadcom":  "file-broadcom-icon",
+                        "repo":  "file-repo-icon",
                         "org":  "file-org-icon",
                         "ng-pipe-dart":  "file-ng-pipe-dart-icon",
                         "docusaurus":  "file-docusaurus-icon",
@@ -9859,6 +9957,7 @@
                         "cf-spark-art":  "file-cf-spark-art-icon",
                         "light-rust-toolchain":  "file-light-rust-toolchain-icon",
                         "precisionimagingcenters":  "file-pic-icon",
+                        "root":  "file-root-icon",
                         "getty-images":  "file-getty-images-icon",
                         "ai":  "file-ai-icon",
                         "ats":  "file-ats-icon",
@@ -9965,7 +10064,7 @@
                                 "attw":  "file-attw-icon",
                                 "resume-rocket":  "file-resume-rocket-icon",
                                 "bundlemon":  "file-bundlemon-icon",
-                                ".vscode":  "file-vscode-icon",
+                                "targets":  "file-targets-icon",
                                 "deepai":  "file-deepai-icon",
                                 "rake":  "file-rake-icon",
                                 "affinitydesigner":  "file-affinitydesigner-icon",
@@ -10015,6 +10114,7 @@
                                 "halodx":  "file-halodx-icon",
                                 "poedit":  "file-poedit-icon",
                                 "blueprint":  "file-blueprint-icon",
+                                "repositories":  "file-repositories-icon",
                                 "logs":  "file-logs-icon",
                                 "riot":  "file-riot-icon",
                                 "controllers":  "file-controller-icon",
@@ -10139,6 +10239,7 @@
                                 "light-eleventy":  "file-light-eleventy-icon",
                                 "uwf":  "file-uwf-icon",
                                 "browserslist":  "file-browserslist-icon",
+                                "vsix":  "file-vsix-icon",
                                 "story":  "file-story-icon",
                                 "ng-component-sass":  "file-ng-component-sass-icon",
                                 "icons":  "file-image-icon",
@@ -10147,6 +10248,7 @@
                                 "prajwaldesai":  "file-prajwaldesai-icon",
                                 "xliff":  "file-xliff-icon",
                                 "tailwind":  "file-tailwind-icon",
+                                "repository":  "file-repository-icon",
                                 "video":  "file-video-icon",
                                 "perl":  "file-perl-icon",
                                 "io":  "file-io-icon",
@@ -10263,7 +10365,7 @@
                                 "adobeacrobat":  "file-adobeacrobat-icon",
                                 "powershell-universal":  "file-powershell-universal-icon",
                                 "light-jsconfig":  "file-light-jsconfig-icon",
-                                "root":  "file-root-icon",
+                                "packages":  "file-packages-icon",
                                 "wordpress":  "file-wordpress-icon",
                                 "craiyon":  "file-craiyon-icon",
                                 "sails":  "file-sails-icon",
@@ -10341,10 +10443,12 @@
                                 "retext":  "file-retext-icon",
                                 "plsql-package-body":  "file-plsql-package-body-icon",
                                 "entities":  "file-model-icon",
+                                "raml":  "file-raml-icon",
                                 "jekyll":  "file-jekyll-icon",
                                 "travis":  "file-travis-icon",
                                 "stylus":  "file-stylus-icon",
                                 "roadway-ai":  "file-roadway-ai-icon",
+                                "executable":  "file-executable-icon",
                                 "antlers-html":  "file-antlers-html-icon",
                                 "tmux":  "file-tmux-icon",
                                 "datavant":  "file-datavant-icon",
@@ -10455,6 +10559,7 @@
                                 "js-official":  "file-js-official-icon",
                                 "hugo":  "file-hugo-icon",
                                 "resharper":  "file-resharper-icon",
+                                "windi":  "file-windi-icon",
                                 "slang":  "file-slang-icon",
                                 "xcode":  "file-xcode-icon",
                                 "light-razzle":  "file-light-razzle-icon",
@@ -10712,6 +10817,7 @@
                                 "apache":  "file-apache-icon",
                                 "host":  "file-host-icon",
                                 "blocked":  "file-blocked-icon",
+                                "libs":  "file-libs-icon",
                                 "registry":  "file-registry-icon",
                                 "jupyter":  "file-jupyter-icon",
                                 "refresh":  "file-refresh-icon",
@@ -10738,12 +10844,13 @@
                                 "uptime":  "file-uptime-icon",
                                 "pipeline":  "file-pipeline-icon",
                                 "emc-reports":  "file-emc-reports-icon",
+                                "rollup":  "file-rollup-icon",
                                 "grainger":  "file-grainger-icon",
                                 "helper":  "file-tools-icon",
                                 "ng-interceptor-js":  "file-ng-interceptor-js-icon",
                                 "watchmanconfig":  "file-watchmanconfig-icon",
                                 "nest-gateway-js":  "file-nest-gateway-js-icon",
-                                "raml":  "file-raml-icon",
+                                ".pytest_cache":  "file-python-icon",
                                 "aspx":  "file-aspx-icon",
                                 "protobuf":  "file-protobuf-icon",
                                 "mondoo":  "file-mondoo-icon",
@@ -10764,7 +10871,7 @@
                                 "sublime":  "file-sublime-icon",
                                 "humanstxt":  "file-humanstxt-icon",
                                 "light-testcafe":  "file-light-testcafe-icon",
-                                "postgresql":  "file-postgresql-icon",
+                                "node-modules":  "file-node-modules-icon",
                                 "cspell":  "file-cspell-icon",
                                 "dockertest2":  "file-dockertest2-icon",
                                 "codekit":  "file-codekit-icon",
@@ -10972,7 +11079,7 @@
                                 "jsbeautify":  "file-jsbeautify-icon",
                                 "silverstripe":  "file-silverstripe-icon",
                                 "prepare":  "file-prepare-icon",
-                                ".pytest_cache":  "file-python-icon",
+                                "imports":  "file-export-icon",
                                 "bot":  "file-bot-icon",
                                 "opentofu":  "file-opentofu-icon",
                                 "django":  "file-django-icon",
@@ -11020,10 +11127,12 @@
                                 "wxt":  "file-wxt-icon",
                                 "stackblitz":  "file-stackblitz-icon",
                                 "general":  "file-general-icon",
+                                "import":  "file-export-icon",
                                 "sources":  "file-source-icon",
                                 "vhdl":  "file-vhdl-icon",
                                 "util":  "file-tools-icon",
                                 "photoshop":  "file-photoshop-icon",
+                                "releases":  "file-releases-icon",
                                 "tooling":  "file-tools-icon",
                                 "task":  "file-task-icon",
                                 "getimg-ai":  "file-getimg-ai-icon",
@@ -11150,7 +11259,7 @@
                                 "readme":  "file-readme-icon",
                                 "mariadb":  "file-mariadb-icon",
                                 "rubrik":  "file-rubrik-icon",
-                                "azurepipelines":  "file-azurepipelines-icon",
+                                "exports":  "file-export-icon",
                                 "azureadsync":  "file-azureadsync-icon",
                                 "kali-linux-subsystem":  "file-kali-linux-subsystem-icon",
                                 "velocity":  "file-velocity-icon",
@@ -11192,7 +11301,7 @@
                                 "icloud":  "file-icloud-icon",
                                 "prodia":  "file-prodia-icon",
                                 "http":  "file-http-icon",
-                                "windi":  "file-windi-icon",
+                                "outs":  "file-outs-icon",
                                 "light-agda":  "file-light-agda-icon",
                                 "light-stylus":  "file-light-stylus-icon",
                                 "get-aduser":  "file-get-aduser-icon",
@@ -11264,7 +11373,7 @@
                                 "autopoint":  "file-autopoint-icon",
                                 "gamemaker":  "file-gamemaker-icon",
                                 "stablecog":  "file-stablecog-icon",
-                                "vbhtml":  "file-vbhtml-icon",
+                                "plugins":  "file-plugins-icon",
                                 "emacs":  "file-emacs-icon",
                                 "perfecto":  "file-perfecto-icon",
                                 "languages":  "file-locale-icon",
@@ -11297,7 +11406,7 @@
                                 "styled":  "file-styled-icon",
                                 "vance-ai":  "file-vance-ai-icon",
                                 "15five":  "file-15five-icon",
-                                "rollup":  "file-rollup-icon",
+                                "azurepipelines":  "file-azurepipelines-icon",
                                 "infopath":  "file-infopath-icon",
                                 "jea":  "file-jea-icon",
                                 "hpe":  "file-hpe-icon",
@@ -11376,6 +11485,7 @@
                                 "typescript":  "file-typescript-icon",
                                 "light-shadcn":  "file-light-shadcn-icon",
                                 "supabase":  "file-supabase-icon",
+                                "modules":  "file-modules-icon",
                                 "glitter":  "file-glitter-icon",
                                 "talentquest":  "file-talentquest-icon",
                                 "light-pnpm":  "file-light-pnpm-icon",
@@ -11402,6 +11512,7 @@
                                 "mvt":  "file-mvt-icon",
                                 "granola":  "file-granola-icon",
                                 "racket":  "file-racket-icon",
+                                "stories":  "file-stories-icon",
                                 "vue":  "file-vue-icon",
                                 "lolcode":  "file-lolcode-icon",
                                 "enso":  "file-enso-icon",
@@ -11433,6 +11544,7 @@
                                 "diskcleanup":  "file-diskcleanup-icon",
                                 "nearly":  "file-nearly-icon",
                                 "networking":  "file-networking-icon",
+                                "out":  "file-out-icon",
                                 "fedora":  "file-fedora-icon",
                                 "navient":  "file-navient-icon",
                                 "find-it-now-gps":  "file-find-it-now-gps-icon",
@@ -11440,6 +11552,7 @@
                                 "cargo":  "file-rust-icon",
                                 "rego":  "file-rego-icon",
                                 "swift":  "file-swift-icon",
+                                "postgresql":  "file-postgresql-icon",
                                 "ng-service-dart":  "file-ng-service-dart-icon",
                                 "lerna":  "file-lerna-icon",
                                 "go-package":  "file-go-package-icon",
@@ -11539,6 +11652,7 @@
                                 "bazel":  "file-bazel-icon",
                                 "wgsl":  "file-wgsl-icon",
                                 "tfs":  "file-tfs-icon",
+                                "export":  "file-export-icon",
                                 "printqueues":  "file-printqueues-icon",
                                 "veritas":  "file-veritas-icon",
                                 "xo":  "file-xo-icon",
@@ -11550,6 +11664,7 @@
                                 "121-financial":  "file-121fcu-icon",
                                 "rsat":  "file-rsat-icon",
                                 "rehype":  "file-rehype-icon",
+                                ".vscode":  "file-vscode-icon",
                                 "elm2":  "file-elm2-icon",
                                 "filewatcher":  "file-filewatcher-icon",
                                 "junie":  "file-junie-icon",
@@ -11598,6 +11713,7 @@
                                 "gumloop":  "file-gumloop-icon",
                                 "cornerstone":  "file-cornerstone-icon",
                                 "hirebase":  "file-hirebase-icon",
+                                "release":  "file-release-icon",
                                 "kube":  "file-kubernetes-icon",
                                 "validate-multipathing":  "file-validate-multipathing-icon",
                                 "systemd":  "file-systemd-icon",
@@ -11657,7 +11773,7 @@
                                 "24seven":  "file-24seven-icon",
                                 "plsql-package":  "file-plsql-package-icon",
                                 "pony":  "file-pony-icon",
-                                "vsix":  "file-vsix-icon",
+                                "lib":  "file-lib-icon",
                                 "sapphire-framework-cli":  "file-sapphire-framework-cli-icon",
                                 "light-safetensors":  "file-light-safetensors-icon",
                                 "firebasestorage":  "file-firebasestorage-icon",
@@ -11701,15 +11817,18 @@
                                 "ssis":  "file-ssis-icon",
                                 "metal":  "file-metal-icon",
                                 "system-updates":  "file-system-updates-icon",
+                                "vbhtml":  "file-vbhtml-icon",
                                 "imba":  "file-imba-icon",
                                 "dellemc":  "file-dellemc-icon",
                                 "riffo":  "file-riffo-icon",
                                 "ntlite":  "file-ntlite-icon",
                                 "pcl":  "file-pcl-icon",
                                 "riverbed":  "file-riverbed-icon",
+                                "deployments":  "file-deployments-icon",
                                 "fantasticon":  "file-fantasticon-icon",
                                 "verizon":  "file-verizon-icon",
                                 "json-official":  "file-json-official-icon",
+                                "libraries":  "file-libraries-icon",
                                 "puppet":  "file-puppet-icon",
                                 "compass":  "file-compass-icon",
                                 "runway":  "file-runway-icon",
@@ -11776,6 +11895,7 @@
                                 "mac-mini":  "file-mac-mini-icon",
                                 "scadepro":  "file-scadepro-icon",
                                 "broadcom":  "file-broadcom-icon",
+                                "repo":  "file-repo-icon",
                                 "org":  "file-org-icon",
                                 "ng-pipe-dart":  "file-ng-pipe-dart-icon",
                                 "docusaurus":  "file-docusaurus-icon",
@@ -11882,6 +12002,7 @@
                                 "cf-spark-art":  "file-cf-spark-art-icon",
                                 "light-rust-toolchain":  "file-light-rust-toolchain-icon",
                                 "precisionimagingcenters":  "file-pic-icon",
+                                "root":  "file-root-icon",
                                 "getty-images":  "file-getty-images-icon",
                                 "ai":  "file-ai-icon",
                                 "ats":  "file-ats-icon",

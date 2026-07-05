@@ -35,6 +35,9 @@
                        "vbproj":  [
                                       "vbproj"
                                   ],
+                       "xml":  [
+                                   "xml"
+                               ],
                        "cpp":  [
                                    "cpp"
                                ],
@@ -95,9 +98,9 @@
                        "vsix":  [
                                     "vsix"
                                 ],
-                       "xml":  [
-                                   "xml"
-                               ],
+                       "targets":  [
+                                       "targets"
+                                   ],
                        "json":  [
                                     "json",
                                     "jsonc"
@@ -219,6 +222,9 @@
                       "bundlemon":  [
                                         "bundlemon"
                                     ],
+                      "targets":  [
+                                      "targets"
+                                  ],
                       "deepai":  [
                                      "deepai"
                                  ],
@@ -357,6 +363,9 @@
                       "blueprint":  [
                                         "blueprint"
                                     ],
+                      "repositories":  [
+                                           "repositories"
+                                       ],
                       "logs":  [
                                    "logs"
                                ],
@@ -744,6 +753,9 @@
                       "tailwind":  [
                                        "tailwind"
                                    ],
+                      "repository":  [
+                                         "repository"
+                                     ],
                       "video":  [
                                     "video"
                                 ],
@@ -780,8 +792,8 @@
                       "myspace-mobsters":  [
                                                "myspace-mobsters"
                                            ],
-                      "ps1folder":  [
-                                        "ps1folder"
+                      "light-ini":  [
+                                        "light-ini"
                                     ],
                       "pdm":  [
                                   "pdm"
@@ -1068,9 +1080,9 @@
                       "light-jsconfig":  [
                                              "light-jsconfig"
                                          ],
-                      "root":  [
-                                   "root"
-                               ],
+                      "packages":  [
+                                       "packages"
+                                   ],
                       "wordpress":  [
                                         "wordpress"
                                     ],
@@ -1305,6 +1317,9 @@
                       "roadway-ai":  [
                                          "roadway-ai"
                                      ],
+                      "executable":  [
+                                         "executable"
+                                     ],
                       "antlers-html":  [
                                            "antlers-html"
                                        ],
@@ -1470,9 +1485,6 @@
                       "backdoor-account":  [
                                                "backdoor-account"
                                            ],
-                      "metal":  [
-                                    "metal"
-                                ],
                       "bookmarks":  [
                                         "bookmarks"
                                     ],
@@ -1626,6 +1638,9 @@
                       "resharper":  [
                                         "resharper"
                                     ],
+                      "windi":  [
+                                    "windi"
+                                ],
                       "slang":  [
                                     "slang"
                                 ],
@@ -1821,9 +1836,6 @@
                       "aduser-attributes":  [
                                                 "aduser-attributes"
                                             ],
-                      "vs2":  [
-                                  "vs2"
-                              ],
                       "tm":  [
                                  "tm"
                              ],
@@ -2361,6 +2373,9 @@
                       "blocked":  [
                                       "blocked"
                                   ],
+                      "libs":  [
+                                   "libs"
+                               ],
                       "registry":  [
                                        "registry"
                                    ],
@@ -2511,6 +2526,9 @@
                       "light-testcafe":  [
                                              "light-testcafe"
                                          ],
+                      "node-modules":  [
+                                           "node-modules"
+                                       ],
                       "cspell":  [
                                      "cspell"
                                  ],
@@ -2673,9 +2691,9 @@
                       "markojs":  [
                                       "markojs"
                                   ],
-                      "stage":  [
-                                    "stage"
-                                ],
+                      "pulumi":  [
+                                     "pulumi"
+                                 ],
                       "pop3":  [
                                    "pop3"
                                ],
@@ -2700,6 +2718,9 @@
                       "ttcn":  [
                                    "ttcn"
                                ],
+                      "public":  [
+                                     "public"
+                                 ],
                       "aws":  [
                                   "aws"
                               ],
@@ -2919,6 +2940,9 @@
                       "pythowo":  [
                                       "pythowo"
                                   ],
+                      "vsix":  [
+                                   "vsix"
+                               ],
                       "loveable":  [
                                        "loveable"
                                    ],
@@ -3150,9 +3174,9 @@
                       "onenote":  [
                                       "onenote"
                                   ],
-                      "public":  [
-                                     "public"
-                                 ],
+                      "php2":  [
+                                   "php2"
+                               ],
                       "objidconfig":  [
                                           "objidconfig"
                                       ],
@@ -3261,6 +3285,9 @@
                       "photoshop":  [
                                         "photoshop"
                                     ],
+                      "releases":  [
+                                       "releases"
+                                   ],
                       "esxihosts":  [
                                         "esxihosts"
                                     ],
@@ -3654,9 +3681,6 @@
                       "dhall":  [
                                     "dhall"
                                 ],
-                      "light-ini":  [
-                                        "light-ini"
-                                    ],
                       "audit":  [
                                     "audit"
                                 ],
@@ -3753,9 +3777,9 @@
                       "http":  [
                                    "http"
                                ],
-                      "windi":  [
-                                    "windi"
-                                ],
+                      "outs":  [
+                                   "outs"
+                               ],
                       "light-agda":  [
                                          "light-agda"
                                      ],
@@ -3810,9 +3834,6 @@
                       "high-cpu-diag":  [
                                             "high-cpu-diag"
                                         ],
-                      "php2":  [
-                                   "php2"
-                               ],
                       "sentinel-agent":  [
                                              "sentinel-agent"
                                          ],
@@ -3969,9 +3990,9 @@
                       "stablecog":  [
                                         "stablecog"
                                     ],
-                      "vbhtml":  [
-                                     "vbhtml"
-                                 ],
+                      "plugins":  [
+                                      "plugins"
+                                  ],
                       "emacs":  [
                                     "emacs"
                                 ],
@@ -4293,6 +4314,9 @@
                       "supabase":  [
                                        "supabase"
                                    ],
+                      "modules":  [
+                                      "modules"
+                                  ],
                       "glitter":  [
                                       "glitter"
                                   ],
@@ -4362,6 +4386,9 @@
                       "racket":  [
                                      "racket"
                                  ],
+                      "stories":  [
+                                      "stories"
+                                  ],
                       "vue":  [
                                   "vue"
                               ],
@@ -4446,6 +4473,9 @@
                       "networking":  [
                                          "networking"
                                      ],
+                      "out":  [
+                                  "out"
+                              ],
                       "fedora":  [
                                      "fedora"
                                  ],
@@ -4737,6 +4767,9 @@
                       "uv":  [
                                  "uv"
                              ],
+                      "export":  [
+                                     "export"
+                                 ],
                       "reason":  [
                                      "reason"
                                  ],
@@ -4908,6 +4941,9 @@
                       "hirebase":  [
                                        "hirebase"
                                    ],
+                      "release":  [
+                                      "release"
+                                  ],
                       "validate-multipathing":  [
                                                     "validate-multipathing"
                                                 ],
@@ -4968,6 +5004,9 @@
                       "myhealthone":  [
                                           "myhealthone"
                                       ],
+                      "ps1folder":  [
+                                        "ps1folder"
+                                    ],
                       "ng-controller-js":  [
                                                "ng-controller-js"
                                            ],
@@ -5019,6 +5058,9 @@
                       "ciscoprime":  [
                                          "ciscoprime"
                                      ],
+                      "purgecss":  [
+                                       "purgecss"
+                                   ],
                       "taplo":  [
                                     "taplo"
                                 ],
@@ -5064,9 +5106,9 @@
                       "pony":  [
                                    "pony"
                                ],
-                      "vsix":  [
-                                   "vsix"
-                               ],
+                      "lib":  [
+                                  "lib"
+                              ],
                       "sapphire-framework-cli":  [
                                                      "sapphire-framework-cli"
                                                  ],
@@ -5181,12 +5223,15 @@
                       "ssis":  [
                                    "ssis"
                                ],
-                      "pulumi":  [
-                                     "pulumi"
-                                 ],
+                      "metal":  [
+                                    "metal"
+                                ],
                       "system-updates":  [
                                              "system-updates"
                                          ],
+                      "vbhtml":  [
+                                     "vbhtml"
+                                 ],
                       "imba":  [
                                    "imba"
                                ],
@@ -5205,6 +5250,9 @@
                       "riverbed":  [
                                        "riverbed"
                                    ],
+                      "deployments":  [
+                                          "deployments"
+                                      ],
                       "fantasticon":  [
                                           "fantasticon"
                                       ],
@@ -5214,6 +5262,9 @@
                       "json-official":  [
                                             "json-official"
                                         ],
+                      "libraries":  [
+                                        "libraries"
+                                    ],
                       "puppet":  [
                                      "puppet"
                                  ],
@@ -5406,6 +5457,9 @@
                       "broadcom":  [
                                        "broadcom"
                                    ],
+                      "repo":  [
+                                   "repo"
+                               ],
                       "org":  [
                                   "org"
                               ],
@@ -5496,6 +5550,9 @@
                       "kb":  [
                                  "kb"
                              ],
+                      "stage":  [
+                                    "stage"
+                                ],
                       "fauna":  [
                                     "fauna"
                                 ],
@@ -5616,9 +5673,9 @@
                       "jsp":  [
                                   "jsp"
                               ],
-                      "purgecss":  [
-                                       "purgecss"
-                                   ],
+                      "light-esphome":  [
+                                            "light-esphome"
+                                        ],
                       "rails":  [
                                     "rails"
                                 ],
@@ -5703,6 +5760,9 @@
                       "light-rust-toolchain":  [
                                                    "light-rust-toolchain"
                                                ],
+                      "root":  [
+                                   "root"
+                               ],
                       "getty-images":  [
                                            "getty-images"
                                        ],
@@ -5814,9 +5874,9 @@
                       "isilon":  [
                                      "isilon"
                                  ],
-                      "light-esphome":  [
-                                            "light-esphome"
-                                        ],
+                      "vs2":  [
+                                  "vs2"
+                              ],
                       "deepwatch":  [
                                         "deepwatch"
                                     ],
@@ -6005,6 +6065,9 @@
                         "bundlemon":  [
                                           "bundlemon"
                                       ],
+                        "targets":  [
+                                        "targets"
+                                    ],
                         "deepai":  [
                                        "deepai"
                                    ],
@@ -6143,6 +6206,9 @@
                         "blueprint":  [
                                           "blueprint"
                                       ],
+                        "repositories":  [
+                                             "repositories"
+                                         ],
                         "logs":  [
                                      "logs"
                                  ],
@@ -6530,6 +6596,9 @@
                         "tailwind":  [
                                          "tailwind"
                                      ],
+                        "repository":  [
+                                           "repository"
+                                       ],
                         "video":  [
                                       "video"
                                   ],
@@ -6566,8 +6635,8 @@
                         "myspace-mobsters":  [
                                                  "myspace-mobsters"
                                              ],
-                        "ps1folder":  [
-                                          "ps1folder"
+                        "light-ini":  [
+                                          "light-ini"
                                       ],
                         "pdm":  [
                                     "pdm"
@@ -6854,9 +6923,9 @@
                         "light-jsconfig":  [
                                                "light-jsconfig"
                                            ],
-                        "root":  [
-                                     "root"
-                                 ],
+                        "packages":  [
+                                         "packages"
+                                     ],
                         "wordpress":  [
                                           "wordpress"
                                       ],
@@ -7091,6 +7160,9 @@
                         "roadway-ai":  [
                                            "roadway-ai"
                                        ],
+                        "executable":  [
+                                           "executable"
+                                       ],
                         "antlers-html":  [
                                              "antlers-html"
                                          ],
@@ -7256,9 +7328,6 @@
                         "backdoor-account":  [
                                                  "backdoor-account"
                                              ],
-                        "metal":  [
-                                      "metal"
-                                  ],
                         "bookmarks":  [
                                           "bookmarks"
                                       ],
@@ -7412,6 +7481,9 @@
                         "resharper":  [
                                           "resharper"
                                       ],
+                        "windi":  [
+                                      "windi"
+                                  ],
                         "slang":  [
                                       "slang"
                                   ],
@@ -7607,9 +7679,6 @@
                         "aduser-attributes":  [
                                                   "aduser-attributes"
                                               ],
-                        "vs2":  [
-                                    "vs2"
-                                ],
                         "tm":  [
                                    "tm"
                                ],
@@ -8147,6 +8216,9 @@
                         "blocked":  [
                                         "blocked"
                                     ],
+                        "libs":  [
+                                     "libs"
+                                 ],
                         "registry":  [
                                          "registry"
                                      ],
@@ -8297,6 +8369,9 @@
                         "light-testcafe":  [
                                                "light-testcafe"
                                            ],
+                        "node-modules":  [
+                                             "node-modules"
+                                         ],
                         "cspell":  [
                                        "cspell"
                                    ],
@@ -8459,9 +8534,9 @@
                         "markojs":  [
                                         "markojs"
                                     ],
-                        "stage":  [
-                                      "stage"
-                                  ],
+                        "pulumi":  [
+                                       "pulumi"
+                                   ],
                         "pop3":  [
                                      "pop3"
                                  ],
@@ -8486,6 +8561,9 @@
                         "ttcn":  [
                                      "ttcn"
                                  ],
+                        "public":  [
+                                       "public"
+                                   ],
                         "aws":  [
                                     "aws"
                                 ],
@@ -8705,6 +8783,9 @@
                         "pythowo":  [
                                         "pythowo"
                                     ],
+                        "vsix":  [
+                                     "vsix"
+                                 ],
                         "loveable":  [
                                          "loveable"
                                      ],
@@ -8936,9 +9017,9 @@
                         "onenote":  [
                                         "onenote"
                                     ],
-                        "public":  [
-                                       "public"
-                                   ],
+                        "php2":  [
+                                     "php2"
+                                 ],
                         "objidconfig":  [
                                             "objidconfig"
                                         ],
@@ -9047,6 +9128,9 @@
                         "photoshop":  [
                                           "photoshop"
                                       ],
+                        "releases":  [
+                                         "releases"
+                                     ],
                         "esxihosts":  [
                                           "esxihosts"
                                       ],
@@ -9440,9 +9524,6 @@
                         "dhall":  [
                                       "dhall"
                                   ],
-                        "light-ini":  [
-                                          "light-ini"
-                                      ],
                         "audit":  [
                                       "audit"
                                   ],
@@ -9539,9 +9620,9 @@
                         "http":  [
                                      "http"
                                  ],
-                        "windi":  [
-                                      "windi"
-                                  ],
+                        "outs":  [
+                                     "outs"
+                                 ],
                         "light-agda":  [
                                            "light-agda"
                                        ],
@@ -9596,9 +9677,6 @@
                         "high-cpu-diag":  [
                                               "high-cpu-diag"
                                           ],
-                        "php2":  [
-                                     "php2"
-                                 ],
                         "sentinel-agent":  [
                                                "sentinel-agent"
                                            ],
@@ -9755,9 +9833,9 @@
                         "stablecog":  [
                                           "stablecog"
                                       ],
-                        "vbhtml":  [
-                                       "vbhtml"
-                                   ],
+                        "plugins":  [
+                                        "plugins"
+                                    ],
                         "emacs":  [
                                       "emacs"
                                   ],
@@ -10079,6 +10157,9 @@
                         "supabase":  [
                                          "supabase"
                                      ],
+                        "modules":  [
+                                        "modules"
+                                    ],
                         "glitter":  [
                                         "glitter"
                                     ],
@@ -10148,6 +10229,9 @@
                         "racket":  [
                                        "racket"
                                    ],
+                        "stories":  [
+                                        "stories"
+                                    ],
                         "vue":  [
                                     "vue"
                                 ],
@@ -10232,6 +10316,9 @@
                         "networking":  [
                                            "networking"
                                        ],
+                        "out":  [
+                                    "out"
+                                ],
                         "fedora":  [
                                        "fedora"
                                    ],
@@ -10523,6 +10610,9 @@
                         "uv":  [
                                    "uv"
                                ],
+                        "export":  [
+                                       "export"
+                                   ],
                         "reason":  [
                                        "reason"
                                    ],
@@ -10694,6 +10784,9 @@
                         "hirebase":  [
                                          "hirebase"
                                      ],
+                        "release":  [
+                                        "release"
+                                    ],
                         "validate-multipathing":  [
                                                       "validate-multipathing"
                                                   ],
@@ -10754,6 +10847,9 @@
                         "myhealthone":  [
                                             "myhealthone"
                                         ],
+                        "ps1folder":  [
+                                          "ps1folder"
+                                      ],
                         "ng-controller-js":  [
                                                  "ng-controller-js"
                                              ],
@@ -10805,6 +10901,9 @@
                         "ciscoprime":  [
                                            "ciscoprime"
                                        ],
+                        "purgecss":  [
+                                         "purgecss"
+                                     ],
                         "taplo":  [
                                       "taplo"
                                   ],
@@ -10850,9 +10949,9 @@
                         "pony":  [
                                      "pony"
                                  ],
-                        "vsix":  [
-                                     "vsix"
-                                 ],
+                        "lib":  [
+                                    "lib"
+                                ],
                         "sapphire-framework-cli":  [
                                                        "sapphire-framework-cli"
                                                    ],
@@ -10967,12 +11066,15 @@
                         "ssis":  [
                                      "ssis"
                                  ],
-                        "pulumi":  [
-                                       "pulumi"
-                                   ],
+                        "metal":  [
+                                      "metal"
+                                  ],
                         "system-updates":  [
                                                "system-updates"
                                            ],
+                        "vbhtml":  [
+                                       "vbhtml"
+                                   ],
                         "imba":  [
                                      "imba"
                                  ],
@@ -10991,6 +11093,9 @@
                         "riverbed":  [
                                          "riverbed"
                                      ],
+                        "deployments":  [
+                                            "deployments"
+                                        ],
                         "fantasticon":  [
                                             "fantasticon"
                                         ],
@@ -11000,6 +11105,9 @@
                         "json-official":  [
                                               "json-official"
                                           ],
+                        "libraries":  [
+                                          "libraries"
+                                      ],
                         "puppet":  [
                                        "puppet"
                                    ],
@@ -11192,6 +11300,9 @@
                         "broadcom":  [
                                          "broadcom"
                                      ],
+                        "repo":  [
+                                     "repo"
+                                 ],
                         "org":  [
                                     "org"
                                 ],
@@ -11282,6 +11393,9 @@
                         "kb":  [
                                    "kb"
                                ],
+                        "stage":  [
+                                      "stage"
+                                  ],
                         "fauna":  [
                                       "fauna"
                                   ],
@@ -11402,9 +11516,9 @@
                         "jsp":  [
                                     "jsp"
                                 ],
-                        "purgecss":  [
-                                         "purgecss"
-                                     ],
+                        "light-esphome":  [
+                                              "light-esphome"
+                                          ],
                         "rails":  [
                                       "rails"
                                   ],
@@ -11489,6 +11603,9 @@
                         "light-rust-toolchain":  [
                                                      "light-rust-toolchain"
                                                  ],
+                        "root":  [
+                                     "root"
+                                 ],
                         "getty-images":  [
                                              "getty-images"
                                          ],
@@ -11600,9 +11717,9 @@
                         "isilon":  [
                                        "isilon"
                                    ],
-                        "light-esphome":  [
-                                              "light-esphome"
-                                          ],
+                        "vs2":  [
+                                    "vs2"
+                                ],
                         "deepwatch":  [
                                           "deepwatch"
                                       ],
