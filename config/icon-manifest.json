@@ -104,6 +104,11 @@
                       "source":  "bicep.svg",
                       "hash":  "1A6860F36527E508F67ACC62634505AA6815FA4065064913F78DB8ECF6064AC9"
                   },
+    "microservice.png":  {
+                             "mode":  "pass-through",
+                             "source":  "microservice.png",
+                             "hash":  "8FDFF451381BFDDF34D07D50FF18DDD90489DF819D1FC3751A3FFF643B41403B"
+                         },
     "equipment.png":  {
                           "mode":  "pass-through",
                           "source":  "equipment.png",
@@ -559,6 +564,11 @@
                          "source":  "facebook.svg",
                          "hash":  "003FC3E7814DDCD270E030014F120F4CB8BEF38BE40022EBCA913CAFB7617A76"
                      },
+    "blitzbasic.svg":  {
+                           "mode":  "svg-pass",
+                           "source":  "blitzbasic.svg",
+                           "hash":  "121F16F2CDB7928DF0B5CDD2198B5423C4E91EBA30E3FAD9E83D7BA82EA48A46"
+                       },
     "ravendb.svg":  {
                         "mode":  "svg-pass",
                         "source":  "ravendb.svg",
@@ -779,11 +789,6 @@
                            "source":  "kickresume.png",
                            "hash":  "11E14F4CB51FA8DBCD24735BB8B8AB96A179B35DCAC185E3793580FB242A62EC"
                        },
-    "light-apl.svg":  {
-                          "mode":  "svg-pass",
-                          "source":  "light-apl.svg",
-                          "hash":  "8D270FAA41F582C34B1CB98C37AC3FE3AB021267B823F3D578AEC639839CF52D"
-                      },
     "stylish-haskell.svg":  {
                                 "mode":  "svg-pass",
                                 "source":  "stylish-haskell.svg",
@@ -1049,11 +1054,11 @@
                      "source":  "yarn.svg",
                      "hash":  "611FAE654275208650CF593439C120C4B43688D78276197A79591CEEA680BAEB"
                  },
-    "light-prettier.svg":  {
-                               "mode":  "svg-pass",
-                               "source":  "light-prettier.svg",
-                               "hash":  "279C2AF683B7E1A0C73911E877B47A6EB9872E7FD552F3F93C980CC39A0F3935"
-                           },
+    "fossil.svg":  {
+                       "mode":  "svg-pass",
+                       "source":  "fossil.svg",
+                       "hash":  "71415B32B7745A654A5A7B35DB1085E66206C622CA45933DB1547CAA38F345C8"
+                   },
     "heygen.png":  {
                        "mode":  "pass-through",
                        "source":  "heygen.png",
@@ -1089,11 +1094,11 @@
                        "source":  "public.svg",
                        "hash":  "6F3917FDECEADFD289A7ED8F36B27519D46AAB49C1F95270502F54F6639DB359"
                    },
-    "jobright-ai.png":  {
-                            "mode":  "pass-through",
-                            "source":  "jobright-ai.png",
-                            "hash":  "D1E1AE1A163648723959ED4E5A7D6F7A6AB039783458D78F8375300602DE1904"
-                        },
+    "persana-ai.png":  {
+                           "mode":  "pass-through",
+                           "source":  "persana-ai.png",
+                           "hash":  "3C2CDB9EA2386AF9B3BD2130E60CF3558582B48CFB34D3AE257E29E8AE2F7677"
+                       },
     "qura-ai.png":  {
                         "mode":  "pass-through",
                         "source":  "qura-ai.png",
@@ -1104,6 +1109,11 @@
                         "source":  "go-work.svg",
                         "hash":  "8F59FBC747CE0D260C05D4950649BC06E0F48A587BC2473EC44F2F61532A4364"
                     },
+    "distribution-center.png":  {
+                                    "mode":  "pass-through",
+                                    "source":  "distribution-center.png",
+                                    "hash":  "97735DEF1AFA7FE577C6DCD126740B2EE45DDCE9382F91034EA9D56C75AAB85B"
+                                },
     "wmi.png":  {
                     "mode":  "pass-through",
                     "source":  "wmi.png",
@@ -2004,6 +2014,11 @@
                       "source":  "roush.png",
                       "hash":  "53A15821547ED8E1E14A7B4F4F8B5E83601E58FB9DDF8684FF85D62DAB8DD5AE"
                   },
+    "intelebrowser.png":  {
+                              "mode":  "pass-through",
+                              "source":  "intelebrowser.png",
+                              "hash":  "8762DFD14EA3BE429EEAD6AA21753242D8851B17EB804DB8638014E73B9DB79B"
+                          },
     "opam.svg":  {
                      "mode":  "svg-pass",
                      "source":  "opam.svg",
@@ -2349,6 +2364,11 @@
                       "source":  "lerna.svg",
                       "hash":  "B13C5EF83205C5908B75D1C6F78DE48F24219EF989AE99476B09E872D970479C"
                   },
+    "light-prettier.svg":  {
+                               "mode":  "svg-pass",
+                               "source":  "light-prettier.svg",
+                               "hash":  "279C2AF683B7E1A0C73911E877B47A6EB9872E7FD552F3F93C980CC39A0F3935"
+                           },
     "light-tree.svg":  {
                            "mode":  "svg-pass",
                            "source":  "light-tree.svg",
@@ -2414,6 +2434,11 @@
                     "source":  "sss.svg",
                     "hash":  "B232797ED1EB8A1E70CC9457AD40C3AE890B162D65679539FD55E203003B5385"
                 },
+    "winscp.png":  {
+                       "mode":  "pass-through",
+                       "source":  "winscp.png",
+                       "hash":  "E716ED5233B22A4A256467E7EF85335FAEE390A3EBECD431B99FF5108E3EB935"
+                   },
     "linux.svg":  {
                       "mode":  "svg-pass",
                       "source":  "linux.svg",
@@ -2759,11 +2784,11 @@
                            "source":  "light-next.svg",
                            "hash":  "0EB9002E0C5E34E9C783317B429962491F84B3D6389235DD346FC50E99E2CCD1"
                        },
-    "light-rolldown.svg":  {
-                               "mode":  "svg-pass",
-                               "source":  "light-rolldown.svg",
-                               "hash":  "892B304F2A44533F51A7794A846920B6A64519BF6ECCFF1FF9C811AD8B63A5A4"
-                           },
+    "jobright-ai.png":  {
+                            "mode":  "pass-through",
+                            "source":  "jobright-ai.png",
+                            "hash":  "D1E1AE1A163648723959ED4E5A7D6F7A6AB039783458D78F8375300602DE1904"
+                        },
     "light-mdx.svg":  {
                           "mode":  "svg-pass",
                           "source":  "light-mdx.svg",
@@ -2799,16 +2824,11 @@
                           "source":  "getimg-ai.png",
                           "hash":  "A3B82AD60E450119C27D7F81265F2CB9F72C01B29774E4F5BF4C460C099E82B9"
                       },
-    "dreamstudio.png":  {
-                            "mode":  "pass-through",
-                            "source":  "dreamstudio.png",
-                            "hash":  "CBD4F1D097D8FBBD9718EE6854FBF8C90D4997487CF2E2B5489E2DD6395393BD"
-                        },
-    "ogone.svg":  {
-                      "mode":  "svg-pass",
-                      "source":  "ogone.svg",
-                      "hash":  "79E18E72B64DF03C0353956125CCCF42C0BE06CE0AAC3D97EED51F7D1A466C85"
-                  },
+    "light-apl.svg":  {
+                          "mode":  "svg-pass",
+                          "source":  "light-apl.svg",
+                          "hash":  "8D270FAA41F582C34B1CB98C37AC3FE3AB021267B823F3D578AEC639839CF52D"
+                      },
     "class.svg":  {
                       "mode":  "svg-pass",
                       "source":  "class.svg",
@@ -2884,6 +2904,11 @@
                        "source":  "eslint.svg",
                        "hash":  "DC565A79E4ED14C72F0601E1034748A7C5C8E9837AB39C24AB27993A23D8D8E2"
                    },
+    "catchpoint.png":  {
+                           "mode":  "pass-through",
+                           "source":  "catchpoint.png",
+                           "hash":  "0DD79DB3DA1786DFDB0DCA79798FEB3FFA0DC6CF171F97F09862145268CA87D0"
+                       },
     "cups.png":  {
                      "mode":  "pass-through",
                      "source":  "cups.png",
@@ -3149,6 +3174,11 @@
                         "source":  "comcast.png",
                         "hash":  "08F2A1705C4F3D9FA93B97817096469F411A678AE8A00155B98615948FD09A55"
                     },
+    "bgp.png":  {
+                    "mode":  "pass-through",
+                    "source":  "bgp.png",
+                    "hash":  "5466A0B7A158C18729BBD65C5210E0ED27EA62C8742377904B9BAC052A6CA242"
+                },
     "histoire.svg":  {
                          "mode":  "svg-pass",
                          "source":  "histoire.svg",
@@ -3274,6 +3304,11 @@
                      "source":  "todo.svg",
                      "hash":  "B4AD2429D5E287E27CE20D3E24E9DA427681EE59CF41EA4386B8F588CA48845C"
                  },
+    "plm.png":  {
+                    "mode":  "pass-through",
+                    "source":  "plm.png",
+                    "hash":  "D7CC332E20AAEA70A377ABDD7557908E9D2068F7BEEFC386326E212BE0483F7B"
+                },
     "hp-open-view.png":  {
                              "mode":  "pass-through",
                              "source":  "hp-open-view.png",
@@ -3334,6 +3369,11 @@
                         "source":  "include.svg",
                         "hash":  "6A40B3413914D2A78C4E3B4F45CE6CA7F570D9C7EEBE26BB0EB35639C07CC705"
                     },
+    "prometheus.svg":  {
+                           "mode":  "svg-pass",
+                           "source":  "prometheus.svg",
+                           "hash":  "47014AC3C6ED4BDB451BD7397F0BA41C2EEF3DE167913D75383BFC69E2959541"
+                       },
     "janet.svg":  {
                       "mode":  "svg-pass",
                       "source":  "janet.svg",
@@ -3389,11 +3429,11 @@
                         "source":  "ubisoft.png",
                         "hash":  "A18814C812FF0256465BF76D517134891BF494EA5192A01C3ECC434CB7701BCB"
                     },
-    "blender.svg":  {
-                        "mode":  "svg-pass",
-                        "source":  "blender.svg",
-                        "hash":  "28A13215763628F3CFA27F0CD8676DD7AC109FF40019DCBBF9683B9E96B49152"
-                    },
+    "map.svg":  {
+                    "mode":  "svg-pass",
+                    "source":  "map.svg",
+                    "hash":  "A74BDE06070180F5AE9B39632CAC13236C9D032C6025981786E41A7BFD869A1A"
+                },
     "nest-gateway-js.svg":  {
                                 "mode":  "svg-pass",
                                 "source":  "nest-gateway-js.svg",
@@ -3428,11 +3468,6 @@
                            "mode":  "pass-through",
                            "source":  "javascript.png",
                            "hash":  "89CBE4487DC862362BD615DD5D777F2CB9A4D9C04334222DF8DDD9422DB13C2C"
-                       },
-    "persana-ai.png":  {
-                           "mode":  "pass-through",
-                           "source":  "persana-ai.png",
-                           "hash":  "3C2CDB9EA2386AF9B3BD2130E60CF3558582B48CFB34D3AE257E29E8AE2F7677"
                        },
     "bik.png":  {
                     "mode":  "pass-through",
@@ -3539,11 +3574,11 @@
                                "source":  "rust-toolchain.svg",
                                "hash":  "A3FE5A400D227BBE765B2EA20AEE3AD06C699818053D6D88C583F60021853D42"
                            },
-    "prometheus.svg":  {
-                           "mode":  "svg-pass",
-                           "source":  "prometheus.svg",
-                           "hash":  "47014AC3C6ED4BDB451BD7397F0BA41C2EEF3DE167913D75383BFC69E2959541"
-                       },
+    "lilypond.svg":  {
+                         "mode":  "svg-pass",
+                         "source":  "lilypond.svg",
+                         "hash":  "292FA71E60F590D621B62B5A5543570222614B89B31778F191BF2E9FA132C8D3"
+                     },
     "teladoc.png":  {
                         "mode":  "pass-through",
                         "source":  "teladoc.png",
@@ -3604,6 +3639,11 @@
                            "source":  "hypervisor.png",
                            "hash":  "55BCAACA126A67C6572661F55A20AB3C228B06C642F8CDFEF71C529963911D46"
                        },
+    "wakeonlan.png":  {
+                          "mode":  "pass-through",
+                          "source":  "wakeonlan.png",
+                          "hash":  "A9C98BA0E3DD0A5AE8E47D51BC3E0E9714526B1FDDD1520EAF9C22B87C4A2960"
+                      },
     "marketingblocks-ai.png":  {
                                    "mode":  "pass-through",
                                    "source":  "marketingblocks-ai.png",
@@ -3754,11 +3794,11 @@
                      "source":  "plex.svg",
                      "hash":  "E9F5C148B85EDC5CEB8B6EC8952339B13735EB4C8BD0299F25E673B39C9548ED"
                  },
-    "speedtest.png":  {
-                          "mode":  "pass-through",
-                          "source":  "speedtest.png",
-                          "hash":  "4B2322A79B3E37F80FF6A3B759A205D151AB81FBF2699CE6C9BCCE57F8E95E87"
-                      },
+    "the-linux-foundation.png":  {
+                                     "mode":  "pass-through",
+                                     "source":  "the-linux-foundation.png",
+                                     "hash":  "86B1591E4893F7A4E964B43B9A3D0D73FFEE3B46622D766F343C2B841D40163F"
+                                 },
     "confluance.png":  {
                            "mode":  "pass-through",
                            "source":  "confluance.png",
@@ -4044,6 +4084,11 @@
                          "source":  "firmware.png",
                          "hash":  "7EF22BE9C169C7339507468B5DCF322839B2AF726181099196F627C75C64A2FA"
                      },
+    "dreamstudio.png":  {
+                            "mode":  "pass-through",
+                            "source":  "dreamstudio.png",
+                            "hash":  "CBD4F1D097D8FBBD9718EE6854FBF8C90D4997487CF2E2B5489E2DD6395393BD"
+                        },
     "ng-pipe-dart.svg":  {
                              "mode":  "svg-pass",
                              "source":  "ng-pipe-dart.svg",
@@ -4084,11 +4129,6 @@
                         "source":  "tamagui.svg",
                         "hash":  "F38C7151B27D3A3C6E489D6EAFFBB030071BC001E9BEC10BF0A84CAE45B8E7B8"
                     },
-    "light-cue.svg":  {
-                          "mode":  "svg-pass",
-                          "source":  "light-cue.svg",
-                          "hash":  "9083D669E44EE04CAF418AE8FC74B5A364DF411C9AAA33B846592B3AA93647D3"
-                      },
     "turbotax.png":  {
                          "mode":  "pass-through",
                          "source":  "turbotax.png",
@@ -4139,11 +4179,11 @@
                          "source":  "electron.svg",
                          "hash":  "FC2327856D69C432D7702827DC55304068F640B53E559C86FAF3ED8358176C84"
                      },
-    "wakeonlan.png":  {
-                          "mode":  "pass-through",
-                          "source":  "wakeonlan.png",
-                          "hash":  "A9C98BA0E3DD0A5AE8E47D51BC3E0E9714526B1FDDD1520EAF9C22B87C4A2960"
-                      },
+    "prtg.png":  {
+                     "mode":  "pass-through",
+                     "source":  "prtg.png",
+                     "hash":  "7F5462215A03B69B9CC26165ED195C978B30B5E0D4ABE6CCD065C310DEDDE12C"
+                 },
     "resharper.png":  {
                           "mode":  "pass-through",
                           "source":  "resharper.png",
@@ -4304,6 +4344,11 @@
                         "source":  "earthly.svg",
                         "hash":  "CAC62AC62086E65CCB3EA1BC010F5C07DDE00D2A7C5F0175F252D9EF39F395C0"
                     },
+    "clm.png":  {
+                    "mode":  "pass-through",
+                    "source":  "clm.png",
+                    "hash":  "5560D6B62B97434537D93E99D462F170F9CAE9E1906DE7051F02C376A4D39C11"
+                },
     "gcode.svg":  {
                       "mode":  "svg-pass",
                       "source":  "gcode.svg",
@@ -4664,6 +4709,11 @@
                        "source":  "presti.png",
                        "hash":  "E37EE5750DFBAC83B268FC1C7BB7C912B54B3D6EBE3AE80A5ED35DBC215E6087"
                    },
+    "sharepoint.png":  {
+                           "mode":  "pass-through",
+                           "source":  "sharepoint.png",
+                           "hash":  "3EE39F2B83C648686316F61F9F045BAE824B8DAD9624FC44B5B929B99DCCBDB3"
+                       },
     "light-wesl.svg":  {
                            "mode":  "svg-pass",
                            "source":  "light-wesl.svg",
@@ -4759,11 +4809,6 @@
                          "source":  "closebot.png",
                          "hash":  "2CEAA979C73B7EA0C24C9EC2758A38517E645E940F24488561B5B541E8492B95"
                      },
-    "biml.svg":  {
-                     "mode":  "svg-pass",
-                     "source":  "biml.svg",
-                     "hash":  "081AA826FBE7045CEFE7D9FDC193B8463063A193E03A0C782B8B08650C88A4F2"
-                 },
     "ip-route.png":  {
                          "mode":  "pass-through",
                          "source":  "ip-route.png",
@@ -4894,11 +4939,11 @@
                                   "source":  "bitbucketpipeline.svg",
                                   "hash":  "FCCDD2A8A02485B2371675BDB95FAEDEF4997F972CE7ED31846F6A3B405BC726"
                               },
-    "fossil.svg":  {
-                       "mode":  "svg-pass",
-                       "source":  "fossil.svg",
-                       "hash":  "71415B32B7745A654A5A7B35DB1085E66206C622CA45933DB1547CAA38F345C8"
-                   },
+    "cribmaster.png":  {
+                           "mode":  "pass-through",
+                           "source":  "cribmaster.png",
+                           "hash":  "B72B4BF667D6C2524879B16F85DD41390789DCD0A2D69E8DCCC7303AF258A969"
+                       },
     "rspec.svg":  {
                       "mode":  "svg-pass",
                       "source":  "rspec.svg",
@@ -5689,6 +5734,11 @@
                        "source":  "gradle.svg",
                        "hash":  "4B2FFF97BE45BB3B6B6E14E8CD284DEDB7515537F9A1437A388864B27E2F75DB"
                    },
+    "validation.png":  {
+                           "mode":  "pass-through",
+                           "source":  "validation.png",
+                           "hash":  "E4E4EAE3BD69AB3FF4892E93464DA2CA2BB940F97B3A921DC5F9AD1BDD0A49FA"
+                       },
     "aduro.png":  {
                       "mode":  "pass-through",
                       "source":  "aduro.png",
@@ -6189,6 +6239,11 @@
                       "source":  "ninja.svg",
                       "hash":  "C0C6F87E5BC4298FD66A7840AB1EB81F0A529EBE056A729138E2E49AFBF02C4A"
                   },
+    "ps1.png":  {
+                    "mode":  "pass-through",
+                    "source":  "ps1.png",
+                    "hash":  "C98CA5FF6200A5F1FDDF48D21BBF8D1F93FED1D2A5607A3BBC91A2AA1DB70615"
+                },
     "netflix.png":  {
                         "mode":  "pass-through",
                         "source":  "netflix.png",
@@ -6854,11 +6909,6 @@
                        "source":  "access.svg",
                        "hash":  "30D785175BD487355130B11D6FEA0F85CB2FEC7DC7D8FA111AA7B6E4ADD5C43E"
                    },
-    "lilypond.svg":  {
-                         "mode":  "svg-pass",
-                         "source":  "lilypond.svg",
-                         "hash":  "292FA71E60F590D621B62B5A5543570222614B89B31778F191BF2E9FA132C8D3"
-                     },
     "adfs.png":  {
                      "mode":  "pass-through",
                      "source":  "adfs.png",
@@ -6894,11 +6944,11 @@
                      "source":  "bolt.svg",
                      "hash":  "62DD6A54603D192DED66CB2698392131A8DF7BB6CA918E2B88BF16FA652E5725"
                  },
-    "codacy.svg":  {
-                       "mode":  "svg-pass",
-                       "source":  "codacy.svg",
-                       "hash":  "C80E894B69E033232AB0360B6F20F0B8376D80BFF9CEEB97D3AD072C1FB6B31C"
-                   },
+    "speedtest.png":  {
+                          "mode":  "pass-through",
+                          "source":  "speedtest.png",
+                          "hash":  "4B2322A79B3E37F80FF6A3B759A205D151AB81FBF2699CE6C9BCCE57F8E95E87"
+                      },
     "sso.svg":  {
                     "mode":  "svg-pass",
                     "source":  "sso.svg",
@@ -6969,11 +7019,11 @@
                       "source":  "bazel.svg",
                       "hash":  "EC5945D874AF55DEE25C85D99FAA302EEB2BEDF9659A7345B7E58031B0F993E9"
                   },
-    "blitzbasic.svg":  {
-                           "mode":  "svg-pass",
-                           "source":  "blitzbasic.svg",
-                           "hash":  "121F16F2CDB7928DF0B5CDD2198B5423C4E91EBA30E3FAD9E83D7BA82EA48A46"
-                       },
+    "blender.svg":  {
+                        "mode":  "svg-pass",
+                        "source":  "blender.svg",
+                        "hash":  "28A13215763628F3CFA27F0CD8676DD7AC109FF40019DCBBF9683B9E96B49152"
+                    },
     "ng-interceptor-js.svg":  {
                                   "mode":  "svg-pass",
                                   "source":  "ng-interceptor-js.svg",
@@ -7009,11 +7059,11 @@
                            "source":  "spacengine.svg",
                            "hash":  "EEC487226FDECB60C9BF2C46D9A7100CFCD911B9EF38601B094662AB2F032FEA"
                        },
-    "map.svg":  {
-                    "mode":  "svg-pass",
-                    "source":  "map.svg",
-                    "hash":  "A74BDE06070180F5AE9B39632CAC13236C9D032C6025981786E41A7BFD869A1A"
-                },
+    "al-dal.svg":  {
+                       "mode":  "svg-pass",
+                       "source":  "al-dal.svg",
+                       "hash":  "9DE9D9E95F8C52662071E5A71225A8DFF357E09CD5D46BDFB56AA17F349381BF"
+                   },
     "allure.svg":  {
                        "mode":  "svg-pass",
                        "source":  "allure.svg",
@@ -7209,11 +7259,11 @@
                        "source":  "passwd.png",
                        "hash":  "9E656803E0E9805B7D99CC26C8E32AFDBACD299E0D95539D6DAA4E440FCD5EFA"
                    },
-    "dell-driver-update.png":  {
-                                   "mode":  "pass-through",
-                                   "source":  "dell-driver-update.png",
-                                   "hash":  "9BE4533DCB55E7215CFD92578AE37930E843249B8BF5862A9DBD20780E9B18EB"
-                               },
+    "light-cue.svg":  {
+                          "mode":  "svg-pass",
+                          "source":  "light-cue.svg",
+                          "hash":  "9083D669E44EE04CAF418AE8FC74B5A364DF411C9AAA33B846592B3AA93647D3"
+                      },
     "skill.svg":  {
                       "mode":  "svg-pass",
                       "source":  "skill.svg",
@@ -7304,6 +7354,11 @@
                             "source":  "stonebranch.png",
                             "hash":  "6F62DFF6AE3AA0729F3032E25704524B4A1433C4AF138FEF6F428B4458037C0A"
                         },
+    "light-mypy.svg":  {
+                           "mode":  "svg-pass",
+                           "source":  "light-mypy.svg",
+                           "hash":  "CFA47849B640907CDFC6871477B02D2EDAD7559E6DA1DEA5DB8F013943A7569F"
+                       },
     "c-al.svg":  {
                      "mode":  "svg-pass",
                      "source":  "c-al.svg",
@@ -7459,11 +7514,11 @@
                          "source":  "renovate.svg",
                          "hash":  "D55798794F64DE3822C96BCA06A22054531271C2581D177E743CB19D1E449932"
                      },
-    "al-dal.svg":  {
-                       "mode":  "svg-pass",
-                       "source":  "al-dal.svg",
-                       "hash":  "9DE9D9E95F8C52662071E5A71225A8DFF357E09CD5D46BDFB56AA17F349381BF"
-                   },
+    "ng-directive-js2.svg":  {
+                                 "mode":  "svg-pass",
+                                 "source":  "ng-directive-js2.svg",
+                                 "hash":  "9088B2578D95841EAE1F9418D8349F9D8BD3B830BCC19B53D393BDDC83215970"
+                             },
     "dhall.svg":  {
                       "mode":  "svg-pass",
                       "source":  "dhall.svg",
@@ -7714,11 +7769,11 @@
                      "source":  "toon.svg",
                      "hash":  "E5D3D6EA2C91D1A8CEB8E6182448080BCE4E5087BA88513188F4DE8388EA98EC"
                  },
-    "prtg.png":  {
-                     "mode":  "pass-through",
-                     "source":  "prtg.png",
-                     "hash":  "7F5462215A03B69B9CC26165ED195C978B30B5E0D4ABE6CCD065C310DEDDE12C"
-                 },
+    "dell-driver-update.png":  {
+                                   "mode":  "pass-through",
+                                   "source":  "dell-driver-update.png",
+                                   "hash":  "9BE4533DCB55E7215CFD92578AE37930E843249B8BF5862A9DBD20780E9B18EB"
+                               },
     "clangd.svg":  {
                        "mode":  "svg-pass",
                        "source":  "clangd.svg",
@@ -7914,11 +7969,11 @@
                       "source":  "patch.svg",
                       "hash":  "E61D43B07364B2D47E5F38AA31424DBFF5FD2928FEA97961471754353F4CC5C4"
                   },
-    "intelebrowser.png":  {
-                              "mode":  "pass-through",
-                              "source":  "intelebrowser.png",
-                              "hash":  "8762DFD14EA3BE429EEAD6AA21753242D8851B17EB804DB8638014E73B9DB79B"
-                          },
+    "biml.svg":  {
+                     "mode":  "svg-pass",
+                     "source":  "biml.svg",
+                     "hash":  "081AA826FBE7045CEFE7D9FDC193B8463063A193E03A0C782B8B08650C88A4F2"
+                 },
     "nest-guard-js.svg":  {
                               "mode":  "svg-pass",
                               "source":  "nest-guard-js.svg",
@@ -8364,6 +8419,11 @@
                          "source":  "assembly.svg",
                          "hash":  "63DB31233B9A881C20A01985D0A6157AC3EDBF6EB1DEB19F2EAC4E6042B772E9"
                      },
+    "code-red.png":  {
+                         "mode":  "pass-through",
+                         "source":  "code-red.png",
+                         "hash":  "9E8856995B21E6CCF19ED1D32C5E6064CB122B42E797D32174F9472A7CB2F28B"
+                     },
     "nestjs.svg":  {
                        "mode":  "svg-pass",
                        "source":  "nestjs.svg",
@@ -8444,6 +8504,11 @@
                             "source":  "kmnet-admin.png",
                             "hash":  "19C7AE41D24F0CF1BDB90595E86E41FA5179F36693269208BEF70B2D658C0860"
                         },
+    "light-rolldown.svg":  {
+                               "mode":  "svg-pass",
+                               "source":  "light-rolldown.svg",
+                               "hash":  "892B304F2A44533F51A7794A846920B6A64519BF6ECCFF1FF9C811AD8B63A5A4"
+                           },
     "metro.svg":  {
                       "mode":  "svg-pass",
                       "source":  "metro.svg",
@@ -8499,11 +8564,11 @@
                        "source":  "hubflo.png",
                        "hash":  "657FC3683D6D52B7EC1A6E9CBAEBA3B9229BF69F805CF321E1C894E036FAC389"
                    },
-    "ps1.png":  {
-                    "mode":  "pass-through",
-                    "source":  "ps1.png",
-                    "hash":  "C98CA5FF6200A5F1FDDF48D21BBF8D1F93FED1D2A5607A3BBC91A2AA1DB70615"
-                },
+    "codacy.svg":  {
+                       "mode":  "svg-pass",
+                       "source":  "codacy.svg",
+                       "hash":  "C80E894B69E033232AB0360B6F20F0B8376D80BFF9CEEB97D3AD072C1FB6B31C"
+                   },
     "kivy.svg":  {
                      "mode":  "svg-pass",
                      "source":  "kivy.svg",
@@ -8719,11 +8784,6 @@
                      "source":  "vmax.png",
                      "hash":  "7F56F327D633037316F9D408AE3A0C6930B2D82EBC1B6F66A359BC4756D9F765"
                  },
-    "ng-directive-js2.svg":  {
-                                 "mode":  "svg-pass",
-                                 "source":  "ng-directive-js2.svg",
-                                 "hash":  "9088B2578D95841EAE1F9418D8349F9D8BD3B830BCC19B53D393BDDC83215970"
-                             },
     "powerpoint.svg":  {
                            "mode":  "svg-pass",
                            "source":  "powerpoint.svg",
@@ -9499,11 +9559,6 @@
                       "source":  "junie.svg",
                       "hash":  "6E921F1D85BAC8B3DDBE27B07229F210520F46E512526AA387C1878A8998DC0D"
                   },
-    "the-linux-foundation.png":  {
-                                     "mode":  "pass-through",
-                                     "source":  "the-linux-foundation.png",
-                                     "hash":  "86B1591E4893F7A4E964B43B9A3D0D73FFEE3B46622D766F343C2B841D40163F"
-                                 },
     "cubit.svg":  {
                       "mode":  "svg-pass",
                       "source":  "cubit.svg",
@@ -9629,11 +9684,11 @@
                                "source":  "light-solidity.svg",
                                "hash":  "9FADEA181DB428A33DB97D0C4073981D16536D3A1CF8DDC2949EEF8D56A5AA0B"
                            },
-    "light-mypy.svg":  {
-                           "mode":  "svg-pass",
-                           "source":  "light-mypy.svg",
-                           "hash":  "CFA47849B640907CDFC6871477B02D2EDAD7559E6DA1DEA5DB8F013943A7569F"
-                       },
+    "ogone.svg":  {
+                      "mode":  "svg-pass",
+                      "source":  "ogone.svg",
+                      "hash":  "79E18E72B64DF03C0353956125CCCF42C0BE06CE0AAC3D97EED51F7D1A466C85"
+                  },
     "spiceworks.png":  {
                            "mode":  "pass-through",
                            "source":  "spiceworks.png",

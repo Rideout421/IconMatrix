@@ -453,9 +453,9 @@
                       "password":  [
                                        "password"
                                    ],
-                      "comptia":  [
-                                      "comptia"
-                                  ],
+                      "plm":  [
+                                  "plm"
+                              ],
                       "halodx":  [
                                      "halodx"
                                  ],
@@ -558,9 +558,6 @@
                       "light-eleventy2":  [
                                               "light-eleventy2"
                                           ],
-                      "preact":  [
-                                     "preact"
-                                 ],
                       "tuc":  [
                                   "tuc"
                               ],
@@ -666,6 +663,9 @@
                       "light-markuplint":  [
                                                "light-markuplint"
                                            ],
+                      "node":  [
+                                   "node"
+                               ],
                       "bower2":  [
                                      "bower2"
                                  ],
@@ -675,9 +675,9 @@
                       "ng-guard-js":  [
                                           "ng-guard-js"
                                       ],
-                      "node":  [
-                                   "node"
-                               ],
+                      "airwatch":  [
+                                       "airwatch"
+                                   ],
                       "esxi":  [
                                    "esxi"
                                ],
@@ -855,6 +855,9 @@
                       "markdownlint":  [
                                            "markdownlint"
                                        ],
+                      "asam-sync":  [
+                                        "asam-sync"
+                                    ],
                       "fthtml":  [
                                      "fthtml"
                                  ],
@@ -975,9 +978,6 @@
                       "assembly-script":  [
                                               "assembly-script"
                                           ],
-                      "avamar":  [
-                                     "avamar"
-                                 ],
                       "kotlin":  [
                                      "kotlin"
                                  ],
@@ -1136,11 +1136,9 @@
                       "flir":  [
                                    "flir"
                                ],
-                      "terraform":  [
-                                        ".terraformrc",
-                                        "terraform.tfvars",
-                                        "terraform"
-                                    ],
+                      "avamar":  [
+                                     "avamar"
+                                 ],
                       "software":  [
                                        "software"
                                    ],
@@ -1614,6 +1612,9 @@
                       "light-vite":  [
                                          "light-vite"
                                      ],
+                      "comptia":  [
+                                      "comptia"
+                                  ],
                       "pytyped":  [
                                       "pytyped"
                                   ],
@@ -1653,6 +1654,9 @@
                       "laps":  [
                                    "laps"
                                ],
+                      "polyglot":  [
+                                       "polyglot"
+                                   ],
                       "ng-smart-component-js2":  [
                                                      "ng-smart-component-js2"
                                                  ],
@@ -1722,9 +1726,6 @@
                       "ipad":  [
                                    "ipad"
                                ],
-                      "infopath":  [
-                                       "infopath"
-                                   ],
                       "passwd":  [
                                      "passwd"
                                  ],
@@ -1779,6 +1780,9 @@
                       "cmake":  [
                                     "cmake"
                                 ],
+                      "bgp":  [
+                                  "bgp"
+                              ],
                       "light-mcp":  [
                                         "light-mcp"
                                     ],
@@ -1997,6 +2001,9 @@
                       "lets-enhance":  [
                                            "lets-enhance"
                                        ],
+                      "catchpoint":  [
+                                         "catchpoint"
+                                     ],
                       "simplify":  [
                                        "simplify"
                                    ],
@@ -2237,9 +2244,9 @@
                       "openclaw":  [
                                        "openclaw"
                                    ],
-                      "airwatch":  [
-                                       "airwatch"
-                                   ],
+                      "preact":  [
+                                     "preact"
+                                 ],
                       "composer":  [
                                        "composer"
                                    ],
@@ -2727,9 +2734,15 @@
                       "ipam":  [
                                    "ipam"
                                ],
+                      "microservice":  [
+                                           "microservice"
+                                       ],
                       "pip":  [
                                   "pip"
                               ],
+                      "asus":  [
+                                   "asus"
+                               ],
                       "cuda":  [
                                    "cuda"
                                ],
@@ -3043,9 +3056,9 @@
                       "gnome":  [
                                     "gnome"
                                 ],
-                      "asus":  [
-                                   "asus"
-                               ],
+                      "cribmaster":  [
+                                         "cribmaster"
+                                     ],
                       "lenovo":  [
                                      "lenovo"
                                  ],
@@ -3452,6 +3465,9 @@
                                   ".env.example",
                                   "env"
                               ],
+                      "powercli":  [
+                                       "powercli"
+                                   ],
                       "roush":  [
                                     "roush"
                                 ],
@@ -3603,9 +3619,9 @@
                       "nest-interceptor-ts":  [
                                                   "nest-interceptor-ts"
                                               ],
-                      "polyglot":  [
-                                       "polyglot"
-                                   ],
+                      "clm":  [
+                                  "clm"
+                              ],
                       "interaction-desktop":  [
                                                   "interaction-desktop"
                                               ],
@@ -3891,6 +3907,9 @@
                       "ng-pipe-js2":  [
                                           "ng-pipe-js2"
                                       ],
+                      "code-red":  [
+                                       "code-red"
+                                   ],
                       "light-hashicorp":  [
                                               "light-hashicorp"
                                           ],
@@ -4118,6 +4137,9 @@
                       "mjml":  [
                                    "mjml"
                                ],
+                      "zed":  [
+                                  "zed"
+                              ],
                       "salliemae":  [
                                         "salliemae"
                                     ],
@@ -4163,9 +4185,9 @@
                       "subversion":  [
                                          "subversion"
                                      ],
-                      "asam-sync":  [
-                                        "asam-sync"
-                                    ],
+                      "infopath":  [
+                                       "infopath"
+                                   ],
                       "jea":  [
                                   "jea"
                               ],
@@ -4341,6 +4363,9 @@
                       "symfony":  [
                                       "symfony"
                                   ],
+                      "winscp":  [
+                                     "winscp"
+                                 ],
                       "vance-ai":  [
                                        "vance-ai"
                                    ],
@@ -4391,6 +4416,9 @@
                       "talknotes":  [
                                         "talknotes"
                                     ],
+                      "validation":  [
+                                         "validation"
+                                     ],
                       "supabase":  [
                                        "supabase"
                                    ],
@@ -4448,9 +4476,11 @@
                       "gnu":  [
                                   "gnu"
                               ],
-                      "zed":  [
-                                  "zed"
-                              ],
+                      "terraform":  [
+                                        ".terraformrc",
+                                        "terraform.tfvars",
+                                        "terraform"
+                                    ],
                       "powerplan":  [
                                         "powerplan"
                                     ],
@@ -4790,9 +4820,9 @@
                       "security":  [
                                        "security"
                                    ],
-                      "powercli":  [
-                                       "powercli"
-                                   ],
+                      "sharepoint":  [
+                                         "sharepoint"
+                                     ],
                       "light-objidconfig":  [
                                                 "light-objidconfig"
                                             ],
@@ -5551,6 +5581,9 @@
                       "backdoor-account":  [
                                                "backdoor-account"
                                            ],
+                      "distribution-center":  [
+                                                  "distribution-center"
+                                              ],
                       "mocha":  [
                                     "mocha"
                                 ],
@@ -6396,9 +6429,9 @@
                         "password":  [
                                          "password"
                                      ],
-                        "comptia":  [
-                                        "comptia"
-                                    ],
+                        "plm":  [
+                                    "plm"
+                                ],
                         "halodx":  [
                                        "halodx"
                                    ],
@@ -6500,9 +6533,6 @@
                         "light-eleventy2":  [
                                                 "light-eleventy2"
                                             ],
-                        "preact":  [
-                                       "preact"
-                                   ],
                         "tuc":  [
                                     "tuc"
                                 ],
@@ -6515,6 +6545,9 @@
                         "chatgpt":  [
                                         "chatgpt"
                                     ],
+                        "perl6":  [
+                                      "perl6"
+                                  ],
                         "kb":  [
                                    "kb"
                                ],
@@ -6620,6 +6653,9 @@
                         "light-markuplint":  [
                                                  "light-markuplint"
                                              ],
+                        "node":  [
+                                     "node"
+                                 ],
                         "bower2":  [
                                        "bower2"
                                    ],
@@ -6629,9 +6665,9 @@
                         "ng-guard-js":  [
                                             "ng-guard-js"
                                         ],
-                        "node":  [
-                                     "node"
-                                 ],
+                        "airwatch":  [
+                                         "airwatch"
+                                     ],
                         "esxi":  [
                                      "esxi"
                                  ],
@@ -7564,6 +7600,9 @@
                         "light-vite":  [
                                            "light-vite"
                                        ],
+                        "comptia":  [
+                                        "comptia"
+                                    ],
                         "pytyped":  [
                                         "pytyped"
                                     ],
@@ -7730,6 +7769,9 @@
                         "cmake":  [
                                       "cmake"
                                   ],
+                        "bgp":  [
+                                    "bgp"
+                                ],
                         "light-mcp":  [
                                           "light-mcp"
                                       ],
@@ -7945,6 +7987,9 @@
                         "lets-enhance":  [
                                              "lets-enhance"
                                          ],
+                        "catchpoint":  [
+                                           "catchpoint"
+                                       ],
                         "simplify":  [
                                          "simplify"
                                      ],
@@ -8189,9 +8234,9 @@
                         "openclaw":  [
                                          "openclaw"
                                      ],
-                        "airwatch":  [
-                                         "airwatch"
-                                     ],
+                        "preact":  [
+                                       "preact"
+                                   ],
                         "composer":  [
                                          "composer"
                                      ],
@@ -8690,9 +8735,15 @@
                         "ipam":  [
                                      "ipam"
                                  ],
+                        "microservice":  [
+                                             "microservice"
+                                         ],
                         "pip":  [
                                     "pip"
                                 ],
+                        "asus":  [
+                                     "asus"
+                                 ],
                         "cuda":  [
                                      "cuda"
                                  ],
@@ -9011,9 +9062,9 @@
                         "gnome":  [
                                       "gnome"
                                   ],
-                        "asus":  [
-                                     "asus"
-                                 ],
+                        "cribmaster":  [
+                                           "cribmaster"
+                                       ],
                         "lenovo":  [
                                        "lenovo"
                                    ],
@@ -9429,6 +9480,9 @@
                                     ".env",
                                     "env"
                                 ],
+                        "powercli":  [
+                                         "powercli"
+                                     ],
                         "roush":  [
                                       "roush"
                                   ],
@@ -9576,9 +9630,9 @@
                         "nest-interceptor-ts":  [
                                                     "nest-interceptor-ts"
                                                 ],
-                        "polyglot":  [
-                                         "polyglot"
-                                     ],
+                        "clm":  [
+                                    "clm"
+                                ],
                         "interaction-desktop":  [
                                                     "interaction-desktop"
                                                 ],
@@ -9663,6 +9717,9 @@
                         "srm":  [
                                     "srm"
                                 ],
+                        "polyglot":  [
+                                         "polyglot"
+                                     ],
                         "leanconfig":  [
                                            "leanconfig"
                                        ],
@@ -9876,6 +9933,9 @@
                         "ng-pipe-js2":  [
                                             "ng-pipe-js2"
                                         ],
+                        "code-red":  [
+                                         "code-red"
+                                     ],
                         "bazel":  [
                                       "bazel"
                                   ],
@@ -9945,9 +10005,6 @@
                         "veeam":  [
                                       "veeam"
                                   ],
-                        "wikitext":  [
-                                         "wikitext"
-                                     ],
                         "php":  [
                                     "php"
                                 ],
@@ -10164,9 +10221,9 @@
                         "light-codacy":  [
                                              "light-codacy"
                                          ],
-                        "perl6":  [
-                                      "perl6"
-                                  ],
+                        "wikitext":  [
+                                         "wikitext"
+                                     ],
                         "persana-ai":  [
                                            "persana-ai"
                                        ],
@@ -10332,6 +10389,9 @@
                         "symfony":  [
                                         "symfony"
                                     ],
+                        "winscp":  [
+                                       "winscp"
+                                   ],
                         "vance-ai":  [
                                          "vance-ai"
                                      ],
@@ -10379,6 +10439,9 @@
                         "talknotes":  [
                                           "talknotes"
                                       ],
+                        "validation":  [
+                                           "validation"
+                                       ],
                         "supabase":  [
                                          "supabase"
                                      ],
@@ -10772,9 +10835,9 @@
                         "vscodeuser":  [
                                            "vscodeuser"
                                        ],
-                        "powercli":  [
-                                         "powercli"
-                                     ],
+                        "sharepoint":  [
+                                           "sharepoint"
+                                       ],
                         "light-objidconfig":  [
                                                   "light-objidconfig"
                                               ],
@@ -11553,6 +11616,9 @@
                         "backdoor-account":  [
                                                  "backdoor-account"
                                              ],
+                        "distribution-center":  [
+                                                    "distribution-center"
+                                                ],
                         "mocha":  [
                                       "mocha"
                                   ],

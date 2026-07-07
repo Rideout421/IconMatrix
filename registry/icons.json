@@ -402,6 +402,9 @@
                             "file-bginfo-icon":  {
                                                      "iconPath":  "./processed-icons/bginfo.png"
                                                  },
+                            "file-bgp-icon":  {
+                                                  "iconPath":  "./processed-icons/bgp.png"
+                                              },
                             "file-bicep-icon":  {
                                                     "iconPath":  "./processed-icons/bicep.svg"
                                                 },
@@ -588,6 +591,9 @@
                             "file-casc-icon":  {
                                                    "iconPath":  "./processed-icons/casc.svg"
                                                },
+                            "file-catchpoint-icon":  {
+                                                         "iconPath":  "./processed-icons/catchpoint.png"
+                                                     },
                             "file-cddl-icon":  {
                                                    "iconPath":  "./processed-icons/cddl.svg"
                                                },
@@ -690,6 +696,9 @@
                             "file-clientsystemupdate-icon":  {
                                                                  "iconPath":  "./processed-icons/clientsystemupdate.png"
                                                              },
+                            "file-clm-icon":  {
+                                                  "iconPath":  "./processed-icons/clm.png"
+                                              },
                             "file-clojure-icon":  {
                                                       "iconPath":  "./processed-icons/clojure.svg"
                                                   },
@@ -732,6 +741,9 @@
                             "file-code-compare-icon":  {
                                                            "iconPath":  "./processed-icons/code-compare.png"
                                                        },
+                            "file-code-red-icon":  {
+                                                       "iconPath":  "./processed-icons/code-red.png"
+                                                   },
                             "file-codeclimate-icon":  {
                                                           "iconPath":  "./processed-icons/codeclimate.svg"
                                                       },
@@ -876,6 +888,9 @@
                             "file-crewting-icon":  {
                                                        "iconPath":  "./processed-icons/crewting.png"
                                                    },
+                            "file-cribmaster-icon":  {
+                                                         "iconPath":  "./processed-icons/cribmaster.png"
+                                                     },
                             "file-cronacle-icon":  {
                                                        "iconPath":  "./processed-icons/cronacle.png"
                                                    },
@@ -1113,6 +1128,9 @@
                             "file-dist-icon":  {
                                                    "iconPath":  "./processed-icons/dist.svg"
                                                },
+                            "file-distribution-center-icon":  {
+                                                                  "iconPath":  "./processed-icons/distribution-center.png"
+                                                              },
                             "file-django-icon":  {
                                                      "iconPath":  "./processed-icons/django.svg"
                                                  },
@@ -3150,6 +3168,9 @@
                             "file-micro-focus-icon":  {
                                                           "iconPath":  "./processed-icons/micro-focus.png"
                                                       },
+                            "file-microservice-icon":  {
+                                                           "iconPath":  "./processed-icons/microservice.png"
+                                                       },
                             "file-microsoft-icon":  {
                                                         "iconPath":  "./processed-icons/microsoft.svg"
                                                     },
@@ -3954,6 +3975,9 @@
                             "file-plink-icon":  {
                                                     "iconPath":  "./processed-icons/plink.svg"
                                                 },
+                            "file-plm-icon":  {
+                                                  "iconPath":  "./processed-icons/plm.png"
+                                              },
                             "file-plsql-package-body-icon":  {
                                                                  "iconPath":  "./processed-icons/plsql-package-body.svg"
                                                              },
@@ -4746,6 +4770,9 @@
                             "file-shared-icon":  {
                                                      "iconPath":  "./processed-icons/shared.svg"
                                                  },
+                            "file-sharepoint-icon":  {
+                                                         "iconPath":  "./processed-icons/sharepoint.png"
+                                                     },
                             "file-shares-icon":  {
                                                      "iconPath":  "./processed-icons/shares.png"
                                                  },
@@ -5421,6 +5448,9 @@
                             "file-validate-multipathing-icon":  {
                                                                     "iconPath":  "./processed-icons/validate-multipathing.png"
                                                                 },
+                            "file-validation-icon":  {
+                                                         "iconPath":  "./processed-icons/validation.png"
+                                                     },
                             "file-vance-ai-icon":  {
                                                        "iconPath":  "./processed-icons/vance-ai.png"
                                                    },
@@ -5685,6 +5715,9 @@
                             "file-winrm-icon":  {
                                                     "iconPath":  "./processed-icons/winrm.png"
                                                 },
+                            "file-winscp-icon":  {
+                                                     "iconPath":  "./processed-icons/winscp.png"
+                                                 },
                             "file-wispr-flow-icon":  {
                                                          "iconPath":  "./processed-icons/wispr-flow.png"
                                                      },
@@ -5996,6 +6029,7 @@
                         "benefits":  "file-benefits-icon",
                         "betterment":  "file-betterment-icon",
                         "bginfo":  "file-bginfo-icon",
+                        "bgp":  "file-bgp-icon",
                         "bicep":  "file-bicep-icon",
                         "bik":  "file-bik-icon",
                         "biml":  "file-biml-icon",
@@ -6060,6 +6094,7 @@
                         "capnp":  "file-capnp-icon",
                         "cargo":  "file-rust-icon",
                         "casc":  "file-casc-icon",
+                        "catchpoint":  "file-catchpoint-icon",
                         "cddl":  "file-cddl-icon",
                         "cdw":  "file-cdw-icon",
                         "centos":  "file-centos-icon",
@@ -6096,6 +6131,7 @@
                         "client":  "file-client-icon",
                         "clients":  "file-client-icon",
                         "clientsystemupdate":  "file-clientsystemupdate-icon",
+                        "clm":  "file-clm-icon",
                         "clojure":  "file-clojure-icon",
                         "clojurescript":  "file-clojurescript-icon",
                         "closebot":  "file-closebot-icon",
@@ -6110,6 +6146,7 @@
                         "cobol":  "file-cobol-icon",
                         "codacy":  "file-codacy-icon",
                         "code-compare":  "file-code-compare-icon",
+                        "code-red":  "file-code-red-icon",
                         "codeclimate":  "file-codeclimate-icon",
                         "codecov":  "file-codecov-icon",
                         "codekit":  "file-codekit-icon",
@@ -6164,6 +6201,7 @@
                         "craco":  "file-craco-icon",
                         "craiyon":  "file-craiyon-icon",
                         "crewting":  "file-crewting-icon",
+                        "cribmaster":  "file-cribmaster-icon",
                         "cronacle":  "file-cronacle-icon",
                         "crowdin":  "file-crowdin-icon",
                         "crowdstrike":  "file-crowdstrike-icon",
@@ -6249,6 +6287,7 @@
                         "diskpart":  "file-diskpart-icon",
                         "disney":  "file-disney-icon",
                         "dist":  "file-dist-icon",
+                        "distribution-center":  "file-distribution-center-icon",
                         "django":  "file-django-icon",
                         "dlang":  "file-dlang-icon",
                         "dlvr":  "file-dlvr-icon",
@@ -6962,6 +7001,7 @@
                         "meteor":  "file-meteor-icon",
                         "metro":  "file-metro-icon",
                         "micro-focus":  "file-micro-focus-icon",
+                        "microservice":  "file-microservice-icon",
                         "microsoft":  "file-microsoft-icon",
                         "midday-ai":  "file-midday-ai-icon",
                         "middleware":  "file-middleware-icon",
@@ -7233,6 +7273,7 @@
                         "playwright":  "file-playwright-icon",
                         "plex":  "file-plex-icon",
                         "plink":  "file-plink-icon",
+                        "plm":  "file-plm-icon",
                         "plsql-package-body":  "file-plsql-package-body-icon",
                         "plsql-package-header":  "file-plsql-package-header-icon",
                         "plsql-package-spec":  "file-plsql-package-spec-icon",
@@ -7502,6 +7543,7 @@
                         "shadcn":  "file-shadcn-icon",
                         "shaderlab":  "file-shaderlab-icon",
                         "shaped":  "file-shaped-icon",
+                        "sharepoint":  "file-sharepoint-icon",
                         "shares":  "file-shares-icon",
                         "shell-point-mortgage":  "file-shell-point-mortgage-icon",
                         "shellcheck":  "file-shellcheck-icon",
@@ -7744,6 +7786,7 @@
                         "vagrant":  "file-vagrant-icon",
                         "vala":  "file-vala-icon",
                         "validate-multipathing":  "file-validate-multipathing-icon",
+                        "validation":  "file-validation-icon",
                         "vance-ai":  "file-vance-ai-icon",
                         "vanguard":  "file-vanguard-icon",
                         "vanilla-extract":  "file-vanilla-extract-icon",
@@ -7839,6 +7882,7 @@
                         "windowsupdate":  "file-windowsupdate-icon",
                         "windsurf":  "file-windsurf-icon",
                         "winrm":  "file-winrm-icon",
+                        "winscp":  "file-winscp-icon",
                         "wispr-flow":  "file-wispr-flow-icon",
                         "wit":  "file-wit-icon",
                         "wmi":  "file-wmi-icon",
@@ -8037,6 +8081,7 @@
                       "benefits":  "file-benefits-icon",
                       "betterment":  "file-betterment-icon",
                       "bginfo":  "file-bginfo-icon",
+                      "bgp":  "file-bgp-icon",
                       "bicep":  "file-bicep-icon",
                       "bik":  "file-bik-icon",
                       "biml":  "file-biml-icon",
@@ -8099,6 +8144,7 @@
                       "capnp":  "file-capnp-icon",
                       "cargo":  "file-cargo-icon",
                       "casc":  "file-casc-icon",
+                      "catchpoint":  "file-catchpoint-icon",
                       "cddl":  "file-cddl-icon",
                       "cdw":  "file-cdw-icon",
                       "centos":  "file-centos-icon",
@@ -8133,6 +8179,7 @@
                       "cli":  "file-cli-icon",
                       "client":  "file-client-icon",
                       "clientsystemupdate":  "file-clientsystemupdate-icon",
+                      "clm":  "file-clm-icon",
                       "clojure":  "file-clojure-icon",
                       "clojurescript":  "file-clojurescript-icon",
                       "closebot":  "file-closebot-icon",
@@ -8147,6 +8194,7 @@
                       "cobol":  "file-cobol-icon",
                       "codacy":  "file-codacy-icon",
                       "code-compare":  "file-code-compare-icon",
+                      "code-red":  "file-code-red-icon",
                       "codeclimate":  "file-codeclimate-icon",
                       "codecov":  "file-codecov-icon",
                       "codekit":  "file-codekit-icon",
@@ -8195,6 +8243,7 @@
                       "craco":  "file-craco-icon",
                       "craiyon":  "file-craiyon-icon",
                       "crewting":  "file-crewting-icon",
+                      "cribmaster":  "file-cribmaster-icon",
                       "cronacle":  "file-cronacle-icon",
                       "crowdin":  "file-crowdin-icon",
                       "crowdstrike":  "file-crowdstrike-icon",
@@ -8274,6 +8323,7 @@
                       "diskpart":  "file-diskpart-icon",
                       "disney":  "file-disney-icon",
                       "dist":  "file-dist-icon",
+                      "distribution-center":  "file-distribution-center-icon",
                       "django":  "file-django-icon",
                       "dlang":  "file-dlang-icon",
                       "dlvr":  "file-dlvr-icon",
@@ -8992,6 +9042,7 @@
                       "meteor":  "file-meteor-icon",
                       "metro":  "file-metro-icon",
                       "micro-focus":  "file-micro-focus-icon",
+                      "microservice":  "file-microservice-icon",
                       "microsoft":  "file-microsoft-icon",
                       "midday-ai":  "file-midday-ai-icon",
                       "middleware":  "file-middleware-icon",
@@ -9264,6 +9315,7 @@
                       "playwright":  "file-playwright-icon",
                       "plex":  "file-plex-icon",
                       "plink":  "file-plink-icon",
+                      "plm":  "file-plm-icon",
                       "plsql-package-body":  "file-plsql-package-body-icon",
                       "plsql-package-header":  "file-plsql-package-header-icon",
                       "plsql-package-spec":  "file-plsql-package-spec-icon",
@@ -9543,6 +9595,7 @@
                       "shaderlab":  "file-shaderlab-icon",
                       "shaped":  "file-shaped-icon",
                       "shared":  "file-shared-icon",
+                      "sharepoint":  "file-sharepoint-icon",
                       "shares":  "file-shares-icon",
                       "shell-point-mortgage":  "file-shell-point-mortgage-icon",
                       "shell":  "file-shell-icon",
@@ -9775,6 +9828,7 @@
                       "vagrant":  "file-vagrant-icon",
                       "vala":  "file-vala-icon",
                       "validate-multipathing":  "file-validate-multipathing-icon",
+                      "validation":  "file-validation-icon",
                       "vance-ai":  "file-vance-ai-icon",
                       "vanguard":  "file-vanguard-icon",
                       "vanilla-extract":  "file-vanilla-extract-icon",
@@ -9869,6 +9923,7 @@
                       "windowsupdate":  "file-windowsupdate-icon",
                       "windsurf":  "file-windsurf-icon",
                       "winrm":  "file-winrm-icon",
+                      "winscp":  "file-winscp-icon",
                       "wispr-flow":  "file-wispr-flow-icon",
                       "wit":  "file-wit-icon",
                       "wmi":  "file-wmi-icon",
