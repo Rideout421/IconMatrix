@@ -570,6 +570,9 @@
                       "chatgpt":  [
                                       "chatgpt"
                                   ],
+                      "vm-customization":  [
+                                               "vm-customization"
+                                           ],
                       "kb":  [
                                  "kb"
                              ],
@@ -6482,9 +6485,9 @@
                         "nextflow":  [
                                          "nextflow"
                                      ],
-                        "light-mdx":  [
-                                          "light-mdx"
-                                      ],
+                        "proton":  [
+                                       "proton"
+                                   ],
                         "walling":  [
                                         "walling"
                                     ],
@@ -6545,6 +6548,9 @@
                         "chatgpt":  [
                                         "chatgpt"
                                     ],
+                        "vm-customization":  [
+                                                 "vm-customization"
+                                             ],
                         "perl6":  [
                                       "perl6"
                                   ],
@@ -9314,6 +9320,9 @@
                         "light-systemverilog":  [
                                                     "light-systemverilog"
                                                 ],
+                        "light-mdx":  [
+                                          "light-mdx"
+                                      ],
                         "sysprep":  [
                                         "sysprep"
                                     ],
@@ -9867,9 +9876,6 @@
                         "ng-service-js2":  [
                                                "ng-service-js2"
                                            ],
-                        "proton":  [
-                                       "proton"
-                                   ],
                         "tsdoc":  [
                                       "tsdoc"
                                   ],

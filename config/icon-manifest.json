@@ -9084,6 +9084,11 @@
                                   "source":  "disaster-recovery.png",
                                   "hash":  "77F1AAC5A27BD599046C68C7C577580F5D63075DF3A33BAA4E45BDC37677D034"
                               },
+    "vm-customization.png":  {
+                                 "mode":  "pass-through",
+                                 "source":  "vm-customization.png",
+                                 "hash":  "6C89386F8DAA889EA28E91F0044F1372889F424F6C83FBB13632C46DDCFC1D5B"
+                             },
     "box.svg":  {
                     "mode":  "svg-pass",
                     "source":  "box.svg",

@@ -5574,6 +5574,9 @@
                             "file-vlang-icon":  {
                                                     "iconPath":  "../processed-icons/vlang.svg"
                                                 },
+                            "file-vm-customization-icon":  {
+                                                               "iconPath":  "../processed-icons/vm-customization.png"
+                                                           },
                             "file-vmax-icon":  {
                                                    "iconPath":  "../processed-icons/vmax.png"
                                                },
@@ -6101,6 +6104,7 @@
                       "slice":  "file-slice-icon",
                       "openssl":  "file-openssl-icon",
                       "chatgpt":  "file-chatgpt-icon",
+                      "vm-customization":  "file-vm-customization-icon",
                       "aidvantage":  "file-aidvantage-icon",
                       "geojson":  "file-geojson-icon",
                       "lvm":  "file-lvm-icon",
@@ -8147,6 +8151,7 @@
                         "slice":  "file-slice-icon",
                         "openssl":  "file-openssl-icon",
                         "chatgpt":  "file-chatgpt-icon",
+                        "vm-customization":  "file-vm-customization-icon",
                         "aidvantage":  "file-aidvantage-icon",
                         "geojson":  "file-geojson-icon",
                         "buckbuild":  "file-buckbuild-icon",
@@ -10203,6 +10208,7 @@
                                 "slice":  "file-slice-icon",
                                 "openssl":  "file-openssl-icon",
                                 "chatgpt":  "file-chatgpt-icon",
+                                "vm-customization":  "file-vm-customization-icon",
                                 "aidvantage":  "file-aidvantage-icon",
                                 "geojson":  "file-geojson-icon",
                                 "buckbuild":  "file-buckbuild-icon",

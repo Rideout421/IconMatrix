@@ -5574,6 +5574,9 @@
                             "file-vlang-icon":  {
                                                     "iconPath":  "./processed-icons/vlang.svg"
                                                 },
+                            "file-vm-customization-icon":  {
+                                                               "iconPath":  "./processed-icons/vm-customization.png"
+                                                           },
                             "file-vmax-icon":  {
                                                    "iconPath":  "./processed-icons/vmax.png"
                                                },
@@ -7834,6 +7837,7 @@
                         "vitepress":  "file-vitepress-icon",
                         "vitest":  "file-vitest-icon",
                         "vlang":  "file-vlang-icon",
+                        "vm-customization":  "file-vm-customization-icon",
                         "vmax":  "file-vmax-icon",
                         "vmware":  "file-vmware-icon",
                         "vmwaretools":  "file-vmwaretools-icon",
@@ -9872,6 +9876,7 @@
                       "vitepress":  "file-vitepress-icon",
                       "vitest":  "file-vitest-icon",
                       "vlang":  "file-vlang-icon",
+                      "vm-customization":  "file-vm-customization-icon",
                       "vmax":  "file-vmax-icon",
                       "vmware":  "file-vmware-icon",
                       "vmwaretools":  "file-vmwaretools-icon",
