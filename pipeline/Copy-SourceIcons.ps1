@@ -15,19 +15,23 @@ function Copy-SourceIcons {
     $seen = @{}   # canonical -> best file (prefer SVG)
 
     Get-ChildItem -Path $Source -Recurse -File | ForEach-Object {
-
-        $ext = $_.Extension.ToLower()
+    
+        $file = $_
+    
+        $ext = $file.Extension.ToLower()
         if ($validExt -notcontains $ext) { return }
-
+    
         # Skip corrupt non-SVG images
         if ($ext -ne ".svg") {
             try {
                 Add-Type -AssemblyName System.Drawing -ErrorAction SilentlyContinue | Out-Null
-                $img = [System.Drawing.Image]::FromFile($_.FullName)
+                $img = [System.Drawing.Image]::FromFile($file.FullName)
                 $img.Dispose()
             }
             catch {
-                Write-Host "[SKIP CORRUPT] $($_.Name)" -ForegroundColor Red
+                Write-Host "[SKIP CORRUPT]" -ForegroundColor Red
+                Write-Host "    File : $($file.FullName)" -ForegroundColor Yellow
+                Write-Host "    Error: $($_.Exception.Message)" -ForegroundColor DarkYellow
                 return
             }
         }

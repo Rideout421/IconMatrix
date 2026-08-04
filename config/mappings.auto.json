@@ -540,9 +540,9 @@
                       "ng-interceptor-ts":  [
                                                 "ng-interceptor-ts"
                                             ],
-                      "applescript":  [
-                                          "applescript"
-                                      ],
+                      "objectivec":  [
+                                         "objectivec"
+                                     ],
                       "blaze":  [
                                     "blaze"
                                 ],
@@ -561,9 +561,6 @@
                       "rufus":  [
                                     "rufus"
                                 ],
-                      "images":  [
-                                     "images"
-                                 ],
                       "sentinelone":  [
                                           "sentinelone"
                                       ],
@@ -2619,9 +2616,9 @@
                       "imagemagick":  [
                                           "imagemagick"
                                       ],
-                      "arc-dev":  [
-                                      "arc-dev"
-                                  ],
+                      "events":  [
+                                     "events"
+                                 ],
                       "coderabbit":  [
                                          "coderabbit"
                                      ],
@@ -3159,6 +3156,9 @@
                       "django":  [
                                      "django"
                                  ],
+                      "arc-dev":  [
+                                      "arc-dev"
+                                  ],
                       "ng-guard-dart":  [
                                             "ng-guard-dart"
                                         ],
@@ -4074,6 +4074,9 @@
                       "systemverilog":  [
                                             "systemverilog"
                                         ],
+                      "applescript":  [
+                                          "applescript"
+                                      ],
                       "light-mdx-components":  [
                                                    "light-mdx-components"
                                                ],
@@ -5652,9 +5655,6 @@
                       "fritzing":  [
                                        "fritzing"
                                    ],
-                      "objectivec":  [
-                                         "objectivec"
-                                     ],
                       "ansible":  [
                                       "ansible"
                                   ],
@@ -6416,9 +6416,9 @@
                         "ng-interceptor-ts":  [
                                                   "ng-interceptor-ts"
                                               ],
-                        "applescript":  [
-                                            "applescript"
-                                        ],
+                        "objectivec":  [
+                                           "objectivec"
+                                       ],
                         "blaze":  [
                                       "blaze"
                                   ],
@@ -6437,9 +6437,6 @@
                         "rufus":  [
                                       "rufus"
                                   ],
-                        "images":  [
-                                       "images"
-                                   ],
                         "sentinelone":  [
                                             "sentinelone"
                                         ],
@@ -8495,9 +8492,9 @@
                         "imagemagick":  [
                                             "imagemagick"
                                         ],
-                        "arc-dev":  [
-                                        "arc-dev"
-                                    ],
+                        "events":  [
+                                       "events"
+                                   ],
                         "coderabbit":  [
                                            "coderabbit"
                                        ],
@@ -9035,6 +9032,9 @@
                         "django":  [
                                        "django"
                                    ],
+                        "arc-dev":  [
+                                        "arc-dev"
+                                    ],
                         "ng-guard-dart":  [
                                               "ng-guard-dart"
                                           ],
@@ -9950,6 +9950,9 @@
                         "systemverilog":  [
                                               "systemverilog"
                                           ],
+                        "applescript":  [
+                                            "applescript"
+                                        ],
                         "light-mdx-components":  [
                                                      "light-mdx-components"
                                                  ],
@@ -11528,9 +11531,6 @@
                         "fritzing":  [
                                          "fritzing"
                                      ],
-                        "objectivec":  [
-                                           "objectivec"
-                                       ],
                         "ansible":  [
                                         "ansible"
                                     ],

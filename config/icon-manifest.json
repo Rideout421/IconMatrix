@@ -17,7 +17,7 @@
     "mongodb.svg":  {
                         "mode":  "svg-pass",
                         "source":  "mongodb.svg",
-                        "hash":  "72AFDBDD0F8D75AB1A44951A00820AF2A7FD50D2F1F18648BBF2E2D4D43CC0C7"
+                        "hash":  "43C4F5A1261601683E1403E9F4A5497B6FE0EE17448B5B12DFB289E7B637B770"
                     },
     "virtualization.svg":  {
                                "mode":  "svg-pass",
@@ -1119,11 +1119,6 @@
                         "source":  "nutanix.png",
                         "hash":  "B3AE991CE65240C35D3D7ADFF95EE030C878B66E54D23EC183E68DF19605F58A"
                     },
-    "images.svg":  {
-                       "mode":  "svg-pass",
-                       "source":  "images.svg",
-                       "hash":  "125145F232532AF54B352E1D963DC6F1CFE16F8A3C76A8B34874CE68793647D1"
-                   },
     "lemon.svg":  {
                       "mode":  "svg-pass",
                       "source":  "lemon.svg",
@@ -1954,6 +1949,11 @@
                           "source":  "sox-audit.png",
                           "hash":  "89CF021E91E8D1971783864165BC207DCF0B6C3506F2DC6B61B9FB19E4E1A179"
                       },
+    "events.png":  {
+                       "mode":  "pass-through",
+                       "source":  "events.png",
+                       "hash":  "1925E84E07C2AB6AB67EBFA2217D856A50BB16EA6435B64E730C3F41A693F221"
+                   },
     "imobile3.png":  {
                          "mode":  "pass-through",
                          "source":  "imobile3.png",
@@ -2069,11 +2069,6 @@
                           "source":  "precommit.svg",
                           "hash":  "F608281C8375D5DD64ECD26C06647E4853A8E7D16D1B8CB4DF075109A1108BC4"
                       },
-    "image.svg":  {
-                      "mode":  "svg-pass",
-                      "source":  "image.svg",
-                      "hash":  "5C893F16ACE217A90A646FE8C590A9331E3A165E492EF1A7E14CE701EB9A9B59"
-                  },
     "vim.svg":  {
                     "mode":  "svg-pass",
                     "source":  "vim.svg",
@@ -7429,6 +7424,11 @@
                     "source":  "iso.png",
                     "hash":  "97D75044FE163F85F647C032479536639CA0A43D6456258B547D4B109AD6B353"
                 },
+    "image.png":  {
+                      "mode":  "pass-through",
+                      "source":  "image.png",
+                      "hash":  "EB09AF1D77025696C6600FF69D4C86879B9CFD01BDE800EEE19846D331FBEC04"
+                  },
     "kali-linux-subsystem.png":  {
                                      "mode":  "pass-through",
                                      "source":  "kali-linux-subsystem.png",

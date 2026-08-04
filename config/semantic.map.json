@@ -636,9 +636,9 @@
                       "ats":  [
                                   "ats"
                               ],
-                      "applescript":  [
-                                          "applescript"
-                                      ],
+                      "objectivec":  [
+                                         "objectivec"
+                                     ],
                       "blaze":  [
                                     "blaze"
                                 ],
@@ -1163,9 +1163,6 @@
                       "sails":  [
                                     "sails"
                                 ],
-                      "light-yaml-official":  [
-                                                  "light-yaml-official"
-                                              ],
                       "publiccode":  [
                                          "publiccode"
                                      ],
@@ -2691,9 +2688,9 @@
                       "imagemagick":  [
                                           "imagemagick"
                                       ],
-                      "arc-dev":  [
-                                      "arc-dev"
-                                  ],
+                      "events":  [
+                                     "events"
+                                 ],
                       "coderabbit":  [
                                          "coderabbit"
                                      ],
@@ -3220,6 +3217,9 @@
                       "opentofu":  [
                                        "opentofu"
                                    ],
+                      "arc-dev":  [
+                                      "arc-dev"
+                                  ],
                       "ng-guard-dart":  [
                                             "ng-guard-dart"
                                         ],
@@ -3985,9 +3985,9 @@
                       "chase":  [
                                     "chase"
                                 ],
-                      "closinglock":  [
-                                          "closinglock"
-                                      ],
+                      "textlint":  [
+                                       "textlint"
+                                   ],
                       "marketingblocks-ai":  [
                                                  "marketingblocks-ai"
                                              ],
@@ -4053,9 +4053,6 @@
                       "aurelia":  [
                                       "aurelia"
                                   ],
-                      "textlint":  [
-                                       "textlint"
-                                   ],
                       "data-runs":  [
                                         "data-runs"
                                     ],
@@ -4140,6 +4137,9 @@
                       "freemarker":  [
                                          "freemarker"
                                      ],
+                      "applescript":  [
+                                          "applescript"
+                                      ],
                       "light-mdx-components":  [
                                                    "light-mdx-components"
                                                ],
@@ -4170,6 +4170,9 @@
                       "elixir":  [
                                      "elixir"
                                  ],
+                      "closinglock":  [
+                                          "closinglock"
+                                      ],
                       "15five":  [
                                      "15five"
                                  ],
@@ -5311,9 +5314,9 @@
                       "safetensors":  [
                                           "safetensors"
                                       ],
-                      "images":  [
-                                     "images"
-                                 ],
+                      "light-yaml-official":  [
+                                                  "light-yaml-official"
+                                              ],
                       "tsbroker":  [
                                        "tsbroker"
                                    ],
@@ -5822,9 +5825,6 @@
                       "fritzing":  [
                                        "fritzing"
                                    ],
-                      "objectivec":  [
-                                         "objectivec"
-                                     ],
                       "jobright-ai":  [
                                           "jobright-ai"
                                       ],
@@ -6626,9 +6626,9 @@
                         "avro":  [
                                      "avro"
                                  ],
-                        "applescript":  [
-                                            "applescript"
-                                        ],
+                        "objectivec":  [
+                                           "objectivec"
+                                       ],
                         "rdcman":  [
                                        "rdcman"
                                    ],
@@ -7155,9 +7155,6 @@
                         "sails":  [
                                       "sails"
                                   ],
-                        "light-yaml-official":  [
-                                                    "light-yaml-official"
-                                                ],
                         "publiccode":  [
                                            "publiccode"
                                        ],
@@ -8701,9 +8698,9 @@
                         "imagemagick":  [
                                             "imagemagick"
                                         ],
-                        "arc-dev":  [
-                                        "arc-dev"
-                                    ],
+                        "events":  [
+                                       "events"
+                                   ],
                         "coderabbit":  [
                                            "coderabbit"
                                        ],
@@ -9228,6 +9225,9 @@
                         "OpenTofu":  [
                                          "OpenTofu"
                                      ],
+                        "arc-dev":  [
+                                        "arc-dev"
+                                    ],
                         "ng-guard-dart":  [
                                               "ng-guard-dart"
                                           ],
@@ -10163,6 +10163,9 @@
                         "freemarker":  [
                                            "freemarker"
                                        ],
+                        "applescript":  [
+                                            "applescript"
+                                        ],
                         "light-mdx-components":  [
                                                      "light-mdx-components"
                                                  ],
@@ -11343,9 +11346,9 @@
                         "safetensors":  [
                                             "safetensors"
                                         ],
-                        "images":  [
-                                       "images"
-                                   ],
+                        "light-yaml-official":  [
+                                                    "light-yaml-official"
+                                                ],
                         "tsbroker":  [
                                          "tsbroker"
                                      ],
@@ -11868,9 +11871,6 @@
                         "fritzing":  [
                                          "fritzing"
                                      ],
-                        "objectivec":  [
-                                           "objectivec"
-                                       ],
                         "radiusserver":  [
                                              "radiusserver"
                                          ],

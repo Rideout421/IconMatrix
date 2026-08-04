@@ -1389,6 +1389,9 @@
                             "file-eventing-icon":  {
                                                        "iconPath":  "./processed-icons/eventing.png"
                                                    },
+                            "file-events-icon":  {
+                                                     "iconPath":  "./processed-icons/events.png"
+                                                 },
                             "file-everlearns-icon":  {
                                                          "iconPath":  "./processed-icons/everlearns.png"
                                                      },
@@ -2113,14 +2116,11 @@
                                                          "iconPath":  "./processed-icons/ikonopedia.png"
                                                      },
                             "file-image-icon":  {
-                                                    "iconPath":  "./processed-icons/image.svg"
+                                                    "iconPath":  "./processed-icons/image.png"
                                                 },
                             "file-imagemagick-icon":  {
                                                           "iconPath":  "./processed-icons/imagemagick.png"
                                                       },
-                            "file-images-icon":  {
-                                                     "iconPath":  "./processed-icons/images.svg"
-                                                 },
                             "file-imanager-icon":  {
                                                        "iconPath":  "./processed-icons/imanager.png"
                                                    },
@@ -6377,6 +6377,7 @@
                         "etc-hosts":  "file-etc-hosts-icon",
                         "ethernet-cable":  "file-ethernet-cable-icon",
                         "eventing":  "file-eventing-icon",
+                        "events":  "file-notification-icon",
                         "everlearns":  "file-everlearns-icon",
                         "excalidraw":  "file-excalidraw-icon",
                         "excel":  "file-excel-icon",
@@ -6630,7 +6631,7 @@
                         "iis":  "file-iis-icon",
                         "ikonopedia":  "file-ikonopedia-icon",
                         "image":  "file-image-icon",
-                        "images":  "file-images-icon",
+                        "images":  "file-image-icon",
                         "img":  "file-image-icon",
                         "icons":  "file-image-icon",
                         "favicons":  "file-image-icon",
@@ -7160,7 +7161,6 @@
                         "notes":  "file-notes-icon",
                         "notification":  "file-notification-icon",
                         "notifications":  "file-notification-icon",
-                        "events":  "file-notification-icon",
                         "event":  "file-notification-icon",
                         "npm":  "file-npm-icon",
                         "npmpackagejsonlint":  "file-npmpackagejsonlint-icon",
@@ -8425,6 +8425,7 @@
                       "etc-hosts":  "file-etc-hosts-icon",
                       "ethernet-cable":  "file-ethernet-cable-icon",
                       "eventing":  "file-eventing-icon",
+                      "events":  "file-events-icon",
                       "everlearns":  "file-everlearns-icon",
                       "excalidraw":  "file-excalidraw-icon",
                       "excel":  "file-excel-icon",
@@ -8682,7 +8683,6 @@
                       "ikonopedia":  "file-ikonopedia-icon",
                       "image":  "file-image-icon",
                       "imagemagick":  "file-imagemagick-icon",
-                      "images":  "file-images-icon",
                       "imanager":  "file-imanager-icon",
                       "imba":  "file-imba-icon",
                       "imobile3":  "file-imobile3-icon",
