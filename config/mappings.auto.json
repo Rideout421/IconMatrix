@@ -576,9 +576,9 @@
                       "md3000":  [
                                      "md3000"
                                  ],
-                      "bower2":  [
-                                     "bower2"
-                                 ],
+                      "postcss":  [
+                                      "postcss"
+                                  ],
                       "light-symfony":  [
                                             "light-symfony"
                                         ],
@@ -603,9 +603,6 @@
                       "groovy2":  [
                                       "groovy2"
                                   ],
-                      "powerpoint2":  [
-                                          "powerpoint2"
-                                      ],
                       "blender":  [
                                       "blender"
                                   ],
@@ -741,9 +738,9 @@
                       "light-electron":  [
                                              "light-electron"
                                          ],
-                      "opentofu":  [
-                                       "opentofu"
-                                   ],
+                      "jobschat-ai":  [
+                                          "jobschat-ai"
+                                      ],
                       "files":  [
                                     "files"
                                 ],
@@ -1632,9 +1629,6 @@
                       "js-official":  [
                                           "js-official"
                                       ],
-                      "jobschat-ai":  [
-                                          "jobschat-ai"
-                                      ],
                       "hugo":  [
                                    "hugo"
                                ],
@@ -1920,9 +1914,9 @@
                       "packship":  [
                                        "packship"
                                    ],
-                      "cursorrules":  [
-                                          "cursorrules"
-                                      ],
+                      "vanguard":  [
+                                       "vanguard"
+                                   ],
                       "visualcron":  [
                                          "visualcron"
                                      ],
@@ -2793,6 +2787,9 @@
                       "dfs":  [
                                   "dfs"
                               ],
+                      "sln1":  [
+                                   "sln1"
+                               ],
                       "notification":  [
                                            "notification"
                                        ],
@@ -2949,9 +2946,6 @@
                       "light-nim":  [
                                         "light-nim"
                                     ],
-                      "vanguard":  [
-                                       "vanguard"
-                                   ],
                       "pythowo":  [
                                       "pythowo"
                                   ],
@@ -3159,9 +3153,9 @@
                       "bot":  [
                                   "bot"
                               ],
-                      "postcss":  [
-                                      "postcss"
-                                  ],
+                      "opentofu":  [
+                                       "opentofu"
+                                   ],
                       "django":  [
                                      "django"
                                  ],
@@ -4482,9 +4476,6 @@
                       "timefinder":  [
                                          "timefinder"
                                      ],
-                      "word2":  [
-                                    "word2"
-                                ],
                       "ucs-manager":  [
                                           "ucs-manager"
                                       ],
@@ -5904,6 +5895,12 @@
                       "netscaler":  [
                                         "netscaler"
                                     ],
+                      "go-blue":  [
+                                      "go-blue"
+                                  ],
+                      "word1":  [
+                                    "word1"
+                                ],
                       "isilon":  [
                                      "isilon"
                                  ],
@@ -6455,9 +6452,9 @@
                         "md3000":  [
                                        "md3000"
                                    ],
-                        "bower2":  [
-                                       "bower2"
-                                   ],
+                        "postcss":  [
+                                        "postcss"
+                                    ],
                         "light-symfony":  [
                                               "light-symfony"
                                           ],
@@ -6482,9 +6479,6 @@
                         "groovy2":  [
                                         "groovy2"
                                     ],
-                        "powerpoint2":  [
-                                            "powerpoint2"
-                                        ],
                         "blender":  [
                                         "blender"
                                     ],
@@ -6620,9 +6614,9 @@
                         "light-electron":  [
                                                "light-electron"
                                            ],
-                        "opentofu":  [
-                                         "opentofu"
-                                     ],
+                        "jobschat-ai":  [
+                                            "jobschat-ai"
+                                        ],
                         "files":  [
                                       "files"
                                   ],
@@ -7511,9 +7505,6 @@
                         "js-official":  [
                                             "js-official"
                                         ],
-                        "jobschat-ai":  [
-                                            "jobschat-ai"
-                                        ],
                         "hugo":  [
                                      "hugo"
                                  ],
@@ -7799,9 +7790,9 @@
                         "packship":  [
                                          "packship"
                                      ],
-                        "cursorrules":  [
-                                            "cursorrules"
-                                        ],
+                        "vanguard":  [
+                                         "vanguard"
+                                     ],
                         "visualcron":  [
                                            "visualcron"
                                        ],
@@ -8672,6 +8663,9 @@
                         "dfs":  [
                                     "dfs"
                                 ],
+                        "sln1":  [
+                                     "sln1"
+                                 ],
                         "notification":  [
                                              "notification"
                                          ],
@@ -8828,9 +8822,6 @@
                         "light-nim":  [
                                           "light-nim"
                                       ],
-                        "vanguard":  [
-                                         "vanguard"
-                                     ],
                         "pythowo":  [
                                         "pythowo"
                                     ],
@@ -9038,9 +9029,9 @@
                         "bot":  [
                                     "bot"
                                 ],
-                        "postcss":  [
-                                        "postcss"
-                                    ],
+                        "opentofu":  [
+                                         "opentofu"
+                                     ],
                         "django":  [
                                        "django"
                                    ],
@@ -10361,9 +10352,6 @@
                         "timefinder":  [
                                            "timefinder"
                                        ],
-                        "word2":  [
-                                      "word2"
-                                  ],
                         "ucs-manager":  [
                                             "ucs-manager"
                                         ],
@@ -11783,6 +11771,12 @@
                         "netscaler":  [
                                           "netscaler"
                                       ],
+                        "go-blue":  [
+                                        "go-blue"
+                                    ],
+                        "word1":  [
+                                      "word1"
+                                  ],
                         "isilon":  [
                                        "isilon"
                                    ],

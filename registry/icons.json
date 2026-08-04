@@ -492,9 +492,6 @@
                             "file-bower-icon":  {
                                                     "iconPath":  "./processed-icons/bower.svg"
                                                 },
-                            "file-bower2-icon":  {
-                                                     "iconPath":  "./processed-icons/bower2.svg"
-                                                 },
                             "file-box-icon":  {
                                                   "iconPath":  "./processed-icons/box.svg"
                                               },
@@ -949,11 +946,8 @@
                                                    "iconPath":  "./processed-icons/cups.png"
                                                },
                             "file-cursor-icon":  {
-                                                     "iconPath":  "./processed-icons/cursor.svg"
+                                                     "iconPath":  "./processed-icons/cursor.png"
                                                  },
-                            "file-cursorrules-icon":  {
-                                                          "iconPath":  "./processed-icons/cursorrules.svg"
-                                                      },
                             "file-cvs-icon":  {
                                                   "iconPath":  "./processed-icons/cvs.svg"
                                               },
@@ -1767,6 +1761,9 @@
                             "file-go-black-icon":  {
                                                        "iconPath":  "./processed-icons/go-black.svg"
                                                    },
+                            "file-go-blue-icon":  {
+                                                      "iconPath":  "./processed-icons/go-blue.svg"
+                                                  },
                             "file-go-fuchsia-icon":  {
                                                          "iconPath":  "./processed-icons/go-fuchsia.svg"
                                                      },
@@ -1792,7 +1789,7 @@
                                                         "iconPath":  "./processed-icons/go-yellow.svg"
                                                     },
                             "file-go-icon":  {
-                                                 "iconPath":  "./processed-icons/go.svg"
+                                                 "iconPath":  "./processed-icons/go.png"
                                              },
                             "file-goctl-icon":  {
                                                     "iconPath":  "./processed-icons/goctl.svg"
@@ -1939,7 +1936,7 @@
                                                     "iconPath":  "./processed-icons/helix.svg"
                                                 },
                             "file-helm-icon":  {
-                                                   "iconPath":  "./processed-icons/helm.svg"
+                                                   "iconPath":  "./processed-icons/helm.png"
                                                },
                             "file-help-desk-icon":  {
                                                         "iconPath":  "./processed-icons/help-desk.png"
@@ -2239,7 +2236,7 @@
                                                          "iconPath":  "./processed-icons/jasper-art.png"
                                                      },
                             "file-java-icon":  {
-                                                   "iconPath":  "./processed-icons/java.svg"
+                                                   "iconPath":  "./processed-icons/java.png"
                                                },
                             "file-javascript-icon":  {
                                                          "iconPath":  "./processed-icons/javascript.png"
@@ -3067,7 +3064,7 @@
                                                       "iconPath":  "./processed-icons/mariadb.svg"
                                                   },
                             "file-markdown-icon":  {
-                                                       "iconPath":  "./processed-icons/markdown.svg"
+                                                       "iconPath":  "./processed-icons/markdown.png"
                                                    },
                             "file-markdownlint-ignore-icon":  {
                                                                   "iconPath":  "./processed-icons/markdownlint-ignore.svg"
@@ -3910,7 +3907,7 @@
                                                          "iconPath":  "./processed-icons/photoshop2.svg"
                                                      },
                             "file-php-icon":  {
-                                                  "iconPath":  "./processed-icons/php.svg"
+                                                  "iconPath":  "./processed-icons/php.png"
                                               },
                             "file-php2-icon":  {
                                                    "iconPath":  "./processed-icons/php2.svg"
@@ -4074,9 +4071,6 @@
                             "file-powerpoint-icon":  {
                                                          "iconPath":  "./processed-icons/powerpoint.svg"
                                                      },
-                            "file-powerpoint2-icon":  {
-                                                          "iconPath":  "./processed-icons/powerpoint2.svg"
-                                                      },
                             "file-powershell-7-icon":  {
                                                            "iconPath":  "./processed-icons/powershell-7.png"
                                                        },
@@ -4576,7 +4570,7 @@
                                                      "iconPath":  "./processed-icons/rubrik.png"
                                                  },
                             "file-ruby-icon":  {
-                                                   "iconPath":  "./processed-icons/ruby.svg"
+                                                   "iconPath":  "./processed-icons/ruby.png"
                                                },
                             "file-ruff-icon":  {
                                                    "iconPath":  "./processed-icons/ruff.svg"
@@ -4849,8 +4843,11 @@
                                                     "iconPath":  "./processed-icons/slint.svg"
                                                 },
                             "file-sln-icon":  {
-                                                  "iconPath":  "./processed-icons/sln.svg"
+                                                  "iconPath":  "./processed-icons/sln.png"
                                               },
+                            "file-sln1-icon":  {
+                                                   "iconPath":  "./processed-icons/sln1.svg"
+                                               },
                             "file-sln2-icon":  {
                                                    "iconPath":  "./processed-icons/sln2.svg"
                                                },
@@ -5080,7 +5077,7 @@
                                                            "iconPath":  "./processed-icons/suse-manager.png"
                                                        },
                             "file-suse-icon":  {
-                                                   "iconPath":  "./processed-icons/suse.svg"
+                                                   "iconPath":  "./processed-icons/suse.png"
                                                },
                             "file-svelte-icon":  {
                                                      "iconPath":  "./processed-icons/svelte.svg"
@@ -5278,7 +5275,7 @@
                                                      "iconPath":  "./processed-icons/tomcat.svg"
                                                  },
                             "file-toml-icon":  {
-                                                   "iconPath":  "./processed-icons/toml.svg"
+                                                   "iconPath":  "./processed-icons/toml.png"
                                                },
                             "file-tools-icon":  {
                                                     "iconPath":  "./processed-icons/tools.svg"
@@ -5739,8 +5736,8 @@
                             "file-word-icon":  {
                                                    "iconPath":  "./processed-icons/word.svg"
                                                },
-                            "file-word2-icon":  {
-                                                    "iconPath":  "./processed-icons/word2.svg"
+                            "file-word1-icon":  {
+                                                    "iconPath":  "./processed-icons/word1.svg"
                                                 },
                             "file-wordpress-icon":  {
                                                         "iconPath":  "./processed-icons/wordpress.png"
@@ -5803,7 +5800,7 @@
                                                     "iconPath":  "./processed-icons/xmake.svg"
                                                 },
                             "file-xml-icon":  {
-                                                  "iconPath":  "./processed-icons/xml.svg"
+                                                  "iconPath":  "./processed-icons/xml.png"
                                               },
                             "file-xmpie-icon":  {
                                                     "iconPath":  "./processed-icons/xmpie.png"
@@ -6063,7 +6060,6 @@
                         "bosque":  "file-bosque-icon",
                         "bot":  "file-bot-icon",
                         "bower":  "file-bower-icon",
-                        "bower2":  "file-bower2-icon",
                         "box":  "file-box-icon",
                         "brand-studio":  "file-brand-studio-icon",
                         "brave":  "file-brave-icon",
@@ -6231,7 +6227,6 @@
                         "cue":  "file-cue-icon",
                         "cups":  "file-cups-icon",
                         "cursor":  "file-cursor-icon",
-                        "cursorrules":  "file-cursorrules-icon",
                         "cvs":  "file-cvs-icon",
                         "cyberark":  "file-cyberark-icon",
                         "cypress-spec":  "file-cypress-spec-icon",
@@ -6512,6 +6507,7 @@
                         "gnuplot":  "file-gnuplot-icon",
                         "go-aqua":  "file-go-aqua-icon",
                         "go-black":  "file-go-black-icon",
+                        "go-blue":  "file-go-blue-icon",
                         "go-fuchsia":  "file-go-fuchsia-icon",
                         "go-gopher":  "file-go-gopher-icon",
                         "go-lightblue":  "file-go-lightblue-icon",
@@ -7309,7 +7305,6 @@
                         "powerpath":  "file-powerpath-icon",
                         "powerplan":  "file-powerplan-icon",
                         "powerpoint":  "file-powerpoint-icon",
-                        "powerpoint2":  "file-powerpoint2-icon",
                         "powershell-7":  "file-powershell-7-icon",
                         "powershell-format":  "file-powershell-format-icon",
                         "powershell-psd":  "file-powershell-psd-icon",
@@ -7572,6 +7567,7 @@
                         "slim":  "file-slim-icon",
                         "slint":  "file-slint-icon",
                         "sln":  "file-sln-icon",
+                        "sln1":  "file-sln1-icon",
                         "sln2":  "file-sln2-icon",
                         "smartli-ai":  "file-smartli-ai-icon",
                         "smartscreen":  "file-smartscreen-icon",
@@ -7893,7 +7889,7 @@
                         "wolfram":  "file-wolfram-icon",
                         "wombo-dream":  "file-wombo-dream-icon",
                         "word":  "file-word-icon",
-                        "word2":  "file-word2-icon",
+                        "word1":  "file-word1-icon",
                         "wordpress":  "file-wordpress-icon",
                         "work-com":  "file-work-com-icon",
                         "workingadvantage":  "file-workingadvantage-icon",
@@ -8115,7 +8111,6 @@
                       "bosque":  "file-bosque-icon",
                       "bot":  "file-bot-icon",
                       "bower":  "file-bower-icon",
-                      "bower2":  "file-bower2-icon",
                       "box":  "file-box-icon",
                       "brand-studio":  "file-brand-studio-icon",
                       "brave":  "file-brave-icon",
@@ -8268,7 +8263,6 @@
                       "cue":  "file-cue-icon",
                       "cups":  "file-cups-icon",
                       "cursor":  "file-cursor-icon",
-                      "cursorrules":  "file-cursorrules-icon",
                       "cvs":  "file-cvs-icon",
                       "cyberark":  "file-cyberark-icon",
                       "cypress-spec":  "file-cypress-spec-icon",
@@ -8563,6 +8557,7 @@
                       "gnuplot":  "file-gnuplot-icon",
                       "go-aqua":  "file-go-aqua-icon",
                       "go-black":  "file-go-black-icon",
+                      "go-blue":  "file-go-blue-icon",
                       "go-fuchsia":  "file-go-fuchsia-icon",
                       "go-gopher":  "file-go-gopher-icon",
                       "go-lightblue":  "file-go-lightblue-icon",
@@ -9352,7 +9347,6 @@
                       "powerpath":  "file-powerpath-icon",
                       "powerplan":  "file-powerplan-icon",
                       "powerpoint":  "file-powerpoint-icon",
-                      "powerpoint2":  "file-powerpoint2-icon",
                       "powershell-7":  "file-powershell-7-icon",
                       "powershell-format":  "file-powershell-format-icon",
                       "powershell-psd":  "file-powershell-psd-icon",
@@ -9626,6 +9620,7 @@
                       "slim":  "file-slim-icon",
                       "slint":  "file-slint-icon",
                       "sln":  "file-sln-icon",
+                      "sln1":  "file-sln1-icon",
                       "sln2":  "file-sln2-icon",
                       "smartli-ai":  "file-smartli-ai-icon",
                       "smartscreen":  "file-smartscreen-icon",
@@ -9935,7 +9930,7 @@
                       "wolfram":  "file-wolfram-icon",
                       "wombo-dream":  "file-wombo-dream-icon",
                       "word":  "file-word-icon",
-                      "word2":  "file-word2-icon",
+                      "word1":  "file-word1-icon",
                       "wordpress":  "file-wordpress-icon",
                       "work-com":  "file-work-com-icon",
                       "workingadvantage":  "file-workingadvantage-icon",
