@@ -507,6 +507,9 @@
                             "file-broadcom-icon":  {
                                                        "iconPath":  "./processed-icons/broadcom.png"
                                                    },
+                            "file-browsers-icon":  {
+                                                       "iconPath":  "./processed-icons/browsers.png"
+                                                   },
                             "file-browserslist-icon":  {
                                                            "iconPath":  "./processed-icons/browserslist.svg"
                                                        },
@@ -1243,11 +1246,8 @@
                                                   "iconPath":  "./processed-icons/ecl.png"
                                               },
                             "file-edge-icon":  {
-                                                   "iconPath":  "./processed-icons/edge.svg"
+                                                   "iconPath":  "./processed-icons/edge.png"
                                                },
-                            "file-edge2-icon":  {
-                                                    "iconPath":  "./processed-icons/edge2.svg"
-                                                },
                             "file-editorconfig-icon":  {
                                                            "iconPath":  "./processed-icons/editorconfig.svg"
                                                        },
@@ -6065,6 +6065,7 @@
                         "brave":  "file-brave-icon",
                         "brew":  "file-brew-icon",
                         "broadcom":  "file-broadcom-icon",
+                        "browsers":  "file-browsers-icon",
                         "browserslist":  "file-browserslist-icon",
                         "bruno":  "file-bruno-icon",
                         "buckbuild":  "file-buckbuild-icon",
@@ -6328,7 +6329,6 @@
                         "eas-metadata":  "file-eas-metadata-icon",
                         "ecl":  "file-ecl-icon",
                         "edge":  "file-edge-icon",
-                        "edge2":  "file-edge2-icon",
                         "editorconfig":  "file-editorconfig-icon",
                         "eex":  "file-eex-icon",
                         "ejs":  "file-ejs-icon",
@@ -8116,6 +8116,7 @@
                       "brave":  "file-brave-icon",
                       "brew":  "file-brew-icon",
                       "broadcom":  "file-broadcom-icon",
+                      "browsers":  "file-browsers-icon",
                       "browserslist":  "file-browserslist-icon",
                       "bruno":  "file-bruno-icon",
                       "buckbuild":  "file-buckbuild-icon",
@@ -8366,7 +8367,6 @@
                       "eas-metadata":  "file-eas-metadata-icon",
                       "ecl":  "file-ecl-icon",
                       "edge":  "file-edge-icon",
-                      "edge2":  "file-edge2-icon",
                       "editorconfig":  "file-editorconfig-icon",
                       ".editorconfig":  "file-editorconfig-icon",
                       "eex":  "file-eex-icon",

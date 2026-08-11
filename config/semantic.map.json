@@ -411,8 +411,8 @@
                       "typings":  [
                                       "typings"
                                   ],
-                      "graphviz":  [
-                                       "graphviz"
+                      "browsers":  [
+                                       "browsers"
                                    ],
                       "network":  [
                                       "network"
@@ -2493,9 +2493,6 @@
                       "nest-interceptor-js":  [
                                                   "nest-interceptor-js"
                                               ],
-                      "controller":  [
-                                         "controller"
-                                     ],
                       "coffeelint":  [
                                          "coffeelint"
                                      ],
@@ -3020,6 +3017,9 @@
                       "light-nim":  [
                                         "light-nim"
                                     ],
+                      "graphviz":  [
+                                       "graphviz"
+                                   ],
                       "loveable":  [
                                        "loveable"
                                    ],
@@ -3985,9 +3985,9 @@
                       "chase":  [
                                     "chase"
                                 ],
-                      "textlint":  [
-                                       "textlint"
-                                   ],
+                      "closinglock":  [
+                                          "closinglock"
+                                      ],
                       "marketingblocks-ai":  [
                                                  "marketingblocks-ai"
                                              ],
@@ -4053,6 +4053,9 @@
                       "aurelia":  [
                                       "aurelia"
                                   ],
+                      "textlint":  [
+                                       "textlint"
+                                   ],
                       "data-runs":  [
                                         "data-runs"
                                     ],
@@ -4119,9 +4122,9 @@
                       "relayapp":  [
                                        "relayapp"
                                    ],
-                      "edge2":  [
-                                    "edge2"
-                                ],
+                      "controller":  [
+                                         "controller"
+                                     ],
                       "mjml":  [
                                    "mjml"
                                ],
@@ -4170,9 +4173,6 @@
                       "elixir":  [
                                      "elixir"
                                  ],
-                      "closinglock":  [
-                                          "closinglock"
-                                      ],
                       "15five":  [
                                      "15five"
                                  ],
@@ -6375,8 +6375,8 @@
                         "typings":  [
                                         "typings"
                                     ],
-                        "graphviz":  [
-                                         "graphviz"
+                        "browsers":  [
+                                         "browsers"
                                      ],
                         "network":  [
                                         "network"
@@ -8490,12 +8490,6 @@
                         "nest-interceptor-js":  [
                                                     "nest-interceptor-js"
                                                 ],
-                        "controller":  [
-                                           "controllers",
-                                           "controller",
-                                           "handler",
-                                           "handlers"
-                                       ],
                         "coffeelint":  [
                                            "coffeelint"
                                        ],
@@ -9029,6 +9023,9 @@
                         "light-nim":  [
                                           "light-nim"
                                       ],
+                        "graphviz":  [
+                                         "graphviz"
+                                     ],
                         "loveable":  [
                                          "loveable"
                                      ],
@@ -10145,9 +10142,12 @@
                         "relayapp":  [
                                          "relayapp"
                                      ],
-                        "edge2":  [
-                                      "edge2"
-                                  ],
+                        "controller":  [
+                                           "controllers",
+                                           "controller",
+                                           "handler",
+                                           "handlers"
+                                       ],
                         "mjml":  [
                                      "mjml"
                                  ],

@@ -507,6 +507,9 @@
                             "file-broadcom-icon":  {
                                                        "iconPath":  "../processed-icons/broadcom.png"
                                                    },
+                            "file-browsers-icon":  {
+                                                       "iconPath":  "../processed-icons/browsers.png"
+                                                   },
                             "file-browserslist-icon":  {
                                                            "iconPath":  "../processed-icons/browserslist.svg"
                                                        },
@@ -1243,11 +1246,8 @@
                                                   "iconPath":  "../processed-icons/ecl.png"
                                               },
                             "file-edge-icon":  {
-                                                   "iconPath":  "../processed-icons/edge.svg"
+                                                   "iconPath":  "../processed-icons/edge.png"
                                                },
-                            "file-edge2-icon":  {
-                                                    "iconPath":  "../processed-icons/edge2.svg"
-                                                },
                             "file-editorconfig-icon":  {
                                                            "iconPath":  "../processed-icons/editorconfig.svg"
                                                        },
@@ -6047,7 +6047,7 @@
                       "qbs":  "file-qbs-icon",
                       "light-kite":  "file-light-kite-icon",
                       "truffle":  "file-truffle-icon",
-                      "graphviz":  "file-graphviz-icon",
+                      "browsers":  "file-browsers-icon",
                       "network":  "file-network-icon",
                       "dns":  "file-dns-icon",
                       "e2e":  "file-e2e-icon",
@@ -6780,7 +6780,6 @@
                       "csproj":  "file-csproj-icon",
                       "mentimeter":  "file-mentimeter-icon",
                       "nest-interceptor-js":  "file-nest-interceptor-js-icon",
-                      "controller":  "file-controller-icon",
                       "coffeelint":  "file-coffeelint-icon",
                       "tsconfig-official":  "file-tsconfig-official-icon",
                       "glide":  "file-glide-icon",
@@ -6963,6 +6962,7 @@
                       "docker-compose.yml":  "file-docker-icon",
                       "objidconfig":  "file-objidconfig-icon",
                       "light-nim":  "file-light-nim-icon",
+                      "graphviz":  "file-graphviz-icon",
                       "pythowo":  "file-pythowo-icon",
                       "vsix":  "file-vsix-icon",
                       "loveable":  "file-loveable-icon",
@@ -7347,7 +7347,7 @@
                       "pabbly":  "file-pabbly-icon",
                       "taskfile":  "file-taskfile-icon",
                       "relayapp":  "file-relayapp-icon",
-                      "edge2":  "file-edge2-icon",
+                      "controller":  "file-controller-icon",
                       "mjml":  "file-mjml-icon",
                       "stackblitz":  "file-stackblitz-icon",
                       "salliemae":  "file-salliemae-icon",
@@ -8091,7 +8091,7 @@
                         "wells-fargo":  "file-wells-fargo-icon",
                         "light-kite":  "file-light-kite-icon",
                         "truffle":  "file-truffle-icon",
-                        "graphviz":  "file-graphviz-icon",
+                        "browsers":  "file-browsers-icon",
                         "network":  "file-network-icon",
                         "dns":  "file-dns-icon",
                         "e2e":  "file-test-icon",
@@ -8835,7 +8835,6 @@
                         "csproj":  "file-csproj-icon",
                         "mentimeter":  "file-mentimeter-icon",
                         "nest-interceptor-js":  "file-nest-interceptor-js-icon",
-                        "controller":  "file-controller-icon",
                         "coffeelint":  "file-coffeelint-icon",
                         "tsconfig-official":  "file-tsconfig-official-icon",
                         "glide":  "file-glide-icon",
@@ -9015,6 +9014,7 @@
                         "kos":  "file-kos-icon",
                         "manifest-bak":  "file-manifest-bak-icon",
                         "light-nim":  "file-light-nim-icon",
+                        "graphviz":  "file-graphviz-icon",
                         "pythowo":  "file-pythowo-icon",
                         "deep-dream-generator":  "file-deep-dream-generator-icon",
                         "loveable":  "file-loveable-icon",
@@ -9395,7 +9395,7 @@
                         "pabbly":  "file-pabbly-icon",
                         "taskfile":  "file-taskfile-icon",
                         "relayapp":  "file-relayapp-icon",
-                        "edge2":  "file-edge2-icon",
+                        "controller":  "file-controller-icon",
                         "mjml":  "file-mjml-icon",
                         "zed":  "file-zed-icon",
                         "salliemae":  "file-salliemae-icon",
@@ -10147,7 +10147,7 @@
                                 "wells-fargo":  "file-wells-fargo-icon",
                                 "light-kite":  "file-light-kite-icon",
                                 "truffle":  "file-truffle-icon",
-                                "graphviz":  "file-graphviz-icon",
+                                "browsers":  "file-browsers-icon",
                                 "network":  "file-network-icon",
                                 "dns":  "file-dns-icon",
                                 "e2e":  "file-test-icon",
@@ -10891,7 +10891,6 @@
                                 "csproj":  "file-csproj-icon",
                                 "mentimeter":  "file-mentimeter-icon",
                                 "nest-interceptor-js":  "file-nest-interceptor-js-icon",
-                                "controller":  "file-controller-icon",
                                 "coffeelint":  "file-coffeelint-icon",
                                 "tsconfig-official":  "file-tsconfig-official-icon",
                                 "glide":  "file-glide-icon",
@@ -11071,6 +11070,7 @@
                                 "kos":  "file-kos-icon",
                                 "manifest-bak":  "file-manifest-bak-icon",
                                 "light-nim":  "file-light-nim-icon",
+                                "graphviz":  "file-graphviz-icon",
                                 "pythowo":  "file-pythowo-icon",
                                 "deep-dream-generator":  "file-deep-dream-generator-icon",
                                 "loveable":  "file-loveable-icon",
@@ -11451,7 +11451,7 @@
                                 "pabbly":  "file-pabbly-icon",
                                 "taskfile":  "file-taskfile-icon",
                                 "relayapp":  "file-relayapp-icon",
-                                "edge2":  "file-edge2-icon",
+                                "controller":  "file-controller-icon",
                                 "mjml":  "file-mjml-icon",
                                 "zed":  "file-zed-icon",
                                 "salliemae":  "file-salliemae-icon",

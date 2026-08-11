@@ -303,8 +303,8 @@
                       "truffle":  [
                                       "truffle"
                                   ],
-                      "graphviz":  [
-                                       "graphviz"
+                      "browsers":  [
+                                       "browsers"
                                    ],
                       "network":  [
                                       "network"
@@ -2418,9 +2418,6 @@
                       "nest-interceptor-js":  [
                                                   "nest-interceptor-js"
                                               ],
-                      "controller":  [
-                                         "controller"
-                                     ],
                       "coffeelint":  [
                                          "coffeelint"
                                      ],
@@ -2943,6 +2940,9 @@
                       "light-nim":  [
                                         "light-nim"
                                     ],
+                      "graphviz":  [
+                                       "graphviz"
+                                   ],
                       "pythowo":  [
                                       "pythowo"
                                   ],
@@ -4059,9 +4059,9 @@
                       "relayapp":  [
                                        "relayapp"
                                    ],
-                      "edge2":  [
-                                    "edge2"
-                                ],
+                      "controller":  [
+                                         "controller"
+                                     ],
                       "mjml":  [
                                    "mjml"
                                ],
@@ -6179,8 +6179,8 @@
                         "truffle":  [
                                         "truffle"
                                     ],
-                        "graphviz":  [
-                                         "graphviz"
+                        "browsers":  [
+                                         "browsers"
                                      ],
                         "network":  [
                                         "network"
@@ -8294,9 +8294,6 @@
                         "nest-interceptor-js":  [
                                                     "nest-interceptor-js"
                                                 ],
-                        "controller":  [
-                                           "controller"
-                                       ],
                         "coffeelint":  [
                                            "coffeelint"
                                        ],
@@ -8819,6 +8816,9 @@
                         "light-nim":  [
                                           "light-nim"
                                       ],
+                        "graphviz":  [
+                                         "graphviz"
+                                     ],
                         "pythowo":  [
                                         "pythowo"
                                     ],
@@ -9935,9 +9935,9 @@
                         "relayapp":  [
                                          "relayapp"
                                      ],
-                        "edge2":  [
-                                      "edge2"
-                                  ],
+                        "controller":  [
+                                           "controller"
+                                       ],
                         "mjml":  [
                                      "mjml"
                                  ],
